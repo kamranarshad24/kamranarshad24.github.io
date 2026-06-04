@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Kamran Arshad — Paid Ads & Tracking Specialist</title>
+<meta name="description" content="I run paid ad campaigns and build the tracking infrastructure behind them. Meta, Google, Snapchat. Shopify & WordPress. Islamabad, Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #FFFFFF;
+  --surface: #F8FAFC;
+  --ink: #0F172A;
+  --muted: #64748B;
+  --subtle: #94A3B8;
+  --border: #E2E8F0;
+  --accent: #2563EB;
+  --accent-dim: #EFF6FF;
+  --accent-dark: #1D4ED8;
+  --green: #059669;
+  --green-dim: #ECFDF5;
+  --radius: 20px;
+  --radius-sm: 12px;
+  --transition: 0.22s ease;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---- UTILITIES ---- */
+.container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+.section { padding: 100px 0; }
+.section--soft { padding: 80px 0; background: var(--surface); }
+.label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+  display: block;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- NAV ---- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+.nav-logo {
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: -0.4px;
+}
+.nav-links { display: flex; align-items: center; gap: 36px; }
+.nav-links a {
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.nav-links a:hover { color: var(--ink); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  border: none;
+  font-family: inherit;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--accent-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 28px rgba(37,99,235,.32);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--border);
+}
+.btn-outline:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff;
+}
+.btn-lg { padding: 14px 32px; font-size: 16px; border-radius: 12px; }
+
+/* ---- HERO ---- */
+.hero {
+  padding: 88px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -150px;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(37,99,235,.05) 0%, transparent 68%);
+  pointer-events: none;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Photo */
+.hero-photo-wrap { position: relative; display: inline-block; }
+.hero-photo-ring {
+  width: 268px;
+  height: 268px;
+  border-radius: 50%;
+  background: conic-gradient(from 180deg, #2563EB, #60A5FA, #2563EB);
+  padding: 3.5px;
+  animation: spin-slow 8s linear infinite;
+}
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+.hero-photo-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin-slow 8s linear infinite reverse;
+}
+.hero-photo-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.photo-fallback {
+  font-size: 80px;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: -6px;
+  user-select: none;
+  line-height: 1;
+}
+.hero-badge {
+  position: absolute;
+  bottom: 10px;
+  right: -20px;
+  background: var(--green);
+  color: #fff;
+  padding: 7px 14px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 0 6px 18px rgba(5,150,105,.35);
+  white-space: nowrap;
+}
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .5; transform: scale(1.4); }
+}
+
+/* Hero text */
+.hero-text h1 {
+  font-size: clamp(38px, 4.5vw, 58px);
+  font-weight: 900;
+  letter-spacing: -2.5px;
+  line-height: 1.08;
+  color: var(--ink);
+}
+.hero-text h1 .accent { color: var(--accent); }
+.hero-desc {
+  font-size: 17px;
+  color: var(--muted);
+  margin-top: 18px;
+  line-height: 1.75;
+  max-width: 500px;
+}
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+.pill {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 13px;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero-meta {
+  margin-top: 22px;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.hero-meta a {
+  color: var(--muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color var(--transition);
+}
+.hero-meta a:hover { color: var(--accent); }
+
+/* ---- STATS ---- */
+.stats-bar { background: var(--ink); padding: 0; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.stat-item {
+  padding: 40px 24px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.07);
+  position: relative;
+  overflow: hidden;
+}
+.stat-item:last-child { border-right: none; }
+.stat-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  transition: transform 0.4s ease;
+}
+.stat-item:hover::before { transform: translateX(-50%) scaleX(1); }
+.stat-n {
+  font-size: 42px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.stat-n .accent { color: #60A5FA; }
+.stat-l {
+  font-size: 11.5px;
+  color: rgba(255,255,255,.45);
+  margin-top: 7px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ---- SECTION HEADER ---- */
+.section-header { margin-bottom: 52px; }
+.section-header h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  line-height: 1.12;
+}
+.section-header p {
+  font-size: 16px;
+  color: var(--muted);
+  margin-top: 10px;
+  max-width: 440px;
+  line-height: 1.7;
+}
+
+/* ---- CASE STUDIES ---- */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.case-card {
+  background: var(--bg);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.case-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #60A5FA);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.case-card:hover { border-color: #BFDBFE; box-shadow: 0 16px 48px rgba(37,99,235,.1); transform: translateY(-5px); }
+.case-card:hover::before { transform: scaleX(1); }
+
+.case-tags { display: flex; gap: 7px; margin-bottom: 18px; flex-wrap: wrap; }
+.case-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .7px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.tag-ads    { background: #FEF3C7; color: #92400E; }
+.tag-snap   { background: #FEF9C3; color: #854D0E; }
+.tag-track  { background: #E0E7FF; color: #3730A3; }
+.tag-web    { background: #D1FAE5; color: #065F46; }
+.tag-uk     { background: #F3E8FF; color: #6B21A8; }
+.tag-own    { background: var(--accent-dim); color: var(--accent-dark); }
+
+.case-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -.5px;
+  margin-bottom: 3px;
+}
+.case-sub {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.case-card ul { list-style: none; padding: 0; }
+.case-card li {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 5px 0 5px 20px;
+  position: relative;
+  line-height: 1.55;
+}
+.case-card li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 11px;
+  top: 7px;
+}
+.case-card li strong { color: var(--ink); font-weight: 600; }
+.case-result {
+  margin-top: 20px;
+  padding: 13px 16px;
+  background: var(--green-dim);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #065F46;
+  font-weight: 600;
+}
+.result-icon {
+  width: 26px; height: 26px;
+  background: var(--green);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.case-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 14px;
+  transition: gap var(--transition);
+}
+.case-link:hover { gap: 8px; text-decoration: underline; }
+
+/* ---- SKILLS ---- */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.skill-group {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: box-shadow var(--transition);
+}
+.skill-group:hover { box-shadow: 0 8px 24px rgba(15,23,42,.07); }
+.skill-group h4 {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  color: var(--ink);
+  transition: border-color var(--transition), background var(--transition);
+}
+.chip:hover { border-color: var(--accent); background: var(--accent-dim); color: var(--accent); }
+
+/* ---- SERVICES ---- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.svc-card {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: all var(--transition);
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+.svc-card:hover { border-color: #BFDBFE; box-shadow: 0 12px 32px rgba(37,99,235,.1); transform: translateY(-3px); }
+.svc-card.highlight {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+}
+.svc-icon {
+  font-size: 26px;
+  margin-bottom: 16px;
+  display: block;
+  width: 48px; height: 48px;
+  background: var(--accent-dim);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.svc-card.highlight .svc-icon { background: rgba(255,255,255,.1); }
+.svc-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -.3px;
+  margin-bottom: 8px;
+}
+.svc-card p {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 20px;
+}
+.svc-card.highlight p { color: rgba(255,255,255,.55); }
+.svc-price {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -.3px;
+}
+.svc-card.highlight .svc-price { color: #60A5FA; }
+.svc-note {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 3px;
+}
+.svc-card.highlight .svc-note { color: rgba(255,255,255,.35); }
+
+/* ---- CTA SECTION ---- */
+.cta-section {
+  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(37,99,235,.15) 0%, transparent 65%);
+  pointer-events: none;
+}
+.cta-section h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  max-width: 620px;
+  margin: 12px auto 14px;
+}
+.cta-section p {
+  font-size: 17px;
+  color: rgba(255,255,255,.55);
+  max-width: 480px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+.cta-or {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgba(255,255,255,.3);
+}
+.cta-email-link {
+  color: rgba(255,255,255,.55);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color var(--transition);
+}
+.cta-email-link:hover { color: #fff; }
+
+/* ---- FOOTER ---- */
+footer {
+  padding: 28px 0;
+  border-top: 1px solid var(--border);
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-left { font-size: 14px; color: var(--muted); }
+.footer-left strong { color: var(--ink); }
+.footer-links { display: flex; align-items: center; gap: 24px; }
+.footer-links a {
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.footer-links a:hover { color: var(--accent); }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+  .hero-photo-wrap { margin: 0 auto; }
+  .hero-pills, .hero-actions, .hero-meta { justify-content: center; }
+  .stats-grid { grid-template-columns: repeat(3, 1fr); }
+  .cases-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr 1fr; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-grid .stat-item:nth-child(5) { grid-column: span 2; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
+  .section { padding: 64px 0; }
+  .section--soft { padding: 56px 0; }
+  .hero { padding: 56px 0 64px; }
+  .hero-photo-ring { width: 220px; height: 220px; }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- CONTACT FORM MODAL -->
+<div id="audit-modal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(15,23,42,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#fff; border-radius:24px; padding:40px; max-width:480px; width:100%; position:relative; box-shadow:0 32px 80px rgba(15,23,42,.2); animation:modal-in .25s ease;">
+    <button onclick="closeModal()" style="position:absolute; top:16px; right:16px; background:#F1F5F9; border:none; width:32px; height:32px; border-radius:50%; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; color:#64748B; line-height:1;">×</button>
+    <span style="font-size:11px; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; color:#2563EB; display:block; margin-bottom:10px;">Free — No Obligation</span>
+    <h3 style="font-size:24px; font-weight:800; letter-spacing:-.8px; margin-bottom:8px; color:#0F172A;">Book Your Free Audit</h3>
+    <p style="font-size:14px; color:#64748B; margin-bottom:28px; line-height:1.6;">I'll review your ad account or store live in 15 minutes and tell you one thing you can fix this week.</p>
+    <form action="https://formsubmit.co/kamran.arshad24@gmail.com" method="POST" onsubmit="handleSubmit(event)">
+      <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div style="margin-bottom:16px;">
+        <label style="font-size:12px; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Your Name *</label>
+        <input type="text" name="name" required placeholder="e.g. Ahmed Khan"
+          style="width:100%; padding:12px 14px; border:1.5px solid #E2E8F0; border-radius:10px; font-size:14px; font-family:inherit; color:#0F172A; outline:none; transition:border-color .2s;"
+          onfocus="this.style.borderColor='#2563EB'" onblur="this.style.borderColor='#E2E8F0'">
+      </div>
+      <div style="margin-bottom:16px;">
+        <label style="font-size:12px; font-weight:600; color:#374151; display:block; margin-bottom:6px;">Email or WhatsApp *</label>
+        <input type="text" name="contact" required placeholder="your@email.com or +92-XXX-XXXXXXX"
+          style="width:100%; padding:12px 14px; border:1.5px solid #E2E8F0; border-radius:10px; font-size:14px; font-family:inherit; color:#0F172A; outline:none; transition:border-color .2s;"
+          onfocus="this.style.borderColor='#2563EB'" onblur="this.style.borderColor='#E2E8F0'">
+      </div>
+      <div style="margin-bottom:24px;">
+        <label style="font-size:12px; font-weight:600; color:#374151; display:block; margin-bottom:6px;">What do you need help with?</label>
+        <textarea name="message" rows="3" placeholder="e.g. My Facebook ads are running but I'm not sure if the pixel is tracking correctly..."
+          style="width:100%; padding:12px 14px; border:1.5px solid #E2E8F0; border-radius:10px; font-size:14px; font-family:inherit; color:#0F172A; outline:none; resize:vertical; transition:border-color .2s;"
+          onfocus="this.style.borderColor='#2563EB'" onblur="this.style.borderColor='#E2E8F0'"></textarea>
+      </div>
+      <button type="submit"
+        style="width:100%; padding:14px; background:#2563EB; color:#fff; border:none; border-radius:12px; font-size:15px; font-weight:700; cursor:pointer; font-family:inherit; transition:background .2s, transform .2s;">
+        Send Request →
+      </button>
+    </form>
+    <p style="font-size:12px; color:#94A3B8; text-align:center; margin-top:14px;">I'll reply within 24 hours. No spam, ever.</p>
+  </div>
+</div>
+<style>
+@keyframes modal-in {
+  from { opacity:0; transform:translateY(16px) scale(.97); }
+  to   { opacity:1; transform:translateY(0) scale(1); }
+}
+</style>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo">Kamran Arshad</a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="mailto:kamran.arshad24@gmail.com" class="btn btn-primary">Get Free Audit →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Photo -->
+      <div class="hero-photo-wrap fade-up">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-inner">
+            <!--
+              TO ADD YOUR PHOTO:
+              1. Put your photo file (e.g. photo.jpg) next to this index.html file
+              2. Change src="photo.jpg" below to your actual filename
+              The fallback "KA" initials show automatically if no photo is found.
+            -->
+            <img src="Kamran Image.png" alt="Kamran Arshad"
+                 onerror="this.style.display='none';document.getElementById('photo-fallback').style.display='flex'">
+            <div id="photo-fallback" class="photo-fallback" style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">KA</div>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="pulse-dot"></div>
+          Available for work
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="hero-text fade-up" style="transition-delay:.15s">
+        <span class="label">Paid Ads · Tracking & Analytics · Web</span>
+        <h1>Hi, I'm <span class="accent">Kamran</span>.<br>I make your ads<br>actually work.</h1>
+        <p class="hero-desc">
+          I run paid campaigns and build the tracking infrastructure behind them —
+          so you see exactly what's converting and what's draining your budget.
+          Based in Pakistan, working with clients globally.
+        </p>
+        <div class="hero-pills">
+          <span class="pill">Meta Ads</span>
+          <span class="pill">Google Ads</span>
+          <span class="pill">Snapchat Ads</span>
+          <span class="pill">GTM + CAPI</span>
+          <span class="pill">Shopify</span>
+          <span class="pill">WordPress</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#" onclick="openModal();return false;" class="btn btn-primary btn-lg">
+            Get Free Audit →
+          </a>
+          <a href="#work" class="btn btn-outline btn-lg">View My Work</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 Islamabad, Pakistan</span>
+          <a href="https://linkedin.com/in/kamran-arshad24" target="_blank" rel="noopener">
+            LinkedIn ↗
+          </a>
+          <a href="mailto:kamran.arshad24@gmail.com">kamran.arshad24@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-up">
+        <div class="stat-n">5.69<span class="accent">x</span></div>
+        <div class="stat-l">ROAS — Own Store</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:.08s">
+        <div class="stat-n">$<span class="accent">1.40</span></div>
+        <div class="stat-l">Cost Per Purchase</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:.16s">
+        <div class="stat-n">1<span class="accent">,</span>034</div>
+        <div class="stat-l">Purchases / $1,452 Spend</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:.24s">
+        <div class="stat-n">4<span class="accent">+</span></div>
+        <div class="stat-l">Clients Served</div>
+      </div>
+      <div class="stat-item fade-up" style="transition-delay:.32s">
+        <div class="stat-n">🇬🇧</div>
+        <div class="stat-l">1 UK Client (Ongoing)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CASE STUDIES -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label">Case Studies</span>
+      <h2>Real work.<br>Real numbers.</h2>
+      <p>No fabricated metrics. These are verified results from actual projects.</p>
+    </div>
+    <div class="cases-grid">
+
+      <!-- AlphaMart -->
+      <div class="case-card fade-up">
+        <div class="case-tags">
+          <span class="case-tag tag-own">Own Brand</span>
+          <span class="case-tag tag-snap">Snapchat Ads</span>
+        </div>
+        <h3>AlphaMart</h3>
+        <p class="case-sub">E-commerce Store — Built & Operated Solo</p>
+        <ul>
+          <li>Bootstrapped from zero with my own money on Snapchat Ads</li>
+          <li><strong>5.69x ROAS</strong> — 1,034 purchases from just $1,452 in ad spend</li>
+          <li><strong>$1.40 cost per purchase</strong> — across a full campaign lifecycle</li>
+          <li>Handled everything solo: product research, Shopify build, ad accounts, creatives, inventory, shipping, and customer support</li>
+        </ul>
+        <div class="case-result">
+          <div class="result-icon">↑</div>
+          5.69x ROAS · $1.40 CPA · 1,034 purchases — screenshots available
+        </div>
+      </div>
+
+      <!-- The Body Essential -->
+      <div class="case-card fade-up" style="transition-delay:.1s">
+        <div class="case-tags">
+          <span class="case-tag tag-track">Pixel Audit</span>
+          <span class="case-tag tag-ads">Meta Ads</span>
+          <span class="case-tag tag-web">Shopify</span>
+        </div>
+        <h3>The Body Essential</h3>
+        <p class="case-sub">Fashion E-commerce — Pixel Audit + Store + Ads</p>
+        <ul>
+          <li><strong>Found a dead pixel wasting ~50% of ad budget</strong> — two pixels were installed, one disconnected from Shopify, reporting fake orders and splitting spend</li>
+          <li>Removed the ghost pixel, correctly connected conversion tracking to Shopify</li>
+          <li>Built the Shopify store and managed ongoing Meta ad campaigns</li>
+          <li>Set up post-purchase email sequences and fixed on-page SEO issues</li>
+        </ul>
+        <div class="case-result">
+          <div class="result-icon">↑</div>
+          ~50% budget leak stopped on day one
+        </div>
+      </div>
+
+      <!-- Smile Line Dental -->
+      <div class="case-card fade-up" style="transition-delay:.05s">
+        <div class="case-tags">
+          <span class="case-tag tag-ads">Google Ads</span>
+          <span class="case-tag tag-track">GTM</span>
+        </div>
+        <h3>Smile Line Dental</h3>
+        <p class="case-sub">Local Dental Clinic, Islamabad — Google Ads & Conversion Tracking</p>
+        <ul>
+          <li>Set up full conversion tracking through Google Tag Manager — form submissions and call tracking — so the clinic could see which ads were actually producing patient leads</li>
+          <li>Ran and managed Google Search Ads for the local clinic</li>
+          <li>First time the business had any visibility into which keywords drove real results</li>
+        </ul>
+        <div class="case-result">
+          <div class="result-icon">✓</div>
+          First-ever lead attribution visibility for the clinic
+        </div>
+      </div>
+
+      <!-- Mr Expert Carpet Cleaning -->
+      <div class="case-card fade-up" style="transition-delay:.15s">
+        <div class="case-tags">
+          <span class="case-tag tag-uk">🇬🇧 UK</span>
+          <span class="case-tag tag-web">WordPress</span>
+          <span class="case-tag tag-track">GTM Server-Side</span>
+        </div>
+        <h3>Mr Expert Carpet Cleaning</h3>
+        <p class="case-sub">Local Service Business, Slough UK — Full Digital Build (Ongoing)</p>
+        <ul>
+          <li><strong>Full website rebuild</strong> on WordPress + Elementor — fast, mobile-first, conversion-focused with clear CTAs and trust signals</li>
+          <li><strong>Complete tracking stack from scratch:</strong> GTM standard + server-side container, GA4, Microsoft Clarity (session recording), and Facebook CAPI routed through the server container for accurate browser-independent data</li>
+          <li>Created local SEO service pages targeting Slough, Berkshire and surrounding areas</li>
+          <li>Launched Google Search Ads with GTM-connected conversion tracking — campaign actively running</li>
+        </ul>
+        <a href="https://mrexpertcarpetcleaning.com" target="_blank" rel="noopener" class="case-link">
+          mrexpertcarpetcleaning.com ↗
+        </a>
+        <div class="case-result">
+          <div class="result-icon">↑</div>
+          Full stack: site + tracking + ads — live and ongoing
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section--soft" id="skills">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label">Skills</span>
+      <h2>What I can do.</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group fade-up">
+        <h4>Paid Advertising</h4>
+        <div class="chips">
+          <span class="chip">Meta (Facebook/Instagram) Ads</span>
+          <span class="chip">Snapchat Ads</span>
+          <span class="chip">Google Ads (Search)</span>
+          <span class="chip">Campaign setup & management</span>
+          <span class="chip">Audience targeting</span>
+          <span class="chip">Ad creative briefing</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up" style="transition-delay:.1s">
+        <h4>Tracking & Analytics</h4>
+        <div class="chips">
+          <span class="chip">Google Tag Manager</span>
+          <span class="chip">GTM Server-Side Container</span>
+          <span class="chip">Facebook Conversions API</span>
+          <span class="chip">GA4 Setup</span>
+          <span class="chip">Microsoft Clarity</span>
+          <span class="chip">Pixel & conversion audits</span>
+          <span class="chip">Form + call tracking</span>
+        </div>
+      </div>
+      <div class="skill-group fade-up" style="transition-delay:.2s">
+        <h4>Web & E-commerce</h4>
+        <div class="chips">
+          <span class="chip">Shopify store setup</span>
+          <span class="chip">WordPress + Elementor</span>
+          <span class="chip">Local SEO (on-page)</span>
+          <span class="chip">Post-purchase email flows</span>
+          <span class="chip">E-commerce operations</span>
+          <span class="chip">CRO fundamentals</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="label">Services & Pricing</span>
+      <h2>What you can hire me for.</h2>
+      <p>Dual pricing — PKR for Pakistan, USD for international clients.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="svc-card fade-up">
+        <div class="svc-icon">🔍</div>
+        <h4>Pixel / Tracking Audit</h4>
+        <p>I review your pixel and tracking setup and find what's wasting your budget. Most accounts I audit have at least one broken conversion event.</p>
+        <div class="svc-price">
+          from PKR 10,000 / $80
+          <span class="svc-note">One-time audit + fix</span>
+        </div>
+      </div>
+
+      <div class="svc-card highlight fade-up" style="transition-delay:.08s">
+        <div class="svc-icon">⚡</div>
+        <h4>GTM + GA4 + CAPI Setup</h4>
+        <p>Full tracking infrastructure: standard container, server-side container, GA4, and Facebook Conversions API for accurate, browser-independent data.</p>
+        <div class="svc-price">
+          from PKR 20,000 / $150
+          <span class="svc-note">One-time setup</span>
+        </div>
+      </div>
+
+      <div class="svc-card fade-up" style="transition-delay:.16s">
+        <div class="svc-icon">🛍️</div>
+        <h4>Shopify or WordPress Store</h4>
+        <p>Built to convert — fast load, mobile-first, clear structure, trust signals. Ready to run ads from day one.</p>
+        <div class="svc-price">
+          from PKR 25,000 / $150
+          <span class="svc-note">One-time build</span>
+        </div>
+      </div>
+
+      <div class="svc-card fade-up" style="transition-delay:.04s">
+        <div class="svc-icon">📱</div>
+        <h4>Meta or Snapchat Ads</h4>
+        <p>Campaign setup, creative briefs, audience targeting, and ongoing management. I've run these with my own money — I know what works.</p>
+        <div class="svc-price">
+          from PKR 20,000 / $200
+          <span class="svc-note">Per month</span>
+        </div>
+      </div>
+
+      <div class="svc-card fade-up" style="transition-delay:.12s">
+        <div class="svc-icon">🔎</div>
+        <h4>Google Ads + Conversion Tracking</h4>
+        <p>Search Ads setup with GTM-connected conversion tracking so you know which keywords produce real leads, not just clicks.</p>
+        <div class="svc-price">
+          from PKR 20,000 / $200
+          <span class="svc-note">Per month</span>
+        </div>
+      </div>
+
+      <div class="svc-card fade-up" style="transition-delay:.20s">
+        <div class="svc-icon">🚀</div>
+        <h4>Full Launch Bundle</h4>
+        <p>Everything together: site + full tracking stack + ad campaigns. Start from zero and be live with a converting store and trackable revenue.</p>
+        <div class="svc-price">
+          from PKR 45,000 / $350
+          <span class="svc-note">Best value — all-in</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="label" style="color:#60A5FA; text-align:center; display:block;">Free — No Obligation</span>
+    <h2>Is your pixel actually firing?</h2>
+    <p>
+      I'll review your ad account or store live for 15 minutes — for free.
+      I'll tell you one thing you can fix this week. No pitch, no pressure.
+    </p>
+    <a href="#" onclick="openModal();return false;" class="btn btn-primary btn-lg">
+      Book Your Free Audit →
+    </a>
+    <span class="cta-or">or reach out directly</span>
+    <a href="mailto:kamran.arshad24@gmail.com" class="cta-email-link">kamran.arshad24@gmail.com</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <strong>Kamran Arshad</strong> · Paid Ads, Tracking & Web · Islamabad, Pakistan
+    </div>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/kamran-arshad24" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="mailto:kamran.arshad24@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+function openModal() {
+  const m = document.getElementById('audit-modal');
+  m.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'audit_modal_open' });
+}
+function closeModal() {
+  document.getElementById('audit-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+document.getElementById('audit-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+function handleSubmit(e) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'audit_form_submit' });
+}
+</script>
+
+</body>
+</html>
