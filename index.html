@@ -341,6 +341,63 @@ nav {
   line-height: 1.7;
 }
 
+/* ---- ABOUT ---- */
+.about-section { padding: 96px 0; }
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 80px;
+  align-items: center;
+}
+.about-heading {
+  font-size: clamp(56px, 8vw, 96px);
+  font-weight: 900;
+  letter-spacing: -4px;
+  line-height: 1;
+  color: var(--ink);
+  margin-bottom: 32px;
+}
+.about-heading span { color: var(--accent); }
+.about-text p {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.about-text p:last-child { margin-bottom: 0; }
+.about-text strong { color: var(--ink); font-weight: 700; }
+.about-photo-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.about-photo-blob {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  background: var(--accent);
+  border-radius: 50%;
+  bottom: -20px;
+  right: -10px;
+  opacity: .12;
+}
+.about-photo-img {
+  position: relative;
+  width: 360px;
+  height: 420px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 24px;
+  display: block;
+  z-index: 1;
+}
+@media (max-width: 960px) {
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-photo-wrap { justify-content: center; }
+  .about-photo-img { width: 280px; height: 340px; }
+  .about-photo-blob { width: 260px; height: 260px; }
+}
+
 /* ---- CASE STUDIES ---- */
 .cases-grid {
   display: grid;
@@ -792,6 +849,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <img src="Kamran logo.png" alt="Kamran Arshad" style="height:36px; width:auto; display:block;">
     </a>
     <div class="nav-links">
+      <a href="#about">About</a>
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#services">Services</a>
@@ -889,6 +947,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-text fade-up">
+        <div class="about-heading">about<span>.</span></div>
+        <p>
+          I'm Kamran — a paid ads and tracking specialist based in Islamabad, Pakistan.
+          I started by building my own e-commerce brand, <strong>AlphaMart</strong>, from zero —
+          handling every part of the business myself, from product research and Shopify setup
+          to running Snapchat ad campaigns that delivered a <strong>5.69x ROAS</strong> and
+          1,034 purchases from just $1,452 in spend.
+        </p>
+        <p>
+          That hands-on experience taught me what most agencies miss: tracking has to be right
+          before ads can scale. I've since worked with dental clinics, fashion brands, and a
+          UK carpet cleaning business — building full tracking stacks (GTM, GA4, Facebook CAPI,
+          server-side containers) and running Meta, Google, and Snapchat campaigns for each.
+        </p>
+        <p>
+          My strongest skill is finding what's quietly draining your ad budget — broken pixels,
+          misconfigured events, split-attributed conversions — and fixing it before more money
+          goes out the door. I work with clients across <strong>Pakistan and internationally</strong>,
+          with dual PKR and USD pricing.
+        </p>
+      </div>
+
+      <div class="about-photo-wrap fade-up" style="transition-delay:.2s">
+        <div class="about-photo-blob"></div>
+        <img src="profile-pic new.png" alt="Kamran Arshad" class="about-photo-img">
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- CASE STUDIES -->
 <section class="section" id="work">
