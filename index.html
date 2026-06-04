@@ -785,6 +785,31 @@ nav {
 }
 .cta-email-link:hover { color: #fff; }
 
+/* ---- SKILLS REDESIGN ---- */
+.skills-heading { font-size: clamp(56px, 8vw, 88px); font-weight: 900; letter-spacing: -4px; line-height: 1; color: var(--ink); margin-bottom: 48px; }
+.skills-heading span { color: var(--accent); }
+.tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.tool-group { background: #fff; border: 1.5px solid var(--border); border-radius: var(--radius); padding: 28px; transition: box-shadow var(--transition); }
+.tool-group:hover { box-shadow: 0 8px 28px rgba(15,23,42,.08); }
+.tool-icons-row { display: flex; gap: 10px; margin-bottom: 18px; }
+.tool-icon-box {
+  width: 56px; height: 56px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.tool-icon-box img { width: 32px; height: 32px; object-fit: contain; }
+.tool-icon-box .ti-emoji { font-size: 28px; line-height: 1; }
+.tool-group-name { font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+.tool-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.tool-list li { font-size: 13.5px; color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.tool-list li::before { content: ''; width: 7px; height: 7px; background: var(--accent); border-radius: 50%; flex-shrink: 0; }
+@media (max-width: 900px) { .tools-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .tools-grid { grid-template-columns: 1fr; } }
+
 /* ---- CERTIFICATES ---- */
 .certs-grid {
   display: grid;
@@ -1160,6 +1185,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="result-icon">↑</div>
           5.69x ROAS · $1.40 CPA · 1,034 purchases — screenshots available
         </div>
+        <a href="alphamart.html" class="case-link">View Full Case Study →</a>
       </div>
 
       <!-- The Body Essential -->
@@ -1195,6 +1221,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="result-icon">↑</div>
           ~50% budget leak stopped on day one
         </div>
+        <a href="the-body-essential.html" class="case-link">View Full Case Study →</a>
       </div>
 
       <!-- Smile Line Dental -->
@@ -1228,6 +1255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="result-icon">✓</div>
           First-ever lead attribution visibility for the clinic
         </div>
+        <a href="smile-line-dental.html" class="case-link">View Full Case Study →</a>
       </div>
 
       <!-- Mr Expert Carpet Cleaning -->
@@ -1266,6 +1294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="result-icon">↑</div>
           Full stack: site + tracking + ads — live and ongoing
         </div>
+        <a href="mr-expert-carpet-cleaning.html" class="case-link">View Full Case Study →</a>
       </div>
 
     </div>
@@ -1275,45 +1304,61 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- SKILLS -->
 <section class="section--soft" id="skills">
   <div class="container">
-    <div class="section-header fade-up">
-      <span class="label">Skills</span>
-      <h2>What I can do.</h2>
+    <div class="fade-up">
+      <span class="label">Skills & Tools</span>
+      <div class="skills-heading">tools<span>.</span></div>
     </div>
-    <div class="skills-grid">
-      <div class="skill-group fade-up">
-        <h4>Paid Advertising</h4>
-        <div class="chips">
-          <span class="chip">Meta (Facebook/Instagram) Ads</span>
-          <span class="chip">Snapchat Ads</span>
-          <span class="chip">Google Ads (Search)</span>
-          <span class="chip">Campaign setup & management</span>
-          <span class="chip">Audience targeting</span>
-          <span class="chip">Ad creative briefing</span>
+    <div class="tools-grid">
+
+      <div class="tool-group fade-up">
+        <div class="tool-icons-row">
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/meta/0866FF" alt="Meta"></div>
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/snapchat/FFFC00" alt="Snapchat"></div>
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/googleads/4285F4" alt="Google Ads"></div>
         </div>
+        <div class="tool-group-name">Paid Advertising</div>
+        <ul class="tool-list">
+          <li>Meta (Facebook & Instagram) Ads</li>
+          <li>Snapchat Ads</li>
+          <li>Google Ads (Search)</li>
+          <li>Audience targeting & campaign setup</li>
+          <li>Ad creative briefing</li>
+        </ul>
       </div>
-      <div class="skill-group fade-up" style="transition-delay:.1s">
-        <h4>Tracking & Analytics</h4>
-        <div class="chips">
-          <span class="chip">Google Tag Manager</span>
-          <span class="chip">GTM Server-Side Container</span>
-          <span class="chip">Facebook Conversions API</span>
-          <span class="chip">GA4 Setup</span>
-          <span class="chip">Microsoft Clarity</span>
-          <span class="chip">Pixel & conversion audits</span>
-          <span class="chip">Form + call tracking</span>
+
+      <div class="tool-group fade-up" style="transition-delay:.08s">
+        <div class="tool-icons-row">
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/googletagmanager/246FDB" alt="GTM"></div>
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="GA4"></div>
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/microsoftclarity/0078D4" alt="Clarity"></div>
         </div>
+        <div class="tool-group-name">Tracking & Analytics</div>
+        <ul class="tool-list">
+          <li>Google Tag Manager</li>
+          <li>GTM Server-Side Container</li>
+          <li>Facebook Conversions API (CAPI)</li>
+          <li>GA4 Setup & configuration</li>
+          <li>Microsoft Clarity</li>
+          <li>Pixel & conversion audits</li>
+        </ul>
       </div>
-      <div class="skill-group fade-up" style="transition-delay:.2s">
-        <h4>Web & E-commerce</h4>
-        <div class="chips">
-          <span class="chip">Shopify store setup</span>
-          <span class="chip">WordPress + Elementor</span>
-          <span class="chip">Local SEO (on-page)</span>
-          <span class="chip">Post-purchase email flows</span>
-          <span class="chip">E-commerce operations</span>
-          <span class="chip">CRO fundamentals</span>
+
+      <div class="tool-group fade-up" style="transition-delay:.16s">
+        <div class="tool-icons-row">
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/shopify/96BF48" alt="Shopify"></div>
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/wordpress/21759B" alt="WordPress"></div>
+          <div class="tool-icon-box"><img src="https://cdn.simpleicons.org/elementor/92003B" alt="Elementor"></div>
         </div>
+        <div class="tool-group-name">Web & E-commerce</div>
+        <ul class="tool-list">
+          <li>Shopify store setup</li>
+          <li>WordPress + Elementor</li>
+          <li>Local SEO (on-page)</li>
+          <li>Post-purchase email flows</li>
+          <li>E-commerce operations</li>
+        </ul>
       </div>
+
     </div>
   </div>
 </section>
