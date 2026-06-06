@@ -14,7 +14,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="I run paid ad campaigns and build the tracking infrastructure behind them. Meta, Google, Snapchat. Shopify & WordPress. Islamabad, Pakistan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"></noscript>
 <link rel="icon" type="image/svg+xml" href="KA_favicon.svg">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1239,7 +1240,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div style="background:#fff; border-radius:24px; padding:40px; max-width:480px; width:100%; position:relative; box-shadow:0 32px 80px rgba(15,23,42,.2); animation:modal-in .25s ease;">
     <button onclick="closeModal()" style="position:absolute; top:16px; right:16px; background:#F1F5F9; border:none; width:32px; height:32px; border-radius:50%; font-size:18px; cursor:pointer; display:flex; align-items:center; justify-content:center; color:#64748B; line-height:1;">×</button>
     <span style="font-size:11px; font-weight:700; letter-spacing:1.8px; text-transform:uppercase; color:#2563EB; display:block; margin-bottom:10px;">Free — No Obligation</span>
-    <h3 style="font-size:24px; font-weight:800; letter-spacing:-.8px; margin-bottom:8px; color:#0F172A;">Book Your Free Audit</h3>
+    <p style="font-size:24px; font-weight:800; letter-spacing:-.8px; margin-bottom:8px; color:#0F172A;">Book Your Free Audit</p>
     <p style="font-size:14px; color:#64748B; margin-bottom:28px; line-height:1.6;">I'll review your ad account or store live in 15 minutes and tell you one thing you can fix this week.</p>
     <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST" onsubmit="handleSubmit(event)">
       <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
@@ -1280,6 +1281,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </style>
 
 <!-- NAV -->
+<main>
 <nav>
   <div class="container nav-inner">
     <a href="#" class="nav-logo">
@@ -1310,7 +1312,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               2. Change src="photo.jpg" below to your actual filename
               The fallback "KA" initials show automatically if no photo is found.
             -->
-            <img src="Kamran Image.png" alt="Kamran Arshad"
+            <img src="Kamran Image.png" alt="Kamran Arshad" width="268" height="268" fetchpriority="high"
                  onerror="this.style.display='none';document.getElementById('photo-fallback').style.display='flex'">
             <div id="photo-fallback" class="photo-fallback" style="display:none; align-items:center; justify-content:center; width:100%; height:100%;">KA</div>
           </div>
@@ -1415,7 +1417,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="about-photo-wrap fade-up" style="transition-delay:.2s">
         <div class="about-photo-blob"></div>
-        <img src="Kamran_profile_transparent.png" alt="Kamran Arshad" class="about-photo-img">
+        <img src="Kamran_profile_transparent.png" alt="Kamran Arshad" class="about-photo-img" loading="lazy" width="360" height="440">
       </div>
 
     </div>
@@ -1436,12 +1438,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="case-card fade-up">
         <div class="carousel">
           <div class="carousel-slides">
-            <div class="carousel-slide"><img src="clients-dashboard/AlphaMart Snapchat Ads Dashboard Cost Per Purchase.png" alt="AlphaMart Snapchat Ads"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/AlphaMart Sales Dashboard.png" alt="AlphaMart Sales Dashboard"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/AlphaMart FB Ads Dashboard.png" alt="AlphaMart Facebook Ads"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/AlphaMart Snapchat Ads Dashboard Cost Per Purchase.png" alt="AlphaMart Snapchat Ads" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/AlphaMart Sales Dashboard.png" alt="AlphaMart Sales Dashboard" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/AlphaMart FB Ads Dashboard.png" alt="AlphaMart Facebook Ads" loading="lazy" width="800" height="500"></div>
           </div>
-          <button class="carousel-btn carousel-prev">‹</button>
-          <button class="carousel-btn carousel-next">›</button>
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next slide">›</button>
           <div class="carousel-dots">
             <button class="carousel-dot"></button>
             <button class="carousel-dot"></button>
@@ -1471,12 +1473,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="case-card fade-up" style="transition-delay:.1s">
         <div class="carousel">
           <div class="carousel-slides">
-            <div class="carousel-slide"><img src="clients-dashboard/The body essential FB ADS Dashboard 1.png" alt="The Body Essential FB Ads"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/TBE Snapchat Ads Dashboard Cost Per Purchase.png" alt="TBE Snapchat Ads"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/The body essential Shopify Dashboard (2).png" alt="The Body Essential Shopify"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/The body essential FB ADS Dashboard 1.png" alt="The Body Essential FB Ads" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/TBE Snapchat Ads Dashboard Cost Per Purchase.png" alt="TBE Snapchat Ads" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/The body essential Shopify Dashboard (2).png" alt="The Body Essential Shopify" loading="lazy" width="800" height="500"></div>
           </div>
-          <button class="carousel-btn carousel-prev">‹</button>
-          <button class="carousel-btn carousel-next">›</button>
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next slide">›</button>
           <div class="carousel-dots">
             <button class="carousel-dot"></button>
             <button class="carousel-dot"></button>
@@ -1507,12 +1509,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="case-card fade-up" style="transition-delay:.05s">
         <div class="carousel">
           <div class="carousel-slides">
-            <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic Google Ads Dashboard.png" alt="SmileLine Google Ads"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic Google Ads Dashboard 1.png" alt="SmileLine Google Ads 2"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic GTM Setup .png" alt="SmileLine GTM Setup"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic Google Ads Dashboard.png" alt="SmileLine Google Ads" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic Google Ads Dashboard 1.png" alt="SmileLine Google Ads 2" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic GTM Setup .png" alt="SmileLine GTM Setup" loading="lazy" width="800" height="500"></div>
           </div>
-          <button class="carousel-btn carousel-prev">‹</button>
-          <button class="carousel-btn carousel-next">›</button>
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next slide">›</button>
           <div class="carousel-dots">
             <button class="carousel-dot"></button>
             <button class="carousel-dot"></button>
@@ -1541,12 +1543,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="case-card fade-up" style="transition-delay:.15s">
         <div class="carousel">
           <div class="carousel-slides">
-            <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning website snapshot.png" alt="Mr Expert Website"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning GA4 dashboard.png" alt="Mr Expert GA4 Dashboard"></div>
-            <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning SEO dashboard.png" alt="Mr Expert SEO Dashboard"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning website snapshot.png" alt="Mr Expert Website" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning GA4 dashboard.png" alt="Mr Expert GA4 Dashboard" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning SEO dashboard.png" alt="Mr Expert SEO Dashboard" loading="lazy" width="800" height="500"></div>
           </div>
-          <button class="carousel-btn carousel-prev">‹</button>
-          <button class="carousel-btn carousel-next">›</button>
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next slide">›</button>
           <div class="carousel-dots">
             <button class="carousel-dot"></button>
             <button class="carousel-dot"></button>
@@ -1658,19 +1660,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="process-grid">
       <div class="process-card fade-up">
         <div class="process-num">01</div>
-        <h4>Audit First</h4>
+        <h3>Audit First</h3>
         <p>Before I touch anything, I review your current setup — ad account, tracking, store — and find exactly what's costing you money or hiding your results. No guessing, no generic advice.</p>
         <div class="process-arrow">→</div>
       </div>
       <div class="process-card fade-up" style="transition-delay:.1s">
         <div class="process-num">02</div>
-        <h4>Build & Fix</h4>
+        <h3>Build & Fix</h3>
         <p>I fix the tracking infrastructure first — GTM, pixels, conversions — so every decision after this is based on real data. Then I build or optimise the campaigns and store around that foundation.</p>
         <div class="process-arrow">→</div>
       </div>
       <div class="process-card fade-up" style="transition-delay:.2s">
         <div class="process-num">03</div>
-        <h4>Run & Optimise</h4>
+        <h3>Run & Optimise</h3>
         <p>Once everything is tracking correctly, I manage and scale the campaigns — cutting spend that isn't working, doubling down on what is. You get regular updates in plain language, not a report you need a degree to read.</p>
       </div>
     </div>
@@ -1721,37 +1723,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="svc-card fade-up">
         <div class="svc-icon">🔍</div>
-        <h4>Pixel / Tracking Audit</h4>
+        <h3>Pixel / Tracking Audit</h3>
         <p>I review your pixel and tracking setup and find what's wasting your budget. Most accounts I audit have at least one broken conversion event.</p>
       </div>
 
       <div class="svc-card highlight fade-up" style="transition-delay:.08s">
         <div class="svc-icon">⚡</div>
-        <h4>GTM + GA4 + CAPI Setup</h4>
+        <h3>GTM + GA4 + CAPI Setup</h3>
         <p>Full tracking infrastructure: standard container, server-side container, GA4, and Facebook Conversions API for accurate, browser-independent data.</p>
       </div>
 
       <div class="svc-card fade-up" style="transition-delay:.16s">
         <div class="svc-icon">🛍️</div>
-        <h4>Shopify or WordPress Store</h4>
+        <h3>Shopify or WordPress Store</h3>
         <p>Built to convert — fast load, mobile-first, clear structure, trust signals. Ready to run ads from day one.</p>
       </div>
 
       <div class="svc-card fade-up" style="transition-delay:.04s">
         <div class="svc-icon">📱</div>
-        <h4>Meta or Snapchat Ads</h4>
+        <h3>Meta or Snapchat Ads</h3>
         <p>Campaign setup, creative briefs, audience targeting, and ongoing management. I've run these with my own money — I know what works.</p>
       </div>
 
       <div class="svc-card fade-up" style="transition-delay:.12s">
         <div class="svc-icon">🔎</div>
-        <h4>Google Ads + Conversion Tracking</h4>
+        <h3>Google Ads + Conversion Tracking</h3>
         <p>Search Ads setup with GTM-connected conversion tracking so you know which keywords produce real leads, not just clicks.</p>
       </div>
 
       <div class="svc-card fade-up" style="transition-delay:.20s">
         <div class="svc-icon">🚀</div>
-        <h4>Full Launch Bundle</h4>
+        <h3>Full Launch Bundle</h3>
         <p>Everything together: site + full tracking stack + ad campaigns. Start from zero and be live with a converting store and trackable revenue.</p>
       </div>
 
@@ -1888,97 +1890,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <div class="cert-card fade-up">
         <div class="cert-preview">
-          <img src="Certificates/Digital Marketing Certificate Hubspot.png" alt="HubSpot Digital Marketing Certificate">
+          <img src="Certificates/Digital Marketing Certificate Hubspot.png" alt="HubSpot Digital Marketing Certificate" loading="lazy" width="800" height="160">
           <span class="cert-issuer-badge">HubSpot</span>
         </div>
         <div class="cert-body">
-          <h4>Digital Marketing Certificate</h4>
+          <h3>Digital Marketing Certificate</h3>
           <p>HubSpot Academy — Inbound marketing, content, email & social strategy</p>
-          <a href="Certificates/Digital Marketing Certificate Hubspot.png" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Digital Marketing Certificate Hubspot.png" target="_blank" class="cert-view" aria-label="View HubSpot Digital Marketing Certificate">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.08s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/Fundamentals of Digital Marketing.jpg" alt="Fundamentals of Digital Marketing" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/Fundamentals of Digital Marketing.jpg" alt="Fundamentals of Digital Marketing" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">Google</span>
         </div>
         <div class="cert-body">
-          <h4>Fundamentals of Digital Marketing</h4>
+          <h3>Fundamentals of Digital Marketing</h3>
           <p>Google — Certified in core digital marketing principles</p>
-          <a href="Certificates/Fundamentals of Digital Marketing.pdf" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Fundamentals of Digital Marketing.pdf" target="_blank" class="cert-view" aria-label="View Google Fundamentals of Digital Marketing Certificate">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.16s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/Google My Business _ Certificate.jpg" alt="Google My Business" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/Google My Business _ Certificate.jpg" alt="Google My Business" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">Google</span>
         </div>
         <div class="cert-body">
-          <h4>Google My Business</h4>
+          <h3>Google My Business</h3>
           <p>Google — Local business listing optimisation and management</p>
-          <a href="Certificates/Google My Business _ Certificate.pdf" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Google My Business _ Certificate.pdf" target="_blank" class="cert-view" aria-label="View Google My Business Certificate">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.04s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/Certificate_SEO.jpg" alt="SEO Certification" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/Certificate_SEO.jpg" alt="SEO Certification" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">SEO</span>
         </div>
         <div class="cert-body">
-          <h4>SEO Certification</h4>
+          <h3>SEO Certification</h3>
           <p>Search engine optimisation fundamentals and on-page techniques</p>
-          <a href="Certificates/Certificate_SEO.pdf" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Certificate_SEO.pdf" target="_blank" class="cert-view" aria-label="View SEO Certification">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.12s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/DATA ANALYTICS AND BUSINESS INTELLIGENCE_Certificate.jpg" alt="Data Analytics Certificate" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/DATA ANALYTICS AND BUSINESS INTELLIGENCE_Certificate.jpg" alt="Data Analytics Certificate" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">Analytics</span>
         </div>
         <div class="cert-body">
-          <h4>Data Analytics & Business Intelligence</h4>
+          <h3>Data Analytics & Business Intelligence</h3>
           <p>Data analysis, reporting and business intelligence fundamentals</p>
-          <a href="Certificates/DATA ANALYTICS AND BUSINESS INTELLIGENCE_Certificate.pdf" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/DATA ANALYTICS AND BUSINESS INTELLIGENCE_Certificate.pdf" target="_blank" class="cert-view" aria-label="View Data Analytics and Business Intelligence Certificate">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.20s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/Google Soft Skills_Certificate.jpg" alt="Google Soft Skills" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/Google Soft Skills_Certificate.jpg" alt="Google Soft Skills" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">Google</span>
         </div>
         <div class="cert-body">
-          <h4>Google Soft Skills</h4>
+          <h3>Google Soft Skills</h3>
           <p>Google — Professional communication and workplace effectiveness</p>
-          <a href="Certificates/Google Soft Skills_Certificate.pdf" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Google Soft Skills_Certificate.pdf" target="_blank" class="cert-view" aria-label="View Google Soft Skills Certificate">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.24s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/Google Ads Search Certification.png" alt="Google Ads Search Certification" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/Google Ads Search Certification.png" alt="Google Ads Search Certification" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">Google</span>
         </div>
         <div class="cert-body">
-          <h4>Google Ads Search Certification</h4>
+          <h3>Google Ads Search Certification</h3>
           <p>Google — Certified in Google Search Ads campaign setup and management</p>
-          <a href="Certificates/Google Ads Search Certification.png" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Google Ads Search Certification.png" target="_blank" class="cert-view" aria-label="View Google Ads Search Certification">View Certificate →</a>
         </div>
       </div>
 
       <div class="cert-card fade-up" style="transition-delay:.28s">
         <div class="cert-preview" style="padding:0; overflow:hidden;">
-          <img src="Certificates/Google Ads Measurement Certification.jpg" alt="Google Ads Measurement Certification" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
+          <img src="Certificates/Google Ads Measurement Certification.jpg" alt="Google Ads Measurement Certification" loading="lazy" width="800" height="160" style="width:100%;height:160px;object-fit:cover;object-position:top;display:block;">
           <span class="cert-issuer-badge">Google</span>
         </div>
         <div class="cert-body">
-          <h4>Google Ads Measurement Certification</h4>
+          <h3>Google Ads Measurement Certification</h3>
           <p>Google — Certified in Google Ads measurement, conversion tracking and reporting</p>
-          <a href="Certificates/Google Ads Measurement Certification.jpg" target="_blank" class="cert-view">View Certificate →</a>
+          <a href="Certificates/Google Ads Measurement Certification.jpg" target="_blank" class="cert-view" aria-label="View Google Ads Measurement Certification">View Certificate →</a>
         </div>
       </div>
 
@@ -1986,6 +1988,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+</main>
 <!-- THANK YOU -->
 <section class="thankyou-section">
   <div class="container">
@@ -2053,32 +2056,42 @@ function handleSubmit(e) {
   window.dataLayer.push({ event: 'audit_form_submit' });
 }
 
-// Carousels
-document.querySelectorAll('.carousel').forEach(carousel => {
-  const slides = carousel.querySelector('.carousel-slides');
-  const dotBtns = carousel.querySelectorAll('.carousel-dot');
-  const total = carousel.querySelectorAll('.carousel-slide').length;
-  let current = 0;
-  let timer;
+// Carousels — deferred until idle to reduce TBT
+function initCarousels() {
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const slides = carousel.querySelector('.carousel-slides');
+    const dotBtns = carousel.querySelectorAll('.carousel-dot');
+    const total = carousel.querySelectorAll('.carousel-slide').length;
+    let current = 0;
+    let timer;
 
-  function goTo(n) {
-    current = (n + total) % total;
-    slides.style.transform = `translateX(-${current * 100}%)`;
-    dotBtns.forEach((d, i) => d.classList.toggle('active', i === current));
-  }
+    dotBtns.forEach((d, i) => d.setAttribute('aria-label', 'Slide ' + (i + 1)));
 
-  function startTimer() {
-    clearInterval(timer);
-    timer = setInterval(() => goTo(current + 1), 3500);
-  }
+    function goTo(n) {
+      current = (n + total) % total;
+      slides.style.transform = `translateX(-${current * 100}%)`;
+      dotBtns.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
 
-  carousel.querySelector('.carousel-prev').addEventListener('click', () => { goTo(current - 1); startTimer(); });
-  carousel.querySelector('.carousel-next').addEventListener('click', () => { goTo(current + 1); startTimer(); });
-  dotBtns.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startTimer(); }));
+    function startTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(current + 1), 3500);
+    }
 
-  goTo(0);
-  startTimer();
-});
+    carousel.querySelector('.carousel-prev').addEventListener('click', () => { goTo(current - 1); startTimer(); });
+    carousel.querySelector('.carousel-next').addEventListener('click', () => { goTo(current + 1); startTimer(); });
+    dotBtns.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startTimer(); }));
+
+    goTo(0);
+    startTimer();
+  });
+}
+
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(initCarousels, { timeout: 2000 });
+} else {
+  setTimeout(initCarousels, 200);
+}
 </script>
 
 <!-- WHATSAPP FLOAT -->
