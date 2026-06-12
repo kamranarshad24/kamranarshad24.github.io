@@ -11,10 +11,10 @@ body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; back
 
 /* NAV */
 nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.88); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 14px; }
 .nav-logo img { height: 36px; width: auto; display: block; }
-.nav-logo { text-decoration: none; }
-.btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all var(--transition); border: none; font-family: inherit; }
+.nav-logo { text-decoration: none; flex-shrink: 1; min-width: 0; }
+.btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 600; text-decoration: none; cursor: pointer; transition: all var(--transition); border: none; font-family: inherit; white-space: nowrap; flex-shrink: 0; }
 .btn-primary { background: var(--accent); color: #fff; }
 .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 8px 28px rgba(37,99,235,.32); }
 .btn-outline { background: transparent; color: var(--ink); border: 1.5px solid var(--border); }
@@ -111,4 +111,6 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.88);
 @media (max-width: 480px) {
   .cs-footer-inner { flex-direction: column; gap: 16px; text-align: center; }
   .results-grid { grid-template-columns: 1fr 1fr !important; }
+  .nav-logo img { height: 28px; max-width: 46vw; object-fit: contain; object-position: left center; }
+  .nav-inner .btn-outline { padding: 8px 14px; font-size: 13px; }
 }
