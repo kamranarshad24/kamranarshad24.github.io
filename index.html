@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --card: #FFFFFF;
   --line: #DDE5F0;
   --line-strong: #C6D2E4;
-  --blue: #1C79E9;
+  --blue: #166FDB; /* ≥4.5:1 contrast with white text (WCAG AA) */
   --blue-deep: #0F5FC4;
   --blue-tint: #E8F1FD;
   --navy: #081A36;
@@ -99,6 +99,7 @@ img { max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   .fade-up { opacity: 1; transform: none; transition: none; }
 }
+/* Hero renders immediately — it must never wait for JS, it holds the LCP element */
 
 .section { padding: 104px 0; }
 .section-head { margin-bottom: 56px; max-width: 640px; }
@@ -182,9 +183,10 @@ img { max-width: 100%; }
   display: inline-block;
   animation: pulse 2.2s ease-in-out infinite;
 }
+/* opacity-only so the browser can composite it — box-shadow forced a repaint every frame */
 @keyframes pulse {
-  0%,100% { opacity: 1; box-shadow: 0 0 0 0 rgba(43,217,159,.5); }
-  50% { opacity: .7; box-shadow: 0 0 0 5px rgba(43,217,159,0); }
+  0%,100% { opacity: 1; }
+  50% { opacity: .45; }
 }
 .topbar a { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .topbar a:hover { color: #2BD99F; }
@@ -1100,7 +1102,7 @@ footer {
   font-family: var(--mono);
   font-size: 11.5px;
   letter-spacing: .05em;
-  color: #6A82A8;
+  color: #93A9CB; /* ≥4.5:1 on navy (WCAG AA) */
 }
 
 /* ---------- WHATSAPP FLOAT ---------- */
@@ -1304,6 +1306,7 @@ footer {
 .lightbox-body { overflow: auto; background: var(--bg); }
 .lightbox-body img { display: block; width: 100%; height: auto; }
 </style>
+<noscript><style>.fade-up { opacity: 1; transform: none; }</style></noscript>
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -1515,7 +1518,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="hero-grid">
 
-      <div class="hero-copy fade-up">
+      <div class="hero-copy">
         <span class="hero-eyebrow"><span class="dot"></span>AVAILABLE — TAKING NEW CLIENTS</span>
         <h1>Your ads are only as good as your <em>tracking</em>.</h1>
         <p class="hero-sub">
@@ -1540,7 +1543,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="hero-visual fade-up" style="transition-delay:.15s">
+      <div class="hero-visual">
         <div class="hero-photo-card">
           <picture>
             <source srcset="Kamran%20Image.webp" type="image/webp">
