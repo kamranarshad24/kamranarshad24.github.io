@@ -136,7 +136,8 @@ code{font-family:var(--mono);font-size:.86em;background:var(--blue-tint);color:v
 
 /* ---------- figures, diagrams, screenshots ---------- */
 figure{margin:30px 0}
-figure.wide{margin:34px 0}
+figure.wide{margin:34px 0;width:min(1060px,calc(100vw - 40px));max-width:none;
+  margin-left:50%;transform:translateX(-50%)}
 .fig-frame{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
   padding:22px 20px;overflow-x:auto}
 .fig-frame svg{display:block;height:auto;max-width:100%}
@@ -378,7 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>The <a href="https://forbusiness.snapchat.com/advertising/snap-pixel" rel="noopener">Snap Pixel Helper</a> browser extension does the same job with a friendlier interface, and will also tell you whether the pixel is installed at all. I use the Network tab because it shows the exact payload, and the payload is usually where the answer is.</p>
 
-    <figure>
+    <figure class="wide">
       <div class="fig-frame scrolls">
         <svg viewBox="0 0 900 226" role="img" aria-labelledby="nTitle nDesc" xmlns="http://www.w3.org/2000/svg">
           <title id="nTitle">What a healthy Snapchat event sequence looks like in the Network tab</title>
@@ -501,7 +502,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cause-h"><span class="rank">06</span><h3>Deduplication is eating the event</h3></div>
       <p>If you run the pixel <em>and</em> the Conversions API — which you should — Snapchat deduplicates using <code>client_dedup_id</code> (48-hour window) or <code>transaction_id</code> (30 days). Two events sharing an identifier are counted once, by design.</p>
       <p>It becomes a problem when the browser and server sides disagree about what that identifier is. Get the mapping wrong and you either double-count everything or silently lose one side. Snap's guidance is that non-purchase events map to <code>client_dedup_id</code>, and purchase events map to <code>transaction_id</code> — and crucially, <strong>the value must match across every path sending that event</strong>.</p>
-      <figure>
+      <figure class="wide">
         <div class="fig-frame scrolls">
           <svg viewBox="0 0 900 196" role="img" aria-labelledby="dTitle dDesc" xmlns="http://www.w3.org/2000/svg">
             <title id="dTitle">Snapchat deduplication windows compared</title>
