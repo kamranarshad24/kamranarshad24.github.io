@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -588,7 +601,7 @@ nav.site-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 34px; height: 34px;
+  width: 44px; height: 44px;
   border-radius: 50%;
   border: none;
   background: rgba(8,26,54,.62);
@@ -607,22 +620,38 @@ nav.site-nav {
 .carousel-next { right: 12px; }
 .carousel-dots {
   position: absolute;
-  bottom: 12px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 6px;
+  gap: 12px;
+  /* room for the enlarged hit areas so they never sit under the slide edge */
+  padding: 6px 4px;
 }
 .carousel-dot {
-  width: 7px; height: 7px;
+  position: relative;
+  width: 10px; height: 10px;
   border-radius: 50%;
   border: none;
-  background: rgba(255,255,255,.45);
+  background: rgba(255,255,255,.5);
   cursor: pointer;
   padding: 0;
   transition: background var(--t), width var(--t);
 }
-.carousel-dot.active { background: #fff; width: 18px; border-radius: 100px; }
+/* Invisible 44px-tall hit area centred on each dot. The visual stays small;
+   the tappable region meets the accessibility floor. Width is capped to the
+   dot pitch so neighbouring targets never overlap. */
+.carousel-dot::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px;
+  height: 44px;
+}
+.carousel-dot.active { background: #fff; width: 22px; border-radius: 100px; }
+.carousel-dot:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
 
 .case-body { padding: 28px 28px 26px; display: flex; flex-direction: column; flex: 1; }
 .case-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -1453,7 +1482,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="modal-sub">I'll review your ad account or store live in 15 minutes and tell you one thing you can fix this week.</p>
     <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST" onsubmit="handleSubmit(event)">
       <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
-      <input type="hidden" name="_captcha" value="true">
+      <!-- Captcha off by choice: zero submit friction. The _honey honeypot below
+           catches most bots invisibly. Flip to "true" if real spam ever appears. -->
+      <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://kamranarshad24.github.io/thankyou.html">
       <!-- Second destination for every lead. Replace with the address you want the
@@ -2151,6 +2182,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="#services">Services</a>
         <a href="#reviews">Reviews</a>
         <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="#" data-consent-open>Cookie Settings</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -2267,5 +2299,6 @@ if ('requestIdleCallback' in window) {
 }
 </script>
 
+<script src="consent.js" defer></script>
 </body>
 </html>

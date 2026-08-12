@@ -114,3 +114,48 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.88);
   .nav-logo img { height: 28px; max-width: 46vw; object-fit: contain; object-position: left center; }
   .nav-inner .btn-outline { padding: 8px 14px; font-size: 13px; }
 }
+
+/* ---------- LeadBridge custom-build block ---------- */
+.lb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 22px 0 18px;
+}
+.lb-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 18px 20px;
+}
+.lb-card .lb-h {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 7px;
+  letter-spacing: -.2px;
+}
+.lb-card p { font-size: 14.2px; line-height: 1.6; color: var(--muted); margin: 0; }
+.lb-card code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: .88em;
+  background: var(--accent-dim);
+  color: var(--accent-dark);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+.lb-feat { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 16px; }
+.lb-note {
+  font-size: 13.8px;
+  line-height: 1.6;
+  color: var(--subtle);
+  border-left: 2px solid var(--border);
+  padding-left: 14px;
+  margin: 0;
+}
+.tool-chip.lb-chip {
+  background: var(--accent-dim);
+  color: var(--accent-dark);
+  border-color: rgba(37, 99, 235, .28);
+  font-weight: 600;
+}

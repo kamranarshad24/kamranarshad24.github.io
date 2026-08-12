@@ -3,6 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
 <title>Mr Expert Carpet Cleaning — Case Study | Kamran Arshad</title>
 <meta name="description" content="Full digital build for a UK carpet cleaning business — WordPress site, GTM server-side, GA4, Facebook CAPI, local SEO, and Google Ads.">
@@ -147,8 +160,50 @@
         </div>
 
         <div class="cs-section">
+          <span class="label">Custom Build</span>
+          <h3>The form was losing leads. So I replaced it with software I wrote.</h3>
+          <p>The site launched on a standard Elementor form, which is <em>email-first</em> — it composes an email and sends it. If that send fails, there is no second copy. The lead is simply gone, and nobody knows it existed. On top of that, Google Ads had no way of seeing which clicks turned into booked jobs, so it was optimising toward form submissions rather than revenue.</p>
+          <p>Rather than bolt on a third-party SaaS with a monthly fee and a data middleman, I built <strong>LeadBridge</strong> — a self-owned WordPress plugin, first-party, no paid dependencies.</p>
+
+          <div class="lb-grid">
+            <div class="lb-card">
+              <div class="lb-h">Save-first architecture</div>
+              <p>Every lead is written to a custom database table <em>before</em> any email, webhook or API call is attempted. Integrations are best-effort by design — a failing third-party API can never break lead capture.</p>
+            </div>
+            <div class="lb-card">
+              <div class="lb-h">Revenue back into Google Ads</div>
+              <p>Captures <code>gclid</code> and UTM parameters at submission, then pushes the real job value back as an offline conversion — including enhanced conversions for leads. Bidding optimises toward money, not form-fills.</p>
+            </div>
+            <div class="lb-card">
+              <div class="lb-h">Mini-CRM</div>
+              <p>Pipeline stages, job value, notes and a revenue dashboard — so the monthly question "what did the ad spend actually earn?" has an answer pulled from the database rather than estimated.</p>
+            </div>
+            <div class="lb-card">
+              <div class="lb-h">Schema-free fields</div>
+              <p>A JSON column stores submitted fields, so the form can change shape without a single database migration. Fields are edited from the admin UI.</p>
+            </div>
+          </div>
+
+          <div class="lb-feat">
+            <span class="tool-chip">Save-first REST endpoint</span>
+            <span class="tool-chip">Spam protection</span>
+            <span class="tool-chip">gclid + UTM capture</span>
+            <span class="tool-chip">SMTP mailer</span>
+            <span class="tool-chip">WhatsApp alerts</span>
+            <span class="tool-chip">Customer auto-reply</span>
+            <span class="tool-chip">Automatic review requests</span>
+            <span class="tool-chip">Google Sheet mirror</span>
+            <span class="tool-chip">CSV export</span>
+            <span class="tool-chip">Responsive admin UI</span>
+          </div>
+
+          <p class="lb-note">Built as a standard WordPress plugin in PHP classes — form, database, fields editor, mailer, WhatsApp, Google Ads, stats, admin and settings modules. GPL-2.0+, owned outright by the business, with no recurring licence.</p>
+        </div>
+
+        <div class="cs-section">
           <span class="label">Tools & Platforms</span>
           <div class="tools-wrap">
+            <span class="tool-chip lb-chip">LeadBridge (custom plugin)</span>
             <span class="tool-chip">WordPress</span>
             <span class="tool-chip">Elementor</span>
             <span class="tool-chip">Google Tag Manager</span>
@@ -223,5 +278,6 @@ function closeModal(){document.getElementById('audit-modal').style.display='none
 document.getElementById('audit-modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
 </script>
+<script src="consent.js" defer></script>
 </body>
 </html>
