@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Snapchat Purchase Events Not Firing: The Diagnostic Sequence</title>
+<meta name="description" content="Your Snap Pixel loads but PURCHASE never appears in Events Manager. Six causes ranked by how often they turn out to be the problem, with the exact checks — from a store that ran 1,034 tracked purchases on Snapchat.">
+<link rel="canonical" href="https://kamranarshad24.github.io/blog/snapchat-purchase-event-not-firing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://kamranarshad24.github.io/blog/snapchat-purchase-event-not-firing.html">
+<meta property="og:title" content="Snapchat Purchase Events Not Firing: The Diagnostic Sequence">
+<meta property="og:description" content="Six causes ranked by how often they turn out to be the problem, with the exact checks — from a store that ran 1,034 tracked purchases on Snapchat.">
+<meta property="og:image" content="https://kamranarshad24.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Snapchat Purchase Events Not Firing: The Diagnostic Sequence">
+<meta name="twitter:description" content="Six causes ranked by how often they turn out to be the problem, with the exact checks.">
+<meta name="twitter:image" content="https://kamranarshad24.github.io/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0B2143; --ink-soft:#2E4368; --muted:#5C6E8C; --faint:#8B9AB4;
+  --bg:#F4F7FB; --card:#FFFFFF; --line:#DDE5F0; --line-strong:#C6D2E4;
+  --blue:#166FDB; --blue-deep:#0F5FC4; --blue-tint:#E8F1FD; --navy:#081A36;
+  --amber:#B5761A; --amber-tint:#FBF1DF; --green:#0F7A55; --green-tint:#E3F5ED;
+  --display:'Bricolage Grotesque',Georgia,serif;
+  --body:'Instrument Sans',-apple-system,sans-serif;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --r:16px; --r-sm:10px;
+}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);
+  line-height:1.68;-webkit-font-smoothing:antialiased;font-size:17px}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+.narrow{max-width:720px}
+a{color:var(--blue)}
+
+.topbar{border-bottom:1px solid var(--line);background:var(--card)}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;gap:18px;height:68px}
+.brand{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.topnav{display:flex;gap:22px;align-items:center}
+.topnav a{font-size:14.5px;font-weight:500;color:var(--muted);text-decoration:none}
+.topnav a:hover{color:var(--blue)}
+.btn{background:var(--blue);color:#fff !important;padding:10px 18px;border-radius:999px;
+  font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.btn:hover{background:var(--blue-deep)}
+
+.post-head{padding:60px 0 34px;border-bottom:1px solid var(--line)}
+.crumb{font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--faint);margin-bottom:18px}
+.crumb a{color:var(--blue);text-decoration:none}
+h1{font-family:var(--display);font-size:clamp(32px,5vw,52px);font-weight:700;
+  letter-spacing:-.022em;line-height:1.06;text-wrap:balance;max-width:19ch}
+.byline{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px;font-family:var(--mono);
+  font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+
+article{padding:38px 0 60px}
+article h2{font-family:var(--display);font-size:clamp(24px,3.2vw,32px);font-weight:700;
+  letter-spacing:-.018em;line-height:1.16;margin:48px 0 14px;text-wrap:balance}
+article h3{font-size:19px;font-weight:700;margin:30px 0 9px;letter-spacing:-.008em}
+article p{margin:0 0 17px}
+article ul,article ol{margin:0 0 18px;padding-left:22px}
+article li{margin-bottom:9px}
+article li::marker{color:var(--faint)}
+strong{font-weight:670}
+code{font-family:var(--mono);font-size:.86em;background:var(--blue-tint);color:var(--blue-deep);
+  padding:2px 6px;border-radius:4px;white-space:nowrap}
+
+.answer{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--blue);
+  border-radius:var(--r-sm);padding:24px 26px;margin:8px 0 34px}
+.answer p{margin:0;font-size:18.5px;line-height:1.6;color:var(--ink)}
+.answer p+p{margin-top:12px}
+
+.cause{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:24px 26px;margin-bottom:16px}
+.cause-h{display:flex;gap:13px;align-items:baseline;margin-bottom:6px;flex-wrap:wrap}
+.rank{font-family:var(--mono);font-size:12px;font-weight:500;color:#fff;background:var(--navy);
+  padding:3px 9px;border-radius:4px;letter-spacing:.05em;flex-shrink:0}
+.cause-h h3{margin:0;font-size:19.5px}
+.cause p:last-child{margin-bottom:0}
+.check{background:var(--bg);border-radius:var(--r-sm);padding:14px 16px;margin-top:14px;
+  font-size:15.5px;line-height:1.6}
+.check b{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue);display:block;margin-bottom:5px}
+
+.note{border:1px solid var(--line);border-left:3px solid var(--amber);background:var(--amber-tint);
+  padding:18px 20px;border-radius:var(--r-sm);margin:26px 0}
+.note p{margin:0;font-size:16px}
+.note p+p{margin-top:10px}
+.note b.l{font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--amber);display:block;margin-bottom:7px}
+
+.data{background:var(--navy);color:#E8EEF6;border-radius:var(--r);padding:28px 30px;margin:30px 0}
+.data h3{color:#fff;margin:0 0 6px;font-family:var(--display);font-size:21px;font-weight:700}
+.data .sub{color:#93A9C6;font-size:14px;font-family:var(--mono);letter-spacing:.05em;margin-bottom:20px}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1px;
+  background:rgba(255,255,255,.14);border-radius:var(--r-sm);overflow:hidden}
+.figs div{background:var(--navy);padding:15px 16px}
+.figs dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:#8FA6C4;margin-bottom:6px}
+.figs dd{margin:0;font-family:var(--display);font-size:27px;font-weight:700;color:#fff;
+  line-height:1;font-variant-numeric:tabular-nums}
+.data>p{color:#B6C8DE;font-size:15px;margin:18px 0 0}
+.data>p:last-child{margin-bottom:0}
+
+.cta{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:30px 32px;margin:44px 0 0;text-align:center}
+.cta h2{margin:0 0 10px;font-size:25px}
+.cta p{color:var(--muted);max-width:52ch;margin:0 auto 20px;font-size:16px}
+
+footer{border-top:1px solid var(--line);padding:32px 0;background:var(--card);margin-top:10px}
+footer .container{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
+  font-size:14px;color:var(--muted)}
+footer a{text-decoration:none}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:620px){
+  .topnav a:not(.btn){display:none}
+  body{font-size:16.5px}
+  .post-head{padding:44px 0 28px}
+  .data,.cta{padding:22px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Snapchat Purchase Events Not Firing: The Diagnostic Sequence",
+  "description": "Six causes of missing Snapchat PURCHASE events, ranked, with the exact checks for each.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://kamranarshad24.github.io/",
+    "jobTitle": "Paid Ads & Conversion Tracking Specialist"
+  },
+  "publisher": { "@type": "Person", "name": "Kamran Arshad" },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://kamranarshad24.github.io/blog/snapchat-purchase-event-not-firing.html"
+  },
+  "image": "https://kamranarshad24.github.io/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://kamranarshad24.github.io/"},
+    {"@type":"ListItem","position":2,"name":"Field Notes","item":"https://kamranarshad24.github.io/blog/"},
+    {"@type":"ListItem","position":3,"name":"Snapchat Purchase Events Not Firing"}
+  ]
+}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Snapchat</div>
+    <h1>Snapchat purchase events not firing: the diagnostic sequence</h1>
+    <div class="byline">
+      <span>Kamran Arshad</span><span>12 Aug 2026</span><span>9 min read</span>
+    </div>
+  </div>
+</header>
+
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>If your Snap Pixel loads but <code>PURCHASE</code> never appears in Events Manager, the cause is almost always one of six things: a lowercase event name, a missing <code>transaction_id</code>, the pixel being absent from the real confirmation page, an off-site payment redirect breaking the session, a single-page checkout re-initialising the pixel, or events being deduplicated away against a Conversions API feed.</p>
+      <p>Work through them in that order. The first three account for most of what I find.</p>
+    </div>
+
+    <p>Snapchat tracking gets far less written about than Meta or Google, which means when it breaks you are mostly on your own. The articles that do exist tend to be written by companies selling a tracking product, so they stop at "install our app." This is the sequence I actually run, in the order I run it, and why that order.</p>
+
+    <h2>First: confirm the event genuinely isn't arriving</h2>
+
+    <p>Before changing anything, establish whether the event is missing or merely delayed. Two checks, sixty seconds.</p>
+
+    <p><strong>Check the network, not the dashboard.</strong> Open your confirmation page in Chrome, open DevTools (F12), go to the <strong>Network</strong> tab, and filter for <code>tr.snapchat.com</code>. Complete a real test purchase. If you see a request fire with your pixel ID and the event name, the browser is doing its job and your problem is downstream — reporting, deduplication, or attribution. If nothing fires, the problem is on the page.</p>
+
+    <p>The <a href="https://forbusiness.snapchat.com/advertising/snap-pixel" rel="noopener">Snap Pixel Helper</a> browser extension does the same job with a friendlier interface, and will also tell you whether the pixel is installed at all. I use the Network tab because it shows the exact payload, and the payload is usually where the answer is.</p>
+
+    <div class="note">
+      <b class="l">Give it time before you panic</b>
+      <p>Events Manager reporting is not instant. Before concluding an event is missing, wait a few hours and re-check. I have watched people rewrite a working checkout because they looked at a dashboard ninety seconds after a test order.</p>
+    </div>
+
+    <h2>The six causes, ranked</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>The event name is lowercase</h3></div>
+      <p>Snapchat's standard events are <strong>uppercase</strong>: <code>PURCHASE</code>, <code>ADD_CART</code>, <code>PAGE_VIEW</code>, <code>START_CHECKOUT</code>. If you send <code>purchase</code>, it is not recognised as a standard event. The insidious part is that it may still fire and still appear somewhere — it simply won't be treated as the standard conversion, so campaign optimisation and reporting behave as though nothing happened.</p>
+      <p>This is number one because it produces the exact symptom people describe — "the pixel is firing but Events Manager shows nothing" — and because copying a Meta implementation across is a natural thing to do. Meta uses <code>Purchase</code>. Snapchat does not.</p>
+      <div class="check"><b>The check</b>In the Network tab, read the event name in the request payload. It must be exactly <code>PURCHASE</code>. Capitalisation is not cosmetic here.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>No transaction_id is being sent</h3></div>
+      <p>Without <code>transaction_id</code>, Snapchat has no way to tell a genuine second order from the same customer refreshing the confirmation page. Snap documents a <strong>30-day deduplication window</strong> on <code>transaction_id</code>, versus 48 hours for <code>client_dedup_id</code>.</p>
+      <p>The failure mode cuts both ways, which is why it belongs this high. Omit it and refreshes inflate your purchase count. Send a value that isn't actually unique per order — a cart ID, a checkout ID, a session ID — and legitimate orders get collapsed into one and <em>vanish</em>. The second case looks exactly like "my events aren't firing."</p>
+      <div class="check"><b>The check</b>Place two test orders. Confirm the <code>transaction_id</code> differs between them, and that it matches the order number your store actually assigns.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>The pixel isn't on the page that actually confirms the order</h3></div>
+      <p>Almost everyone installs the pixel sitewide and assumes the confirmation page inherits it. Frequently it doesn't. Hosted checkouts, order-status pages and post-purchase upsell flows are often rendered outside the theme or template that carries your tracking code.</p>
+      <p>Worth checking specifically: if you run a post-purchase upsell, the page a customer lands on immediately after paying may not be the page you think of as the thank-you page.</p>
+      <div class="check"><b>The check</b>Complete a real order. On the page you land on, view source and search for your pixel ID. Do not infer it from the theme — look at the page the customer is actually on.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>An off-site payment redirect breaks the session</h3></div>
+      <p>When checkout hands off to an external gateway and returns the customer to an order-received page, that round trip can break the browser session the pixel depends on. The purchase completes, the customer sees their confirmation, and the event never reaches Snapchat — or arrives stripped of the identifiers needed to attribute it.</p>
+      <p>This is the point where a browser-only setup stops being sufficient. Server-side tracking via the <a href="https://developers.snap.com/marketing-api/Conversions-API/Introduction" rel="noopener">Conversions API</a> is the durable fix, because the event originates from your server and never depends on surviving a redirect.</p>
+      <div class="check"><b>The check</b>Does your payment flow leave your domain? If yes, treat browser-only tracking as best-effort and plan for CAPI.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>A single-page checkout re-initialises the pixel</h3></div>
+      <p>In single-page applications, if pixel initialisation runs on every virtual page view, the pixel's state resets each time. Advanced matching data gathered earlier in the flow is lost, so the purchase event arrives without the identifiers that make it useful — thin, poorly matched, and sometimes unattributed.</p>
+      <p>The event fires. It just doesn't carry what it needs, which is why this one is easy to misread as "working."</p>
+      <div class="check"><b>The check</b>Watch the Network tab through the whole checkout. Initialisation should happen once. Events should fire many times.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">06</span><h3>Deduplication is eating the event</h3></div>
+      <p>If you run the pixel <em>and</em> the Conversions API — which you should — Snapchat deduplicates using <code>client_dedup_id</code> (48-hour window) or <code>transaction_id</code> (30 days). Two events sharing an identifier are counted once, by design.</p>
+      <p>It becomes a problem when the browser and server sides disagree about what that identifier is. Get the mapping wrong and you either double-count everything or silently lose one side. Snap's guidance is that non-purchase events map to <code>client_dedup_id</code>, and purchase events map to <code>transaction_id</code> — and crucially, <strong>the value must match across every path sending that event</strong>.</p>
+      <div class="check"><b>The check</b>For one order, capture the identifier the browser sent and the identifier your server sent. They must be identical. Not similar — identical.</div>
+    </div>
+
+    <h2>Where my own numbers come from</h2>
+
+    <p>I don't have a large client sample on Snapchat, and I'm not going to pretend otherwise. What I have is one store I ran end to end — my own — where the tracking worked, which is the only reason I can talk about what a healthy Snapchat setup produces.</p>
+
+    <div class="data">
+      <h3>AlphaMart — my own store, not a client</h3>
+      <div class="sub">Snap Ads Manager · 4 Nov 2023 – 7 May 2024</div>
+      <dl class="figs">
+        <div><dt>Ad spend</dt><dd>$1,452</dd></div>
+        <div><dt>Purchases</dt><dd>1,034</dd></div>
+        <div><dt>Cost per purchase</dt><dd>$1.40</dd></div>
+        <div><dt>ROAS</dt><dd>5.69&times;</dd></div>
+      </dl>
+      <p>Context that matters, because otherwise these figures flatter me: at 5.69× on $1,452 that's roughly $8,262 in tracked revenue across 1,034 orders — an average order value of about $8. This was a low-ticket product. A $1.40 cost per purchase is a very different achievement at $8 AOV than it would be at $80, and anyone quoting a CPA without an AOV beside it is showing you half a number.</p>
+      <p>The figures are from a period ending May 2024. I'm dating them rather than presenting them as current.</p>
+    </div>
+
+    <p>The reason 1,034 purchases matter for this article isn't the ROAS. It's that a store sending a clean, correctly-named, properly-deduplicated <code>PURCHASE</code> event at that volume gives you a reliable baseline for what "working" looks like — and makes it obvious when something has stopped.</p>
+
+    <h2>What I can't tell you</h2>
+
+    <p>Two honest limitations, because an article that admits none is usually hiding some.</p>
+
+    <p><strong>I can't give you a frequency ranking from a large sample.</strong> The order above reflects a small number of accounts plus what the failure modes logically imply — a lowercase event name breaks reporting deterministically, so it belongs at the top regardless of how often I have personally seen it. Treat the ranking as a sensible search order, not a statistic.</p>
+
+    <p><strong>Snapchat's interface changes.</strong> Menu paths go stale quickly, which is why the checks above are anchored to the network request and the payload rather than to where a button currently sits. The payload is the thing that's actually true.</p>
+
+    <h2>The short version</h2>
+
+    <ol>
+      <li>Open the Network tab, filter <code>tr.snapchat.com</code>, place a test order.</li>
+      <li>Confirm the event name is exactly <code>PURCHASE</code>, uppercase.</li>
+      <li>Confirm <code>transaction_id</code> is present and unique per order.</li>
+      <li>Confirm the pixel exists on the page the customer actually lands on.</li>
+      <li>If checkout leaves your domain, plan for the Conversions API.</li>
+      <li>If you run pixel and CAPI, confirm the dedup identifier matches exactly on both sides.</li>
+    </ol>
+
+    <p>If you get through all six and the event still doesn't arrive, the problem is usually not the pixel — it's that the page you're testing isn't the page your customers reach. Go back and complete a real purchase with real money, on a phone, from an ad click. Test orders through a staging link skip precisely the parts that break.</p>
+
+    <div class="cta">
+      <h2>Not sure which of the six it is?</h2>
+      <p>Send me your store URL and I'll tell you what your tracking is doing. No account access needed to start — just the link.</p>
+      <a class="btn" href="../#contact">Get a free tracking audit →</a>
+    </div>
+
+  </div>
+</article>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Kamran Arshad — Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> · <a href="./">Field Notes</a> · <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>
