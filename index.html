@@ -1453,16 +1453,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="modal-sub">I'll review your ad account or store live in 15 minutes and tell you one thing you can fix this week.</p>
     <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST" onsubmit="handleSubmit(event)">
       <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
-      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_captcha" value="true">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_next" value="https://kamranarshad24.github.io/thankyou.html">
+      <!-- Second destination for every lead. Replace with the address you want the
+           backup copy sent to, then this line goes live. -->
+      <!-- <input type="hidden" name="_cc" value="REPLACE_WITH_BACKUP_EMAIL"> -->
+      <!-- Honeypot: invisible to people, filled by bots. FormSubmit discards those. -->
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"
+             style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
       <div class="field">
         <label for="f-name">Your Name *</label>
-        <input id="f-name" type="text" name="name" required placeholder="e.g. Ahmed Khan">
+        <input id="f-name" type="text" name="name" required autocomplete="name"
+               autocapitalize="words" placeholder="e.g. Sarah Mitchell">
       </div>
       <div class="field">
-        <label for="f-contact">Email or WhatsApp *</label>
-        <input id="f-contact" type="text" name="contact" required placeholder="your@email.com or +92-XXX-XXXXXXX">
+        <label for="f-contact">Email Address *</label>
+        <input id="f-contact" type="email" name="contact" required inputmode="email"
+               autocomplete="email" autocapitalize="off" autocorrect="off"
+               spellcheck="false" placeholder="you@company.com">
+      </div>
+      <div class="field">
+        <label for="f-wa">WhatsApp <span style="color:var(--faint);font-weight:400;">(optional)</span></label>
+        <input id="f-wa" type="tel" name="whatsapp" inputmode="tel" autocomplete="tel"
+               placeholder="+44 7700 900000">
       </div>
       <div class="field" style="margin-bottom:24px;">
         <label for="f-msg">What do you need help with?</label>

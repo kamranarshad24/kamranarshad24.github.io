@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Tracking Diagnostics — Kamran Arshad</title>
+<meta name="description" content="Field notes on broken conversion tracking — Meta pixel, GA4, Google Ads and Snapchat. Written from real accounts, with the numbers and the dates.">
+<link rel="canonical" href="https://kamranarshad24.github.io/blog/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://kamranarshad24.github.io/blog/">
+<meta property="og:title" content="Tracking Diagnostics">
+<meta property="og:description" content="Field notes on broken conversion tracking — Meta pixel, GA4, Google Ads and Snapchat. Written from real accounts, with the numbers and the dates.">
+<meta property="og:image" content="https://kamranarshad24.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tracking Diagnostics">
+<meta name="twitter:description" content="Field notes on broken conversion tracking, written from real accounts.">
+<meta name="twitter:image" content="https://kamranarshad24.github.io/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0B2143; --ink-soft:#2E4368; --muted:#5C6E8C; --faint:#8B9AB4;
+  --bg:#F4F7FB; --card:#FFFFFF; --line:#DDE5F0; --line-strong:#C6D2E4;
+  --blue:#166FDB; --blue-deep:#0F5FC4; --blue-tint:#E8F1FD; --navy:#081A36;
+  --display:'Bricolage Grotesque',Georgia,serif;
+  --body:'Instrument Sans',-apple-system,sans-serif;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --r:16px; --r-sm:10px;
+}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);
+  line-height:1.6;-webkit-font-smoothing:antialiased;font-size:16px}
+.container{max-width:940px;margin:0 auto;padding:0 24px}
+a{color:var(--blue)}
+
+.topbar{border-bottom:1px solid var(--line);background:var(--card)}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;
+  gap:18px;height:68px}
+.brand{font-family:var(--display);font-weight:700;font-size:18px;letter-spacing:-.01em;
+  color:var(--ink);text-decoration:none}
+.topnav{display:flex;gap:22px;align-items:center}
+.topnav a{font-size:14.5px;font-weight:500;color:var(--muted);text-decoration:none}
+.topnav a:hover,.topnav a:focus-visible{color:var(--blue)}
+.btn{background:var(--blue);color:#fff !important;padding:10px 18px;border-radius:999px;
+  font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.btn:hover{background:var(--blue-deep)}
+
+.hero{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.kicker{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--blue);display:flex;align-items:center;
+  gap:10px;margin-bottom:18px}
+.kicker::before{content:'';width:26px;height:1.5px;background:var(--blue);display:inline-block}
+h1{font-family:var(--display);font-size:clamp(36px,5.6vw,58px);font-weight:700;
+  letter-spacing:-.022em;line-height:1.04;max-width:16ch;text-wrap:balance}
+.hero p{font-size:17.5px;color:var(--muted);margin-top:18px;max-width:60ch;line-height:1.6}
+
+.list{padding:44px 0 80px}
+.post{background:var(--card);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 28px;margin-bottom:16px;display:block;text-decoration:none;color:inherit;
+  transition:border-color .22s ease,transform .22s ease}
+.post:hover{border-color:var(--line-strong);transform:translateY(-2px)}
+.post-meta{font-family:var(--mono);font-size:11.5px;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--faint);display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.post h2{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.012em;
+  line-height:1.24;margin-bottom:8px;text-wrap:balance}
+.post p{color:var(--muted);font-size:15px;max-width:68ch}
+
+.empty{background:var(--card);border:1px dashed var(--line-strong);border-radius:var(--r);
+  padding:44px 32px;text-align:center}
+.empty h2{font-family:var(--display);font-size:22px;font-weight:700;margin-bottom:10px}
+.empty p{color:var(--muted);font-size:15.5px;max-width:52ch;margin:0 auto 8px}
+
+footer{border-top:1px solid var(--line);padding:32px 0;background:var(--card)}
+footer .container{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;
+  font-size:14px;color:var(--muted)}
+footer a{text-decoration:none}
+
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media(max-width:620px){
+  .topnav a:not(.btn){display:none}
+  .hero{padding:52px 0 32px}
+}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a href="../#faq">FAQ</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container">
+    <div class="kicker">Field Notes</div>
+    <h1>Tracking diagnostics, from real accounts.</h1>
+    <p>Most articles about broken conversion tracking are written by software companies selling the fix. These are written from inside actual ad accounts — with the numbers, the dates, and the parts I couldn't explain.</p>
+  </div>
+</header>
+
+<main class="list">
+  <div class="container">
+
+    <!-- POSTS GO HERE. Template for each entry:
+    <a class="post" href="/blog/post-slug.html">
+      <div class="post-meta"><span>26 Aug 2026</span><span>Meta Pixel</span><span>8 min read</span></div>
+      <h2>Post title goes here</h2>
+      <p>One or two sentences that state the finding, not a teaser.</p>
+    </a>
+    -->
+
+    <div class="empty">
+      <h2>First diagnostics publishing shortly.</h2>
+      <p>Starting with Snapchat purchase events and the Shopify checkout migration deadline on 26 August 2026.</p>
+      <p><a href="../#contact">Get a free tracking audit →</a></p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Kamran Arshad — Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> · <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+</body>
+</html>
