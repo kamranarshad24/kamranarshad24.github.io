@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Auditing a Meta Ad Account You Just Inherited</title>
+<meta name="description" content="Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.">
+<link rel="canonical" href="https://kamranarshad24.github.io/blog/meta-ads-account-audit-inherited.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://kamranarshad24.github.io/blog/meta-ads-account-audit-inherited.html">
+<meta property="og:title" content="Auditing a Meta Ad Account You Just Inherited">
+<meta property="og:description" content="Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.">
+<meta property="og:image" content="https://kamranarshad24.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auditing a Meta Ad Account You Just Inherited">
+<meta name="twitter:description" content="Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.">
+<meta name="twitter:image" content="https://kamranarshad24.github.io/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Auditing a Meta Ad Account You Just Inherited",
+  "description": "Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.",
+  "datePublished": "2026-08-21",
+  "dateModified": "2026-08-21",
+  "author": {"@type":"Person","name":"Kamran Arshad","url":"https://kamranarshad24.github.io/","jobTitle":"Paid Ads & Conversion Tracking Specialist"},
+  "publisher": {"@type":"Person","name":"Kamran Arshad"},
+  "mainEntityOfPage": {"@type":"WebPage","@id":"https://kamranarshad24.github.io/blog/meta-ads-account-audit-inherited.html"},
+  "image": "https://kamranarshad24.github.io/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://kamranarshad24.github.io/"},
+    {"@type":"ListItem","position":2,"name":"Field Notes","item":"https://kamranarshad24.github.io/blog/"},
+    {"@type":"ListItem","position":3,"name":"Auditing an inherited Meta account"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What should I check first when auditing a Meta ad account?","acceptedAnswer":{"@type":"Answer","text":"Check the measurement layer before the campaigns. Count the pixels installed, reconcile reported purchases against real orders for a settled week, and confirm which pixel each campaign optimises toward. Judgements about creative and targeting are only as good as the conversion data underneath them."}},
+    {"@type":"Question","name":"How long does a Meta ads audit take?","acceptedAnswer":{"@type":"Answer","text":"The measurement checks take a few hours. The reconciliation needs a settled week of data that is at least two weeks old so attribution windows have closed. Rebuilding after a fix needs a further day or two of clean data before performance can be judged."}},
+    {"@type":"Question","name":"What does it mean if inherited campaigns show high ROAS but low revenue?","acceptedAnswer":{"@type":"Answer","text":"It usually means the conversion data is inflated. Common causes are duplicate pixels, purchase events firing on pages that are not orders, or duplicate events between the browser pixel and the Conversions API. Reconcile reported purchases against actual store orders before trusting any campaign-level number."}}
+  ]
+}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Audit</div>
+    <h1>The first thing to audit in an inherited ad account is not the ads.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>21 Aug 2026</span><span>9 min read</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>When you inherit a Meta account, audit the <strong>measurement layer before the campaigns</strong>. Count the pixels, reconcile reported purchases against real orders for a settled week, and map which pixel each campaign optimises toward.</p>
+      <p>Every judgement you are about to make &mdash; pause this, scale that &mdash; rests on conversion data you have not yet verified. Verify it first.</p>
+    </div>
+
+    <p>Most audit checklists start with creative, audiences and structure. Those matter. They matter <em>second</em>, because each one is judged against reported performance, and reported performance is exactly the thing an inherited account gives you no reason to trust.</p>
+
+    <p>I took over an account where doing this in the wrong order would have been expensive. The best-performing campaigns in Ads Manager were producing nothing. Audit the creative first and you would conclude those campaigns had the winning angle, and put more money behind them.</p>
+
+    
+    <div class="note">
+      <b class="l">Where these figures come from</b>
+      <p>One Shopify account I took over and audited &mdash; a skincare brand running Meta ads at roughly <strong>PKR 100,000 per day</strong>. The client asked me not to name them, so I have not. The numbers are as they stood in the account during that engagement.</p>
+      <p>This is <strong>one account</strong>, not a study. I am giving you the mechanism and one worked example, not an industry statistic. And I am not stating precise engagement dates here because I would rather omit them than approximate them.</p>
+    </div>
+
+    <h2>Phase one: can these numbers be believed?</h2>
+
+    <ol class="steps">
+      <li><b>Count the pixels</b>Shopify: <strong>Settings &rarr; Customer events</strong>, the <strong>Facebook &amp; Instagram sales channel</strong>, and <code>theme.liquid</code> searched for <code>fbq</code>. Then confirm in the browser with DevTools, because configured and firing are different things. More than one pixel ID is a finding, not a detail.</li>
+      <li><b>Reconcile a settled week</b>Events Manager purchases versus real store orders, same week, same timezone, at least two weeks old. Events Manager should approach your order count and never exceed it.</li>
+      <li><b>Map campaigns to pixels</b>For every active campaign, record which pixel its conversion event is configured against. This is the step that turns a vague discrepancy into a specific list of campaigns.</li>
+      <li><b>Trace each group&rsquo;s orders</b>Take the campaigns attached to each pixel and try to find their claimed orders in the store. A group whose orders cannot be traced is your problem, and you now know exactly how much budget it holds.</li>
+      <li><b>Check the Conversions API setup</b>If CAPI is running, confirm deduplication is actually working rather than merely configured &mdash; see <a href="capi-duplicate-purchase-events-deduplication.html">the deduplication article</a>.</li>
+    </ol>
+
+    <div class="note">
+      <b class="l">The question that ends phase one</b>
+      <p>Can you state, in one sentence, how many purchases the store made last week and how many Meta thinks it made &mdash; and explain the gap? If not, do not touch a budget yet. Every optimisation you make is a bet on numbers you cannot defend.</p>
+    </div>
+
+    <h2>What phase one found on that account</h2>
+
+    <p>Two pixels. One installed through the official sales channel, accurate. One installed by a third-party app, reporting purchases that had no corresponding orders.</p>
+
+    <p>Meta was reporting around 100 orders against 55 to 70 real ones. Roughly <strong>30 to 40% of a PKR 100,000 daily budget</strong> sat in campaigns optimising toward the inaccurate pixel &mdash; campaigns which, in Ads Manager, looked like the strongest in the account.</p>
+
+    <p>The previous marketer had not found it. That is not a criticism of their competence; it is a consequence of where they looked. Everything inside Ads Manager was internally consistent. The discrepancy is only visible when you compare Meta against the store, and that comparison sits outside the tool most media buyers live in.</p>
+
+    <h2>Phase two: only now, the account itself</h2>
+
+    <p>With trustworthy numbers, the normal audit becomes worth doing:</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Area</th><th>What to check</th><th>Why it matters after phase one</th></tr></thead>
+        <tbody>
+          <tr><td>Campaign structure</td><td>Overlapping audiences, fragmented budgets</td><td>Consolidation decisions need real performance data</td></tr>
+          <tr><td>Optimisation event</td><td>Are campaigns optimising to purchase, or to a proxy?</td><td>A proxy event inherits every flaw of the pixel reporting it</td></tr>
+          <tr><td>Attribution settings</td><td>Windows consistent across campaigns?</td><td>Mixed windows make campaigns non-comparable</td></tr>
+          <tr><td>Creative and angles</td><td>What actually drove traceable orders</td><td>Only meaningful once phantom conversions are gone</td></tr>
+          <tr><td>Audience overlap</td><td>Campaigns bidding against each other</td><td>Raises costs invisibly</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>The handover conversation</h2>
+
+    <p>If you find something like this, how you present it matters as much as finding it.</p>
+
+    <p>The client has been told for months that these campaigns were working. Someone made those decisions in good faith with the tools in front of them. Leading with &ldquo;your previous marketer missed this&rdquo; makes you look sharp and makes the client feel foolish, which is a poor trade.</p>
+
+    <p>Lead with the mechanism instead: the discrepancy was only visible from outside Ads Manager, here is the reconciliation, here is the number, here is what happens when we fix it &mdash; <strong>including that reported ROAS will fall.</strong> Say that part before you make the change, not after.</p>
+
+    <h2>Limits</h2>
+
+    <p>One inherited account, one root cause. Plenty of accounts have honest tracking and genuinely poor campaigns, and phase one will tell you that in an afternoon &mdash; which is itself worth knowing before you rebuild something that was fine.</p>
+
+    <p>Phase one is not sufficient either. It establishes whether the numbers can be believed. It does not tell you whether the strategy is any good. It just stops you answering that question with fiction.</p>
+
+
+    <div class="cta">
+      <h2>Just taken over an account you do not trust?</h2>
+      <p>Send me the store URL. I will tell you whether the numbers you have inherited can be believed before you spend against them.</p>
+      <a class="btn" href="../#contact">Get a free tracking audit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Related field notes</h2>
+      <a href="meta-ads-more-sales-than-shopify.html">Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<span>The reconciliation that finds phantom conversions.</span></a>
+      <a href="meta-pixel-reporting-fake-purchases.html">How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened<span>The failure that looks like success until you reconcile.</span></a>
+      <a href="scaling-meta-campaigns-bad-data.html">You Cannot Scale a Campaign You Cannot Trust<span>Scaling advice assumes something nobody verifies.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?</title>
+<meta name="description" content="A gap between Meta Ads Manager and your Shopify order count is normal up to a point. Past that point it usually means something is reporting purchases that never happened. Here is how to tell which, from an account where the answer was a second pixel.">
+<link rel="canonical" href="https://kamranarshad24.github.io/blog/meta-ads-more-sales-than-shopify.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://kamranarshad24.github.io/blog/meta-ads-more-sales-than-shopify.html">
+<meta property="og:title" content="Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?">
+<meta property="og:description" content="A gap between Meta Ads Manager and your Shopify order count is normal up to a point. Past that point it usually means something is reporting purchases that never happened. Here is how to tell which, from an account where the answer was a second pixel.">
+<meta property="og:image" content="https://kamranarshad24.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?">
+<meta name="twitter:description" content="A gap between Meta Ads Manager and your Shopify order count is normal up to a point. Past that point it usually means something is reporting purchases that never happened. Here is how to tell which, from an account where the answer was a second pixel.">
+<meta name="twitter:image" content="https://kamranarshad24.github.io/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?",
+  "description": "A gap between Meta Ads Manager and your Shopify order count is normal up to a point. Past that point it usually means something is reporting purchases that never happened. Here is how to tell which, from an account where the answer was a second pixel.",
+  "datePublished": "2026-08-18",
+  "dateModified": "2026-08-18",
+  "author": {"@type":"Person","name":"Kamran Arshad","url":"https://kamranarshad24.github.io/","jobTitle":"Paid Ads & Conversion Tracking Specialist"},
+  "publisher": {"@type":"Person","name":"Kamran Arshad"},
+  "mainEntityOfPage": {"@type":"WebPage","@id":"https://kamranarshad24.github.io/blog/meta-ads-more-sales-than-shopify.html"},
+  "image": "https://kamranarshad24.github.io/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://kamranarshad24.github.io/"},
+    {"@type":"ListItem","position":2,"name":"Field Notes","item":"https://kamranarshad24.github.io/blog/"},
+    {"@type":"ListItem","position":3,"name":"Meta vs Shopify order mismatch"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Why does Meta show more sales than Shopify?","acceptedAnswer":{"@type":"Answer","text":"Some gap is normal because Meta counts view-through and click-through conversions within its attribution window, including people who did not come directly from an ad click. A large gap usually means something else: duplicate pixels, duplicate events, or a pixel firing purchase events on pages that are not real purchases."}},
+    {"@type":"Question","name":"How much discrepancy between Meta and Shopify is normal?","acceptedAnswer":{"@type":"Answer","text":"There is no universal number, and any article quoting one is guessing. Establish your own baseline while tracking is known to be healthy, then treat deviation from your own figure as the signal rather than comparing yourself to a published average."}},
+    {"@type":"Question","name":"Can a second Facebook pixel cause inflated sales numbers?","acceptedAnswer":{"@type":"Answer","text":"Yes. If a second pixel is installed by a third-party app and fires purchase events that do not correspond to real orders, Meta will attribute those phantom purchases to whichever campaigns are optimising toward that pixel, inflating reported sales and ROAS."}}
+  ]
+}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Attribution</div>
+    <h1>Meta says 100 orders. Shopify says 62. Which one is lying?</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>18 Aug 2026</span><span>10 min read</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Some gap between Meta and Shopify is normal &mdash; Meta counts view-through conversions and uses a different attribution window than your store does. A <strong>large, persistent gap in Meta&rsquo;s favour</strong> is different. It usually means something is reporting purchases that did not happen: a duplicate pixel, duplicate events, or a purchase event firing on a page that is not a purchase.</p>
+      <p>The way to tell them apart is to stop comparing totals and start comparing the right pair of numbers.</p>
+    </div>
+
+    <p>This is one of the most common questions in ecommerce advertising, and one of the worst-served. Search it and you will find Reddit threads with thirty comments and no conclusion, Shopify Community posts marked unsolved, and vendor articles that list nine causes and then suggest their product.</p>
+
+    <p>So here is a specific account, a specific cause, and the reconciliation that found it.</p>
+
+    <h2>The situation</h2>
+
+    <p>I took over a Shopify skincare brand&rsquo;s Meta advertising. The handover came with a problem the previous marketer had not been able to solve: <strong>Meta was reporting around 100 orders. Shopify was showing 55 to 70.</strong></p>
+
+    <p>That gap had been running long enough that the client had stopped trusting either number. And because they could not tell which campaigns were reporting honestly, they were adjusting budgets essentially at random &mdash; increasing spend on whatever looked good in Ads Manager, with no way to know whether &ldquo;good&rdquo; meant anything.</p>
+
+    <p>That is the real damage. Not the wrong number itself, but every decision made downstream of it.</p>
+
+    
+    <div class="note">
+      <b class="l">Where these figures come from</b>
+      <p>One Shopify account I took over and audited &mdash; a skincare brand running Meta ads at roughly <strong>PKR 100,000 per day</strong>. The client asked me not to name them, so I have not. The numbers below are as they stood in the account during that engagement.</p>
+      <p>This is <strong>one account</strong>, not a study. I am giving you the mechanism and one worked example, not a statistic about the industry. And I am not stating precise engagement dates here because I would rather leave them out than approximate them.</p>
+    </div>
+
+    <h2>First: compare the correct pair of numbers</h2>
+
+    <p>Most people compare Meta&rsquo;s reported conversions against Shopify&rsquo;s total orders, panic at the difference, and start rebuilding things that were never broken. Those two figures are <em>supposed</em> to differ.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Number</th><th>What it counts</th><th>How it should compare</th></tr></thead>
+        <tbody>
+          <tr><td>Shopify orders</td><td>Every paid order, from every source</td><td>The ground truth</td></tr>
+          <tr><td>Events Manager purchases</td><td>Purchase events Meta received</td><td>Should approach Shopify, never exceed it</td></tr>
+          <tr><td>Ads Manager conversions</td><td>Purchases Meta credits to your ads</td><td>A subset &mdash; not every sale came from an ad</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Read the middle row again, because it is the one that matters and the one nobody looks at. <strong>Events Manager purchases should be close to your Shopify order count</strong>, since it is counting purchase events regardless of which campaign gets credit. If that number exceeds your real orders, you are not looking at an attribution question. You are looking at events that do not correspond to sales.</p>
+
+    <p>Ads Manager conversions being <em>lower</em> than Shopify orders is normal and healthy. Events Manager purchases being <em>higher</em> than Shopify orders is a defect.</p>
+
+    <h2>What was actually happening</h2>
+
+    <p>The account had <strong>two Meta pixels installed at the same time</strong>:</p>
+
+    <ul>
+      <li>One installed through the official Facebook &amp; Instagram sales channel on Shopify. This one was accurate.</li>
+      <li>One installed by a <strong>third-party app</strong>. This one was reporting purchases that never happened.</li>
+    </ul>
+
+    <p>The second pixel is the interesting one, because it was not silent. A silent pixel is easy &mdash; you notice zero conversions and go looking. This one was noisy. It reported purchases, those purchases appeared in Ads Manager, and the campaigns optimising toward it showed <strong>strong ROAS</strong>.</p>
+
+    <p>None of it existed in Shopify.</p>
+
+    <div class="compare">
+      <div class="pane bad">
+        <div class="pane-h">&#10007; What Ads Manager showed</div>
+<pre>Campaign set A
+  Purchases:  <em>strong</em>
+  ROAS:       <em>strong</em>
+  Verdict:    "scale this"</pre>
+      </div>
+      <div class="pane good">
+        <div class="pane-h">&#10003; What Shopify showed</div>
+<pre>Campaign set A
+  Orders:     <em>none traceable</em>
+  Revenue:    <em>none traceable</em>
+  Verdict:    <em>phantom</em></pre>
+      </div>
+    </div>
+
+    <h2>The number that made it urgent</h2>
+
+    <p>Of roughly <strong>PKR 100,000 in daily ad spend</strong>, approximately <strong>PKR 30,000 to 40,000 per day</strong> was going to campaigns optimising toward the pixel that was reporting purchases that never happened.</p>
+
+    <p>That is <strong>30 to 40% of daily budget</strong> flowing to campaigns whose reported success was an artefact. And because those campaigns looked like the best performers in Ads Manager, they were the ones most likely to receive <em>more</em> budget. The reporting error was actively recruiting spend toward itself.</p>
+
+    <div class="data">
+      <h3>The shape of the problem</h3>
+      <div class="sub">One Shopify account &middot; figures as they stood during the engagement</div>
+      <dl class="figs">
+        <div><dt>Meta reported</dt><dd>~100</dd></div>
+        <div><dt>Shopify actual</dt><dd>55&ndash;70</dd></div>
+        <div><dt>Daily budget</dt><dd>~100k</dd></div>
+        <div><dt>To phantom campaigns</dt><dd>30&ndash;40%</dd></div>
+      </dl>
+      <p>Order counts are for the comparison period described above. Budget figures are Pakistani rupees per day. The percentage is the number that travels &mdash; it does not depend on currency or market.</p>
+    </div>
+
+    <h2>The fix, and what it looked like</h2>
+
+    <p>I disabled the third-party pixel. The immediate consequence was dramatic and, if you have not seen it before, alarming: <strong>every campaign optimising toward that pixel stopped delivering.</strong></p>
+
+    <p>That is not a side effect to be nervous about. It is the diagnosis confirming itself. Those campaigns had been running on a conversion signal that was not real; remove the signal and there is nothing left for them to optimise toward.</p>
+
+    <p>Within a day or two of clean data, the picture resolved. Reported performance came down &mdash; and became true. The client could finally answer the question they had been guessing at for months: <em>which campaigns are actually producing orders?</em></p>
+
+    <div class="note">
+      <b class="l">Expect the numbers to get worse before they get honest</b>
+      <p>When you remove a source of phantom conversions, your reported ROAS falls. Nothing about the business has changed &mdash; you have simply stopped counting sales that were never there. Brief the client before you do it, or you will be explaining a &ldquo;drop in performance&rdquo; you actually caused on purpose.</p>
+    </div>
+
+    <h2>Run this reconciliation on your own account</h2>
+
+    <ol class="steps">
+      <li><b>Pick one settled week</b>At least two weeks in the past, so attribution windows have closed and reporting has finished filling in.</li>
+      <li><b>Write down three numbers</b>Shopify orders, Events Manager purchases, Ads Manager conversions &mdash; for the same week, same timezone.</li>
+      <li><b>Check the middle number against the first</b>If Events Manager purchases exceed Shopify orders, stop. You have phantom or duplicate events, and no amount of attribution theory will explain it away.</li>
+      <li><b>Count your pixels</b>Shopify admin: <strong>Settings &rarr; Customer events</strong>, the <strong>Facebook &amp; Instagram sales channel</strong>, and <strong>Online Store &rarr; Themes &rarr; Edit code</strong> searching <code>theme.liquid</code> for <code>fbq</code>. More than one pixel ID across those locations is your prime suspect.</li>
+      <li><b>Segment by pixel before you touch budgets</b>Identify which campaigns optimise toward which pixel. If one group&rsquo;s reported orders cannot be traced in Shopify, you have found the leak.</li>
+    </ol>
+
+    <h2>What I am not claiming</h2>
+
+    <p>I am not telling you a normal discrepancy percentage, because there is not one worth quoting. It depends on your traffic mix, your customers&rsquo; browsers, your attribution settings and your market. Every published benchmark I have seen comes from a company selling the fix.</p>
+
+    <p>Establish your own baseline while things are known to be healthy. Then the signal is deviation from <em>your</em> number, which is a real measurement rather than someone else&rsquo;s average.</p>
+
+    <p>And this is one account. The mechanism generalises &mdash; two pixels, one lying, budget following the lie. The specific split between real and phantom will not.</p>
+
+
+    <div class="cta">
+      <h2>Do your Meta numbers match your Shopify numbers?</h2>
+      <p>If they do not, send me your store URL. I will tell you whether it is normal attribution drift or something reporting sales you never made.</p>
+      <a class="btn" href="../#contact">Get a free tracking audit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Related field notes</h2>
+      <a href="two-meta-pixels-shopify-problem.html">Two Meta Pixels on One Shopify Store Is Not a Backup Plan<span>Why the entire "install multiple pixels" SERP is answering the wrong question.</span></a>
+      <a href="meta-pixel-reporting-fake-purchases.html">How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened<span>The failure that looks like success until you reconcile.</span></a>
+      <a href="meta-pixel-not-tracking-purchases-shopify.html">Meta pixel not tracking purchases on Shopify: what to check first<span>Seven causes, including the pixel split that never looks broken.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>

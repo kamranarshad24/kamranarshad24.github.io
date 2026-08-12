@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened</title>
+<meta name="description" content="Everyone worries about a pixel that stops reporting. The expensive failure is a pixel that reports too much, because inflated ROAS attracts more budget. Six ways to tell whether your purchase events correspond to real orders.">
+<link rel="canonical" href="https://kamranarshad24.github.io/blog/meta-pixel-reporting-fake-purchases.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://kamranarshad24.github.io/blog/meta-pixel-reporting-fake-purchases.html">
+<meta property="og:title" content="How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened">
+<meta property="og:description" content="Everyone worries about a pixel that stops reporting. The expensive failure is a pixel that reports too much, because inflated ROAS attracts more budget. Six ways to tell whether your purchase events correspond to real orders.">
+<meta property="og:image" content="https://kamranarshad24.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened">
+<meta name="twitter:description" content="Everyone worries about a pixel that stops reporting. The expensive failure is a pixel that reports too much, because inflated ROAS attracts more budget. Six ways to tell whether your purchase events correspond to real orders.">
+<meta name="twitter:image" content="https://kamranarshad24.github.io/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened",
+  "description": "Everyone worries about a pixel that stops reporting. The expensive failure is a pixel that reports too much, because inflated ROAS attracts more budget. Six ways to tell whether your purchase events correspond to real orders.",
+  "datePublished": "2026-08-20",
+  "dateModified": "2026-08-20",
+  "author": {"@type":"Person","name":"Kamran Arshad","url":"https://kamranarshad24.github.io/","jobTitle":"Paid Ads & Conversion Tracking Specialist"},
+  "publisher": {"@type":"Person","name":"Kamran Arshad"},
+  "mainEntityOfPage": {"@type":"WebPage","@id":"https://kamranarshad24.github.io/blog/meta-pixel-reporting-fake-purchases.html"},
+  "image": "https://kamranarshad24.github.io/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://kamranarshad24.github.io/"},
+    {"@type":"ListItem","position":2,"name":"Field Notes","item":"https://kamranarshad24.github.io/blog/"},
+    {"@type":"ListItem","position":3,"name":"Pixel reporting fake purchases"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Can a Facebook pixel report purchases that did not happen?","acceptedAnswer":{"@type":"Answer","text":"Yes. A misconfigured pixel can fire a purchase event on a page that is not a completed order, fire repeatedly on page refreshes, or be installed by a third-party app that triggers events on the wrong conditions. Meta records what it receives, so those events appear as real purchases in reporting."}},
+    {"@type":"Question","name":"How do I know if my Meta pixel data is accurate?","acceptedAnswer":{"@type":"Answer","text":"Reconcile a settled week. Compare Events Manager purchase count against your store order count for the same period and timezone. Events Manager should approach your order count and never exceed it. If it exceeds it, you have phantom or duplicate events."}},
+    {"@type":"Question","name":"Why does my Facebook ROAS look good but I have no sales?","acceptedAnswer":{"@type":"Answer","text":"Because ROAS is calculated from the conversion data the pixel reports, not from your bank account. If the pixel is reporting purchases that never happened, ROAS is computed on revenue that does not exist and will look excellent while the business makes nothing."}}
+  ]
+}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Meta Pixel</div>
+    <h1>A silent pixel is easy. A lying pixel takes your budget with it.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>20 Aug 2026</span><span>8 min read</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>A pixel that stops reporting gets noticed within days, because conversions fall to zero and someone panics. A pixel that reports <strong>too much</strong> can run for months, because inflated ROAS looks like success &mdash; and Meta responds by sending more budget toward the campaigns producing it.</p>
+      <p>The only reliable test is reconciliation: does the purchase count in Events Manager correspond to real orders in your store?</p>
+    </div>
+
+    <p>Almost every troubleshooting article treats missing conversions as the problem. In practice the more damaging failure runs the other way, because it does not look like a failure. It looks like your best campaign.</p>
+
+    <h2>Why over-reporting is worse than under-reporting</h2>
+
+    <p>Under-reporting costs you optimisation quality. Meta sees fewer conversions than really happened, so it learns more slowly and you probably under-invest in something that works. Bad, but self-limiting.</p>
+
+    <p>Over-reporting is different, because it creates a feedback loop. Inflated conversions produce inflated ROAS. Inflated ROAS makes a campaign look like a winner. Winners get more budget. More budget produces more phantom conversions.</p>
+
+    <p><strong>The error recruits spend toward itself.</strong> That is why it can consume a third of a daily budget before anyone questions it &mdash; every signal available inside Ads Manager says the campaign is working.</p>
+
+    
+    <div class="note">
+      <b class="l">Where these figures come from</b>
+      <p>One Shopify account I took over and audited &mdash; a skincare brand running Meta ads at roughly <strong>PKR 100,000 per day</strong>. The client asked me not to name them, so I have not. The numbers are as they stood in the account during that engagement.</p>
+      <p>This is <strong>one account</strong>, not a study. I am giving you the mechanism and one worked example, not an industry statistic. And I am not stating precise engagement dates here because I would rather omit them than approximate them.</p>
+    </div>
+
+    <h2>Six checks, cheapest first</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Reconcile a settled week</h3></div>
+      <p>The single highest-value check, and most accounts have never had it done. Take one week that ended at least two weeks ago. Compare Events Manager purchases against your store&rsquo;s order count for the same period and timezone.</p>
+      <p>Events Manager should approach your order count. It should never exceed it &mdash; Events Manager counts purchase events, and a purchase event without an order is by definition not a purchase.</p>
+      <div class="check"><b>Verdict</b>Events Manager higher than store orders means phantom or duplicate events. Nothing about attribution windows explains this away.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Count your pixels</h3></div>
+      <p>On the account behind this article, the cause was a second pixel installed by a third-party app, reporting purchases with no corresponding orders. Check <strong>Settings &rarr; Customer events</strong>, the <strong>Facebook &amp; Instagram sales channel</strong>, and <code>theme.liquid</code>. More than one pixel ID is your first suspect &mdash; see <a href="two-meta-pixels-shopify-problem.html">the article on multiple pixels</a>.</p>
+      <div class="check"><b>Verdict</b>Two pixel IDs and a discrepancy in the same account is rarely a coincidence.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Check whether the purchase event fires on a refresh</h3></div>
+      <p>Complete a real order, land on the confirmation page, then refresh it. Watch the Network tab. If a second purchase event fires, every customer who refreshes, bookmarks or revisits that page is inflating your numbers. Without a unique <code>event_id</code> or order identifier, Meta has no way to know it is the same sale.</p>
+      <div class="check"><b>Verdict</b>A purchase event on refresh means your counts drift upward with traffic, not with sales.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Check what page the purchase event is bound to</h3></div>
+      <p>A purchase event should fire on order completion and nowhere else. Misconfigured apps sometimes bind it to add-to-cart, initiate-checkout, or any page matching a loose URL rule. Every one of those produces purchases with no orders behind them.</p>
+      <div class="check"><b>Verdict</b>Walk your funnel with the Network tab open. A purchase event before payment is a defect, not an optimisation.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Segment reported conversions by campaign, then trace them</h3></div>
+      <p>Do not evaluate the account as one number. Group campaigns by which pixel they optimise toward, then try to trace each group&rsquo;s claimed orders in your store. On that account, one group&rsquo;s orders could not be traced at all &mdash; and that group was consuming roughly 30 to 40% of daily spend.</p>
+      <div class="check"><b>Verdict</b>A campaign group whose orders you cannot find in your store is the leak.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">06</span><h3>Compare purchase value against real revenue</h3></div>
+      <p>Counts can look plausible while values are nonsense. Compare total purchase value reported for a settled week against actual revenue for the same week. A value materially above real revenue means events are firing with wrong or duplicated values, even if the count looks close.</p>
+      <div class="check"><b>Verdict</b>Check both count and value. They fail independently.</div>
+    </div>
+
+    <h2>What to do when you find it</h2>
+
+    <p>Fix the source rather than the symptom. Disabling a misconfigured pixel or correcting the event trigger will cause the affected campaigns to stop delivering &mdash; that is the diagnosis confirming itself, not a new problem.</p>
+
+    <p>Then brief whoever owns the budget <em>before</em> they see the dashboard. Reported ROAS will fall. Revenue will not, because the revenue you are removing never existed. That conversation is much easier held in advance than in retrospect.</p>
+
+    <div class="note">
+      <b class="l">The uncomfortable part</b>
+      <p>If a campaign has been optimising toward phantom conversions for months, Meta has spent that time learning to find people who trigger phantom conversions. Rebuilding on clean data takes time, and early performance on the corrected setup will look worse than the fiction it replaced. That is the cost of having been wrong, not the cost of fixing it.</p>
+    </div>
+
+    <h2>Limits</h2>
+
+    <p>One account, one cause. Over-reporting has other sources &mdash; duplicate CAPI events without matching identifiers, test events left running, several apps firing the same conversion. The reconciliation in check one detects all of them; identifying which requires the rest.</p>
+
+    <p>I am also not giving you a threshold for &ldquo;too much&rdquo;. Compare against your own store&rsquo;s orders. That comparison is exact, which is more than any benchmark can offer.</p>
+
+
+    <div class="cta">
+      <h2>Are your reported purchases real?</h2>
+      <p>It takes fifteen minutes to find out and most accounts have never been checked. Send me your store URL.</p>
+      <a class="btn" href="../#contact">Get a free tracking audit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Related field notes</h2>
+      <a href="meta-ads-more-sales-than-shopify.html">Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<span>The reconciliation that finds phantom conversions.</span></a>
+      <a href="two-meta-pixels-shopify-problem.html">Two Meta Pixels on One Shopify Store Is Not a Backup Plan<span>Why the entire "install multiple pixels" SERP is answering the wrong question.</span></a>
+      <a href="meta-pixel-not-tracking-purchases-shopify.html">Meta pixel not tracking purchases on Shopify: what to check first<span>Seven causes, including the pixel split that never looks broken.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>
