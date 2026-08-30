@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -24,7 +24,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
 <!-- End Google Tag Manager -->
 <title>AlphaMart — Case Study | Kamran Arshad</title>
-<meta name="description" content="How I built AlphaMart from zero and achieved 5.69x ROAS with $1.40 CPA on Snapchat Ads.">
+<meta name="description" content="An 8-month test of my own Shopify store: full funnel from ad click to cash, a channel-by-channel comparison across Snapchat, Meta and TikTok, and what the delivery data by city and product taught me.">
 <link rel="canonical" href="https://kamranarshad24.github.io/alphamart.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta property="og:type" content="article">
@@ -32,20 +32,64 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://kamranarshad24.github.io/alphamart.html">
 <meta property="og:title" content="AlphaMart — Case Study">
-<meta property="og:description" content="How I built AlphaMart from zero and achieved 5.69x ROAS with $1.40 CPA on Snapchat Ads.">
+<meta property="og:description" content="An 8-month test of my own Shopify store: full funnel from ad click to cash, a channel-by-channel comparison across Snapchat, Meta and TikTok, and what the delivery data by city and product taught me.">
 <meta property="og:image" content="https://kamranarshad24.github.io/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Kamran Arshad — paid ads and conversion tracking specialist">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AlphaMart — Case Study">
-<meta name="twitter:description" content="How I built AlphaMart from zero and achieved 5.69x ROAS with $1.40 CPA on Snapchat Ads.">
+<meta name="twitter:description" content="An 8-month test of my own Shopify store: full funnel from ad click to cash, a channel-by-channel comparison across Snapchat, Meta and TikTok, and what the delivery data by city and product taught me.">
 <meta name="twitter:image" content="https://kamranarshad24.github.io/og-image.png">
 <link rel="icon" type="image/svg+xml" href="KA_favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="case-study.css">
+<style>
+/* ---------- AlphaMart-only blocks — built from case-study.css tokens ---------- */
+.am-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; margin: 4px 0 24px; }
+.am-stat { background: #fff; padding: 16px 16px; }
+.am-stat .k { font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--subtle); margin-bottom: 6px; }
+.am-stat .v { font-size: 21px; font-weight: 800; letter-spacing: -.5px; font-variant-numeric: tabular-nums; color: var(--ink); }
+.am-stat .v.pos { color: var(--green); }
+.am-stat .sub { font-size: 11.5px; color: var(--subtle); margin-top: 4px; }
+
+.am-fall { display: flex; flex-direction: column; margin: 4px 0 24px; }
+.am-fall-row { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.am-fall-row:last-child { border-bottom: none; }
+.am-fall-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 7px; flex-wrap: wrap; }
+.am-fall-name { font-size: 14px; font-weight: 600; color: var(--ink); }
+.am-fall-name small { display: block; font-weight: 400; color: var(--subtle); font-size: 12px; margin-top: 2px; }
+.am-fall-val { font-size: 13.5px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.am-bar { height: 8px; background: var(--surface); border-radius: 5px; overflow: hidden; }
+.am-bar i { display: block; height: 100%; background: var(--accent); border-radius: 5px; }
+.am-bar.cut i { background: #F87171; }
+.am-bar.end i { background: var(--green); }
+
+.am-tw { overflow-x: auto; margin: 4px 0 24px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.am-tw table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 13.5px; }
+.am-tw caption { text-align: left; font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--subtle); padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.am-tw th, .am-tw td { padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+.am-tw thead th { font-size: 10.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--subtle); background: var(--surface); }
+.am-tw td.n, .am-tw th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.am-tw tbody tr:last-child td { border-bottom: none; }
+.am-tw tr.hi td { background: var(--green-dim, #ECFDF5); }
+.am-tw tr.lo td { background: #FEF2F2; }
+
+.am-rule { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px 22px; margin: 4px 0 24px; }
+.am-rule .rk { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.am-rule p { color: var(--ink); font-size: 15px; margin: 0; }
+.am-rule p + p { margin-top: 8px; color: var(--muted); font-size: 14px; }
+
+.am-ledger { list-style: none; padding: 0; margin: 4px 0 8px; }
+.am-ledger li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14.5px; line-height: 1.6; color: var(--muted); }
+.am-ledger li:last-child { border-bottom: none; }
+.am-ledger .mk { flex-shrink: 0; width: 20px; font-weight: 700; }
+.am-ledger.good .mk { color: var(--green); }
+.am-ledger.bad .mk { color: var(--accent); }
+.am-ledger strong { color: var(--ink); }
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,9 +140,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <span class="cs-tag tag-own">Own Brand</span>
       <span class="cs-tag tag-snap">Snapchat Ads</span>
       <span class="cs-tag tag-ads">Facebook Ads</span>
+      <span class="cs-tag tag-track">Full Funnel Audit</span>
     </div>
     <h1>Alpha<span>Mart</span></h1>
-    <p class="cs-subtitle">E-commerce Store — Built & Operated Solo from Zero</p>
+    <p class="cs-subtitle">E-commerce Store — Built Solo, Then Audited Line by Line</p>
   </div>
 </section>
 
@@ -106,20 +151,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="container">
     <div class="results-grid" style="grid-template-columns: repeat(4, 1fr);">
       <div class="result-item">
-        <div class="result-n">5.69<span class="accent">x</span></div>
-        <div class="result-l">ROAS</div>
+        <div class="result-n">PKR <span class="accent">1.95</span></div>
+        <div class="result-l">Snapchat Cost Per Click</div>
       </div>
       <div class="result-item">
-        <div class="result-n">$<span class="accent">1.40</span></div>
-        <div class="result-l">Cost Per Purchase</div>
+        <div class="result-n"><span class="accent">4.84</span>x</div>
+        <div class="result-l">Best-Product ROAS (Meta)</div>
       </div>
       <div class="result-item">
-        <div class="result-n">1<span class="accent">,</span>034</div>
-        <div class="result-l">Total Purchases</div>
+        <div class="result-n"><span class="accent">48</span>%</div>
+        <div class="result-l">Of Ad-Driven Orders That Became Cash</div>
       </div>
       <div class="result-item">
-        <div class="result-n">$1<span class="accent">,</span>452</div>
-        <div class="result-l">Total Ad Spend</div>
+        <div class="result-n"><span class="accent">8</span></div>
+        <div class="result-l">Products Tested Across The Run</div>
       </div>
     </div>
   </div>
@@ -130,45 +175,156 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="cs-grid">
 
       <div class="cs-left">
+
         <div class="cs-section">
-          <span class="label">The Challenge</span>
-          <h3>Start from zero — no brand, no budget buffer, no safety net.</h3>
-          <p>AlphaMart was built entirely with my own money. No investor, no agency safety net. Every rupee spent on ads came directly out of my pocket, which meant I had to get the product, store, and campaigns right from the start.</p>
-          <p>The goal was simple: find a winning product, build a store that converts, and run paid ads profitably. If it didn't work, the loss was mine.</p>
+          <span class="label">The Setup</span>
+          <h3>My own money, a commodity product, and no one to blame but the data.</h3>
+          <p>AlphaMart was a hair-styling-tools store I ran on Shopify with a partner, selling cash-on-delivery in Pakistan over an eight-month run. There was no client budget to protect, which is exactly why I went back afterward and audited it as hard as I'd audit a client's account.</p>
         </div>
 
         <div class="cs-section">
-          <span class="label">What I Did</span>
-          <h3>End-to-end — every part of the business, solo.</h3>
+          <span class="label">What The Audit Did</span>
+          <h3>Reconciled every platform export against the bank, then followed the money past the ad dashboard.</h3>
           <ul class="cs-list">
-            <li><strong>Product research</strong> — identified a winning product with strong demand and low market saturation</li>
-            <li><strong>Shopify store setup</strong> — built the full store from scratch: product pages, checkout flow, mobile optimisation, trust signals</li>
-            <li><strong>Snapchat Ads</strong> — set up ad accounts, created audience segments, tested creatives, and scaled winning ad sets</li>
-            <li><strong>Facebook Ads</strong> — ran parallel Meta campaigns to diversify traffic and reduce platform dependency</li>
-            <li><strong>Pixel & conversion tracking</strong> — set up accurate event tracking so every purchase was attributed correctly</li>
-            <li><strong>Inventory & fulfilment</strong> — managed stock, coordinated supplier orders, handled shipping and logistics</li>
-            <li><strong>Customer support</strong> — handled all enquiries, refunds, and complaints personally</li>
-            <li><strong>Post-purchase email flows</strong> — set up basic sequences to drive repeat purchases</li>
+            <li><strong>Rebuilt the full funnel</strong> from Snapchat, Meta and TikTok exports and courier settlement files, down to the individual order</li>
+            <li><strong>Traced every order from click to cash</strong> — not just "purchases," but how many of those purchases actually survived confirmation, shipping, and returns to become a delivered sale</li>
+            <li><strong>Compared Snapchat, Meta and TikTok</strong> on cost-per-click, cost-per-thousand-impressions and real conversion, not just the ROAS each platform reports about itself</li>
+            <li><strong>Compared three products on real delivered performance</strong> — order value against delivery rate — instead of stopping at the listed price</li>
+            <li><strong>Split delivery failure by courier and by city</strong> to find out whether a bad delivery rate was the courier's fault or the market's</li>
           </ul>
         </div>
 
         <div class="cs-section">
-          <span class="label">The Result</span>
-          <div class="result-highlight">
-            <div class="rh-n">5.69x</div>
-            <div class="rh-l">Return on ad spend — 1,034 purchases from $1,452 in Snapchat spend at $1.40 cost per purchase. Screenshots available from live dashboard.</div>
+          <span class="label">The Real Funnel</span>
+          <h3>1,092 orders were paid for by the ad accounts. 523 became cash.</h3>
+          <p>Ad platforms report an order the moment a customer checks out. In Pakistani cash-on-delivery, that's the start of the funnel, not the end. Nearly a third of orders were cancelled on the confirmation call before a parcel ever moved, and another fifth came back as returns.</p>
+
+          <div class="am-fall">
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Orders the ads produced<small>Reported by Snapchat and Meta combined</small></div><div class="am-fall-val">1,092</div></div>
+              <div class="am-bar"><i style="width:100%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Killed on the confirmation call<small>Wrong number, no answer, or the buyer changed their mind</small></div><div class="am-fall-val">−33.5%</div></div>
+              <div class="am-bar cut"><i style="width:33.5%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Actually shipped<small>749 parcels across both couriers</small></div><div class="am-fall-val">749</div></div>
+              <div class="am-bar"><i style="width:68.6%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Came back as returns<small>226 parcels — refused, undelivered, or lost</small></div><div class="am-fall-val">−226</div></div>
+              <div class="am-bar cut"><i style="width:22.2%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Delivered and paid for<small>Customers who took the parcel and paid cash</small></div><div class="am-fall-val">523</div></div>
+              <div class="am-bar end"><i style="width:44.2%"></i></div>
+            </div>
+          </div>
+
+          <p>Confirmation-calling every order before dispatch caught roughly 325 of the bad ones early, saving an estimated <strong>PKR 78,650</strong> in courier fees that would otherwise have gone out and come straight back.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Channel Comparison</span>
+          <h3>Snapchat bought attention 4–6x cheaper than Meta. TikTok bought nothing.</h3>
+          <div class="am-tw">
+            <table>
+              <caption>Full 8-month run</caption>
+              <thead><tr><th>Measure</th><th class="n">Snapchat</th><th class="n">Meta</th><th class="n">TikTok</th></tr></thead>
+              <tbody>
+                <tr><td>Impressions</td><td class="n">11,079,368</td><td class="n">389,700</td><td class="n">—</td></tr>
+                <tr><td>Cost per 1,000 impressions</td><td class="n">PKR 42.53</td><td class="n">PKR 174.65</td><td class="n">—</td></tr>
+                <tr><td>Cost per click</td><td class="n">PKR 1.95</td><td class="n">PKR 11.44</td><td class="n">—</td></tr>
+                <tr><td>Click-through rate</td><td class="n">2.19%</td><td class="n">1.53%</td><td class="n">—</td></tr>
+                <tr><td>Reported ROAS</td><td class="n">5.63x</td><td class="n">2.73x</td><td class="n">0.00x</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Meta ran roughly <strong>PKR 15,000</strong> of budget on campaigns that never produced a sale — left on because nobody was checking below the account-level number. TikTok spent PKR 6,412 and produced about five orders, all cancelled at confirmation.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Product Performance</span>
+          <h3>The highest-priced product also had the best delivery rate.</h3>
+          <div class="am-tw">
+            <table>
+              <caption>Order value vs. delivery rate, by product</caption>
+              <thead><tr><th>Product</th><th class="n">Order value</th><th class="n">Delivery rate</th></tr></thead>
+              <tbody>
+                <tr class="hi"><td><strong>5-in-1 Hair Styling Tool</strong></td><td class="n">PKR 3,894</td><td class="n">76.3%</td></tr>
+                <tr><td>Rechargeable Mini Comb</td><td class="n">PKR 2,475</td><td class="n">71.2%</td></tr>
+                <tr><td>Hair Straightening Brush</td><td class="n">PKR 2,004</td><td class="n">70.5%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="am-rule">
+            <div class="rk">What this showed</div>
+            <p>The pattern ran opposite to what we expected going in — the cheapest item did not deliver the best. A buyer paying more per order seems to think it through more before ordering, and follows through more often when the rider arrives.</p>
+            <p>Stock buying didn't reflect this at the time: the best-performing product was reordered the least, and the weakest was reordered the most. That's the gap the next round of buying is built to close.</p>
           </div>
         </div>
 
         <div class="cs-section">
-          <span class="label">Tools & Platforms</span>
+          <span class="label">Delivery, By City Not Just By Courier</span>
+          <h3>The worst-performing courier just happened to ship the most parcels to the worst-performing city.</h3>
+          <p>Read on its own, one courier looked far weaker than the others. Split by destination, every courier underperformed in the same city — the courier gap was mostly geography wearing a different name.</p>
+          <div class="am-tw">
+            <table>
+              <caption>Delivery success by city · top markets by volume</caption>
+              <thead><tr><th>City</th><th class="n">Parcels</th><th class="n">Delivered</th></tr></thead>
+              <tbody>
+                <tr class="hi"><td>Karachi</td><td class="n">47</td><td class="n">85.1%</td></tr>
+                <tr><td>Islamabad</td><td class="n">20</td><td class="n">75.0%</td></tr>
+                <tr><td>Rawalpindi</td><td class="n">23</td><td class="n">65.2%</td></tr>
+                <tr class="lo"><td><strong>Lahore</strong> — second-biggest market</td><td class="n">78</td><td class="n">59.0%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">What Was Actually Tested</span>
+          <div class="am-stats">
+            <div class="am-stat"><div class="k">Orders delivered</div><div class="v">523</div><div class="sub">~65/month</div></div>
+            <div class="am-stat"><div class="k">Products tested</div><div class="v">8</div><div class="sub">across the full run</div></div>
+            <div class="am-stat"><div class="k">Ad channels run</div><div class="v">3</div><div class="sub">Snapchat, Meta, TikTok</div></div>
+            <div class="am-stat"><div class="k">Free ad credit earned</div><div class="v pos">128,400</div><div class="sub">PKR, Snapchat</div></div>
+          </div>
+          <p>Eight months of testing across three ad platforms, three shipped products and two couriers produced a working funnel model, a channel comparison worth acting on, and a clear read on which products and which cities were actually worth scaling.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">What Held Up</span>
+          <ul class="am-ledger good">
+            <li><span class="mk">✓</span><div>The media buying was genuinely excellent — <strong>11 million impressions for PKR 471,193</strong>, a click-through rate of 2.19%, and video ads that held attention through nearly 40% of a 2-second view.</div></li>
+            <li><span class="mk">✓</span><div>Confirmation-calling every order before dispatch is a habit that transfers to any store — it saved roughly <strong>PKR 78,650</strong> in courier costs that would otherwise have been spent and refunded.</div></li>
+            <li><span class="mk">✓</span><div>We switched from dropshipping to owned stock mid-flight once it was clear dropshipping was capping how much of the operation we could actually control — the kind of call that's easy to avoid making and costly to delay.</div></li>
+            <li><span class="mk">✓</span><div>Eight product types were tested across the run, not one — which is how the best-performing product got found at all.</div></li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">What The Audit Changed Going Forward</span>
+          <ul class="am-ledger bad">
+            <li><span class="mk">01</span><div>Never sell a product that's price-anchored on Daraz or Temu — if a customer can price-check it against ten identical listings in ten seconds, you're competing on price before the ad even runs.</div></li>
+            <li><span class="mk">02</span><div>Judge a product on how it performs through the whole funnel — order value and delivery rate together — not on how good it looks on the product page.</div></li>
+            <li><span class="mk">03</span><div>Track delivery rate by city from day one, not just by courier — a 26-point gap between two cities went unnoticed for months because nobody split the data that way.</div></li>
+            <li><span class="mk">04</span><div>Offer a prepaid discount from week one — prepaid orders return at roughly a quarter of cash-on-delivery's rate.</div></li>
+            <li><span class="mk">05</span><div>Buy stock in proportion to what's already proven to sell — AlphaMart's best product got the least stock and its worst product got the most.</div></li>
+            <li><span class="mk">06</span><div>When a month works, put more into it — the best month of the business was followed by a 76% cut in ad spend, for reasons that had nothing to do with performance.</div></li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Tools &amp; Platforms</span>
           <div class="tools-wrap">
             <span class="tool-chip">Shopify</span>
             <span class="tool-chip">Snapchat Ads Manager</span>
             <span class="tool-chip">Meta Ads Manager</span>
-            <span class="tool-chip">Facebook Pixel</span>
-            <span class="tool-chip">Snapchat Pixel</span>
-            <span class="tool-chip">Shopify Email</span>
+            <span class="tool-chip">Facebook &amp; Snapchat Pixel</span>
+            <span class="tool-chip">Courier settlement reconciliation</span>
+            <span class="tool-chip">Bank statement reconciliation</span>
           </div>
         </div>
       </div>
@@ -198,8 +354,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section class="cs-cta">
   <div class="container">
     <span class="label" style="color:#60A5FA; display:block; text-align:center;">Free — No Obligation</span>
-    <h2>Want results like this for your store?</h2>
-    <p>I'll review your ad account in 15 minutes and tell you exactly what to fix.</p>
+    <h2>Want the same audit applied to your ad account?</h2>
+    <p>I'll review your ad account or store live in 15 minutes and tell you exactly what to fix.</p>
     <a href="index.html#services" class="btn btn-primary btn-lg" onclick="openModal();return false;">Get Free Audit →</a>
   </div>
 </section>
