@@ -89,6 +89,11 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.88);
 .cs-live-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--accent); text-decoration: none; margin-top: 16px; padding: 10px 16px; background: var(--accent-dim); border-radius: 8px; transition: background var(--transition); }
 .cs-live-link:hover { background: #DBEAFE; }
 
+/* STATIC VISUAL (single screenshot, no carousel controls) */
+.cs-visual-static { height: 300px; overflow: hidden; border-radius: var(--radius); background: var(--surface); }
+.cs-visual-static img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+@media (max-width: 900px) { .cs-visual-static { height: 240px; } }
+
 /* VISUAL PLACEHOLDER (case studies with no dashboard screenshots yet) */
 .cs-visual-placeholder {
   background: var(--surface);
