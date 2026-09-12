@@ -669,6 +669,11 @@ nav.site-nav {
 }
 .case-tag.t-own { background: var(--blue-tint); border-color: #BBD8F8; color: var(--blue-deep); }
 .case-tag.t-uk  { background: #FFF4E2; border-color: #F4DFB8; color: #9A6206; }
+.case-tag.t-progress { background: #FEF9E7; border-color: #FBE8A6; color: #92600A; }
+.case-tag.t-closed   { background: #F1F5F9; border-color: #E2E8F0; color: #64748B; }
+.case-visual-placeholder { position: relative; overflow: hidden; background: var(--navy); aspect-ratio: 8/5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; padding: 24px; }
+.case-visual-placeholder .vp-icon { font-size: 34px; line-height: 1; }
+.case-visual-placeholder .vp-text { font-size: 12px; color: rgba(255,255,255,.6); font-weight: 600; max-width: 220px; line-height: 1.5; }
 .case-body h3 {
   font-family: var(--display);
   font-size: 25px;
@@ -1640,7 +1645,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="stat fade-up" style="transition-delay:.24s">
         <div class="lbl">Clients Served</div>
-        <div class="num">4<span class="u">+</span></div>
+        <div class="num">5<span class="u">+</span></div>
         <div class="sub">Incl. 1 UK client — ongoing 🇬🇧</div>
       </div>
     </div>
@@ -1794,17 +1799,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="case-body">
           <div class="case-tags">
             <span class="case-tag">Google Ads</span>
+            <span class="case-tag">Account Rebuild</span>
             <span class="case-tag">GTM</span>
           </div>
           <h3>Smile Line Dental</h3>
-          <p class="case-sub">Local dental clinic, Islamabad — Google Ads &amp; conversion tracking</p>
+          <p class="case-sub">Local dental clinic, Islamabad — Google Ads account rebuild &amp; conversion tracking</p>
           <div class="case-metrics">
             <span class="metric-chip">First-ever lead attribution visibility</span>
           </div>
           <ul>
-            <li>Set up full conversion tracking through GTM — form submissions and call tracking — so the clinic could see which ads actually produced patient leads</li>
-            <li>Ran and managed Google Search Ads for the local clinic</li>
-            <li>First time the business had any visibility into which keywords drove real results</li>
+            <li>Inherited an account with no conversion tracking, worldwide targeting, Search + Display mixed together, and zero negative keywords</li>
+            <li>Verified the advertiser, rebuilt the account Search-only with proper Islamabad geo-targeting and negative keywords, then set up full GTM conversion tracking (forms + calls)</li>
+            <li>First time the business had any visibility into which keywords and campaigns drove real patient leads</li>
           </ul>
           <div class="case-foot">
             <a href="smile-line-dental.html" class="case-link" aria-label="View Smile Line Dental full case study">Full case study →</a>
@@ -1835,18 +1841,105 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="case-tag">GTM Server-Side</span>
           </div>
           <h3>Mr Expert Carpet Cleaning</h3>
-          <p class="case-sub">Local service business, Slough UK — full digital build (ongoing)</p>
+          <p class="case-sub">Local service business, Slough UK — full A–Z digital build (ongoing)</p>
           <div class="case-metrics">
+            <span class="metric-chip">5-in-1 client dashboard</span>
             <span class="metric-chip">Site + tracking + ads — live &amp; ongoing</span>
           </div>
           <ul>
-            <li><strong>Full website rebuild</strong> on WordPress + Elementor — fast, mobile-first, conversion-focused</li>
-            <li><strong>Complete tracking stack from scratch:</strong> GTM standard + server-side container, GA4, Microsoft Clarity, and Facebook CAPI routed through the server container</li>
-            <li>Local SEO service pages for Slough &amp; Berkshire, plus Google Search Ads with GTM-connected conversion tracking — actively running</li>
+            <li><strong>Full website rebuild</strong> on WordPress + Elementor, plus Google Business Profile and Search Console set up and cleaned up</li>
+            <li><strong>Complete tracking stack:</strong> GTM standard + server-side container, GA4, Microsoft Clarity (used for ongoing CRO), and Facebook CAPI</li>
+            <li>Built a custom plugin (<strong>LeadBridge</strong>) so Google Ads optimises toward real booked jobs, not just form-fills — then unified Google Ads, Search Console, GMB, LeadBridge and Clarity into <strong>one client dashboard</strong></li>
           </ul>
           <div class="case-foot">
             <a href="mr-expert-carpet-cleaning.html" class="case-link" aria-label="View Mr Expert Carpet Cleaning full case study">Full case study →</a>
             <a href="https://mrexpertcarpetcleaning.com" target="_blank" rel="noopener" class="case-ext">mrexpertcarpetcleaning.com ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Brizaa -->
+      <article class="case-card fade-up" style="transition-delay:.2s">
+        <div class="case-visual-placeholder">
+          <span class="vp-icon">🧴</span>
+          <span class="vp-text">Brand has since closed — no dashboard screenshots for this one</span>
+        </div>
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="case-tag">Shopify</span>
+            <span class="case-tag">Meta &amp; IG Ads</span>
+            <span class="case-tag">CRO</span>
+            <span class="case-tag t-closed">Brand Closed</span>
+          </div>
+          <h3>Brizaa</h3>
+          <p class="case-sub">Skincare brand, Pakistan — Shopify redesign, Meta/Instagram Ads &amp; CRO</p>
+          <ul>
+            <li>Redesigned the Shopify store and ran conversion-rate-optimisation work on the store's layout and product pages</li>
+            <li>Ran Meta &amp; Instagram ad campaigns for the brand over a several-week test window</li>
+            <li>Note: the brand has since closed</li>
+          </ul>
+          <div class="case-foot">
+            <a href="brizaa.html" class="case-link" aria-label="View Brizaa full case study">Full case study →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- FlowBridge (Wispr Flow Clone) -->
+      <article class="case-card fade-up" style="transition-delay:.25s">
+        <div class="carousel">
+          <div class="carousel-slides">
+            <div class="carousel-slide"><img src="clients-dashboard/FlowBridge Home Dashboard.png" alt="FlowBridge home dashboard" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/FlowBridge Insights.png" alt="FlowBridge insights and usage analytics" loading="lazy" width="800" height="500"></div>
+            <div class="carousel-slide"><img src="clients-dashboard/FlowBridge Settings.png" alt="FlowBridge privacy and retention settings" loading="lazy" width="800" height="500"></div>
+          </div>
+          <button type="button" class="carousel-btn carousel-prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-btn carousel-next" aria-label="Next slide">›</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+          </div>
+        </div>
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="case-tag t-own">Personal Project</span>
+            <span class="case-tag">AI / Automation</span>
+            <span class="case-tag">Groq + Gemini</span>
+          </div>
+          <h3>FlowBridge (Wispr Flow Clone)</h3>
+          <p class="case-sub">Personal build — bilingual (EN/UR) AI speech-to-text app for desktop</p>
+          <ul>
+            <li>Built end-to-end by directing Codex (an AI coding agent), with Groq as the primary speech service and Gemini as an automatic fallback</li>
+            <li>Bilingual English + Urdu dictation, plus built-in usage analytics (words, WPM, latency, language mix) and a custom dictionary</li>
+            <li>Privacy-first by design: audio never saved to disk, encrypted local storage, configurable retention — a personal tool, not distributed or sold</li>
+          </ul>
+          <div class="case-foot">
+            <a href="wispr-flow-clone.html" class="case-link" aria-label="View FlowBridge full case study">Full case study →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- AI Content Builder -->
+      <article class="case-card fade-up" style="transition-delay:.3s">
+        <div class="case-visual-placeholder">
+          <span class="vp-icon">⚙️</span>
+          <span class="vp-text">Active client engagement — kept generic</span>
+        </div>
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="case-tag">AI Marketing Office</span>
+            <span class="case-tag">Automation</span>
+            <span class="case-tag t-progress">In Progress</span>
+          </div>
+          <h3>AI Content Builder</h3>
+          <p class="case-sub">US-based AI marketing office — full-funnel content pipeline (ongoing)</p>
+          <ul>
+            <li>Client had an AI "marketing office" — departments and agents already structured, but disconnected from real platforms (Search Console, GA4, social publishing, Canva) and producing no actual output</li>
+            <li>Diagnosing the gaps and wiring the Content Builder department into a working, full-funnel pipeline — built using Claude and Codex</li>
+            <li>Client name withheld — active, ongoing engagement</li>
+          </ul>
+          <div class="case-foot">
+            <a href="ai-content-builder.html" class="case-link" aria-label="View AI Content Builder case study">Full case study →</a>
           </div>
         </div>
       </article>
