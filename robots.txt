@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /thankyou.html
 
-Sitemap: https://kamranarshad24.github.io/sitemap.xml
+Sitemap: https://marketingkamran.com/sitemap.xml
