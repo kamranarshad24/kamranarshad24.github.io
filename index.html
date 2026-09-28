@@ -1363,6 +1363,47 @@ footer {
 .lb-close:hover { background: var(--ink); color: #fff; }
 .lightbox-body { overflow: auto; background: var(--bg); }
 .lightbox-body img { display: block; width: 100%; height: auto; }
+/* ---------- INTRO VIDEO ---------- */
+.intro-video { padding: 96px 0 40px; }
+.intro-video .section-head { margin: 0 auto 40px; text-align: center; }
+.intro-video .kicker { justify-content: center; }
+.video-card {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: var(--r);
+  overflow: hidden;
+  background: var(--navy);
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 30px 70px -30px rgba(8,26,54,.45);
+  aspect-ratio: 16 / 9;
+}
+.video-card video { display: block; width: 100%; height: 100%; object-fit: cover; background: var(--navy); }
+.video-play {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 14px;
+  border: 0; padding: 0; cursor: pointer;
+  background: linear-gradient(180deg, rgba(8,26,54,0) 40%, rgba(8,26,54,.55) 100%);
+  color: #fff; font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+}
+.video-play .ring {
+  width: 88px; height: 88px; border-radius: 50%;
+  background: var(--blue); display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 0 0 10px rgba(22,111,219,.25);
+  transition: transform var(--t), box-shadow var(--t);
+}
+.video-play .ring svg { width: 30px; height: 30px; margin-left: 5px; fill: #fff; }
+.video-play:hover .ring, .video-play:focus-visible .ring { transform: scale(1.07); box-shadow: 0 0 0 16px rgba(22,111,219,.22); }
+.video-play:focus-visible { outline: 3px solid #4D9BF5; outline-offset: -3px; }
+.video-play .lbl { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; opacity: .9; }
+.video-card.playing .video-play { display: none; }
+.video-caption { text-align: center; margin-top: 16px; color: var(--muted); }
+@media (max-width: 640px) {
+  .intro-video { padding: 64px 0 24px; }
+  .video-play .ring { width: 64px; height: 64px; }
+  .video-play .ring svg { width: 22px; height: 22px; }
+  .video-play .lbl { bottom: 10px; font-size: 10px; }
+}
 </style>
 <noscript><style>.fade-up { opacity: 1; transform: none; }</style></noscript>
 
@@ -1430,6 +1471,19 @@ footer {
     "Meta Ads Management",
     "Snapchat Ads Management"
   ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Kamran Arshad — Ads, SEO, Web & Tracking in one system",
+  "description": "A one-minute intro to Kamran Arshad: Google, Meta and Snapchat ads, technical and local SEO, Google Business Profile, WordPress and Shopify builds, and the tracking that ties them together.",
+  "thumbnailUrl": "https://marketingkamran.com/media/kamran-intro-poster.jpg",
+  "contentUrl": "https://marketingkamran.com/media/kamran-intro.mp4",
+  "uploadDate": "2026-09-28",
+  "duration": "PT1M9S",
+  "embedUrl": "https://marketingkamran.com/#intro-video"
 }
 </script>
 <script type="application/ld+json">
@@ -1659,6 +1713,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="num">5<span class="u">+</span></div>
         <div class="sub">Incl. 1 UK client — ongoing 🇬🇧</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO VIDEO -->
+<section class="intro-video" id="intro-video" aria-labelledby="intro-video-title">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="kicker">Meet Kamran — 1-minute intro</span>
+      <h2 id="intro-video-title">How I run ads, SEO and tracking as one system.</h2>
+      <p>A quick walkthrough of who I am, what I do for clients, and the results behind it.</p>
+    </div>
+    <div class="video-card fade-up" id="intro-video-card">
+      <video id="intro-video-player"
+             preload="none"
+             playsinline
+             poster="media/kamran-intro-poster.jpg"
+             data-video-title="Kamran Arshad — Intro (v3)"
+             aria-label="Intro video: Kamran Arshad, Ads, SEO, web and tracking">
+        <source src="media/kamran-intro.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <button type="button" class="video-play" id="intro-video-play" aria-label="Play intro video (1 minute 9 seconds, with sound)">
+        <span class="ring"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4l15 8-15 8z"/></svg></span>
+        <span class="lbl">▶ Play · 1:09 · sound on</span>
+      </button>
     </div>
   </div>
 </section>
@@ -2413,5 +2493,62 @@ if ('requestIdleCallback' in window) {
 </script>
 
 <script src="consent.js" defer></script>
+<!-- Intro video: click-to-play + GA4/GTM progress tracking via dataLayer -->
+<script>
+(function(){
+  var v = document.getElementById('intro-video-player');
+  var btn = document.getElementById('intro-video-play');
+  var card = document.getElementById('intro-video-card');
+  if (!v || !btn) return;
+  window.dataLayer = window.dataLayer || [];
+
+  var title = v.getAttribute('data-video-title') || document.title;
+  var url = new URL(v.querySelector('source').getAttribute('src'), location.href).href;
+  var milestones = [10, 25, 50, 75, 90];
+  var sent = {};
+  var started = false, completed = false;
+
+  function push(evt, pct){
+    var d = isFinite(v.duration) ? Math.round(v.duration) : 0;
+    window.dataLayer.push({
+      event: evt,
+      video_provider: 'html5',
+      video_title: title,
+      video_url: url,
+      video_duration: d,
+      video_current_time: Math.round(v.currentTime || 0),
+      video_percent: pct
+    });
+  }
+
+  btn.addEventListener('click', function(){
+    v.setAttribute('controls', '');
+    card.classList.add('playing');
+    var p = v.play();
+    if (p && p.catch) p.catch(function(){});
+  });
+
+  v.addEventListener('play', function(){
+    card.classList.add('playing');
+    v.setAttribute('controls', '');
+  });
+  v.addEventListener('playing', function(){
+    if (!started) { started = true; push('video_start', 0); }
+  });
+
+  v.addEventListener('timeupdate', function(){
+    if (!v.duration || !isFinite(v.duration)) return;
+    var pct = v.currentTime / v.duration * 100;
+    for (var i = 0; i < milestones.length; i++) {
+      var m = milestones[i];
+      if (pct >= m && !sent[m]) { sent[m] = true; push('video_progress', m); }
+    }
+  });
+
+  v.addEventListener('ended', function(){
+    if (!completed) { completed = true; push('video_complete', 100); }
+  });
+})();
+</script>
 </body>
 </html>
