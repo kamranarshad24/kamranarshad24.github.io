@@ -24,8 +24,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
 <!-- End Google Tag Manager -->
 
-<title>Meta Pixel Not Tracking Purchases on Shopify: What to Check First</title>
-<meta name="description" content="The pixel loads, Pixel Helper is green, and Events Manager still shows no purchases. Seven causes in the order worth checking them, including the duplicate-pixel problem that splits your attribution in half without ever looking broken.">
+<title>Meta Pixel Not Tracking Shopify Purchases: What to Check</title>
+<meta name="description" content="The pixel loads, Pixel Helper is green, and Events Manager shows no purchases. Seven causes in the order worth checking, including the duplicate-pixel problem.">
 <link rel="canonical" href="https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
@@ -33,14 +33,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="Kamran Arshad">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html">
-<meta property="og:title" content="Meta Pixel Not Tracking Purchases on Shopify: What to Check First">
-<meta property="og:description" content="The pixel loads, Pixel Helper is green, and Events Manager still shows no purchases. Seven causes in the order worth checking them, including the duplicate-pixel problem that splits your attribution in half without ever looking broken.">
+<meta property="og:title" content="Meta Pixel Not Tracking Shopify Purchases: What to Check">
+<meta property="og:description" content="The pixel loads, Pixel Helper is green, and Events Manager shows no purchases. Seven causes in the order worth checking, including the duplicate-pixel problem.">
 <meta property="og:image" content="https://marketingkamran.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Meta Pixel Not Tracking Purchases on Shopify: What to Check First">
-<meta name="twitter:description" content="The pixel loads, Pixel Helper is green, and Events Manager still shows no purchases. Seven causes in the order worth checking them, including the duplicate-pixel problem that splits your attribution in half without ever looking broken.">
+<meta name="twitter:title" content="Meta Pixel Not Tracking Shopify Purchases: What to Check">
+<meta name="twitter:description" content="The pixel loads, Pixel Helper is green, and Events Manager shows no purchases. Seven causes in the order worth checking, including the duplicate-pixel problem.">
 <meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
@@ -53,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Meta Pixel Not Tracking Purchases on Shopify: What to Check First",
+  "headline": "Meta Pixel Not Tracking Shopify Purchases: What to Check",
   "description": "The pixel loads, Pixel Helper is green, and Events Manager still shows no purchases. Seven causes in the order worth checking them, including the duplicate-pixel problem that splits your attribution in half without ever looking broken.",
   "datePublished": "2026-08-12",
   "dateModified": "2026-08-12",
@@ -125,9 +125,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>This is the first thing I check on any account, and it is the problem I have actually found in the wild rather than read about.</p>
 
-    <p>On one store I audited, there were <strong>two pixels installed simultaneously</strong> &mdash; one through the Shopify integration, one pasted directly into the theme. Both were technically working. Both were reporting. Neither was reporting everything, because events were splitting between them depending on how the page loaded.</p>
+    <p>On one store I audited, there were <strong>two pixels installed simultaneously</strong>, one through the Shopify integration, one pasted directly into the theme. Both were technically working. Both were reporting. Neither was reporting everything, because events were splitting between them depending on how the page loaded.</p>
 
-    <p>The reason this survives so long is that it never looks broken. There is no error. Pixel Helper shows green. Events Manager shows purchases &mdash; just fewer than you actually had. And unless you sit down and reconcile the pixel against Shopify&rsquo;s own order count, you have no reason to suspect the number is a fraction.</p>
+    <p>The reason this survives so long is that it never looks broken. There is no error. Pixel Helper shows green. Events Manager shows purchases, just fewer than you actually had. And unless you sit down and reconcile the pixel against Shopify&rsquo;s own order count, you have no reason to suspect the number is a fraction.</p>
 
     <div class="note">
       <b class="l">What I can and cannot claim here</b>
@@ -140,12 +140,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>In Shopify admin, look in three places, because a pixel can be installed in any of them and nothing warns you about the others:</p>
 
     <ul>
-      <li><strong>Settings &rarr; Customer events</strong> &mdash; custom pixels live here</li>
-      <li><strong>Facebook &amp; Instagram sales channel</strong> &mdash; the official integration</li>
-      <li><strong>Online Store &rarr; Themes &rarr; Edit code</strong> &mdash; search <code>theme.liquid</code> for <code>fbq</code> or <code>connect.facebook.net</code></li>
+      <li><strong>Settings &rarr; Customer events</strong>: custom pixels live here</li>
+      <li><strong>Facebook &amp; Instagram sales channel</strong>: the official integration</li>
+      <li><strong>Online Store &rarr; Themes &rarr; Edit code</strong>: search <code>theme.liquid</code> for <code>fbq</code> or <code>connect.facebook.net</code></li>
     </ul>
 
-    <p>If you find a pixel ID in more than one of those, that is your problem. Pick one method &mdash; the sales channel is usually the right one &mdash; and remove the others.</p>
+    <p>If you find a pixel ID in more than one of those, that is your problem. Pick one method, the sales channel is usually the right one, and remove the others.</p>
 
     <h2>The rest of the sequence</h2>
 
@@ -169,13 +169,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="cause">
       <div class="cause-h"><span class="rank">05</span><h3>Deduplication is removing the event on purpose</h3></div>
-      <p>If you run the pixel and the Conversions API together &mdash; which you should &mdash; Meta deduplicates using <code>event_id</code>. When the browser and server disagree about what that ID is, you either double-count everything or silently lose one side. Losing one side looks exactly like &ldquo;the pixel stopped working.&rdquo;</p>
+      <p>If you run the pixel and the Conversions API together (which you should), Meta deduplicates using <code>event_id</code>. When the browser and server disagree about what that ID is, you either double-count everything or silently lose one side. Losing one side looks exactly like &ldquo;the pixel stopped working.&rdquo;</p>
       <div class="check"><b>The check</b>For one order, capture the <code>event_id</code> the browser sent and the one your server sent. They must be identical.</div>
     </div>
 
     <div class="cause">
       <div class="cause-h"><span class="rank">06</span><h3>Ad blockers and tracking prevention</h3></div>
-      <p>A meaningful share of traffic blocks browser-based tracking outright. This is not a bug you can fix &mdash; it is a permanent tax on client-side measurement, and it is the reason a browser-only setup will always undercount. The fix is not a fix; it is the Conversions API.</p>
+      <p>A meaningful share of traffic blocks browser-based tracking outright. This is not a bug you can fix, it is a permanent tax on client-side measurement, and it is the reason a browser-only setup will always undercount. The fix is not a fix; it is the Conversions API.</p>
       <div class="check"><b>The check</b>Compare Events Manager purchase counts with Shopify&rsquo;s order count for the same period. A persistent gap that scales with volume is usually this.</div>
     </div>
 
@@ -195,18 +195,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <tbody>
           <tr><td>Shopify orders</td><td>Every paid order, full stop</td><td>The truth</td></tr>
           <tr><td>Meta Events Manager purchases</td><td>Purchase events received</td><td>Should approach Shopify, never exceed it</td></tr>
-          <tr><td>Meta Ads Manager conversions</td><td>Purchases Meta attributes to ads</td><td>A subset &mdash; not all sales come from ads</td></tr>
+          <tr><td>Meta Ads Manager conversions</td><td>Purchases Meta attributes to ads</td><td>A subset, not all sales come from ads</td></tr>
         </tbody>
       </table>
     </div>
 
     <p>Most people compare the wrong pair and panic. Ads Manager conversions <em>should</em> be lower than Shopify orders, because not every customer came from an ad. The number that should be close to Shopify is <strong>Events Manager purchases</strong>. If that one is far below your order count, you have a tracking problem rather than an attribution question.</p>
 
-    <p>And if Events Manager is <em>higher</em> than Shopify, you have the opposite problem &mdash; usually duplicate events, which is <a href="capi-duplicate-purchase-events-deduplication.html">a different article</a>.</p>
+    <p>And if Events Manager is <em>higher</em> than Shopify, you have the opposite problem, usually duplicate events, which is <a href="capi-duplicate-purchase-events-deduplication.html">a different article</a>.</p>
 
     <h2>What I am not telling you</h2>
 
-    <p>I have not given you an expected discrepancy percentage, because the honest range depends on your traffic mix, your checkout, your customers&rsquo; browsers and your country &mdash; and every published benchmark I have seen comes from a company selling the fix. Establish your own baseline when things are working, and treat deviation from <em>your</em> number as the signal.</p>
+    <p>I have not given you an expected discrepancy percentage, because the honest range depends on your traffic mix, your checkout, your customers&rsquo; browsers and your country, and every published benchmark I have seen comes from a company selling the fix. Establish your own baseline when things are working, and treat deviation from <em>your</em> number as the signal.</p>
 
     <p>The ranking above reflects a small number of accounts plus what the failure modes logically imply. Treat it as a sensible search order rather than a statistic.</p>
 
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="related">
       <h2>Related field notes</h2>
-      <a href="shopify-additional-scripts-deadline-tracking.html">Shopify's 26 August Deadline Will Delete Your Purchase Tracking<span>What the auto-upgrade removes, and the ten-minute check.</span></a>
+      <a href="shopify-additional-scripts-deadline-tracking.html">Shopify's 26 August Deadline: Did Your Tracking Survive?<span>What the auto-upgrade removes, and the ten-minute check.</span></a>
       <a href="capi-duplicate-purchase-events-deduplication.html">Duplicate Purchase Events After Installing the Conversions API<span>How to prove deduplication is actually working, not just configured.</span></a>
       <a href="snapchat-purchase-event-not-firing.html">Snapchat purchase events not firing: the diagnostic sequence<span>Six causes ranked, with real Ads Manager figures.</span></a>
     </div>
@@ -229,7 +229,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="container">
-    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
     <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
   </div>
 </footer>

@@ -24,8 +24,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
 <!-- End Google Tag Manager -->
 
-<title>Duplicate Purchase Events After Installing the Conversions API</title>
-<meta name="description" content="Running the Meta pixel and Conversions API together should deduplicate to one event. When it does not, you either double-count revenue or silently lose half of it. How deduplication actually works and how to prove yours is functioning.">
+<title>Duplicate Purchase Events After Adding the Conversions API</title>
+<meta name="description" content="The Meta pixel and Conversions API should deduplicate to one event. When they do not, you double-count revenue or lose half of it. How to prove yours works.">
 <link rel="canonical" href="https://marketingkamran.com/blog/capi-duplicate-purchase-events-deduplication.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
@@ -33,14 +33,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="Kamran Arshad">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://marketingkamran.com/blog/capi-duplicate-purchase-events-deduplication.html">
-<meta property="og:title" content="Duplicate Purchase Events After Installing the Conversions API">
-<meta property="og:description" content="Running the Meta pixel and Conversions API together should deduplicate to one event. When it does not, you either double-count revenue or silently lose half of it. How deduplication actually works and how to prove yours is functioning.">
+<meta property="og:title" content="Duplicate Purchase Events After Adding the Conversions API">
+<meta property="og:description" content="The Meta pixel and Conversions API should deduplicate to one event. When they do not, you double-count revenue or lose half of it. How to prove yours works.">
 <meta property="og:image" content="https://marketingkamran.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Duplicate Purchase Events After Installing the Conversions API">
-<meta name="twitter:description" content="Running the Meta pixel and Conversions API together should deduplicate to one event. When it does not, you either double-count revenue or silently lose half of it. How deduplication actually works and how to prove yours is functioning.">
+<meta name="twitter:title" content="Duplicate Purchase Events After Adding the Conversions API">
+<meta name="twitter:description" content="The Meta pixel and Conversions API should deduplicate to one event. When they do not, you double-count revenue or lose half of it. How to prove yours works.">
 <meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
@@ -53,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Duplicate Purchase Events After Installing the Conversions API",
+  "headline": "Duplicate Purchase Events After Adding the Conversions API",
   "description": "Running the Meta pixel and Conversions API together should deduplicate to one event. When it does not, you either double-count revenue or silently lose half of it. How deduplication actually works and how to prove yours is functioning.",
   "datePublished": "2026-08-12",
   "dateModified": "2026-08-12",
@@ -169,15 +169,15 @@ Server:
       </table>
     </div>
 
-    <p>Timestamps are the worst offender and the most tempting, because they look unique. They are not: two orders in the same second collide, and the browser&rsquo;s clock is not your server&rsquo;s clock. A UUID is fine <em>only</em> if it is generated once and then passed to the other side &mdash; if each side generates its own, you have built a duplication machine.</p>
+    <p>Timestamps are the worst offender and the most tempting, because they look unique. They are not: two orders in the same second collide, and the browser&rsquo;s clock is not your server&rsquo;s clock. A UUID is fine <em>only</em> if it is generated once and then passed to the other side, if each side generates its own, you have built a duplication machine.</p>
 
     <div class="note">
       <b class="l">The subtler failure: silent loss</b>
-      <p>Everyone worries about double-counting because it is visible. The worse bug is an identifier that is not unique &mdash; a checkout ID reused across orders, or a value that repeats. Then Meta correctly deduplicates two <em>genuinely different</em> purchases into one, and you lose real revenue from your reporting with no error anywhere.</p>
+      <p>Everyone worries about double-counting because it is visible. The worse bug is an identifier that is not unique, a checkout ID reused across orders, or a value that repeats. Then Meta correctly deduplicates two <em>genuinely different</em> purchases into one, and you lose real revenue from your reporting with no error anywhere.</p>
       <p>Double-counting looks like good news and gets investigated. Silent loss looks like a slow decline and gets blamed on the ads.</p>
     </div>
 
-    <h2>Proving it works &mdash; not assuming it does</h2>
+    <h2>Proving it works: not assuming it does</h2>
 
     <p>Configured is not the same as working. Here is the test that settles it, and it takes about fifteen minutes.</p>
 
@@ -192,18 +192,18 @@ Server:
 
     <h2>The number that tells you it is working</h2>
 
-    <p>Once deduplication is right, the metric worth watching is <strong>Event Match Quality</strong>. It reflects how much identifying information you send with each event &mdash; hashed email, phone, name, location, click identifiers &mdash; and it drives how well Meta can attribute a conversion to the person who saw the ad.</p>
+    <p>Once deduplication is right, the metric worth watching is <strong>Event Match Quality</strong>. It reflects how much identifying information you send with each event, hashed email, phone, name, location, click identifiers, and it drives how well Meta can attribute a conversion to the person who saw the ad.</p>
 
     <p>This is where the Conversions API earns its keep. Your server knows the customer&rsquo;s email and phone number because they just bought something. The browser often does not. Sending that data server-side, correctly hashed, is usually a bigger win than recovering the blocked events in the first place.</p>
 
     <div class="note">
       <b class="l">Hash it, and check that you did</b>
-      <p>Customer identifiers must be SHA-256 hashed before they are sent. This is not a performance nicety &mdash; it is the difference between sending Meta a hash and sending Meta your customers&rsquo; raw personal data. If you are building the integration yourself, verify the hashing on a real payload before you go live, because a bug here is a data protection incident rather than a tracking bug.</p>
+      <p>Customer identifiers must be SHA-256 hashed before they are sent. This is not a performance nicety, it is the difference between sending Meta a hash and sending Meta your customers&rsquo; raw personal data. If you are building the integration yourself, verify the hashing on a real payload before you go live, because a bug here is a data protection incident rather than a tracking bug.</p>
     </div>
 
     <h2>What I am not claiming</h2>
 
-    <p>I have not given you a target Event Match Quality score or an expected uplift from installing CAPI. Both depend entirely on what customer data you can legitimately collect, your checkout, and your traffic &mdash; and every benchmark I have seen published comes from a vendor whose product improves the number they are benchmarking.</p>
+    <p>I have not given you a target Event Match Quality score or an expected uplift from installing CAPI. Both depend entirely on what customer data you can legitimately collect, your checkout, and your traffic, and every benchmark I have seen published comes from a vendor whose product improves the number they are benchmarking.</p>
 
     <p>Measure your own baseline before the change, measure again after it has run for a full attribution window, and compare against yourself. That comparison is worth more than anyone&rsquo;s published average.</p>
 
@@ -216,7 +216,7 @@ Server:
 
     <div class="related">
       <h2>Related field notes</h2>
-      <a href="shopify-additional-scripts-deadline-tracking.html">Shopify's 26 August Deadline Will Delete Your Purchase Tracking<span>What the auto-upgrade removes, and the ten-minute check.</span></a>
+      <a href="shopify-additional-scripts-deadline-tracking.html">Shopify's 26 August Deadline: Did Your Tracking Survive?<span>What the auto-upgrade removes, and the ten-minute check.</span></a>
       <a href="meta-pixel-not-tracking-purchases-shopify.html">Meta Pixel Not Tracking Purchases on Shopify: What to Check First<span>Seven causes, including the duplicate pixel that splits attribution.</span></a>
       <a href="snapchat-purchase-event-not-firing.html">Snapchat purchase events not firing: the diagnostic sequence<span>Six causes ranked, with real Ads Manager figures.</span></a>
     </div>
@@ -226,7 +226,7 @@ Server:
 
 <footer>
   <div class="container">
-    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
     <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
   </div>
 </footer>

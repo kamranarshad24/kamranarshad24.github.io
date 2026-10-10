@@ -24,8 +24,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
 <!-- End Google Tag Manager -->
 
-<title>Google Ads Conversion Tracking Not Working: A Diagnostic Order</title>
-<meta name="description" content="Google Ads reporting no conversions has a short list of causes, and they are not equally likely. Here they are in diagnostic order, with the check for each, plus the reason a working tag can still report nothing for weeks.">
+<title>Google Ads Conversion Tracking Not Working: Diagnostic Order</title>
+<meta name="description" content="Google Ads showing no conversions has a short list of causes. Here they are in diagnostic order, with a check for each and why a working tag can report nothing.">
 <link rel="canonical" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
@@ -33,14 +33,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:site_name" content="Kamran Arshad">
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
-<meta property="og:title" content="Google Ads Conversion Tracking Not Working: A Diagnostic Order">
-<meta property="og:description" content="Google Ads reporting no conversions has a short list of causes, and they are not equally likely. Here they are in diagnostic order, with the check for each, plus the reason a working tag can still report nothing for weeks.">
+<meta property="og:title" content="Google Ads Conversion Tracking Not Working: Diagnostic Order">
+<meta property="og:description" content="Google Ads showing no conversions has a short list of causes. Here they are in diagnostic order, with a check for each and why a working tag can report nothing.">
 <meta property="og:image" content="https://marketingkamran.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Google Ads Conversion Tracking Not Working: A Diagnostic Order">
-<meta name="twitter:description" content="Google Ads reporting no conversions has a short list of causes, and they are not equally likely. Here they are in diagnostic order, with the check for each, plus the reason a working tag can still report nothing for weeks.">
+<meta name="twitter:title" content="Google Ads Conversion Tracking Not Working: Diagnostic Order">
+<meta name="twitter:description" content="Google Ads showing no conversions has a short list of causes. Here they are in diagnostic order, with a check for each and why a working tag can report nothing.">
 <meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
@@ -53,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Google Ads Conversion Tracking Not Working: A Diagnostic Order",
+  "headline": "Google Ads Conversion Tracking Not Working: Diagnostic Order",
   "description": "Google Ads reporting no conversions has a short list of causes, and they are not equally likely. Here they are in diagnostic order, with the check for each, plus the reason a working tag can still report nothing for weeks.",
   "datePublished": "2026-08-12",
   "dateModified": "2026-08-12",
@@ -125,7 +125,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h2>Before you change anything: is it actually broken?</h2>
 
-    <p>Google Ads credits a conversion to <strong>the date of the click</strong>, not the date the conversion happened. Someone who clicked on Monday and bought on Thursday appears in Monday&rsquo;s row &mdash; and until Thursday, Monday looks worse than it really was.</p>
+    <p>Google Ads credits a conversion to <strong>the date of the click</strong>, not the date the conversion happened. Someone who clicked on Monday and bought on Thursday appears in Monday&rsquo;s row, and until Thursday, Monday looks worse than it really was.</p>
 
     <p>The practical effect is that <strong>recent days always understate performance</strong>, and they keep filling in for as long as your conversion window allows. If you are looking at the last three days and concluding tracking is broken, you may just be looking at data that has not finished arriving.</p>
 
@@ -140,30 +140,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="cause-h"><span class="rank">01</span><h3>The conversion action status tells you where you are</h3></div>
       <p>Google Ads &rarr; <strong>Goals</strong> &rarr; <strong>Conversions</strong> &rarr; <strong>Summary</strong>. Each conversion action has a status, and it is the fastest diagnostic in the whole account.</p>
       <ul>
-        <li><strong>No recent conversions</strong> &mdash; the tag was seen once but nothing lately. Usually a page or template changed.</li>
-        <li><strong>Unverified</strong> &mdash; Google has never received a signal. The tag is not firing where you think it is.</li>
-        <li><strong>Inactive</strong> &mdash; nothing for a long period. Treat as broken.</li>
-        <li><strong>Recording conversions</strong> &mdash; the tag is fine and your problem is elsewhere, most likely the next item.</li>
+        <li><strong>No recent conversions</strong>: the tag was seen once but nothing lately. Usually a page or template changed.</li>
+        <li><strong>Unverified</strong>: Google has never received a signal. The tag is not firing where you think it is.</li>
+        <li><strong>Inactive</strong>: nothing for a long period. Treat as broken.</li>
+        <li><strong>Recording conversions</strong>: the tag is fine and your problem is elsewhere, most likely the next item.</li>
       </ul>
       <div class="check"><b>The check</b>Read the status before touching any code. It tells you whether this is a tagging problem or a reporting problem, and those have completely different fixes.</div>
     </div>
 
     <div class="cause">
       <div class="cause-h"><span class="rank">02</span><h3>The conversion is recording but excluded from the column</h3></div>
-      <p>This one produces the maddening version of the problem: the conversion action clearly shows conversions, but your campaign view says zero. The cause is the <strong>&ldquo;Include in Conversions&rdquo;</strong> setting. If it is off, that action still records &mdash; it just does not appear in the Conversions column, and Smart Bidding does not bid toward it.</p>
+      <p>This one produces the maddening version of the problem: the conversion action clearly shows conversions, but your campaign view says zero. The cause is the <strong>&ldquo;Include in Conversions&rdquo;</strong> setting. If it is off, that action still records, it just does not appear in the Conversions column, and Smart Bidding does not bid toward it.</p>
       <p>Secondary conversion actions are deliberately excluded by design. If someone set your main purchase action as secondary, everything looks broken while working perfectly.</p>
       <div class="check"><b>The check</b>Open the conversion action and confirm the primary/secondary setting matches what you want to optimise toward.</div>
     </div>
 
     <div class="cause">
       <div class="cause-h"><span class="rank">03</span><h3>The tag fires but carries the wrong label</h3></div>
-      <p>A Google Ads conversion tag needs both a conversion ID and a conversion <em>label</em>. The ID identifies the account; the label identifies which action. Copy a tag between two conversion actions and forget to change the label, and the tag fires perfectly &mdash; into the wrong bucket.</p>
+      <p>A Google Ads conversion tag needs both a conversion ID and a conversion <em>label</em>. The ID identifies the account; the label identifies which action. Copy a tag between two conversion actions and forget to change the label, and the tag fires perfectly, into the wrong bucket.</p>
       <div class="check"><b>The check</b>In Tag Assistant, complete the action and read the conversion label on the fired tag. Compare it character for character with the label in the conversion action&rsquo;s tag setup.</div>
     </div>
 
     <div class="cause">
       <div class="cause-h"><span class="rank">04</span><h3>Consent Mode is denying storage, and you have not modelled for it</h3></div>
-      <p>If you added a consent banner &mdash; and in the UK and EU you should have &mdash; tags now wait for permission. That is correct behaviour. But a banner configured to default everything to denied, with no consent update wiring, means the conversion tag never gets its permission and never fires.</p>
+      <p>If you added a consent banner (and in the UK and EU you should have), tags now wait for permission. That is correct behaviour. But a banner configured to default everything to denied, with no consent update wiring, means the conversion tag never gets its permission and never fires.</p>
       <p>This one has a signature: conversions drop off a cliff on the exact day the banner went live.</p>
       <div class="check"><b>The check</b>Load the site fresh, accept cookies, complete the action, and confirm the tag fires. Then repeat and reject, and confirm it does not. Both directions must behave as intended.</div>
     </div>
@@ -176,15 +176,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <h2>Once it works, make it measure money</h2>
 
-    <p>Getting the tag firing is where most people stop. It is the point at which the interesting work starts, because a conversion count treats every lead as identical &mdash; and yours are not.</p>
+    <p>Getting the tag firing is where most people stop. It is the point at which the interesting work starts, because a conversion count treats every lead as identical, and yours are not.</p>
 
     <p>For lead-gen accounts, <strong>enhanced conversions for leads</strong> plus offline conversion imports let you send the real value of a closed job back to Google Ads. Bidding then optimises toward revenue instead of form-fills. That is the difference between an algorithm chasing enquiries and one chasing customers.</p>
 
-    <p>The mechanics are the same as the call-tracking work in <a href="google-ads-call-tracking-local-business.html">the local service post</a> &mdash; capture the click identifier at submission, store it with the lead, and send the value back when the job is won.</p>
+    <p>The mechanics are the same as the call-tracking work in <a href="google-ads-call-tracking-local-business.html">the local service post</a>, capture the click identifier at submission, store it with the lead, and send the value back when the job is won.</p>
 
     <h2>Limits</h2>
 
-    <p>The order above is a search order, not a frequency table &mdash; it reflects a small number of accounts and the logic of each failure mode, not a study. Google Ads changes its interface regularly, so I have anchored the checks to statuses and tag payloads rather than menu locations wherever I could.</p>
+    <p>The order above is a search order, not a frequency table, it reflects a small number of accounts and the logic of each failure mode, not a study. Google Ads changes its interface regularly, so I have anchored the checks to statuses and tag payloads rather than menu locations wherever I could.</p>
 
 
     <div class="cta">
@@ -195,7 +195,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="related">
       <h2>Related field notes</h2>
-      <a href="shopify-additional-scripts-deadline-tracking.html">Shopify's 26 August Deadline Will Delete Your Purchase Tracking<span>What the auto-upgrade removes, and the ten-minute check.</span></a>
+      <a href="google-ads-offline-conversions-booked-jobs.html">Google Ads Offline Conversions for Lead-Gen Businesses<span>Telling Google Ads which leads became booked jobs.</span></a>
+      <a href="google-ads-account-audit-lead-generation.html">Google Ads Account Audit Checklist for Lead Generation<span>Six checks in order, from a dental clinic account rebuild.</span></a>
+      <a href="shopify-additional-scripts-deadline-tracking.html">Shopify's 26 August Deadline: Did Your Tracking Survive?<span>What the auto-upgrade removes, and the ten-minute check.</span></a>
       <a href="google-ads-call-tracking-local-business.html">Google Ads Call Tracking for Local Service Businesses<span>Four ways to track calls, and what each one really measures.</span></a>
       <a href="meta-pixel-not-tracking-purchases-shopify.html">Meta Pixel Not Tracking Purchases on Shopify: What to Check First<span>Seven causes, including the duplicate pixel that splits attribution.</span></a>
     </div>
@@ -205,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="container">
-    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
     <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
   </div>
 </footer>

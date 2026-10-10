@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Google Ads Offline Conversions for Lead-Gen Businesses</title>
+<meta name="description" content="How to tell Google Ads which leads became booked jobs: save the lead, keep the click ID, record the outcome, send the value back.">
+<link rel="canonical" href="https://marketingkamran.com/blog/google-ads-offline-conversions-booked-jobs.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://marketingkamran.com/blog/google-ads-offline-conversions-booked-jobs.html">
+<meta property="og:title" content="Google Ads Offline Conversions for Lead-Gen Businesses">
+<meta property="og:description" content="How to tell Google Ads which leads became booked jobs: save the lead, keep the click ID, record the outcome, send the value back.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Ads Offline Conversions for Lead-Gen Businesses">
+<meta name="twitter:description" content="How to tell Google Ads which leads became booked jobs: save the lead, keep the click ID, record the outcome, send the value back.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google Ads Offline Conversions for Lead-Gen Businesses",
+  "description": "How to tell Google Ads which leads became booked jobs: save the lead, keep the click ID, record the outcome, send the value back.",
+  "datePublished": "2026-10-10",
+  "dateModified": "2026-10-10",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/",
+    "jobTitle": "Paid Ads & Conversion Tracking Specialist"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-offline-conversions-booked-jobs.html"
+  },
+  "image": "https://marketingkamran.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Field Notes",
+      "item": "https://marketingkamran.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Google Ads Offline Conversions for Lead-Gen Businesses",
+      "item": "https://marketingkamran.com/blog/google-ads-offline-conversions-booked-jobs.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a click ID?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A unique identifier that Google Ads adds to your landing page address when someone clicks an ad. Storing it with the lead lets you tell Google Ads later which click produced which job."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to build a plugin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The requirement is to store each lead with its click ID and report the outcome back to Google Ads. I wrote a plugin because this client's form was also losing leads when emails failed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why not just track form submissions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A form submission shows interest. A booked job shows revenue. If only the first is reported, Google Ads has no way to learn which clicks lead to the second."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Telling Google Ads which leads became booked jobs</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>10 Oct 2026</span><span>3 min read</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Google Ads can only optimise toward the outcomes it is told about. If your tracking stops at the form submission, bidding learns to find people who fill in forms.</p>
+      <p>Sending the click ID and the real job value back to Google Ads lets it optimise toward revenue instead.</p>
+    </div>
+    <p>This is the approach I used for a UK carpet cleaning business in Slough. I am describing the method here, and the project is still ongoing.</p>
+    <h2>The problem it solved</h2>
+    <p>The site launched on a standard Elementor form, which is email-first: it composes an email and sends it. If that send fails, there is no second copy. The lead is gone and nobody knows it existed.</p>
+    <p>On top of that, Google Ads had no way of seeing which clicks turned into booked jobs, so it was optimising toward form submissions.</p>
+    <h2>How the fix works</h2>
+    <ol class="steps">
+      <li><b>Save the lead first</b>Every lead is written to a database table before any email, webhook or API call is attempted. A failing third-party service can then never break lead capture.</li>
+      <li><b>Capture the click ID and campaign parameters</b>At submission, the Google click ID (gclid) and UTM parameters are stored with the lead, so each lead stays linked to the ad click that produced it.</li>
+      <li><b>Record the outcome</b>Pipeline stage, job value and notes are logged against each lead, so the question of what the ad spend earned can be answered from the data.</li>
+      <li><b>Send the value back</b>The real job value is pushed back to Google Ads as an offline conversion, including enhanced conversions for leads, so bidding can optimise toward booked jobs.</li>
+    </ol>
+    <h2>What I built, and what you actually need</h2>
+    <p>I built the whole thing as a self-owned WordPress plugin called LeadBridge, with no paid dependencies and no third-party middleman holding the data. I did that because this client needed the form fixed as well.</p>
+    <p>You do not need my plugin to use the method. You need the four steps: store every lead safely, keep the click ID with it, log the outcome, and report the value back to Google Ads.</p>
+    <p>As Google describes it, enhanced conversions for leads adds hashed customer data, such as an email address, to the click ID so that a match can still be made when a click ID is missing. That is why the lead record should hold both.</p>
+    <div class="note">
+      <b class="l">Honest limits</b>
+      <p>Mr Expert is an ongoing project and the results are still building, so I am not quoting a change in cost per lead or bidding performance. This article describes how the method works and why I built it.</p>
+    </div>
+    <p>The full build, including the single dashboard that brings Google Ads, Search Console, Google Business Profile, the LeadBridge job and revenue data, and Microsoft Clarity into one view, is in the <a href="../mr-expert-carpet-cleaning.html">Mr Expert Carpet Cleaning case study</a>.</p>
+    <h2>Common questions</h2>
+    <h3>What is a click ID?</h3>
+    <p>A unique identifier that Google Ads adds to your landing page address when someone clicks an ad. Storing it with the lead lets you tell Google Ads later which click produced which job.</p>
+    <h3>Do I need to build a plugin?</h3>
+    <p>No. The requirement is to store each lead with its click ID and report the outcome back to Google Ads. I wrote a plugin because this client&#x27;s form was also losing leads when emails failed.</p>
+    <h3>Why not just track form submissions?</h3>
+    <p>A form submission shows interest. A booked job shows revenue. If only the first is reported, Google Ads has no way to learn which clicks lead to the second.</p>
+
+    <div class="cta">
+      <h2>Is Google Ads optimising toward your forms or your jobs?</h2>
+      <p>Book a free 15-minute audit and I will tell you one thing you can fix this week.</p>
+      <a class="btn" href="../#contact">Book a free audit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Related</h2>
+      <a href="../conversion-tracking-setup.html">Conversion tracking setup<span>GTM, GA4, CAPI and offline conversions.</span></a>
+      <a href="google-ads-call-tracking-local-business.html">Google Ads Call Tracking for Local Service Businesses<span>How to count the calls that turn into jobs.</span></a>
+      <a href="google-ads-account-audit-lead-generation.html">Google Ads Account Audit Checklist for Lead Generation<span>Six checks in order.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>

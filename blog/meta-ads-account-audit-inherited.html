@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <title>Auditing a Meta Ad Account You Just Inherited</title>
-<meta name="description" content="Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.">
+<meta name="description" content="Taking over a Meta account means inheriting undocumented decisions. Audit measurement before creative, because every judgement rests on unverified numbers.">
 <link rel="canonical" href="https://marketingkamran.com/blog/meta-ads-account-audit-inherited.html">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
@@ -34,13 +34,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://marketingkamran.com/blog/meta-ads-account-audit-inherited.html">
 <meta property="og:title" content="Auditing a Meta Ad Account You Just Inherited">
-<meta property="og:description" content="Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.">
+<meta property="og:description" content="Taking over a Meta account means inheriting undocumented decisions. Audit measurement before creative, because every judgement rests on unverified numbers.">
 <meta property="og:image" content="https://marketingkamran.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Auditing a Meta Ad Account You Just Inherited">
-<meta name="twitter:description" content="Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.">
+<meta name="twitter:description" content="Taking over a Meta account means inheriting undocumented decisions. Audit measurement before creative, because every judgement rests on unverified numbers.">
 <meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
@@ -116,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="answer">
       <p>When you inherit a Meta account, audit the <strong>measurement layer before the campaigns</strong>. Count the pixels, reconcile reported purchases against real orders for a settled week, and map which pixel each campaign optimises toward.</p>
-      <p>Every judgement you are about to make &mdash; pause this, scale that &mdash; rests on conversion data you have not yet verified. Verify it first.</p>
+      <p>Every judgement you are about to make, pause this, scale that, rests on conversion data you have not yet verified. Verify it first.</p>
     </div>
 
     <p>Most audit checklists start with creative, audiences and structure. Those matter. They matter <em>second</em>, because each one is judged against reported performance, and reported performance is exactly the thing an inherited account gives you no reason to trust.</p>
@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
     <div class="note">
       <b class="l">Where these figures come from</b>
-      <p>One Shopify account I took over and audited &mdash; a skincare brand running Meta ads at roughly <strong>PKR 100,000 per day</strong>. The client asked me not to name them, so I have not. The numbers are as they stood in the account during that engagement.</p>
+      <p>One Shopify account I took over and audited, a skincare brand running Meta ads at roughly <strong>PKR 100,000 per day</strong>. The client asked me not to name them, so I have not. The numbers are as they stood in the account during that engagement.</p>
       <p>This is <strong>one account</strong>, not a study. I am giving you the mechanism and one worked example, not an industry statistic. And I am not stating precise engagement dates here because I would rather omit them than approximate them.</p>
     </div>
 
@@ -137,19 +137,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><b>Reconcile a settled week</b>Events Manager purchases versus real store orders, same week, same timezone, at least two weeks old. Events Manager should approach your order count and never exceed it.</li>
       <li><b>Map campaigns to pixels</b>For every active campaign, record which pixel its conversion event is configured against. This is the step that turns a vague discrepancy into a specific list of campaigns.</li>
       <li><b>Trace each group&rsquo;s orders</b>Take the campaigns attached to each pixel and try to find their claimed orders in the store. A group whose orders cannot be traced is your problem, and you now know exactly how much budget it holds.</li>
-      <li><b>Check the Conversions API setup</b>If CAPI is running, confirm deduplication is actually working rather than merely configured &mdash; see <a href="capi-duplicate-purchase-events-deduplication.html">the deduplication article</a>.</li>
+      <li><b>Check the Conversions API setup</b>If CAPI is running, confirm deduplication is actually working rather than merely configured, see <a href="capi-duplicate-purchase-events-deduplication.html">the deduplication article</a>.</li>
     </ol>
 
     <div class="note">
       <b class="l">The question that ends phase one</b>
-      <p>Can you state, in one sentence, how many purchases the store made last week and how many Meta thinks it made &mdash; and explain the gap? If not, do not touch a budget yet. Every optimisation you make is a bet on numbers you cannot defend.</p>
+      <p>Can you state, in one sentence, how many purchases the store made last week and how many Meta thinks it made, and explain the gap? If not, do not touch a budget yet. Every optimisation you make is a bet on numbers you cannot defend.</p>
     </div>
 
     <h2>What phase one found on that account</h2>
 
     <p>Two pixels. One installed through the official sales channel, accurate. One installed by a third-party app, reporting purchases that had no corresponding orders.</p>
 
-    <p>Meta was reporting around 100 orders against 55 to 70 real ones. Roughly <strong>30 to 40% of a PKR 100,000 daily budget</strong> sat in campaigns optimising toward the inaccurate pixel &mdash; campaigns which, in Ads Manager, looked like the strongest in the account.</p>
+    <p>Meta was reporting around 100 orders against 55 to 70 real ones. Roughly <strong>30 to 40% of a PKR 100,000 daily budget</strong> sat in campaigns optimising toward the inaccurate pixel, campaigns which, in Ads Manager, looked like the strongest in the account.</p>
 
     <p>The previous marketer had not found it. That is not a criticism of their competence; it is a consequence of where they looked. Everything inside Ads Manager was internally consistent. The discrepancy is only visible when you compare Meta against the store, and that comparison sits outside the tool most media buyers live in.</p>
 
@@ -176,11 +176,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <p>The client has been told for months that these campaigns were working. Someone made those decisions in good faith with the tools in front of them. Leading with &ldquo;your previous marketer missed this&rdquo; makes you look sharp and makes the client feel foolish, which is a poor trade.</p>
 
-    <p>Lead with the mechanism instead: the discrepancy was only visible from outside Ads Manager, here is the reconciliation, here is the number, here is what happens when we fix it &mdash; <strong>including that reported ROAS will fall.</strong> Say that part before you make the change, not after.</p>
+    <p>Lead with the mechanism instead: the discrepancy was only visible from outside Ads Manager, here is the reconciliation, here is the number, here is what happens when we fix it: <strong>including that reported ROAS will fall.</strong> Say that part before you make the change, not after.</p>
 
     <h2>Limits</h2>
 
-    <p>One inherited account, one root cause. Plenty of accounts have honest tracking and genuinely poor campaigns, and phase one will tell you that in an afternoon &mdash; which is itself worth knowing before you rebuild something that was fine.</p>
+    <p>One inherited account, one root cause. Plenty of accounts have honest tracking and genuinely poor campaigns, and phase one will tell you that in an afternoon, which is itself worth knowing before you rebuild something that was fine.</p>
 
     <p>Phase one is not sufficient either. It establishes whether the numbers can be believed. It does not tell you whether the strategy is any good. It just stops you answering that question with fiction.</p>
 
@@ -203,7 +203,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <footer>
   <div class="container">
-    <span>&copy; 2026 Kamran Arshad &mdash; Paid Ads &amp; Tracking Specialist</span>
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
     <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
   </div>
 </footer>
