@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Conversion Tracking Setup: GTM, GA4 and CAPI | Kamran Arshad</title>
+<meta name="description" content="Conversion tracking setup with Google Tag Manager, GA4, Meta Conversions API and server-side tagging, checked against real leads and orders. Free audit.">
+<link rel="canonical" href="https://marketingkamran.com/conversion-tracking-setup.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://marketingkamran.com/conversion-tracking-setup.html">
+<meta property="og:title" content="Conversion Tracking Setup: GTM, GA4 and CAPI | Kamran Arshad">
+<meta property="og:description" content="Conversion tracking setup with Google Tag Manager, GA4, Meta Conversions API and server-side tagging, checked against real leads and orders. Free audit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conversion Tracking Setup: GTM, GA4 and CAPI | Kamran Arshad">
+<meta name="twitter:description" content="Conversion tracking setup with Google Tag Manager, GA4, Meta Conversions API and server-side tagging, checked against real leads and orders. Free audit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Conversion tracking setup",
+  "serviceType": "Conversion tracking setup",
+  "description": "Google Tag Manager, GA4, Meta Conversions API, server-side tagging and offline conversion setup for small businesses in the UK, US, Canada and Australia.",
+  "url": "https://marketingkamran.com/conversion-tracking-setup.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Conversion tracking",
+      "item": "https://marketingkamran.com/conversion-tracking-setup.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does conversion tracking setup cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I quote after the free audit, because the work depends on what is already installed and which platforms you use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix tracking that is already broken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Most of my work starts with an audit of an existing setup. My field notes cover the usual causes for Google Ads, Meta and Snapchat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platforms do you track?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Ads, GA4, Meta and Snapchat, using Tag Manager, pixels, the Conversions API and server-side containers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you need from me to get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Access to your Tag Manager container, ad accounts and website as an admin or analyst, which I will guide you through. That is usually enough to start within 24 to 48 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you work with businesses in the UK, US, Canada and Australia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I work remotely from Islamabad, Pakistan, and currently have an ongoing UK client. I communicate over WhatsApp and email and reply within a few hours during my working hours."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="./">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Main">
+      <a href="./#services">Services</a>
+      <a href="./#work">Case Studies</a>
+      <a href="blog/">Field Notes</a>
+      <a class="btn" href="./#contact">Get Free Audit</a>
+    </nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#services">Services</a> &nbsp;/&nbsp; Conversion tracking</div>
+    <h1>Conversion tracking setup you can check against real leads and orders</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Updated <time datetime="2026-10-10">10 Oct 2026</time></span></div>
+    <div class="mkts" aria-label="Markets served"><span>United Kingdom</span><span>United States</span><span>Canada</span><span>Australia</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>I set up Google Tag Manager, GA4, the Meta Conversions API and server-side tracking, then compare what each platform reports with the leads and orders you actually received.</p>
+      <p>The first step is a free 15-minute audit of what is firing today.</p>
+    </div>
+    <h2>What you get</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Tag Manager and GA4 for forms and calls</h3></div>
+      <p>Triggers that fire a conversion on every enquiry form submission and every tap on a click-to-call number, linked to Google Ads so bidding can learn from them.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Pixels and the Conversions API without duplicates</h3></div>
+      <p>One pixel per platform, the Conversions API alongside it, and a check that the two are deduplicated, so purchase counts agree with your store.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Server-side tracking and offline conversions</h3></div>
+      <p>A server container that routes conversion data independently of browser limits and ad blockers, and a way to send booked-job value back to Google Ads.</p>
+    </div>
+    <h2>Proof from real accounts</h2>
+    <div class="proof">
+      <span class="tag">Case study</span>
+      <h3>Smile Line Dental, Islamabad</h3>
+      <p>The clinic ran Google Ads with neither form submissions nor phone calls tracked. I installed Tag Manager, set up form and click-to-call triggers, and linked the events to Google Ads. For the first time the clinic could see which ads and keywords produced patient enquiries.</p>
+      <p><a href="smile-line-dental.html">Read the Smile Line Dental case study &rarr;</a></p>
+    </div>
+    <div class="proof">
+      <span class="tag">Case study</span>
+      <h3>The Body Essential, fashion e-commerce</h3>
+      <p>A second pixel installed by a third-party app was reporting purchases that never happened. Meta showed around 100 orders against 55 to 70 in Shopify. Disabling it confirmed that roughly 30 to 40 percent of daily budget had been chasing conversions that did not exist.</p>
+      <p><a href="the-body-essential.html">Read The Body Essential case study &rarr;</a></p>
+    </div>
+    <div class="proof">
+      <span class="tag">Case study</span>
+      <h3>Mr Expert Carpet Cleaning, Slough UK</h3>
+      <p>A standard Tag Manager container, a server-side container, the Conversions API routed through it, GA4 and Microsoft Clarity, plus a plugin I wrote that sends the real job value back to Google Ads. This is an ongoing project, so results are still building.</p>
+      <p><a href="mr-expert-carpet-cleaning.html">Read the Mr Expert Carpet Cleaning case study &rarr;</a></p>
+    </div>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><b>Audit first</b>I check what is firing, what is duplicated and what is missing, and compare platform counts with your real orders or leads.</li>
+      <li><b>Build and fix</b>I set up or repair the tags, remove duplicates and test each event with a real submission or purchase.</li>
+      <li><b>Hand over clearly</b>You get a plain-language summary of what is tracked and where to see it, and I can keep monitoring it ongoing.</li>
+    </ol>
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details><summary>How much does conversion tracking setup cost?</summary><p>I quote after the free audit, because the work depends on what is already installed and which platforms you use.</p></details>
+      <details><summary>Can you fix tracking that is already broken?</summary><p>Yes. Most of my work starts with an audit of an existing setup. My field notes cover the usual causes for Google Ads, Meta and Snapchat.</p></details>
+      <details><summary>Which platforms do you track?</summary><p>Google Ads, GA4, Meta and Snapchat, using Tag Manager, pixels, the Conversions API and server-side containers.</p></details>
+      <details><summary>What do you need from me to get started?</summary><p>Access to your Tag Manager container, ad accounts and website as an admin or analyst, which I will guide you through. That is usually enough to start within 24 to 48 hours.</p></details>
+      <details><summary>Can you work with businesses in the UK, US, Canada and Australia?</summary><p>Yes. I work remotely from Islamabad, Pakistan, and currently have an ongoing UK client. I communicate over WhatsApp and email and reply within a few hours during my working hours.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Do you know which of your ads produced your last ten leads?</h2>
+      <p>Book a free 15-minute audit and I will tell you one thing you can fix this week.</p>
+      <a class="btn" href="./#contact">Book my free tracking audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Related</h2>
+      <a href="smile-line-dental.html">Smile Line Dental case study<span>Google Ads rebuild and conversion tracking for a dental clinic.</span></a>
+      <a href="the-body-essential.html">The Body Essential case study<span>The duplicate pixel that was reporting purchases that never happened.</span></a>
+      <a href="mr-expert-carpet-cleaning.html">Mr Expert Carpet Cleaning case study<span>Full digital build for a UK service business in Slough. Ongoing.</span></a>
+      <a href="blog/google-ads-conversion-tracking-not-working.html">Google Ads Conversion Tracking Not Working: A Diagnostic Order<span>Where to look first when conversions stop recording.</span></a>
+      <a href="blog/google-ads-offline-conversions-booked-jobs.html">Google Ads Offline Conversions for Lead-Gen Businesses<span>Telling Google Ads which leads became booked jobs.</span></a>
+      <a href="blog/meta-ads-more-sales-than-shopify.html">Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<span>The reconciliation that finds phantom conversions.</span></a>
+      <a href="google-ads-management.html">Google Ads management<span>Another way I can help.</span></a>
+      <a href="meta-ads-management.html">Meta Ads management<span>Another way I can help.</span></a>
+      <a href="ecommerce-ppc-management.html">Ecommerce PPC management<span>Another way I can help.</span></a>
+      <a href="local-seo-services.html">Local SEO services<span>Another way I can help.</span></a>
+      <a href="white-label-ppc-for-agencies.html">PPC and tracking for agencies<span>Another way I can help.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="./#contact">Free audit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Paid ads, SEO and tracking. Islamabad, Pakistan, working remotely.</span>
+    <span><a href="./">Home</a> &middot; <a href="blog/">Field Notes</a> &middot; <a href="alphamart.html">AlphaMart</a> &middot; <a href="the-body-essential.html">The Body Essential</a> &middot; <a href="smile-line-dental.html">Smile Line Dental</a> &middot; <a href="mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="brizaa.html">Brizaa</a> &middot; <a href="privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="consent.js" defer></script>
+</body>
+</html>
