@@ -1,0 +1,92 @@
+{
+  "_note": "Exact string literals inside consent.js and inline page scripts. Keys must match the source byte for byte.",
+  "consent": {
+    "'Analytics'": {
+      "de": "'Analyse'",
+      "fr": "'Mesure d’audience'",
+      "es": "'Analítica'"
+    },
+    "'Google Analytics 4 and Microsoft Clarity. Tells me which pages get read and where people get stuck. Clarity also records anonymised session replays.'": {
+      "de": "'Google Analytics 4 und Microsoft Clarity. Zeigt mir, welche Seiten gelesen werden und wo Besucher hängen bleiben. Clarity zeichnet außerdem anonymisierte Sitzungen auf.'",
+      "fr": "'Google Analytics 4 et Microsoft Clarity. M’indique quelles pages sont lues et où les visiteurs bloquent. Clarity enregistre aussi des sessions anonymisées.'",
+      "es": "'Google Analytics 4 y Microsoft Clarity. Me muestra qué páginas se leen y dónde se atasca la gente. Clarity también graba sesiones anonimizadas.'"
+    },
+    "'Advertising'": {
+      "de": "'Werbung'",
+      "fr": "'Publicité'",
+      "es": "'Publicidad'"
+    },
+    "'Google Ads and Meta. Measures whether an ad actually led to an enquiry, and allows remarketing.'": {
+      "de": "'Google Ads und Meta. Misst, ob eine Anzeige tatsächlich zu einer Anfrage geführt hat, und ermöglicht Remarketing.'",
+      "fr": "'Google Ads et Meta. Mesure si une publicité a réellement mené à une demande, et permet le remarketing.'",
+      "es": "'Google Ads y Meta. Mide si un anuncio llevó realmente a una consulta y permite el remarketing.'"
+    },
+    "'<h2 id=\"kac-h\">Cookies on this site</h2>'": {
+      "de": "'<h2 id=\"kac-h\">Cookies auf dieser Website</h2>'",
+      "fr": "'<h2 id=\"kac-h\">Cookies sur ce site</h2>'",
+      "es": "'<h2 id=\"kac-h\">Cookies en esta web</h2>'"
+    },
+    "'<p id=\"kac-p\">I use analytics and advertising cookies to see what people read and '": {
+      "de": "'<p id=\"kac-p\">Ich nutze Analyse- und Werbe-Cookies, um zu sehen, was gelesen wird und '",
+      "fr": "'<p id=\"kac-p\">J’utilise des cookies de mesure d’audience et de publicité pour voir ce qui est lu et '",
+      "es": "'<p id=\"kac-p\">Uso cookies de analítica y publicidad para ver qué se lee y '"
+    },
+    "'whether my own ads work. Nothing loads until you choose. '": {
+      "de": "'ob meine eigenen Anzeigen funktionieren. Nichts wird geladen, bevor Sie wählen. '",
+      "fr": "'si mes propres publicités fonctionnent. Rien ne se charge avant votre choix. '",
+      "es": "'si mis propios anuncios funcionan. Nada se carga hasta que elijas. '"
+    },
+    "'<a href=\"/privacy-policy.html\">Privacy policy</a>.</p>'": {
+      "de": "'<a href=\"/de/privacy-policy.html\">Datenschutzerklärung</a>.</p>'",
+      "fr": "'<a href=\"/fr/privacy-policy.html\">Politique de confidentialité</a>.</p>'",
+      "es": "'<a href=\"/es/privacy-policy.html\">Política de privacidad</a>.</p>'"
+    },
+    "aria-expanded=\"false\">Manage</button>'": {
+      "de": "aria-expanded=\"false\">Einstellungen</button>'",
+      "fr": "aria-expanded=\"false\">Personnaliser</button>'",
+      "es": "aria-expanded=\"false\">Configurar</button>'"
+    },
+    "data-act=\"reject\">Reject all</button>'": {
+      "de": "data-act=\"reject\">Alle ablehnen</button>'",
+      "fr": "data-act=\"reject\">Tout refuser</button>'",
+      "es": "data-act=\"reject\">Rechazar todo</button>'"
+    },
+    "data-act=\"accept\">Accept all</button>'": {
+      "de": "data-act=\"accept\">Alle akzeptieren</button>'",
+      "fr": "data-act=\"accept\">Tout accepter</button>'",
+      "es": "data-act=\"accept\">Aceptar todo</button>'"
+    },
+    "'<div class=\"kac-row\"><div class=\"lock\">Always on</div>'": {
+      "de": "'<div class=\"kac-row\"><div class=\"lock\">Immer aktiv</div>'",
+      "fr": "'<div class=\"kac-row\"><div class=\"lock\">Toujours actif</div>'",
+      "es": "'<div class=\"kac-row\"><div class=\"lock\">Siempre activas</div>'"
+    },
+    "'<div><h3>Strictly necessary</h3><p>Remembers this choice so you are not asked again. '": {
+      "de": "'<div><h3>Unbedingt erforderlich</h3><p>Speichert diese Auswahl, damit Sie nicht erneut gefragt werden. '",
+      "fr": "'<div><h3>Strictement nécessaires</h3><p>Mémorise ce choix pour ne pas vous le redemander. '",
+      "es": "'<div><h3>Estrictamente necesarias</h3><p>Recuerdan esta elección para no volver a preguntarte. '"
+    },
+    "'Cannot be turned off.</p></div></div>'": {
+      "de": "'Kann nicht deaktiviert werden.</p></div></div>'",
+      "fr": "'Ne peut pas être désactivé.</p></div></div>'",
+      "es": "'No se pueden desactivar.</p></div></div>'"
+    },
+    "data-act=\"save\">Save my choices</button>": {
+      "de": "data-act=\"save\">Auswahl speichern</button>",
+      "fr": "data-act=\"save\">Enregistrer mes choix</button>",
+      "es": "data-act=\"save\">Guardar mi elección</button>"
+    },
+    "'Hide options' : 'Manage'": {
+      "de": "'Optionen ausblenden' : 'Einstellungen'",
+      "fr": "'Masquer les options' : 'Personnaliser'",
+      "es": "'Ocultar opciones' : 'Configurar'"
+    }
+  },
+  "page": {
+    "'Slide ' + (i + 1)": {
+      "de": "'Folie ' + (i + 1)",
+      "fr": "'Diapositive ' + (i + 1)",
+      "es": "'Diapositiva ' + (i + 1)"
+    }
+  }
+}
