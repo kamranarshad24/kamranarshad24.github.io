@@ -225,3 +225,9 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--blue);outline-offse
 @media (max-width:640px){.topnav a:not(.btn){display:none}.float-cta{right:12px;bottom:12px}}
 @media print{.topbar,.float-cta,.cta,.skip{display:none !important}body{background:#fff;font-size:12pt}a{color:inherit}
   .faq details{border:0}.faq details>p{display:block}}
+
+/* Mobile: wrap long table headers; scroll the table itself if it is still too wide */
+@media (max-width: 600px) {
+  .tbl th { white-space: normal; }
+  .tbl { display: block; overflow-x: auto; min-width: 0; width: 100%; }
+}

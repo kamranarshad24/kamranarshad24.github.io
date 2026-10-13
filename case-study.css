@@ -179,3 +179,6 @@ nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.88);
   border-color: rgba(37, 99, 235, .28);
   font-weight: 600;
 }
+
+/* Mobile: let grid columns and table headers shrink instead of widening the page */
+.cs-grid > * { min-width: 0; }
