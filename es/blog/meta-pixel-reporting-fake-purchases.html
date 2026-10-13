@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>¿Tu píxel de Meta registra compras que nunca ocurrieron?</title>
+<meta name="description" content="Un píxel que deja de reportar se nota. El fallo caro es uno que reporta de más, porque un ROAS inflado atrae presupuesto. Seis formas de revisar el tuyo.">
+<link rel="canonical" href="https://marketingkamran.com/es/blog/meta-pixel-reporting-fake-purchases.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/meta-pixel-reporting-fake-purchases.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/meta-pixel-reporting-fake-purchases.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/meta-pixel-reporting-fake-purchases.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/meta-pixel-reporting-fake-purchases.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/meta-pixel-reporting-fake-purchases.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://marketingkamran.com/es/blog/meta-pixel-reporting-fake-purchases.html">
+<meta property="og:title" content="¿Tu píxel de Meta registra compras que nunca ocurrieron?">
+<meta property="og:description" content="Un píxel que deja de reportar se nota. El fallo caro es uno que reporta de más, porque un ROAS inflado atrae presupuesto. Seis formas de revisar el tuyo.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="¿Tu píxel de Meta registra compras que nunca ocurrieron?">
+<meta name="twitter:description" content="Un píxel que deja de reportar se nota. El fallo caro es uno que reporta de más, porque un ROAS inflado atrae presupuesto. Seis formas de revisar el tuyo.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "¿Tu píxel de Meta registra compras que nunca ocurrieron?",
+  "description": "A todos les preocupa un píxel que deja de reportar. El fallo caro es un píxel que reporta de más, porque un ROAS inflado atrae más presupuesto. Seis formas de comprobar si tus eventos de compra corresponden a pedidos reales.",
+  "datePublished": "2026-08-13",
+  "dateModified": "2026-08-13",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/es/",
+    "jobTitle": "Especialista en publicidad de pago y seguimiento de conversiones"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/meta-pixel-reporting-fake-purchases.html",
+    "inLanguage": "es"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "es"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://marketingkamran.com/es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notas de campo",
+      "item": "https://marketingkamran.com/es/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Píxel que registra compras falsas"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Puede un píxel de Facebook registrar compras que no ocurrieron?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Un píxel mal configurado puede disparar un evento de compra en una página que no es un pedido completado, dispararse cada vez que se recarga la página o haber sido instalado por una app de terceros que activa eventos en condiciones equivocadas. Meta registra lo que recibe, así que esos eventos aparecen como compras reales en los informes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo sé si los datos de mi píxel de Meta son exactos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Concilia una semana cerrada. Compara las compras del Administrador de eventos con los pedidos de tu tienda en el mismo periodo y la misma zona horaria. El Administrador de eventos debería acercarse a tu número de pedidos y nunca superarlo. Si lo supera, tienes eventos fantasma o duplicados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Por qué mi ROAS de Facebook se ve bien si no tengo ventas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Porque el ROAS se calcula con los datos de conversión que reporta el píxel, no con tu cuenta bancaria. Si el píxel registra compras que nunca ocurrieron, el ROAS se calcula sobre ingresos que no existen y se verá excelente mientras el negocio no gana nada."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/es/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/es/blog/">Notas de campo</a> <a href="/es/#work">Casos de éxito</a> <a href="/es/#services">Servicios</a> <a class="btn" href="/es/#contact">Auditoría gratis</a>
+    <details class="lang-sw"><summary aria-label="Language">ES</summary><ul><li><a href="/blog/meta-pixel-reporting-fake-purchases.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/meta-pixel-reporting-fake-purchases.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/meta-pixel-reporting-fake-purchases.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/meta-pixel-reporting-fake-purchases.html" hreflang="es" lang="es" aria-current="true">Español</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/es/blog/">Notas de campo</a> &nbsp;/&nbsp; Píxel de Meta</div>
+    <h1>Un píxel silencioso es fácil. Un píxel que miente se lleva tu presupuesto.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>13 ago. 2026</span><span>8 min de lectura</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Un píxel que deja de reportar se nota en pocos días, porque las conversiones caen a cero y alguien entra en pánico. Un píxel que reporta <strong>de más</strong> puede funcionar meses, porque un ROAS inflado parece un éxito, y Meta responde enviando más presupuesto a las campañas que lo producen.</p>
+      <p>La única prueba fiable es la conciliación: ¿las compras del Administrador de eventos corresponden a pedidos reales en tu tienda?</p>
+    </div>
+
+    <p>Casi todos los artículos de resolución de problemas tratan las conversiones que faltan como el problema. En la práctica, el fallo más dañino va en sentido contrario, porque no parece un fallo. Parece tu mejor campaña.</p>
+
+    <h2>Por qué reportar de más es peor que reportar de menos</h2>
+
+    <p>Reportar de menos te cuesta calidad de optimización. Meta ve menos conversiones de las que hubo, aprende más despacio y probablemente inviertes poco en algo que funciona. Es malo, pero se limita a sí mismo.</p>
+
+    <p>Reportar de más es distinto, porque crea un círculo vicioso. Conversiones infladas producen un ROAS inflado. Un ROAS inflado hace que una campaña parezca ganadora. Las ganadoras reciben más presupuesto. Más presupuesto produce más conversiones fantasma.</p>
+
+    <p><strong>El error atrae la inversión hacia sí mismo.</strong> Por eso puede consumir un tercio del presupuesto diario antes de que nadie lo cuestione: todas las señales disponibles en Ads Manager dicen que la campaña funciona.</p>
+
+    
+    <div class="note">
+      <b class="l">De dónde salen estas cifras</b>
+      <p>Una cuenta de Shopify que asumí y audité, una marca de cuidado de la piel con anuncios de Meta de unos <strong>100.000 PKR al día</strong>. El cliente me pidió no nombrarlo, así que no lo hago. Las cifras son las que había en la cuenta durante ese encargo.</p>
+      <p>Es <strong>una sola cuenta</strong>, no un estudio. Te doy el mecanismo y un ejemplo desarrollado, no una estadística del sector. Y no indico aquí fechas exactas del encargo porque prefiero omitirlas a aproximarlas.</p>
+    </div>
+
+    <h2>Seis comprobaciones, las más baratas primero</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Concilia una semana cerrada</h3></div>
+      <p>La comprobación de más valor, y la mayoría de cuentas nunca la han hecho. Toma una semana que terminó hace al menos dos semanas. Compara las compras del Administrador de eventos con los pedidos de tu tienda en el mismo periodo y la misma zona horaria.</p>
+      <p>El Administrador de eventos debería acercarse a tu número de pedidos. Nunca debería superarlo. Cuenta eventos de compra, y un evento de compra sin pedido, por definición, no es una compra.</p>
+      <div class="check"><b>Veredicto</b>Si el Administrador de eventos supera los pedidos de la tienda, hay eventos fantasma o duplicados. Ninguna ventana de atribución lo explica.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Cuenta tus píxeles</h3></div>
+      <p>En la cuenta detrás de este artículo, la causa fue un segundo píxel instalado por una app de terceros, que registraba compras sin pedidos correspondientes. Revisa <strong>Configuración &rarr; Eventos del cliente</strong>, el <strong>canal de ventas de Facebook e Instagram</strong> y <code>theme.liquid</code>. Más de un ID de píxel es tu primer sospechoso; consulta <a href="/es/blog/two-meta-pixels-shopify-problem.html">el artículo sobre varios píxeles</a>.</p>
+      <div class="check"><b>Veredicto</b>Dos ID de píxel y una discrepancia en la misma cuenta rara vez son casualidad.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Comprueba si el evento de compra se dispara al recargar</h3></div>
+      <p>Haz un pedido real, llega a la página de confirmación y recárgala. Observa la pestaña Network. Si se dispara un segundo evento de compra, cada cliente que recarga, guarda en favoritos o vuelve a esa página está inflando tus números. Sin un <code>event_id</code> único o un identificador de pedido, Meta no tiene forma de saber que es la misma venta.</p>
+      <div class="check"><b>Veredicto</b>Un evento de compra al recargar significa que tus cifras suben con el tráfico, no con las ventas.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Comprueba a qué página está vinculado el evento de compra</h3></div>
+      <p>Un evento de compra debería dispararse al completar el pedido y en ningún otro sitio. Las apps mal configuradas a veces lo vinculan a añadir al carrito, iniciar el checkout o cualquier página que coincida con una regla de URL demasiado amplia. Cada uno de esos casos produce compras sin pedidos detrás.</p>
+      <div class="check"><b>Veredicto</b>Recorre tu embudo con la pestaña Network abierta. Un evento de compra antes del pago es un defecto, no una optimización.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Segmenta las conversiones reportadas por campaña y luego rastréalas</h3></div>
+      <p>No evalúes la cuenta como un solo número. Agrupa las campañas según el píxel hacia el que optimizan e intenta encontrar en tu tienda los pedidos que reporta cada grupo. En esa cuenta, los pedidos de un grupo no se podían rastrear en absoluto, y ese grupo consumía alrededor del 30 al 40 % de la inversión diaria.</p>
+      <div class="check"><b>Veredicto</b>Un grupo de campañas cuyos pedidos no encuentras en tu tienda es la fuga.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">06</span><h3>Compara el valor de las compras con los ingresos reales</h3></div>
+      <p>Los recuentos pueden parecer plausibles y los valores ser absurdos. Compara el valor total de compras reportado en una semana cerrada con los ingresos reales de esa semana. Un valor muy superior a los ingresos reales significa que hay eventos disparándose con valores erróneos o duplicados, aunque el recuento parezca cercano.</p>
+      <div class="check"><b>Veredicto</b>Revisa tanto el recuento como el valor. Fallan de forma independiente.</div>
+    </div>
+
+    <h2>Qué hacer cuando lo encuentres</h2>
+
+    <p>Corrige la causa, no el síntoma. Desactivar un píxel mal configurado o corregir el activador del evento hará que las campañas afectadas dejen de publicarse: es el diagnóstico confirmándose, no un problema nuevo.</p>
+
+    <p>Luego avisa a quien gestiona el presupuesto <em>antes</em> de que vea el panel. El ROAS reportado bajará. Los ingresos no, porque los ingresos que eliminas nunca existieron. Esa conversación es mucho más fácil antes que después.</p>
+
+    <div class="note">
+      <b class="l">La parte incómoda</b>
+      <p>Si una campaña lleva meses optimizando hacia conversiones fantasma, Meta ha pasado ese tiempo aprendiendo a encontrar personas que generan conversiones fantasma. Reconstruir con datos limpios lleva tiempo, y el rendimiento inicial con la configuración corregida parecerá peor que la ficción a la que sustituye. Ese es el costo de haberse equivocado, no el costo de arreglarlo.</p>
+    </div>
+
+    <h2>Límites</h2>
+
+    <p>Una cuenta, una causa. Reportar de más tiene otras fuentes: eventos de CAPI duplicados sin identificadores coincidentes, eventos de prueba que siguen activos, varias apps disparando la misma conversión. La conciliación de la primera comprobación los detecta todos; identificar cuál es requiere el resto.</p>
+
+    <p>Tampoco te doy un umbral de «demasiado». Compara con los pedidos de tu propia tienda. Esa comparación es exacta, algo que ninguna referencia puede ofrecer.</p>
+
+
+    <div class="cta">
+      <h2>¿Son reales tus compras reportadas?</h2>
+      <p>Averiguarlo lleva quince minutos y la mayoría de cuentas nunca se han revisado. Envíame la URL de tu tienda.</p>
+      <a class="btn" href="/es/#contact">Consigue una auditoría gratuita de seguimiento &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Notas de campo relacionadas</h2>
+      <a href="/es/blog/meta-ads-more-sales-than-shopify.html">Meta dice 100 pedidos. Shopify dice 62. ¿Quién miente?<span>La conciliación que descubre conversiones fantasma.</span></a> <a href="/es/blog/two-meta-pixels-shopify-problem.html">Dos píxeles de Meta en una tienda Shopify no son un plan de respaldo<span>Por qué todos los resultados sobre «instalar varios píxeles» responden a la pregunta equivocada.</span></a> <a href="/es/blog/meta-pixel-not-tracking-purchases-shopify.html">El píxel de Meta no registra compras en Shopify: qué revisar primero<span>Siete causas, incluida la división entre píxeles que nunca parece rota.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Especialista en publicidad de pago y seguimiento</span> <span><a href="/es/">Inicio</a> &middot; <a href="/es/blog/">Notas de campo</a> &middot; <a href="/es/privacy-policy.html">Privacidad</a></span>
+  </div>
+</footer>
+<script src="/consent-es.js" defer></script>
+</body>
+</html>
