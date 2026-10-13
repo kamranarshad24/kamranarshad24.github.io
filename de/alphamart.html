@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Fallstudie AlphaMart | Kamran Arshad</title>
+<meta name="description" content="Ein 8-monatiger Test meines eigenen Shopify-Shops: der komplette Funnel vom Anzeigenklick bis zum Geldeingang, ein Vergleich von Snapchat, Meta und TikTok und was die Zustelldaten gezeigt haben.">
+<link rel="canonical" href="https://marketingkamran.com/de/alphamart.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/alphamart.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/alphamart.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/alphamart.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/alphamart.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/alphamart.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://marketingkamran.com/de/alphamart.html">
+<meta property="og:title" content="Fallstudie AlphaMart">
+<meta property="og:description" content="Ein 8-monatiger Test meines eigenen Shopify-Shops: der komplette Funnel vom Anzeigenklick bis zum Geldeingang, ein Vergleich von Snapchat, Meta und TikTok und was die Zustelldaten gezeigt haben.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kamran Arshad, Google Ads, Meta Ads, SEO und Webentwicklung">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fallstudie AlphaMart">
+<meta name="twitter:description" content="Ein 8-monatiger Test meines eigenen Shopify-Shops: der komplette Funnel vom Anzeigenklick bis zum Geldeingang, ein Vergleich von Snapchat, Meta und TikTok und was die Zustelldaten gezeigt haben.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/case-study.css">
+<style>
+/* ---------- AlphaMart-only blocks — built from case-study.css tokens ---------- */
+.am-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; margin: 4px 0 24px; }
+.am-stat { background: #fff; padding: 16px 16px; }
+.am-stat .k { font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--subtle); margin-bottom: 6px; }
+.am-stat .v { font-size: 21px; font-weight: 800; letter-spacing: -.5px; font-variant-numeric: tabular-nums; color: var(--ink); }
+.am-stat .v.pos { color: var(--green); }
+.am-stat .sub { font-size: 11.5px; color: var(--subtle); margin-top: 4px; }
+
+.am-fall { display: flex; flex-direction: column; margin: 4px 0 24px; }
+.am-fall-row { padding: 12px 0; border-bottom: 1px solid var(--border); }
+.am-fall-row:last-child { border-bottom: none; }
+.am-fall-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 7px; flex-wrap: wrap; }
+.am-fall-name { font-size: 14px; font-weight: 600; color: var(--ink); }
+.am-fall-name small { display: block; font-weight: 400; color: var(--subtle); font-size: 12px; margin-top: 2px; }
+.am-fall-val { font-size: 13.5px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); white-space: nowrap; }
+.am-bar { height: 8px; background: var(--surface); border-radius: 5px; overflow: hidden; }
+.am-bar i { display: block; height: 100%; background: var(--accent); border-radius: 5px; }
+.am-bar.cut i { background: #F87171; }
+.am-bar.end i { background: var(--green); }
+
+.am-tw { overflow-x: auto; margin: 4px 0 24px; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.am-tw table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 13.5px; }
+.am-tw caption { text-align: left; font-size: 10.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--subtle); padding: 12px 16px; border-bottom: 1px solid var(--border); background: var(--surface); }
+.am-tw th, .am-tw td { padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+.am-tw thead th { font-size: 10.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--subtle); background: var(--surface); }
+.am-tw td.n, .am-tw th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.am-tw tbody tr:last-child td { border-bottom: none; }
+.am-tw tr.hi td { background: var(--green-dim, #ECFDF5); }
+.am-tw tr.lo td { background: #FEF2F2; }
+
+.am-rule { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 20px 22px; margin: 4px 0 24px; }
+.am-rule .rk { font-size: 10.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+.am-rule p { color: var(--ink); font-size: 15px; margin: 0; }
+.am-rule p + p { margin-top: 8px; color: var(--muted); font-size: 14px; }
+
+.am-ledger { list-style: none; padding: 0; margin: 4px 0 8px; }
+.am-ledger li { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14.5px; line-height: 1.6; color: var(--muted); }
+.am-ledger li:last-child { border-bottom: none; }
+.am-ledger .mk { flex-shrink: 0; width: 20px; font-weight: 700; }
+.am-ledger.good .mk { color: var(--green); }
+.am-ledger.bad .mk { color: var(--accent); }
+.am-ledger strong { color: var(--ink); }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Portfolio",
+      "item": "https://marketingkamran.com/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Fallstudie AlphaMart",
+      "item": "https://marketingkamran.com/de/alphamart.html"
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- CONTACT FORM MODAL -->
+<div id="audit-modal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(15,23,42,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#fff; border-radius:24px; padding:40px; max-width:480px; width:100%; position:relative; box-shadow:0 32px 80px rgba(15,23,42,.2); animation:modal-in .25s ease;">
+    <button onclick="closeModal()" style="position:absolute;top:16px;right:16px;background:#F1F5F9;border:none;width:32px;height:32px;border-radius:50%;font-size:18px;cursor:pointer;color:#64748B;">x</button>
+    <span style="font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#2563EB;display:block;margin-bottom:10px;">Kostenlos und unverbindlich</span>
+    <h3 style="font-size:24px;font-weight:800;letter-spacing:-.8px;margin-bottom:8px;color:#0F172A;">Kostenlosen Audit buchen</h3>
+    <p style="font-size:14px;color:#64748B;margin-bottom:28px;line-height:1.6;">Ich prüfe Ihre Anzeigen, Ihre Website oder Ihre Sichtbarkeit in der Suche 15 Minuten lang live und nenne Ihnen eine Sache, die Sie diese Woche verbessern können.</p>
+    <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://marketingkamran.com/de/thankyou.html">
+      <div style="margin-bottom:16px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">Ihr Name *</label><input type="text" name="name" required placeholder="z. B. Anna Schmidt" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;"></div>
+      <div style="margin-bottom:16px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">E-Mail oder WhatsApp *</label><input type="text" name="contact" required placeholder="ihre@email.de oder +49 XXX XXXXXXX" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;"></div>
+      <div style="margin-bottom:24px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">Wobei brauchen Sie Unterstützung?</label><textarea name="message" rows="3" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;resize:vertical;"></textarea></div>
+      <button type="submit" style="width:100%;padding:14px;background:#2563EB;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;">Anfrage senden</button>
+    </form>
+    <p style="font-size:12px;color:#94A3B8;text-align:center;margin-top:14px;">Ich antworte innerhalb von 24 Stunden. Kein Spam, niemals.</p>
+  </div>
+</div>
+<style>@keyframes modal-in{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}</style>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="/de/" class="nav-logo"><img src="/Kamran_Arshad_logo.svg" alt="Kamran Arshad"></a>
+    <a href="/de/#work" class="btn btn-outline">← Alle Fallstudien</a>
+  <details class="lang-sw"><summary aria-label="Language">DE</summary><ul><li><a href="/alphamart.html" hreflang="en" lang="en">English</a></li><li><a href="/de/alphamart.html" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/fr/alphamart.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/alphamart.html" hreflang="es" lang="es">Español</a></li></ul></details></div>
+</nav>
+
+<section class="cs-hero">
+  <div class="container">
+    <a href="/de/#work" class="back-link">← Zurück zum Portfolio</a>
+    <div class="cs-tags">
+      <span class="cs-tag tag-own">Eigene Marke</span> <span class="cs-tag tag-snap">Snapchat Ads</span> <span class="cs-tag tag-ads">Facebook Ads</span> <span class="cs-tag tag-track">Kompletter Funnel-Audit</span>
+    </div>
+    <h1>Alpha<span>Mart</span></h1>
+    <p class="cs-subtitle">E-Commerce-Shop: allein aufgebaut, dann Zeile für Zeile geprüft</p>
+  </div>
+</section>
+
+<div class="results-bar">
+  <div class="container">
+    <div class="results-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="result-item">
+        <div class="result-n">PKR <span class="accent">1,95</span></div>
+        <div class="result-l">Snapchat Kosten pro Klick</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n"><span class="accent">4.84</span>x</div>
+        <div class="result-l">ROAS des besten Produkts (Meta)</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n"><span class="accent">48</span>%</div>
+        <div class="result-l">Anteil der Anzeigen-Bestellungen, die zu Geld wurden</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n"><span class="accent">8</span></div>
+        <div class="result-l">Getestete Produkte über die gesamte Laufzeit</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cs-body">
+  <div class="container">
+    <div class="cs-grid">
+
+      <div class="cs-left">
+
+        <div class="cs-section">
+          <span class="label">Die Ausgangslage</span>
+          <h3>Mein eigenes Geld, ein austauschbares Produkt und niemand, dem man die Schuld geben kann, außer den Daten.</h3>
+          <p>AlphaMart war ein Shop für Haarstyling-Geräte, den ich mit einem Partner auf Shopify betrieben habe, mit Verkauf per Nachnahme in Pakistan über acht Monate. Es gab kein Kundenbudget zu schützen, und genau deshalb habe ich ihn danach so streng geprüft, wie ich das Konto eines Kunden prüfen würde.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Was der Audit gemacht hat</span>
+          <h3>Jeden Plattform-Export mit der Bank abgeglichen und dann dem Geld hinter das Werbe-Dashboard gefolgt.</h3>
+          <ul class="cs-list">
+            <li><strong>Den kompletten Funnel rekonstruiert</strong> aus Snapchat-, Meta- und TikTok-Exporten und den Abrechnungsdateien des Kurierdienstes, bis auf die einzelne Bestellung</li>
+            <li><strong>Jede Bestellung vom Klick bis zum Geld verfolgt</strong>: nicht nur „Käufe“, sondern wie viele dieser Käufe Bestätigung, Versand und Retouren tatsächlich überstanden und zu einem zugestellten Verkauf wurden</li>
+            <li><strong>Snapchat, Meta und TikTok verglichen</strong> nach Kosten pro Klick, Kosten pro tausend Impressionen und echter Conversion, nicht nur nach dem ROAS, den jede Plattform über sich selbst meldet</li>
+            <li><strong>Drei Produkte nach echter Zustellleistung verglichen</strong>: Bestellwert gegenüber Zustellquote, statt beim Listenpreis aufzuhören</li>
+            <li><strong>Zustellausfälle nach Kurierdienst und Stadt aufgeteilt</strong>, um herauszufinden, ob eine schlechte Zustellquote am Kurier oder am Markt lag</li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Der echte Funnel</span>
+          <h3>1.092 Bestellungen wurden über die Werbekonten bezahlt. 523 wurden zu Geld.</h3>
+          <p>Werbeplattformen melden eine Bestellung in dem Moment, in dem ein Kunde zur Kasse geht. Bei Nachnahme in Pakistan ist das der Anfang des Funnels, nicht das Ende. Fast ein Drittel der Bestellungen wurde beim Bestätigungsanruf storniert, bevor überhaupt ein Paket verschickt wurde, und ein weiteres Fünftel kam als Retoure zurück.</p>
+
+          <div class="am-fall">
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Von den Anzeigen erzeugte Bestellungen<small>Von Snapchat und Meta zusammen gemeldet</small></div><div class="am-fall-val">1,092</div></div>
+              <div class="am-bar"><i style="width:100%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Beim Bestätigungsanruf gestoppt<small>Falsche Nummer, keine Antwort oder der Käufer hat es sich anders überlegt</small></div><div class="am-fall-val">−33.5%</div></div>
+              <div class="am-bar cut"><i style="width:33.5%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Tatsächlich versendet<small>749 Pakete über beide Kurierdienste</small></div><div class="am-fall-val">749</div></div>
+              <div class="am-bar"><i style="width:68.6%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Als Retoure zurückgekommen<small>226 Pakete, abgelehnt, nicht zugestellt oder verloren</small></div><div class="am-fall-val">−226</div></div>
+              <div class="am-bar cut"><i style="width:22.2%"></i></div>
+            </div>
+            <div class="am-fall-row">
+              <div class="am-fall-head"><div class="am-fall-name">Zugestellt und bezahlt<small>Kunden, die das Paket angenommen und bar bezahlt haben</small></div><div class="am-fall-val">523</div></div>
+              <div class="am-bar end"><i style="width:44.2%"></i></div>
+            </div>
+          </div>
+
+          <p>Durch Bestätigungsanrufe vor jedem Versand wurden rund 325 der schlechten Bestellungen früh abgefangen. Das sparte geschätzt <strong>78.650 PKR</strong> an Kuriergebühren, die sonst ausgegeben worden wären, nur damit das Paket direkt zurückkommt.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Kanalvergleich</span>
+          <h3>Snapchat kaufte Aufmerksamkeit 4- bis 6-mal günstiger als Meta. TikTok kaufte gar nichts.</h3>
+          <div class="am-tw">
+            <table>
+              <caption>Gesamte 8-monatige Laufzeit</caption>
+              <thead><tr><th>Kennzahl</th><th class="n">Snapchat</th><th class="n">Meta</th><th class="n">TikTok</th></tr></thead>
+              <tbody>
+                <tr><td>Impressionen</td><td class="n">11,079,368</td><td class="n">389,700</td><td class="n">n/a</td></tr>
+                <tr><td>Kosten pro 1.000 Impressionen</td><td class="n">42,53 PKR</td><td class="n">174,65 PKR</td><td class="n">n/a</td></tr>
+                <tr><td>Kosten pro Klick</td><td class="n">1,95 PKR</td><td class="n">11,44 PKR</td><td class="n">n/a</td></tr>
+                <tr><td>Klickrate</td><td class="n">2.19%</td><td class="n">1.53%</td><td class="n">n/a</td></tr>
+                <tr><td>Gemeldeter ROAS</td><td class="n">5.63x</td><td class="n">2.73x</td><td class="n">0.00x</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Meta lief mit rund <strong>15.000 PKR</strong> Budget auf Kampagnen, die nie einen Verkauf brachten, und sie blieben aktiv, weil niemand unterhalb der Kontoebene nachsah. TikTok gab 6.412 PKR aus und brachte etwa fünf Bestellungen, die alle bei der Bestätigung storniert wurden.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Produktleistung</span>
+          <h3>Das teuerste Produkt hatte auch die beste Zustellquote.</h3>
+          <div class="am-tw">
+            <table>
+              <caption>Bestellwert vs. Zustellquote, nach Produkt</caption>
+              <thead><tr><th>Produkt</th><th class="n">Bestellwert</th><th class="n">Zustellquote</th></tr></thead>
+              <tbody>
+                <tr class="hi"><td><strong>5-in-1 Haarstyling-Gerät</strong></td><td class="n">3.894 PKR</td><td class="n">76.3%</td></tr>
+                <tr><td>Wiederaufladbarer Mini-Kamm</td><td class="n">2.475 PKR</td><td class="n">71.2%</td></tr>
+                <tr><td>Glättbürste</td><td class="n">2.004 PKR</td><td class="n">70.5%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="am-rule">
+            <div class="rk">Was das gezeigt hat</div>
+            <p>Das Muster war genau umgekehrt zu unserer Erwartung: Das günstigste Produkt wurde nicht am besten zugestellt. Wer pro Bestellung mehr bezahlt, scheint vorher gründlicher nachzudenken und nimmt das Paket häufiger an, wenn der Fahrer kommt.</p>
+            <p>Der Wareneinkauf spiegelte das damals nicht wider: Das beste Produkt wurde am seltensten nachbestellt und das schwächste am häufigsten. Genau diese Lücke soll die nächste Einkaufsrunde schließen.</p>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Zustellung nach Stadt, nicht nur nach Kurier</span>
+          <h3>Der schwächste Kurierdienst hat zufällig die meisten Pakete in die schwächste Stadt geschickt.</h3>
+          <p>Für sich betrachtet wirkte ein Kurierdienst viel schwächer als die anderen. Nach Zielort aufgeteilt schnitt jeder Kurier in derselben Stadt schlecht ab. Die Lücke zwischen den Kurieren war größtenteils Geografie unter anderem Namen.</p>
+          <div class="am-tw">
+            <table>
+              <caption>Zustellerfolg nach Stadt · größte Märkte nach Volumen</caption>
+              <thead><tr><th>Stadt</th><th class="n">Pakete</th><th class="n">Zugestellt</th></tr></thead>
+              <tbody>
+                <tr class="hi"><td>Karachi</td><td class="n">47</td><td class="n">85.1%</td></tr>
+                <tr><td>Islamabad</td><td class="n">20</td><td class="n">75.0%</td></tr>
+                <tr><td>Rawalpindi</td><td class="n">23</td><td class="n">65.2%</td></tr>
+                <tr class="lo"><td><strong>Lahore</strong>: zweitgrößter Markt</td><td class="n">78</td><td class="n">59.0%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Was tatsächlich getestet wurde</span>
+          <div class="am-stats">
+            <div class="am-stat"><div class="k">Zugestellte Bestellungen</div><div class="v">523</div><div class="sub">~65/Monat</div></div>
+            <div class="am-stat"><div class="k">Getestete Produkte</div><div class="v">8</div><div class="sub">über die gesamte Laufzeit</div></div>
+            <div class="am-stat"><div class="k">Genutzte Werbekanäle</div><div class="v">3</div><div class="sub">Snapchat, Meta, TikTok</div></div>
+            <div class="am-stat"><div class="k">Erhaltenes Werbeguthaben</div><div class="v pos">128,400</div><div class="sub">PKR, Snapchat</div></div>
+          </div>
+          <p>Acht Monate Tests über drei Werbeplattformen, drei versendete Produkte und zwei Kurierdienste ergaben ein funktionierendes Funnel-Modell, einen Kanalvergleich, auf den man handeln kann, und eine klare Einschätzung, welche Produkte und welche Städte das Skalieren wirklich wert waren.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Was sich bewährt hat</span>
+          <ul class="am-ledger good">
+            <li><span class="mk">✓</span><div>Der Mediaeinkauf war wirklich hervorragend: <strong>11 Millionen Impressionen für 471.193 PKR</strong>, eine Klickrate von 2,19 % und Videoanzeigen, die die Aufmerksamkeit bei fast 40 % über eine 2-Sekunden-Ansicht hielten.</div></li>
+            <li><span class="mk">✓</span><div>Bestätigungsanrufe vor jedem Versand sind eine Gewohnheit, die auf jeden Shop übertragbar ist. Sie sparten rund <strong>78.650 PKR</strong> an Kurierkosten, die sonst ausgegeben und zurückerstattet worden wären.</div></li>
+            <li><span class="mk">✓</span><div>Wir sind mitten im Betrieb vom Dropshipping auf eigenen Lagerbestand umgestiegen, sobald klar war, dass Dropshipping begrenzte, wie viel wir tatsächlich kontrollieren konnten. Eine Entscheidung, die man leicht vermeidet und die teuer wird, wenn man sie aufschiebt.</div></li>
+            <li><span class="mk">✓</span><div>Über die Laufzeit wurden acht Produkttypen getestet, nicht nur einer. Nur so wurde das beste Produkt überhaupt gefunden.</div></li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Was der Audit für die Zukunft verändert hat</span>
+          <ul class="am-ledger bad">
+            <li><span class="mk">01</span><div>Nie ein Produkt verkaufen, dessen Preis auf Daraz oder Temu verankert ist. Wenn ein Kunde den Preis in zehn Sekunden mit zehn identischen Angeboten vergleichen kann, konkurrieren Sie über den Preis, bevor die Anzeige überhaupt läuft.</div></li>
+            <li><span class="mk">02</span><div>Ein Produkt danach beurteilen, wie es durch den ganzen Funnel läuft, Bestellwert und Zustellquote zusammen, nicht danach, wie gut es auf der Produktseite aussieht.</div></li>
+            <li><span class="mk">03</span><div>Die Zustellquote vom ersten Tag an nach Stadt tracken, nicht nur nach Kurier. Eine Lücke von 26 Prozentpunkten zwischen zwei Städten blieb monatelang unbemerkt, weil niemand die Daten so aufgeteilt hat.</div></li>
+            <li><span class="mk">04</span><div>Ab der ersten Woche einen Rabatt für Vorkasse anbieten: Vorkasse-Bestellungen kommen nur etwa zu einem Viertel so oft zurück wie Nachnahme-Bestellungen.</div></li>
+            <li><span class="mk">05</span><div>Ware im Verhältnis zu dem einkaufen, was sich nachweislich verkauft. Das beste Produkt von AlphaMart bekam den wenigsten Bestand und das schlechteste den meisten.</div></li>
+            <li><span class="mk">06</span><div>Wenn ein Monat gut läuft, mehr investieren. Auf den besten Monat des Geschäfts folgte eine Kürzung der Werbeausgaben um 76 %, aus Gründen, die nichts mit der Leistung zu tun hatten.</div></li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Tools &amp; Plattformen</span>
+          <div class="tools-wrap">
+            <span class="tool-chip">Shopify</span> <span class="tool-chip">Snapchat Ads Manager</span> <span class="tool-chip">Meta Ads Manager</span> <span class="tool-chip">Facebook &amp; Snapchat Pixel</span> <span class="tool-chip">Abgleich der Kurierabrechnungen</span> <span class="tool-chip">Abgleich der Kontoauszüge</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-carousel-wrap">
+        <span class="label">Dashboard-Screenshots</span>
+        <div class="carousel">
+          <div class="carousel-slides">
+            <div class="carousel-slide"><img src="/clients-dashboard/AlphaMart Snapchat Ads Dashboard Cost Per Purchase.png" alt="AlphaMart Snapchat Ads"></div>
+            <div class="carousel-slide"><img src="/clients-dashboard/AlphaMart Sales Dashboard.png" alt="AlphaMart Umsatz-Dashboard"></div>
+            <div class="carousel-slide"><img src="/clients-dashboard/AlphaMart FB Ads Dashboard.png" alt="AlphaMart Facebook Ads"></div>
+          </div>
+          <button class="carousel-btn carousel-prev">‹</button>
+          <button class="carousel-btn carousel-next">›</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cs-cta">
+  <div class="container">
+    <span class="label" style="color:#60A5FA; display:block; text-align:center;">Kostenlos und unverbindlich</span>
+    <h2>Wollen Sie denselben Audit für Ihr Werbekonto?</h2>
+    <p>Ich prüfe Ihr Werbekonto oder Ihren Shop 15 Minuten lang live und sage Ihnen genau, was Sie beheben sollten.</p>
+    <a href="/de/#services" class="btn btn-primary btn-lg" onclick="openModal();return false;">Kostenloser Audit →</a>
+  </div>
+</section>
+
+<footer class="cs-footer">
+  <div class="container cs-footer-inner">
+    <div class="cs-footer-left"><strong>Kamran Arshad</strong> · Ads · SEO · Web · Tracking</div>
+    <div class="cs-footer-links">
+      <a href="https://linkedin.com/in/kamran-arshad24" target="_blank">LinkedIn ↗</a> <a href="mailto:hello@marketingkamran.com">E-Mail</a> <a href="/de/">Portfolio</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const slides = carousel.querySelector('.carousel-slides');
+  const dotBtns = carousel.querySelectorAll('.carousel-dot');
+  const total = carousel.querySelectorAll('.carousel-slide').length;
+  let current = 0, timer;
+  function goTo(n) {
+    current = (n + total) % total;
+    slides.style.transform = `translateX(-${current * 100}%)`;
+    dotBtns.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+  function startTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 3500); }
+  carousel.querySelector('.carousel-prev').addEventListener('click', () => { goTo(current - 1); startTimer(); });
+  carousel.querySelector('.carousel-next').addEventListener('click', () => { goTo(current + 1); startTimer(); });
+  dotBtns.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startTimer(); }));
+  goTo(0); startTimer();
+});
+
+function openModal(){var m=document.getElementById('audit-modal');m.style.display='flex';document.body.style.overflow='hidden';window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'audit_modal_open'});}
+function closeModal(){document.getElementById('audit-modal').style.display='none';document.body.style.overflow='';}
+document.getElementById('audit-modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+</script>
+<script src="/consent-de.js" defer></script>
+</body>
+</html>
