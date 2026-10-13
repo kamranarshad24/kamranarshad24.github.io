@@ -185,7 +185,7 @@ def extract():
             elif (p or "/") not in seen[k]["pages"]:
                 seen[k]["pages"].append(p or "/")
     data = {k: seen[k] for k in order}
-    json.dump(data, open(os.path.join(HERE, "segments.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(data, open(os.path.join(HERE, "segments.json"), "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=1)
     chars = sum(len(v["en"]) for v in data.values())
     print("segments:", len(data), "chars:", chars)
 
@@ -401,7 +401,7 @@ def merge(lang):
             ph = sorted(re.findall(r"</?t\d+/?>", segs[k]["en"]))
             if sorted(re.findall(r"</?t\d+/?>", t)) != ph: bad.append((k, "placeholders")); continue
             tr[k] = t
-    json.dump(tr, open(fn, "w", encoding="utf-8"), ensure_ascii=False, indent=0, sort_keys=True)
+    json.dump(tr, open(fn, "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=0, sort_keys=True)
     print(lang, "translations:", len(tr), "of", len(segs), "problems:", bad[:20])
 
 if __name__ == "__main__":
@@ -409,7 +409,7 @@ if __name__ == "__main__":
     if cmd == "extract": extract()
     elif cmd == "missing":
         todo = missing(sys.argv[2])
-        json.dump(todo, open(os.path.join(HERE, "todo-%s.json" % sys.argv[2]), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+        json.dump(todo, open(os.path.join(HERE, "todo-%s.json" % sys.argv[2]), "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=0)
     elif cmd == "merge": merge(sys.argv[2])
     elif cmd == "build":
         for c in LIVE: build_lang(c)
