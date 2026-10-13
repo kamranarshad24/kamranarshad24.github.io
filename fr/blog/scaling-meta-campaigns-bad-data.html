@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>On ne peut pas faire monter en puissance une campagne en laquelle on n'a pas confiance</title>
+<meta name="description" content="Les conseils disent de miser sur votre meilleur ROAS. Cela suppose que le ROAS annoncé reflète de vraies ventes. Quand ce n&#x27;est pas le cas, augmenter les budgets accélère la perte.">
+<link rel="canonical" href="https://marketingkamran.com/fr/blog/scaling-meta-campaigns-bad-data.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/scaling-meta-campaigns-bad-data.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/scaling-meta-campaigns-bad-data.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/scaling-meta-campaigns-bad-data.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/scaling-meta-campaigns-bad-data.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/scaling-meta-campaigns-bad-data.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/blog/scaling-meta-campaigns-bad-data.html">
+<meta property="og:title" content="On ne peut pas faire monter en puissance une campagne en laquelle on n&#x27;a pas confiance">
+<meta property="og:description" content="Les conseils disent de miser sur votre meilleur ROAS. Cela suppose que le ROAS annoncé reflète de vraies ventes. Quand ce n&#x27;est pas le cas, augmenter les budgets accélère la perte.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="On ne peut pas faire monter en puissance une campagne en laquelle on n&#x27;a pas confiance">
+<meta name="twitter:description" content="Les conseils disent de miser sur votre meilleur ROAS. Cela suppose que le ROAS annoncé reflète de vraies ventes. Quand ce n&#x27;est pas le cas, augmenter les budgets accélère la perte.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "On ne peut pas faire monter en puissance une campagne en laquelle on n'a pas confiance",
+  "description": "Les conseils de montée en puissance disent de miser sur votre meilleur ROAS. C'est un bon conseil fondé sur une hypothèse que personne ne vérifie : que le ROAS annoncé reflète de vraies ventes. Quand ce n'est pas le cas, augmenter les budgets accélère la perte.",
+  "datePublished": "2026-08-13",
+  "dateModified": "2026-08-13",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "jobTitle": "Spécialiste publicité payante & suivi des conversions"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/scaling-meta-campaigns-bad-data.html",
+    "inLanguage": "fr"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "fr"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notes de terrain",
+      "item": "https://marketingkamran.com/fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Monter en puissance sur des données peu fiables"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Comment savoir quelle campagne Facebook faire monter en puissance ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Faites monter la campagne dont vous pouvez retrouver les commandes annoncées dans votre boutique. Avant de comparer le ROAS entre campagnes, rapprochez les achats annoncés des vraies commandes, car une campagne aux données de conversion gonflées paraîtra toujours être votre meilleure."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi mon ROAS a-t-il chuté après avoir augmenté le budget ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les causes courantes sont la saturation de l'audience, la sortie de la phase d'apprentissage de l'algorithme et une concurrence accrue. Mais si la chute a été immédiate et brutale, vérifiez si le ROAS d'avant était réel, car des données de conversion gonflées produisent une performance apparente excellente qui ne survit pas à un budget plus important."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il faire monter une campagne au ROAS élevé mais sans chiffre d'affaires correspondant ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Une campagne qui annonce un ROAS élevé alors que votre boutique ne montre aucune commande correspondante signale des conversions qui n'ont pas eu lieu. L'augmenter, c'est accroître les dépenses sur un signal qui n'existe pas."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/fr/blog/">Notes de terrain</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/blog/scaling-meta-campaigns-bad-data.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/scaling-meta-campaigns-bad-data.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/scaling-meta-campaigns-bad-data.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/blog/scaling-meta-campaigns-bad-data.html" hreflang="es" lang="es">Español</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/blog/">Notes de terrain</a> &nbsp;/&nbsp; Stratégie</div>
+    <h1>Chaque guide de montée en puissance suppose que vos chiffres sont réels. Vérifiez-le d'abord.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>13 août 2026</span><span>8 min de lecture</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Chaque guide de montée en puissance dit la même chose : trouvez votre meilleur ROAS et mettez plus d'argent derrière. C'est un conseil raisonnable qui repose sur une hypothèse que presque personne ne teste : <strong>que le ROAS annoncé reflète des ventes qui ont réellement eu lieu.</strong></p>
+      <p>Quand ce n'est pas le cas, augmenter les budgets n'amplifie pas un gagnant. Cela amplifie une erreur de remontée, et plus vite que vous ne le remarquerez.</p>
+    </div>
+
+    <p>Les contenus sur la montée en puissance ne manquent pas. Augmenter les budgets de 20 % tous les trois jours. Dupliquer vers de nouvelles audiences. Montée verticale contre horizontale. L'essentiel est correct, dans ses limites.</p>
+
+    <p>Ce que presque aucun n'inclut, c'est une étape zéro : <em>vérifier que la performance que vous vous apprêtez à amplifier est réelle.</em> C'est cet oubli qui a conduit un client avec qui j'ai travaillé à mettre plus de budget sur ses pires campagnes pendant des mois.</p>
+
+    <h2>Le piège, dit simplement</h2>
+
+    <p>Les règles de montée en puissance sélectionnent le ROAS annoncé le plus élevé. Une campagne qui optimise vers un pixel qui sur-remonte affichera toujours un ROAS plus élevé qu'une campagne mesurée honnêtement, non parce qu'elle performe mieux, mais parce que sa base de calcul est une fiction.</p>
+
+    <p>La règle de sélection censée trouver votre meilleure campagne trouve donc de façon fiable la plus <strong>mal mesurée</strong>. Et chaque cycle d'augmentation lui envoie plus de budget.</p>
+
+    
+    <div class="note">
+      <b class="l">D'où viennent ces chiffres</b>
+      <p>Un compte Shopify que j'ai repris et audité, une marque de soins de la peau qui dépensait environ <strong>100 000 PKR par jour</strong> en publicités Meta. Le client m'a demandé de ne pas le nommer, je ne l'ai donc pas fait. Les chiffres sont ceux du compte pendant cette mission.</p>
+      <p>C'est <strong>un seul compte</strong>, pas une étude. Je vous donne le mécanisme et un exemple concret, pas une statistique sectorielle. Et je n'indique pas ici les dates précises de la mission, car je préfère les omettre plutôt que de les approximer.</p>
+    </div>
+
+    <h2>À quoi cela ressemblait en pratique</h2>
+
+    <p>Le client dépensait environ 100 000 PKR par jour sur le compte et ajustait ses budgets pratiquement au hasard : comme il ne pouvait pas savoir quelles campagnes remontaient des données honnêtes, il augmentait et baissait les dépenses selon un tableau de bord auquel personne ne faisait confiance. Ses propres mots : il faisait des changements à l'aveugle.</p>
+
+    <p>Le compte avait deux pixels. L'un fiable, l'autre signalant des achats sans commande correspondante. Meta affichait environ 100 commandes ; la boutique en avait 55 à 70. Environ <strong>30 à 40 % du budget quotidien</strong> se trouvaient dans des campagnes liées au pixel inexact, et ces campagnes affichaient le meilleur ROAS du compte.</p>
+
+    <p>Selon n'importe quelle règle classique, c'étaient ces campagnes qu'il fallait faire monter. C'est le point qui mérite réflexion. <strong>La méthode n'était pas mal appliquée. Elle était correctement appliquée à de mauvaises données</strong>, ce qui a produit exactement la mauvaise réponse en toute confiance.</p>
+
+    <h2>Étape zéro, avant toute décision de montée en puissance</h2>
+
+    <ol class="steps">
+      <li><b>Rapprocher une semaine clôturée</b>Achats du Gestionnaire d'événements contre vraies commandes de la boutique. Si le Gestionnaire d'événements est supérieur, arrêtez-vous : vous avez des événements fantômes ou en double, et aucune comparaison de campagnes n'est encore valable.</li>
+      <li><b>Retracer la campagne précise que vous voulez faire monter</b>Pas le compte. Cette campagne. Retrouvez-vous ses commandes annoncées dans votre boutique ? Si vous ne pouvez pas les retracer, ne la faites pas monter.</li>
+      <li><b>Vérifier vers quel pixel elle optimise</b>Si le compte a plus d'un pixel, les campagnes ne sont pas comparables tant que vous ne savez pas laquelle utilise lequel.</li>
+      <li><b>Puis appliquer la méthode de montée en puissance de votre choix</b>Les méthodes sont bonnes. Il leur fallait simplement quelque chose de vrai sur quoi travailler.</li>
+    </ol>
+
+    <div class="note">
+      <b class="l">Un diagnostic sous vos yeux</b>
+      <p>Si vous avez déjà augmenté le budget d'une campagne au ROAS excellent et vu la performance s'effondrer immédiatement, pas décliner sur quinze jours, mais s'effondrer, envisagez que le chiffre initial n'était peut-être pas réel. Les vrais gagnants se dégradent progressivement à mesure que les audiences saturent. Les gagnants fictifs ne se dégradent pas, car il n'y avait rien à dégrader ; le chiffre annoncé cesse simplement d'être crédible face à votre solde bancaire.</p>
+    </div>
+
+    <h2>Vers quoi monter en puissance à la place</h2>
+
+    <p>Le ROAS annoncé est un indicateur indirect de ce qui vous importe vraiment : l'argent qui arrive dans l'entreprise. Plus votre signal d'optimisation est proche du chiffre d'affaires réel, plus il est difficile à tromper :</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Signal</th><th>Facilité de distorsion</th><th>Utilisable pour monter en puissance ?</th></tr></thead>
+        <tbody>
+          <tr><td>ROAS annoncé dans Ads Manager</td><td>Facile, hérite de tous les défauts du pixel</td><td>Seulement après rapprochement</td></tr>
+          <tr><td>Achats retraçables dans votre boutique</td><td>Difficile, une commande existe ou n'existe pas</td><td>Oui</td></tr>
+          <tr><td>Chiffre d'affaires de la boutique sur la période</td><td>Très difficile</td><td>Oui, avec un décalage</td></tr>
+          <tr><td>Marge sur coûts variables</td><td>La plus difficile, et celle qui paie les salaires</td><td>Le mieux, si vous pouvez la mesurer</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>La plupart des annonceurs ne dépassent jamais la première ligne. Passer à la deuxième, en confirmant simplement que les commandes existent, coûte une heure par semaine et élimine toute la catégorie de problèmes décrite dans cet article.</p>
+
+    <h2>Limites</h2>
+
+    <p>Rien de tout cela ne rend la montée en puissance facile. La saturation d'audience, la fatigue créative, les redémarrages de phase d'apprentissage et la concurrence sont bien réels, et ils vous coûteront de la performance même sur une campagne aux données parfaites.</p>
+
+    <p>L'affirmation, limitée, est que ces problèmes valent la peine d'être résolus <em>après</em> avoir confirmé que le chiffre vers lequel vous optimisez correspond à des ventes. Un compte n'est pas une étude, mais le mécanisme n'a rien d'exotique, et la vérification coûte si peu qu'il n'y a aucune bonne raison de la sauter.</p>
+
+
+    <div class="cta">
+      <h2>Vous vous apprêtez à faire monter une campagne en puissance ?</h2>
+      <p>Assurez-vous que la performance que vous amplifiez est réelle. Envoyez-moi l'URL de votre boutique et je la rapprocherai de vos commandes.</p>
+      <a class="btn" href="/fr/#contact">Obtenir un audit de suivi gratuit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Notes de terrain associées</h2>
+      <a href="/fr/blog/meta-ads-more-sales-than-shopify.html">Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?<span>Le rapprochement qui révèle les conversions fantômes.</span></a> <a href="/fr/blog/meta-pixel-reporting-fake-purchases.html">Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu<span>La panne qui ressemble à un succès jusqu'au rapprochement.</span></a> <a href="/fr/blog/meta-ads-account-audit-inherited.html">Auditer un compte Meta Ads dont vous héritez<span>Vérifiez les chiffres avant de juger les campagnes.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Suivi des conversions Google Ads qui ne marche pas : ordre de diagnostic</title>
+<meta name="description" content="Google Ads n&#x27;affiche aucune conversion ? La liste des causes est courte. Les voici dans l&#x27;ordre du diagnostic, avec une vérification pour chacune et pourquoi une balise qui marche peut ne rien remonter.">
+<link rel="canonical" href="https://marketingkamran.com/fr/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/blog/google-ads-conversion-tracking-not-working.html">
+<meta property="og:title" content="Suivi des conversions Google Ads qui ne marche pas : ordre de diagnostic">
+<meta property="og:description" content="Google Ads n&#x27;affiche aucune conversion ? La liste des causes est courte. Les voici dans l&#x27;ordre du diagnostic, avec une vérification pour chacune et pourquoi une balise qui marche peut ne rien remonter.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Suivi des conversions Google Ads qui ne marche pas : ordre de diagnostic">
+<meta name="twitter:description" content="Google Ads n&#x27;affiche aucune conversion ? La liste des causes est courte. Les voici dans l&#x27;ordre du diagnostic, avec une vérification pour chacune et pourquoi une balise qui marche peut ne rien remonter.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Suivi des conversions Google Ads qui ne marche pas : ordre de diagnostic",
+  "description": "Quand Google Ads ne remonte aucune conversion, la liste des causes est courte, et elles ne sont pas également probables. Les voici dans l'ordre du diagnostic, avec la vérification pour chacune, et la raison pour laquelle une balise qui fonctionne peut ne rien remonter pendant des semaines.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "jobTitle": "Spécialiste publicité payante & suivi des conversions"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html",
+    "inLanguage": "fr"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "fr"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notes de terrain",
+      "item": "https://marketingkamran.com/fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Suivi des conversions Google Ads"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pourquoi mon suivi des conversions Google Ads ne fonctionne-t-il pas ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les causes les plus fréquentes : la balise absente de la page qui confirme l'action, une action de conversion réglée avec une catégorie ou un mode de comptage qui la masque, une balise qui se déclenche mais n'est pas liée à la bonne action de conversion, des paramètres de consentement qui bloquent la balise, et des fenêtres d'attribution qui font que la conversion n'a pas encore été remontée."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de temps faut-il à Google Ads pour afficher les conversions ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les conversions peuvent mettre jusqu'à 24 heures à apparaître dans les rapports, et elles sont attribuées à la date du clic plutôt qu'à la date de la conversion. Les jours récents paraissent donc toujours moins bons qu'ils ne le seront au final : c'est un effet normal des rapports, pas une panne."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment tester si ma balise de conversion Google Ads se déclenche ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Utilisez Google Tag Assistant en mode débogage, réalisez vous-même l'action de conversion et vérifiez que la balise se déclenche avec le bon ID et le bon libellé de conversion. Vérifiez ensuite l'état de l'action de conversion dans Google Ads, qui doit passer de « Non validée » à « Enregistrement des conversions »."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/fr/blog/">Notes de terrain</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/blog/google-ads-conversion-tracking-not-working.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/google-ads-conversion-tracking-not-working.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-conversion-tracking-not-working.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/blog/google-ads-conversion-tracking-not-working.html" hreflang="es" lang="es">Español</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/blog/">Notes de terrain</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Google Ads affiche zéro conversion. Vous savez que la vente a eu lieu.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>12 août 2026</span><span>8 min de lecture</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Quand Google Ads affiche zéro conversion, cela tient généralement à l'une de cinq choses : la <strong>balise n'est pas sur la page qui confirme l'action</strong>, la balise se déclenche mais n'est pas liée à la bonne action de conversion, l'action de conversion est exclue de la colonne « Conversions », des paramètres de consentement la bloquent, ou les conversions existent mais ne sont pas encore remontées parce qu'elles sont attribuées à la date du clic.</p>
+      <p>La dernière n'est pas une panne, et elle trompe tout le monde en permanence.</p>
+    </div>
+
+    <p>C'est l'un des problèmes de suivi les plus recherchés, et les résultats sont dominés par des fils de forum où personne n'a trouvé de réponse. Cela en dit long : le symptôme est générique, et la cause est généralement propre à la façon dont un compte précis a été câblé.</p>
+
+    <p>Plutôt que de lister toutes les possibilités, voici donc l'ordre que je suis réellement, qui règle la plupart des cas dès les trois premières étapes.</p>
+
+    <h2>Avant de toucher à quoi que ce soit : est-ce vraiment cassé ?</h2>
+
+    <p>Google Ads attribue une conversion à <strong>la date du clic</strong>, pas à la date de la conversion. Quelqu'un qui a cliqué lundi et acheté jeudi apparaît sur la ligne de lundi, et jusqu'à jeudi, lundi paraît moins bon qu'il ne l'était réellement.</p>
+
+    <p>Concrètement, <strong>les jours récents sous-estiment toujours la performance</strong>, et ils continuent de se remplir tant que votre fenêtre de conversion le permet. Si vous regardez les trois derniers jours et concluez que le suivi est cassé, vous regardez peut-être simplement des données qui ne sont pas encore toutes arrivées.</p>
+
+    <div class="note">
+      <b class="l">Le test qui tranche</b>
+      <p>Regardez une période qui s'est terminée il y a au moins deux semaines et qui se trouve entièrement hors de votre fenêtre de conversion. Si cette période a des conversions et pas les jours récents, votre suivi fonctionne et vous lisiez un rapport incomplet. Si cette période plus ancienne est aussi à zéro, lisez la suite.</p>
+    </div>
+
+    <h2>L'ordre de diagnostic</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>L'état de l'action de conversion vous dit où vous en êtes</h3></div>
+      <p>Google Ads &rarr; <strong>Objectifs</strong> &rarr; <strong>Conversions</strong> &rarr; <strong>Résumé</strong>. Chaque action de conversion a un état, et c'est le diagnostic le plus rapide de tout le compte.</p>
+      <ul>
+        <li><strong>Aucune conversion récente</strong> : la balise a été détectée une fois mais plus rien récemment. Généralement, une page ou un modèle a changé.</li>
+        <li><strong>Non validée</strong> : Google n'a jamais reçu de signal. La balise ne se déclenche pas là où vous le pensez.</li>
+        <li><strong>Inactive</strong> : rien depuis longtemps. Considérez-la comme cassée.</li>
+        <li><strong>Enregistrement des conversions</strong> : la balise va bien et votre problème est ailleurs, très probablement au point suivant.</li>
+      </ul>
+      <div class="check"><b>La vérification</b>Lisez l'état avant de toucher au code. Il vous dit s'il s'agit d'un problème de balisage ou de rapport, et les solutions sont totalement différentes.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>La conversion s'enregistre mais est exclue de la colonne</h3></div>
+      <p>C'est la version exaspérante du problème : l'action de conversion affiche clairement des conversions, mais la vue de vos campagnes indique zéro. La cause est le paramètre <strong>« Inclure dans "Conversions" »</strong>. S'il est désactivé, l'action continue d'enregistrer, mais n'apparaît pas dans la colonne Conversions, et les enchères intelligentes n'enchérissent pas dessus.</p>
+      <p>Les actions de conversion secondaires sont exclues par conception. Si quelqu'un a défini votre action d'achat principale comme secondaire, tout semble cassé alors que tout fonctionne parfaitement.</p>
+      <div class="check"><b>La vérification</b>Ouvrez l'action de conversion et vérifiez que le réglage principale/secondaire correspond à ce vers quoi vous voulez optimiser.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>La balise se déclenche mais porte le mauvais libellé</h3></div>
+      <p>Une balise de conversion Google Ads a besoin d'un ID de conversion et d'un <em>libellé</em> de conversion. L'ID identifie le compte ; le libellé identifie l'action. Copiez une balise entre deux actions de conversion en oubliant de changer le libellé, et la balise se déclenche parfaitement, dans le mauvais panier.</p>
+      <div class="check"><b>La vérification</b>Dans Tag Assistant, réalisez l'action et lisez le libellé de conversion de la balise déclenchée. Comparez-le caractère par caractère avec le libellé indiqué dans la configuration de la balise de l'action de conversion.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Le mode Consentement refuse le stockage, et vous n'avez pas prévu de modélisation</h3></div>
+      <p>Si vous avez ajouté une bannière de consentement (et dans l'UE, vous devriez), les balises attendent désormais une autorisation. C'est le comportement correct. Mais une bannière configurée pour tout refuser par défaut, sans câblage de la mise à jour du consentement, signifie que la balise de conversion n'obtient jamais son autorisation et ne se déclenche jamais.</p>
+      <p>Celle-ci a une signature : les conversions s'effondrent le jour exact où la bannière est mise en ligne.</p>
+      <div class="check"><b>La vérification</b>Chargez le site à neuf, acceptez les cookies, réalisez l'action et vérifiez que la balise se déclenche. Recommencez en refusant, et vérifiez qu'elle ne se déclenche pas. Les deux sens doivent se comporter comme prévu.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>La balise n'est pas sur la page qui confirme réellement l'action</h3></div>
+      <p>Le grand classique. La balise est sur le site mais pas sur la page de remerciement, la page d'état de la commande ou la page où arrive le client après un retour depuis le prestataire de paiement. Sur les sites de génération de leads, l'équivalent est un formulaire envoyé en AJAX sans chargement de page, si bien qu'une balise déclenchée sur l'affichage de page n'a jamais l'occasion de se déclencher.</p>
+      <div class="check"><b>La vérification</b>Réalisez vous-même la conversion, puis affichez le code source de la page d'arrivée et cherchez l'ID de conversion.</div>
+    </div>
+
+    <h2>Une fois que ça marche, faites-lui mesurer de l'argent</h2>
+
+    <p>La plupart des gens s'arrêtent quand la balise se déclenche. C'est pourtant là que commence le travail intéressant, car un nombre de conversions traite chaque lead de la même façon, et les vôtres ne se valent pas.</p>
+
+    <p>Pour les comptes de génération de leads, les <strong>conversions avancées pour les leads</strong> associées aux imports de conversions hors ligne vous permettent de renvoyer à Google Ads la valeur réelle d'une mission conclue. Les enchères optimisent alors vers le chiffre d'affaires plutôt que vers les formulaires remplis. C'est la différence entre un algorithme qui court après des demandes et un algorithme qui court après des clients.</p>
+
+    <p>La mécanique est la même que pour le suivi des appels dans <a href="/fr/blog/google-ads-call-tracking-local-business.html">l'article sur les services locaux</a> : capter l'identifiant de clic à l'envoi, le stocker avec le lead, et renvoyer la valeur quand la mission est gagnée.</p>
+
+    <h2>Limites</h2>
+
+    <p>L'ordre ci-dessus est un ordre de recherche, pas un tableau de fréquence : il reflète un petit nombre de comptes et la logique de chaque mode de défaillance, pas une étude. Google Ads change régulièrement son interface, j'ai donc ancré les vérifications sur les états et le contenu des balises plutôt que sur l'emplacement des menus, autant que possible.</p>
+
+
+    <div class="cta">
+      <h2>Vous perdez de l'argent à cause d'un chiffre auquel vous ne pouvez pas vous fier ?</h2>
+      <p>Envoyez-moi l'URL de votre site et je vous dirai ce que fait votre suivi des conversions. Aucun accès au compte n'est nécessaire pour commencer.</p>
+      <a class="btn" href="/fr/#contact">Obtenir un audit de suivi gratuit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Notes de terrain associées</h2>
+      <a href="/fr/blog/google-ads-offline-conversions-booked-jobs.html">Conversions hors ligne Google Ads pour la génération de leads<span>Indiquer à Google Ads quels leads sont devenus des missions réservées.</span></a> <a href="/fr/blog/google-ads-account-audit-lead-generation.html">Audit de compte Google Ads : la checklist pour la génération de leads<span>Six vérifications dans l'ordre, tirées de la refonte d'un compte de cabinet dentaire.</span></a> <a href="/fr/blog/shopify-additional-scripts-deadline-tracking.html">Échéance Shopify du 26 août : votre suivi y a-t-il survécu ?<span>Ce que supprime la mise à niveau automatique, et la vérification en dix minutes.</span></a> <a href="/fr/blog/google-ads-call-tracking-local-business.html">Suivi des appels Google Ads pour les entreprises de services locales<span>Quatre façons de suivre les appels, et ce que chacune mesure vraiment.</span></a> <a href="/fr/blog/meta-pixel-not-tracking-purchases-shopify.html">Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<span>Sept causes, dont le pixel en double qui scinde l'attribution.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

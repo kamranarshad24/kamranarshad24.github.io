@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Deux pixels Meta sur une boutique Shopify, ce n'est pas un plan de secours</title>
+<meta name="description" content="Peu expliquent ce qui se passe quand deux pixels Meta ne sont pas d&#x27;accord. Sur un compte, le second pixel signalait des achats jamais effectués et absorbait 30 à 40 % du budget quotidien.">
+<link rel="canonical" href="https://marketingkamran.com/fr/blog/two-meta-pixels-shopify-problem.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/two-meta-pixels-shopify-problem.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/two-meta-pixels-shopify-problem.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/two-meta-pixels-shopify-problem.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/two-meta-pixels-shopify-problem.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/two-meta-pixels-shopify-problem.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/blog/two-meta-pixels-shopify-problem.html">
+<meta property="og:title" content="Deux pixels Meta sur une boutique Shopify, ce n&#x27;est pas un plan de secours">
+<meta property="og:description" content="Peu expliquent ce qui se passe quand deux pixels Meta ne sont pas d&#x27;accord. Sur un compte, le second pixel signalait des achats jamais effectués et absorbait 30 à 40 % du budget quotidien.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Deux pixels Meta sur une boutique Shopify, ce n&#x27;est pas un plan de secours">
+<meta name="twitter:description" content="Peu expliquent ce qui se passe quand deux pixels Meta ne sont pas d&#x27;accord. Sur un compte, le second pixel signalait des achats jamais effectués et absorbait 30 à 40 % du budget quotidien.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Deux pixels Meta sur une boutique Shopify, ce n'est pas un plan de secours",
+  "description": "Cherchez « plusieurs pixels Shopify » et chaque résultat explique comment en installer davantage. Presque personne n'explique ce qui se passe quand ils ne sont pas d'accord. Sur un compte, le second pixel signalait des achats jamais effectués et entraînait avec lui 30 à 40 % du budget quotidien.",
+  "datePublished": "2026-08-13",
+  "dateModified": "2026-08-13",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "jobTitle": "Spécialiste publicité payante & suivi des conversions"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/two-meta-pixels-shopify-problem.html",
+    "inLanguage": "fr"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "fr"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notes de terrain",
+      "item": "https://marketingkamran.com/fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Deux pixels Meta sur Shopify"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Peut-on avoir deux pixels Facebook sur une même boutique Shopify ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Techniquement oui, et plusieurs applications existent pour le faire facilement. La question de savoir s'il le faut est différente. Deux pixels signifient deux enregistrements indépendants des mêmes événements, et si l'un est mal configuré, vous obtenez deux versions contradictoires de vos chiffres de ventes, sans alerte sur leur désaccord."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment trouver tous les pixels Facebook installés sur ma boutique Shopify ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vérifiez trois endroits : Paramètres puis Événements clients pour les pixels personnalisés, le canal de vente Facebook et Instagram, et Boutique en ligne puis Thèmes puis Modifier le code, en cherchant fbq ou connect.facebook.net dans theme.liquid. Un pixel peut être installé indépendamment à chacun de ces endroits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il supprimer un second pixel Facebook ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "S'il a été installé par une application tierce et que vous ne pouvez pas expliquer ce qu'il apporte de plus que le pixel principal, oui. Avant de le supprimer, identifiez les campagnes qui optimisent vers lui, car elles cesseront de diffuser une fois le pixel désactivé."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/fr/blog/">Notes de terrain</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/blog/two-meta-pixels-shopify-problem.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/two-meta-pixels-shopify-problem.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/two-meta-pixels-shopify-problem.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/blog/two-meta-pixels-shopify-problem.html" hreflang="es" lang="es">Español</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/blog/">Notes de terrain</a> &nbsp;/&nbsp; Pixel Meta</div>
+    <h1>Deux pixels Meta sur une boutique, ce n'est pas de la redondance. Ce sont deux versions de la vérité.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>13 août 2026</span><span>8 min de lecture</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Deux pixels Meta sur une boutique Shopify ne vous donnent pas une sauvegarde. Ils vous donnent <strong>deux enregistrements indépendants des mêmes événements</strong>, sans rien pour les garder honnêtes. Si l'un est mal configuré, vous obtenez deux chiffres de ventes contradictoires sans aucune alerte, et Meta dépensera volontiers votre budget à optimiser vers celui qui se trompe.</p>
+    </div>
+
+    <p>Cherchez « plusieurs pixels Facebook Shopify » et regardez ce qui remonte. Des fiches d'applications qui vendent l'installation de plusieurs pixels. Des guides d'éditeurs qui expliquent comment ajouter un deuxième, troisième, quatrième pixel. Des tutoriels qui le présentent comme une tactique avancée.</p>
+
+    <p>Presque rien sur ce qui se passe quand ces pixels sont en désaccord. C'est l'article que j'aurais aimé trouver avant d'auditer un compte où la réponse coûtait 30 à 40 % du budget quotidien.</p>
+
+    <h2>Comment on se retrouve avec deux pixels</h2>
+
+    <p>Rarement volontairement. Les chemins habituels :</p>
+
+    <ul>
+      <li>Une agence en a installé un, est partie, et l'agence suivante a installé le sien sans vérifier.</li>
+      <li>Une application marketing tierce a ajouté son propre pixel lors de sa configuration, souvent sans le signaler clairement.</li>
+      <li>Quelqu'un a collé un pixel dans <code>theme.liquid</code> il y a des années, et le canal de vente officiel a été connecté plus tard.</li>
+      <li>Quelqu'un a lu que plusieurs pixels apportent de la redondance. Ce n'est pas le cas.</li>
+    </ul>
+
+    <p>Le point commun, c'est que <strong>personne n'était au courant de l'existence de l'autre pixel</strong>. C'est ce qui rend la chose difficile à repérer : chacun suppose que le pixel qu'il a installé est le pixel.</p>
+
+    <h2>Ce qui tourne réellement mal</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Ils peuvent remonter des totaux différents, tous deux plausibles</h3></div>
+      <p>Deux pixels qui se déclenchent dans des conditions différentes produisent deux nombres d'achats différents. Aucun ne paraît manifestement faux, car aucun n'est à zéro. Vous finissez par choisir le chiffre auquel croire selon le tableau de bord que vous avez ouvert par hasard.</p>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Les campagnes optimisent vers le pixel auquel elles sont liées</h3></div>
+      <p>C'est la partie coûteuse. Les campagnes sont configurées sur un pixel précis. Si ce pixel remonte des données inexactes, ces campagnes optimisent vers un signal qui ne correspond pas à la réalité, et le système de diffusion de Meta continuera à trouver toujours plus de personnes qui déclenchent ce signal inexact.</p>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Un pixel mal configuré peut signaler des achats qui n'ont jamais eu lieu</h3></div>
+      <p>Sur le compte à l'origine de cet article, le second pixel, installé par une application tierce, signalait des achats sans commande Shopify correspondante. Les campagnes qui y étaient liées affichaient un ROAS élevé. Dans Ads Manager, elles avaient l'air gagnantes. Dans la boutique, elles n'avaient rien produit de traçable.</p>
+      <p>Meta annonçait environ 100 commandes. Shopify en affichait 55 à 70. Environ <strong>30 000 à 40 000 PKR d'un budget quotidien de 100 000 PKR</strong> allaient à des campagnes optimisant vers le pixel qui inventait des ventes.</p>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Vos audiences et vos données d'optimisation sont divisées</h3></div>
+      <p>Même quand les deux pixels sont exacts, chacun n'apprend que du trafic qu'il voit. Les audiences de reciblage sont construites par pixel. L'apprentissage automatique se fait par pixel. Répartir vos données sur deux pixels signifie que chacun en reçoit moins, l'inverse de la redondance.</p>
+    </div>
+
+    
+    <div class="note">
+      <b class="l">D'où viennent ces chiffres</b>
+      <p>Un compte Shopify que j'ai repris et audité, une marque de soins de la peau qui dépensait environ <strong>100 000 PKR par jour</strong> en publicités Meta. Le client m'a demandé de ne pas le nommer, je ne l'ai donc pas fait. Les chiffres ci-dessous sont ceux du compte pendant cette mission.</p>
+      <p>C'est <strong>un seul compte</strong>, pas une étude. Je vous donne le mécanisme et un exemple concret, pas une statistique sur le secteur. Et je n'indique pas ici les dates précises de la mission, car je préfère les omettre plutôt que de les approximer.</p>
+    </div>
+
+    <h2>Trouver chaque pixel de votre boutique</h2>
+
+    <p>Vérifiez les trois emplacements. Un pixel peut être installé indépendamment à chacun d'eux, et rien ne les recoupe :</p>
+
+    <ol class="steps">
+      <li><b>Paramètres &rarr; Événements clients</b>Les pixels personnalisés se trouvent ici, y compris ceux ajoutés par des applications. Lisez chacun et notez son ID de pixel.</li>
+      <li><b>Le canal de vente Facebook &amp; Instagram</b>L'intégration officielle. Notez l'ID de pixel auquel elle est connectée.</li>
+      <li><b>Boutique en ligne &rarr; Thèmes &rarr; Modifier le code</b>Cherchez <code>fbq</code> et <code>connect.facebook.net</code> dans <code>theme.liquid</code>. Les pixels collés à la main s'y cachent pendant des années.</li>
+      <li><b>Confirmer dans le navigateur</b>Chargez votre boutique, ouvrez les DevTools, filtrez l'onglet Network sur <code>facebook</code> et lisez les ID de pixel des requêtes sortantes. C'est la seule vérification qui montre ce qui tourne réellement, plutôt que ce qui est configuré.</li>
+    </ol>
+
+    <p>Si vous trouvez plus d'un ID de pixel distinct, vous êtes dans la situation décrite par cet article.</p>
+
+    <h2>En supprimer un sans risque</h2>
+
+    <div class="note">
+      <b class="l">Ne le supprimez pas simplement</b>
+      <p>Avant de désactiver un pixel, trouvez quelles campagnes optimisent vers lui. Quand j'ai désactivé le pixel tiers sur ce compte, <strong>toutes les campagnes qui y étaient liées ont cessé de diffuser.</strong> C'était le bon résultat, ces campagnes tournaient sur un signal de conversion qui n'était pas réel, mais ce n'est pas quelque chose à découvrir par surprise sur le compte d'un client.</p>
+    </div>
+
+    <ol class="steps">
+      <li><b>Associer campagnes et pixels</b>Pour chaque campagne active, notez le pixel sur lequel son événement de conversion est configuré.</li>
+      <li><b>Rapprocher chaque groupe de votre boutique</b>Prenez une semaine clôturée. Pouvez-vous retracer les commandes annoncées par chaque groupe ? Un groupe est généralement impossible à retracer.</li>
+      <li><b>Garder le pixel que vous pouvez vérifier</b>Généralement l'intégration par le canal de vente officiel, car vous pouvez confirmer ce qui l'installe et comment.</li>
+      <li><b>Prévenir le client que le ROAS annoncé va baisser</b>Il va baisser. Rien n'a changé dans l'activité ; vous avez cessé de compter des choses qui ne se produisaient pas.</li>
+      <li><b>Attendre deux jours, puis reconstruire</b>Laissez des données propres s'accumuler avant de reconstruire les campagnes sur le pixel restant. Sur ce compte, la situation s'est éclaircie en un ou deux jours.</li>
+    </ol>
+
+    <h2>L'exception à connaître</h2>
+
+    <p>Il existe un cas légitime de pixels multiples : un véritable accord avec une agence ou un partenaire, où une seconde partie a besoin de ses propres données de conversion pour une campagne définie, et où les deux pixels sont connus, documentés et voulus.</p>
+
+    <p>Ce n'est pas ce qu'ont la plupart des boutiques. La plupart des boutiques ont un pixel que quelqu'un a oublié, ce qui est tout autre chose, et la différence tient à ce que quelqu'un puisse vous dire, dès maintenant, à quoi sert chaque pixel.</p>
+
+    <p>Si vous ne pouvez pas répondre à cette question pour chaque pixel de votre boutique, vous n'avez pas de redondance. Vous avez un second avis non audité que votre budget écoute discrètement.</p>
+
+
+    <div class="cta">
+      <h2>Combien de pixels y a-t-il sur votre boutique en ce moment ?</h2>
+      <p>La plupart des propriétaires sont sûrs qu'il n'y en a qu'un. Envoyez-moi l'URL de votre boutique et je vous dirai ce qui est réellement installé.</p>
+      <a class="btn" href="/fr/#contact">Obtenir un audit de suivi gratuit &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Notes de terrain associées</h2>
+      <a href="/fr/blog/meta-ads-more-sales-than-shopify.html">Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?<span>Le rapprochement qui révèle les conversions fantômes.</span></a> <a href="/fr/blog/meta-pixel-reporting-fake-purchases.html">Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu<span>La panne qui ressemble à un succès jusqu'au rapprochement.</span></a> <a href="/fr/blog/capi-duplicate-purchase-events-deduplication.html">Événements d'achat en double après l'installation de l'API Conversions<span>Comment prouver que la déduplication fonctionne, et pas seulement qu'elle est configurée.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

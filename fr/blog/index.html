@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Diagnostic du tracking : notes de terrain | Kamran Arshad</title>
+<meta name="description" content="Notes de terrain sur le suivi des conversions défaillant : pixel Meta, GA4, Google Ads et Snapchat. Écrites à partir de vrais comptes, avec les chiffres et les dates.">
+<link rel="canonical" href="https://marketingkamran.com/fr/blog/">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/blog/">
+<meta property="og:title" content="Diagnostic du tracking">
+<meta property="og:description" content="Notes de terrain sur le suivi des conversions défaillant : pixel Meta, GA4, Google Ads et Snapchat. Écrites à partir de vrais comptes, avec les chiffres et les dates.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Diagnostic du tracking">
+<meta name="twitter:description" content="Notes de terrain sur le suivi des conversions défaillant, écrites à partir de vrais comptes.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a href="/fr/#faq">FAQ</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/blog/" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/blog/" hreflang="es" lang="es">Español</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="container">
+    <div class="kicker">Notes de terrain</div>
+    <h1>Le diagnostic du tracking, à partir de vrais comptes.</h1>
+    <p>La plupart des articles sur le suivi des conversions défaillant sont écrits par des éditeurs de logiciels qui vendent la solution. Ceux-ci sont écrits depuis l'intérieur de vrais comptes publicitaires, avec les chiffres, les dates et les points que je n'ai pas su expliquer. Les originaux sont en anglais ; voici leurs traductions.</p>
+  </div>
+</header>
+
+<main class="list">
+  <div class="container">
+
+    <a class="post" href="/fr/blog/google-ads-account-audit-lead-generation.html">
+      <div class="post-meta"><span>10 oct. 2026</span><span>Google Ads</span><span>3 min de lecture</span></div>
+      <h2>Audit de compte Google Ads : la checklist pour la génération de leads</h2>
+      <p>Six vérifications, dans l'ordre, pour un compte Google Ads qui vit des appels et des formulaires de demande. Tirées de la refonte du compte d'un cabinet dentaire.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/google-ads-offline-conversions-booked-jobs.html">
+      <div class="post-meta"><span>10 oct. 2026</span><span>Google Ads</span><span>3 min de lecture</span></div>
+      <h2>Conversions hors ligne Google Ads pour la génération de leads</h2>
+      <p>Comment indiquer à Google Ads quels leads sont devenus des missions réservées : enregistrer le lead, garder l'identifiant de clic, noter le résultat, renvoyer la valeur.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/local-seo-service-pages-service-business.html">
+      <div class="post-meta"><span>10 oct. 2026</span><span>SEO local</span><span>3 min de lecture</span></div>
+      <h2>Pages de services en SEO local : une page par service et par zone</h2>
+      <p>Pourquoi une entreprise de services locale a besoin d'une page dédiée pour chaque service et chaque zone, et comment je l'ai structurée pour une entreprise de nettoyage de moquettes au Royaume-Uni.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/scaling-meta-campaigns-bad-data.html">
+      <div class="post-meta"><span>13 août 2026</span><span>Stratégie</span><span>8 min de lecture</span></div>
+      <h2>On ne peut pas faire monter en puissance une campagne en laquelle on n'a pas confiance</h2>
+      <p>Les conseils de montée en puissance disent de miser sur votre meilleur ROAS. C'est un bon conseil fondé sur une hypothèse que personne ne vérifie : que le ROAS annoncé reflète de vraies ventes. Quand ce n'est pas le cas, augmenter les budgets accélère la perte.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/meta-ads-account-audit-inherited.html">
+      <div class="post-meta"><span>13 août 2026</span><span>Audit</span><span>9 min de lecture</span></div>
+      <h2>Auditer un compte Meta Ads dont vous héritez</h2>
+      <p>Reprendre un compte Meta, c'est hériter de décisions que personne n'a documentées. Auditez la couche de mesure avant les créations, car chaque jugement sur la performance repose sur des chiffres que vous n'avez pas encore vérifiés.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/meta-pixel-reporting-fake-purchases.html">
+      <div class="post-meta"><span>13 août 2026</span><span>Pixel Meta</span><span>8 min de lecture</span></div>
+      <h2>Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu</h2>
+      <p>Tout le monde s'inquiète d'un pixel qui ne remonte plus rien. La panne coûteuse, c'est un pixel qui remonte trop, car un ROAS gonflé attire plus de budget. Six façons de vérifier si vos événements d'achat correspondent à de vraies commandes.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/two-meta-pixels-shopify-problem.html">
+      <div class="post-meta"><span>13 août 2026</span><span>Pixel Meta</span><span>8 min de lecture</span></div>
+      <h2>Deux pixels Meta sur une boutique Shopify, ce n'est pas un plan de secours</h2>
+      <p>Cherchez « plusieurs pixels Shopify » et chaque résultat explique comment en installer davantage. Presque personne n'explique ce qui se passe quand ils ne sont pas d'accord. Sur un compte, le second pixel signalait des achats jamais effectués et entraînait avec lui 30 à 40 % du budget quotidien.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/meta-ads-more-sales-than-shopify.html">
+      <div class="post-meta"><span>13 août 2026</span><span>Attribution</span><span>10 min de lecture</span></div>
+      <h2>Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?</h2>
+      <p>Un écart entre Meta Ads Manager et le nombre de commandes Shopify est normal jusqu'à un certain point. Au-delà, cela signifie généralement que quelque chose signale des achats qui n'ont jamais eu lieu. Voici comment le savoir, à partir d'un compte où la réponse était un second pixel.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/capi-duplicate-purchase-events-deduplication.html">
+      <div class="post-meta"><span>12 août 2026</span><span>Côté serveur</span><span>8 min de lecture</span></div>
+      <h2>Événements d'achat en double après l'installation de l'API Conversions</h2>
+      <p>Comment fonctionne réellement la déduplication chez Meta, comment choisir un identifiant qui ne peut pas dériver, et comment prouver que la vôtre fonctionne au lieu d'être simplement configurée.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/google-ads-conversion-tracking-not-working.html">
+      <div class="post-meta"><span>12 août 2026</span><span>Google Ads</span><span>8 min de lecture</span></div>
+      <h2>Suivi des conversions Google Ads qui ne fonctionne pas : l'ordre de diagnostic</h2>
+      <p>La courte liste des causes dans l'ordre du diagnostic, et la raison pour laquelle une balise parfaitement fonctionnelle peut ne rien remonter pendant des semaines.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/meta-pixel-not-tracking-purchases-shopify.html">
+      <div class="post-meta"><span>12 août 2026</span><span>Pixel Meta</span><span>9 min de lecture</span></div>
+      <h2>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier</h2>
+      <p>Sept causes, dans l'ordre où il vaut la peine de les vérifier, dont le problème du pixel en double qui scinde votre attribution sans jamais paraître cassé.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/google-ads-call-tracking-local-business.html">
+      <div class="post-meta"><span>12 août 2026</span><span>Services locaux</span><span>9 min de lecture</span></div>
+      <h2>Suivi des appels Google Ads pour les entreprises de services locales</h2>
+      <p>Quatre façons de suivre les appels issus de Google Ads, ce que chacune mesure réellement, et pourquoi compter les clics plutôt que les appels aboutis détruit discrètement vos enchères.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/shopify-additional-scripts-deadline-tracking.html">
+      <div class="post-meta"><span>12 août 2026</span><span>Mis à jour le 10 oct. 2026</span><span>Shopify</span><span>8 min de lecture</span></div>
+      <h2>L'échéance Shopify du 26 août est passée. Votre suivi des achats y a-t-il survécu ?</h2>
+      <p>Shopify a programmé pour les boutiques hors Plus une mise à niveau automatique le 26 août 2026, qui supprime les scripts supplémentaires des pages de remerciement et d'état de la commande. Ce qui est concerné, et la vérification en dix minutes.</p>
+    </a>
+
+    <a class="post" href="/fr/blog/snapchat-purchase-event-not-firing.html">
+      <div class="post-meta"><span>12 août 2026</span><span>Snapchat</span><span>9 min de lecture</span></div>
+      <h2>Événements d'achat Snapchat qui ne se déclenchent pas : la séquence de diagnostic</h2>
+      <p>Six causes d'événements PURCHASE Snapchat manquants, classées, avec les vérifications précises et de vrais chiffres d'Ads Manager.</p>
+    </a>
+
+
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</span> <span><a href="/fr/">Accueil</a> · <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>
