@@ -1,0 +1,175 @@
+0def9aabe318	Ce que la phase un a révélé sur ce compte
+04f680bc9e12	Deux pixels. L'un installé via le canal de vente officiel, fiable. L'autre installé par une application tierce, qui signalait des achats sans commande correspondante.
+250d826d3afc	Meta annonçait environ 100 commandes contre 55 à 70 réelles. Environ <t0>30 à 40 % d'un budget quotidien de 100 000 PKR</t0> se trouvaient dans des campagnes optimisant vers le pixel inexact, des campagnes qui, dans Ads Manager, semblaient les plus solides du compte.
+0f9370ee3fbf	Le marketeur précédent ne l'avait pas trouvé. Ce n'est pas une critique de sa compétence, c'est une conséquence de l'endroit où il cherchait. Tout était cohérent à l'intérieur d'Ads Manager. L'écart n'apparaît que lorsqu'on compare Meta à la boutique, et cette comparaison se fait en dehors de l'outil où vivent la plupart des media buyers.
+7c05665e90e7	Phase deux : seulement maintenant, le compte lui-même
+5f603c218486	Avec des chiffres fiables, l'audit classique devient utile :
+2745debaa64a	Domaine
+2e062db20779	Ce qu'il faut vérifier
+e286b46a66ad	Pourquoi c'est important après la phase un
+99b8a5750d3f	Structure des campagnes
+e77391796e7f	Audiences qui se chevauchent, budgets fragmentés
+de2fced136ba	Les décisions de regroupement exigent de vraies données de performance
+b4f57352c166	Événement d'optimisation
+96e82cf93b77	Les campagnes optimisent-elles vers l'achat, ou vers un indicateur indirect ?
+b953b8d746f3	Un événement indirect hérite de tous les défauts du pixel qui le remonte
+7b8bf0ce5a18	Paramètres d'attribution
+3d1a4c806619	Fenêtres cohérentes entre les campagnes ?
+4d19ff4a8866	Des fenêtres différentes rendent les campagnes incomparables
+8f6a557068a6	Créations et angles
+f3fb4b9318b6	Ce qui a réellement généré des commandes traçables
+5fd97f01558b	N'a de sens qu'une fois les conversions fantômes éliminées
+2867a119acba	Chevauchement d'audience
+ab0d4fb57b6f	Des campagnes qui enchérissent les unes contre les autres
+76483b0031e3	Fait monter les coûts de façon invisible
+c3c288b5fe93	La conversation de passation
+58af869c98b6	Si vous trouvez quelque chose de ce genre, la façon de le présenter compte autant que la découverte.
+9efba94dcda5	On a dit au client pendant des mois que ces campagnes fonctionnaient. Quelqu'un a pris ces décisions de bonne foi avec les outils dont il disposait. Commencer par « votre ancien marketeur a raté ça » vous fait paraître brillant et donne au client l'impression d'être idiot, ce qui est un mauvais échange.
+05f9f5fe19df	Commencez plutôt par le mécanisme : l'écart n'était visible que depuis l'extérieur d'Ads Manager, voici le rapprochement, voici le chiffre, voici ce qui se passe quand on corrige, <t0>y compris le fait que le ROAS annoncé va baisser.</t0> Dites-le avant de faire le changement, pas après.
+647561262eae	Un compte hérité, une cause. Beaucoup de comptes ont un suivi honnête et des campagnes réellement faibles, et la phase un vous le dira en un après-midi, ce qui est déjà précieux avant de reconstruire quelque chose qui allait bien.
+6fd094540e1f	La phase un ne suffit pas non plus. Elle établit si l'on peut croire les chiffres. Elle ne dit pas si la stratégie est bonne. Elle vous empêche simplement de répondre à cette question avec de la fiction.
+202459d29f67	Vous venez de reprendre un compte auquel vous ne faites pas confiance ?
+5833c106cc94	Envoyez-moi l'URL de la boutique. Je vous dirai si les chiffres dont vous héritez sont crédibles avant que vous ne dépensiez sur cette base.
+ed18cd7b0280	<t0>Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?<t1>Le rapprochement qui révèle les conversions fantômes.</t1></t0> <t2>Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu<t3>La panne qui ressemble à un succès jusqu'au rapprochement.</t3></t2> <t4>On ne peut pas faire monter en puissance une campagne en laquelle on n'a pas confiance<t5>Les conseils de montée en puissance supposent ce que personne ne vérifie.</t5></t4>
+6b127d886d2f	Un écart entre Meta et vos commandes Shopify est normal jusqu'à un certain point. Au-delà, quelque chose signale souvent des achats qui n'ont jamais eu lieu. Comment le savoir.
+65c81de0749b	Écart de commandes entre Meta et Shopify
+1192890dce52	Pourquoi Meta affiche-t-il plus de ventes que Shopify ?
+dfa9eba163a9	Un certain écart est normal, car Meta compte les conversions après affichage et après clic dans sa fenêtre d'attribution, y compris des personnes qui ne sont pas venues directement d'un clic sur une annonce. Un écart important signifie généralement autre chose : des pixels en double, des événements en double, ou un pixel qui déclenche des événements d'achat sur des pages qui ne sont pas de vrais achats.
+72a42b3591f3	Quel écart entre Meta et Shopify est normal ?
+3103ccbcb60e	Il n'existe pas de chiffre universel, et tout article qui en cite un devine. Établissez votre propre référence quand le suivi est sain, puis considérez l'écart par rapport à votre propre chiffre comme le signal, plutôt que de vous comparer à une moyenne publiée.
+17458dca82d5	Un second pixel Facebook peut-il gonfler les chiffres de ventes ?
+0eda2d3c0fab	Oui. Si un second pixel est installé par une application tierce et déclenche des événements d'achat qui ne correspondent pas à de vraies commandes, Meta attribuera ces achats fantômes aux campagnes qui optimisent vers ce pixel, gonflant les ventes et le ROAS annoncés.
+e595ab8d3564	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Attribution
+887f9d835481	Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?
+0ed9ed7eb432	<t0>Kamran Arshad</t0><t1>13 août 2026</t1><t2>10 min de lecture</t2>
+2a52c1b14007	Un certain écart entre Meta et Shopify est normal. Meta compte les conversions après affichage et utilise une autre fenêtre d'attribution que votre boutique. Un <t0>écart important et persistant en faveur de Meta</t0> est différent. Il signifie généralement que quelque chose signale des achats qui n'ont pas eu lieu : un pixel en double, des événements en double, ou un événement d'achat déclenché sur une page qui n'est pas un achat.
+941e0c1d5c32	Pour les distinguer, arrêtez de comparer des totaux et comparez la bonne paire de chiffres.
+410b557a216a	C'est l'une des questions les plus fréquentes de la publicité e-commerce, et l'une des moins bien traitées. Cherchez-la et vous trouverez des fils Reddit de trente commentaires sans conclusion, des messages de la communauté Shopify marqués non résolus, et des articles d'éditeurs qui listent neuf causes avant de suggérer leur produit.
+2dc4f381644d	Voici donc un compte précis, une cause précise, et le rapprochement qui l'a trouvée.
+bab08ea785fd	La situation
+e27d225ae8ba	J'ai repris la publicité Meta d'une marque de soins de la peau sur Shopify. La passation s'accompagnait d'un problème que le marketeur précédent n'avait pas su résoudre : <t0>Meta annonçait environ 100 commandes. Shopify en affichait 55 à 70.</t0>
+6a0959a05522	Cet écart durait depuis assez longtemps pour que le client ne fasse plus confiance à aucun des deux chiffres. Et comme il ne pouvait pas savoir quelles campagnes remontaient des données honnêtes, il ajustait ses budgets pratiquement au hasard, augmentant les dépenses sur tout ce qui avait l'air bon dans Ads Manager, sans moyen de savoir si « bon » voulait dire quoi que ce soit.
+982c3a76fbc7	C'est là le vrai dégât. Pas le mauvais chiffre lui-même, mais chaque décision prise en aval.
+f012b5c946b4	Un compte Shopify que j'ai repris et audité, une marque de soins de la peau qui dépensait environ <t0>100 000 PKR par jour</t0> en publicités Meta. Le client m'a demandé de ne pas le nommer, je ne l'ai donc pas fait. Les chiffres ci-dessous sont ceux du compte pendant cette mission.
+a6d8292815dd	C'est <t0>un seul compte</t0>, pas une étude. Je vous donne le mécanisme et un exemple concret, pas une statistique sur le secteur. Et je n'indique pas ici les dates précises de la mission, car je préfère les omettre plutôt que de les approximer.
+36c77898fe88	D'abord : comparer la bonne paire de chiffres
+860cb1ceb54d	La plupart des gens comparent les conversions annoncées par Meta au total des commandes Shopify, paniquent devant la différence et commencent à reconstruire des choses qui n'ont jamais été cassées. Ces deux chiffres sont <t0>censés</t0> être différents.
+b7baa1d40c4e	Chiffre
+78096ac8246d	Ce qu'il compte
+16c009c6d5fe	Comment il doit se comparer
+4afcb638fbf1	Commandes Shopify
+ff559ef1a3a8	Chaque commande payée, de toute provenance
+235b4ae2a190	La vérité de référence
+dc13f74cf8be	Achats du Gestionnaire d'événements
+3b193a473f9f	Événements d'achat reçus par Meta
+15f9cb616eaa	Doit approcher Shopify, sans jamais le dépasser
+ba384a40bb9a	Conversions Ads Manager
+1b6feda96372	Achats que Meta attribue à vos publicités
+490d724f2da0	Un sous-ensemble, toutes les ventes ne viennent pas d'une publicité
+43749b6efd95	Relisez la ligne du milieu, car c'est celle qui compte et celle que personne ne regarde. <t0>Les achats du Gestionnaire d'événements doivent être proches de votre nombre de commandes Shopify</t0>, puisqu'ils comptent les événements d'achat quelle que soit la campagne créditée. Si ce chiffre dépasse vos vraies commandes, ce n'est pas une question d'attribution. Ce sont des événements qui ne correspondent pas à des ventes.
+0190090a13d4	Des conversions Ads Manager <t0>inférieures</t0> aux commandes Shopify, c'est normal et sain. Des achats du Gestionnaire d'événements <t1>supérieurs</t1> aux commandes Shopify, c'est un défaut.
+c8e0104e8718	Ce qui se passait réellement
+dc78eadd5920	Le compte avait <t0>deux pixels Meta installés en même temps</t0> :
+daccca90eb24	L'un installé via le canal de vente officiel Facebook &amp; Instagram sur Shopify. Celui-ci était fiable.
+ab58c8e627b4	L'autre installé par une <t0>application tierce</t0>. Celui-ci signalait des achats qui n'avaient jamais eu lieu.
+a1031043f848	Le second pixel est le plus intéressant, car il n'était pas silencieux. Un pixel silencieux, c'est facile : vous remarquez zéro conversion et vous cherchez. Celui-ci était bruyant. Il signalait des achats, ces achats apparaissaient dans Ads Manager, et les campagnes qui optimisaient vers lui affichaient un <t0>ROAS élevé</t0>.
+b71b3ffce3f1	Rien de tout cela n'existait dans Shopify.
+567303755ac2	&#10007; Ce qu'affichait Ads Manager
+035d3616ea9b	&#10003; Ce qu'affichait Shopify
+81bd1e4fbf13	Le chiffre qui a rendu la chose urgente
+b8880419f2aa	Sur environ <t0>100 000 PKR de dépenses publicitaires quotidiennes</t0>, à peu près <t1>30 000 à 40 000 PKR par jour</t1> allaient à des campagnes optimisant vers le pixel qui signalait des achats jamais effectués.
+5d1fc7dbc6c6	Cela représente <t0>30 à 40 % du budget quotidien</t0> versés à des campagnes dont le succès affiché était un artefact. Et comme ces campagnes semblaient les plus performantes dans Ads Manager, c'étaient elles qui avaient le plus de chances de recevoir <t1>davantage</t1> de budget. L'erreur de remontée attirait activement les dépenses vers elle.
+32d2cc46fbd3	La forme du problème
+93458d350998	Un compte Shopify &middot; chiffres tels qu'ils étaient pendant la mission
+79001d8b3075	Annoncé par Meta
+d4b065ac9065	Réel dans Shopify
+751750a05008	Budget quotidien
+cd0e5a842cd9	Vers les campagnes fantômes
+9fb2b8fb9df5	Les nombres de commandes portent sur la période de comparaison décrite ci-dessus. Les montants de budget sont en roupies pakistanaises par jour. Le pourcentage est le chiffre transposable : il ne dépend ni de la devise ni du marché.
+68ddc2bc2677	La correction, et à quoi elle ressemblait
+2f423611d96a	J'ai désactivé le pixel tiers. La conséquence immédiate a été spectaculaire et, si vous ne l'avez jamais vue, inquiétante : <t0>toutes les campagnes qui optimisaient vers ce pixel ont cessé de diffuser.</t0>
+be33b62c1faf	Ce n'est pas un effet secondaire dont il faut s'inquiéter. C'est le diagnostic qui se confirme. Ces campagnes tournaient sur un signal de conversion qui n'était pas réel ; retirez le signal et il ne leur reste rien vers quoi optimiser.
+3293dde8114d	Après un ou deux jours de données propres, la situation s'est éclaircie. La performance annoncée a baissé, et elle est devenue vraie. Le client pouvait enfin répondre à la question qu'il devinait depuis des mois : <t0>quelles campagnes génèrent réellement des commandes ?</t0>
+802be44e1c7c	<t0>Attendez-vous à ce que les chiffres empirent avant de devenir honnêtes</t0>
+87d217066217	Quand vous supprimez une source de conversions fantômes, votre ROAS annoncé baisse. Rien n'a changé dans l'activité, vous avez simplement cessé de compter des ventes qui n'ont jamais existé. Prévenez le client avant de le faire, sinon vous devrez expliquer une « baisse de performance » que vous avez provoquée volontairement.
+51caf8f991d3	Faites ce rapprochement sur votre propre compte
+5ed95da1b9cb	<t0>Choisir une semaine clôturée</t0>Au moins deux semaines dans le passé, pour que les fenêtres d'attribution soient fermées et les rapports complets.
+526534122337	<t0>Noter trois chiffres</t0>Commandes Shopify, achats du Gestionnaire d'événements, conversions Ads Manager, pour la même semaine et le même fuseau horaire.
+b77538fdd753	<t0>Comparer le chiffre du milieu au premier</t0>Si les achats du Gestionnaire d'événements dépassent les commandes Shopify, arrêtez-vous. Vous avez des événements fantômes ou en double, et aucune théorie de l'attribution ne l'expliquera.
+2f808c5e9a0b	<t0>Compter vos pixels</t0>Administration Shopify : <t1>Paramètres &rarr; Événements clients</t1>, le <t2>canal de vente Facebook &amp; Instagram</t2>, et <t3>Boutique en ligne &rarr; Thèmes &rarr; Modifier le code</t3> en cherchant <t5>fbq</t5> dans <t4>theme.liquid</t4>. Plus d'un ID de pixel à ces emplacements, c'est votre principal suspect.
+152cda695c52	<t0>Segmenter par pixel avant de toucher aux budgets</t0>Identifiez quelles campagnes optimisent vers quel pixel. Si les commandes annoncées d'un groupe sont introuvables dans Shopify, vous avez trouvé la fuite.
+bd1902a1a341	Je ne vous donne pas de pourcentage d'écart « normal », car il n'y en a pas qui vaille la peine d'être cité. Il dépend de votre mix de trafic, des navigateurs de vos clients, de vos paramètres d'attribution et de votre marché. Chaque référence publiée que j'ai vue vient d'une entreprise qui vend la solution.
+554506c8b438	Établissez votre propre référence quand tout est sain. Le signal devient alors l'écart par rapport à <t0>votre</t0> chiffre, une vraie mesure plutôt que la moyenne de quelqu'un d'autre.
+a02ba9385047	Et il s'agit d'un seul compte. Le mécanisme se généralise : deux pixels, l'un ment, le budget suit le mensonge. La répartition précise entre réel et fantôme, non.
+faea3ce41c4c	Vos chiffres Meta correspondent-ils à vos chiffres Shopify ?
+d8661ba32eb3	Si ce n'est pas le cas, envoyez-moi l'URL de votre boutique. Je vous dirai s'il s'agit d'un décalage d'attribution normal ou de quelque chose qui signale des ventes que vous n'avez jamais faites.
+7faf09a5b1d4	<t0>Deux pixels Meta sur une boutique Shopify, ce n'est pas un plan de secours<t1>Pourquoi tous les résultats sur « installer plusieurs pixels » répondent à la mauvaise question.</t1></t0> <t2>Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu<t3>La panne qui ressemble à un succès jusqu'au rapprochement.</t3></t2> <t4>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<t5>Sept causes, dont la scission entre pixels qui ne semble jamais cassée.</t5></t4>
+6d0d57ae58b4	Pixel Meta qui ne suit pas les achats Shopify : quoi vérifier
+d87197d53a27	Le pixel se charge, Pixel Helper est au vert, et le Gestionnaire d'événements n'affiche aucun achat. Sept causes dans l'ordre où les vérifier, dont le problème du pixel en double.
+a461669c3644	Le pixel se charge, Pixel Helper est au vert, et le Gestionnaire d'événements n'affiche toujours aucun achat. Sept causes dans l'ordre où il vaut la peine de les vérifier, dont le problème du pixel en double qui coupe votre attribution en deux sans jamais paraître cassé.
+4b2c34f28327	Pixel Meta qui ne suit pas les achats
+ddcf8d9b4680	Pourquoi mon pixel Meta ne suit-il pas les achats sur Shopify ?
+cf75a17edcda	Les causes les plus fréquentes : deux pixels installés en même temps qui se partagent les données, le pixel absent de la page où arrive réellement le client après le paiement, l'événement d'achat déclenché sans les paramètres requis, ou un paiement qui quitte votre domaine si bien que la session du navigateur se rompt avant que l'événement puisse se déclencher.
+d04f1c53b14f	Deux pixels Facebook peuvent-ils faire disparaître des achats ?
+aa8b5f80f53a	Oui. Si un pixel est installé via le canal de vente Shopify et un autre collé dans le thème, les événements peuvent se répartir entre eux. Chaque pixel remonte alors une fraction de la vérité, et aucun total ne paraît manifestement faux, ce qui explique que cela puisse durer des mois sans être détecté.
+d5916e6b612b	Comment vérifier que l'événement d'achat de mon pixel Meta fonctionne ?
+07e4671ee472	Passez une vraie commande et observez l'onglet Network des DevTools de Chrome filtré sur facebook.com ou facebook.net. Vérifiez qu'un événement Purchase se déclenche avec value, currency et un ID d'événement. Vérifiez ensuite qu'il arrive dans le Gestionnaire d'événements, ce qui peut prendre quelques heures.
+717810c07a26	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Pixel Meta
+07f17d43c83c	Votre pixel Meta se déclenche. Vos achats n'apparaissent toujours pas.
+12498601e6a8	Si votre pixel Meta se charge mais que les achats n'apparaissent jamais, vérifiez dans cet ordre : <t0>deux pixels installés en même temps</t0>, le pixel absent de la vraie page de confirmation, un événement d'achat déclenché sans <t1>value</t1> ni <t2>currency</t2>, une redirection de paiement externe qui rompt la session, et la déduplication avec un flux de l'API Conversions.
+8327335e3c81	La première est la plus fréquente et la plus difficile à repérer, car rien ne semble cassé.
+eba1b718b30d	« Le pixel se déclenche » et « mes achats sont suivis » sont deux affirmations différentes, et c'est dans l'écart entre les deux que fuient la plupart des budgets publicitaires Shopify. Un Pixel Helper au vert vous dit qu'un pixel existe sur la page. Il ne vous dit rien sur le fait que le bon événement, avec les bons paramètres, a atteint le bon pixel.
+6a843b589ff8	Commencez ici : avez-vous plus d'un pixel ?
+0d95317b47b0	C'est la première chose que je vérifie sur n'importe quel compte, et c'est le problème que j'ai réellement rencontré sur le terrain, pas seulement lu.
+1f6c6280ab6b	Sur une boutique que j'ai auditée, <t0>deux pixels étaient installés simultanément</t0>, l'un via l'intégration Shopify, l'autre collé directement dans le thème. Les deux fonctionnaient techniquement. Les deux remontaient des données. Aucun ne remontait tout, car les événements se répartissaient entre eux selon la façon dont la page se chargeait.
+a84538b5dd23	Si cela survit si longtemps, c'est parce que cela ne paraît jamais cassé. Il n'y a pas d'erreur. Pixel Helper est au vert. Le Gestionnaire d'événements affiche des achats, simplement moins que vous n'en avez eu. Et à moins de rapprocher le pixel du nombre de commandes de Shopify, vous n'avez aucune raison de soupçonner que ce chiffre n'est qu'une fraction.
+d3629ea42545	<t0>Ce que je peux affirmer ici, et ce que je ne peux pas</t0>
+c500a51cd813	J'ai trouvé cela sur la boutique d'un client, et la correction a changé ce qu'affichaient ses rapports. Je ne vais pas associer un pourcentage à cette récupération, car honnêtement, la scission de l'attribution et le gaspillage de budget sont liés sans être identiques, et je préfère vous donner le mécanisme plutôt qu'un chiffre que je ne peux pas entièrement défendre.
+5533726a030f	Le mécanisme est de toute façon ce qui compte : <t0>deux pixels signifie que chacun voit une partie de la vérité</t0>, et Meta optimise sur ce qu'il voit.
+d20b54eb18e8	Comment vérifier
+1ba51770c7a8	Dans l'administration Shopify, regardez à trois endroits, car un pixel peut être installé à n'importe lequel d'entre eux sans que rien ne vous signale les autres :
+388a3f2bd10f	<t0>Paramètres &rarr; Événements clients</t0> : les pixels personnalisés se trouvent ici
+7c7cb7c4c0a2	<t0>Canal de vente Facebook &amp; Instagram</t0> : l'intégration officielle
+b9cedae22802	<t0>Boutique en ligne &rarr; Thèmes &rarr; Modifier le code</t0> : cherchez <t2>fbq</t2> ou <t3>connect.facebook.net</t3> dans <t1>theme.liquid</t1>
+a4763c4d3d68	Si vous trouvez un ID de pixel à plus d'un de ces endroits, c'est votre problème. Choisissez une méthode, le canal de vente est généralement la bonne, et supprimez les autres.
+49bfd2fc2275	La suite de la séquence
+b96b0e4aece5	Le pixel n'est pas sur la page que le client atteint réellement
+f53cead5c41a	Tout le monde installe le pixel sur tout le site et suppose que la page de confirmation en hérite. Souvent, ce n'est pas le cas, car cette page peut être rendue en dehors de votre thème. Si vous proposez des ventes additionnelles après achat, la page que voit le client juste après avoir payé n'est peut-être pas celle que vous considérez comme la page de remerciement.
+6a6dbc57deab	<t0>La vérification</t0>Passez une vraie commande. Sur la page où vous arrivez, affichez le code source et cherchez votre ID de pixel. Ne le déduisez pas du thème.
+6ea1d17f8cda	L'événement Purchase se déclenche sans ses paramètres requis
+604ac333fb27	Un événement <t0>Purchase</t0> sans <t1>value</t1> ni <t2>currency</t2> est presque inutile. Meta ne peut pas optimiser vers un chiffre d'affaires dont on ne l'a jamais informé, et les enchères basées sur la valeur n'ont rien sur quoi travailler. L'absence de <t3>content_ids</t3> casse en plus la correspondance avec le catalogue et le reciblage dynamique.
+62309301d8ed	<t0>La vérification</t0>Dans l'onglet Network, filtrez sur <t1>facebook</t1> et lisez les paramètres de la requête d'achat. Vérifiez que <t2>value</t2>, <t3>currency</t3> et <t4>content_ids</t4> sont présents et renseignés.
+c560bfa858db	Le paiement quitte votre domaine et la session se rompt
+107bdaa98d73	Quand le paiement passe par une passerelle externe puis renvoie le client vers une page de commande reçue, cet aller-retour peut rompre la session du navigateur dont dépend le pixel. La commande se finalise ; l'événement n'arrive pas, ou arrive privé des identifiants nécessaires à son attribution.
+94221a2cb4c6	<t0>La vérification</t0>Votre parcours de paiement quitte-t-il votre domaine ? Si oui, le suivi navigateur seul n'est qu'un « meilleur effort » et vous avez besoin de l'API Conversions.
+6e857c1aadfd	La déduplication supprime l'événement volontairement
+38d82505b5ff	Si vous faites tourner le pixel et l'API Conversions ensemble (ce que vous devriez faire), Meta déduplique grâce à l'<t0>event_id</t0>. Quand le navigateur et le serveur ne sont pas d'accord sur cet identifiant, soit vous comptez tout en double, soit vous perdez discrètement un côté. Perdre un côté ressemble exactement à « le pixel a cessé de fonctionner ».
+e34596fad05b	<t0>La vérification</t0>Pour une commande, relevez l'<t1>event_id</t1> envoyé par le navigateur et celui envoyé par votre serveur. Ils doivent être identiques.
+df1bd9ab9ad5	Bloqueurs de publicité et protection contre le pistage
+9db2e7bfc89f	Une part significative du trafic bloque purement et simplement le suivi par navigateur. Ce n'est pas un bug que vous pouvez corriger, c'est une taxe permanente sur la mesure côté client, et la raison pour laquelle une configuration uniquement navigateur sous-comptera toujours. La solution n'est pas une réparation ; c'est l'API Conversions.
+0f7023a447fa	<t0>La vérification</t0>Comparez le nombre d'achats du Gestionnaire d'événements avec le nombre de commandes Shopify sur la même période. Un écart persistant qui grandit avec le volume vient généralement de là.
+a7c3c0758073	Vous regardez trop tôt
+b37441ebd4bf	Les rapports du Gestionnaire d'événements ne sont pas instantanés. Avant de conclure qu'un événement manque, attendez quelques heures et regardez à nouveau. J'ai vu des gens réécrire un checkout qui fonctionnait parce qu'ils avaient consulté un tableau de bord quatre-vingt-dix secondes après une commande de test.
+da32602a9e67	<t0>La vérification</t0>Utilisez l'outil Tester les événements pour un retour immédiat ; utilisez le Gestionnaire d'événements pour le volume, le lendemain.
+60b9cb7861a3	Le rapprochement que personne ne fait
+feff648d7696	Voici l'exercice qui trouve les problèmes qu'aucune checklist ne trouvera. Choisissez une semaine. Notez trois chiffres :
+6da13addb000	Source
+10f83a7ad249	Relation attendue
+9201211ec1fa	Chaque commande payée, point
+d0ef153cb0e4	La vérité
+d1f0b6210621	Achats du Gestionnaire d'événements Meta
+5a97285b0344	Événements d'achat reçus
+8a194912963a	Conversions Meta Ads Manager
+a29f27352fce	Achats que Meta attribue aux publicités
+cb879bf987f9	Un sous-ensemble, toutes les ventes ne viennent pas des publicités
+8f6ac98bb772	La plupart des gens comparent la mauvaise paire et paniquent. Les conversions Ads Manager <t0>doivent</t0> être inférieures aux commandes Shopify, car tous les clients ne viennent pas d'une publicité. Le chiffre qui doit être proche de Shopify, ce sont les <t1>achats du Gestionnaire d'événements</t1>. S'il est très en dessous de votre nombre de commandes, vous avez un problème de suivi plutôt qu'une question d'attribution.
+fd32dd765553	Et si le Gestionnaire d'événements est <t0>supérieur</t0> à Shopify, vous avez le problème inverse, généralement des événements en double, ce qui fait l'objet d'<t1>un autre article</t1>.
+80753a73304b	Ce que je ne vous dis pas
+5b900e400b11	Je ne vous ai pas donné de pourcentage d'écart attendu, car la fourchette honnête dépend de votre mix de trafic, de votre checkout, des navigateurs de vos clients et de votre pays, et chaque référence publiée que j'ai vue vient d'une entreprise qui vend la solution. Établissez votre propre référence quand tout fonctionne, et considérez l'écart par rapport à <t0>votre</t0> chiffre comme le signal.
+3cca71fd3d6e	Le classement ci-dessus reflète un petit nombre de comptes, plus ce que les modes de défaillance impliquent logiquement. Voyez-le comme un ordre de recherche sensé plutôt que comme une statistique.
+f6f3c200049c	Vous voulez simplement que quelqu'un regarde ?
+54abf50dfdcf	Envoyez-moi l'URL de votre boutique. Je vous dirai ce que fait réellement votre pixel, et vous n'avez besoin de me donner accès à rien pour commencer.
+65906f35c583	<t0>Échéance Shopify du 26 août : votre suivi y a-t-il survécu ?<t1>Ce que supprime la mise à niveau automatique, et la vérification en dix minutes.</t1></t0> <t2>Événements d'achat en double après l'installation de l'API Conversions<t3>Comment prouver que la déduplication fonctionne vraiment, et pas seulement qu'elle est configurée.</t3></t2> <t4>Événements d'achat Snapchat qui ne se déclenchent pas : la séquence de diagnostic<t5>Six causes classées, avec de vrais chiffres d'Ads Manager.</t5></t4>
+1b4a84374b60	Votre pixel Meta signale-t-il des achats qui n'ont jamais eu lieu ?
+02f24b327bc0	Un pixel qui ne remonte plus rien se remarque. La panne coûteuse, c'est celui qui remonte trop, car un ROAS gonflé attire le budget. Six façons de vérifier le vôtre.
+4b14c2e16e4d	Pixel qui signale de faux achats

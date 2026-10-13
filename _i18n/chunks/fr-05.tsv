@@ -1,0 +1,144 @@
+e77fdff46237	C'est cet ordre qui compte. Enregistrer le lead, puis tenter l'e-mail, l'envoi au CRM, l'alerte WhatsApp et l'événement de conversion. Chacune de ces étapes peut échouer sans perdre la demande. Inversez l'ordre, et une seule erreur vous fait perdre un client en silence.
+1a21c38af467	Une configuration saine, étape par étape
+ce55143ca67a	<t0>Rendre le lead durable d'abord</t0>Assurez-vous que les envois de formulaire sont stockés ailleurs que dans une boîte de réception. Tout le reste est optionnel ; ceci ne l'est pas.
+20540d6551f7	<t0>Activer les composants Appel avec un numéro de transfert</t0>Cela capte les personnes qui appellent directement depuis l'annonce sans jamais visiter votre site, généralement une part plus importante que ne le pensent les gérants.
+cb64eb12842a	<t0>Ajouter le suivi des appels sur le site avec remplacement de numéro</t0>Pour que les appels passés après l'arrivée sur le site soient aussi attribués. Testez-le sur un vrai téléphone, car le remplacement dépend de l'exécution d'un script.
+ea45d62d946b	<t0>Définir une durée d'appel minimale</t0>Soixante secondes est une valeur raisonnable par défaut. Ajustez-la après avoir écouté un échantillon de vrais appels.
+c858fe6aa2cd	<t0>Importer la conversion et la laisser se stabiliser</t0>Ne jugez pas le changement avant au moins deux semaines. Les algorithmes d'enchères ont besoin de temps, et deux semaines de données d'appels d'une entreprise locale, c'est un petit échantillon.
+a26a632aa733	Où s'arrête ce conseil
+18a2a56c712e	L'enregistrement des appels est une décision distincte du suivi des appels, avec des obligations légales distinctes qui varient selon le pays et parfois la région. Savoir qu'un appel a eu lieu, combien de temps il a duré et quel mot clé l'a généré suffit pour optimiser les campagnes. En enregistrer le contenu est une étape plus importante : renseignez-vous avant de le faire.
+c4fda40526ac	Et mon échantillon ici, c'est deux entreprises, dans deux pays et deux secteurs. La mécanique se généralise ; les chiffres, non. Je n'ai pas publié de coût par appel dans cet article, car je n'en ai pas un que je puisse défendre pour un compte nommé sur une période précise, et une référence inventée vous serait moins utile que cette phrase.
+3ecf78099a81	Savez-vous quelles recherches génèrent vos appels ?
+0275a616c1d1	La plupart des entreprises locales qui utilisent Google Ads ne savent pas répondre. Envoyez-moi votre site et je vous dirai ce qui est suivi et ce qui ne l'est pas.
+877d9ef2244f	<t0>Audit de compte Google Ads : la checklist pour la génération de leads<t1>Six vérifications dans l'ordre, tirées de la refonte d'un compte de cabinet dentaire.</t1></t0> <t2>Conversions hors ligne Google Ads pour la génération de leads<t3>Indiquer à Google Ads quels leads sont devenus des missions réservées.</t3></t2> <t4>Échéance Shopify du 26 août : votre suivi y a-t-il survécu ?<t5>Ce que supprime la mise à niveau automatique, et la vérification en dix minutes.</t5></t4> <t6>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<t7>Sept causes, dont le pixel en double qui scinde l'attribution.</t7></t6> <t8>Suivi des conversions Google Ads qui ne fonctionne pas : l'ordre de diagnostic<t9>Pourquoi une balise qui fonctionne peut ne rien remonter pendant des semaines.</t9></t8>
+b3b9c6738d35	Suivi des conversions Google Ads qui ne marche pas : ordre de diagnostic
+4ad1504eecaa	Google Ads n'affiche aucune conversion ? La liste des causes est courte. Les voici dans l'ordre du diagnostic, avec une vérification pour chacune et pourquoi une balise qui marche peut ne rien remonter.
+1d98d31736ec	Quand Google Ads ne remonte aucune conversion, la liste des causes est courte, et elles ne sont pas également probables. Les voici dans l'ordre du diagnostic, avec la vérification pour chacune, et la raison pour laquelle une balise qui fonctionne peut ne rien remonter pendant des semaines.
+9b6b637a9780	Suivi des conversions Google Ads
+28de9c73e4cc	Pourquoi mon suivi des conversions Google Ads ne fonctionne-t-il pas ?
+9f0a36f692cd	Les causes les plus fréquentes : la balise absente de la page qui confirme l'action, une action de conversion réglée avec une catégorie ou un mode de comptage qui la masque, une balise qui se déclenche mais n'est pas liée à la bonne action de conversion, des paramètres de consentement qui bloquent la balise, et des fenêtres d'attribution qui font que la conversion n'a pas encore été remontée.
+efe88f384291	Combien de temps faut-il à Google Ads pour afficher les conversions ?
+df5a3c47180f	Les conversions peuvent mettre jusqu'à 24 heures à apparaître dans les rapports, et elles sont attribuées à la date du clic plutôt qu'à la date de la conversion. Les jours récents paraissent donc toujours moins bons qu'ils ne le seront au final : c'est un effet normal des rapports, pas une panne.
+6f8308fb02b8	Comment tester si ma balise de conversion Google Ads se déclenche ?
+404785fa9c23	Utilisez Google Tag Assistant en mode débogage, réalisez vous-même l'action de conversion et vérifiez que la balise se déclenche avec le bon ID et le bon libellé de conversion. Vérifiez ensuite l'état de l'action de conversion dans Google Ads, qui doit passer de « Non validée » à « Enregistrement des conversions ».
+1aa1f26f42fb	Google Ads affiche zéro conversion. Vous savez que la vente a eu lieu.
+2ac103804912	Quand Google Ads affiche zéro conversion, cela tient généralement à l'une de cinq choses : la <t0>balise n'est pas sur la page qui confirme l'action</t0>, la balise se déclenche mais n'est pas liée à la bonne action de conversion, l'action de conversion est exclue de la colonne « Conversions », des paramètres de consentement la bloquent, ou les conversions existent mais ne sont pas encore remontées parce qu'elles sont attribuées à la date du clic.
+a9118362f0ce	La dernière n'est pas une panne, et elle trompe tout le monde en permanence.
+560851a9d038	C'est l'un des problèmes de suivi les plus recherchés, et les résultats sont dominés par des fils de forum où personne n'a trouvé de réponse. Cela en dit long : le symptôme est générique, et la cause est généralement propre à la façon dont un compte précis a été câblé.
+7b7fd37aee61	Plutôt que de lister toutes les possibilités, voici donc l'ordre que je suis réellement, qui règle la plupart des cas dès les trois premières étapes.
+00a5111d55ac	Avant de toucher à quoi que ce soit : est-ce vraiment cassé ?
+edc535ef0fe9	Google Ads attribue une conversion à <t0>la date du clic</t0>, pas à la date de la conversion. Quelqu'un qui a cliqué lundi et acheté jeudi apparaît sur la ligne de lundi, et jusqu'à jeudi, lundi paraît moins bon qu'il ne l'était réellement.
+a26283372342	Concrètement, <t0>les jours récents sous-estiment toujours la performance</t0>, et ils continuent de se remplir tant que votre fenêtre de conversion le permet. Si vous regardez les trois derniers jours et concluez que le suivi est cassé, vous regardez peut-être simplement des données qui ne sont pas encore toutes arrivées.
+18563be8752a	<t0>Le test qui tranche</t0>
+f1efeb566147	Regardez une période qui s'est terminée il y a au moins deux semaines et qui se trouve entièrement hors de votre fenêtre de conversion. Si cette période a des conversions et pas les jours récents, votre suivi fonctionne et vous lisiez un rapport incomplet. Si cette période plus ancienne est aussi à zéro, lisez la suite.
+46490e02be79	L'ordre de diagnostic
+5b838be6570e	L'état de l'action de conversion vous dit où vous en êtes
+5996c78aff29	Google Ads &rarr; <t0>Objectifs</t0> &rarr; <t1>Conversions</t1> &rarr; <t2>Résumé</t2>. Chaque action de conversion a un état, et c'est le diagnostic le plus rapide de tout le compte.
+f8390fca8ad6	<t0>Aucune conversion récente</t0> : la balise a été détectée une fois mais plus rien récemment. Généralement, une page ou un modèle a changé.
+e2189b70b11a	<t0>Non validée</t0> : Google n'a jamais reçu de signal. La balise ne se déclenche pas là où vous le pensez.
+e242f6e7dd5a	<t0>Inactive</t0> : rien depuis longtemps. Considérez-la comme cassée.
+fe40b78ea348	<t0>Enregistrement des conversions</t0> : la balise va bien et votre problème est ailleurs, très probablement au point suivant.
+0bff46df9ebd	<t0>La vérification</t0>Lisez l'état avant de toucher au code. Il vous dit s'il s'agit d'un problème de balisage ou de rapport, et les solutions sont totalement différentes.
+4bfb21414982	La conversion s'enregistre mais est exclue de la colonne
+cac0f62431a5	C'est la version exaspérante du problème : l'action de conversion affiche clairement des conversions, mais la vue de vos campagnes indique zéro. La cause est le paramètre <t0>« Inclure dans "Conversions" »</t0>. S'il est désactivé, l'action continue d'enregistrer, mais n'apparaît pas dans la colonne Conversions, et les enchères intelligentes n'enchérissent pas dessus.
+3bc970d73d0f	Les actions de conversion secondaires sont exclues par conception. Si quelqu'un a défini votre action d'achat principale comme secondaire, tout semble cassé alors que tout fonctionne parfaitement.
+3fa1f593199e	<t0>La vérification</t0>Ouvrez l'action de conversion et vérifiez que le réglage principale/secondaire correspond à ce vers quoi vous voulez optimiser.
+d8510bbc1bec	La balise se déclenche mais porte le mauvais libellé
+f89d82347a5d	Une balise de conversion Google Ads a besoin d'un ID de conversion et d'un <t0>libellé</t0> de conversion. L'ID identifie le compte ; le libellé identifie l'action. Copiez une balise entre deux actions de conversion en oubliant de changer le libellé, et la balise se déclenche parfaitement, dans le mauvais panier.
+2825d8a670f4	<t0>La vérification</t0>Dans Tag Assistant, réalisez l'action et lisez le libellé de conversion de la balise déclenchée. Comparez-le caractère par caractère avec le libellé indiqué dans la configuration de la balise de l'action de conversion.
+8bee5002aabb	Le mode Consentement refuse le stockage, et vous n'avez pas prévu de modélisation
+44fe5bc47e8a	Si vous avez ajouté une bannière de consentement (et dans l'UE, vous devriez), les balises attendent désormais une autorisation. C'est le comportement correct. Mais une bannière configurée pour tout refuser par défaut, sans câblage de la mise à jour du consentement, signifie que la balise de conversion n'obtient jamais son autorisation et ne se déclenche jamais.
+f3e25335867a	Celle-ci a une signature : les conversions s'effondrent le jour exact où la bannière est mise en ligne.
+ce907db7e793	<t0>La vérification</t0>Chargez le site à neuf, acceptez les cookies, réalisez l'action et vérifiez que la balise se déclenche. Recommencez en refusant, et vérifiez qu'elle ne se déclenche pas. Les deux sens doivent se comporter comme prévu.
+2330fbf92c97	La balise n'est pas sur la page qui confirme réellement l'action
+0c7a239af9d2	Le grand classique. La balise est sur le site mais pas sur la page de remerciement, la page d'état de la commande ou la page où arrive le client après un retour depuis le prestataire de paiement. Sur les sites de génération de leads, l'équivalent est un formulaire envoyé en AJAX sans chargement de page, si bien qu'une balise déclenchée sur l'affichage de page n'a jamais l'occasion de se déclencher.
+6aadc3a2ba5f	<t0>La vérification</t0>Réalisez vous-même la conversion, puis affichez le code source de la page d'arrivée et cherchez l'ID de conversion.
+09d7fb0a061e	Une fois que ça marche, faites-lui mesurer de l'argent
+9fef28112782	La plupart des gens s'arrêtent quand la balise se déclenche. C'est pourtant là que commence le travail intéressant, car un nombre de conversions traite chaque lead de la même façon, et les vôtres ne se valent pas.
+89a16046d3ac	Pour les comptes de génération de leads, les <t0>conversions avancées pour les leads</t0> associées aux imports de conversions hors ligne vous permettent de renvoyer à Google Ads la valeur réelle d'une mission conclue. Les enchères optimisent alors vers le chiffre d'affaires plutôt que vers les formulaires remplis. C'est la différence entre un algorithme qui court après des demandes et un algorithme qui court après des clients.
+7557b976f127	La mécanique est la même que pour le suivi des appels dans <t0>l'article sur les services locaux</t0> : capter l'identifiant de clic à l'envoi, le stocker avec le lead, et renvoyer la valeur quand la mission est gagnée.
+61a0ae3b849d	Limites
+4bdec5d3b43c	L'ordre ci-dessus est un ordre de recherche, pas un tableau de fréquence : il reflète un petit nombre de comptes et la logique de chaque mode de défaillance, pas une étude. Google Ads change régulièrement son interface, j'ai donc ancré les vérifications sur les états et le contenu des balises plutôt que sur l'emplacement des menus, autant que possible.
+0f954270966a	Vous perdez de l'argent à cause d'un chiffre auquel vous ne pouvez pas vous fier ?
+1939d1c313b5	Envoyez-moi l'URL de votre site et je vous dirai ce que fait votre suivi des conversions. Aucun accès au compte n'est nécessaire pour commencer.
+c2957ee97f9b	<t0>Conversions hors ligne Google Ads pour la génération de leads<t1>Indiquer à Google Ads quels leads sont devenus des missions réservées.</t1></t0> <t2>Audit de compte Google Ads : la checklist pour la génération de leads<t3>Six vérifications dans l'ordre, tirées de la refonte d'un compte de cabinet dentaire.</t3></t2> <t4>Échéance Shopify du 26 août : votre suivi y a-t-il survécu ?<t5>Ce que supprime la mise à niveau automatique, et la vérification en dix minutes.</t5></t4> <t6>Suivi des appels Google Ads pour les entreprises de services locales<t7>Quatre façons de suivre les appels, et ce que chacune mesure vraiment.</t7></t6> <t8>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<t9>Sept causes, dont le pixel en double qui scinde l'attribution.</t9></t8>
+11e98c053a7e	Qu'est-ce qu'un identifiant de clic ?
+ce096d58a24e	Un identifiant unique que Google Ads ajoute à l'adresse de votre page de destination quand quelqu'un clique sur une annonce. Le stocker avec le lead vous permet d'indiquer ensuite à Google Ads quel clic a produit quelle mission.
+0317de3b1abb	Dois-je développer un plugin ?
+ea53e958b244	Non. L'essentiel est de stocker chaque lead avec son identifiant de clic et de remonter le résultat à Google Ads. J'ai écrit un plugin parce que le formulaire de ce client perdait aussi des leads quand les e-mails échouaient.
+ad69d412bafc	Pourquoi ne pas simplement suivre les envois de formulaire ?
+b2ba8e95a064	Un envoi de formulaire montre un intérêt. Une mission réservée montre du chiffre d'affaires. Si seul le premier est remonté, Google Ads n'a aucun moyen d'apprendre quels clics mènent au second.
+ddf1bf54ca6f	Indiquer à Google Ads quels leads sont devenus des missions réservées
+e206c275880b	Google Ads ne peut optimiser que vers les résultats dont on l'informe. Si votre suivi s'arrête à l'envoi du formulaire, les enchères apprennent à trouver des gens qui remplissent des formulaires.
+51fea1d928c8	Renvoyer l'identifiant de clic et la valeur réelle de la mission à Google Ads lui permet d'optimiser plutôt vers le chiffre d'affaires.
+009598ec96de	C'est l'approche que j'ai utilisée pour une entreprise de nettoyage de moquettes à Slough, au Royaume-Uni. Je décris ici la méthode, et le projet est toujours en cours.
+999ab46c501e	Le problème résolu
+095119d40edf	Le site a démarré avec un formulaire Elementor standard qui fonctionne e-mail d'abord : il rédige un e-mail et l'envoie. Si l'envoi échoue, il n'existe aucune copie. Le lead disparaît et personne ne sait qu'il a existé.
+90fd4df59988	En plus, Google Ads n'avait aucun moyen de voir quels clics devenaient des missions réservées, il optimisait donc vers les envois de formulaire.
+1287f0378f58	Comment fonctionne la solution
+3f7577ef58af	<t0>Enregistrer le lead d'abord</t0>Chaque lead est écrit dans une table de base de données avant toute tentative d'e-mail, de webhook ou d'appel API. Un service tiers défaillant ne peut alors jamais empêcher la capture d'un lead.
+0e55d405a155	<t0>Capter l'identifiant de clic et les paramètres de campagne</t0>À l'envoi, l'identifiant de clic Google (gclid) et les paramètres UTM sont stockés avec le lead, pour que chaque lead reste lié au clic publicitaire qui l'a produit.
+e25252af7fc1	<t0>Noter le résultat</t0>L'étape du pipeline, la valeur de la mission et des notes sont enregistrées pour chaque lead, pour que la question de ce qu'ont rapporté les dépenses publicitaires trouve sa réponse dans les données.
+d9b465cfd104	<t0>Renvoyer la valeur</t0>La valeur réelle de la mission est renvoyée à Google Ads sous forme de conversion hors ligne, y compris les conversions avancées pour les leads, pour que les enchères puissent optimiser vers les missions réservées.
+b3374409091c	Ce que j'ai construit, et ce dont vous avez réellement besoin
+faad83d1b7ca	J'ai tout construit sous la forme d'un plugin WordPress détenu par le client, appelé LeadBridge, sans dépendance payante et sans intermédiaire tiers détenant les données. Je l'ai fait parce que ce client avait aussi besoin que le formulaire soit réparé.
+30b9be85dc76	Vous n'avez pas besoin de mon plugin pour appliquer la méthode. Il vous faut les quatre étapes : stocker chaque lead en sécurité, garder son identifiant de clic, noter le résultat et remonter la valeur à Google Ads.
+d68af3fa0e9c	Selon Google, les conversions avancées pour les leads ajoutent des données client hachées, comme une adresse e-mail, à l'identifiant de clic, pour qu'une correspondance reste possible quand l'identifiant de clic manque. C'est pourquoi la fiche du lead doit contenir les deux.
+291746772683	<t0>Limites honnêtes</t0>
+c93978c50f8e	Mr Expert est un projet en cours et les résultats se construisent encore, donc je ne cite pas d'évolution du coût par lead ni des performances d'enchères. Cet article décrit le fonctionnement de la méthode et pourquoi je l'ai construite.
+516fa6eb4b73	La réalisation complète, y compris le tableau de bord unique qui réunit Google Ads, la Search Console, la fiche d'établissement Google, les données de missions et de chiffre d'affaires de LeadBridge et Microsoft Clarity dans une seule vue, est présentée dans l'<t0>étude de cas Mr Expert Carpet Cleaning</t0>.
+5b09a21be89c	Non. L'essentiel est de stocker chaque lead avec son identifiant de clic et de remonter le résultat à Google Ads. J'ai écrit un plugin parce que le formulaire de ce client perdait aussi des leads quand les e-mails échouaient.
+b2338a133a0c	Google Ads optimise-t-il vers vos formulaires ou vers vos missions ?
+b48ce1c9c037	<t0>Mise en place du suivi des conversions<t1>GTM, GA4, CAPI et conversions hors ligne.</t1></t0> <t2>Suivi des appels Google Ads pour les entreprises de services locales<t3>Comment compter les appels qui deviennent des missions.</t3></t2> <t4>Audit de compte Google Ads : la checklist pour la génération de leads<t5>Six vérifications dans l'ordre.</t5></t4>
+0caf3ee7e17f	De combien de pages une entreprise de services locale a-t-elle besoin ?
+6e933a54e5a5	Une pour chaque service sur lequel vous voulez être trouvé, avec les zones que vous couvrez décrites dessus. Ajoutez des pages par zone uniquement si vous avez quelque chose de vraiment différent à dire sur chaque zone.
+b077d1550472	Une fiche d'établissement Google suffit-elle à elle seule ?
+455af2f8a2a5	C'est un bon début pour Maps et la recherche locale, et elle fonctionne mieux avec un site qui a une page par service. Je les traite comme les éléments d'un même dispositif.
+5da32ac34b4e	Cela dépend de la concurrence locale et de l'état initial du site et de la fiche, donc je n'annonce pas de délai fixe.
+bcd4708c889b	<t0>Notes de terrain</t0> &nbsp;/&nbsp; SEO local
+45e30170d7a6	Une page par service et par zone : comment je structure le SEO local d'une entreprise de services
+f07a6ba18ca3	Pour une entreprise de services locale, je crée une page dédiée pour chaque service et les zones qu'il couvre, au lieu d'une seule page qui essaie de se positionner sur tout.
+01f6b146fe28	Sur le site d'une entreprise de nettoyage de moquettes au Royaume-Uni, j'ai créé des pages distinctes pour le nettoyage de moquettes, de canapés, de matelas et le nettoyage professionnel, ciblant Slough, le Berkshire et les environs.
+b6d0cd6ab8ec	Une entreprise qui propose quatre services a généralement une seule page qui les mentionne tous. Cette page offre au visiteur comme à Google une correspondance faible pour chaque recherche.
+03370d910c1e	Pourquoi des pages séparées
+be0f5bab8b9a	Quelqu'un qui cherche un nettoyage de canapé veut une page sur le nettoyage de canapé. Une page sur les moquettes, les canapés, les matelas et le nettoyage professionnel ne répond bien à aucune de ces recherches. Une page dédiée permet à chaque recherche d'arriver exactement sur ce que la personne a demandé.
+4b44fdbba146	Ce dont chaque page a besoin
+0aaa3d88e1da	Un service et un titre clair
+8d4fab528b00	La balise title et le titre principal nomment le service et la zone, pour que la page traite manifestement d'un seul sujet.
+c8acdeeeef8f	Un contenu propre à ce service
+977d020bb820	Ce qui est inclus, ce que comprend l'intervention et les zones couvertes. Un contenu qui n'a de sens que pour ce service.
+c7adce277b03	Des éléments de réassurance à côté de la promesse
+320908395cde	Avis, certifications et photos avant/après placés sur la page, là où le visiteur décide d'appeler ou non.
+90e36f23416f	Les corrections autour des pages
+6a578af77104	Les pages fonctionnent mieux quand les bases autour d'elles sont correctes. Sur le même projet, j'ai corrigé les balises title, les meta descriptions, la structure des titres, les textes alternatifs et les liens internes, configuré et optimisé la fiche d'établissement Google, validé la Search Console et traité les problèmes d'exploration et d'indexation qu'elle remontait.
+d5c1e93a023b	<t0>Le piège à éviter</t0>
+7a9fbdb42c75	Ne clonez pas une page en changeant seulement le nom de la ville. Les règles anti-spam de Google qualifient d'abus de pages satellites les pages créées pour se positionner sur des requêtes précises et similaires, comme des variantes de lieux. Chaque zone que vous nommez doit avoir quelque chose de vraiment spécifique à dire.
+5a814d2c5cee	Mr Expert est un projet en cours et ses résultats se construisent encore, donc je ne cite pas de positions. Cet article décrit la structure utilisée et le raisonnement derrière.
+f1b83760b011	La réalisation complète est présentée dans l'<t0>étude de cas Mr Expert Carpet Cleaning</t0>, et ma page <t1>services de SEO local</t1> explique ce que je propose.
+0c6312fd771d	<t0>Services de SEO local<t1>Fiche d'établissement Google, pages de services et corrections d'indexation.</t1></t0> <t2>Suivi des appels Google Ads pour les entreprises de services locales<t3>Comment compter les appels qui deviennent des missions.</t3></t2> <t4>Audit de compte Google Ads : la checklist pour la génération de leads<t5>Six vérifications dans l'ordre.</t5></t4>
+faab6e1ba9a3	Reprendre un compte Meta, c'est hériter de décisions non documentées. Auditez la mesure avant les créations, car chaque jugement repose sur des chiffres non vérifiés.
+fdf24be1ca68	Auditer un compte Meta dont vous héritez
+b3acc0ad6742	Que vérifier en premier lors de l'audit d'un compte Meta Ads ?
+193f3d1aafc8	Vérifiez la couche de mesure avant les campagnes. Comptez les pixels installés, rapprochez les achats annoncés des vraies commandes sur une semaine clôturée, et vérifiez vers quel pixel chaque campagne optimise. Les jugements sur les créations et le ciblage ne valent que ce que valent les données de conversion en dessous.
+64a3979443ee	Combien de temps prend un audit Meta Ads ?
+8ab1d3cb2a6d	Les vérifications de mesure prennent quelques heures. Le rapprochement nécessite une semaine clôturée de données datant d'au moins deux semaines, pour que les fenêtres d'attribution soient fermées. La reconstruction après une correction demande encore un ou deux jours de données propres avant de pouvoir juger la performance.
+260a26c4ade0	Que signifie un ROAS élevé mais un chiffre d'affaires faible sur des campagnes héritées ?
+f3b62d199a36	Cela signifie généralement que les données de conversion sont gonflées. Les causes fréquentes sont des pixels en double, des événements d'achat déclenchés sur des pages qui ne sont pas des commandes, ou des événements en double entre le pixel du navigateur et l'API Conversions. Rapprochez les achats annoncés des vraies commandes de la boutique avant de vous fier au moindre chiffre au niveau des campagnes.
+c669dc7e1370	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Audit
+fa24a52017c6	La première chose à auditer dans un compte publicitaire hérité, ce ne sont pas les publicités.
+fe9140da79db	<t0>Kamran Arshad</t0><t1>13 août 2026</t1><t2>9 min de lecture</t2>
+91445d7b26bb	Quand vous héritez d'un compte Meta, auditez la <t0>couche de mesure avant les campagnes</t0>. Comptez les pixels, rapprochez les achats annoncés des vraies commandes sur une semaine clôturée, et cartographiez vers quel pixel chaque campagne optimise.
+d2fae5a6bba9	Chaque jugement que vous vous apprêtez à porter, mettre ceci en pause, augmenter cela, repose sur des données de conversion que vous n'avez pas encore vérifiées. Vérifiez-les d'abord.
+e4dba02328d5	La plupart des checklists d'audit commencent par les créations, les audiences et la structure. Elles comptent. Elles comptent <t0>ensuite</t0>, car chacune est jugée au regard de la performance annoncée, et c'est précisément à la performance annoncée qu'un compte hérité ne vous donne aucune raison de faire confiance.
+41659929e512	J'ai repris un compte où procéder dans le mauvais ordre aurait coûté cher. Les campagnes les plus performantes dans Ads Manager ne produisaient rien. Auditez d'abord les créations et vous concluriez que ces campagnes avaient le bon angle, puis vous y mettriez encore plus d'argent.
+18c77c1decfc	<t0>D'où viennent ces chiffres</t0>
+1b89ea195ceb	Un compte Shopify que j'ai repris et audité, une marque de soins de la peau qui dépensait environ <t0>100 000 PKR par jour</t0> en publicités Meta. Le client m'a demandé de ne pas le nommer, je ne l'ai donc pas fait. Les chiffres sont ceux du compte pendant cette mission.
+f5e12a0d4ffe	C'est <t0>un seul compte</t0>, pas une étude. Je vous donne le mécanisme et un exemple concret, pas une statistique sectorielle. Et je n'indique pas ici les dates précises de la mission, car je préfère les omettre plutôt que de les approximer.
+076bbbb37deb	Phase un : peut-on croire ces chiffres ?
+3b172c283304	<t0>Compter les pixels</t0>Shopify : <t1>Paramètres &rarr; Événements clients</t1>, le <t2>canal de vente Facebook &amp; Instagram</t2>, et <t3>theme.liquid</t3> en cherchant <t4>fbq</t4>. Confirmez ensuite dans le navigateur avec les DevTools, car configuré et déclenché sont deux choses différentes. Plus d'un ID de pixel, c'est un constat, pas un détail.
+a8445feea23b	<t0>Rapprocher une semaine clôturée</t0>Achats du Gestionnaire d'événements contre vraies commandes de la boutique, même semaine, même fuseau horaire, datant d'au moins deux semaines. Le Gestionnaire d'événements doit approcher votre nombre de commandes sans jamais le dépasser.
+110b88fcdc3f	<t0>Associer campagnes et pixels</t0>Pour chaque campagne active, notez le pixel sur lequel son événement de conversion est configuré. C'est l'étape qui transforme un écart vague en une liste précise de campagnes.
+7ce0720801a3	<t0>Retracer les commandes de chaque groupe</t0>Prenez les campagnes associées à chaque pixel et essayez de retrouver leurs commandes annoncées dans la boutique. Un groupe dont les commandes sont introuvables, c'est votre problème, et vous savez maintenant exactement combien de budget il mobilise.
+0a2faf84f6b5	<t0>Vérifier la configuration de l'API Conversions</t0>Si la CAPI tourne, vérifiez que la déduplication fonctionne réellement et n'est pas simplement configurée, voir <t1>l'article sur la déduplication</t1>.
+71957e99aead	<t0>La question qui clôt la phase un</t0>
+e49ce74acd2f	Pouvez-vous dire, en une phrase, combien d'achats la boutique a réalisés la semaine dernière, combien Meta pense qu'elle en a réalisé, et expliquer l'écart ? Si non, ne touchez encore à aucun budget. Chaque optimisation que vous ferez est un pari sur des chiffres que vous ne pouvez pas défendre.

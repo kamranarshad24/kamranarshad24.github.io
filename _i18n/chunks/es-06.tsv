@@ -1,0 +1,175 @@
+0def9aabe318	Qué encontró la fase uno en esa cuenta
+04f680bc9e12	Dos píxeles. Uno instalado mediante el canal de ventas oficial, preciso. Otro instalado por una app de terceros, que registraba compras sin pedidos correspondientes.
+250d826d3afc	Meta reportaba unos 100 pedidos frente a 55 a 70 reales. Aproximadamente <t0>entre el 30 y el 40 % de un presupuesto diario de 100.000 PKR</t0> estaba en campañas que optimizaban hacia el píxel inexacto, campañas que en Ads Manager parecían las más fuertes de la cuenta.
+0f9370ee3fbf	El responsable de marketing anterior no lo había encontrado. No es una crítica a su competencia, sino una consecuencia de dónde buscaba. Dentro de Ads Manager todo era coherente. La discrepancia solo se ve al comparar Meta con la tienda, y esa comparación queda fuera de la herramienta en la que vive la mayoría de media buyers.
+7c05665e90e7	Fase dos: solo ahora, la cuenta en sí
+5f603c218486	Con números fiables, la auditoría habitual sí tiene sentido:
+2745debaa64a	Área
+2e062db20779	Qué revisar
+e286b46a66ad	Por qué importa después de la fase uno
+99b8a5750d3f	Estructura de campañas
+e77391796e7f	Audiencias solapadas, presupuestos fragmentados
+de2fced136ba	Las decisiones de consolidar necesitan datos de rendimiento reales
+b4f57352c166	Evento de optimización
+96e82cf93b77	¿Las campañas optimizan hacia la compra o hacia un indicador indirecto?
+b953b8d746f3	Un evento indirecto hereda todos los fallos del píxel que lo reporta
+7b8bf0ce5a18	Configuración de atribución
+3d1a4c806619	¿Ventanas coherentes entre campañas?
+4d19ff4a8866	Las ventanas mezcladas hacen que las campañas no sean comparables
+8f6a557068a6	Creatividades y ángulos
+f3fb4b9318b6	Qué generó realmente pedidos rastreables
+5fd97f01558b	Solo tiene sentido una vez eliminadas las conversiones fantasma
+2867a119acba	Solapamiento de audiencias
+ab0d4fb57b6f	Campañas que pujan unas contra otras
+76483b0031e3	Sube los costos de forma invisible
+c3c288b5fe93	La conversación del traspaso
+58af869c98b6	Si encuentras algo así, cómo lo presentas importa tanto como encontrarlo.
+9efba94dcda5	Al cliente le han dicho durante meses que esas campañas funcionaban. Alguien tomó esas decisiones de buena fe con las herramientas que tenía. Empezar con «tu responsable anterior no vio esto» te hace parecer brillante y hace que el cliente se sienta tonto, un mal intercambio.
+05f9f5fe19df	Empieza mejor por el mecanismo: la discrepancia solo era visible desde fuera de Ads Manager, esta es la conciliación, este es el número y esto es lo que pasa cuando lo corregimos, <t0>incluido que el ROAS reportado va a bajar.</t0> Dilo antes de hacer el cambio, no después.
+647561262eae	Una cuenta heredada, una causa. Muchas cuentas tienen un seguimiento honesto y campañas realmente flojas, y la fase uno te lo dirá en una tarde, algo que vale la pena saber antes de reconstruir algo que estaba bien.
+6fd094540e1f	La fase uno tampoco basta. Establece si los números son creíbles. No te dice si la estrategia es buena. Solo evita que respondas a esa pregunta con ficción.
+202459d29f67	¿Acabas de asumir una cuenta en la que no confías?
+5833c106cc94	Envíame la URL de la tienda. Te diré si los números que heredaste son creíbles antes de que inviertas en base a ellos.
+ed18cd7b0280	<t0>Meta dice 100 pedidos. Shopify dice 62. ¿Quién miente?<t1>La conciliación que descubre conversiones fantasma.</t1></t0> <t2>Cómo saber si tu píxel de Meta registra compras que nunca ocurrieron<t3>El fallo que parece un éxito hasta que concilias.</t3></t2> <t4>No puedes escalar una campaña en la que no confías<t5>Los consejos para escalar dan por hecho algo que nadie verifica.</t5></t4>
+6b127d886d2f	Una diferencia entre Meta y tus pedidos de Shopify es normal hasta cierto punto. Más allá, suele haber algo registrando compras que nunca ocurrieron. Cómo saber cuál es el caso.
+65c81de0749b	Discrepancia de pedidos entre Meta y Shopify
+1192890dce52	¿Por qué Meta muestra más ventas que Shopify?
+dfa9eba163a9	Cierta diferencia es normal porque Meta cuenta conversiones tras visualización y tras clic dentro de su ventana de atribución, incluidas personas que no llegaron directamente desde un clic en un anuncio. Una diferencia grande suele significar otra cosa: píxeles duplicados, eventos duplicados o un píxel que dispara eventos de compra en páginas que no son compras reales.
+72a42b3591f3	¿Cuánta discrepancia entre Meta y Shopify es normal?
+3103ccbcb60e	No hay un número universal, y cualquier artículo que cite uno está adivinando. Establece tu propia referencia cuando el seguimiento esté sano y luego trata la desviación respecto a tu propia cifra como la señal, en lugar de compararte con un promedio publicado.
+17458dca82d5	¿Puede un segundo píxel de Facebook inflar las cifras de ventas?
+0eda2d3c0fab	Sí. Si una app de terceros instala un segundo píxel que dispara eventos de compra que no corresponden a pedidos reales, Meta atribuirá esas compras fantasma a las campañas que optimizan hacia ese píxel, inflando las ventas y el ROAS reportados.
+e595ab8d3564	<t0>Notas de campo</t0> &nbsp;/&nbsp; Atribución
+887f9d835481	Meta dice 100 pedidos. Shopify dice 62. ¿Quién miente?
+0ed9ed7eb432	<t0>Kamran Arshad</t0><t1>13 ago. 2026</t1><t2>10 min de lectura</t2>
+2a52c1b14007	Cierta diferencia entre Meta y Shopify es normal. Meta cuenta conversiones tras visualización y usa una ventana de atribución distinta a la de tu tienda. Una <t0>diferencia grande y persistente a favor de Meta</t0> es otra cosa. Suele significar que algo registra compras que no ocurrieron: un píxel duplicado, eventos duplicados o un evento de compra que se dispara en una página que no es una compra.
+941e0c1d5c32	Para distinguirlos, deja de comparar totales y empieza a comparar el par de números correcto.
+410b557a216a	Es una de las preguntas más comunes de la publicidad en e-commerce y una de las peor respondidas. Búscala y encontrarás hilos de Reddit con treinta comentarios y ninguna conclusión, publicaciones de la comunidad de Shopify marcadas como sin resolver y artículos de proveedores que enumeran nueve causas y luego sugieren su producto.
+2dc4f381644d	Así que aquí va una cuenta concreta, una causa concreta y la conciliación que la encontró.
+bab08ea785fd	La situación
+e27d225ae8ba	Asumí la publicidad en Meta de una marca de cuidado de la piel en Shopify. El traspaso venía con un problema que el responsable anterior no había podido resolver: <t0>Meta reportaba unos 100 pedidos. Shopify mostraba de 55 a 70.</t0>
+6a0959a05522	Esa diferencia llevaba tanto tiempo que el cliente ya no confiaba en ninguno de los dos números. Y como no podía saber qué campañas reportaban con honestidad, ajustaba los presupuestos prácticamente al azar, subiendo la inversión en lo que se veía bien en Ads Manager sin forma de saber si «bien» significaba algo.
+982c3a76fbc7	Ese es el daño real. No el número equivocado en sí, sino cada decisión tomada a partir de él.
+f012b5c946b4	Una cuenta de Shopify que asumí y audité, una marca de cuidado de la piel con anuncios de Meta de unos <t0>100.000 PKR al día</t0>. El cliente me pidió no nombrarlo, así que no lo hago. Las cifras siguientes son las que había en la cuenta durante ese encargo.
+a6d8292815dd	Es <t0>una sola cuenta</t0>, no un estudio. Te doy el mecanismo y un ejemplo desarrollado, no una estadística del sector. Y no indico aquí fechas exactas del encargo porque prefiero omitirlas a aproximarlas.
+36c77898fe88	Primero: compara el par de números correcto
+860cb1ceb54d	La mayoría compara las conversiones reportadas por Meta con el total de pedidos de Shopify, se asusta con la diferencia y empieza a reconstruir cosas que nunca estuvieron rotas. Esas dos cifras <t0>deben</t0> ser distintas.
+b7baa1d40c4e	Número
+78096ac8246d	Qué cuenta
+16c009c6d5fe	Cómo debería compararse
+4afcb638fbf1	Pedidos de Shopify
+ff559ef1a3a8	Cada pedido pagado, de cualquier origen
+235b4ae2a190	La verdad de referencia
+dc13f74cf8be	Compras del Administrador de eventos
+3b193a473f9f	Eventos de compra que recibió Meta
+15f9cb616eaa	Debería acercarse a Shopify y nunca superarlo
+ba384a40bb9a	Conversiones de Ads Manager
+1b6feda96372	Compras que Meta atribuye a tus anuncios
+490d724f2da0	Un subconjunto: no todas las ventas vienen de un anuncio
+43749b6efd95	Vuelve a leer la fila del medio, porque es la que importa y la que nadie mira. <t0>Las compras del Administrador de eventos deberían estar cerca de tu número de pedidos de Shopify</t0>, ya que cuentan eventos de compra independientemente de qué campaña reciba el mérito. Si ese número supera tus pedidos reales, no es una cuestión de atribución. Son eventos que no corresponden a ventas.
+0190090a13d4	Que las conversiones de Ads Manager sean <t0>menores</t0> que los pedidos de Shopify es normal y sano. Que las compras del Administrador de eventos sean <t1>mayores</t1> que los pedidos de Shopify es un defecto.
+c8e0104e8718	Qué estaba pasando realmente
+dc78eadd5920	La cuenta tenía <t0>dos píxeles de Meta instalados a la vez</t0>:
+daccca90eb24	Uno instalado mediante el canal de ventas oficial de Facebook e Instagram en Shopify. Este era preciso.
+ab58c8e627b4	Otro instalado por una <t0>app de terceros</t0>. Este registraba compras que nunca ocurrieron.
+a1031043f848	El segundo píxel es el interesante, porque no era silencioso. Un píxel silencioso es fácil: ves cero conversiones y buscas el motivo. Este hacía ruido. Registraba compras, esas compras aparecían en Ads Manager y las campañas que optimizaban hacia él mostraban un <t0>ROAS alto</t0>.
+b71b3ffce3f1	Nada de eso existía en Shopify.
+567303755ac2	&#10007; Lo que mostraba Ads Manager
+035d3616ea9b	&#10003; Lo que mostraba Shopify
+81bd1e4fbf13	El número que lo volvió urgente
+b8880419f2aa	De unos <t0>100.000 PKR de inversión publicitaria diaria</t0>, aproximadamente <t1>entre 30.000 y 40.000 PKR al día</t1> iban a campañas que optimizaban hacia el píxel que registraba compras que nunca ocurrieron.
+5d1fc7dbc6c6	Eso es <t0>entre el 30 y el 40 % del presupuesto diario</t0> yendo a campañas cuyo éxito reportado era un artefacto. Y como esas campañas parecían las mejores en Ads Manager, eran las que tenían más probabilidades de recibir <t1>más</t1> presupuesto. El error de reporte atraía activamente la inversión hacia sí mismo.
+32d2cc46fbd3	La forma del problema
+93458d350998	Una cuenta de Shopify &middot; cifras tal como estaban durante el encargo
+79001d8b3075	Reportado por Meta
+d4b065ac9065	Real en Shopify
+751750a05008	Presupuesto diario
+cd0e5a842cd9	A campañas fantasma
+9fb2b8fb9df5	Los recuentos de pedidos corresponden al periodo de comparación descrito arriba. Las cifras de presupuesto son rupias pakistaníes al día. El porcentaje es el dato que se puede extrapolar: no depende de la moneda ni del mercado.
+68ddc2bc2677	La solución y cómo se vio
+2f423611d96a	Desactivé el píxel de terceros. La consecuencia inmediata fue drástica y, si no lo has visto antes, alarmante: <t0>todas las campañas que optimizaban hacia ese píxel dejaron de publicarse.</t0>
+be33b62c1faf	No es un efecto secundario que deba preocuparte. Es el diagnóstico confirmándose. Esas campañas funcionaban con una señal de conversión que no era real; quita la señal y no les queda nada hacia lo que optimizar.
+3293dde8114d	En uno o dos días con datos limpios, el panorama se aclaró. El rendimiento reportado bajó, y se volvió verdadero. El cliente por fin pudo responder la pregunta que llevaba meses adivinando: <t0>¿qué campañas generan pedidos de verdad?</t0>
+802be44e1c7c	<t0>Prepárate para que los números empeoren antes de volverse honestos</t0>
+87d217066217	Cuando eliminas una fuente de conversiones fantasma, tu ROAS reportado baja. Nada ha cambiado en el negocio: simplemente dejaste de contar ventas que nunca existieron. Avisa al cliente antes de hacerlo o tendrás que explicar una «caída del rendimiento» que provocaste a propósito.
+51caf8f991d3	Haz esta conciliación en tu propia cuenta
+5ed95da1b9cb	<t0>Elige una semana cerrada</t0>Con al menos dos semanas de antigüedad, para que las ventanas de atribución estén cerradas y los informes completos.
+526534122337	<t0>Anota tres números</t0>Pedidos de Shopify, compras del Administrador de eventos y conversiones de Ads Manager, de la misma semana y la misma zona horaria.
+b77538fdd753	<t0>Compara el número del medio con el primero</t0>Si las compras del Administrador de eventos superan los pedidos de Shopify, detente. Tienes eventos fantasma o duplicados, y ninguna teoría de atribución lo va a explicar.
+2f808c5e9a0b	<t0>Cuenta tus píxeles</t0>Administración de Shopify: <t1>Configuración &rarr; Eventos del cliente</t1>, el <t2>canal de ventas de Facebook e Instagram</t2> y <t3>Tienda online &rarr; Temas &rarr; Editar código</t3>, buscando <t5>fbq</t5> en <t4>theme.liquid</t4>. Más de un ID de píxel en esos lugares es tu principal sospechoso.
+152cda695c52	<t0>Segmenta por píxel antes de tocar presupuestos</t0>Identifica qué campañas optimizan hacia qué píxel. Si los pedidos reportados de un grupo no aparecen en Shopify, encontraste la fuga.
+bd1902a1a341	No te doy un porcentaje de discrepancia «normal», porque no hay uno que valga la pena citar. Depende de tu mezcla de tráfico, los navegadores de tus clientes, tu configuración de atribución y tu mercado. Cada referencia publicada que he visto viene de una empresa que vende la solución.
+554506c8b438	Establece tu propia referencia cuando todo esté sano. Así la señal será la desviación respecto a <t0>tu</t0> número, una medición real en lugar del promedio de otro.
+a02ba9385047	Y es una sola cuenta. El mecanismo se generaliza: dos píxeles, uno miente, el presupuesto sigue a la mentira. El reparto concreto entre lo real y lo fantasma, no.
+faea3ce41c4c	¿Coinciden tus números de Meta con los de Shopify?
+d8661ba32eb3	Si no coinciden, envíame la URL de tu tienda. Te diré si es una desviación de atribución normal o algo que registra ventas que nunca hiciste.
+7faf09a5b1d4	<t0>Dos píxeles de Meta en una tienda Shopify no son un plan de respaldo<t1>Por qué todos los resultados sobre «instalar varios píxeles» responden a la pregunta equivocada.</t1></t0> <t2>Cómo saber si tu píxel de Meta registra compras que nunca ocurrieron<t3>El fallo que parece un éxito hasta que concilias.</t3></t2> <t4>El píxel de Meta no registra compras en Shopify: qué revisar primero<t5>Siete causas, incluida la división entre píxeles que nunca parece rota.</t5></t4>
+6d0d57ae58b4	El píxel de Meta no registra compras de Shopify: qué revisar
+d87197d53a27	El píxel carga, Pixel Helper está en verde y el Administrador de eventos no muestra compras. Siete causas en el orden en que conviene revisarlas, incluido el problema del píxel duplicado.
+a461669c3644	El píxel carga, Pixel Helper está en verde y el Administrador de eventos sigue sin mostrar compras. Siete causas en el orden en que conviene revisarlas, incluido el problema del píxel duplicado que parte tu atribución por la mitad sin parecer nunca roto.
+4b2c34f28327	El píxel de Meta no registra compras
+ddcf8d9b4680	¿Por qué mi píxel de Meta no registra compras en Shopify?
+cf75a17edcda	Las causas más comunes son dos píxeles instalados a la vez que se reparten los datos, que el píxel no esté en la página a la que llega realmente el cliente tras pagar, que el evento de compra se dispare sin los parámetros obligatorios, o que el checkout salga de tu dominio y la sesión del navegador se rompa antes de que el evento pueda dispararse.
+d04f1c53b14f	¿Tener dos píxeles de Facebook puede hacer que falten compras?
+aa8b5f80f53a	Sí. Si un píxel está instalado mediante el canal de ventas de Shopify y otro está pegado en el tema, los eventos pueden repartirse entre ellos. Cada píxel reporta entonces una parte de la verdad, y ningún total parece claramente erróneo, por eso puede pasar meses sin detectarse.
+d5916e6b612b	¿Cómo compruebo si funciona el evento de compra de mi píxel de Meta?
+07e4671ee472	Haz un pedido real y observa la pestaña Network de las DevTools de Chrome filtrada por facebook.com o facebook.net. Confirma que se dispara un evento Purchase con value, currency y un ID de evento. Luego confirma que llega al Administrador de eventos, lo que puede tardar unas horas.
+717810c07a26	<t0>Notas de campo</t0> &nbsp;/&nbsp; Píxel de Meta
+07f17d43c83c	Tu píxel de Meta se dispara. Tus compras siguen sin aparecer.
+12498601e6a8	Si tu píxel de Meta carga pero las compras nunca aparecen, revisa en este orden: <t0>dos píxeles instalados a la vez</t0>, el píxel ausente de la página de confirmación real, un evento de compra sin <t1>value</t1> ni <t2>currency</t2>, una redirección de pago externa que rompe la sesión, y la deduplicación frente a un flujo de la API de Conversiones.
+8327335e3c81	La primera es la más común y la más difícil de detectar, porque nada parece roto.
+eba1b718b30d	«El píxel se dispara» y «mis compras se miden» son dos afirmaciones distintas, y en la distancia entre ambas se escapa la mayor parte del presupuesto publicitario de Shopify. Que Pixel Helper esté en verde te dice que hay un píxel en la página. No te dice nada sobre si el evento correcto, con los parámetros correctos, llegó al píxel correcto.
+6a843b589ff8	Empieza aquí: ¿tienes más de un píxel?
+0d95317b47b0	Es lo primero que reviso en cualquier cuenta, y es el problema que he encontrado de verdad en la práctica, no solo leído.
+1f6c6280ab6b	En una tienda que audité había <t0>dos píxeles instalados a la vez</t0>, uno mediante la integración de Shopify y otro pegado directamente en el tema. Ambos funcionaban técnicamente. Ambos reportaban. Ninguno reportaba todo, porque los eventos se repartían entre ellos según cómo cargara la página.
+a84538b5dd23	Esto sobrevive tanto tiempo porque nunca parece roto. No hay ningún error. Pixel Helper está en verde. El Administrador de eventos muestra compras, solo que menos de las que hubo. Y a menos que concilies el píxel con el número de pedidos de Shopify, no tienes motivos para sospechar que ese número es solo una parte.
+d3629ea42545	<t0>Lo que puedo afirmar aquí y lo que no</t0>
+c500a51cd813	Lo encontré en la tienda de un cliente, y corregirlo cambió lo que mostraban sus informes. No voy a ponerle un porcentaje a la recuperación, porque, siendo honesto, la división de la atribución y el desperdicio de presupuesto están relacionados pero no son lo mismo, y prefiero darte el mecanismo que un número que no puedo defender del todo.
+5533726a030f	De todos modos, lo que importa es el mecanismo: <t0>dos píxeles significan que cada uno ve una parte de la verdad</t0>, y Meta optimiza según lo que ve.
+d20b54eb18e8	Cómo comprobarlo
+1ba51770c7a8	En la administración de Shopify, mira en tres sitios, porque un píxel puede estar instalado en cualquiera de ellos y nada te avisa de los demás:
+388a3f2bd10f	<t0>Configuración &rarr; Eventos del cliente</t0>: aquí están los píxeles personalizados
+7c7cb7c4c0a2	<t0>Canal de ventas de Facebook e Instagram</t0>: la integración oficial
+b9cedae22802	<t0>Tienda online &rarr; Temas &rarr; Editar código</t0>: busca <t2>fbq</t2> o <t3>connect.facebook.net</t3> en <t1>theme.liquid</t1>
+a4763c4d3d68	Si encuentras un ID de píxel en más de uno de esos sitios, ese es tu problema. Elige un método, normalmente el canal de ventas es el correcto, y elimina los demás.
+49bfd2fc2275	El resto de la secuencia
+b96b0e4aece5	El píxel no está en la página a la que llega realmente el cliente
+f53cead5c41a	Todo el mundo instala el píxel en toda la web y supone que la página de confirmación lo hereda. A menudo no es así, porque esa página puede generarse fuera de tu tema. Si usas ventas adicionales después de la compra, la página que ve el cliente justo después de pagar quizá no sea la que tú consideras la página de agradecimiento.
+6a6dbc57deab	<t0>La comprobación</t0>Haz un pedido real. En la página a la que llegues, mira el código fuente y busca tu ID de píxel. No lo deduzcas del tema.
+6ea1d17f8cda	El evento Purchase se dispara sin sus parámetros obligatorios
+604ac333fb27	Un evento <t0>Purchase</t0> sin <t1>value</t1> ni <t2>currency</t2> casi no sirve. Meta no puede optimizar hacia ingresos de los que nunca se le informó, y las pujas basadas en valor no tienen con qué trabajar. Si además faltan los <t3>content_ids</t3>, se rompen la coincidencia con el catálogo y el retargeting dinámico.
+62309301d8ed	<t0>La comprobación</t0>En la pestaña Network, filtra por <t1>facebook</t1> y lee los parámetros de la petición de compra. Confirma que <t2>value</t2>, <t3>currency</t3> y <t4>content_ids</t4> están presentes y con valores.
+c560bfa858db	El checkout sale de tu dominio y la sesión se rompe
+107bdaa98d73	Cuando el pago pasa a una pasarela externa y devuelve al cliente a una página de pedido recibido, ese ida y vuelta puede romper la sesión del navegador de la que depende el píxel. El pedido se completa; el evento no llega, o llega sin los identificadores necesarios para atribuirlo.
+94221a2cb4c6	<t0>La comprobación</t0>¿Tu flujo de pago sale de tu dominio? Si es así, el seguimiento solo en el navegador es un «mejor esfuerzo» y necesitas la API de Conversiones.
+6e857c1aadfd	La deduplicación elimina el evento a propósito
+38d82505b5ff	Si usas el píxel y la API de Conversiones a la vez (como deberías), Meta deduplica usando <t0>event_id</t0>. Cuando el navegador y el servidor no coinciden en ese ID, o cuentas todo dos veces o pierdes un lado en silencio. Perder un lado se ve exactamente igual que «el píxel dejó de funcionar».
+e34596fad05b	<t0>La comprobación</t0>Para un pedido, captura el <t1>event_id</t1> que envió el navegador y el que envió tu servidor. Deben ser idénticos.
+df1bd9ab9ad5	Bloqueadores de anuncios y prevención de seguimiento
+9db2e7bfc89f	Una parte importante del tráfico bloquea por completo el seguimiento en el navegador. No es un error que puedas corregir: es un impuesto permanente sobre la medición del lado del cliente, y la razón por la que una configuración solo de navegador siempre contará de menos. La solución no es un arreglo; es la API de Conversiones.
+0f7023a447fa	<t0>La comprobación</t0>Compara las compras del Administrador de eventos con los pedidos de Shopify del mismo periodo. Una diferencia persistente que crece con el volumen suele ser esto.
+a7c3c0758073	Estás mirando demasiado pronto
+b37441ebd4bf	Los informes del Administrador de eventos no son instantáneos. Antes de concluir que falta un evento, espera unas horas y vuelve a mirar. He visto a gente reescribir un checkout que funcionaba porque miró un panel noventa segundos después de un pedido de prueba.
+da32602a9e67	<t0>La comprobación</t0>Usa la herramienta Probar eventos para tener respuesta inmediata; usa el Administrador de eventos para el volumen, al día siguiente.
+60b9cb7861a3	La conciliación que nadie hace
+feff648d7696	Este es el ejercicio que encuentra problemas que ninguna checklist encontrará. Elige una semana. Anota tres números:
+6da13addb000	Fuente
+10f83a7ad249	Relación esperada
+9201211ec1fa	Cada pedido pagado, sin más
+d0ef153cb0e4	La verdad
+d1f0b6210621	Compras del Administrador de eventos de Meta
+5a97285b0344	Eventos de compra recibidos
+8a194912963a	Conversiones de Meta Ads Manager
+a29f27352fce	Compras que Meta atribuye a los anuncios
+cb879bf987f9	Un subconjunto: no todas las ventas vienen de anuncios
+8f6ac98bb772	La mayoría compara el par equivocado y se asusta. Las conversiones de Ads Manager <t0>deberían</t0> ser menores que los pedidos de Shopify, porque no todos los clientes vienen de un anuncio. El número que debería estar cerca de Shopify son las <t1>compras del Administrador de eventos</t1>. Si está muy por debajo de tus pedidos, tienes un problema de seguimiento y no una cuestión de atribución.
+fd32dd765553	Y si el Administrador de eventos es <t0>mayor</t0> que Shopify, tienes el problema contrario, normalmente eventos duplicados, que es <t1>otro artículo</t1>.
+80753a73304b	Lo que no te digo
+5b900e400b11	No te he dado un porcentaje de discrepancia esperado, porque el rango honesto depende de tu mezcla de tráfico, tu checkout, los navegadores de tus clientes y tu país, y cada referencia publicada que he visto viene de una empresa que vende la solución. Establece tu propia referencia cuando todo funcione y trata la desviación respecto a <t0>tu</t0> número como la señal.
+3cca71fd3d6e	El orden anterior refleja un número pequeño de cuentas más lo que implican lógicamente los modos de fallo. Tómalo como un orden de búsqueda sensato, no como una estadística.
+f6f3c200049c	¿Quieres que alguien simplemente lo revise?
+54abf50dfdcf	Envíame la URL de tu tienda. Te diré qué está haciendo realmente tu píxel, y no necesitas darme acceso a nada para empezar.
+65906f35c583	<t0>Fecha límite de Shopify del 26 de agosto: ¿sobrevivió tu seguimiento?<t1>Qué elimina la actualización automática y la comprobación de diez minutos.</t1></t0> <t2>Eventos de compra duplicados tras instalar la API de Conversiones<t3>Cómo demostrar que la deduplicación funciona de verdad y no solo está configurada.</t3></t2> <t4>Eventos de compra de Snapchat que no se disparan: la secuencia de diagnóstico<t5>Seis causas ordenadas, con cifras reales de Ads Manager.</t5></t4>
+1b4a84374b60	¿Tu píxel de Meta registra compras que nunca ocurrieron?
+02f24b327bc0	Un píxel que deja de reportar se nota. El fallo caro es uno que reporta de más, porque un ROAS inflado atrae presupuesto. Seis formas de revisar el tuyo.
+4b14c2e16e4d	Píxel que registra compras falsas

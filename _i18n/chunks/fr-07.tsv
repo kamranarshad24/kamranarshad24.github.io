@@ -1,0 +1,161 @@
+24ebe1e9eeeb	Un pixel Facebook peut-il signaler des achats qui n'ont pas eu lieu ?
+babcfc871da5	Oui. Un pixel mal configuré peut déclencher un événement d'achat sur une page qui n'est pas une commande finalisée, se déclencher à chaque actualisation de page, ou être installé par une application tierce qui déclenche des événements dans les mauvaises conditions. Meta enregistre ce qu'il reçoit, donc ces événements apparaissent comme de vrais achats dans les rapports.
+ec0119c874de	Comment savoir si les données de mon pixel Meta sont exactes ?
+aae7393b63c2	Rapprochez une semaine clôturée. Comparez le nombre d'achats du Gestionnaire d'événements au nombre de commandes de votre boutique sur la même période et le même fuseau horaire. Le Gestionnaire d'événements doit approcher votre nombre de commandes sans jamais le dépasser. S'il le dépasse, vous avez des événements fantômes ou en double.
+5418e786d870	Pourquoi mon ROAS Facebook paraît-il bon alors que je n'ai pas de ventes ?
+91d8d8f26649	Parce que le ROAS est calculé à partir des données de conversion remontées par le pixel, pas à partir de votre compte bancaire. Si le pixel signale des achats qui n'ont jamais eu lieu, le ROAS est calculé sur un chiffre d'affaires inexistant et paraîtra excellent pendant que l'entreprise ne gagne rien.
+959ef04016e2	Un pixel silencieux, c'est facile. Un pixel menteur emporte votre budget avec lui.
+c54881e64155	<t0>Kamran Arshad</t0><t1>13 août 2026</t1><t2>8 min de lecture</t2>
+98323b3697fb	Un pixel qui ne remonte plus rien se remarque en quelques jours, car les conversions tombent à zéro et quelqu'un s'affole. Un pixel qui remonte <t0>trop</t0> peut fonctionner des mois, car un ROAS gonflé ressemble à un succès, et Meta réagit en envoyant plus de budget aux campagnes qui le produisent.
+d34f7f2af0bf	Le seul test fiable est le rapprochement : le nombre d'achats du Gestionnaire d'événements correspond-il à de vraies commandes dans votre boutique ?
+cdd95180a73e	Presque tous les articles de dépannage traitent les conversions manquantes comme le problème. En pratique, la panne la plus dommageable va dans l'autre sens, car elle ne ressemble pas à une panne. Elle ressemble à votre meilleure campagne.
+59c6f37697b7	Pourquoi trop remonter est pire que pas assez
+2bdf352636c4	Remonter trop peu vous coûte en qualité d'optimisation. Meta voit moins de conversions qu'il n'y en a eu, apprend plus lentement, et vous sous-investissez probablement dans quelque chose qui fonctionne. C'est mauvais, mais cela s'autolimite.
+c281db6edd40	Remonter trop, c'est différent, car cela crée une boucle. Des conversions gonflées produisent un ROAS gonflé. Un ROAS gonflé fait passer une campagne pour gagnante. Les gagnantes reçoivent plus de budget. Plus de budget produit plus de conversions fantômes.
+9b1175b8c852	<t0>L'erreur attire les dépenses vers elle.</t0> C'est pourquoi elle peut consommer un tiers d'un budget quotidien avant que quiconque ne s'interroge : chaque signal disponible dans Ads Manager dit que la campagne fonctionne.
+1ba6204e933b	Six vérifications, les moins coûteuses d'abord
+d872c0f98764	Rapprocher une semaine clôturée
+4825c0f34e1f	La vérification la plus utile de toutes, et la plupart des comptes n'en ont jamais bénéficié. Prenez une semaine terminée depuis au moins deux semaines. Comparez les achats du Gestionnaire d'événements au nombre de commandes de votre boutique sur la même période et le même fuseau horaire.
+41e6d75dafbe	Le Gestionnaire d'événements doit approcher votre nombre de commandes. Il ne doit jamais le dépasser. Il compte des événements d'achat, et un événement d'achat sans commande n'est, par définition, pas un achat.
+155676215d4b	<t0>Verdict</t0>Un Gestionnaire d'événements supérieur aux commandes de la boutique signifie des événements fantômes ou en double. Aucune fenêtre d'attribution n'explique cela.
+69435dd4b6de	Compter vos pixels
+c124276cd789	Sur le compte à l'origine de cet article, la cause était un second pixel installé par une application tierce, qui signalait des achats sans commande correspondante. Vérifiez <t0>Paramètres &rarr; Événements clients</t0>, le <t1>canal de vente Facebook &amp; Instagram</t1> et <t2>theme.liquid</t2>. Plus d'un ID de pixel, c'est votre premier suspect, voir <t3>l'article sur les pixels multiples</t3>.
+0699af8ab602	<t0>Verdict</t0>Deux ID de pixel et un écart dans le même compte, c'est rarement une coïncidence.
+99cb783598b2	Vérifier si l'événement d'achat se déclenche à l'actualisation
+24565c2497aa	Passez une vraie commande, arrivez sur la page de confirmation, puis actualisez-la. Observez l'onglet Network. Si un second événement d'achat se déclenche, chaque client qui actualise, met en favori ou revisite cette page gonfle vos chiffres. Sans <t0>event_id</t0> unique ni identifiant de commande, Meta n'a aucun moyen de savoir qu'il s'agit de la même vente.
+2d52b877ae14	<t0>Verdict</t0>Un événement d'achat à l'actualisation signifie que vos chiffres augmentent avec le trafic, pas avec les ventes.
+ea7aa83ec533	Vérifier à quelle page l'événement d'achat est lié
+7c1e5dca21fa	Un événement d'achat doit se déclencher à la finalisation de la commande et nulle part ailleurs. Des applications mal configurées le lient parfois à l'ajout au panier, au début du paiement, ou à toute page correspondant à une règle d'URL trop large. Chacun de ces cas produit des achats sans commande derrière.
+7e6747f10eec	<t0>Verdict</t0>Parcourez votre tunnel avec l'onglet Network ouvert. Un événement d'achat avant le paiement est un défaut, pas une optimisation.
+f29fc4e8a8ae	Segmenter les conversions annoncées par campagne, puis les retracer
+763295ef18d3	N'évaluez pas le compte comme un seul chiffre. Regroupez les campagnes selon le pixel vers lequel elles optimisent, puis essayez de retrouver dans votre boutique les commandes annoncées par chaque groupe. Sur ce compte, les commandes d'un groupe étaient totalement introuvables, et ce groupe consommait environ 30 à 40 % des dépenses quotidiennes.
+fa362705680c	<t0>Verdict</t0>Un groupe de campagnes dont vous ne trouvez pas les commandes dans votre boutique, c'est la fuite.
+a5e008ef5d5f	Comparer la valeur des achats au vrai chiffre d'affaires
+e12f73b47105	Les nombres peuvent sembler plausibles alors que les valeurs sont absurdes. Comparez la valeur totale des achats annoncée pour une semaine clôturée au chiffre d'affaires réel de la même semaine. Une valeur nettement supérieure au chiffre d'affaires réel signifie que des événements se déclenchent avec des valeurs fausses ou en double, même si le nombre semble proche.
+573a1584af39	<t0>Verdict</t0>Vérifiez le nombre et la valeur. Ils échouent indépendamment.
+ea66f9f56b09	Que faire quand vous le trouvez
+fa4028f451fd	Corrigez la source plutôt que le symptôme. Désactiver un pixel mal configuré ou corriger le déclencheur de l'événement fera cesser la diffusion des campagnes concernées : c'est le diagnostic qui se confirme, pas un nouveau problème.
+91b815869b96	Prévenez ensuite la personne qui gère le budget <t0>avant</t0> qu'elle voie le tableau de bord. Le ROAS annoncé va baisser. Le chiffre d'affaires, non, car celui que vous retirez n'a jamais existé. Cette conversation est bien plus facile à mener à l'avance qu'après coup.
+21356c071260	<t0>La partie inconfortable</t0>
+e7d9220453b3	Si une campagne a optimisé vers des conversions fantômes pendant des mois, Meta a passé ce temps à apprendre à trouver des gens qui déclenchent des conversions fantômes. Reconstruire sur des données propres prend du temps, et les premiers résultats de la configuration corrigée paraîtront moins bons que la fiction qu'elle remplace. C'est le coût de l'erreur, pas le coût de la correction.
+206e4c5a70b8	Un compte, une cause. La sur-remontée a d'autres sources : des événements CAPI en double sans identifiants correspondants, des événements de test restés actifs, plusieurs applications déclenchant la même conversion. Le rapprochement de la première vérification les détecte tous ; identifier lequel demande les autres vérifications.
+faf55d9f0f03	Je ne vous donne pas non plus de seuil pour « trop ». Comparez avec les commandes de votre propre boutique. Cette comparaison est exacte, ce qu'aucune référence ne peut offrir.
+dc2bef3c95d2	Vos achats annoncés sont-ils réels ?
+6710b6abe3a9	Il faut quinze minutes pour le savoir, et la plupart des comptes n'ont jamais été vérifiés. Envoyez-moi l'URL de votre boutique.
+da15fd0c3373	<t0>Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?<t1>Le rapprochement qui révèle les conversions fantômes.</t1></t0> <t2>Deux pixels Meta sur une boutique Shopify, ce n'est pas un plan de secours<t3>Pourquoi tous les résultats sur « installer plusieurs pixels » répondent à la mauvaise question.</t3></t2> <t4>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<t5>Sept causes, dont la scission entre pixels qui ne semble jamais cassée.</t5></t4>
+125d680d8f9e	Les conseils disent de miser sur votre meilleur ROAS. Cela suppose que le ROAS annoncé reflète de vraies ventes. Quand ce n'est pas le cas, augmenter les budgets accélère la perte.
+045140eaaaa3	Monter en puissance sur des données peu fiables
+2d1810d851a4	Comment savoir quelle campagne Facebook faire monter en puissance ?
+9dc4b33adff8	Faites monter la campagne dont vous pouvez retrouver les commandes annoncées dans votre boutique. Avant de comparer le ROAS entre campagnes, rapprochez les achats annoncés des vraies commandes, car une campagne aux données de conversion gonflées paraîtra toujours être votre meilleure.
+4584e7deb1e6	Pourquoi mon ROAS a-t-il chuté après avoir augmenté le budget ?
+98dd0fad277f	Les causes courantes sont la saturation de l'audience, la sortie de la phase d'apprentissage de l'algorithme et une concurrence accrue. Mais si la chute a été immédiate et brutale, vérifiez si le ROAS d'avant était réel, car des données de conversion gonflées produisent une performance apparente excellente qui ne survit pas à un budget plus important.
+6836e5a14a4b	Faut-il faire monter une campagne au ROAS élevé mais sans chiffre d'affaires correspondant ?
+1605c7ee7b30	Non. Une campagne qui annonce un ROAS élevé alors que votre boutique ne montre aucune commande correspondante signale des conversions qui n'ont pas eu lieu. L'augmenter, c'est accroître les dépenses sur un signal qui n'existe pas.
+7805e942aff4	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Stratégie
+fa8c69b5ae6d	Chaque guide de montée en puissance suppose que vos chiffres sont réels. Vérifiez-le d'abord.
+4d1bb4407d45	Chaque guide de montée en puissance dit la même chose : trouvez votre meilleur ROAS et mettez plus d'argent derrière. C'est un conseil raisonnable qui repose sur une hypothèse que presque personne ne teste : <t0>que le ROAS annoncé reflète des ventes qui ont réellement eu lieu.</t0>
+d651b8093fcf	Quand ce n'est pas le cas, augmenter les budgets n'amplifie pas un gagnant. Cela amplifie une erreur de remontée, et plus vite que vous ne le remarquerez.
+7d64d1763026	Les contenus sur la montée en puissance ne manquent pas. Augmenter les budgets de 20 % tous les trois jours. Dupliquer vers de nouvelles audiences. Montée verticale contre horizontale. L'essentiel est correct, dans ses limites.
+0f139e826e0a	Ce que presque aucun n'inclut, c'est une étape zéro : <t0>vérifier que la performance que vous vous apprêtez à amplifier est réelle.</t0> C'est cet oubli qui a conduit un client avec qui j'ai travaillé à mettre plus de budget sur ses pires campagnes pendant des mois.
+6ad0d147990c	Le piège, dit simplement
+1c1966323999	Les règles de montée en puissance sélectionnent le ROAS annoncé le plus élevé. Une campagne qui optimise vers un pixel qui sur-remonte affichera toujours un ROAS plus élevé qu'une campagne mesurée honnêtement, non parce qu'elle performe mieux, mais parce que sa base de calcul est une fiction.
+cf0e760d840d	La règle de sélection censée trouver votre meilleure campagne trouve donc de façon fiable la plus <t0>mal mesurée</t0>. Et chaque cycle d'augmentation lui envoie plus de budget.
+2693bb797b43	À quoi cela ressemblait en pratique
+969f49792bef	Le client dépensait environ 100 000 PKR par jour sur le compte et ajustait ses budgets pratiquement au hasard : comme il ne pouvait pas savoir quelles campagnes remontaient des données honnêtes, il augmentait et baissait les dépenses selon un tableau de bord auquel personne ne faisait confiance. Ses propres mots : il faisait des changements à l'aveugle.
+004618a0f610	Le compte avait deux pixels. L'un fiable, l'autre signalant des achats sans commande correspondante. Meta affichait environ 100 commandes ; la boutique en avait 55 à 70. Environ <t0>30 à 40 % du budget quotidien</t0> se trouvaient dans des campagnes liées au pixel inexact, et ces campagnes affichaient le meilleur ROAS du compte.
+420be8bdce70	Selon n'importe quelle règle classique, c'étaient ces campagnes qu'il fallait faire monter. C'est le point qui mérite réflexion. <t0>La méthode n'était pas mal appliquée. Elle était correctement appliquée à de mauvaises données</t0>, ce qui a produit exactement la mauvaise réponse en toute confiance.
+8605d2b16e39	Étape zéro, avant toute décision de montée en puissance
+472076ab3fbf	<t0>Rapprocher une semaine clôturée</t0>Achats du Gestionnaire d'événements contre vraies commandes de la boutique. Si le Gestionnaire d'événements est supérieur, arrêtez-vous : vous avez des événements fantômes ou en double, et aucune comparaison de campagnes n'est encore valable.
+aa5afcb90740	<t0>Retracer la campagne précise que vous voulez faire monter</t0>Pas le compte. Cette campagne. Retrouvez-vous ses commandes annoncées dans votre boutique ? Si vous ne pouvez pas les retracer, ne la faites pas monter.
+f4deb8e4b3a0	<t0>Vérifier vers quel pixel elle optimise</t0>Si le compte a plus d'un pixel, les campagnes ne sont pas comparables tant que vous ne savez pas laquelle utilise lequel.
+b775181b1ace	<t0>Puis appliquer la méthode de montée en puissance de votre choix</t0>Les méthodes sont bonnes. Il leur fallait simplement quelque chose de vrai sur quoi travailler.
+db61dafbf838	<t0>Un diagnostic sous vos yeux</t0>
+3fa5d2a3270e	Si vous avez déjà augmenté le budget d'une campagne au ROAS excellent et vu la performance s'effondrer immédiatement, pas décliner sur quinze jours, mais s'effondrer, envisagez que le chiffre initial n'était peut-être pas réel. Les vrais gagnants se dégradent progressivement à mesure que les audiences saturent. Les gagnants fictifs ne se dégradent pas, car il n'y avait rien à dégrader ; le chiffre annoncé cesse simplement d'être crédible face à votre solde bancaire.
+041249cd27c4	Vers quoi monter en puissance à la place
+acc3d9e21b22	Le ROAS annoncé est un indicateur indirect de ce qui vous importe vraiment : l'argent qui arrive dans l'entreprise. Plus votre signal d'optimisation est proche du chiffre d'affaires réel, plus il est difficile à tromper :
+27bed13a88c6	Signal
+8625ae5b31d6	Facilité de distorsion
+be1932e2e9ba	Utilisable pour monter en puissance ?
+ab04f33c73e1	ROAS annoncé dans Ads Manager
+fa9891a77a83	Facile, hérite de tous les défauts du pixel
+1e784e58718a	Seulement après rapprochement
+279adddc04b9	Achats retraçables dans votre boutique
+fc73d790b051	Difficile, une commande existe ou n'existe pas
+443fc840a3e6	Chiffre d'affaires de la boutique sur la période
+50172140252e	Très difficile
+e046096cfd3d	Oui, avec un décalage
+0d0488a7f3ba	Marge sur coûts variables
+d7eee072c2f5	La plus difficile, et celle qui paie les salaires
+f2544c31761a	Le mieux, si vous pouvez la mesurer
+590724a109b0	La plupart des annonceurs ne dépassent jamais la première ligne. Passer à la deuxième, en confirmant simplement que les commandes existent, coûte une heure par semaine et élimine toute la catégorie de problèmes décrite dans cet article.
+bb8420536749	Rien de tout cela ne rend la montée en puissance facile. La saturation d'audience, la fatigue créative, les redémarrages de phase d'apprentissage et la concurrence sont bien réels, et ils vous coûteront de la performance même sur une campagne aux données parfaites.
+9e13051d20af	L'affirmation, limitée, est que ces problèmes valent la peine d'être résolus <t0>après</t0> avoir confirmé que le chiffre vers lequel vous optimisez correspond à des ventes. Un compte n'est pas une étude, mais le mécanisme n'a rien d'exotique, et la vérification coûte si peu qu'il n'y a aucune bonne raison de la sauter.
+1ad7473c60b1	Vous vous apprêtez à faire monter une campagne en puissance ?
+1a444586f1b3	Assurez-vous que la performance que vous amplifiez est réelle. Envoyez-moi l'URL de votre boutique et je la rapprocherai de vos commandes.
+7150969b8f72	<t0>Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?<t1>Le rapprochement qui révèle les conversions fantômes.</t1></t0> <t2>Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu<t3>La panne qui ressemble à un succès jusqu'au rapprochement.</t3></t2> <t4>Auditer un compte Meta Ads dont vous héritez<t5>Vérifiez les chiffres avant de juger les campagnes.</t5></t4>
+a0f9d7d07533	Échéance Shopify du 26 août : votre suivi y a-t-il survécu ?
+2fe3aaf8ba6e	La mise à niveau Shopify du 26 août 2026 supprime les scripts supplémentaires des pages de remerciement. Voyez quelles balises d'achat sont concernées et vérifiez les vôtres en dix minutes.
+2c3c16ed0c9f	Échéance Shopify du 26 août
+f7d101b08d97	Qu'était-il prévu le 26 août 2026 pour les boutiques Shopify ?
+356a5f5bf53e	Les boutiques Shopify hors Plus qui n'ont pas mis à niveau manuellement leurs pages de remerciement et d'état de la commande sont mises à niveau automatiquement. Les personnalisations faites avec les scripts supplémentaires et les balises script obsolètes sur ces deux pages sont supprimées et non migrées.
+b986a3b45806	La mise à niveau du checkout Shopify supprime-t-elle mon pixel Facebook ?
+b7d3de2f5719	Elle supprime tout pixel ou toute balise installés via les scripts supplémentaires sur les pages de remerciement et d'état de la commande. Un pixel Meta connecté via le canal de vente officiel Facebook & Instagram n'est pas concerné. Le risque porte spécifiquement sur le code collé à la main.
+788c05d25ced	Comment vérifier ce que contient le champ des scripts supplémentaires de Shopify ?
+0819e1279b61	Allez dans Paramètres, puis Checkout, et regardez le champ des scripts supplémentaires. Depuis le 28 août 2025, il est en lecture seule, mais vous pouvez encore lire son contenu. Tout ce qui y déclenche une conversion devait être remplacé avant le 26 août 2026 : vérifiez si c'est le cas chez vous.
+f488501ed545	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Shopify
+5f9788f7fed0	L'échéance Shopify du 26 août est passée. Votre suivi des achats y a-t-il survécu ?
+56e1b0ab8055	<t0>Kamran Arshad</t0><t1>12 août 2026</t1><t2>Mis à jour le <t3>10 oct. 2026</t3></t2><t4>8 min de lecture</t4>
+213dee8487ad	<t0>Mise à jour, 10 octobre 2026</t0>
+3266db95f51b	L'échéance du 26 août 2026 est maintenant passée. J'ai écrit cet article le 12 août comme avertissement, et je n'ai pas vérifié depuis ce qui s'est passé sur chaque boutique. Si vos achats annoncés ont baissé après le 26 août, comparez vos plateformes publicitaires à vos commandes Shopify pour les jours avant et après, puis suivez la vérification ci-dessous.
+15fe15a22ab6	Pour le <t0>26 août 2026</t0>, Shopify a programmé une mise à niveau automatique pour chaque boutique hors Plus qui n'avait pas encore migré ses pages de remerciement et d'état de la commande. Tout ce qui passait par les <t1>scripts supplémentaires</t1> sur ces pages (balises de conversion Google Ads, événements d'achat du pixel Meta, conteneurs GTM, scripts d'affiliation) est, selon la documentation de Shopify, <t2>supprimé, pas migré</t2>.
+5e8b8a41dee3	Si vous n'avez rien fait, votre suivi des achats a dû s'arrêter à cette date pendant que vos plateformes publicitaires continuaient de dépenser comme si de rien n'était.
+c6ba252a64d5	C'était le rare problème de suivi avec une date. La plupart de ce que j'écris concerne une fuite lente que vous pouvez corriger dès que vous la remarquez. Celui-ci est arrivé simultanément pour un grand nombre de boutiques, et les boutiques touchées sont précisément celles qui surveillent le moins, car le changement leur <t0>arrive</t0>, sans qu'elles aient rien fait.
+16c79267e250	<t0>Directement tiré de la documentation de Shopify</t0>
+d3f3b64e5597	« Le 26 août 2026 est la date limite pour que les boutiques sur un forfait Shopify hors Plus mettent à niveau leurs pages de remerciement et d'état de la commande vers la nouvelle version de ces pages. » (traduction de l'original anglais)
+939b8b6886c6	Les boutiques qui ne font pas la mise à niveau manuellement sont mises à niveau automatiquement. Les boutiques Shopify Plus ont franchi cette étape le 28 août 2025.
+c0888acb9bd1	Ce qui est réellement supprimé
+accf73657544	Le mot qui fait les dégâts, c'est <t0>supprimé</t0>. Pas migré, pas converti, pas conservé dans une couche de compatibilité. Shopify remplace les anciennes pages de remerciement et d'état de la commande par de nouvelles, et les personnalisations qui dépendaient de l'ancien modèle de rendu ne suivent pas.
+113e369e1f04	Ce que vous avez
+405332329101	Survit au 26 août ?
+c385e347b2af	Remplacement
+97d1e3851e45	Balise de conversion Google Ads collée dans les scripts supplémentaires
+c7dca664e4be	Pixel personnalisé, ou canal Google &amp; YouTube
+dd385fc96377	Événement Purchase du pixel Meta dans les scripts supplémentaires
+919421223704	Pixel personnalisé, ou canal Facebook &amp; Instagram
+4ea2f6a69740	Conteneur GTM chargé sur la page de remerciement
+20f9ed056206	Pixel personnalisé (en bac à sable)
+dbbbad107b36	Scripts de postback d'affiliation / partenaires
+07ac6e374e80	Pixel personnalisé ou côté serveur
+22414c2ad94a	Pixel Meta via le canal de vente officiel
+18bbcd989758	Aucune action nécessaire
+06a0a5d2b24c	Balise Google via le canal Google &amp; YouTube
+a03e05c9f4a5	Tracking côté serveur (API Conversions, sGTM)
+0a3414f2d785	Non concerné, il n'a jamais dépendu de la page
+2ec0296fde85	Relisez la dernière ligne deux fois. <t0>Le tracking côté serveur est la seule ligne qui n'a jamais été menacée</t0>, car il ne dépend pas de l'affichage par un navigateur d'une page contrôlée par Shopify. C'est la vraie leçon de cette échéance, et elle restera valable la prochaine fois qu'une plateforme changera quelque chose sous vos pieds.
+acd84f5e80d5	La vérification en dix minutes
+a97a83df6ab6	<t0>Lire votre champ des scripts supplémentaires</t0>Administration Shopify &rarr; <t1>Paramètres</t1> &rarr; <t2>Checkout</t2> &rarr; <t3>Scripts supplémentaires</t3>. Il est en lecture seule depuis le 28 août 2025, mais vous pouvez encore le lire. Copiez son contenu en lieu sûr.
+e19eb28bfc9d	<t0>Repérer tout ce qui déclenche une conversion</t0>Cherchez dans ce texte <t1>gtag</t1>, <t2>fbq</t2>, <t3>googletagmanager</t3>, <t4>snaptr</t4>, <t5>ttq</t5> ou tout <t6>&lt;script src=</t6>. Chaque résultat est une balise qui devait cesser de fonctionner le 26 août.
+81ca81146689	<t0>Vérifier ce que vos plateformes pensent recevoir</t0>Ouvrez Google Ads &rarr; Objectifs &rarr; Conversions, et le Gestionnaire d'événements Meta. Comparez le volume d'achats quotidien des jours avant et après le 26 août. Cette comparaison avant/après est votre preuve : sans elle, vous ne pouvez montrer ni que quelque chose s'est cassé, ni que vous l'avez réparé.
+ea5eb633c2cd	<t0>Reconstruire chacune en pixel personnalisé</t0>Administration Shopify &rarr; <t1>Paramètres</t1> &rarr; <t2>Événements clients</t2> &rarr; <t3>Ajouter un pixel personnalisé</t3>. Les pixels personnalisés tournent dans un bac à sable et s'abonnent à des événements comme <t4>checkout_completed</t4>.
+fc3c1aa5f3e5	<t0>Vérifier avec une vraie commande</t0>Pas un lien de test. Un vrai achat, sur un téléphone, via le vrai checkout. Vérifiez ensuite que l'événement est arrivé sur la plateforme, pas seulement qu'il s'est déclenché dans le navigateur.
+9f1947ee5e34	Le piège caché dans la correction
+bb794aba55e5	Migrer vers un pixel personnalisé est la bonne décision, et cela introduit un mode de défaillance que la plupart des guides passent sous silence.
+0eee6e474f78	<t0>checkout_completed</t0> <t1>ne se déclenche pas forcément sur la page de remerciement</t1>. Avec des ventes additionnelles après achat activées, il peut se déclencher sur la première page de vente additionnelle à la place, et si cette page ne se charge pas, il peut ne pas se déclencher du tout. Des praticiens ont aussi signalé une situation de concurrence où le pixel se déclenche avant que les données client ne soient renseignées, ce qui produit des événements à la qualité de correspondance quasi nulle.
+9987436a3803	<t0>Signalé, non vérifié par moi</t0>
+87e4a2bf56b0	J'ai vu ces deux comportements décrits par plusieurs praticiens indépendants, mais je ne les ai pas reproduits sur une boutique que je contrôle. Considérez-les comme des points à tester plutôt que comme des faits à répéter. Si vous proposez des ventes additionnelles après achat, testez précisément ce parcours : c'est le plus susceptible de poser problème.
+30b7b528558b	À quoi cela ressemble quand ça frappe
+b8121ccaf4ab	Rien de spectaculaire. C'est bien le problème.
+0c4b9014140d	Vos publicités continuent de tourner. Votre budget continue d'être dépensé. Les commandes continuent d'arriver dans Shopify. La seule chose qui change, c'est que Google Ads et Meta ne sont plus informés des clics qui ont produit ces commandes, si bien que les enchères intelligentes, qui optimisent vers les conversions qu'elles voient, se mettent à optimiser vers un signal discrètement tombé à zéro.
+cf37f0358991	Vous le remarquerez comme une chute soudaine des conversions annoncées et une hausse du coût par acquisition, environ une semaine plus tard, sans cause évidente. D'ici là, l'algorithme aura appris pendant sept jours à partir de mauvaises données.
+553462cfed44	Les limites honnêtes de cet article
+628249c0569d	La date du 26 août et le fonctionnement de la mise à niveau automatique proviennent de la documentation d'aide de Shopify, vérifiée le 12 août 2026, avant l'échéance. Les informations sur le champ des scripts supplémentaires datent elles aussi de ce jour, et je ne les ai pas revérifiées depuis. Le tableau ci-dessus reflète l'architecture de ces intégrations : les intégrations par canal de vente et côté serveur ne dépendent pas des scripts supplémentaires, contrairement au code collé à la main. <t0>Je n'ai pas testé chaque ligne sur une boutique en ligne</t0>, et votre configuration peut inclure quelque chose qui ne figure pas ici.
+fae6fd92088d	Ne prenez donc pas le tableau comme une permission de sauter la première étape. Lisez votre propre champ des scripts supplémentaires. Ce qu'il contient est la seule liste qui compte.
+28e9dad4dce4	Vous ne savez pas si votre suivi a cassé le 26 août ?
+1568407f439a	Envoyez-moi l'URL de votre boutique. Je vous dirai ce qui passait par les scripts supplémentaires et si vos événements d'achat arrivent toujours.
+a6a2309dc372	<t0>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<t1>Sept causes, dont le pixel en double qui scinde l'attribution.</t1></t0> <t2>Événements d'achat en double après l'installation de l'API Conversions<t3>Comment prouver que la déduplication fonctionne vraiment, et pas seulement qu'elle est configurée.</t3></t2> <t4>Événements d'achat Snapchat qui ne se déclenchent pas : la séquence de diagnostic<t5>Six causes classées, avec de vrais chiffres d'Ads Manager.</t5></t4>
+d4d810ba3963	Événements d'achat Snapchat qui ne se déclenchent pas : la séquence de diagnostic
+4967e1878362	Votre Snap Pixel se charge mais PURCHASE n'apparaît jamais dans le Gestionnaire d'événements. Six causes classées par probabilité, avec les vérifications précises, d'une boutique aux 1 034 achats suivis.
+757a9bdc8152	Six causes d'événements PURCHASE Snapchat manquants, classées, avec les vérifications précises pour chacune.
+97315355b28b	Événements d'achat Snapchat qui ne se déclenchent pas
+593af2467adf	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Snapchat
+c702b2b82b79	Si votre Snap Pixel se charge mais que <t0>PURCHASE</t0> n'apparaît jamais dans le Gestionnaire d'événements, la cause est presque toujours l'une de six : un nom d'événement en minuscules, un <t1>transaction_id</t1> manquant, le pixel absent de la vraie page de confirmation, une redirection de paiement externe qui rompt la session, un checkout sur une seule page qui réinitialise le pixel, ou des événements dédupliqués face à un flux de l'API Conversions.

@@ -1,0 +1,193 @@
+8176fa2fe849	<t0>13 août 2026</t0><t1>Audit</t1><t2>9 min de lecture</t2>
+d11597ffb880	Auditer un compte Meta Ads dont vous héritez
+a340b4b0a97c	Reprendre un compte Meta, c'est hériter de décisions que personne n'a documentées. Auditez la couche de mesure avant les créations, car chaque jugement sur la performance repose sur des chiffres que vous n'avez pas encore vérifiés.
+05167fe60fcb	<t0>13 août 2026</t0><t1>Pixel Meta</t1><t2>8 min de lecture</t2>
+45050d13e580	Comment savoir si votre pixel Meta signale des achats qui n'ont jamais eu lieu
+db95bc30fbd5	Tout le monde s'inquiète d'un pixel qui ne remonte plus rien. La panne coûteuse, c'est un pixel qui remonte trop, car un ROAS gonflé attire plus de budget. Six façons de vérifier si vos événements d'achat correspondent à de vraies commandes.
+3b41c4c342ba	Deux pixels Meta sur une boutique Shopify, ce n'est pas un plan de secours
+23a549fb0cef	Cherchez « plusieurs pixels Shopify » et chaque résultat explique comment en installer davantage. Presque personne n'explique ce qui se passe quand ils ne sont pas d'accord. Sur un compte, le second pixel signalait des achats jamais effectués et entraînait avec lui 30 à 40 % du budget quotidien.
+b831d7dfd25a	<t0>13 août 2026</t0><t1>Attribution</t1><t2>10 min de lecture</t2>
+09dff0f9409f	Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?
+26abdeec2a27	Un écart entre Meta Ads Manager et le nombre de commandes Shopify est normal jusqu'à un certain point. Au-delà, cela signifie généralement que quelque chose signale des achats qui n'ont jamais eu lieu. Voici comment le savoir, à partir d'un compte où la réponse était un second pixel.
+d010720b6820	<t0>12 août 2026</t0><t1>Côté serveur</t1><t2>8 min de lecture</t2>
+952fb9f7217f	Événements d'achat en double après l'installation de l'API Conversions
+a69c497b8432	Comment fonctionne réellement la déduplication chez Meta, comment choisir un identifiant qui ne peut pas dériver, et comment prouver que la vôtre fonctionne au lieu d'être simplement configurée.
+5d70bd730979	<t0>12 août 2026</t0><t1>Google Ads</t1><t2>8 min de lecture</t2>
+f071fcc60f2f	Suivi des conversions Google Ads qui ne fonctionne pas : l'ordre de diagnostic
+26e43c917da8	La courte liste des causes dans l'ordre du diagnostic, et la raison pour laquelle une balise parfaitement fonctionnelle peut ne rien remonter pendant des semaines.
+826f38eb7be5	<t0>12 août 2026</t0><t1>Pixel Meta</t1><t2>9 min de lecture</t2>
+24a9a00e190f	Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier
+8c4e689b13b6	Sept causes, dans l'ordre où il vaut la peine de les vérifier, dont le problème du pixel en double qui scinde votre attribution sans jamais paraître cassé.
+9456829c5b41	<t0>12 août 2026</t0><t1>Services locaux</t1><t2>9 min de lecture</t2>
+8c9c130c23ce	Suivi des appels Google Ads pour les entreprises de services locales
+71aaa2be928b	Quatre façons de suivre les appels issus de Google Ads, ce que chacune mesure réellement, et pourquoi compter les clics plutôt que les appels aboutis détruit discrètement vos enchères.
+ae3c52de6e5c	<t0>12 août 2026</t0><t1>Mis à jour le 10 oct. 2026</t1><t2>Shopify</t2><t3>8 min de lecture</t3>
+d5dff7408630	L'échéance Shopify du 26 août est passée. Votre suivi des achats y a-t-il survécu ?
+a782a505ebfb	Shopify a programmé pour les boutiques hors Plus une mise à niveau automatique le 26 août 2026, qui supprime les scripts supplémentaires des pages de remerciement et d'état de la commande. Ce qui est concerné, et la vérification en dix minutes.
+947adc5e622c	<t0>12 août 2026</t0><t1>Snapchat</t1><t2>9 min de lecture</t2>
+90542334aa12	Événements d'achat Snapchat qui ne se déclenchent pas : la séquence de diagnostic
+d9f088f8b203	Six causes d'événements PURCHASE Snapchat manquants, classées, avec les vérifications précises et de vrais chiffres d'Ads Manager.
+9ff1b6327084	<t0>© 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</t0> <t1><t2>Accueil</t2> · <t3>Confidentialité</t3></t1>
+eb4d27fb1768	Achats en double après l'ajout de l'API Conversions
+0f6af116cfb9	Le pixel Meta et l'API Conversions doivent être dédupliqués en un seul événement. Sinon, vous comptez le chiffre d'affaires deux fois ou en perdez la moitié. Comment prouver que ça marche.
+6ea31f6eeeec	Faire tourner le pixel Meta et l'API Conversions ensemble doit aboutir à un seul événement après déduplication. Sinon, soit vous comptez le chiffre d'affaires deux fois, soit vous en perdez discrètement la moitié. Comment fonctionne réellement la déduplication et comment prouver que la vôtre marche.
+54d334a0e918	Spécialiste publicité payante & suivi des conversions
+22df683a61ba	Achats en double avec la CAPI
+b6488b214742	Pourquoi vois-je des événements d'achat en double après l'installation de l'API Conversions ?
+d02851a3f3fd	Parce que le pixel du navigateur et le serveur envoient tous deux l'achat, et que Meta ne peut pas savoir qu'il s'agit du même événement. La déduplication exige que les deux côtés envoient un event_id identique, et idéalement le même event_name. Si les identifiants diffèrent, Meta compte deux achats distincts.
+3e965e036b0e	À quoi sert event_id dans l'API Conversions de Meta ?
+9052746ac867	C'est la clé de déduplication. Quand le pixel et l'API Conversions envoient tous deux un événement avec le même event_name et le même event_id dans la fenêtre de déduplication de Meta, Meta en garde un et écarte l'autre.
+10834c347d50	Est-ce une mauvaise idée de faire tourner le pixel Meta et l'API Conversions en même temps ?
+a0abf0b93561	Non, faire tourner les deux est la configuration recommandée, car le côté serveur capte les conversions que le navigateur manque. Ce n'est un problème que si la déduplication est mal configurée : dans ce cas, vous comptez en double ou vous perdez des événements.
+a462dff9d9b9	<t0>Notes de terrain</t0> <t1>Études de cas</t1> <t2>Services</t2> <t3>Audit gratuit</t3>
+b8d58f19ceed	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Côté serveur
+359a65da0b3f	Vous avez installé la CAPI et votre chiffre d'affaires a doublé. Non.
+c9f983fb046d	<t0>Kamran Arshad</t0><t1>12 août 2026</t1><t2>8 min de lecture</t2>
+0b7dbfe8f737	Des achats en double après l'installation de l'API Conversions signifient presque toujours une chose : <t0>le navigateur et le serveur envoient des valeurs <t1>event_id</t1> différentes</t0> pour le même achat. Meta déduplique sur la correspondance de <t2>event_name</t2> et <t3>event_id</t3>. Si les identifiants diffèrent, Meta n'a aucun moyen de savoir que les deux événements sont la même commande, et compte les deux.
+7161a8c9a23b	La version dangereuse est la panne inverse : des identifiants qui se télescopent, et vous perdez discrètement de vraies ventes.
+58e3629d1967	Installer l'API Conversions est la bonne décision. Le suivi navigateur perd des événements à cause des bloqueurs de publicité, de la protection contre le pistage, des sessions interrompues et des pages abandonnées, et un flux côté serveur en récupère une bonne partie. Presque tout le monde devrait faire tourner les deux.
+07c25361904b	Mais « faire tourner les deux » signifie que Meta reçoit désormais deux signalements de chaque achat, et la seule chose qui l'empêche de les compter deux fois est un identifiant commun. Si cet identifiant est faux dans un sens, votre chiffre d'affaires double sur le papier. S'il est faux dans l'autre, votre chiffre d'affaires est discrètement divisé par deux.
+0e8986f60389	Comment fonctionne réellement la déduplication
+ac4da9970dda	Meta fait correspondre deux champs ensemble : <t0>event_name</t0> et <t1>event_id</t1>. Les deux doivent concorder.
+ea887888e9ba	&#10007; Compté deux fois
+ff910237831c	&#10003; Dédupliqué en un seul
+a24d080805d8	La règle est simple à énoncer et facile à enfreindre en pratique, car les deux côtés sont généralement construits par des systèmes différents à des moments différents. L'événement navigateur est généré par un thème ou un gestionnaire de balises ; l'événement serveur par une application, un service intermédiaire ou votre propre code. Rien ne les oblige à concorder, et rien ne vous prévient quand ce n'est pas le cas.
+68b8be996d72	Choisir un identifiant qui ne peut pas dériver
+75460a7f9f74	L'identifiant doit être <t0>unique par commande</t0> et <t1>identique sur les deux chemins</t1>. Ces deux exigences éliminent la plupart des choix qui viennent spontanément.
+d769ded7e87a	Candidat
+975a63eb413f	Unique par commande ?
+742d33bdfdc2	Identique des deux côtés ?
+7f6e5a6efab1	Verdict
+cc95d483283c	ID / numéro de commande
+5397e0583f14	Oui
+cad331f39cfd	Oui, si les deux lisent la commande
+b80ded59dbc9	À utiliser
+0e0b2200c0f4	UUID généré aléatoirement
+1981bf2a493e	Seulement s'il est généré une fois et transmis
+4d8c039f257a	Risqué
+9526d4ab3bd7	ID de checkout
+bf3471c966c6	Pas toujours
+e2c38e14b6f6	Diffère souvent de l'ID de commande
+33fc27cf0a4d	À éviter
+25e4fe87361d	ID de session
+816c52fd2bdd	Non
+80c3052d33cc	Jamais
+19eabc961735	Horodatage
+3d44633ddbfb	Presque jamais
+58bb7dcc26b4	Les horodatages sont le pire choix et le plus tentant, car ils semblent uniques. Ils ne le sont pas : deux commandes passées dans la même seconde se télescopent, et l'horloge du navigateur n'est pas celle de votre serveur. Un UUID convient <t0>uniquement</t0> s'il est généré une fois puis transmis à l'autre côté. Si chaque côté génère le sien, vous avez construit une machine à doublons.
+46b9d1447144	<t0>La panne plus subtile : la perte silencieuse</t0>
+dcca98b90eb7	Tout le monde s'inquiète du double comptage parce qu'il se voit. Le pire bug, c'est un identifiant qui n'est pas unique : un ID de checkout réutilisé entre commandes, ou une valeur qui se répète. Meta déduplique alors correctement deux achats <t0>réellement différents</t0> en un seul, et vous perdez du vrai chiffre d'affaires dans vos rapports sans aucune erreur nulle part.
+72001fe8856c	Le double comptage ressemble à une bonne nouvelle et fait l'objet d'une enquête. La perte silencieuse ressemble à un lent déclin et on l'impute aux publicités.
+550a5d5689e0	Prouver que ça fonctionne, au lieu de le supposer
+3505d040a316	Configuré ne veut pas dire fonctionnel. Voici le test qui tranche, et il prend environ quinze minutes.
+f145d2def990	<t0>Passer une vraie commande</t0>Un vrai achat via le vrai checkout, pas un lien de test. Notez le numéro de commande.
+09c473ee8659	<t0>Récupérer l'ID d'événement côté navigateur</t0>Ouvrez les DevTools avant le paiement, filtrez l'onglet Network sur <t1>facebook</t1>, finalisez la commande et lisez l'<t2>eventID</t2> de la requête Purchase.
+dcc17971139d	<t0>Récupérer l'ID d'événement côté serveur</t0>Dans les journaux de votre intégration CAPI, ou dans le Gestionnaire d'événements, trouvez l'événement côté serveur de la même commande et lisez son <t1>event_id</t1>.
+ae6ab29d529a	<t0>Les comparer caractère par caractère</t0>Pas similaires. Identiques. Un préfixe d'un côté (<t1>order_1047</t1> contre <t2>1047</t2>) est une erreur, pas un détail.
+6ae9cc0c04d5	<t0>Vérifier les rapports de déduplication</t0>Dans le Gestionnaire d'événements, ouvrez l'événement Purchase et regardez comment il est reçu. Une configuration correctement dédupliquée montre le navigateur et le serveur comme sources du même événement, pas deux totaux séparés.
+54e99d24b32a	<t0>Rapprocher une semaine complète</t0>Comparez le nombre de commandes de votre boutique avec les achats du Gestionnaire d'événements sur une semaine clôturée. Nettement au-dessus de vos commandes, c'est un doublon. Nettement en dessous, c'est une perte.
+62183144136b	Le chiffre qui vous dit que ça marche
+7c1cae747321	Une fois la déduplication correcte, l'indicateur à surveiller est l'<t0>Event Match Quality</t0>. Il reflète la quantité d'informations d'identification envoyées avec chaque événement (e-mail haché, téléphone, nom, localisation, identifiants de clic) et détermine la capacité de Meta à attribuer une conversion à la personne qui a vu la publicité.
+debc662381be	C'est là que l'API Conversions justifie son existence. Votre serveur connaît l'e-mail et le téléphone du client parce qu'il vient d'acheter. Le navigateur, souvent, non. Envoyer ces données côté serveur, correctement hachées, est généralement un gain plus important que la récupération des événements bloqués.
+675a8e43cb4a	<t0>Hachez-les, et vérifiez que c'est fait</t0>
+1d463b2143b2	Les identifiants clients doivent être hachés en SHA-256 avant l'envoi. Ce n'est pas une question de performance : c'est la différence entre envoyer à Meta un hachage et lui envoyer les données personnelles brutes de vos clients. Si vous construisez l'intégration vous-même, vérifiez le hachage sur une vraie charge utile avant la mise en ligne, car un bug ici est un incident de protection des données, pas un bug de suivi.
+da8a469d10b5	Ce que je n'affirme pas
+f906da2640f3	Je ne vous ai pas donné de score Event Match Quality cible ni de gain attendu grâce à la CAPI. Les deux dépendent entièrement des données clients que vous pouvez légitimement collecter, de votre checkout et de votre trafic, et chaque référence publiée que j'ai vue provient d'un éditeur dont le produit améliore justement le chiffre mesuré.
+55b7f711e115	Mesurez votre propre point de départ avant le changement, mesurez à nouveau après une fenêtre d'attribution complète, et comparez-vous à vous-même. Cette comparaison vaut plus que n'importe quelle moyenne publiée.
+40184cda3be7	Vous ne savez pas si votre déduplication fonctionne ?
+3b3d85b73b44	C'est une vérification de quinze minutes et la plupart des configurations échouent. Envoyez-moi l'URL de votre boutique et je vous dirai ce que je trouve.
+d64a6f7be20d	<t0>Obtenir un audit de suivi gratuit &rarr;</t0>
+f2aa1253029c	Notes de terrain associées
+4a93f65922ac	<t0>Échéance Shopify du 26 août : votre suivi y a-t-il survécu ?<t1>Ce que supprime la mise à niveau automatique, et la vérification en dix minutes.</t1></t0> <t2>Pixel Meta qui ne suit pas les achats sur Shopify : quoi vérifier en premier<t3>Sept causes, dont le pixel en double qui scinde l'attribution.</t3></t2> <t4>Événements d'achat Snapchat qui ne se déclenchent pas : la séquence de diagnostic<t5>Six causes classées, avec de vrais chiffres d'Ads Manager.</t5></t4>
+cf39bf876da3	<t0>&copy; 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</t0> <t1><t2>Accueil</t2> &middot; <t3>Notes de terrain</t3> &middot; <t4>Confidentialité</t4></t1>
+27ae9bc21ad7	Combien de temps dure un audit Google Ads ?
+186ce2abfc75	L'audit gratuit que je propose est un examen en direct de 15 minutes de vos publicités, de votre site ou de votre visibilité dans la recherche, et il se termine par une chose à corriger cette semaine.
+6d5dc91be219	Puis-je faire ces six vérifications moi-même ?
+f341d86e13be	En grande partie, oui. Les vérifications un à quatre se font dans votre propre compte Google Ads. La cinquième nécessite aussi un accès à la configuration des balises de votre site.
+c6bc57ada6dd	Qu'est-ce qu'un mot clé à exclure ?
+fad3eb8661dd	Un mot ou une expression qui empêche vos annonces de s'afficher sur les recherches qui le contiennent, pour ne plus payer de clics de personnes qui ne seraient jamais devenues clientes.
+006e82f95ba9	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Google Ads
+8ad5b37eb608	Un audit de compte Google Ads pour la génération de leads : six vérifications, dans l'ordre
+b6f22dba98c5	<t0>Kamran Arshad</t0><t1>10 oct. 2026</t1><t2>3 min de lecture</t2>
+0d09a2a26b35	Un audit Google Ads utile pour une entreprise qui vit des appels et des formulaires de demande vérifie six choses dans l'ordre : la validation de l'annonceur, la séparation Recherche/Display, le ciblage géographique, les mots clés à exclure, le suivi des conversions pour les formulaires et les appels, et la structure des groupes d'annonces par service.
+5f730cbafc91	J'ai appliqué cette séquence au compte d'un cabinet dentaire qui n'avait jamais été correctement configuré.
+6782b1b442e0	La plupart des checklists d'audit Google Ads commencent par les enchères et les textes d'annonces. Pour une entreprise de génération de leads, je commence plus en amont, car les enchères et les textes ne peuvent pas réparer un compte qui affiche des annonces au mauvais endroit, sur les mauvaises recherches, sans aucune trace de ce qui se passe ensuite.
+f6ec1d04a62d	Les six vérifications
+e2412274cc2e	Validation de l'annonceur
+b797ebeb0610	Google peut exiger une validation de l'identité de l'annonceur. Sur le compte du cabinet, elle n'avait pas été finalisée, ce qui menaçait la diffusion des campagnes. Cherchez d'abord une notification de validation, car rien d'autre ne compte si les annonces cessent d'être diffusées.
+ac42008283ef	Recherche et Display séparés
+84ea06a1e4eb	Les campagnes du cabinet mélangeaient le Réseau de Recherche et le Réseau Display. Le Display consommait du budget sans générer de demandes, j'ai donc séparé les deux et mis le Display en pause. Vérifiez les paramètres de réseau de chaque campagne.
+0edee880ffa5	Ciblage géographique
+8885e792b40f	Les campagnes ciblaient le monde entier au lieu d'Islamabad, où exerce le cabinet. Ouvrez les paramètres de zone de chaque campagne et vérifiez que les lieux listés sont ceux que vous desservez.
+11f3e8d2c0a8	Mots clés à exclure
+5d09a1b11f38	Il n'y avait aucun mot clé à exclure, donc une partie du budget partait sur des recherches sans intention locale. Lisez le rapport sur les termes de recherche des 30 derniers jours et ajoutez ce qui n'aurait jamais dû déclencher une annonce.
+8070e6e94102	Suivi des conversions pour les formulaires et les appels
+06df19125f75	Ni les envois de formulaires ni les appels n'étaient suivis, donc chaque décision reposait uniquement sur les clics. J'ai configuré des déclencheurs Google Tag Manager pour les envois de formulaires et les clics d'appel, et relié ces événements à Google Ads.
+236100193fa0	Groupes d'annonces par service
+0823b041e4d9	J'ai étudié les termes de recherche locaux et regroupé les mots clés par service, comme le détartrage, les implants et le blanchiment, pour que chaque annonce corresponde à ce que la personne a tapé.
+66ae284eedaa	Ce qui a changé sur le compte du cabinet
+1d947d48f7ab	Après la refonte, le compte était en Recherche uniquement, ciblé sur Islamabad, avec une liste de mots clés à exclure et un suivi en place. Pour la première fois, le cabinet pouvait voir quelles annonces, quels mots clés et quelles campagnes généraient de vraies demandes de patients.
+7822105c280a	Le récit complet du travail se trouve dans l'<t0>étude de cas Smile Line Dental</t0>.
+5aad6db18084	<t0>D'où cela vient</t0>
+a11d9cecff6e	Un compte de cabinet dentaire à Islamabad. C'est un seul compte, pas une étude, et ce n'est pas un compte français, belge, suisse ou canadien. Les six vérifications s'appliquent à tout compte de génération de leads parce qu'elles se situent en amont des enchères, mais les problèmes précis que j'ai trouvés sont ceux de ce cabinet.
+da5c39c9e038	Ce que cette checklist ne couvre pas
+17482ff44164	Elle ne couvre ni la stratégie d'enchères, ni les textes d'annonces, ni les pages de destination. Ils comptent, et ils fonctionnent mieux une fois les six vérifications en amont validées, car c'est seulement alors que vous pouvez faire confiance aux données sur lesquelles ils reposent.
+34f22dfc3f65	Si la cinquième vérification est le point faible de votre compte, mon <t0>guide sur le suivi des appels Google Ads</t0> et l'<t1>ordre de diagnostic du suivi des conversions</t1> vont plus loin.
+dd8d359078fb	En grande partie, oui. Les vérifications un à quatre se font dans votre propre compte Google Ads. La cinquième nécessite aussi un accès à la configuration des balises de votre site.
+752ae71efa70	Vous voulez que je fasse ces six vérifications sur votre compte ?
+5ad8d76d9f56	<t0>Réserver un audit gratuit &rarr;</t0>
+3a0915891fef	<t0>Gestion Google Ads<t1>Comment je gère les comptes de génération de leads.</t1></t0> <t2>Suivi des appels Google Ads pour les entreprises de services locales<t3>Comment compter les appels qui deviennent des missions.</t3></t2> <t4>Suivi des conversions Google Ads qui ne fonctionne pas : l'ordre de diagnostic<t5>Où regarder en premier quand les conversions ne s'enregistrent plus.</t5></t4>
+860c41e0ca82	Suivi des appels Google Ads pour les entreprises de services locales
+3d47adda8edc	La plupart des guides de suivi supposent une boutique en ligne. Si votre conversion est un appel, les pannes sont différentes. Quatre façons de suivre les appels Google Ads, et où chacune échoue.
+f7bee19c9081	Presque tous les guides de suivi des conversions sont écrits pour les boutiques en ligne. Si votre conversion est un appel téléphonique, les modes de défaillance sont totalement différents. Voici les quatre façons de suivre les appels issus de Google Ads, ce que chacune mesure réellement et où elles échouent.
+b1cebe726da9	Suivi des appels Google Ads
+0030c9a24d4a	Comment suivre les appels téléphoniques issus de Google Ads ?
+0e56b8a1370d	Il existe quatre méthodes : les extensions d'appel avec un numéro de transfert Google, les appels depuis le site avec un remplacement dynamique de numéro, le suivi statique des clics d'appel, et une plateforme de suivi d'appels tierce. Chacune mesure quelque chose de légèrement différent, et seules certaines rattachent l'appel à un mot clé précis.
+2b22a65cea2b	Le suivi des appels Google Ads enregistre-t-il les appels ?
+e6900e4e22a0	Google Ads peut enregistrer les appels passés via les numéros de transfert Google là où la fonctionnalité est disponible, sous réserve de la législation locale et des obligations d'information. Savoir qu'un appel a eu lieu et en enregistrer le contenu sont deux décisions distinctes, avec des obligations légales distinctes.
+9db6a1e66133	Pourquoi Google Ads affiche-t-il des appels alors que mon téléphone n'a pas sonné ?
+1fe2810d6ab5	Une cause fréquente est de compter les clics d'appel comme des appels. Un appui sur un lien téléphonique est une intention d'appeler, pas un appel abouti. Si vous suivez les clics plutôt que les appels aboutis d'une durée minimale, vos conversions déclarées dépasseront les appels réellement reçus.
+f49bba1211ab	<t0>Notes de terrain</t0> &nbsp;/&nbsp; Services locaux
+d1549a62e3df	Le suivi des appels Google Ads, pour les entreprises dont les clients appellent au lieu d'acheter
+c1332ea8b8a4	<t0>Kamran Arshad</t0><t1>12 août 2026</t1><t2>9 min de lecture</t2>
+48597bea8bd6	Si votre conversion est un appel plutôt qu'un paiement, presque tous les guides de suivi en ligne sont écrits pour quelqu'un d'autre. Il existe quatre façons de suivre les appels issus de Google Ads : <t0>les extensions d'appel, l'insertion dynamique de numéro sur votre site, le clic d'appel statique et une plateforme tierce</t0>, et elles mesurent des choses différentes.
+4787446104dd	L'erreur la plus courante est de compter un appui sur un lien téléphonique comme un appel. Ce n'en est pas un. C'est une intention.
+be74ac964053	Lisez n'importe quel article sur le suivi des conversions et vous vous retrouverez dans une boutique en ligne. Événements d'achat, valeur du panier, retour sur dépenses publicitaires. Pas très utile si vous êtes dentiste, nettoyeur de moquettes, plombier ou kinésithérapeute, et que l'argent arrive parce que quelqu'un a décroché son téléphone.
+ef4eb78601aa	Les modes de défaillance sont vraiment différents, et pires, car un appel ne laisse aucune trace dans l'analyse de votre site, sauf si vous faites délibérément en sorte qu'il en laisse une.
+23b9c2027f29	Les quatre méthodes, et ce que chacune vous dit vraiment
+88306943fea7	Méthode
+c00063b12b4f	Ce qu'elle mesure
+ddb536ffbfc9	Attribution au mot clé
+80b2d4210bb1	Principale faiblesse
+e4eaf3b3eb4c	Extension d'appel / composant Appel
+d871c99b262e	Appels passés directement depuis l'annonce
+01a0a10b309b	Manque tous ceux qui cliquent d'abord vers le site
+481d9ef38d82	Appels depuis le site (numéro dynamique)
+bbffdb9a7813	Appels vers un numéro remplacé sur votre site
+9669bde9fd6d	Le script de remplacement doit se charger et fonctionner sur mobile
+e2958737999c	Clic d'appel statique
+c9d6a6fbac5c	Clics sur un lien <t0>tel:</t0>
+65de2e2a3bcb	Partielle
+0c783c956f7d	Compte l'intention, pas l'appel abouti, et gonfle les conversions
+7d57124f324e	Plateforme d'appels tierce
+17ecff81008f	Appels aboutis, durée, enregistrement, source
+b8ccbb777715	Coût mensuel ; un système de plus à maintenir
+f70447db666a	Regardez la troisième ligne. C'est celle avec laquelle se retrouvent la plupart des petites entreprises, souvent par accident, car suivre un clic est ce qu'il y a de plus simple à configurer dans Google Tag Manager. C'est aussi celle qui vous ment le plus.
+0cdea2435c54	Pourquoi compter les clics détruit discrètement vos enchères
+916984913936	Un appui sur un lien <t0>tel:</t0> signifie que quelqu'un était assez intéressé pour ouvrir son clavier téléphonique. Cela ne veut pas dire qu'il a appuyé sur le bouton vert. Ni que vous avez décroché. Ni que l'appel a duré plus de quatre secondes avant qu'il comprenne que vous étiez fermé.
+1a6f175a2f37	Si vous transmettez les clics à Google Ads comme conversions, les enchères intelligentes optimisent vers <t0>les personnes qui cliquent</t0>. Ce ne sont pas les mêmes que <t1>les clients qui réservent</t1>. L'écart entre les deux, c'est là que part votre budget.
+fa7d752e9e82	&#10007; Ce que vous comptez
+a0d2a50a1225	&#10003; Ce que vous devriez compter
+c31514a54044	Le changement le plus rentable que la plupart des annonceurs locaux puissent faire est d'imposer une <t0>durée d'appel minimale</t0> avant qu'un appel compte comme conversion. Soixante secondes est un bon point de départ pour la plupart des entreprises de services : assez long pour exclure les faux numéros et les raccrochages immédiats, assez court pour inclure un rapide « vous pouvez passer mardi ? ».
+f80af713ddc3	Ce que j'ai réellement mis en place, et ce que cela a changé
+fa9816860d65	Je l'ai construit deux fois, pour deux entreprises très différentes, et c'est la partie de mon travail où l'avant/après est le plus net.
+68a7fe675618	Smile Line Dental : Islamabad
+cfdce4a2516f	Google Ads + GTM &middot; suivi des appels et des formulaires
+04f4a5fe4a53	Avant : Google Ads tournait sans aucune visibilité sur les recherches qui généraient des rendez-vous. Les demandes arrivaient par téléphone et par formulaire, et aucune n'était attribuée à quoi que ce soit.
+23e2335192a6	Après : suivi GTM sur les deux formulaires de demande et sur les appels, pour que des recherches précises puissent être reliées à de vrais rendez-vous pour la première fois. Selon les mots du cabinet, ils ont « arrêté de deviner ».
+41d60e968d0a	<t0>Ce que je n'affirme pas :</t0> je n'ai pas de coût par demande publié pour ce compte, donc je ne vais pas en inventer un. Ce qui a changé, c'est la visibilité, qui est la condition de tout le reste, pas le résultat en soi.
+5911ac4e45dd	Le second était <t0>Mr Expert Carpet Cleaning</t0> à Slough, dont le site a été reconstruit de zéro avec un suivi pensé dès le départ plutôt qu'ajouté après coup, y compris un conteneur GTM côté serveur. C'est lui qui m'a appris la leçon de la section suivante.
+e73687eafd92	La panne dont personne ne vous prévient : le formulaire qui envoie des e-mails
+83a249480f0b	La plupart des sites d'entreprises de services locales utilisent un formulaire de contact qui rédige un e-mail et l'envoie. Si l'envoi échoue (mauvaise configuration SMTP, filtre anti-spam, boîte pleine), le lead ne part pas dans une file d'attente pour un nouvel essai. Il cesse d'exister. Il n'existe aucune trace que quelqu'un ait rempli le formulaire.
+96c59ad4de18	On ne peut pas suivre ce qui n'a jamais été enregistré. Avant tout travail de suivi des conversions sur un site de services local, je vérifie donc une chose : <t0>le formulaire écrit-il le lead dans une base de données avant d'essayer d'envoyer un e-mail ?</t0> Si la réponse est non, le suivi est le deuxième problème.
+a721ea426e1d	<t0>Enregistrer d'abord, notifier ensuite</t0>
