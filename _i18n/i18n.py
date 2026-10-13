@@ -233,7 +233,7 @@ SWITCH_CSS = ('<style id="lang-sw-css">.lang-sw{position:relative;display:inline
     '.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}'
     '.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}'
     '@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}'
-    '@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>')
+    '@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>')
 
 def switcher(lang, p):
     items = [("en", "English")] + [(c, LANGS[c][0]) for c in LIVE]
