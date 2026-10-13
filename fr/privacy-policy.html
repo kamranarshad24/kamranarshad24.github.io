@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Politique de confidentialité | Kamran Arshad</title>
+<link rel="canonical" href="https://marketingkamran.com/fr/privacy-policy.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/privacy-policy.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/privacy-policy.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/privacy-policy.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/privacy-policy.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/privacy-policy.html">
+<meta name="description" content="Politique de confidentialité de marketingkamran.com : comment Kamran Arshad collecte, utilise et protège vos informations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"></noscript>
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #0B2143;
+  --ink-soft: #2E4368;
+  --muted: #5C6E8C;
+  --faint: #8B9AB4;
+  --bg: #F4F7FB;
+  --card: #FFFFFF;
+  --line: #DDE5F0;
+  --line-strong: #C6D2E4;
+  --blue: #166FDB;
+  --blue-deep: #0F5FC4;
+  --blue-tint: #E8F1FD;
+  --navy: #081A36;
+  --green: #0CA678;
+  --display: 'Bricolage Grotesque', Georgia, serif;
+  --body: 'Instrument Sans', -apple-system, sans-serif;
+  --mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --r: 16px;
+  --r-sm: 10px;
+  --t: 0.22s ease;
+}
+
+html { scroll-behavior: smooth; }
+::selection { background: var(--blue); color: #fff; }
+
+body {
+  font-family: var(--body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+.container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- NAV ---------- */
+nav.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(244,247,251,.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 20px;
+}
+.nav-logo img { height: 34px; width: auto; display: block; }
+.nav-back {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: color var(--t), gap var(--t);
+}
+.nav-back:hover { color: var(--blue); gap: 11px; }
+
+/* ---------- HERO ---------- */
+.policy-hero {
+  position: relative;
+  padding: 80px 0 64px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(28,121,233,.045) 0%, rgba(244,247,251,0) 50%),
+    repeating-linear-gradient(0deg, rgba(11,33,67,.035) 0 1px, transparent 1px 56px),
+    repeating-linear-gradient(90deg, rgba(11,33,67,.035) 0 1px, transparent 1px 56px),
+    var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+.policy-hero::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 90px;
+  background: linear-gradient(180deg, rgba(244,247,251,0), var(--bg));
+  pointer-events: none;
+}
+.policy-hero .inner { position: relative; z-index: 1; max-width: 760px; }
+.kicker {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.kicker::before {
+  content: '';
+  width: 26px;
+  height: 1.5px;
+  background: var(--blue);
+  display: inline-block;
+}
+.policy-hero h1 {
+  font-family: var(--display);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.04;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+}
+.policy-hero .lede {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-top: 18px;
+  max-width: 620px;
+}
+.policy-meta {
+  margin-top: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--ink-soft);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  padding: 8px 16px;
+  box-shadow: 0 1px 2px rgba(11,33,67,.05);
+}
+.policy-meta .dot {
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* ---------- LAYOUT ---------- */
+.policy-section { padding: 64px 0 96px; }
+.policy-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+/* sticky table of contents */
+.toc {
+  position: sticky;
+  top: 96px;
+}
+.toc .toc-label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 16px;
+}
+.toc ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.toc a {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-left: 2px solid var(--line);
+  transition: color var(--t), border-color var(--t), background var(--t);
+  border-radius: 0 6px 6px 0;
+}
+.toc a:hover { color: var(--blue); border-color: var(--blue); background: var(--blue-tint); }
+
+/* content card */
+.policy-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 48px 52px;
+  box-shadow: 0 24px 50px -30px rgba(11,33,67,.16);
+}
+.policy-block { scroll-margin-top: 96px; }
+.policy-block + .policy-block {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+.policy-block h2 {
+  font-family: var(--display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  line-height: 1.2;
+  color: var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.policy-block h2 .nb {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: .04em;
+}
+.policy-block h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 24px 0 8px;
+}
+.policy-block p {
+  font-size: 15.5px;
+  color: var(--muted);
+  line-height: 1.78;
+  margin-bottom: 14px;
+}
+.policy-block p:last-child { margin-bottom: 0; }
+.policy-block a { color: var(--blue); text-decoration: none; font-weight: 500; }
+.policy-block a:hover { color: var(--blue-deep); text-decoration: underline; text-underline-offset: 3px; }
+.policy-block strong { color: var(--ink); font-weight: 600; }
+.policy-block ul { list-style: none; display: flex; flex-direction: column; gap: 11px; margin: 6px 0 16px; }
+.policy-block ul li {
+  font-size: 15.5px;
+  color: var(--muted);
+  line-height: 1.7;
+  padding-left: 24px;
+  position: relative;
+}
+.policy-block ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 600;
+}
+.policy-block ul li strong { color: var(--ink); }
+
+/* callout */
+.callout {
+  background: var(--blue-tint);
+  border: 1px solid #BBD8F8;
+  border-radius: var(--r-sm);
+  padding: 18px 22px;
+  margin: 20px 0;
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.callout strong { color: var(--blue-deep); }
+
+/* contact box */
+.contact-box {
+  background: var(--navy);
+  border-radius: var(--r);
+  padding: 34px 36px;
+  margin-top: 8px;
+  color: #fff;
+}
+.contact-box h3 {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px;
+}
+.contact-box p { color: #A9BDDB; font-size: 14.5px; line-height: 1.7; margin-bottom: 18px; }
+.contact-list { display: flex; flex-direction: column; gap: 10px; }
+.contact-list a {
+  color: #BFD3EE;
+  text-decoration: none;
+  font-size: 14.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  transition: color var(--t);
+  font-weight: 500;
+}
+.contact-list a:hover { color: #fff; }
+
+@media (max-width: 880px) {
+  .policy-layout { grid-template-columns: 1fr; gap: 36px; }
+  .toc { position: static; }
+  .toc ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; }
+  .policy-card { padding: 36px 28px; }
+}
+@media (max-width: 520px) {
+  .toc ul { grid-template-columns: 1fr; }
+  .policy-card { padding: 30px 22px; }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: var(--navy);
+  border-top: 1px solid rgba(255,255,255,.07);
+  padding: 56px 0 40px;
+  color: #93A9CB;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.footer-brand .wordmark {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: #fff;
+}
+.footer-brand .wordmark em { color: #4D9BF5; font-style: normal; }
+.footer-brand p { font-size: 13.5px; margin-top: 8px; max-width: 280px; line-height: 1.6; }
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  color: #BFD3EE;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color var(--t);
+}
+.footer-links a:hover { color: #fff; }
+.footer-bottom {
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,.07);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: .05em;
+  color: #93A9CB;
+}
+</style>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="/fr/" class="nav-logo" aria-label="Kamran Arshad, accueil">
+      <img src="/Kamran_Arshad_logo.svg" alt="Kamran Arshad" width="120" height="34">
+    </a> <a href="/fr/" class="nav-back">← Retour à l'accueil</a>
+  <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/privacy-policy.html" hreflang="en" lang="en">English</a></li><li><a href="/de/privacy-policy.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/privacy-policy.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/privacy-policy.html" hreflang="es" lang="es">Español</a></li></ul></details></div>
+</nav>
+
+<!-- HERO -->
+<header class="policy-hero">
+  <div class="container">
+    <div class="inner">
+      <div class="kicker">Mentions juridiques</div>
+      <h1>Politique de confidentialité</h1>
+      <p class="lede">Le suivi est mon métier, il est donc important pour moi que vous sachiez exactement ce qu'il advient de vos informations lorsque vous visitez ce site ou prenez contact.</p>
+      <div class="policy-meta"><span class="dot"></span>Dernière mise à jour : 15 juin 2026</div>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<section class="policy-section">
+  <div class="container">
+    <div class="policy-layout">
+
+      <!-- Table of contents -->
+      <aside class="toc">
+        <div class="toc-label">Sur cette page</div>
+        <ul>
+          <li><a href="#overview">Présentation</a></li>
+          <li><a href="#info-we-collect">Informations collectées</a></li>
+          <li><a href="#how-we-use">Utilisation</a></li>
+          <li><a href="#cookies">Cookies &amp; suivi</a></li>
+          <li><a href="#third-parties">Services tiers</a></li>
+          <li><a href="#retention">Conservation des données</a></li>
+          <li><a href="#your-rights">Vos droits</a></li>
+          <li><a href="#security">Sécurité</a></li>
+          <li><a href="#changes">Modifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </aside>
+
+      <!-- Body -->
+      <div class="policy-card">
+
+        <div class="policy-block" id="overview">
+          <h2><span class="nb">01</span> Présentation</h2>
+          <p>Cette politique de confidentialité explique comment <strong>Kamran Arshad</strong> (« je », « me », « mon ») traite les informations collectées via ce site (<a href="https://marketingkamran.com/fr/">marketingkamran.com</a>). Je gère des campagnes Google Ads et Meta, du SEO et des fiches d'établissement Google, et je crée des sites web, depuis Islamabad, au Pakistan, pour des clients du monde entier. Ceci est une traduction ; en cas de divergence, la version anglaise prévaut.</p>
+          <p>En utilisant ce site ou en me contactant par son intermédiaire, vous acceptez les pratiques décrites ci-dessous. Si vous n'êtes pas d'accord, veuillez ne pas utiliser le site ni transmettre vos coordonnées.</p>
+        </div>
+
+        <div class="policy-block" id="info-we-collect">
+          <h2><span class="nb">02</span> Informations collectées</h2>
+          <h3>Les informations que vous me donnez</h3>
+          <p>Lorsque vous remplissez le formulaire de contact ou d'« audit gratuit », je collecte les informations que vous choisissez de partager :</p>
+          <ul>
+            <li><strong>Nom</strong> : pour savoir à qui je m'adresse</li>
+            <li><strong>Adresse e-mail</strong> : pour répondre à votre demande</li>
+            <li><strong>Numéro de téléphone / WhatsApp</strong> : si vous en indiquez un pour une réponse plus rapide</li>
+            <li><strong>Contenu du message</strong> : tout ce que vous me dites sur votre activité, vos comptes publicitaires ou votre besoin</li>
+          </ul>
+          <h3>Les informations collectées automatiquement</h3>
+          <p>Comme la plupart des sites, celui-ci enregistre automatiquement certaines données techniques lors de votre visite, comme votre localisation approximative, le type de navigateur et d'appareil, les pages consultées et la façon dont vous êtes arrivé ici. Ces données sont recueillies via des cookies et des outils d'analyse (voir les sections ci-dessous).</p>
+        </div>
+
+        <div class="policy-block" id="how-we-use">
+          <h2><span class="nb">03</span> Utilisation de vos informations</h2>
+          <p>J'utilise vos informations uniquement à des fins claires et limitées :</p>
+          <ul>
+            <li>Pour répondre à votre demande et fournir l'audit gratuit ou le service demandé</li>
+            <li>Pour communiquer avec vous au sujet d'un projet commun</li>
+            <li>Pour comprendre comment les visiteurs utilisent le site afin de l'améliorer</li>
+            <li>Pour mesurer quelles actions marketing amènent réellement des visiteurs</li>
+          </ul>
+          <div class="callout"><strong>Je ne vends pas vos données.</strong> Vos informations ne sont jamais vendues, louées ni échangées. Je ne vous ajoute à aucune liste de diffusion et n'envoie pas d'e-mails marketing, sauf si vous me l'avez expressément demandé.</div>
+        </div>
+
+        <div class="policy-block" id="cookies">
+          <h2><span class="nb">04</span> Cookies &amp; suivi</h2>
+          <p>Ce site utilise des cookies et des technologies similaires via <strong>Google Tag Manager</strong>, qui peut charger des outils comme Google Analytics (GA4) et des pixels publicitaires. Ils m'aident à comprendre le trafic et à mesurer les performances.</p>
+          <p>Vous pouvez contrôler ou bloquer les cookies à tout moment dans les paramètres de votre navigateur. Les bloquer n'empêche pas le site de fonctionner, même si certaines données d'analyse anonymes pourraient ne plus être enregistrées. La plupart des navigateurs proposent aussi une navigation privée qui limite le suivi.</p>
+        </div>
+
+        <div class="policy-block" id="third-parties">
+          <h2><span class="nb">05</span> Services tiers</h2>
+          <p>Quelques services de confiance aident au fonctionnement de ce site. Chacun dispose de sa propre politique de confidentialité :</p>
+          <ul>
+            <li><strong>Google</strong> (Tag Manager &amp; Analytics) : analyse du site et gestion des balises. Voir la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a>.</li>
+            <li><strong>FormSubmit</strong> : transmet les envois du formulaire de contact à ma boîte e-mail. Voir <a href="https://formsubmit.co/" target="_blank" rel="noopener">FormSubmit</a>.</li>
+            <li><strong>GitHub Pages</strong> : héberge ce site. Voir la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">déclaration de confidentialité de GitHub</a>.</li>
+            <li><strong>Google Fonts</strong> : charge les polices utilisées sur ce site.</li>
+          </ul>
+          <p>Je ne contrôle pas la manière dont ces tiers traitent les données et ne suis pas responsable de leurs pratiques, mais je ne travaille qu'avec des prestataires reconnus.</p>
+        </div>
+
+        <div class="policy-block" id="retention">
+          <h2><span class="nb">06</span> Conservation des données</h2>
+          <p>Je conserve les informations de demande uniquement le temps nécessaire pour vous répondre et, le cas échéant, pendant la durée de notre collaboration plus une période raisonnable ensuite pour mes archives. Si vous souhaitez que vos informations soient supprimées plus tôt, il suffit de le demander (voir <a href="#contact">Contact</a>) et je les supprimerai.</p>
+        </div>
+
+        <div class="policy-block" id="your-rights">
+          <h2><span class="nb">07</span> Vos droits</h2>
+          <p>Où que vous soyez, vous pouvez me demander :</p>
+          <ul>
+            <li>D'<strong>accéder</strong> aux informations que je détiens sur vous</li>
+            <li>De <strong>corriger</strong> toute information inexacte</li>
+            <li>De <strong>supprimer</strong> vos informations de mes archives</li>
+            <li>De <strong>ne plus</strong> vous contacter</li>
+          </ul>
+          <p>Pour faire une demande, écrivez-moi à <a href="mailto:hello@marketingkamran.com">hello@marketingkamran.com</a>. Je vous répondrai aussi vite que possible.</p>
+        </div>
+
+        <div class="policy-block" id="security">
+          <h2><span class="nb">08</span> Sécurité</h2>
+          <p>Je prends des mesures raisonnables pour protéger vos informations et je ne les partage qu'avec les prestataires listés ci-dessus. Cela dit, aucune transmission sur Internet n'est totalement sûre, je ne peux donc pas garantir une sécurité absolue.</p>
+        </div>
+
+        <div class="policy-block" id="changes">
+          <h2><span class="nb">09</span> Modifications de cette politique</h2>
+          <p>Je peux mettre à jour cette politique de temps à autre, à mesure que le site ou mes services évoluent. Dans ce cas, je modifierai la date de « Dernière mise à jour » en haut de cette page. Les changements importants seront clairement signalés ici.</p>
+        </div>
+
+        <div class="policy-block" id="contact">
+          <h2><span class="nb">10</span> Contact</h2>
+          <p>Des questions sur cette politique ou sur vos données ? Contactez-moi à tout moment :</p>
+          <div class="contact-box">
+            <h3>Kamran Arshad</h3>
+            <p>Ads · SEO · Web · Suivi · Islamabad, Pakistan</p>
+            <div class="contact-list">
+              <a href="mailto:hello@marketingkamran.com">✉&nbsp;&nbsp;hello@marketingkamran.com</a> <a href="https://wa.me/923325252517" target="_blank" rel="noopener">💬&nbsp;&nbsp;+92 332 525 2517</a> <a href="https://linkedin.com/in/kamran-arshad24" target="_blank" rel="noopener">in&nbsp;&nbsp;linkedin.com/in/kamran-arshad24</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="wordmark">Kamran <em>Arshad</em></div>
+        <p>Google Ads, Meta Ads, SEO, fiche d'établissement Google &amp; développement web. Islamabad, Pakistan. Clients dans le monde entier.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://linkedin.com/in/kamran-arshad24" target="_blank" rel="noopener">in&nbsp;&nbsp;linkedin.com/in/kamran-arshad24</a> <a href="mailto:hello@marketingkamran.com">✉&nbsp;&nbsp;hello@marketingkamran.com</a> <a href="https://wa.me/923325252517" target="_blank" rel="noopener">💬&nbsp;&nbsp;+92 332 525 2517</a> <span style="font-size:14px;">📍&nbsp;&nbsp;Islamabad, Pakistan</span>
+      </div>
+      <div class="footer-links">
+        <a href="/fr/#about">À propos</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a href="/fr/privacy-policy.html">Confidentialité</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 KAMRAN ARSHAD · ADS · SEO · WEB · TRACKING</span> <span>CHAQUE ÉVÉNEMENT DE CE SITE EST SUIVI. ÉVIDEMMENT.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

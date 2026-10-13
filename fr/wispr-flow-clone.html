@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<title>Étude de cas FlowBridge (clone de Wispr Flow) | Kamran Arshad</title>
+<meta name="description" content="FlowBridge : une application personnelle de dictée vocale bilingue (anglais/ourdou) construite avec l&#x27;IA, avec Groq et Gemini en secours, analyse d&#x27;usage et audio jamais enregistré.">
+<link rel="canonical" href="https://marketingkamran.com/fr/wispr-flow-clone.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/wispr-flow-clone.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/wispr-flow-clone.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/wispr-flow-clone.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/wispr-flow-clone.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/wispr-flow-clone.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/wispr-flow-clone.html">
+<meta property="og:title" content="Étude de cas FlowBridge (clone de Wispr Flow)">
+<meta property="og:description" content="FlowBridge : une application personnelle de dictée vocale bilingue (anglais/ourdou) construite avec l&#x27;IA, avec Groq et Gemini en secours, analyse d&#x27;usage et audio jamais enregistré.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kamran Arshad, Google Ads, Meta Ads, SEO et développement web">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Étude de cas FlowBridge (clone de Wispr Flow)">
+<meta name="twitter:description" content="FlowBridge : une application personnelle de dictée vocale bilingue (anglais/ourdou) construite avec l&#x27;IA, avec Groq et Gemini en secours, analyse d&#x27;usage et audio jamais enregistré.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/case-study.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Portfolio",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Étude de cas FlowBridge (clone de Wispr Flow)",
+      "item": "https://marketingkamran.com/fr/wispr-flow-clone.html"
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- CONTACT FORM MODAL -->
+<div id="audit-modal" style="display:none; position:fixed; inset:0; z-index:999; background:rgba(15,23,42,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); align-items:center; justify-content:center; padding:20px;">
+  <div style="background:#fff; border-radius:24px; padding:40px; max-width:480px; width:100%; position:relative; box-shadow:0 32px 80px rgba(15,23,42,.2); animation:modal-in .25s ease;">
+    <button onclick="closeModal()" style="position:absolute;top:16px;right:16px;background:#F1F5F9;border:none;width:32px;height:32px;border-radius:50%;font-size:18px;cursor:pointer;color:#64748B;">x</button>
+    <span style="font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#2563EB;display:block;margin-bottom:10px;">Gratuit, sans engagement</span>
+    <h3 style="font-size:24px;font-weight:800;letter-spacing:-.8px;margin-bottom:8px;color:#0F172A;">Réservez votre audit gratuit</h3>
+    <p style="font-size:14px;color:#64748B;margin-bottom:28px;line-height:1.6;">J'examine vos publicités, votre site ou votre visibilité dans la recherche en direct pendant 15 minutes, et je vous indique une chose à corriger cette semaine.</p>
+    <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://marketingkamran.com/fr/thankyou.html">
+      <div style="margin-bottom:16px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">Votre nom *</label><input type="text" name="name" required placeholder="ex. : Claire Martin" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;"></div>
+      <div style="margin-bottom:16px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">E-mail ou WhatsApp *</label><input type="text" name="contact" required placeholder="votre@email.fr ou +33 X XX XX XX XX" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;"></div>
+      <div style="margin-bottom:24px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">Sur quoi avez-vous besoin d'aide ?</label><textarea name="message" rows="3" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;resize:vertical;"></textarea></div>
+      <button type="submit" style="width:100%;padding:14px;background:#2563EB;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;">Envoyer la demande</button>
+    </form>
+    <p style="font-size:12px;color:#94A3B8;text-align:center;margin-top:14px;">Je réponds sous 24 heures. Jamais de spam.</p>
+  </div>
+</div>
+<style>@keyframes modal-in{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}</style>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="/fr/" class="nav-logo"><img src="/Kamran_Arshad_logo.svg" alt="Kamran Arshad"></a>
+    <a href="/fr/#work" class="btn btn-outline">← Toutes les études de cas</a>
+  <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/wispr-flow-clone.html" hreflang="en" lang="en">English</a></li><li><a href="/de/wispr-flow-clone.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/wispr-flow-clone.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/wispr-flow-clone.html" hreflang="es" lang="es">Español</a></li></ul></details></div>
+</nav>
+
+<section class="cs-hero">
+  <div class="container">
+    <a href="/fr/#work" class="back-link">← Retour au portfolio</a>
+    <div class="cs-tags">
+      <span class="cs-tag tag-own">Projet personnel</span> <span class="cs-tag tag-track">IA / Automatisation</span> <span class="cs-tag tag-web">Groq + Gemini</span> <span class="cs-tag tag-web">Anglais / Ourdou</span>
+    </div>
+    <h1>FlowBridge <span>(clone de Wispr Flow)</span></h1>
+    <p class="cs-subtitle">Projet personnel : application de dictée vocale par IA bilingue pour Windows</p>
+  </div>
+</section>
+
+<div class="results-bar">
+  <div class="container">
+    <div class="results-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="result-item">
+        <div class="result-n">Construite avec <span class="accent">Codex</span></div>
+        <div class="result-l">Développement piloté par l'IA</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n">Groq <span class="accent">+</span> Gemini</div>
+        <div class="result-l">Service vocal principal + secours</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n">EN <span class="accent">+</span> UR</div>
+        <div class="result-l">Dictée bilingue</div>
+      </div>
+      <div class="result-item">
+        <div class="result-n">Confidentialité <span class="accent">d'abord</span></div>
+        <div class="result-l">Audio jamais enregistré sur le disque</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="cs-body">
+  <div class="container">
+    <div class="cs-grid">
+
+      <div class="cs-left">
+        <div class="cs-section">
+          <span class="label">Pourquoi je l'ai créée</span>
+          <h3>Je voulais un outil de dictée qui ne se contente pas de transcrire, mais qui nettoie le texte, et ce dans deux langues.</h3>
+          <p>Wispr Flow est une application commerciale de dictée vocale. Je voulais la même idée de base, maintenir une touche, parler au lieu de taper et obtenir un texte propre là où se trouve le curseur, mais construite et détenue par moi, adaptée à ma façon de travailler : passer de l'anglais à l'ourdou. J'ai donc créé ma propre version, <strong>FlowBridge</strong>, comme projet personnel.</p>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Ce que j'ai fait</span>
+          <h3>J'ai piloté toute la construction avec Codex, puis j'y ai relié une vraie infrastructure.</h3>
+          <ul class="cs-list">
+            <li><strong>Construite de bout en bout avec Codex</strong> : plutôt que d'écrire l'application à la main, j'ai fait construire Codex (un agent de développement IA) et itéré jusqu'à ce que le flux soit juste : maintenir Ctrl+Espace, parler, relâcher, et le texte nettoyé arrive là où je tapais</li>
+            <li><strong>Groq en principal, Gemini en secours</strong> : la reconnaissance vocale tourne sur Groq pour la vitesse, avec Gemini branché comme solution de secours automatique pour que la dictée ne s'arrête pas si un service a un problème</li>
+            <li><strong>Prise en charge bilingue anglais + ourdou</strong> : l'application transcrit et nettoie les deux langues, y compris les sessions mixtes, au lieu de se limiter à l'anglais comme la plupart des outils de dictée</li>
+            <li><strong>Analyse d'usage intégrée</strong> : une page de statistiques suit les mots dictés, les sessions, la vitesse d'élocution (MPM), la latence moyenne, la répartition des langues et les applications dans lesquelles je dicte le plus (Chrome, Claude, ChatGPT)</li>
+            <li><strong>Dictionnaire personnalisé</strong> : une section pour les mots et termes que le modèle doit toujours reconnaître, au lieu de corriger chaque fois le même mot mal compris</li>
+            <li><strong>Architecture axée sur la confidentialité</strong> : l'audio n'est jamais enregistré sur le disque ; l'historique local et les clés API sont chiffrés pour mon compte Windows ; la durée de conservation des transcriptions et la taille de la base locale sont réglables, avec des options en un clic pour effacer les données temporaires ou ouvrir le dossier de données</li>
+          </ul>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Où en est le projet</span>
+          <div class="result-highlight">
+            <div class="rh-n">En service : v2.3</div>
+            <div class="rh-l">FlowBridge tourne tous les jours sur mon propre PC comme outil de productivité personnel, désormais à sa troisième version et au-delà. Elle n'est ni distribuée, ni vendue, ni proposée comme produit : elle figure ici pour montrer que je sais piloter des outils de développement IA afin de livrer de vrais logiciels fonctionnels et respectueux de la vie privée, pas seulement des comptes publicitaires.</div>
+          </div>
+        </div>
+
+        <div class="cs-section">
+          <span class="label">Outils & plateformes</span>
+          <div class="tools-wrap">
+            <span class="tool-chip">Codex</span> <span class="tool-chip">API Groq</span> <span class="tool-chip">API Gemini (secours)</span> <span class="tool-chip">Reconnaissance vocale bilingue</span> <span class="tool-chip">Analyse d'usage</span> <span class="tool-chip">Stockage local chiffré</span> <span class="tool-chip">Application de bureau Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cs-carousel-wrap">
+        <span class="label">Captures de l'application</span>
+        <div class="carousel">
+          <div class="carousel-slides">
+            <div class="carousel-slide"><img src="/clients-dashboard/FlowBridge Home Dashboard.png" alt="Tableau de bord d&#x27;accueil de FlowBridge"></div>
+            <div class="carousel-slide"><img src="/clients-dashboard/FlowBridge Insights.png" alt="Statistiques et analyse d&#x27;usage de FlowBridge"></div>
+            <div class="carousel-slide"><img src="/clients-dashboard/FlowBridge Settings.png" alt="Paramètres de confidentialité et de conservation de FlowBridge"></div>
+          </div>
+          <button class="carousel-btn carousel-prev">‹</button>
+          <button class="carousel-btn carousel-next">›</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+            <button class="carousel-dot"></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="cs-cta">
+  <div class="container">
+    <span class="label" style="color:#60A5FA; display:block; text-align:center;">Gratuit, sans engagement</span>
+    <h2>Besoin d'un outil sur mesure basé sur l'IA ?</h2>
+    <p>Si vous avez une tâche répétitive qui pourrait être automatisée, parlons-en lors d'un appel gratuit de 15 minutes.</p>
+    <a href="#" onclick="openModal();return false;" class="btn btn-primary btn-lg">Audit gratuit →</a>
+  </div>
+</section>
+
+<footer class="cs-footer">
+  <div class="container cs-footer-inner">
+    <div class="cs-footer-left"><strong>Kamran Arshad</strong> · Ads · SEO · Web · Suivi</div>
+    <div class="cs-footer-links">
+      <a href="https://linkedin.com/in/kamran-arshad24" target="_blank">LinkedIn ↗</a> <a href="mailto:hello@marketingkamran.com">E-mail</a> <a href="/fr/">Portfolio</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const slides = carousel.querySelector('.carousel-slides');
+  const dotBtns = carousel.querySelectorAll('.carousel-dot');
+  const total = carousel.querySelectorAll('.carousel-slide').length;
+  let current = 0, timer;
+  function goTo(n) { current = (n + total) % total; slides.style.transform = `translateX(-${current * 100}%)`; dotBtns.forEach((d, i) => d.classList.toggle('active', i === current)); }
+  function startTimer() { clearInterval(timer); timer = setInterval(() => goTo(current + 1), 3500); }
+  carousel.querySelector('.carousel-prev').addEventListener('click', () => { goTo(current - 1); startTimer(); });
+  carousel.querySelector('.carousel-next').addEventListener('click', () => { goTo(current + 1); startTimer(); });
+  dotBtns.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startTimer(); }));
+  goTo(0); startTimer();
+});
+
+function openModal(){var m=document.getElementById('audit-modal');m.style.display='flex';document.body.style.overflow='hidden';window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'audit_modal_open'});}
+function closeModal(){document.getElementById('audit-modal').style.display='none';document.body.style.overflow='';}
+document.getElementById('audit-modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
+</script>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

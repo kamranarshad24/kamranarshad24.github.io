@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Suivi des conversions : GTM, GA4, CAPI et server side | Kamran Arshad</title>
+<meta name="description" content="Mise en place du suivi des conversions avec Google Tag Manager, GA4, l&#x27;API Conversions de Meta et le tracking côté serveur, vérifié par rapport aux vrais leads et commandes. Audit gratuit.">
+<link rel="canonical" href="https://marketingkamran.com/fr/conversion-tracking-setup.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/conversion-tracking-setup.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/conversion-tracking-setup.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/conversion-tracking-setup.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/conversion-tracking-setup.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/conversion-tracking-setup.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/conversion-tracking-setup.html">
+<meta property="og:title" content="Suivi des conversions : GTM, GA4, CAPI et server side | Kamran Arshad">
+<meta property="og:description" content="Mise en place du suivi des conversions avec Google Tag Manager, GA4, l&#x27;API Conversions de Meta et le tracking côté serveur, vérifié par rapport aux vrais leads et commandes. Audit gratuit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Suivi des conversions : GTM, GA4, CAPI et server side | Kamran Arshad">
+<meta name="twitter:description" content="Mise en place du suivi des conversions avec Google Tag Manager, GA4, l&#x27;API Conversions de Meta et le tracking côté serveur, vérifié par rapport aux vrais leads et commandes. Audit gratuit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Mise en place du suivi des conversions",
+  "serviceType": "Mise en place du suivi des conversions",
+  "description": "Google Tag Manager, GA4, API Conversions de Meta, tagging côté serveur et conversions hors ligne pour les petites entreprises en France, Belgique, Suisse et au Canada.",
+  "url": "https://marketingkamran.com/fr/conversion-tracking-setup.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "France"
+    },
+    {
+      "@type": "Country",
+      "name": "Belgium"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Suivi des conversions",
+      "item": "https://marketingkamran.com/fr/conversion-tracking-setup.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien coûte la mise en place du suivi des conversions ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je fais un devis après l'audit gratuit, car le travail dépend de ce qui est déjà installé et des plateformes que vous utilisez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pouvez-vous réparer un suivi déjà cassé ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. La plupart de mes missions commencent par l'audit d'une configuration existante. Mes notes de terrain couvrent les causes habituelles pour Google Ads, Meta et Snapchat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelles plateformes suivez-vous ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google Ads, GA4, Meta et Snapchat, avec Tag Manager, les pixels, l'API Conversions et des conteneurs côté serveur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "De quoi avez-vous besoin pour commencer ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un accès à votre conteneur Tag Manager, à vos comptes publicitaires et à votre site en tant qu'administrateur ou analyste, je vous guide pour la configuration. En général, cela suffit pour démarrer sous 24 à 48 heures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Travaillez-vous avec des entreprises en France, en Belgique, en Suisse et au Canada ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Je travaille à distance depuis Islamabad, au Pakistan, et j'accompagne actuellement un client au Royaume-Uni. Je communique par WhatsApp et par e-mail, à l'écrit en français si vous le souhaitez, les appels en anglais, et je réponds en quelques heures pendant mes heures de travail."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Menu principal">
+      <a href="/fr/#services">Services</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/blog/">Notes de terrain</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/conversion-tracking-setup.html" hreflang="en" lang="en">English</a></li><li><a href="/de/conversion-tracking-setup.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/conversion-tracking-setup.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/conversion-tracking-setup.html" hreflang="es" lang="es">Español</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/">Accueil</a> &nbsp;/&nbsp; <a href="/fr/#services">Services</a> &nbsp;/&nbsp; Suivi des conversions</div>
+    <h1>Un suivi des conversions que vous pouvez vérifier face à vos vrais leads et commandes</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Mis à jour le <time datetime="2026-10-10">10 oct. 2026</time></span></div>
+    <div class="mkts" aria-label="Marchés desservis"><span>France</span><span>Belgique</span><span>Suisse</span><span>Canada</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Je configure Google Tag Manager, GA4, l'API Conversions de Meta et le tracking côté serveur, puis je compare ce que chaque plateforme annonce avec les leads et commandes que vous avez réellement reçus.</p>
+      <p>La première étape est un audit gratuit de 15 minutes de ce qui se déclenche aujourd'hui.</p>
+    </div>
+    <h2>Ce que vous obtenez</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Tag Manager et GA4 pour les formulaires et les appels</h3></div>
+      <p>Des déclencheurs qui enregistrent une conversion à chaque envoi de formulaire de demande et à chaque clic sur un numéro d'appel, reliés à Google Ads pour que les enchères en tirent des enseignements.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Pixels et API Conversions sans doublons</h3></div>
+      <p>Un pixel par plateforme, l'API Conversions à côté, et une vérification de la déduplication entre les deux, pour que le nombre d'achats corresponde à votre boutique.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Tracking côté serveur et conversions hors ligne</h3></div>
+      <p>Un conteneur serveur qui transmet les données de conversion indépendamment des limites des navigateurs et des bloqueurs de publicité, et un moyen de renvoyer la valeur des missions réservées à Google Ads.</p>
+    </div>
+    <h2>Des preuves issues de vrais comptes</h2>
+    <div class="proof">
+      <span class="tag">Étude de cas</span>
+      <h3>Smile Line Dental, Islamabad</h3>
+      <p>Le cabinet diffusait des Google Ads sans suivre ni les formulaires ni les appels. J'ai installé Tag Manager, configuré des déclencheurs pour les formulaires et les clics d'appel, et relié les événements à Google Ads. Pour la première fois, le cabinet pouvait voir quelles annonces et quels mots clés apportaient des demandes de patients.</p>
+      <p><a href="/fr/smile-line-dental.html">Lire l'étude de cas Smile Line Dental &rarr;</a></p>
+    </div>
+    <div class="proof">
+      <span class="tag">Étude de cas</span>
+      <h3>The Body Essential, e-commerce de mode</h3>
+      <p>Un second pixel installé par une application tierce signalait des achats jamais effectués. Meta affichait environ 100 commandes contre 55 à 70 dans Shopify. Sa désactivation a confirmé qu'environ 30 à 40 pour cent du budget quotidien couraient après des conversions inexistantes.</p>
+      <p><a href="/fr/the-body-essential.html">Lire l'étude de cas The Body Essential &rarr;</a></p>
+    </div>
+    <div class="proof">
+      <span class="tag">Étude de cas</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (R.-U.)</h3>
+      <p>Un conteneur Tag Manager standard, un conteneur côté serveur, l'API Conversions transmise par celui-ci, GA4 et Microsoft Clarity, ainsi qu'un plugin que j'ai écrit pour renvoyer la valeur réelle des missions à Google Ads. Le projet est en cours, les résultats se construisent.</p>
+      <p><a href="/fr/mr-expert-carpet-cleaning.html">Lire l'étude de cas Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <h2>Comment ça marche</h2>
+    <ol class="steps">
+      <li><b>D'abord l'audit</b>Je vérifie ce qui se déclenche, ce qui est en double et ce qui manque, et je compare les chiffres des plateformes à vos vraies commandes ou demandes.</li>
+      <li><b>Construire et corriger</b>Je configure ou répare les balises, supprime les doublons et teste chaque événement avec un vrai envoi ou un vrai achat.</li>
+      <li><b>Transmettre clairement</b>Vous recevez un résumé en langage clair de ce qui est suivi et où le consulter, et je peux continuer à le surveiller.</li>
+    </ol>
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>Combien coûte la mise en place du suivi des conversions ?</summary><p>Je fais un devis après l'audit gratuit, car le travail dépend de ce qui est déjà installé et des plateformes que vous utilisez.</p></details>
+      <details><summary>Pouvez-vous réparer un suivi déjà cassé ?</summary><p>Oui. La plupart de mes missions commencent par l'audit d'une configuration existante. Mes notes de terrain couvrent les causes habituelles pour Google Ads, Meta et Snapchat.</p></details>
+      <details><summary>Quelles plateformes suivez-vous ?</summary><p>Google Ads, GA4, Meta et Snapchat, avec Tag Manager, les pixels, l'API Conversions et des conteneurs côté serveur.</p></details>
+      <details><summary>De quoi avez-vous besoin pour commencer ?</summary><p>Un accès à votre conteneur Tag Manager, à vos comptes publicitaires et à votre site en tant qu'administrateur ou analyste, je vous guide pour la configuration. En général, cela suffit pour démarrer sous 24 à 48 heures.</p></details>
+      <details><summary>Travaillez-vous avec des entreprises en France, en Belgique, en Suisse et au Canada ?</summary><p>Oui. Je travaille à distance depuis Islamabad, au Pakistan, et j'accompagne actuellement un client au Royaume-Uni. Je communique par WhatsApp et par e-mail, à l'écrit en français si vous le souhaitez, les appels en anglais, et je réponds en quelques heures pendant mes heures de travail.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Savez-vous quelles publicités ont généré vos dix derniers leads ?</h2>
+      <p>Réservez un audit gratuit de 15 minutes et je vous indiquerai une chose à corriger cette semaine.</p>
+      <a class="btn" href="/fr/#contact">Réserver mon audit de suivi gratuit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>À lire aussi</h2>
+      <a href="/fr/smile-line-dental.html">Étude de cas Smile Line Dental<span>Refonte Google Ads et suivi des conversions pour un cabinet dentaire.</span></a> <a href="/fr/the-body-essential.html">Étude de cas The Body Essential<span>Le pixel en double qui signalait des achats jamais effectués.</span></a> <a href="/fr/mr-expert-carpet-cleaning.html">Étude de cas Mr Expert Carpet Cleaning<span>Création digitale complète pour une entreprise de services à Slough (R.-U.). En cours.</span></a> <a href="/fr/blog/google-ads-conversion-tracking-not-working.html">Suivi des conversions Google Ads qui ne fonctionne pas : l'ordre de diagnostic<span>Où regarder en premier quand les conversions ne s'enregistrent plus.</span></a> <a href="/fr/blog/google-ads-offline-conversions-booked-jobs.html">Conversions hors ligne Google Ads pour la génération de leads<span>Indiquer à Google Ads quels leads sont devenus des missions réservées.</span></a> <a href="/fr/blog/meta-ads-more-sales-than-shopify.html">Meta annonce 100 commandes. Shopify en annonce 62. Qui ment ?<span>Le rapprochement qui révèle les conversions fantômes.</span></a> <a href="/fr/google-ads-management.html">Gestion Google Ads<span>Une autre façon de vous aider.</span></a> <a href="/fr/meta-ads-management.html">Gestion Meta Ads<span>Une autre façon de vous aider.</span></a> <a href="/fr/ecommerce-ppc-management.html">Gestion PPC e-commerce<span>Une autre façon de vous aider.</span></a> <a href="/fr/local-seo-services.html">Services de SEO local<span>Une autre façon de vous aider.</span></a> <a href="/fr/white-label-ppc-for-agencies.html">PPC et suivi pour les agences<span>Une autre façon de vous aider.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/fr/#contact">Audit gratuit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Publicité payante, SEO et suivi. Islamabad, Pakistan, en télétravail.</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/alphamart.html">AlphaMart</a> &middot; <a href="/fr/the-body-essential.html">The Body Essential</a> &middot; <a href="/fr/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/fr/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/fr/brizaa.html">Brizaa</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>
