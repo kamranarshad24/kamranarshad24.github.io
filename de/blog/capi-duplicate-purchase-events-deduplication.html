@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Doppelte Purchase-Events nach dem Hinzufügen der Conversions API</title>
+<meta name="description" content="Meta Pixel und Conversions API sollten zu einem Event dedupliziert werden. Wenn nicht, zählen Sie Umsatz doppelt oder verlieren die Hälfte. So beweisen Sie, dass es funktioniert.">
+<link rel="canonical" href="https://marketingkamran.com/de/blog/capi-duplicate-purchase-events-deduplication.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/capi-duplicate-purchase-events-deduplication.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/capi-duplicate-purchase-events-deduplication.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/capi-duplicate-purchase-events-deduplication.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/capi-duplicate-purchase-events-deduplication.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/capi-duplicate-purchase-events-deduplication.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://marketingkamran.com/de/blog/capi-duplicate-purchase-events-deduplication.html">
+<meta property="og:title" content="Doppelte Purchase-Events nach dem Hinzufügen der Conversions API">
+<meta property="og:description" content="Meta Pixel und Conversions API sollten zu einem Event dedupliziert werden. Wenn nicht, zählen Sie Umsatz doppelt oder verlieren die Hälfte. So beweisen Sie, dass es funktioniert.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Doppelte Purchase-Events nach dem Hinzufügen der Conversions API">
+<meta name="twitter:description" content="Meta Pixel und Conversions API sollten zu einem Event dedupliziert werden. Wenn nicht, zählen Sie Umsatz doppelt oder verlieren die Hälfte. So beweisen Sie, dass es funktioniert.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Doppelte Purchase-Events nach dem Hinzufügen der Conversions API",
+  "description": "Wenn Meta Pixel und Conversions API zusammen laufen, sollten sie zu einem Event dedupliziert werden. Wenn das nicht passiert, zählen Sie Umsatz entweder doppelt oder verlieren still und leise die Hälfte. Wie Deduplizierung tatsächlich funktioniert und wie Sie beweisen, dass Ihre funktioniert.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/de/",
+    "jobTitle": "Spezialist für Paid Ads & Conversion Tracking"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/capi-duplicate-purchase-events-deduplication.html",
+    "inLanguage": "de"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "de"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Startseite",
+      "item": "https://marketingkamran.com/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Praxisnotizen",
+      "item": "https://marketingkamran.com/de/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Doppelte CAPI Purchase-Events"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Warum sehe ich nach der Installation der Conversions API doppelte Purchase-Events?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weil sowohl das Browser-Pixel als auch der Server den Kauf senden und Meta nicht erkennen kann, dass es dasselbe Event ist. Für die Deduplizierung müssen beide Seiten eine übereinstimmende event_id senden, idealerweise auch denselben event_name. Weichen die IDs ab, zählt Meta zwei getrennte Käufe."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wofür wird event_id in der Meta Conversions API verwendet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sie ist der Schlüssel für die Deduplizierung. Wenn Pixel und Conversions API innerhalb des Deduplizierungsfensters von Meta beide ein Event mit demselben event_name und derselben event_id senden, behält Meta eines und verwirft das andere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist es schlecht, Meta Pixel und Conversions API gleichzeitig zu betreiben?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, beides zu betreiben ist das empfohlene Setup, weil die Serverseite Conversions erfasst, die dem Browser entgehen. Ein Problem ist es nur, wenn die Deduplizierung falsch konfiguriert ist. Dann zählen Sie entweder doppelt oder verlieren Events."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/de/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/de/blog/">Praxisnotizen</a> <a href="/de/#work">Fallstudien</a> <a href="/de/#services">Leistungen</a> <a class="btn" href="/de/#contact">Kostenloser Audit</a>
+    <details class="lang-sw"><summary aria-label="Language">DE</summary><ul><li><a href="/blog/capi-duplicate-purchase-events-deduplication.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/capi-duplicate-purchase-events-deduplication.html" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/fr/blog/capi-duplicate-purchase-events-deduplication.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/capi-duplicate-purchase-events-deduplication.html" hreflang="es" lang="es">Español</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/de/blog/">Praxisnotizen</a> &nbsp;/&nbsp; Server-Side</div>
+    <h1>Sie haben CAPI installiert und Ihr Umsatz hat sich verdoppelt. Hat er nicht.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>12. Aug. 2026</span><span>8 Min. Lesezeit</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Doppelte Käufe nach der Installation der Conversions API bedeuten fast immer eines: <strong>Browser und Server senden für denselben Kauf unterschiedliche <code>event_id</code>-Werte</strong>. Meta dedupliziert anhand übereinstimmender <code>event_name</code> plus <code>event_id</code>. Weichen die IDs ab, kann Meta nicht wissen, dass beide Events dieselbe Bestellung sind, und zählt beide.</p>
+      <p>Gefährlich ist der umgekehrte Fehler, bei dem IDs kollidieren und Sie still und leise echte Verkäufe verlieren.</p>
+    </div>
+
+    <p>Die Conversions API zu installieren ist die richtige Entscheidung. Browser-Tracking verliert Events durch Werbeblocker, Tracking-Schutz, abgebrochene Sitzungen und nicht fertig geladene Seiten, und ein serverseitiger Datenstrom holt einen guten Teil davon zurück. Fast jeder sollte beides betreiben.</p>
+
+    <p>Aber „beides betreiben“ heißt, dass Meta jeden Kauf zweimal gemeldet bekommt, und das Einzige, was eine doppelte Zählung verhindert, ist eine gemeinsame Kennung. Liegt diese Kennung in die eine Richtung falsch, verdoppelt sich Ihr Umsatz auf dem Papier. Liegt sie in die andere Richtung falsch, halbiert sich Ihr Umsatz still und leise.</p>
+
+    <h2>Wie Deduplizierung tatsächlich funktioniert</h2>
+
+    <p>Meta gleicht zwei Felder gemeinsam ab: <code>event_name</code> und <code>event_id</code>. Beide müssen übereinstimmen.</p>
+
+    <div class="compare">
+      <div class="pane bad">
+        <div class="pane-h">&#10007; Doppelt gezählt</div>
+<pre>Browser:
+  event_name: "Purchase"
+  event_id:   <em>"a91f-2026-08-12"</em>
+
+Server:
+  event_name: "Purchase"
+  event_id:   <em>"1047"</em></pre>
+      </div>
+      <div class="pane good">
+        <div class="pane-h">&#10003; Zu einem dedupliziert</div>
+<pre>Browser:
+  event_name: "Purchase"
+  event_id:   <em>"order_1047"</em>
+
+Server:
+  event_name: "Purchase"
+  event_id:   <em>"order_1047"</em></pre>
+      </div>
+    </div>
+
+    <p>Die Regel ist einfach formuliert und in der Praxis leicht zu brechen, weil die beiden Seiten meist von verschiedenen Systemen zu verschiedenen Zeiten gebaut werden. Das Browser-Event erzeugt ein Theme oder ein Tag Manager, das Server-Event eine App, ein Middleware-Dienst oder Ihr eigener Code. Nichts zwingt sie zur Übereinstimmung, und nichts warnt Sie, wenn sie nicht übereinstimmen.</p>
+
+    <h2>Eine Kennung wählen, die nicht abweichen kann</h2>
+
+    <p>Die Kennung muss <strong>pro Bestellung eindeutig</strong> und <strong>auf beiden Wegen identisch</strong> sein. Diese zwei Anforderungen schließen das meiste aus, wonach man zuerst greift.</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Kandidat</th><th>Pro Bestellung eindeutig?</th><th>Auf beiden Seiten gleich?</th><th>Urteil</th></tr></thead>
+        <tbody>
+          <tr><td>Bestell-ID / Bestellnummer</td><td>Ja</td><td>Ja, wenn beide die Bestellung lesen</td><td>Verwenden</td></tr>
+          <tr><td>Zufällig erzeugte UUID</td><td>Ja</td><td>Nur wenn einmal erzeugt und weitergegeben</td><td>Riskant</td></tr>
+          <tr><td>Checkout-ID</td><td>Nicht immer</td><td>Weicht oft von der Bestell-ID ab</td><td>Vermeiden</td></tr>
+          <tr><td>Sitzungs-ID</td><td>Nein</td><td>Nein</td><td>Niemals</td></tr>
+          <tr><td>Zeitstempel</td><td>Nein</td><td>Fast nie</td><td>Niemals</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Zeitstempel sind der schlimmste Kandidat und der verlockendste, weil sie eindeutig aussehen. Das sind sie nicht: Zwei Bestellungen in derselben Sekunde kollidieren, und die Uhr des Browsers ist nicht die Uhr Ihres Servers. Eine UUID ist <em>nur</em> in Ordnung, wenn sie einmal erzeugt und dann an die andere Seite weitergegeben wird. Wenn jede Seite ihre eigene erzeugt, haben Sie eine Duplizierungsmaschine gebaut.</p>
+
+    <div class="note">
+      <b class="l">Der subtilere Fehler: stiller Verlust</b>
+      <p>Alle sorgen sich um doppelte Zählung, weil sie sichtbar ist. Der schlimmere Fehler ist eine Kennung, die nicht eindeutig ist: eine Checkout-ID, die über Bestellungen hinweg wiederverwendet wird, oder ein Wert, der sich wiederholt. Dann dedupliziert Meta korrekterweise zwei <em>tatsächlich verschiedene</em> Käufe zu einem, und Ihnen fehlt echter Umsatz im Reporting, ohne dass irgendwo ein Fehler erscheint.</p>
+      <p>Doppelte Zählung sieht nach guten Nachrichten aus und wird untersucht. Stiller Verlust sieht nach langsamem Rückgang aus und wird den Anzeigen angelastet.</p>
+    </div>
+
+    <h2>Beweisen, dass es funktioniert, statt es anzunehmen</h2>
+
+    <p>Konfiguriert ist nicht dasselbe wie funktionierend. Hier ist der Test, der es klärt, und er dauert etwa fünfzehn Minuten.</p>
+
+    <ol class="steps">
+      <li><b>Eine echte Bestellung aufgeben</b>Ein echter Kauf über den echten Checkout, kein Testlink. Notieren Sie die Bestellnummer.</li>
+      <li><b>Die Event-ID im Browser erfassen</b>Öffnen Sie vor dem Checkout die DevTools, filtern Sie den Network-Tab nach <code>facebook</code>, schließen Sie die Bestellung ab und lesen Sie die <code>eventID</code> im Purchase-Request.</li>
+      <li><b>Die Event-ID auf dem Server erfassen</b>Suchen Sie in den Logs Ihrer CAPI-Integration oder im Events Manager das serverseitige Event zu derselben Bestellung und lesen Sie dessen <code>event_id</code>.</li>
+      <li><b>Zeichen für Zeichen vergleichen</b>Nicht ähnlich. Identisch. Ein Präfix auf einer Seite (<code>order_1047</code> gegenüber <code>1047</code>) ist ein Fehler, kein Detail.</li>
+      <li><b>Die Deduplizierungsberichte prüfen</b>Öffnen Sie im Events Manager das Purchase-Event und sehen Sie nach, wie es empfangen wird. Ein korrekt dedupliziertes Setup zeigt Browser und Server als Quellen für dasselbe Event, nicht zwei getrennte Summen.</li>
+      <li><b>Eine ganze Woche abgleichen</b>Vergleichen Sie die Bestellzahl Ihres Shops mit den Käufen im Events Manager für eine abgeschlossene Woche. Deutlich über Ihrer Bestellzahl bedeutet Duplizierung. Deutlich darunter bedeutet Verlust.</li>
+    </ol>
+
+    <h2>Die Zahl, die zeigt, dass es funktioniert</h2>
+
+    <p>Sobald die Deduplizierung stimmt, lohnt sich der Blick auf die <strong>Event Match Quality</strong>. Sie zeigt, wie viele identifizierende Informationen Sie mit jedem Event senden: gehashte E-Mail, Telefonnummer, Name, Standort, Klick-Kennungen. Sie bestimmt, wie gut Meta eine Conversion der Person zuordnen kann, die die Anzeige gesehen hat.</p>
+
+    <p>Genau hier zahlt sich die Conversions API aus. Ihr Server kennt die E-Mail-Adresse und Telefonnummer des Kunden, weil er gerade etwas gekauft hat. Der Browser oft nicht. Diese Daten serverseitig und korrekt gehasht zu senden, ist meist ein größerer Gewinn, als die blockierten Events zurückzuholen.</p>
+
+    <div class="note">
+      <b class="l">Hashen, und prüfen, dass Sie es getan haben</b>
+      <p>Kundenkennungen müssen vor dem Senden mit SHA-256 gehasht werden. Das ist keine Leistungsfrage, sondern der Unterschied zwischen einem Hash und den rohen personenbezogenen Daten Ihrer Kunden, die Sie an Meta schicken. Wenn Sie die Integration selbst bauen, prüfen Sie das Hashing an einem echten Payload, bevor Sie live gehen, denn ein Fehler hier ist ein Datenschutzvorfall und kein Tracking-Fehler.</p>
+    </div>
+
+    <h2>Was ich nicht behaupte</h2>
+
+    <p>Ich nenne Ihnen keinen Zielwert für die Event Match Quality und keine erwartete Steigerung durch CAPI. Beides hängt vollständig davon ab, welche Kundendaten Sie rechtmäßig erheben dürfen, von Ihrem Checkout und von Ihrem Traffic, und jeder veröffentlichte Benchmark, den ich gesehen habe, stammt von einem Anbieter, dessen Produkt genau die gemessene Zahl verbessert.</p>
+
+    <p>Messen Sie Ihre eigene Ausgangslage vor der Änderung, messen Sie erneut, nachdem sie ein volles Attributionsfenster gelaufen ist, und vergleichen Sie mit sich selbst. Dieser Vergleich ist mehr wert als jeder veröffentlichte Durchschnitt.</p>
+
+
+    <div class="cta">
+      <h2>Unsicher, ob Ihre Deduplizierung funktioniert?</h2>
+      <p>Es ist ein Fünfzehn-Minuten-Check, und die meisten Setups fallen durch. Schicken Sie mir Ihre Shop-URL, und ich sage Ihnen, was ich finde.</p>
+      <a class="btn" href="/de/#contact">Kostenlosen Tracking-Audit erhalten &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Weitere Praxisnotizen</h2>
+      <a href="/de/blog/shopify-additional-scripts-deadline-tracking.html">Shopifys Frist am 26. August: Hat Ihr Tracking überlebt?<span>Was das automatische Upgrade entfernt und der Zehn-Minuten-Check.</span></a> <a href="/de/blog/meta-pixel-not-tracking-purchases-shopify.html">Meta Pixel trackt in Shopify keine Käufe: Was Sie zuerst prüfen sollten<span>Sieben Ursachen, einschließlich des doppelten Pixels, das die Attribution aufteilt.</span></a> <a href="/de/blog/snapchat-purchase-event-not-firing.html">Snapchat Purchase Events werden nicht ausgelöst: die Diagnose-Reihenfolge<span>Sechs Ursachen nach Häufigkeit, mit echten Zahlen aus dem Ads Manager.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spezialist für Paid Ads &amp; Tracking</span> <span><a href="/de/">Startseite</a> &middot; <a href="/de/blog/">Praxisnotizen</a> &middot; <a href="/de/privacy-policy.html">Datenschutz</a></span>
+  </div>
+</footer>
+<script src="/consent-de.js" defer></script>
+</body>
+</html>
