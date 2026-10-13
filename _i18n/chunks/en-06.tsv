@@ -1,0 +1,175 @@
+0def9aabe318	What phase one found on that account
+04f680bc9e12	Two pixels. One installed through the official sales channel, accurate. One installed by a third-party app, reporting purchases that had no corresponding orders.
+250d826d3afc	Meta was reporting around 100 orders against 55 to 70 real ones. Roughly <t0>30 to 40% of a PKR 100,000 daily budget</t0> sat in campaigns optimising toward the inaccurate pixel, campaigns which, in Ads Manager, looked like the strongest in the account.
+0f9370ee3fbf	The previous marketer had not found it. That is not a criticism of their competence; it is a consequence of where they looked. Everything inside Ads Manager was internally consistent. The discrepancy is only visible when you compare Meta against the store, and that comparison sits outside the tool most media buyers live in.
+7c05665e90e7	Phase two: only now, the account itself
+5f603c218486	With trustworthy numbers, the normal audit becomes worth doing:
+2745debaa64a	Area
+2e062db20779	What to check
+e286b46a66ad	Why it matters after phase one
+99b8a5750d3f	Campaign structure
+e77391796e7f	Overlapping audiences, fragmented budgets
+de2fced136ba	Consolidation decisions need real performance data
+b4f57352c166	Optimisation event
+96e82cf93b77	Are campaigns optimising to purchase, or to a proxy?
+b953b8d746f3	A proxy event inherits every flaw of the pixel reporting it
+7b8bf0ce5a18	Attribution settings
+3d1a4c806619	Windows consistent across campaigns?
+4d19ff4a8866	Mixed windows make campaigns non-comparable
+8f6a557068a6	Creative and angles
+f3fb4b9318b6	What actually drove traceable orders
+5fd97f01558b	Only meaningful once phantom conversions are gone
+2867a119acba	Audience overlap
+ab0d4fb57b6f	Campaigns bidding against each other
+76483b0031e3	Raises costs invisibly
+c3c288b5fe93	The handover conversation
+58af869c98b6	If you find something like this, how you present it matters as much as finding it.
+9efba94dcda5	The client has been told for months that these campaigns were working. Someone made those decisions in good faith with the tools in front of them. Leading with &ldquo;your previous marketer missed this&rdquo; makes you look sharp and makes the client feel foolish, which is a poor trade.
+05f9f5fe19df	Lead with the mechanism instead: the discrepancy was only visible from outside Ads Manager, here is the reconciliation, here is the number, here is what happens when we fix it: <t0>including that reported ROAS will fall.</t0> Say that part before you make the change, not after.
+647561262eae	One inherited account, one root cause. Plenty of accounts have honest tracking and genuinely poor campaigns, and phase one will tell you that in an afternoon, which is itself worth knowing before you rebuild something that was fine.
+6fd094540e1f	Phase one is not sufficient either. It establishes whether the numbers can be believed. It does not tell you whether the strategy is any good. It just stops you answering that question with fiction.
+202459d29f67	Just taken over an account you do not trust?
+5833c106cc94	Send me the store URL. I will tell you whether the numbers you have inherited can be believed before you spend against them.
+ed18cd7b0280	<t0>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t1>The reconciliation that finds phantom conversions.</t1></t0> <t2>How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened<t3>The failure that looks like success until you reconcile.</t3></t2> <t4>You Cannot Scale a Campaign You Cannot Trust<t5>Scaling advice assumes something nobody verifies.</t5></t4>
+6b127d886d2f	A gap between Meta and your Shopify order count is normal up to a point. Past it, something is often reporting purchases that never happened. How to tell which.
+65c81de0749b	Meta vs Shopify order mismatch
+1192890dce52	Why does Meta show more sales than Shopify?
+dfa9eba163a9	Some gap is normal because Meta counts view-through and click-through conversions within its attribution window, including people who did not come directly from an ad click. A large gap usually means something else: duplicate pixels, duplicate events, or a pixel firing purchase events on pages that are not real purchases.
+72a42b3591f3	How much discrepancy between Meta and Shopify is normal?
+3103ccbcb60e	There is no universal number, and any article quoting one is guessing. Establish your own baseline while tracking is known to be healthy, then treat deviation from your own figure as the signal rather than comparing yourself to a published average.
+17458dca82d5	Can a second Facebook pixel cause inflated sales numbers?
+0eda2d3c0fab	Yes. If a second pixel is installed by a third-party app and fires purchase events that do not correspond to real orders, Meta will attribute those phantom purchases to whichever campaigns are optimising toward that pixel, inflating reported sales and ROAS.
+e595ab8d3564	<t0>Field Notes</t0> &nbsp;/&nbsp; Attribution
+887f9d835481	Meta says 100 orders. Shopify says 62. Which one is lying?
+0ed9ed7eb432	<t0>Kamran Arshad</t0><t1>13 Aug 2026</t1><t2>10 min read</t2>
+2a52c1b14007	Some gap between Meta and Shopify is normal. Meta counts view-through conversions and uses a different attribution window than your store does. A <t0>large, persistent gap in Meta&rsquo;s favour</t0> is different. It usually means something is reporting purchases that did not happen: a duplicate pixel, duplicate events, or a purchase event firing on a page that is not a purchase.
+941e0c1d5c32	The way to tell them apart is to stop comparing totals and start comparing the right pair of numbers.
+410b557a216a	This is one of the most common questions in ecommerce advertising, and one of the worst-served. Search it and you will find Reddit threads with thirty comments and no conclusion, Shopify Community posts marked unsolved, and vendor articles that list nine causes and then suggest their product.
+2dc4f381644d	So here is a specific account, a specific cause, and the reconciliation that found it.
+bab08ea785fd	The situation
+e27d225ae8ba	I took over a Shopify skincare brand&rsquo;s Meta advertising. The handover came with a problem the previous marketer had not been able to solve: <t0>Meta was reporting around 100 orders. Shopify was showing 55 to 70.</t0>
+6a0959a05522	That gap had been running long enough that the client had stopped trusting either number. And because they could not tell which campaigns were reporting honestly, they were adjusting budgets essentially at random, increasing spend on whatever looked good in Ads Manager, with no way to know whether &ldquo;good&rdquo; meant anything.
+982c3a76fbc7	That is the real damage. Not the wrong number itself, but every decision made downstream of it.
+f012b5c946b4	One Shopify account I took over and audited, a skincare brand running Meta ads at roughly <t0>PKR 100,000 per day</t0>. The client asked me not to name them, so I have not. The numbers below are as they stood in the account during that engagement.
+a6d8292815dd	This is <t0>one account</t0>, not a study. I am giving you the mechanism and one worked example, not a statistic about the industry. And I am not stating precise engagement dates here because I would rather leave them out than approximate them.
+36c77898fe88	First: compare the correct pair of numbers
+860cb1ceb54d	Most people compare Meta&rsquo;s reported conversions against Shopify&rsquo;s total orders, panic at the difference, and start rebuilding things that were never broken. Those two figures are <t0>supposed</t0> to differ.
+b7baa1d40c4e	Number
+78096ac8246d	What it counts
+16c009c6d5fe	How it should compare
+4afcb638fbf1	Shopify orders
+ff559ef1a3a8	Every paid order, from every source
+235b4ae2a190	The ground truth
+dc13f74cf8be	Events Manager purchases
+3b193a473f9f	Purchase events Meta received
+15f9cb616eaa	Should approach Shopify, never exceed it
+ba384a40bb9a	Ads Manager conversions
+1b6feda96372	Purchases Meta credits to your ads
+490d724f2da0	A subset, not every sale came from an ad
+43749b6efd95	Read the middle row again, because it is the one that matters and the one nobody looks at. <t0>Events Manager purchases should be close to your Shopify order count</t0>, since it is counting purchase events regardless of which campaign gets credit. If that number exceeds your real orders, you are not looking at an attribution question. You are looking at events that do not correspond to sales.
+0190090a13d4	Ads Manager conversions being <t0>lower</t0> than Shopify orders is normal and healthy. Events Manager purchases being <t1>higher</t1> than Shopify orders is a defect.
+c8e0104e8718	What was actually happening
+dc78eadd5920	The account had <t0>two Meta pixels installed at the same time</t0>:
+daccca90eb24	One installed through the official Facebook &amp; Instagram sales channel on Shopify. This one was accurate.
+ab58c8e627b4	One installed by a <t0>third-party app</t0>. This one was reporting purchases that never happened.
+a1031043f848	The second pixel is the interesting one, because it was not silent. A silent pixel is easy, you notice zero conversions and go looking. This one was noisy. It reported purchases, those purchases appeared in Ads Manager, and the campaigns optimising toward it showed <t0>strong ROAS</t0>.
+b71b3ffce3f1	None of it existed in Shopify.
+567303755ac2	&#10007; What Ads Manager showed
+035d3616ea9b	&#10003; What Shopify showed
+81bd1e4fbf13	The number that made it urgent
+b8880419f2aa	Of roughly <t0>PKR 100,000 in daily ad spend</t0>, approximately <t1>PKR 30,000 to 40,000 per day</t1> was going to campaigns optimising toward the pixel that was reporting purchases that never happened.
+5d1fc7dbc6c6	That is <t0>30 to 40% of daily budget</t0> flowing to campaigns whose reported success was an artefact. And because those campaigns looked like the best performers in Ads Manager, they were the ones most likely to receive <t1>more</t1> budget. The reporting error was actively recruiting spend toward itself.
+32d2cc46fbd3	The shape of the problem
+93458d350998	One Shopify account &middot; figures as they stood during the engagement
+79001d8b3075	Meta reported
+d4b065ac9065	Shopify actual
+751750a05008	Daily budget
+cd0e5a842cd9	To phantom campaigns
+9fb2b8fb9df5	Order counts are for the comparison period described above. Budget figures are Pakistani rupees per day. The percentage is the number that travels, it does not depend on currency or market.
+68ddc2bc2677	The fix, and what it looked like
+2f423611d96a	I disabled the third-party pixel. The immediate consequence was dramatic and, if you have not seen it before, alarming: <t0>every campaign optimising toward that pixel stopped delivering.</t0>
+be33b62c1faf	That is not a side effect to be nervous about. It is the diagnosis confirming itself. Those campaigns had been running on a conversion signal that was not real; remove the signal and there is nothing left for them to optimise toward.
+3293dde8114d	Within a day or two of clean data, the picture resolved. Reported performance came down, and became true. The client could finally answer the question they had been guessing at for months: <t0>which campaigns are actually producing orders?</t0>
+802be44e1c7c	<t0>Expect the numbers to get worse before they get honest</t0>
+87d217066217	When you remove a source of phantom conversions, your reported ROAS falls. Nothing about the business has changed, you have simply stopped counting sales that were never there. Brief the client before you do it, or you will be explaining a &ldquo;drop in performance&rdquo; you actually caused on purpose.
+51caf8f991d3	Run this reconciliation on your own account
+5ed95da1b9cb	<t0>Pick one settled week</t0>At least two weeks in the past, so attribution windows have closed and reporting has finished filling in.
+526534122337	<t0>Write down three numbers</t0>Shopify orders, Events Manager purchases, Ads Manager conversions, for the same week, same timezone.
+b77538fdd753	<t0>Check the middle number against the first</t0>If Events Manager purchases exceed Shopify orders, stop. You have phantom or duplicate events, and no amount of attribution theory will explain it away.
+2f808c5e9a0b	<t0>Count your pixels</t0>Shopify admin: <t1>Settings &rarr; Customer events</t1>, the <t2>Facebook &amp; Instagram sales channel</t2>, and <t3>Online Store &rarr; Themes &rarr; Edit code</t3> searching <t4>theme.liquid</t4> for <t5>fbq</t5>. More than one pixel ID across those locations is your prime suspect.
+152cda695c52	<t0>Segment by pixel before you touch budgets</t0>Identify which campaigns optimise toward which pixel. If one group&rsquo;s reported orders cannot be traced in Shopify, you have found the leak.
+bd1902a1a341	I am not telling you a normal discrepancy percentage, because there is not one worth quoting. It depends on your traffic mix, your customers&rsquo; browsers, your attribution settings and your market. Every published benchmark I have seen comes from a company selling the fix.
+554506c8b438	Establish your own baseline while things are known to be healthy. Then the signal is deviation from <t0>your</t0> number, which is a real measurement rather than someone else&rsquo;s average.
+a02ba9385047	And this is one account. The mechanism generalises: two pixels, one lying, budget following the lie. The specific split between real and phantom will not.
+faea3ce41c4c	Do your Meta numbers match your Shopify numbers?
+d8661ba32eb3	If they do not, send me your store URL. I will tell you whether it is normal attribution drift or something reporting sales you never made.
+7faf09a5b1d4	<t0>Two Meta Pixels on One Shopify Store Is Not a Backup Plan<t1>Why the entire "install multiple pixels" SERP is answering the wrong question.</t1></t0> <t2>How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened<t3>The failure that looks like success until you reconcile.</t3></t2> <t4>Meta pixel not tracking purchases on Shopify: what to check first<t5>Seven causes, including the pixel split that never looks broken.</t5></t4>
+6d0d57ae58b4	Meta Pixel Not Tracking Shopify Purchases: What to Check
+d87197d53a27	The pixel loads, Pixel Helper is green, and Events Manager shows no purchases. Seven causes in the order worth checking, including the duplicate-pixel problem.
+a461669c3644	The pixel loads, Pixel Helper is green, and Events Manager still shows no purchases. Seven causes in the order worth checking them, including the duplicate-pixel problem that splits your attribution in half without ever looking broken.
+4b2c34f28327	Meta pixel not tracking purchases
+ddcf8d9b4680	Why is my Meta pixel not tracking purchases on Shopify?
+cf75a17edcda	The most common causes are two pixels installed at once splitting the data, the pixel being absent from the page the customer actually lands on after paying, the purchase event firing without required parameters, or the checkout leaving your domain so the browser session breaks before the event can fire.
+d04f1c53b14f	Can having two Facebook pixels cause missing purchases?
+aa8b5f80f53a	Yes. If one pixel is installed through the Shopify sales channel and another is pasted into the theme, events can split between them. Each pixel then reports a fraction of the truth, and neither total looks obviously wrong, which is why this can run for months undetected.
+d5916e6b612b	How do I check if my Meta pixel purchase event is working?
+07e4671ee472	Place a real order and watch the Network tab in Chrome DevTools filtered to facebook.com or facebook.net. Confirm a Purchase event fires with value, currency and an event ID. Then confirm it arrives in Events Manager, which can take a few hours to report.
+717810c07a26	<t0>Field Notes</t0> &nbsp;/&nbsp; Meta Pixel
+07f17d43c83c	Your Meta pixel fires. Your purchases still don&rsquo;t show up.
+12498601e6a8	If your Meta pixel loads but purchases never appear, check in this order: <t0>two pixels installed at once</t0>, the pixel missing from the real confirmation page, a purchase event firing without <t1>value</t1> and <t2>currency</t2>, an off-site payment redirect breaking the session, and deduplication against a Conversions API feed.
+8327335e3c81	The first one is the most common and the hardest to spot, because nothing looks broken.
+eba1b718b30d	&ldquo;The pixel is firing&rdquo; and &ldquo;my purchases are tracked&rdquo; are two different claims, and the gap between them is where most Shopify ad budgets leak. Pixel Helper turning green tells you a pixel exists on the page. It tells you nothing about whether the right event, with the right parameters, reached the right pixel.
+6a843b589ff8	Start here: do you have more than one pixel?
+0d95317b47b0	This is the first thing I check on any account, and it is the problem I have actually found in the wild rather than read about.
+1f6c6280ab6b	On one store I audited, there were <t0>two pixels installed simultaneously</t0>, one through the Shopify integration, one pasted directly into the theme. Both were technically working. Both were reporting. Neither was reporting everything, because events were splitting between them depending on how the page loaded.
+a84538b5dd23	The reason this survives so long is that it never looks broken. There is no error. Pixel Helper shows green. Events Manager shows purchases, just fewer than you actually had. And unless you sit down and reconcile the pixel against Shopify&rsquo;s own order count, you have no reason to suspect the number is a fraction.
+d3629ea42545	<t0>What I can and cannot claim here</t0>
+c500a51cd813	I found this on one client store, and fixing it changed what their reporting showed. I am not going to attach a percentage to the recovery, because the honest answer is that attribution splitting and budget waste are related but not identical, and I would rather give you the mechanism than a number I cannot fully defend.
+5533726a030f	The mechanism is what matters anyway: <t0>two pixels means each one sees part of the truth</t0>, and Meta optimises on what it sees.
+d20b54eb18e8	How to check
+1ba51770c7a8	In Shopify admin, look in three places, because a pixel can be installed in any of them and nothing warns you about the others:
+388a3f2bd10f	<t0>Settings &rarr; Customer events</t0>: custom pixels live here
+7c7cb7c4c0a2	<t0>Facebook &amp; Instagram sales channel</t0>: the official integration
+b9cedae22802	<t0>Online Store &rarr; Themes &rarr; Edit code</t0>: search <t1>theme.liquid</t1> for <t2>fbq</t2> or <t3>connect.facebook.net</t3>
+a4763c4d3d68	If you find a pixel ID in more than one of those, that is your problem. Pick one method, the sales channel is usually the right one, and remove the others.
+49bfd2fc2275	The rest of the sequence
+b96b0e4aece5	The pixel is not on the page the customer actually reaches
+f53cead5c41a	Everyone installs sitewide and assumes the confirmation page inherits it. It often does not, because that page can be rendered outside your theme. If you run post-purchase upsells, the page a customer sees immediately after paying may not be the page you think of as the thank-you page.
+6a6dbc57deab	<t0>The check</t0>Complete a real order. On whatever page you land on, view source and search for your pixel ID. Do not infer it from the theme.
+6ea1d17f8cda	The Purchase event fires without its required parameters
+604ac333fb27	A <t0>Purchase</t0> event without <t1>value</t1> and <t2>currency</t2> is close to useless. Meta cannot optimise toward revenue it was never told about, and value-based bidding has nothing to work with. Missing <t3>content_ids</t3> breaks catalogue matching and dynamic retargeting on top of that.
+62309301d8ed	<t0>The check</t0>In the Network tab, filter for <t1>facebook</t1> and read the query string on the purchase request. Confirm <t2>value</t2>, <t3>currency</t3> and <t4>content_ids</t4> are all present and populated.
+c560bfa858db	Checkout leaves your domain and the session breaks
+107bdaa98d73	When payment hands off to an external gateway and returns the customer to an order-received page, that round trip can break the browser session the pixel depends on. The order completes; the event does not arrive, or arrives stripped of the identifiers needed to attribute it.
+94221a2cb4c6	<t0>The check</t0>Does your payment flow leave your domain? If so, browser-only tracking is best-effort and you need the Conversions API.
+6e857c1aadfd	Deduplication is removing the event on purpose
+38d82505b5ff	If you run the pixel and the Conversions API together (which you should), Meta deduplicates using <t0>event_id</t0>. When the browser and server disagree about what that ID is, you either double-count everything or silently lose one side. Losing one side looks exactly like &ldquo;the pixel stopped working.&rdquo;
+e34596fad05b	<t0>The check</t0>For one order, capture the <t1>event_id</t1> the browser sent and the one your server sent. They must be identical.
+df1bd9ab9ad5	Ad blockers and tracking prevention
+9db2e7bfc89f	A meaningful share of traffic blocks browser-based tracking outright. This is not a bug you can fix, it is a permanent tax on client-side measurement, and it is the reason a browser-only setup will always undercount. The fix is not a fix; it is the Conversions API.
+0f7023a447fa	<t0>The check</t0>Compare Events Manager purchase counts with Shopify&rsquo;s order count for the same period. A persistent gap that scales with volume is usually this.
+a7c3c0758073	You are looking too early
+b37441ebd4bf	Events Manager reporting is not instant. Before concluding an event is missing, wait a few hours and look again. I have watched people rewrite a working checkout because they checked a dashboard ninety seconds after a test order.
+da32602a9e67	<t0>The check</t0>Use the Test Events tool for immediate feedback; use Events Manager for volume, tomorrow.
+60b9cb7861a3	The reconciliation nobody does
+feff648d7696	Here is the exercise that finds problems no checklist will. Pick one week. Write down three numbers:
+6da13addb000	Source
+10f83a7ad249	Expected relationship
+9201211ec1fa	Every paid order, full stop
+d0ef153cb0e4	The truth
+d1f0b6210621	Meta Events Manager purchases
+5a97285b0344	Purchase events received
+8a194912963a	Meta Ads Manager conversions
+a29f27352fce	Purchases Meta attributes to ads
+cb879bf987f9	A subset, not all sales come from ads
+8f6ac98bb772	Most people compare the wrong pair and panic. Ads Manager conversions <t0>should</t0> be lower than Shopify orders, because not every customer came from an ad. The number that should be close to Shopify is <t1>Events Manager purchases</t1>. If that one is far below your order count, you have a tracking problem rather than an attribution question.
+fd32dd765553	And if Events Manager is <t0>higher</t0> than Shopify, you have the opposite problem, usually duplicate events, which is <t1>a different article</t1>.
+80753a73304b	What I am not telling you
+5b900e400b11	I have not given you an expected discrepancy percentage, because the honest range depends on your traffic mix, your checkout, your customers&rsquo; browsers and your country, and every published benchmark I have seen comes from a company selling the fix. Establish your own baseline when things are working, and treat deviation from <t0>your</t0> number as the signal.
+3cca71fd3d6e	The ranking above reflects a small number of accounts plus what the failure modes logically imply. Treat it as a sensible search order rather than a statistic.
+f6f3c200049c	Want someone to just look at it?
+54abf50dfdcf	Send me your store URL. I will tell you what your pixel is actually doing, and you do not need to give me access to anything to start.
+65906f35c583	<t0>Shopify's 26 August Deadline: Did Your Tracking Survive?<t1>What the auto-upgrade removes, and the ten-minute check.</t1></t0> <t2>Duplicate Purchase Events After Installing the Conversions API<t3>How to prove deduplication is actually working, not just configured.</t3></t2> <t4>Snapchat purchase events not firing: the diagnostic sequence<t5>Six causes ranked, with real Ads Manager figures.</t5></t4>
+1b4a84374b60	Is Your Meta Pixel Reporting Purchases That Never Happened?
+02f24b327bc0	A pixel that stops reporting is obvious. The costly failure is one that reports too much, because inflated ROAS attracts budget. Six ways to check yours.
+4b14c2e16e4d	Pixel reporting fake purchases

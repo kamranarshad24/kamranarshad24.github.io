@@ -1,0 +1,216 @@
+a534a293aec7	Full Stack
+9e22f963669b	Site live, full tracking stack operational, and Google Ads actively running. GA4 and Microsoft Clarity collecting data. Ongoing project: results building as campaigns accumulate data.
+569a90ef88ab	<t0> View Live Site: mrexpertcarpetcleaning.com ↗ </t0>
+e4d4b139454e	<t0>Custom Build</t0>
+945b9ac9e9a9	The form was losing leads. So I replaced it with software I wrote.
+208cfde904b9	The site launched on a standard Elementor form, which is <t0>email-first</t0>, it composes an email and sends it. If that send fails, there is no second copy. The lead is simply gone, and nobody knows it existed. On top of that, Google Ads had no way of seeing which clicks turned into booked jobs, so it was optimising toward form submissions rather than revenue.
+6ff9017e7bc9	Rather than bolt on a third-party SaaS with a monthly fee and a data middleman, I built <t0>LeadBridge</t0>, a self-owned WordPress plugin, first-party, no paid dependencies.
+1b18e2a306ec	Save-first architecture
+a22ceb032ea4	Every lead is written to a custom database table <t0>before</t0> any email, webhook or API call is attempted. Integrations are best-effort by design, a failing third-party API can never break lead capture.
+26e0971a09b6	Revenue back into Google Ads
+9855dc4e81fb	Captures <t0>gclid</t0> and UTM parameters at submission, then pushes the real job value back as an offline conversion, including enhanced conversions for leads. Bidding optimises toward money, not form-fills.
+02291548ac16	Mini-CRM
+5a655ce4d06c	Pipeline stages, job value, notes and a revenue dashboard, so the monthly question "what did the ad spend actually earn?" has an answer pulled from the database rather than estimated.
+a357357267f9	Schema-free fields
+c6369e1fbad0	A JSON column stores submitted fields, so the form can change shape without a single database migration. Fields are edited from the admin UI.
+c80ccfd9afcb	<t0>Save-first REST endpoint</t0> <t1>Spam protection</t1> <t2>gclid + UTM capture</t2> <t3>SMTP mailer</t3> <t4>WhatsApp alerts</t4> <t5>Customer auto-reply</t5> <t6>Automatic review requests</t6> <t7>Google Sheet mirror</t7> <t8>CSV export</t8> <t9>Responsive admin UI</t9>
+3cd86003b839	Built as a standard WordPress plugin in PHP classes, form, database, fields editor, mailer, WhatsApp, Google Ads, stats, admin and settings modules. GPL-2.0+, owned outright by the business, with no recurring licence.
+78f16719b502	<t0>Client Dashboard</t0>
+216fd558f8b4	Five data sources, one screen, so the client doesn't have to log into five platforms.
+236ab35afc43	Once the tracking stack, GMB, Search Console and LeadBridge were all live, the data itself was still scattered across five different platforms. So I built a single client-facing dashboard that pulls it all into one place: <t0>Google Ads performance</t0>, <t1>Search Console</t1> (impressions, clicks, indexing status), <t2>Google Business Profile</t2> activity, <t3>LeadBridge</t3> job/revenue data, and <t4>Microsoft Clarity</t4> behaviour insights, all in one view.
+de3b2f082f95	The point isn't just convenience. It means the client can see, at a glance, what's actually happening across every channel without asking me for a report or logging into five separate dashboards themselves.
+3445ece2c7e9	<t0>LeadBridge (custom plugin)</t0> <t1>WordPress</t1> <t2>Elementor</t2> <t3>Google Tag Manager</t3> <t4>GTM Server-Side Container</t4> <t5>Facebook CAPI</t5> <t6>GA4</t6> <t7>Microsoft Clarity</t7> <t8>Google Business Profile</t8> <t9>Google Search Console</t9> <t10>Google Ads</t10> <t11>Local SEO</t11> <t12>Unified Client Dashboard</t12>
+9eff394514fc	Mr Expert Website
+2b9a9166fb6b	Mr Expert GA4
+20a443baf398	Mr Expert SEO
+9a24b6d33b75	Need a full digital setup like this?
+8b5a34d5ff25	Site + tracking + ads. I'll tell you where to start in a free 15-minute call.
+0d02200443ab	Brizaa Case Study | Kamran Arshad
+060f881f0fc6	Shopify store redesign, Meta & Instagram Ads, and CRO work for Brizaa, a Pakistan-based skincare brand.
+c9865eaccb96	Brizaa Case Study
+6e6cd0d024e7	<t0>Shopify</t0> <t1>Meta &amp; Instagram Ads</t1> <t2>Brand Closed</t2>
+ee48bd0fd694	Skincare Brand, Pakistan: Store Redesign, Paid Social &amp; CRO
+1e9f63ffefbf	Shopify Store Redesign
+fa5425a3b91d	Meta <t0>&amp;</t0> IG
+8683c25d3cfa	Paid Social Campaigns
+0dbf2e8b5fe7	Several <t0>Weeks</t0>
+8e38696ec92a	Live Test Window
+0b9078d585fd	A new skincare brand needed a store and a real answer on whether paid demand existed.
+926a80fe24f0	Brizaa was a small, independent skincare brand run by a friend, selling on Shopify. Like most early-stage stores, it needed a stronger storefront and a way to actually test whether paid traffic could convert, rather than guessing.
+9d292a181315	Rebuilt the store, then ran and optimised paid social around it.
+72252557cf22	<t0>Shopify store redesign</t0>: rebuilt the store's design and layout
+c5865a54e137	<t0>Conversion rate optimisation</t0>: worked on the store's layout and product pages to improve how well it converted visitors
+dcbe901c0d07	<t0>Meta &amp; Instagram Ads</t0>: planned, launched, and managed paid social campaigns for the brand over a several-week window
+cf5d7c67c7e2	<t0>Where Things Stand</t0>
+88d86b7721d5	Closed
+dbdff9be1317	The store, design and ad work were completed and live for several weeks. Brizaa has since closed. It's included here as an honest record of the work, not as a live reference.
+d59fa7f6631e	<t0>Shopify</t0> <t1>Meta Ads Manager</t1> <t2>Instagram Ads</t2> <t3>CRO</t3>
+57a468e9497d	<t0>🧴</t0> <t1>No dashboard screenshots were kept for this project, the store is no longer live.</t1>
+b6e31f41dc21	Building or fixing a Shopify store?
+dd70f030306c	I'll audit your store and ad setup in 15 minutes and show you exactly what's holding conversions back.
+969ffaadb059	FlowBridge (Wispr Flow Clone) Case Study | Kamran Arshad
+133183c272e2	FlowBridge: a personal, AI-built bilingual (English/Urdu) speech-to-text desktop app with Groq and Gemini fallback, usage analytics and audio never saved.
+95940a31e4eb	FlowBridge (Wispr Flow Clone) Case Study
+03b8504bf05e	<t0>Personal Project</t0> <t1>AI / Automation</t1> <t2>Groq + Gemini</t2> <t3>English / Urdu</t3>
+a60eb7ff0d58	FlowBridge <t0>(Wispr Flow Clone)</t0>
+ef73cdcdbb3f	Personal Build: Bilingual AI Speech-to-Text App for Windows
+84457474b756	Built with <t0>Codex</t0>
+c210d4db32e7	AI-directed development
+d38e3d8de3fe	Groq <t0>+</t0> Gemini
+b4f4458b8ccf	Primary + fallback speech service
+281d41fd4926	EN <t0>+</t0> UR
+9d26f5a02156	Bilingual dictation
+1ea2a5fb32c7	Privacy <t0>First</t0>
+5b9cf9cf5a4b	Audio never saved to disk
+4478e943c8fa	<t0>Why I Built It</t0>
+954f1f3e4ef8	Wanted a dictation tool that doesn't just transcribe, it cleans up after itself, in two languages.
+2ee59024120c	Wispr Flow is a commercial speech-to-text app. I wanted the same core idea, hold a hotkey, talk instead of type, get clean text wherever the cursor is, but built and owned by me, with support for how I actually work: switching between English and Urdu. So I built my own version, <t0>FlowBridge</t0>, as a personal project.
+9727a19d956e	Directed the entire build with Codex, then wired in real infrastructure around it.
+7f87df8fae6a	<t0>Built end-to-end with Codex</t0>: rather than hand-writing the app, I directed Codex (an AI coding agent) to build it, iterating until the workflow felt right: hold Ctrl+Space, speak, release, and the cleaned-up text lands wherever I was typing
+849c1a8701eb	<t0>Groq primary, Gemini fallback</t0>: speech-to-text runs on Groq for speed, with Gemini wired in as an automatic fallback so dictation doesn't just stop if one service has issues
+1bcbb52be55e	<t0>Bilingual English + Urdu support</t0>: the app transcribes and cleans up both languages, including mixed sessions, rather than being English-only like most dictation tools
+8651019f6f0d	<t0>Built-in usage analytics</t0>: an Insights page tracks words dictated, sessions, speaking speed (WPM), average latency, language mix, and which apps I dictate into most (Chrome, Claude, ChatGPT)
+1da38bfa04d3	<t0>Custom dictionary</t0>: a dictionary section for words/terms the model should always get right, rather than fighting the same misheard word every time
+921e70fa08f9	<t0>Privacy-first architecture</t0>: audio is never saved to disk; local history and API keys are encrypted for my Windows account; transcript retention and local database size are both configurable, with one-click options to clear temporary data or open the data folder
+89db563c7ee1	Working: v2.3
+16c568ef09dc	FlowBridge runs daily on my own PC as a personal productivity tool, now on its third-plus iteration. It isn't distributed, sold, or offered as a product, it's here as a demonstration of directing AI coding tools to ship real, working, privacy-conscious software, not just ad accounts.
+8d743f159a48	<t0>Codex</t0> <t1>Groq API</t1> <t2>Gemini API (fallback)</t2> <t3>Bilingual Speech-to-Text</t3> <t4>Usage Analytics</t4> <t5>Local Encrypted Storage</t5> <t6>Windows Desktop App</t6>
+014aab51e329	<t0>App Screenshots</t0>
+b29fb5cc7006	Need a custom tool built around AI?
+19a77a3804f7	If you've got a repetitive workflow that could be automated, let's talk about it in a free 15-minute call.
+1310da10f7f1	ContentBuilder Case Study | Kamran Arshad
+88336540e2d1	Cold-email deliverability diagnosis (96% inbox on Gmail, 0% on Microsoft), ICP rebuild and outbound copy for ContentBuilder, a US AI training platform.
+b57ece814bc0	ContentBuilder Case Study
+d1fc7d8f5c5d	<t0>🇺🇸 US B2B SaaS</t0> <t1>Outbound &amp; Deliverability</t1> <t2>ICP &amp; Go-to-Market</t2> <t3>Aug – Sep 2026</t3>
+5e1756fb55b7	Content<t0>Builder</t0>
+ac571d1dfa3c	US AI training platform: finding out why cold email wasn't landing, and rebuilding the go-to-market around the right buyer
+5e5541b19896	96% <t0>vs</t0> 0%
+95c8a0fd32b4	Inbox placement, Gmail vs Microsoft. The problem, found and isolated
+383d76a675fa	Verticals researched, narrowed to three for testing
+21c04d9c3766	Audits, research, copy, plans and trackers delivered
+7be0fc7d557d	<t0>The Client</t0>
+f90dd65e011d	A strong product, an AI "marketing office", and an outbound engine that wasn't producing replies.
+52725c795cbe	<t0>ContentBuilder</t0> is a US AI training platform. It turns a company's existing knowledge (docs, SOPs, recordings, policies) into structured, AI-narrated, multilingual training with full LMS delivery (SCORM/xAPI, SSO/SCIM). Its sister module, <t1>Lumi</t1>, handles HR work: writing job descriptions, posting roles, screening applicants and running first-round interviews.
+c1446195557a	I came in as Marketing Manager on contract. The company had an AI "marketing office" with departments and agents already set up, but none of it was connected to real platforms like Search Console, GA4, social publishing or Canva. Cold email was going out, but replies weren't coming back.
+3b5fcfb411a7	<t0>01: Deliverability Diagnosis</t0>
+b19564461fa9	The copy wasn't the problem. Microsoft was sending every email to spam.
+6c15a9ca9938	The easy assumption was bad copy. Before rewriting anything, I ran a full inbox-placement test across every sending mailbox and read all five sub-reports:
+dccd63af92c2	<t0>Google → Google: 96% inbox.</t0> Content, SPF, DKIM and DMARC all passed. Spam-filter score 0, no blacklists.
+6d37d3447e62	<t0>Google → Microsoft: 0% inbox, 100% spam.</t0> Every email to an Outlook or Microsoft 365 address was landing in junk.
+95cd3a3300ab	That isolated the failure to <t0>sender reputation with Microsoft</t0>. Content, authentication and blacklisting were all ruled out. For a B2B audience, where a large share of companies run on Microsoft 365, that alone explains most of the missing replies.
+8852683d97dc	The fix plan: register with Microsoft SNDS/JMRP, add 2–3 sending domains on a second provider, cap volume at 25–40 emails per mailbox per day, segment sends by the recipient's mail provider, and turn off open tracking. I also sized what the client's high-volume target would take in reality: about 200 warmed mailboxes across many domains, with a 3–4 week warm-up that can't be skipped or bought.
+e983046e61a1	<t0>02: ICP &amp; Targeting</t0>
+d353a4102402	Rebuilt the ideal customer, and found one trigger that beats industry or headcount.
+2de9371d306f	<t0>ICP rebuilt from scratch</t0> when the focus moved to the HR product: from HR/L&amp;D directors at 100–2,000-person companies to <t1>owners, founders and COOs at companies with no dedicated HR person</t1>, who feel the hiring pain directly
+315856b6b042	<t0>The best targeting signal: 5+ open roles posted right now.</t0> It's public, dated and free to find, and it predicts buying intent better than industry or company size
+4e479431655a	<t0>15 verticals researched, narrowed to 3</t0> for parallel testing: home &amp; field services, home health &amp; senior care, and multi-site salon/restaurant groups with 10+ locations
+71c52cc7105f	<t0>Five full ICP + offer pairs</t0> for the core training product, plus a <t1>40-company manual lead-fit review</t1> to check that real leads matched the ICP before any budget went into sending
+ea66bda19da6	<t0>03: Outbound Copy &amp; Campaign Build</t0>
+91640dc5be73	Rewrote the sequences to match what's working in cold email right now.
+12f6a6526f89	Fixed structural issues in the original emails: they were signed by "the team" instead of a real person, asked for a 30-minute demo on the first touch, and carried heavy footers. I replaced this with <t0>person-signed emails and a low-commitment 15-minute ask</t0>
+5b82c13fd968	Wrote a <t0>five-campaign launch</t0> using current benchmark data: under 80 words per email, 4–7 touches per sequence, and most of the effort on email one, since that's where most replies come from
+2c8692453391	Delivered the complete launch spec: audiences, campaign structures, and a <t0>reply-handling agent configuration</t0> with a response table for every reply type
+4d8a536429c9	Designed a new offer (a "next-hire practice pack") and a founder-ready approval document for the US outbound push
+d2a646af300f	<t0>04: Protecting the Brand</t0>
+c0b6dfabf7d4	Checked that the product matched the pitch, and flagged legal risk before any email went out.
+434f424b5eda	<t0>Re-audited the live product against the outbound promise</t0> and found it narrower than "runs your HR team". I flagged the gap before it could reach prospects and hurt trust
+55c666281246	<t0>Compliance research on AI hiring tools:</t0> NYC Local Law 144 (annual independent bias audits, published results, 10 business days' candidate notice) and similar rules in Illinois and Colorado, which affect who can safely be pitched a hiring-screening product
+66aa900fc7e6	Reviewed a proposed review-incentive offer against the <t0>FTC rule on consumer reviews and testimonials</t0>
+e8a6de65b47e	<t0>05: SEO, Planning &amp; Reporting</t0>
+5cc846b45fb6	Grounded everything in real data, and reported outcomes rather than activity.
+622f7a19292e	<t0>Full-site SEO &amp; CRO audit</t0> of contentbuilder.ai, plus a <t1>live Google Search Console audit</t1> using real indexation and query data instead of third-party estimates
+5a55b27812db	<t0>20-day research &amp; execution plan</t0> with a working tracker and a one-page summary for the founder
+1216c3494cc7	Built a <t0>demo course</t0> in the product and scripted a <t1>90-second product walkthrough</t1> for sales use
+e8c760507ade	Set up <t0>outcome-based reporting</t0>: delivered, bounce %, inbox placement, replies, positive replies, calls booked, calls held, clients won, MRR added. Daily updates followed a fixed format: decision, why, numbers, lessons, tomorrow
+071f47ca1c7b	<t0>Handover</t0>
+a206f25ea468	Clean handover
+d04f08bc68e6	At the end of the engagement I delivered a structured handover folder: outreach audit, ICP and offer research, campaign copy and setup, strategy, SEO/CRO audit and the execution plan, led by a summary of the deliverability finding and its fixes. All accounts created during the engagement were handed back, and API keys were revoked.
+27fdac70fe2a	<t0> View Live Site: contentbuilder.ai ↗ </t0>
+d0482da8dfde	<t0>Instantly.ai</t0> <t1>Google Workspace</t1> <t2>Microsoft SNDS / JMRP</t2> <t3>Google Search Console</t3> <t4>GA4</t4> <t5>Canva</t5> <t6>Claude</t6> <t7>Codex</t7>
+bc95a3a073d4	<t0>The Product</t0>
+94511aec023f	Sending cold email but getting no replies?
+258c73f0477a	It's often not the copy. I'll check where your emails actually land (Gmail vs Outlook) and who you're sending to, in a free 15-minute call.
+ef85c0f95be0	Privacy Policy | Kamran Arshad
+de18dc177e1a	Privacy Policy for marketingkamran.com, how Kamran Arshad collects, uses, and protects your information.
+f5d9468d0952	</t0> <t0>← Back to Home</t0>
+902c91d94e0f	Legal
+9db108ba6b7f	Privacy Policy
+283171aca3c4	Tracking is what I do for a living, so it matters to me that you know exactly what happens with your information when you visit this site or get in touch.
+9e3c5b08503b	<t0></t0>Last updated: 15 June 2026
+7e439c353ec8	On this page
+a8cd3cac92b0	<t0>Overview</t0>
+b4cf914719e1	<t0>Information I Collect</t0>
+7ee683096150	<t0>How I Use It</t0>
+bcf27d9e0d3c	<t0>Cookies &amp; Tracking</t0>
+c86fedee7aca	<t0>Third-Party Services</t0>
+635f89039cd7	<t0>Data Retention</t0>
+f1ce031fb72b	<t0>Your Rights</t0>
+ecffb702c7ff	<t0>Security</t0>
+1eca0531549e	<t0>Changes</t0>
+23e650f219bc	<t0>Contact</t0>
+419300be5f23	<t0>01</t0> Overview
+dcf7928b816f	This Privacy Policy explains how <t0>Kamran Arshad</t0> ("I", "me", "my") handles information collected through this website (<t1>marketingkamran.com</t1>). I run Google Ads and Meta campaigns, SEO and Google Business Profile work, and build websites, based in Islamabad, Pakistan, working with clients globally.
+696000a0e845	By using this site or contacting me through it, you agree to the practices described below. If you don't agree, please don't use the site or submit your details.
+786ae6ca8dcc	<t0>02</t0> Information I Collect
+021c422bc918	Information you give me
+002307775c1b	When you fill in the contact or "free audit" form, I collect the details you choose to share:
+f08312dbfc66	<t0>Name</t0>: so I know who I'm speaking with
+a448c33e6563	<t0>Email address</t0>: to reply to your enquiry
+5e9b1867a119	<t0>Phone / WhatsApp number</t0>: if you provide one for a quicker response
+4bb91f8d1fd5	<t0>Message details</t0>: anything you tell me about your business, ad accounts, or what you need help with
+8a91412513ae	Information collected automatically
+78425654b2bb	Like most websites, this one automatically records some technical data when you visit, such as your approximate location, browser and device type, pages viewed, and how you arrived here. This is gathered through cookies and analytics tools (see sections below).
+574c98b5a0a4	<t0>03</t0> How I Use Your Information
+1817830bb5fd	I only use your information for clear, limited purposes:
+b117b4c3831b	To respond to your enquiry and provide the free audit or service you requested
+6c4b866978e0	To communicate with you about a project we're working on together
+c157dc063f50	To understand how visitors use the site so I can improve it
+d311cfb301a0	To measure which marketing efforts actually bring people here
+58bb0ce6f17e	<t0>I don't sell your data.</t0> Your information is never sold, rented, or traded. I don't add you to mailing lists or send marketing emails unless you've specifically asked me to.
+f738f21bd766	<t0>04</t0> Cookies &amp; Tracking
+5bf911f1770e	This site uses cookies and similar technologies through <t0>Google Tag Manager</t0>, which can load tools such as Google Analytics (GA4) and advertising pixels. These help me understand traffic and measure performance.
+0211de1de9ec	You can control or block cookies through your browser settings at any time. Blocking them won't break the site, though some anonymous analytics may no longer be recorded. Most browsers also let you browse in a private/incognito mode that limits tracking.
+e8178736bfc6	<t0>05</t0> Third-Party Services
+c5a800ed5b98	A few trusted services help run this site. Each has its own privacy policy governing how it handles data:
+fae674ce7c93	<t0>Google</t0> (Tag Manager &amp; Analytics), site analytics and tag management. See <t1>Google's Privacy Policy</t1>.
+0338f532243d	<t0>FormSubmit</t0>: delivers contact-form submissions to my email. See <t1>FormSubmit</t1>.
+7ed8477f0c40	<t0>GitHub Pages</t0>: hosts this website. See <t1>GitHub's Privacy Statement</t1>.
+532475008118	<t0>Google Fonts</t0>: loads the typefaces used on this site.
+1ed39938a417	I don't control how these third parties process data and am not responsible for their practices, but I only work with reputable providers.
+9eb7eed1cbbc	<t0>06</t0> Data Retention
+7d3ed11a2ed7	I keep enquiry details only as long as needed to respond to you and, where relevant, for the duration of our working relationship plus a reasonable period afterwards for records. If you'd like your details removed sooner, just ask (see <t0>Contact</t0>) and I'll delete them.
+98b3b544e10a	<t0>07</t0> Your Rights
+8466887157fa	Whatever your location, you can ask me to:
+6002518ff34b	<t0>Access</t0> the information I hold about you
+73d69365ffcc	<t0>Correct</t0> anything that's inaccurate
+1fd3116e7dbd	<t0>Delete</t0> your information from my records
+76619002ef1a	<t0>Opt out</t0> of any further contact
+27065f21c54b	To make a request, email me at <t0>hello@marketingkamran.com</t0>. I'll respond as quickly as I can.
+6ddcd74d8169	<t0>08</t0> Security
+5172708f96c1	I take reasonable steps to keep your information safe and only share it with the service providers listed above. That said, no method of transmission over the internet is ever completely secure, so I can't guarantee absolute security.
+875233b8a071	<t0>09</t0> Changes to This Policy
+dd06d51897e4	I may update this policy from time to time as the site or my services evolve. When I do, I'll revise the "Last updated" date at the top of this page. Significant changes will be made clear here.
+89d8f0617d9d	<t0>10</t0> Contact
+985fecae6c3f	Questions about this policy or your data? Reach out any time:
+f3a7ff257d46	Ads · SEO · Web · Tracking · Islamabad, Pakistan
+f65f9451dde7	<t0>✉&nbsp;&nbsp;hello@marketingkamran.com</t0> <t1>💬&nbsp;&nbsp;+92 332 525 2517</t1> <t2>in&nbsp;&nbsp;linkedin.com/in/kamran-arshad24</t2>
+03b21058c043	<t0>About</t0> <t1>Case Studies</t1> <t2>Services</t2> <t3>Privacy Policy</t3>
+d9f27fb8faaf	Tracking Diagnostics | Kamran Arshad
+c04d3194c573	Field notes on broken conversion tracking. Meta pixel, GA4, Google Ads and Snapchat. Written from real accounts, with the numbers and the dates.
+453eb73c4cca	Tracking Diagnostics
+fda2896defe8	Field notes on broken conversion tracking, written from real accounts.
+70898476f085	<t0>Case Studies</t0> <t1>Services</t1> <t2>FAQ</t2> <t3>Get Free Audit</t3>
+0c8de82abd2e	Field Notes
+3df51362a77e	Tracking diagnostics, from real accounts.
+12899bd71a68	Most articles about broken conversion tracking are written by software companies selling the fix. These are written from inside actual ad accounts, with the numbers, the dates, and the parts I couldn't explain.
+dbe6cf999dac	<t0>10 Oct 2026</t0><t1>Google Ads</t1><t2>3 min read</t2>
+cdec81878737	Google Ads Account Audit Checklist for Lead Generation
+28ef280e85e5	Six checks, in order, for a Google Ads account that lives on calls and enquiry forms. Taken from rebuilding a dental clinic's account.
+7adc94c18999	Google Ads Offline Conversions for Lead-Gen Businesses
+b6678d7542da	How to tell Google Ads which leads became booked jobs: save the lead, keep the click ID, record the outcome, send the value back.
+7ec78fa8d5c0	<t0>10 Oct 2026</t0><t1>Local SEO</t1><t2>3 min read</t2>
+77c9f85b2f41	Local SEO Service Pages: One Page per Service and Area
+ce044c7aa5c8	Why a local service business needs a dedicated page for each service and area, and how I structured one for a UK carpet cleaning company.
+c8c84c7b7b59	<t0>13 Aug 2026</t0><t1>Strategy</t1><t2>8 min read</t2>
+30afd4a6106d	You Cannot Scale a Campaign You Cannot Trust
+19a22b37cda8	Scaling advice tells you to double down on your best ROAS. That is sound advice built on an assumption nobody checks: that reported ROAS reflects real sales. When it does not, scaling accelerates the loss.

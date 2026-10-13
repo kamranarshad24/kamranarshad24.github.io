@@ -1,0 +1,144 @@
+e77fdff46237	Auf diese Reihenfolge kommt es an. Erst die Anfrage speichern, dann die E-Mail, die Übergabe ans CRM, die WhatsApp-Benachrichtigung und das Conversion-Event versuchen. Jeder dieser Schritte kann fehlschlagen, ohne dass die Anfrage verloren geht. Drehen Sie die Reihenfolge um, und ein einziger Fehler kostet Sie still und leise einen Kunden.
+1a21c38af467	Ein vernünftiges Setup, Schritt für Schritt
+ce55143ca67a	<t0>Zuerst die Anfrage dauerhaft sichern</t0>Sorgen Sie dafür, dass Formularanfragen an einem Ort gespeichert werden, der kein Postfach ist. Alles Weitere ist optional, das hier nicht.
+20540d6551f7	<t0>Anruf-Assets mit Weiterleitungsnummer aktivieren</t0>So erfassen Sie die Menschen, die direkt aus der Anzeige anrufen, ohne je Ihre Website zu besuchen. Das ist meist ein größerer Anteil, als Inhaber erwarten.
+cb64eb12842a	<t0>Anruf-Tracking auf der Website mit Nummerntausch ergänzen</t0>Damit werden auch Anrufe zugeordnet, die nach dem Besuch der Website erfolgen. Testen Sie es auf einem echten Telefon, denn der Tausch hängt von einem laufenden Skript ab.
+ea45d62d946b	<t0>Eine Mindestanrufdauer festlegen</t0>Sechzig Sekunden sind ein vernünftiger Standardwert. Passen Sie ihn an, sobald Sie sich eine Stichprobe echter Anrufe angehört haben.
+c858fe6aa2cd	<t0>Die Conversion importieren und sich setzen lassen</t0>Bewerten Sie die Änderung frühestens nach zwei Wochen. Gebotsalgorithmen brauchen Zeit, und zwei Wochen Anrufdaten eines lokalen Dienstleisters sind eine kleine Stichprobe.
+a26a632aa733	Wo dieser Rat endet
+18a2a56c712e	Anrufaufzeichnung ist eine andere Entscheidung als Anruf-Tracking, mit eigenen rechtlichen Pflichten, die je nach Land und manchmal je nach Region verschieden sind. Zu wissen, dass ein Anruf stattfand, wie lange er dauerte und welches Keyword ihn ausgelöst hat, reicht zur Optimierung der Kampagnen. Den Inhalt aufzuzeichnen ist ein größerer Schritt, lassen Sie sich vorher beraten.
+c4fda40526ac	Und meine Stichprobe hier sind zwei Unternehmen in zwei Ländern und zwei Branchen. Die Mechanik lässt sich verallgemeinern, die Zahlen nicht. Ich nenne in diesem Artikel keine Kosten pro Anruf, weil ich keine Zahl habe, für die ich bei einem namentlich genannten Konto mit klarem Zeitraum geradestehen kann, und ein erfundener Benchmark wäre für Sie weniger wert als dieser Satz.
+3ecf78099a81	Wissen Sie, welche Suchanfragen Ihre Anrufe bringen?
+0275a616c1d1	Die meisten lokalen Unternehmen mit Google Ads können das nicht beantworten. Schicken Sie mir Ihre Website, und ich sage Ihnen, was getrackt wird und was nicht.
+877d9ef2244f	<t0>Google Ads Konto-Audit: Checkliste für Lead-Generierung<t1>Sechs Prüfungen in der richtigen Reihenfolge, aus dem Neuaufbau eines Zahnarzt-Kontos.</t1></t0> <t2>Google Ads Offline-Conversions für Lead-Gen-Unternehmen<t3>Google Ads mitteilen, welche Anfragen zu gebuchten Aufträgen wurden.</t3></t2> <t4>Shopifys Frist am 26. August: Hat Ihr Tracking überlebt?<t5>Was das automatische Upgrade entfernt und der Zehn-Minuten-Check.</t5></t4> <t6>Meta Pixel trackt in Shopify keine Käufe: Was Sie zuerst prüfen sollten<t7>Sieben Ursachen, einschließlich des doppelten Pixels, das die Attribution aufteilt.</t7></t6> <t8>Google Ads Conversion Tracking funktioniert nicht: die Diagnose-Reihenfolge<t9>Warum ein funktionierendes Tag trotzdem wochenlang nichts melden kann.</t9></t8>
+b3b9c6738d35	Google Ads Conversion Tracking funktioniert nicht: Diagnose-Reihenfolge
+4ad1504eecaa	Wenn Google Ads keine Conversions zeigt, gibt es nur wenige Ursachen. Hier sind sie in Diagnose-Reihenfolge, mit einem Check für jede und dem Grund, warum ein funktionierendes Tag nichts melden kann.
+1d98d31736ec	Wenn Google Ads keine Conversions meldet, gibt es nur eine kurze Liste von Ursachen, und sie sind nicht gleich wahrscheinlich. Hier sind sie in Diagnose-Reihenfolge, mit dem Check für jede, plus dem Grund, warum ein funktionierendes Tag trotzdem wochenlang nichts melden kann.
+9b6b637a9780	Google Ads Conversion Tracking
+28de9c73e4cc	Warum funktioniert mein Google Ads Conversion Tracking nicht?
+9f0a36f692cd	Die häufigsten Ursachen: Das Tag fehlt auf der Seite, die die Aktion bestätigt; die Conversion-Aktion hat eine Kategorie oder Zähleinstellung, die sie verbirgt; das Tag wird ausgelöst, ist aber nicht mit der richtigen Conversion-Aktion verknüpft; Einwilligungseinstellungen blockieren das Tag; oder Attributionsfenster bewirken, dass die Conversion noch nicht gemeldet wurde.
+efe88f384291	Wie lange dauert es, bis Google Ads Conversions anzeigt?
+df5a3c47180f	Conversions können bis zu 24 Stunden brauchen, bis sie im Bericht erscheinen, und sie werden dem Datum des Klicks zugeschrieben, nicht dem Datum der Conversion. Deshalb sehen die letzten Tage immer schlechter aus, als sie am Ende sein werden. Das ist ein normaler Effekt der Berichte und kein Fehler.
+6f8308fb02b8	Wie teste ich, ob mein Google Ads Conversion-Tag ausgelöst wird?
+404785fa9c23	Nutzen Sie Google Tag Assistant im Debug-Modus, führen Sie die Conversion-Aktion selbst aus und prüfen Sie, ob das Conversion-Tag mit der richtigen Conversion-ID und dem richtigen Label ausgelöst wird. Prüfen Sie dann den Status der Conversion-Aktion in Google Ads, der von „Nicht bestätigt“ zu „Conversions werden erfasst“ wechseln sollte.
+1aa1f26f42fb	Google Ads meldet null Conversions. Sie wissen, dass der Verkauf da war.
+2ac103804912	Wenn Google Ads null Conversions meldet, liegt es meist an einer von fünf Ursachen: Das <t0>Tag ist nicht auf der Seite, die die Aktion bestätigt</t0>, das Tag wird ausgelöst, ist aber nicht mit der richtigen Conversion-Aktion verknüpft, die Conversion-Aktion ist von der Spalte „Conversions“ ausgeschlossen, Einwilligungseinstellungen blockieren sie, oder die Conversions existieren, wurden aber noch nicht gemeldet, weil sie dem Klickdatum zugeschrieben werden.
+a9118362f0ce	Das Letzte ist kein Fehler, und es täuscht ständig Menschen.
+560851a9d038	Das ist eines der am häufigsten gesuchten Tracking-Probleme überhaupt, und die Suchergebnisse werden von Forenthreads dominiert, in denen niemand zu einer Antwort kam. Das sagt etwas: Das Symptom ist allgemein, die Ursache meist spezifisch dafür, wie ein bestimmtes Konto verdrahtet wurde.
+7b7fd37aee61	Statt also jede Möglichkeit aufzulisten, hier die Reihenfolge, die ich tatsächlich abarbeite. Sie löst die meisten Fälle in den ersten drei Schritten.
+00a5111d55ac	Bevor Sie etwas ändern: Ist es überhaupt kaputt?
+edc535ef0fe9	Google Ads schreibt eine Conversion dem <t0>Datum des Klicks</t0> zu, nicht dem Datum, an dem die Conversion stattfand. Wer am Montag geklickt und am Donnerstag gekauft hat, erscheint in der Zeile für Montag, und bis Donnerstag sieht der Montag schlechter aus, als er tatsächlich war.
+a26283372342	Praktisch heißt das: <t0>Die letzten Tage unterschätzen die Leistung immer</t0>, und sie füllen sich weiter auf, solange Ihr Conversion-Fenster es zulässt. Wenn Sie auf die letzten drei Tage schauen und daraus schließen, dass das Tracking kaputt ist, sehen Sie vielleicht nur Daten, die noch nicht vollständig eingetroffen sind.
+18563be8752a	<t0>Der Test, der es klärt</t0>
+f1efeb566147	Schauen Sie sich einen Zeitraum an, der vor mindestens zwei Wochen endete und vollständig außerhalb Ihres Conversion-Fensters liegt. Hat dieser Zeitraum Conversions und die letzten Tage nicht, funktioniert Ihr Tracking, und Sie haben einen unvollständigen Bericht gelesen. Steht auch der ältere Zeitraum auf null, lesen Sie weiter.
+46490e02be79	Die Diagnose-Reihenfolge
+5b838be6570e	Der Status der Conversion-Aktion zeigt, wo Sie stehen
+5996c78aff29	Google Ads &rarr; <t0>Ziele</t0> &rarr; <t1>Conversions</t1> &rarr; <t2>Übersicht</t2>. Jede Conversion-Aktion hat einen Status, und er ist die schnellste Diagnose im ganzen Konto.
+f8390fca8ad6	<t0>Keine aktuellen Conversions</t0>: Das Tag wurde einmal erkannt, aber in letzter Zeit nicht mehr. Meist hat sich eine Seite oder Vorlage geändert.
+e2189b70b11a	<t0>Nicht bestätigt</t0>: Google hat noch nie ein Signal empfangen. Das Tag wird nicht dort ausgelöst, wo Sie denken.
+e242f6e7dd5a	<t0>Inaktiv</t0>: Lange Zeit nichts. Behandeln Sie es als kaputt.
+fe40b78ea348	<t0>Conversions werden erfasst</t0>: Das Tag ist in Ordnung, und Ihr Problem liegt woanders, höchstwahrscheinlich beim nächsten Punkt.
+0bff46df9ebd	<t0>Der Check</t0>Lesen Sie den Status, bevor Sie Code anfassen. Er sagt Ihnen, ob es ein Tagging- oder ein Berichtsproblem ist, und die Lösungen dafür sind völlig verschieden.
+4bfb21414982	Die Conversion wird erfasst, ist aber von der Spalte ausgeschlossen
+cac0f62431a5	Das erzeugt die zermürbende Variante des Problems: Die Conversion-Aktion zeigt eindeutig Conversions, aber Ihre Kampagnenansicht sagt null. Die Ursache ist die Einstellung <t0>„In ‚Conversions‘ einbeziehen“</t0>. Ist sie aus, erfasst die Aktion trotzdem, erscheint aber nicht in der Spalte „Conversions“, und Smart Bidding bietet nicht darauf.
+3bc970d73d0f	Sekundäre Conversion-Aktionen sind absichtlich ausgeschlossen. Wenn jemand Ihre Haupt-Kaufaktion als sekundär eingestellt hat, sieht alles kaputt aus, obwohl es einwandfrei funktioniert.
+3fa1f593199e	<t0>Der Check</t0>Öffnen Sie die Conversion-Aktion und prüfen Sie, ob die Einstellung primär/sekundär zu dem passt, worauf Sie optimieren wollen.
+d8510bbc1bec	Das Tag wird ausgelöst, trägt aber das falsche Label
+f89d82347a5d	Ein Google Ads Conversion-Tag braucht sowohl eine Conversion-ID als auch ein Conversion-<t0>Label</t0>. Die ID identifiziert das Konto, das Label die Aktion. Kopieren Sie ein Tag zwischen zwei Conversion-Aktionen und vergessen Sie, das Label zu ändern, wird das Tag einwandfrei ausgelöst, nur in den falschen Topf.
+2825d8a670f4	<t0>Der Check</t0>Führen Sie in Tag Assistant die Aktion aus und lesen Sie das Conversion-Label am ausgelösten Tag. Vergleichen Sie es Zeichen für Zeichen mit dem Label in der Tag-Einrichtung der Conversion-Aktion.
+8bee5002aabb	Consent Mode verweigert die Speicherung, und Sie haben nicht dafür modelliert
+44fe5bc47e8a	Wenn Sie ein Cookie-Banner hinzugefügt haben (und in der EU sollten Sie das), warten Tags jetzt auf eine Einwilligung. Das ist korrektes Verhalten. Aber ein Banner, das standardmäßig alles verweigert und keine Verknüpfung für die Aktualisierung der Einwilligung hat, bedeutet, dass das Conversion-Tag nie seine Erlaubnis bekommt und nie ausgelöst wird.
+f3e25335867a	Dieser Fehler hat eine Signatur: Die Conversions brechen genau an dem Tag ein, an dem das Banner live ging.
+ce907db7e793	<t0>Der Check</t0>Laden Sie die Website frisch, akzeptieren Sie Cookies, führen Sie die Aktion aus und prüfen Sie, ob das Tag ausgelöst wird. Wiederholen Sie es dann mit Ablehnen und prüfen Sie, dass es nicht ausgelöst wird. Beide Richtungen müssen sich wie gewünscht verhalten.
+2330fbf92c97	Das Tag ist nicht auf der Seite, die die Aktion tatsächlich bestätigt
+0c7a239af9d2	Der Klassiker. Das Tag ist auf der Website, aber nicht auf der Danke-Seite, der Bestellstatus-Seite oder der Seite, auf die ein Zahlungsanbieter den Kunden zurückleitet. Auf Lead-Gen-Websites ist das Gegenstück ein Formular, das per AJAX ohne Seitenaufruf absendet, sodass ein Tag, das auf Seitenaufrufe reagiert, nie ausgelöst wird.
+6aadc3a2ba5f	<t0>Der Check</t0>Führen Sie die Conversion selbst aus, sehen Sie sich dann den Quelltext der Seite an, auf der Sie landen, und suchen Sie nach der Conversion-ID.
+09d7fb0a061e	Sobald es funktioniert, lassen Sie es Geld messen
+9fef28112782	Beim ausgelösten Tag hören die meisten auf. Genau dort beginnt die interessante Arbeit, denn eine Conversion-Zählung behandelt jede Anfrage gleich, und Ihre Anfragen sind es nicht.
+89a16046d3ac	Bei Lead-Gen-Konten können Sie mit <t0>erweiterten Conversions für Leads</t0> plus dem Import von Offline-Conversions den echten Wert eines abgeschlossenen Auftrags an Google Ads zurücksenden. Die Gebotsstrategie optimiert dann auf Umsatz statt auf Formularanfragen. Das ist der Unterschied zwischen einem Algorithmus, der Anfragen jagt, und einem, der Kunden jagt.
+7557b976f127	Die Mechanik ist dieselbe wie beim Anruf-Tracking im <t0>Beitrag für lokale Dienstleister</t0>: die Klick-Kennung beim Absenden erfassen, mit der Anfrage speichern und den Wert zurücksenden, wenn der Auftrag gewonnen ist.
+61a0ae3b849d	Grenzen
+4bdec5d3b43c	Die Reihenfolge oben ist eine Suchreihenfolge, keine Häufigkeitstabelle. Sie spiegelt eine kleine Zahl von Konten und die Logik jeder Fehlerart wider, keine Studie. Google Ads ändert seine Oberfläche regelmäßig, deshalb habe ich die Checks wo immer möglich an Status und Tag-Daten festgemacht statt an Menüpositionen.
+0f954270966a	Verlieren Sie Geld wegen einer Zahl, der Sie nicht trauen können?
+1939d1c313b5	Schicken Sie mir die URL Ihrer Website, und ich sage Ihnen, was Ihr Conversion Tracking macht. Für den Anfang ist kein Kontozugriff nötig.
+c2957ee97f9b	<t0>Google Ads Offline-Conversions für Lead-Gen-Unternehmen<t1>Google Ads mitteilen, welche Anfragen zu gebuchten Aufträgen wurden.</t1></t0> <t2>Google Ads Konto-Audit: Checkliste für Lead-Generierung<t3>Sechs Prüfungen in der richtigen Reihenfolge, aus dem Neuaufbau eines Zahnarzt-Kontos.</t3></t2> <t4>Shopifys Frist am 26. August: Hat Ihr Tracking überlebt?<t5>Was das automatische Upgrade entfernt und der Zehn-Minuten-Check.</t5></t4> <t6>Google Ads Anruf-Tracking für lokale Dienstleister<t7>Vier Wege, Anrufe zu tracken, und was jeder wirklich misst.</t7></t6> <t8>Meta Pixel trackt in Shopify keine Käufe: Was Sie zuerst prüfen sollten<t9>Sieben Ursachen, einschließlich des doppelten Pixels, das die Attribution aufteilt.</t9></t8>
+11e98c053a7e	Was ist eine Klick-ID?
+ce096d58a24e	Eine eindeutige Kennung, die Google Ads an die Adresse Ihrer Landingpage anhängt, wenn jemand auf eine Anzeige klickt. Wenn Sie sie mit der Anfrage speichern, können Sie Google Ads später mitteilen, welcher Klick welchen Auftrag gebracht hat.
+0317de3b1abb	Muss ich ein Plugin bauen?
+ea53e958b244	Nein. Entscheidend ist, jede Anfrage mit ihrer Klick-ID zu speichern und das Ergebnis an Google Ads zurückzumelden. Ich habe ein Plugin geschrieben, weil das Formular dieses Kunden zusätzlich Anfragen verlor, wenn E-Mails fehlschlugen.
+ad69d412bafc	Warum nicht einfach Formularanfragen tracken?
+b2ba8e95a064	Eine Formularanfrage zeigt Interesse. Ein gebuchter Auftrag zeigt Umsatz. Wenn nur das Erste gemeldet wird, kann Google Ads nicht lernen, welche Klicks zum Zweiten führen.
+ddf1bf54ca6f	Google Ads mitteilen, welche Anfragen zu gebuchten Aufträgen wurden
+e206c275880b	Google Ads kann nur auf Ergebnisse optimieren, von denen es erfährt. Wenn Ihr Tracking bei der Formularanfrage endet, lernt die Gebotsstrategie, Menschen zu finden, die Formulare ausfüllen.
+51fea1d928c8	Wenn Sie die Klick-ID und den echten Auftragswert an Google Ads zurücksenden, kann es stattdessen auf Umsatz optimieren.
+009598ec96de	Diesen Ansatz habe ich für eine Teppichreinigungsfirma in Slough (Großbritannien) verwendet. Ich beschreibe hier die Methode, und das Projekt läuft noch.
+999ab46c501e	Das Problem, das gelöst wurde
+095119d40edf	Die Website startete mit einem Standard-Elementor-Formular, das E-Mail-zuerst arbeitet: Es verfasst eine E-Mail und verschickt sie. Schlägt der Versand fehl, gibt es keine zweite Kopie. Die Anfrage ist weg, und niemand weiß, dass es sie gab.
+90fd4df59988	Dazu kam, dass Google Ads nicht sehen konnte, welche Klicks zu gebuchten Aufträgen wurden, und deshalb auf Formularanfragen optimierte.
+1287f0378f58	Wie die Lösung funktioniert
+3f7577ef58af	<t0>Zuerst die Anfrage speichern</t0>Jede Anfrage wird in eine Datenbanktabelle geschrieben, bevor eine E-Mail, ein Webhook oder ein API-Aufruf versucht wird. Ein fehlerhafter Drittanbieterdienst kann die Erfassung von Anfragen dann nie lahmlegen.
+0e55d405a155	<t0>Klick-ID und Kampagnenparameter erfassen</t0>Beim Absenden werden die Google-Klick-ID (gclid) und die UTM-Parameter mit der Anfrage gespeichert, sodass jede Anfrage mit dem Anzeigenklick verbunden bleibt, der sie ausgelöst hat.
+e25252af7fc1	<t0>Das Ergebnis erfassen</t0>Pipeline-Phase, Auftragswert und Notizen werden zu jeder Anfrage protokolliert, sodass sich die Frage, was die Werbeausgaben eingebracht haben, aus den Daten beantworten lässt.
+d9b465cfd104	<t0>Den Wert zurücksenden</t0>Der echte Auftragswert wird als Offline-Conversion an Google Ads zurückgespielt, einschließlich erweiterter Conversions für Leads, damit die Gebotsstrategie auf gebuchte Aufträge optimieren kann.
+b3374409091c	Was ich gebaut habe und was Sie tatsächlich brauchen
+faad83d1b7ca	Ich habe das Ganze als eigenes WordPress-Plugin namens LeadBridge gebaut, ohne kostenpflichtige Abhängigkeiten und ohne Drittanbieter als Zwischenhändler für die Daten. Das habe ich gemacht, weil bei diesem Kunden auch das Formular repariert werden musste.
+30b9be85dc76	Für die Methode brauchen Sie mein Plugin nicht. Sie brauchen die vier Schritte: jede Anfrage sicher speichern, die Klick-ID dazu behalten, das Ergebnis erfassen und den Wert an Google Ads zurückmelden.
+d68af3fa0e9c	Laut Google ergänzen erweiterte Conversions für Leads die Klick-ID um gehashte Kundendaten wie eine E-Mail-Adresse, damit auch ohne Klick-ID eine Zuordnung möglich ist. Deshalb sollte der Datensatz der Anfrage beides enthalten.
+291746772683	<t0>Ehrliche Grenzen</t0>
+c93978c50f8e	Mr Expert ist ein laufendes Projekt, und die Ergebnisse bauen sich noch auf. Deshalb nenne ich keine Veränderung der Kosten pro Anfrage oder der Gebotsleistung. Dieser Artikel beschreibt, wie die Methode funktioniert und warum ich sie gebaut habe.
+516fa6eb4b73	Den kompletten Aufbau, einschließlich des einen Dashboards, das Google Ads, Search Console, Google Unternehmensprofil, die Auftrags- und Umsatzdaten aus LeadBridge und Microsoft Clarity in einer Ansicht zusammenführt, finden Sie in der <t0>Fallstudie Mr Expert Carpet Cleaning</t0>.
+5b09a21be89c	Nein. Entscheidend ist, jede Anfrage mit ihrer Klick-ID zu speichern und das Ergebnis an Google Ads zurückzumelden. Ich habe ein Plugin geschrieben, weil das Formular dieses Kunden zusätzlich Anfragen verlor, wenn E-Mails fehlschlugen.
+b2338a133a0c	Optimiert Google Ads auf Ihre Formulare oder auf Ihre Aufträge?
+b48ce1c9c037	<t0>Conversion Tracking einrichten<t1>GTM, GA4, CAPI und Offline-Conversions.</t1></t0> <t2>Google Ads Anruf-Tracking für lokale Dienstleister<t3>So zählen Sie die Anrufe, aus denen Aufträge werden.</t3></t2> <t4>Google Ads Konto-Audit: Checkliste für Lead-Generierung<t5>Sechs Prüfungen in der richtigen Reihenfolge.</t5></t4>
+0caf3ee7e17f	Wie viele Seiten braucht ein lokaler Dienstleister?
+6e933a54e5a5	Eine für jede Leistung, für die Sie gefunden werden wollen, mit den Gebieten, die Sie abdecken. Fügen Sie eigene Gebietsseiten nur hinzu, wenn Sie über jedes Gebiet wirklich etwas anderes zu sagen haben.
+b077d1550472	Reicht ein Google Unternehmensprofil allein aus?
+455af2f8a2a5	Es ist ein starker Start für Maps und die lokale Suche und funktioniert besser zusammen mit einer Website, die für jede Leistung eine Seite hat. Ich behandle beides als Teile eines Setups.
+5da32ac34b4e	Das hängt vom lokalen Wettbewerb und vom Ausgangszustand der Website und des Profils ab, deshalb nenne ich keinen festen Zeitrahmen.
+bcd4708c889b	<t0>Praxisnotizen</t0> &nbsp;/&nbsp; Local SEO
+45e30170d7a6	Eine Seite pro Leistung und Gebiet: So strukturiere ich Local SEO für Dienstleister
+f07a6ba18ca3	Für einen lokalen Dienstleister baue ich eine eigene Seite für jede Leistung und die abgedeckten Gebiete, statt einer Seite, die für alles ranken soll.
+01f6b146fe28	Auf der Website einer Teppichreinigungsfirma in Großbritannien habe ich getrennte Seiten für Teppich-, Sofa-, Matratzen- und gewerbliche Reinigung erstellt, ausgerichtet auf Slough, Berkshire und die Umgebung.
+b6d0cd6ab8ec	Ein Unternehmen mit vier Leistungen hat meist eine Seite, die alle vier erwähnt. Diese Seite ist für Besucher und für Google bei jeder einzelnen Suche nur ein schwacher Treffer.
+03370d910c1e	Warum getrennte Seiten
+be0f5bab8b9a	Wer nach Sofareinigung sucht, will eine Seite über Sofareinigung. Eine Seite über Teppiche, Sofas, Matratzen und gewerbliche Arbeit bedient keine dieser Suchen gut. Eine eigene Seite lässt jede Suche genau dort landen, wonach die Person gefragt hat.
+4b44fdbba146	Was jede Seite braucht
+0aaa3d88e1da	Eine Leistung und eine klare Überschrift
+8d4fab528b00	Seitentitel und Hauptüberschrift nennen Leistung und Gebiet, damit die Seite offensichtlich von einer Sache handelt.
+c8acdeeeef8f	Inhalte, die zu dieser Leistung gehören
+977d020bb820	Was enthalten ist, was der Auftrag umfasst und welche Gebiete Sie dafür abdecken. Inhalte, die nur für diese Leistung Sinn ergeben.
+c7adce277b03	Vertrauenssignale neben dem Versprechen
+320908395cde	Bewertungen, Zertifikate und Vorher-Nachher-Fotos auf der Seite, dort, wo ein Besucher entscheidet, ob er anruft.
+90e36f23416f	Die Korrekturen rund um die Seiten
+6a578af77104	Die Seiten funktionieren besser, wenn die Grundlagen drumherum stimmen. Im selben Projekt habe ich Seitentitel, Meta-Beschreibungen, Überschriftenstruktur, Alt-Texte und interne Links korrigiert, das Google Unternehmensprofil eingerichtet und optimiert und die Search Console verifiziert und ihre Crawling- und Indexierungsprobleme abgearbeitet.
+d5c1e93a023b	<t0>Die Falle, die Sie vermeiden sollten</t0>
+7a9fbdb42c75	Kopieren Sie nicht eine Seite und tauschen nur den Ortsnamen aus. Die Spam-Richtlinien von Google bezeichnen Seiten, die für bestimmte, ähnliche Suchanfragen wie Ortsvarianten erstellt werden, als Missbrauch durch Brückenseiten. Zu jedem Gebiet, das Sie nennen, sollten Sie etwas wirklich Spezifisches zu sagen haben.
+5a814d2c5cee	Mr Expert ist ein laufendes Projekt, und die Ergebnisse bauen sich noch auf, deshalb nenne ich keine Ranking-Zahlen. Dieser Artikel beschreibt die Struktur, die ich verwendet habe, und die Überlegungen dahinter.
+f1b83760b011	Den kompletten Aufbau finden Sie in der <t0>Fallstudie Mr Expert Carpet Cleaning</t0>, und meine Seite zu <t1>Local SEO Leistungen</t1> erklärt, was ich anbiete.
+0c6312fd771d	<t0>Local SEO Leistungen<t1>Google Unternehmensprofil, Leistungsseiten und Indexierungskorrekturen.</t1></t0> <t2>Google Ads Anruf-Tracking für lokale Dienstleister<t3>So zählen Sie die Anrufe, aus denen Aufträge werden.</t3></t2> <t4>Google Ads Konto-Audit: Checkliste für Lead-Generierung<t5>Sechs Prüfungen in der richtigen Reihenfolge.</t5></t4>
+faab6e1ba9a3	Wer ein Meta-Konto übernimmt, erbt undokumentierte Entscheidungen. Prüfen Sie die Messung vor den Creatives, denn jedes Urteil beruht auf ungeprüften Zahlen.
+fdf24be1ca68	Ein übernommenes Meta-Konto prüfen
+b3acc0ad6742	Was sollte ich bei einem Audit eines Meta-Werbekontos zuerst prüfen?
+193f3d1aafc8	Prüfen Sie die Messebene vor den Kampagnen. Zählen Sie die installierten Pixel, gleichen Sie gemeldete Käufe für eine abgeschlossene Woche mit echten Bestellungen ab und prüfen Sie, auf welches Pixel jede Kampagne optimiert. Urteile über Creatives und Targeting sind nur so gut wie die Conversion-Daten darunter.
+64a3979443ee	Wie lange dauert ein Meta Ads Audit?
+8ab1d3cb2a6d	Die Mess-Checks dauern ein paar Stunden. Der Abgleich braucht eine abgeschlossene Woche mit Daten, die mindestens zwei Wochen alt sind, damit die Attributionsfenster geschlossen sind. Der Neuaufbau nach einer Korrektur braucht noch ein bis zwei Tage saubere Daten, bevor sich die Leistung beurteilen lässt.
+260a26c4ade0	Was bedeutet es, wenn übernommene Kampagnen einen hohen ROAS, aber wenig Umsatz zeigen?
+f3b62d199a36	Meist bedeutet es, dass die Conversion-Daten aufgebläht sind. Häufige Ursachen sind doppelte Pixel, Purchase-Events auf Seiten, die keine Bestellungen sind, oder doppelte Events zwischen Browser-Pixel und Conversions API. Gleichen Sie gemeldete Käufe mit den tatsächlichen Shop-Bestellungen ab, bevor Sie irgendeiner Zahl auf Kampagnenebene trauen.
+c669dc7e1370	<t0>Praxisnotizen</t0> &nbsp;/&nbsp; Audit
+fa24a52017c6	Das Erste, was Sie in einem übernommenen Werbekonto prüfen sollten, sind nicht die Anzeigen.
+fe9140da79db	<t0>Kamran Arshad</t0><t1>13. Aug. 2026</t1><t2>9 Min. Lesezeit</t2>
+91445d7b26bb	Wenn Sie ein Meta-Konto übernehmen, prüfen Sie die <t0>Messebene vor den Kampagnen</t0>. Zählen Sie die Pixel, gleichen Sie gemeldete Käufe für eine abgeschlossene Woche mit echten Bestellungen ab und halten Sie fest, auf welches Pixel jede Kampagne optimiert.
+d2fae5a6bba9	Jedes Urteil, das Sie gleich fällen werden, dies pausieren, das skalieren, beruht auf Conversion-Daten, die Sie noch nicht verifiziert haben. Verifizieren Sie sie zuerst.
+e4dba02328d5	Die meisten Audit-Checklisten beginnen mit Creatives, Zielgruppen und Struktur. Die sind wichtig. Sie sind <t0>danach</t0> wichtig, denn jedes davon wird an der gemeldeten Leistung gemessen, und genau der gemeldeten Leistung gibt Ihnen ein übernommenes Konto keinen Grund zu trauen.
+41659929e512	Ich habe ein Konto übernommen, bei dem die falsche Reihenfolge teuer geworden wäre. Die besten Kampagnen im Ads Manager brachten nichts. Wer zuerst die Creatives prüft, hätte geschlossen, dass diese Kampagnen den Gewinner-Ansatz hatten, und noch mehr Geld hineingesteckt.
+18c77c1decfc	<t0>Woher diese Zahlen stammen</t0>
+1b89ea195ceb	Ein Shopify-Konto, das ich übernommen und geprüft habe, eine Hautpflegemarke mit Meta-Anzeigen bei rund <t0>100.000 PKR pro Tag</t0>. Der Kunde hat mich gebeten, ihn nicht zu nennen, also tue ich es nicht. Die Zahlen sind so, wie sie während dieses Auftrags im Konto standen.
+f5e12a0d4ffe	Das ist <t0>ein Konto</t0>, keine Studie. Ich gebe Ihnen den Mechanismus und ein durchgerechnetes Beispiel, keine Branchenstatistik. Und ich nenne hier keine genauen Auftragsdaten, weil ich sie lieber weglasse, als sie zu schätzen.
+076bbbb37deb	Phase eins: Kann man diesen Zahlen glauben?
+3b172c283304	<t0>Die Pixel zählen</t0>Shopify: <t1>Einstellungen &rarr; Kundenereignisse</t1>, der <t2>Facebook &amp; Instagram Vertriebskanal</t2> und <t3>theme.liquid</t3>, durchsucht nach <t4>fbq</t4>. Bestätigen Sie es dann im Browser mit den DevTools, denn konfiguriert und ausgelöst sind verschiedene Dinge. Mehr als eine Pixel-ID ist ein Befund, kein Detail.
+a8445feea23b	<t0>Eine abgeschlossene Woche abgleichen</t0>Käufe im Events Manager gegenüber echten Shop-Bestellungen, gleiche Woche, gleiche Zeitzone, mindestens zwei Wochen alt. Der Events Manager sollte sich Ihrer Bestellzahl annähern und sie nie übersteigen.
+110b88fcdc3f	<t0>Kampagnen den Pixeln zuordnen</t0>Halten Sie für jede aktive Kampagne fest, gegen welches Pixel ihr Conversion-Event konfiguriert ist. Dieser Schritt macht aus einer vagen Abweichung eine konkrete Liste von Kampagnen.
+7ce0720801a3	<t0>Die Bestellungen jeder Gruppe nachverfolgen</t0>Nehmen Sie die Kampagnen an jedem Pixel und versuchen Sie, ihre gemeldeten Bestellungen im Shop zu finden. Eine Gruppe, deren Bestellungen sich nicht nachverfolgen lassen, ist Ihr Problem, und Sie wissen jetzt genau, wie viel Budget sie bindet.
+0a2faf84f6b5	<t0>Das Setup der Conversions API prüfen</t0>Wenn CAPI läuft, prüfen Sie, ob die Deduplizierung tatsächlich funktioniert und nicht nur konfiguriert ist, siehe <t1>den Artikel zur Deduplizierung</t1>.
+71957e99aead	<t0>Die Frage, die Phase eins abschließt</t0>
+e49ce74acd2f	Können Sie in einem Satz sagen, wie viele Käufe der Shop letzte Woche hatte, wie viele Meta zu sehen glaubt, und die Lücke erklären? Wenn nicht, fassen Sie noch kein Budget an. Jede Optimierung ist sonst eine Wette auf Zahlen, die Sie nicht verteidigen können.

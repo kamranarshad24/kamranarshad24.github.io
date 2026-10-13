@@ -1,0 +1,144 @@
+e77fdff46237	This is the order that matters. Write the lead to storage, then attempt the email, the CRM push, the WhatsApp alert and the conversion event. Every one of those can fail without losing the enquiry. Reverse the order and a single failure loses a customer silently.
+1a21c38af467	A sane setup, in order
+ce55143ca67a	<t0>Make the lead durable first</t0>Ensure form submissions are stored somewhere that is not an inbox. Everything downstream is optional; this is not.
+20540d6551f7	<t0>Turn on call assets with a forwarding number</t0>This captures the people who ring straight from the ad without ever visiting your site, usually a bigger share than owners expect.
+cb64eb12842a	<t0>Add website call tracking with number swapping</t0>So calls made after landing on the site are attributed too. Test it on a real phone, because the swap depends on a script running.
+ea45d62d946b	<t0>Set a minimum call duration</t0>Sixty seconds is a reasonable default. Adjust once you have listened to a sample of real calls.
+c858fe6aa2cd	<t0>Import the conversion and let it settle</t0>Do not judge the change for at least two weeks. Bidding algorithms need time, and a fortnight of local-service call data is a small sample.
+a26a632aa733	Where this advice stops
+18a2a56c712e	Call recording is a separate decision from call tracking, with separate legal obligations that vary by country and sometimes by region. Knowing that a call happened, how long it lasted and which keyword produced it is enough to optimise campaigns. Recording its contents is a bigger step, take advice before you do it.
+c4fda40526ac	And my sample here is two businesses, in two countries, in two industries. The mechanics generalise; the numbers do not. I have not published a cost-per-call figure in this article because I do not have one I can stand behind for a named account with a stated date range, and a made-up benchmark would be worth less to you than this sentence.
+3ecf78099a81	Do you know which searches produce your phone calls?
+0275a616c1d1	Most local businesses running Google Ads cannot answer that. Send me your site and I will tell you what is being tracked and what is not.
+877d9ef2244f	<t0>Google Ads Account Audit Checklist for Lead Generation<t1>Six checks in order, from a dental clinic account rebuild.</t1></t0> <t2>Google Ads Offline Conversions for Lead-Gen Businesses<t3>Telling Google Ads which leads became booked jobs.</t3></t2> <t4>Shopify's 26 August Deadline: Did Your Tracking Survive?<t5>What the auto-upgrade removes, and the ten-minute check.</t5></t4> <t6>Meta Pixel Not Tracking Purchases on Shopify: What to Check First<t7>Seven causes, including the duplicate pixel that splits attribution.</t7></t6> <t8>Google Ads Conversion Tracking Not Working: A Diagnostic Order<t9>Why a working tag can still report nothing for weeks.</t9></t8>
+b3b9c6738d35	Google Ads Conversion Tracking Not Working: Diagnostic Order
+4ad1504eecaa	Google Ads showing no conversions has a short list of causes. Here they are in diagnostic order, with a check for each and why a working tag can report nothing.
+1d98d31736ec	Google Ads reporting no conversions has a short list of causes, and they are not equally likely. Here they are in diagnostic order, with the check for each, plus the reason a working tag can still report nothing for weeks.
+9b6b637a9780	Google Ads conversion tracking
+28de9c73e4cc	Why is my Google Ads conversion tracking not working?
+9f0a36f692cd	The most frequent causes are the tag not being present on the page that confirms the action, the conversion action being set to a category or count setting that hides it, the tag firing but not being linked to the right conversion action, consent settings blocking the tag, and attribution windows meaning the conversion has not been reported yet.
+efe88f384291	How long does Google Ads take to show conversions?
+df5a3c47180f	Conversions can take up to 24 hours to appear in reporting, and conversions are credited to the date of the click rather than the date of the conversion. That means recent days always look worse than they eventually will, which is a normal reporting artefact rather than a fault.
+6f8308fb02b8	How do I test if my Google Ads conversion tag is firing?
+404785fa9c23	Use Google Tag Assistant in debug mode, complete the conversion action yourself, and confirm the conversion tag fires with the correct conversion ID and label. Then check the conversion action status in Google Ads, which should move from Unverified to Recording conversions.
+1aa1f26f42fb	Google Ads says zero conversions. You know you got the sale.
+2ac103804912	Google Ads reporting zero conversions usually comes down to one of five things: the <t0>tag is not on the page that confirms the action</t0>, the tag fires but is not linked to the right conversion action, the conversion action is excluded from the &ldquo;Conversions&rdquo; column, consent settings are blocking it, or the conversions exist but have not been reported yet because they are credited to the click date.
+a9118362f0ce	The last one is not a fault, and it fools people constantly.
+560851a9d038	This is one of the most-searched tracking problems there is, and the search results are dominated by forum threads where nobody arrived at an answer. That tells you something: the symptom is generic, and the cause is usually specific to how one account was wired.
+7b7fd37aee61	So rather than listing every possibility, here is the order I actually work through, which resolves most cases in the first three steps.
+00a5111d55ac	Before you change anything: is it actually broken?
+edc535ef0fe9	Google Ads credits a conversion to <t0>the date of the click</t0>, not the date the conversion happened. Someone who clicked on Monday and bought on Thursday appears in Monday&rsquo;s row, and until Thursday, Monday looks worse than it really was.
+a26283372342	The practical effect is that <t0>recent days always understate performance</t0>, and they keep filling in for as long as your conversion window allows. If you are looking at the last three days and concluding tracking is broken, you may just be looking at data that has not finished arriving.
+18563be8752a	<t0>The test that settles it</t0>
+f1efeb566147	Look at a period that ended at least two weeks ago and is fully outside your conversion window. If that period has conversions and recent days do not, your tracking works and you were reading an incomplete report. If that older period is also zero, keep reading.
+46490e02be79	The diagnostic order
+5b838be6570e	The conversion action status tells you where you are
+5996c78aff29	Google Ads &rarr; <t0>Goals</t0> &rarr; <t1>Conversions</t1> &rarr; <t2>Summary</t2>. Each conversion action has a status, and it is the fastest diagnostic in the whole account.
+f8390fca8ad6	<t0>No recent conversions</t0>: the tag was seen once but nothing lately. Usually a page or template changed.
+e2189b70b11a	<t0>Unverified</t0>: Google has never received a signal. The tag is not firing where you think it is.
+e242f6e7dd5a	<t0>Inactive</t0>: nothing for a long period. Treat as broken.
+fe40b78ea348	<t0>Recording conversions</t0>: the tag is fine and your problem is elsewhere, most likely the next item.
+0bff46df9ebd	<t0>The check</t0>Read the status before touching any code. It tells you whether this is a tagging problem or a reporting problem, and those have completely different fixes.
+4bfb21414982	The conversion is recording but excluded from the column
+cac0f62431a5	This one produces the maddening version of the problem: the conversion action clearly shows conversions, but your campaign view says zero. The cause is the <t0>&ldquo;Include in Conversions&rdquo;</t0> setting. If it is off, that action still records, it just does not appear in the Conversions column, and Smart Bidding does not bid toward it.
+3bc970d73d0f	Secondary conversion actions are deliberately excluded by design. If someone set your main purchase action as secondary, everything looks broken while working perfectly.
+3fa1f593199e	<t0>The check</t0>Open the conversion action and confirm the primary/secondary setting matches what you want to optimise toward.
+d8510bbc1bec	The tag fires but carries the wrong label
+f89d82347a5d	A Google Ads conversion tag needs both a conversion ID and a conversion <t0>label</t0>. The ID identifies the account; the label identifies which action. Copy a tag between two conversion actions and forget to change the label, and the tag fires perfectly, into the wrong bucket.
+2825d8a670f4	<t0>The check</t0>In Tag Assistant, complete the action and read the conversion label on the fired tag. Compare it character for character with the label in the conversion action&rsquo;s tag setup.
+8bee5002aabb	Consent Mode is denying storage, and you have not modelled for it
+44fe5bc47e8a	If you added a consent banner (and in the UK and EU you should have), tags now wait for permission. That is correct behaviour. But a banner configured to default everything to denied, with no consent update wiring, means the conversion tag never gets its permission and never fires.
+f3e25335867a	This one has a signature: conversions drop off a cliff on the exact day the banner went live.
+ce907db7e793	<t0>The check</t0>Load the site fresh, accept cookies, complete the action, and confirm the tag fires. Then repeat and reject, and confirm it does not. Both directions must behave as intended.
+2330fbf92c97	The tag is not on the page that actually confirms the action
+0c7a239af9d2	The classic. The tag is on the site but not on the thank-you page, the order-status page, or the page a customer reaches after a payment provider redirects them back. On lead-gen sites, the equivalent is a form that submits by AJAX without a page load, so a page-view-triggered tag never gets a chance to fire.
+6aadc3a2ba5f	<t0>The check</t0>Perform the conversion yourself, then view source on the page you land on and search for the conversion ID.
+09d7fb0a061e	Once it works, make it measure money
+9fef28112782	Getting the tag firing is where most people stop. It is the point at which the interesting work starts, because a conversion count treats every lead as identical, and yours are not.
+89a16046d3ac	For lead-gen accounts, <t0>enhanced conversions for leads</t0> plus offline conversion imports let you send the real value of a closed job back to Google Ads. Bidding then optimises toward revenue instead of form-fills. That is the difference between an algorithm chasing enquiries and one chasing customers.
+7557b976f127	The mechanics are the same as the call-tracking work in <t0>the local service post</t0>, capture the click identifier at submission, store it with the lead, and send the value back when the job is won.
+61a0ae3b849d	Limits
+4bdec5d3b43c	The order above is a search order, not a frequency table, it reflects a small number of accounts and the logic of each failure mode, not a study. Google Ads changes its interface regularly, so I have anchored the checks to statuses and tag payloads rather than menu locations wherever I could.
+0f954270966a	Losing money to a number you cannot trust?
+1939d1c313b5	Send me your site URL and I will tell you what your conversion tracking is doing. No account access needed to start.
+c2957ee97f9b	<t0>Google Ads Offline Conversions for Lead-Gen Businesses<t1>Telling Google Ads which leads became booked jobs.</t1></t0> <t2>Google Ads Account Audit Checklist for Lead Generation<t3>Six checks in order, from a dental clinic account rebuild.</t3></t2> <t4>Shopify's 26 August Deadline: Did Your Tracking Survive?<t5>What the auto-upgrade removes, and the ten-minute check.</t5></t4> <t6>Google Ads Call Tracking for Local Service Businesses<t7>Four ways to track calls, and what each one really measures.</t7></t6> <t8>Meta Pixel Not Tracking Purchases on Shopify: What to Check First<t9>Seven causes, including the duplicate pixel that splits attribution.</t9></t8>
+11e98c053a7e	What is a click ID?
+ce096d58a24e	A unique identifier that Google Ads adds to your landing page address when someone clicks an ad. Storing it with the lead lets you tell Google Ads later which click produced which job.
+0317de3b1abb	Do I need to build a plugin?
+ea53e958b244	No. The requirement is to store each lead with its click ID and report the outcome back to Google Ads. I wrote a plugin because this client's form was also losing leads when emails failed.
+ad69d412bafc	Why not just track form submissions?
+b2ba8e95a064	A form submission shows interest. A booked job shows revenue. If only the first is reported, Google Ads has no way to learn which clicks lead to the second.
+ddf1bf54ca6f	Telling Google Ads which leads became booked jobs
+e206c275880b	Google Ads can only optimise toward the outcomes it is told about. If your tracking stops at the form submission, bidding learns to find people who fill in forms.
+51fea1d928c8	Sending the click ID and the real job value back to Google Ads lets it optimise toward revenue instead.
+009598ec96de	This is the approach I used for a UK carpet cleaning business in Slough. I am describing the method here, and the project is still ongoing.
+999ab46c501e	The problem it solved
+095119d40edf	The site launched on a standard Elementor form, which is email-first: it composes an email and sends it. If that send fails, there is no second copy. The lead is gone and nobody knows it existed.
+90fd4df59988	On top of that, Google Ads had no way of seeing which clicks turned into booked jobs, so it was optimising toward form submissions.
+1287f0378f58	How the fix works
+3f7577ef58af	<t0>Save the lead first</t0>Every lead is written to a database table before any email, webhook or API call is attempted. A failing third-party service can then never break lead capture.
+0e55d405a155	<t0>Capture the click ID and campaign parameters</t0>At submission, the Google click ID (gclid) and UTM parameters are stored with the lead, so each lead stays linked to the ad click that produced it.
+e25252af7fc1	<t0>Record the outcome</t0>Pipeline stage, job value and notes are logged against each lead, so the question of what the ad spend earned can be answered from the data.
+d9b465cfd104	<t0>Send the value back</t0>The real job value is pushed back to Google Ads as an offline conversion, including enhanced conversions for leads, so bidding can optimise toward booked jobs.
+b3374409091c	What I built, and what you actually need
+faad83d1b7ca	I built the whole thing as a self-owned WordPress plugin called LeadBridge, with no paid dependencies and no third-party middleman holding the data. I did that because this client needed the form fixed as well.
+30b9be85dc76	You do not need my plugin to use the method. You need the four steps: store every lead safely, keep the click ID with it, log the outcome, and report the value back to Google Ads.
+d68af3fa0e9c	As Google describes it, enhanced conversions for leads adds hashed customer data, such as an email address, to the click ID so that a match can still be made when a click ID is missing. That is why the lead record should hold both.
+291746772683	<t0>Honest limits</t0>
+c93978c50f8e	Mr Expert is an ongoing project and the results are still building, so I am not quoting a change in cost per lead or bidding performance. This article describes how the method works and why I built it.
+516fa6eb4b73	The full build, including the single dashboard that brings Google Ads, Search Console, Google Business Profile, the LeadBridge job and revenue data, and Microsoft Clarity into one view, is in the <t0>Mr Expert Carpet Cleaning case study</t0>.
+5b09a21be89c	No. The requirement is to store each lead with its click ID and report the outcome back to Google Ads. I wrote a plugin because this client&#x27;s form was also losing leads when emails failed.
+b2338a133a0c	Is Google Ads optimising toward your forms or your jobs?
+b48ce1c9c037	<t0>Conversion tracking setup<t1>GTM, GA4, CAPI and offline conversions.</t1></t0> <t2>Google Ads Call Tracking for Local Service Businesses<t3>How to count the calls that turn into jobs.</t3></t2> <t4>Google Ads Account Audit Checklist for Lead Generation<t5>Six checks in order.</t5></t4>
+0caf3ee7e17f	How many pages does a local service business need?
+6e933a54e5a5	One for each service you want to be found for, with the areas you cover described on it. Add separate area pages only when you have something genuinely different to say about each area.
+b077d1550472	Is a Google Business Profile enough on its own?
+455af2f8a2a5	It is a strong start for Maps and local search, and it works better alongside a website with a page for each service. I treat them as parts of one setup.
+5da32ac34b4e	It depends on local competition and the starting state of the site and profile, so I do not quote a fixed timeline.
+bcd4708c889b	<t0>Field Notes</t0> &nbsp;/&nbsp; Local SEO
+45e30170d7a6	One page per service and area: how I structure local SEO for a service business
+f07a6ba18ca3	For a local service business I build a dedicated page for each service and the areas it covers, instead of one page trying to rank for everything.
+01f6b146fe28	On a UK carpet cleaning site I created separate pages for carpet, sofa, mattress and commercial cleaning, aimed at Slough, Berkshire and the surrounding areas.
+b6d0cd6ab8ec	A business that offers four services usually has one page that mentions all four. That page gives both the visitor and Google a weak match for each individual search.
+03370d910c1e	Why separate pages
+be0f5bab8b9a	Someone searching for sofa cleaning wants a page about sofa cleaning. A page about carpets, sofas, mattresses and commercial work serves none of those searches well. A dedicated page lets each search land on exactly what the person asked for.
+4b44fdbba146	What each page needs
+0aaa3d88e1da	One service and one clear heading
+8d4fab528b00	The page title and main heading name the service and the area, so the page is obviously about one thing.
+c8acdeeeef8f	Content that belongs to that service
+977d020bb820	What is included, what the job involves and which areas you cover for it. Content that only makes sense for this service.
+c7adce277b03	Trust signals next to the claim
+320908395cde	Reviews, certifications and before and after photos placed on the page, where a visitor decides whether to call.
+90e36f23416f	The fixes around the pages
+6a578af77104	The pages work better when the basics around them are right. On the same project I corrected page titles, meta descriptions, heading structure, image alt text and internal links, set up and optimised the Google Business Profile, and verified Search Console and worked through the crawl and indexing issues it showed.
+d5c1e93a023b	<t0>The trap to avoid</t0>
+7a9fbdb42c75	Do not clone one page and swap the town name. Google&#x27;s spam policies call pages created to rank for specific, similar search queries, such as place variations, doorway abuse. Each area you name should have something genuinely specific to say.
+5a814d2c5cee	Mr Expert is an ongoing project and its results are still building, so I am not quoting ranking numbers. This article describes the structure I used and the reasoning behind it.
+f1b83760b011	The full build is in the <t0>Mr Expert Carpet Cleaning case study</t0>, and my <t1>local SEO services</t1> page explains what I offer.
+0c6312fd771d	<t0>Local SEO services<t1>Google Business Profile, service pages and indexing fixes.</t1></t0> <t2>Google Ads Call Tracking for Local Service Businesses<t3>How to count the calls that turn into jobs.</t3></t2> <t4>Google Ads Account Audit Checklist for Lead Generation<t5>Six checks in order.</t5></t4>
+faab6e1ba9a3	Taking over a Meta account means inheriting undocumented decisions. Audit measurement before creative, because every judgement rests on unverified numbers.
+fdf24be1ca68	Auditing an inherited Meta account
+b3acc0ad6742	What should I check first when auditing a Meta ad account?
+193f3d1aafc8	Check the measurement layer before the campaigns. Count the pixels installed, reconcile reported purchases against real orders for a settled week, and confirm which pixel each campaign optimises toward. Judgements about creative and targeting are only as good as the conversion data underneath them.
+64a3979443ee	How long does a Meta ads audit take?
+8ab1d3cb2a6d	The measurement checks take a few hours. The reconciliation needs a settled week of data that is at least two weeks old so attribution windows have closed. Rebuilding after a fix needs a further day or two of clean data before performance can be judged.
+260a26c4ade0	What does it mean if inherited campaigns show high ROAS but low revenue?
+f3b62d199a36	It usually means the conversion data is inflated. Common causes are duplicate pixels, purchase events firing on pages that are not orders, or duplicate events between the browser pixel and the Conversions API. Reconcile reported purchases against actual store orders before trusting any campaign-level number.
+c669dc7e1370	<t0>Field Notes</t0> &nbsp;/&nbsp; Audit
+fa24a52017c6	The first thing to audit in an inherited ad account is not the ads.
+fe9140da79db	<t0>Kamran Arshad</t0><t1>13 Aug 2026</t1><t2>9 min read</t2>
+91445d7b26bb	When you inherit a Meta account, audit the <t0>measurement layer before the campaigns</t0>. Count the pixels, reconcile reported purchases against real orders for a settled week, and map which pixel each campaign optimises toward.
+d2fae5a6bba9	Every judgement you are about to make, pause this, scale that, rests on conversion data you have not yet verified. Verify it first.
+e4dba02328d5	Most audit checklists start with creative, audiences and structure. Those matter. They matter <t0>second</t0>, because each one is judged against reported performance, and reported performance is exactly the thing an inherited account gives you no reason to trust.
+41659929e512	I took over an account where doing this in the wrong order would have been expensive. The best-performing campaigns in Ads Manager were producing nothing. Audit the creative first and you would conclude those campaigns had the winning angle, and put more money behind them.
+18c77c1decfc	<t0>Where these figures come from</t0>
+1b89ea195ceb	One Shopify account I took over and audited, a skincare brand running Meta ads at roughly <t0>PKR 100,000 per day</t0>. The client asked me not to name them, so I have not. The numbers are as they stood in the account during that engagement.
+f5e12a0d4ffe	This is <t0>one account</t0>, not a study. I am giving you the mechanism and one worked example, not an industry statistic. And I am not stating precise engagement dates here because I would rather omit them than approximate them.
+076bbbb37deb	Phase one: can these numbers be believed?
+3b172c283304	<t0>Count the pixels</t0>Shopify: <t1>Settings &rarr; Customer events</t1>, the <t2>Facebook &amp; Instagram sales channel</t2>, and <t3>theme.liquid</t3> searched for <t4>fbq</t4>. Then confirm in the browser with DevTools, because configured and firing are different things. More than one pixel ID is a finding, not a detail.
+a8445feea23b	<t0>Reconcile a settled week</t0>Events Manager purchases versus real store orders, same week, same timezone, at least two weeks old. Events Manager should approach your order count and never exceed it.
+110b88fcdc3f	<t0>Map campaigns to pixels</t0>For every active campaign, record which pixel its conversion event is configured against. This is the step that turns a vague discrepancy into a specific list of campaigns.
+7ce0720801a3	<t0>Trace each group&rsquo;s orders</t0>Take the campaigns attached to each pixel and try to find their claimed orders in the store. A group whose orders cannot be traced is your problem, and you now know exactly how much budget it holds.
+0a2faf84f6b5	<t0>Check the Conversions API setup</t0>If CAPI is running, confirm deduplication is actually working rather than merely configured, see <t1>the deduplication article</t1>.
+71957e99aead	<t0>The question that ends phase one</t0>
+e49ce74acd2f	Can you state, in one sentence, how many purchases the store made last week and how many Meta thinks it made, and explain the gap? If not, do not touch a budget yet. Every optimisation you make is a bet on numbers you cannot defend.

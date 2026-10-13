@@ -1,0 +1,161 @@
+24ebe1e9eeeb	Can a Facebook pixel report purchases that did not happen?
+babcfc871da5	Yes. A misconfigured pixel can fire a purchase event on a page that is not a completed order, fire repeatedly on page refreshes, or be installed by a third-party app that triggers events on the wrong conditions. Meta records what it receives, so those events appear as real purchases in reporting.
+ec0119c874de	How do I know if my Meta pixel data is accurate?
+aae7393b63c2	Reconcile a settled week. Compare Events Manager purchase count against your store order count for the same period and timezone. Events Manager should approach your order count and never exceed it. If it exceeds it, you have phantom or duplicate events.
+5418e786d870	Why does my Facebook ROAS look good but I have no sales?
+91d8d8f26649	Because ROAS is calculated from the conversion data the pixel reports, not from your bank account. If the pixel is reporting purchases that never happened, ROAS is computed on revenue that does not exist and will look excellent while the business makes nothing.
+959ef04016e2	A silent pixel is easy. A lying pixel takes your budget with it.
+c54881e64155	<t0>Kamran Arshad</t0><t1>13 Aug 2026</t1><t2>8 min read</t2>
+98323b3697fb	A pixel that stops reporting gets noticed within days, because conversions fall to zero and someone panics. A pixel that reports <t0>too much</t0> can run for months, because inflated ROAS looks like success, and Meta responds by sending more budget toward the campaigns producing it.
+d34f7f2af0bf	The only reliable test is reconciliation: does the purchase count in Events Manager correspond to real orders in your store?
+cdd95180a73e	Almost every troubleshooting article treats missing conversions as the problem. In practice the more damaging failure runs the other way, because it does not look like a failure. It looks like your best campaign.
+59c6f37697b7	Why over-reporting is worse than under-reporting
+2bdf352636c4	Under-reporting costs you optimisation quality. Meta sees fewer conversions than really happened, so it learns more slowly and you probably under-invest in something that works. Bad, but self-limiting.
+c281db6edd40	Over-reporting is different, because it creates a feedback loop. Inflated conversions produce inflated ROAS. Inflated ROAS makes a campaign look like a winner. Winners get more budget. More budget produces more phantom conversions.
+9b1175b8c852	<t0>The error recruits spend toward itself.</t0> That is why it can consume a third of a daily budget before anyone questions it, every signal available inside Ads Manager says the campaign is working.
+1ba6204e933b	Six checks, cheapest first
+d872c0f98764	Reconcile a settled week
+4825c0f34e1f	The single highest-value check, and most accounts have never had it done. Take one week that ended at least two weeks ago. Compare Events Manager purchases against your store&rsquo;s order count for the same period and timezone.
+41e6d75dafbe	Events Manager should approach your order count. It should never exceed it. Events Manager counts purchase events, and a purchase event without an order is by definition not a purchase.
+155676215d4b	<t0>Verdict</t0>Events Manager higher than store orders means phantom or duplicate events. Nothing about attribution windows explains this away.
+69435dd4b6de	Count your pixels
+c124276cd789	On the account behind this article, the cause was a second pixel installed by a third-party app, reporting purchases with no corresponding orders. Check <t0>Settings &rarr; Customer events</t0>, the <t1>Facebook &amp; Instagram sales channel</t1>, and <t2>theme.liquid</t2>. More than one pixel ID is your first suspect, see <t3>the article on multiple pixels</t3>.
+0699af8ab602	<t0>Verdict</t0>Two pixel IDs and a discrepancy in the same account is rarely a coincidence.
+99cb783598b2	Check whether the purchase event fires on a refresh
+24565c2497aa	Complete a real order, land on the confirmation page, then refresh it. Watch the Network tab. If a second purchase event fires, every customer who refreshes, bookmarks or revisits that page is inflating your numbers. Without a unique <t0>event_id</t0> or order identifier, Meta has no way to know it is the same sale.
+2d52b877ae14	<t0>Verdict</t0>A purchase event on refresh means your counts drift upward with traffic, not with sales.
+ea7aa83ec533	Check what page the purchase event is bound to
+7c1e5dca21fa	A purchase event should fire on order completion and nowhere else. Misconfigured apps sometimes bind it to add-to-cart, initiate-checkout, or any page matching a loose URL rule. Every one of those produces purchases with no orders behind them.
+7e6747f10eec	<t0>Verdict</t0>Walk your funnel with the Network tab open. A purchase event before payment is a defect, not an optimisation.
+f29fc4e8a8ae	Segment reported conversions by campaign, then trace them
+763295ef18d3	Do not evaluate the account as one number. Group campaigns by which pixel they optimise toward, then try to trace each group&rsquo;s claimed orders in your store. On that account, one group&rsquo;s orders could not be traced at all, and that group was consuming roughly 30 to 40% of daily spend.
+fa362705680c	<t0>Verdict</t0>A campaign group whose orders you cannot find in your store is the leak.
+a5e008ef5d5f	Compare purchase value against real revenue
+e12f73b47105	Counts can look plausible while values are nonsense. Compare total purchase value reported for a settled week against actual revenue for the same week. A value materially above real revenue means events are firing with wrong or duplicated values, even if the count looks close.
+573a1584af39	<t0>Verdict</t0>Check both count and value. They fail independently.
+ea66f9f56b09	What to do when you find it
+fa4028f451fd	Fix the source rather than the symptom. Disabling a misconfigured pixel or correcting the event trigger will cause the affected campaigns to stop delivering, that is the diagnosis confirming itself, not a new problem.
+91b815869b96	Then brief whoever owns the budget <t0>before</t0> they see the dashboard. Reported ROAS will fall. Revenue will not, because the revenue you are removing never existed. That conversation is much easier held in advance than in retrospect.
+21356c071260	<t0>The uncomfortable part</t0>
+e7d9220453b3	If a campaign has been optimising toward phantom conversions for months, Meta has spent that time learning to find people who trigger phantom conversions. Rebuilding on clean data takes time, and early performance on the corrected setup will look worse than the fiction it replaced. That is the cost of having been wrong, not the cost of fixing it.
+206e4c5a70b8	One account, one cause. Over-reporting has other sources, duplicate CAPI events without matching identifiers, test events left running, several apps firing the same conversion. The reconciliation in check one detects all of them; identifying which requires the rest.
+faf55d9f0f03	I am also not giving you a threshold for &ldquo;too much&rdquo;. Compare against your own store&rsquo;s orders. That comparison is exact, which is more than any benchmark can offer.
+dc2bef3c95d2	Are your reported purchases real?
+6710b6abe3a9	It takes fifteen minutes to find out and most accounts have never been checked. Send me your store URL.
+da15fd0c3373	<t0>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t1>The reconciliation that finds phantom conversions.</t1></t0> <t2>Two Meta Pixels on One Shopify Store Is Not a Backup Plan<t3>Why the entire "install multiple pixels" SERP is answering the wrong question.</t3></t2> <t4>Meta pixel not tracking purchases on Shopify: what to check first<t5>Seven causes, including the pixel split that never looks broken.</t5></t4>
+125d680d8f9e	Scaling advice says double down on your best ROAS. That assumes reported ROAS reflects real sales. When it does not, scaling accelerates the loss.
+045140eaaaa3	Scaling on unreliable data
+2d1810d851a4	How do I know which Facebook campaign to scale?
+9dc4b33adff8	Scale the campaign whose reported orders you can trace in your store. Before comparing ROAS between campaigns, reconcile reported purchases against real orders, because a campaign with inflated conversion data will always appear to be your best performer.
+4584e7deb1e6	Why did my ROAS drop after scaling?
+98dd0fad277f	Common causes include audience saturation, moving out of the algorithm learning phase, and increased competition. But if the drop was immediate and severe, check whether the pre-scaling ROAS was real, because inflated conversion data produces excellent apparent performance that cannot survive contact with a larger budget.
+6836e5a14a4b	Should I scale a campaign with high ROAS but no matching revenue?
+1605c7ee7b30	No. A campaign reporting strong ROAS while your store shows no corresponding orders is reporting conversions that did not happen. Scaling it increases spend against a signal that does not exist.
+7805e942aff4	<t0>Field Notes</t0> &nbsp;/&nbsp; Strategy
+fa8c69b5ae6d	Every scaling guide assumes your numbers are real. Check that first.
+4d1bb4407d45	Every scaling guide says the same thing: find your best ROAS and put more money behind it. That is reasonable advice resting on an assumption almost nobody tests: <t0>that reported ROAS reflects sales that actually happened.</t0>
+d651b8093fcf	When it does not, scaling does not amplify a winner. It amplifies a reporting error, and it does so faster than you will notice.
+7d64d1763026	There is no shortage of scaling content. Increase budgets by 20% every three days. Duplicate into new audiences. Vertical versus horizontal scaling. Most of it is fine as far as it goes.
+0f139e826e0a	What almost none of it includes is a step zero: <t0>verify the performance you are about to scale is real.</t0> That omission is how a client I worked with ended up putting more budget behind their worst campaigns for months.
+6ad0d147990c	The trap, stated plainly
+1c1966323999	Scaling rules select for the highest reported ROAS. A campaign optimising toward a pixel that over-reports will always show a higher ROAS than one measuring honestly, not because it performs better, but because its denominator is fiction.
+cf0e760d840d	So the selection rule that is supposed to find your best campaign reliably finds your <t0>most inaccurately measured</t0> one. And every scaling cycle sends more budget to it.
+2693bb797b43	What that looked like in practice
+969f49792bef	The client was running roughly PKR 100,000 a day across the account, and adjusting budgets essentially at random, because they could not tell which campaigns were reporting honestly, they were increasing and decreasing spend based on a dashboard nobody trusted. Their words for it were that they were making changes blindly.
+004618a0f610	The account had two pixels. One accurate, one reporting purchases with no corresponding orders. Meta showed around 100 orders; the store had 55 to 70. Roughly <t0>30 to 40% of daily budget</t0> was in campaigns attached to the inaccurate pixel, and those campaigns showed the strongest ROAS in the account.
+420be8bdce70	Under any standard scaling rule, those were the campaigns to scale. That is the part worth sitting with. <t0>The methodology was not being applied badly. It was being applied correctly to bad data</t0>, which produced exactly the wrong answer with total confidence.
+8605d2b16e39	Step zero, before any scaling decision
+472076ab3fbf	<t0>Reconcile one settled week</t0>Events Manager purchases against real store orders. If Events Manager is higher, stop, you have phantom or duplicate events and no campaign comparison is valid yet.
+aa5afcb90740	<t0>Trace the specific campaign you intend to scale</t0>Not the account. That campaign. Can you find its claimed orders in your store? If you cannot trace them, do not scale it.
+f4deb8e4b3a0	<t0>Check which pixel it optimises toward</t0>If the account has more than one pixel, campaigns are not comparable until you know which is which.
+b775181b1ace	<t0>Then apply whatever scaling method you like</t0>The methods are fine. They just needed something true to operate on.
+db61dafbf838	<t0>A diagnostic hiding in plain sight</t0>
+3fa5d2a3270e	If you have ever scaled a campaign with excellent ROAS and watched performance collapse immediately, not decay over a fortnight, but collapse, consider that the original figure may not have been real. Genuine winners degrade gradually as audiences saturate. Fictional ones do not degrade at all, because there was nothing there to degrade; the reported number simply stops looking plausible next to your bank balance.
+041249cd27c4	What to scale toward instead
+acc3d9e21b22	Reported ROAS is a proxy for the thing you actually care about, which is money arriving in the business. The closer your optimisation signal sits to real revenue, the harder it is to fool:
+27bed13a88c6	Signal
+8625ae5b31d6	How easily distorted
+be1932e2e9ba	Worth scaling on?
+ab04f33c73e1	Reported ROAS in Ads Manager
+fa9891a77a83	Easily, inherits every pixel flaw
+1e784e58718a	Only once reconciled
+279adddc04b9	Purchases traceable in your store
+fc73d790b051	Hard, an order either exists or it does not
+443fc840a3e6	Store revenue over the period
+50172140252e	Very hard
+e046096cfd3d	Yes, with a lag
+0d0488a7f3ba	Contribution margin after costs
+d7eee072c2f5	Hardest, and the one that pays wages
+f2544c31761a	Best, if you can measure it
+590724a109b0	Most advertisers never move past the first row. Moving to the second, simply confirming the orders exist, costs an hour a week and removes the entire class of problem this article describes.
+bb8420536749	None of this makes scaling easy. Audience saturation, creative fatigue, learning-phase resets and competition are all real, and they will still cost you performance on a campaign whose data is perfect.
+9e13051d20af	The narrow claim here is that those problems are worth solving <t0>after</t0> you have confirmed the number you are optimising toward corresponds to sales. One account is not a study, but the mechanism is not exotic, and the check is cheap enough that there is no good reason to skip it.
+1ad7473c60b1	About to scale a campaign?
+1a444586f1b3	Make sure the performance you are scaling is real. Send me your store URL and I will reconcile it against your store.
+7150969b8f72	<t0>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t1>The reconciliation that finds phantom conversions.</t1></t0> <t2>How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened<t3>The failure that looks like success until you reconcile.</t3></t2> <t4>Auditing a Meta Ad Account You Just Inherited<t5>Verify the numbers before you judge the campaigns.</t5></t4>
+a0f9d7d07533	Shopify's 26 August Deadline: Did Your Tracking Survive?
+2fe3aaf8ba6e	Shopify's 26 August 2026 upgrade removes Additional Scripts from Thank you pages. See which purchase tags it affects and check yours in ten minutes.
+2c3c16ed0c9f	Shopify 26 August deadline
+f7d101b08d97	What was scheduled to happen on 26 August 2026 for Shopify stores?
+356a5f5bf53e	Non-Plus Shopify stores that have not manually upgraded their Thank you and Order status pages are upgraded automatically. Customisations built with Additional Scripts and deprecated script tags on those two pages are removed rather than migrated.
+b986a3b45806	Does the Shopify checkout upgrade remove my Facebook pixel?
+b7d3de2f5719	It removes any pixel or tag installed through Additional Scripts on the Thank you and Order status pages. A Meta pixel connected through the official Facebook & Instagram sales channel is not affected. The risk is specifically hand-pasted code.
+788c05d25ced	How do I check what is in my Shopify Additional Scripts box?
+0819e1279b61	Go to Settings, then Checkout, and look at the Additional scripts field. Since 28 August 2025 it is view-only, but you can still read what is in it. Anything there that fires a conversion was due to be replaced before 26 August 2026, so check whether yours was.
+f488501ed545	<t0>Field Notes</t0> &nbsp;/&nbsp; Shopify
+5f9788f7fed0	Shopify&rsquo;s 26 August deadline has passed. Did your purchase tracking survive?
+56e1b0ab8055	<t0>Kamran Arshad</t0><t1>12 Aug 2026</t1><t2>Updated <t3>10 Oct 2026</t3></t2><t4>8 min read</t4>
+213dee8487ad	<t0>Update, 10 October 2026</t0>
+3266db95f51b	The 26 August 2026 deadline has now passed. I wrote this on 12 August as a warning, and I have not verified what happened on individual stores since. If your reported purchases dropped after 26 August, compare your ad platforms against your Shopify orders for the days before and after, then work through the check below.
+15fe15a22ab6	On <t0>26 August 2026</t0>, Shopify scheduled an automatic upgrade for every non-Plus store that had not already migrated its Thank you and Order status pages. Anything running through <t1>Additional Scripts</t1> on those pages, Google Ads conversion tags, Meta pixel purchase events, GTM containers, affiliate scripts, is, according to Shopify&rsquo;s documentation, <t2>removed, not migrated</t2>.
+5e8b8a41dee3	If you did nothing, your purchase tracking should have stopped on that date while your ad platforms kept spending as though nothing had happened.
+c6ba252a64d5	This was the rare tracking problem with a date on it. Most of what I write about is a slow leak you can fix whenever you notice. This one arrived for a large population of stores simultaneously, and the stores affected are precisely the ones least likely to be watching, because the change happens <t0>to</t0> them, not because of anything they did.
+16c79267e250	<t0>Straight from Shopify&rsquo;s documentation</t0>
+d3f3b64e5597	&ldquo;August 26, 2026 is the deadline for stores on a non-Plus Shopify subscription plan to upgrade their existing Thank you and Order status pages to the new version of those pages.&rdquo;
+939b8b6886c6	Stores that do not upgrade manually are upgraded automatically. Shopify Plus stores passed this milestone on 28 August 2025.
+c0888acb9bd1	What actually gets removed
+accf73657544	The word doing the damage is <t0>removed</t0>. Not migrated, not converted, not preserved in a compatibility layer. Shopify replaces the old Thank you and Order status pages with new ones, and customisations that depended on the old rendering model do not come along.
+113e369e1f04	What you have
+405332329101	Survives 26 Aug?
+c385e347b2af	Replacement
+97d1e3851e45	Google Ads conversion tag pasted into Additional Scripts
+c7dca664e4be	Custom Pixel, or Google &amp; YouTube channel
+dd385fc96377	Meta pixel Purchase event in Additional Scripts
+919421223704	Custom Pixel, or Facebook &amp; Instagram channel
+4ea2f6a69740	GTM container loaded on the thank-you page
+20f9ed056206	Custom Pixel (sandboxed)
+dbbbad107b36	Affiliate / partner postback scripts
+07ac6e374e80	Custom Pixel or server-side
+22414c2ad94a	Meta pixel via the official sales channel
+18bbcd989758	No action needed
+06a0a5d2b24c	Google tag via the Google &amp; YouTube channel
+a03e05c9f4a5	Server-side tracking (Conversions API, sGTM)
+0a3414f2d785	Unaffected, it never depended on the page
+2ec0296fde85	Read the last row twice. <t0>Server-side tracking is the only row that was never at risk</t0>, because it does not depend on a browser rendering a page Shopify controls. That is the real lesson of this deadline, and it will still be true the next time a platform changes something underneath you.
+acd84f5e80d5	The ten-minute check
+a97a83df6ab6	<t0>Read your Additional Scripts box</t0>Shopify admin &rarr; <t1>Settings</t1> &rarr; <t2>Checkout</t2> &rarr; <t3>Additional scripts</t3>. It has been view-only since 28 August 2025, but you can still read it. Copy the contents somewhere safe.
+e19eb28bfc9d	<t0>Find anything that fires a conversion</t0>Search that text for <t1>gtag</t1>, <t2>fbq</t2>, <t3>googletagmanager</t3>, <t4>snaptr</t4>, <t5>ttq</t5>, or any <t6>&lt;script src=</t6>. Every hit is a tag that was due to stop working on 26 August.
+81ca81146689	<t0>Check what your platforms think they are receiving</t0>Open Google Ads &rarr; Goals &rarr; Conversions, and Meta Events Manager. Compare daily purchase volume for the days before and after 26 August. That before-and-after comparison is your proof, without it you cannot show that anything broke, or that you fixed it.
+ea5eb633c2cd	<t0>Rebuild each one as a Custom Pixel</t0>Shopify admin &rarr; <t1>Settings</t1> &rarr; <t2>Customer events</t2> &rarr; <t3>Add custom pixel</t3>. Custom Pixels run in a sandbox and subscribe to events such as <t4>checkout_completed</t4>.
+fc3c1aa5f3e5	<t0>Verify with a real order</t0>Not a test link. A real purchase, on a phone, through the actual checkout. Then confirm the event arrived in the platform, not just that it fired in the browser.
+9f1947ee5e34	The trap inside the fix
+bb794aba55e5	Migrating to a Custom Pixel is the right move, and it introduces a failure mode most guides skip.
+0eee6e474f78	<t0>checkout_completed</t0> is <t1>not guaranteed to fire on the thank-you page</t1>. With post-purchase upsells enabled it can fire on the first upsell page instead, and if that page fails to load, it may not fire at all. Practitioners have also reported a race condition where the pixel fires before customer data is populated, producing events with near-zero match quality.
+9987436a3803	<t0>Reported, not verified by me</t0>
+87e4a2bf56b0	I have seen both behaviours described by multiple independent practitioners, but I have not reproduced them on a store I control. Treat them as things to test for rather than facts to repeat. If you run post-purchase upsells, test that path specifically, it is the one most likely to bite.
+30b7b528558b	What it looks like when it hits
+b8121ccaf4ab	Nothing dramatic. That is the problem.
+0c4b9014140d	Your ads keep running. Your budget keeps spending. Orders keep arriving in Shopify. The only thing that changes is that Google Ads and Meta stop being told which clicks produced those orders, so Smart Bidding, which optimises toward conversions it can see, starts optimising toward a signal that has quietly gone to zero.
+cf37f0358991	You will notice it as a sudden drop in reported conversions and a rise in cost per acquisition, roughly a week later, with no obvious cause. By then the algorithm has been learning from bad data for seven days.
+553462cfed44	The honest limits of this article
+628249c0569d	The 26 August date and the auto-upgrade behaviour come from Shopify&rsquo;s own help documentation, verified on 12 August 2026, before the deadline. Statements about the Additional Scripts box reflect that date too, and I have not re-verified them since. The table above reflects how these integrations are architected, sales-channel and server-side integrations do not depend on Additional Scripts, and hand-pasted page code does. <t0>I have not tested every row on a live store</t0>, and your setup may include something not listed here.
+fae6fd92088d	So do not take the table as permission to skip step one. Read your own Additional Scripts box. What is in there is the only list that matters.
+28e9dad4dce4	Not sure whether yours broke on 26 August?
+1568407f439a	Send me your store URL. I will tell you what was running through Additional Scripts and whether your purchase events are still arriving.
+a6a2309dc372	<t0>Meta Pixel Not Tracking Purchases on Shopify: What to Check First<t1>Seven causes, including the duplicate pixel that splits attribution.</t1></t0> <t2>Duplicate Purchase Events After Installing the Conversions API<t3>How to prove deduplication is actually working, not just configured.</t3></t2> <t4>Snapchat purchase events not firing: the diagnostic sequence<t5>Six causes ranked, with real Ads Manager figures.</t5></t4>
+d4d810ba3963	Snapchat Purchase Events Not Firing: The Diagnostic Sequence
+4967e1878362	Your Snap Pixel loads but PURCHASE never shows in Events Manager. Six causes ranked by likelihood, with exact checks, from a store with 1,034 tracked purchases.
+757a9bdc8152	Six causes of missing Snapchat PURCHASE events, ranked, with the exact checks for each.
+97315355b28b	Snapchat Purchase Events Not Firing
+593af2467adf	<t0>Field Notes</t0> &nbsp;/&nbsp; Snapchat
+c702b2b82b79	If your Snap Pixel loads but <t0>PURCHASE</t0> never appears in Events Manager, the cause is almost always one of six things: a lowercase event name, a missing <t1>transaction_id</t1>, the pixel being absent from the real confirmation page, an off-site payment redirect breaking the session, a single-page checkout re-initialising the pixel, or events being deduplicated away against a Conversions API feed.

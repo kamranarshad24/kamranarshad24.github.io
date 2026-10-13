@@ -1,0 +1,193 @@
+8176fa2fe849	<t0>13 Aug 2026</t0><t1>Audit</t1><t2>9 min read</t2>
+d11597ffb880	Auditing a Meta Ad Account You Just Inherited
+a340b4b0a97c	Taking over a Meta account means inheriting decisions nobody documented. Audit the measurement layer before the creative, because every judgement you make about performance depends on numbers you have not yet verified.
+05167fe60fcb	<t0>13 Aug 2026</t0><t1>Meta Pixel</t1><t2>8 min read</t2>
+45050d13e580	How to Tell If Your Meta Pixel Is Reporting Purchases That Never Happened
+db95bc30fbd5	Everyone worries about a pixel that stops reporting. The expensive failure is a pixel that reports too much, because inflated ROAS attracts more budget. Six ways to tell whether your purchase events correspond to real orders.
+3b41c4c342ba	Two Meta Pixels on One Shopify Store Is Not a Backup Plan
+23a549fb0cef	Search for multiple pixels on Shopify and every result explains how to install more. Almost nobody explains what happens when they disagree. On one account, the second pixel was reporting purchases that never happened, and it was taking 30 to 40% of daily budget with it.
+b831d7dfd25a	<t0>13 Aug 2026</t0><t1>Attribution</t1><t2>10 min read</t2>
+09dff0f9409f	Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?
+26abdeec2a27	A gap between Meta Ads Manager and your Shopify order count is normal up to a point. Past that point it usually means something is reporting purchases that never happened. Here is how to tell which, from an account where the answer was a second pixel.
+d010720b6820	<t0>12 Aug 2026</t0><t1>Server-Side</t1><t2>8 min read</t2>
+952fb9f7217f	Duplicate purchase events after installing the Conversions API
+a69c497b8432	How Meta deduplication actually works, how to choose an identifier that cannot drift, and how to prove yours is working rather than merely configured.
+5d70bd730979	<t0>12 Aug 2026</t0><t1>Google Ads</t1><t2>8 min read</t2>
+f071fcc60f2f	Google Ads conversion tracking not working: a diagnostic order
+26e43c917da8	The short list of causes in diagnostic order, plus the reason a perfectly working tag can still report nothing for weeks.
+826f38eb7be5	<t0>12 Aug 2026</t0><t1>Meta Pixel</t1><t2>9 min read</t2>
+24a9a00e190f	Meta pixel not tracking purchases on Shopify: what to check first
+8c4e689b13b6	Seven causes in the order worth checking them, including the duplicate-pixel problem that splits your attribution without ever looking broken.
+9456829c5b41	<t0>12 Aug 2026</t0><t1>Local Service</t1><t2>9 min read</t2>
+8c9c130c23ce	Google Ads call tracking for local service businesses
+71aaa2be928b	Four ways to track calls from Google Ads, what each actually measures, and why counting taps instead of connected calls quietly destroys your bidding.
+ae3c52de6e5c	<t0>12 Aug 2026</t0><t1>Updated 10 Oct 2026</t1><t2>Shopify</t2><t3>8 min read</t3>
+d5dff7408630	Shopify's 26 August deadline has passed. Did your purchase tracking survive?
+a782a505ebfb	Shopify scheduled non-Plus stores for an automatic upgrade on 26 August 2026 that removes Additional Scripts from the Thank you and Order status pages. What it affects, and the ten-minute check.
+947adc5e622c	<t0>12 Aug 2026</t0><t1>Snapchat</t1><t2>9 min read</t2>
+90542334aa12	Snapchat purchase events not firing: the diagnostic sequence
+d9f088f8b203	Six causes of missing Snapchat PURCHASE events, ranked, with the exact checks and real Ads Manager figures.
+9ff1b6327084	<t0>© 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</t0> <t1><t2>Home</t2> · <t3>Privacy</t3></t1>
+eb4d27fb1768	Duplicate Purchase Events After Adding the Conversions API
+0f6af116cfb9	The Meta pixel and Conversions API should deduplicate to one event. When they do not, you double-count revenue or lose half of it. How to prove yours works.
+6ea31f6eeeec	Running the Meta pixel and Conversions API together should deduplicate to one event. When it does not, you either double-count revenue or silently lose half of it. How deduplication actually works and how to prove yours is functioning.
+54d334a0e918	Paid Ads & Conversion Tracking Specialist
+22df683a61ba	CAPI duplicate purchase events
+b6488b214742	Why am I seeing duplicate purchase events after installing the Conversions API?
+d02851a3f3fd	Because the browser pixel and the server are both sending the purchase, and Meta cannot tell they are the same event. Deduplication requires both sides to send a matching event_id, and ideally the same event_name. If the IDs differ, Meta counts two separate purchases.
+3e965e036b0e	What is event_id used for in the Meta Conversions API?
+9052746ac867	It is the deduplication key. When the pixel and the Conversions API both send an event with the same event_name and the same event_id within Meta deduplication window, Meta keeps one and discards the other.
+10834c347d50	Is it bad to run the Meta pixel and Conversions API at the same time?
+a0abf0b93561	No, running both is the recommended setup because the server side captures conversions the browser misses. It is only a problem when deduplication is misconfigured, in which case you either double-count or lose events.
+a462dff9d9b9	<t0>Field Notes</t0> <t1>Case Studies</t1> <t2>Services</t2> <t3>Get Free Audit</t3>
+b8d58f19ceed	<t0>Field Notes</t0> &nbsp;/&nbsp; Server-Side
+359a65da0b3f	You installed CAPI and your revenue doubled. It didn&rsquo;t.
+c9f983fb046d	<t0>Kamran Arshad</t0><t1>12 Aug 2026</t1><t2>8 min read</t2>
+0b7dbfe8f737	Duplicate purchases after a Conversions API install almost always mean one thing: <t0>the browser and the server are sending different <t1>event_id</t1> values</t0> for the same purchase. Meta deduplicates on matching <t2>event_name</t2> plus <t3>event_id</t3>. If the IDs differ, it has no way to know the two events are the same order, so it counts both.
+7161a8c9a23b	The dangerous version is the opposite failure, where IDs collide and you silently lose real sales.
+58e3629d1967	Installing the Conversions API is the right decision. Browser tracking loses events to ad blockers, tracking prevention, broken sessions and abandoned page loads, and a server-side feed recovers a good share of them. Almost everyone should be running both.
+07c25361904b	But &ldquo;running both&rdquo; means Meta now receives two reports of every purchase, and the only thing stopping it counting each one twice is a shared identifier. Get that identifier wrong in one direction and your revenue doubles on paper. Get it wrong in the other and your revenue quietly halves.
+0e8986f60389	How deduplication actually works
+ac4da9970dda	Meta matches on two fields together: <t0>event_name</t0> and <t1>event_id</t1>. Both must agree.
+ea887888e9ba	&#10007; Counted twice
+ff910237831c	&#10003; Deduplicated to one
+a24d080805d8	The rule is simple to state and easy to break in practice, because the two sides are usually built by different systems at different times. The browser event is generated by a theme or a tag manager; the server event is generated by an app, a middleware service, or your own code. Nothing forces them to agree, and nothing warns you when they do not.
+68b8be996d72	Choosing an identifier that cannot drift
+75460a7f9f74	The identifier must be <t0>unique per order</t0> and <t1>identical across both paths</t1>. Those two requirements rule out most of what people reach for first.
+d769ded7e87a	Candidate
+975a63eb413f	Unique per order?
+742d33bdfdc2	Same on both sides?
+7f6e5a6efab1	Verdict
+cc95d483283c	Order ID / order number
+5397e0583f14	Yes
+cad331f39cfd	Yes, if both read the order
+b80ded59dbc9	Use this
+0e0b2200c0f4	Randomly generated UUID
+1981bf2a493e	Only if generated once and passed
+4d8c039f257a	Risky
+9526d4ab3bd7	Checkout ID
+bf3471c966c6	Not always
+e2c38e14b6f6	Often differs from order ID
+33fc27cf0a4d	Avoid
+25e4fe87361d	Session ID
+816c52fd2bdd	No
+80c3052d33cc	Never
+19eabc961735	Timestamp
+3d44633ddbfb	Almost never
+58bb7dcc26b4	Timestamps are the worst offender and the most tempting, because they look unique. They are not: two orders in the same second collide, and the browser&rsquo;s clock is not your server&rsquo;s clock. A UUID is fine <t0>only</t0> if it is generated once and then passed to the other side, if each side generates its own, you have built a duplication machine.
+46b9d1447144	<t0>The subtler failure: silent loss</t0>
+dcca98b90eb7	Everyone worries about double-counting because it is visible. The worse bug is an identifier that is not unique, a checkout ID reused across orders, or a value that repeats. Then Meta correctly deduplicates two <t0>genuinely different</t0> purchases into one, and you lose real revenue from your reporting with no error anywhere.
+72001fe8856c	Double-counting looks like good news and gets investigated. Silent loss looks like a slow decline and gets blamed on the ads.
+550a5d5689e0	Proving it works: not assuming it does
+3505d040a316	Configured is not the same as working. Here is the test that settles it, and it takes about fifteen minutes.
+f145d2def990	<t0>Place one real order</t0>A real purchase through the real checkout, not a test link. Note the order number.
+09c473ee8659	<t0>Capture the browser event ID</t0>Open DevTools before checking out, filter the Network tab for <t1>facebook</t1>, complete the order, and read the <t2>eventID</t2> on the Purchase request.
+dcc17971139d	<t0>Capture the server event ID</t0>From your CAPI integration&rsquo;s logs, or from Events Manager, find the server-side event for that same order and read its <t1>event_id</t1>.
+ae6ab29d529a	<t0>Compare them character for character</t0>Not similar. Identical. A prefix on one side (<t1>order_1047</t1> versus <t2>1047</t2>) is a failure, not a detail.
+6ae9cc0c04d5	<t0>Check the deduplication reporting</t0>In Events Manager, open the Purchase event and look at how it is being received. A correctly deduplicated setup shows both browser and server as sources for the same event, not two separate event totals.
+54e99d24b32a	<t0>Reconcile a full week</t0>Compare your store&rsquo;s order count with Events Manager purchases for a settled week. Meaningfully above your order count means duplication. Meaningfully below means loss.
+62183144136b	The number that tells you it is working
+7c1cae747321	Once deduplication is right, the metric worth watching is <t0>Event Match Quality</t0>. It reflects how much identifying information you send with each event, hashed email, phone, name, location, click identifiers, and it drives how well Meta can attribute a conversion to the person who saw the ad.
+debc662381be	This is where the Conversions API earns its keep. Your server knows the customer&rsquo;s email and phone number because they just bought something. The browser often does not. Sending that data server-side, correctly hashed, is usually a bigger win than recovering the blocked events in the first place.
+675a8e43cb4a	<t0>Hash it, and check that you did</t0>
+1d463b2143b2	Customer identifiers must be SHA-256 hashed before they are sent. This is not a performance nicety, it is the difference between sending Meta a hash and sending Meta your customers&rsquo; raw personal data. If you are building the integration yourself, verify the hashing on a real payload before you go live, because a bug here is a data protection incident rather than a tracking bug.
+da8a469d10b5	What I am not claiming
+f906da2640f3	I have not given you a target Event Match Quality score or an expected uplift from installing CAPI. Both depend entirely on what customer data you can legitimately collect, your checkout, and your traffic, and every benchmark I have seen published comes from a vendor whose product improves the number they are benchmarking.
+55b7f711e115	Measure your own baseline before the change, measure again after it has run for a full attribution window, and compare against yourself. That comparison is worth more than anyone&rsquo;s published average.
+40184cda3be7	Not sure if your deduplication is working?
+3b3d85b73b44	It is a fifteen-minute check and most setups fail it. Send me your store URL and I will tell you what I find.
+d64a6f7be20d	<t0>Get a free tracking audit &rarr;</t0>
+f2aa1253029c	Related field notes
+4a93f65922ac	<t0>Shopify's 26 August Deadline: Did Your Tracking Survive?<t1>What the auto-upgrade removes, and the ten-minute check.</t1></t0> <t2>Meta Pixel Not Tracking Purchases on Shopify: What to Check First<t3>Seven causes, including the duplicate pixel that splits attribution.</t3></t2> <t4>Snapchat purchase events not firing: the diagnostic sequence<t5>Six causes ranked, with real Ads Manager figures.</t5></t4>
+cf39bf876da3	<t0>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</t0> <t1><t2>Home</t2> &middot; <t3>Field Notes</t3> &middot; <t4>Privacy</t4></t1>
+27ae9bc21ad7	How long does a Google Ads audit take?
+186ce2abfc75	The free audit I offer is a live 15-minute review of your ads, site or search presence, and it ends with one thing you can fix this week.
+6d5dc91be219	Can I run these six checks myself?
+f341d86e13be	Mostly yes. Checks one to four are inside your own Google Ads account. Check five also needs access to your website's tag setup.
+c6bc57ada6dd	What is a negative keyword?
+fad3eb8661dd	A word or phrase that stops your ads from showing on searches that contain it, so you stop paying for clicks from people who were never going to become customers.
+006e82f95ba9	<t0>Field Notes</t0> &nbsp;/&nbsp; Google Ads
+8ad5b37eb608	A Google Ads account audit for lead generation: six checks, in order
+b6f22dba98c5	<t0>Kamran Arshad</t0><t1>10 Oct 2026</t1><t2>3 min read</t2>
+0d09a2a26b35	A useful Google Ads audit for a business that lives on phone calls and enquiry forms checks six things in order: advertiser verification, Search and Display separation, location targeting, negative keywords, conversion tracking for forms and calls, and ad group structure by service.
+5f730cbafc91	I ran this sequence on a dental clinic&#x27;s account that had never been properly configured.
+6782b1b442e0	Most Google Ads audit checklists start with bids and ad copy. For a lead-generation business I start further upstream, because bids and copy cannot repair an account that shows ads in the wrong place, to the wrong searches, with no record of what happened next.
+f6ec1d04a62d	The six checks
+e2412274cc2e	Advertiser verification
+b797ebeb0610	Google can require advertiser identity verification. On the clinic&#x27;s account it had not been completed, which put campaign delivery at risk. Look for a verification notice first, because nothing else matters if ads stop serving.
+ac42008283ef	Search and Display kept apart
+84ea06a1e4eb	The clinic&#x27;s campaigns mixed the Search and Display Networks. Display was using budget without producing enquiries, so I separated the two and paused Display. Check the network settings of every campaign.
+0edee880ffa5	Location targeting
+8885e792b40f	The campaigns targeted the whole world instead of Islamabad, where the clinic operates. Open each campaign&#x27;s location settings and confirm the places listed are the places you serve.
+11f3e8d2c0a8	Negative keywords
+5d09a1b11f38	There were no negative keywords, so a share of the budget went to searches with no local intent. Read the search terms report for the last 30 days and add what should never have triggered an ad.
+8070e6e94102	Conversion tracking for forms and calls
+06df19125f75	Neither form submissions nor phone calls were tracked, so every decision rested on clicks alone. I set up Google Tag Manager triggers for form submissions and click-to-call taps and linked those events to Google Ads.
+236100193fa0	Ad groups by service
+0823b041e4d9	I researched local search terms and grouped keywords by service, such as teeth cleaning, implants and whitening, so each ad can match what the person typed.
+66ae284eedaa	What changed on the clinic&#x27;s account
+1d947d48f7ab	After the rebuild the account was Search-only, targeted to Islamabad, with a negative keyword list and tracking in place. For the first time the clinic could see which ads, keywords and campaigns produced real patient enquiries.
+7822105c280a	The full account of the work is in the <t0>Smile Line Dental case study</t0>.
+5aad6db18084	<t0>Where this comes from</t0>
+a11d9cecff6e	One dental clinic account in Islamabad. It is one account, not a study, and it is not a UK, US, Canadian or Australian account. The six checks apply to any lead-generation account because they sit upstream of bidding, but the specific problems I found are this clinic&#x27;s.
+da5c39c9e038	What this checklist does not cover
+17482ff44164	It does not cover bidding strategy, ad copy or landing pages. Those matter, and they work better once the six upstream checks pass, because only then can you trust the data they rely on.
+34f22dfc3f65	If check five is the weak spot on your account, my <t0>guide to tracking calls from Google Ads</t0> and the <t1>diagnostic order for conversion tracking</t1> go deeper.
+dd8d359078fb	Mostly yes. Checks one to four are inside your own Google Ads account. Check five also needs access to your website&#x27;s tag setup.
+752ae71efa70	Want me to run these six checks on your account?
+5ad8d76d9f56	<t0>Book a free audit &rarr;</t0>
+3a0915891fef	<t0>Google Ads management<t1>How I run lead-generation accounts.</t1></t0> <t2>Google Ads Call Tracking for Local Service Businesses<t3>How to count the calls that turn into jobs.</t3></t2> <t4>Google Ads Conversion Tracking Not Working: A Diagnostic Order<t5>Where to look first when conversions stop recording.</t5></t4>
+860c41e0ca82	Google Ads Call Tracking for Local Service Businesses
+3d47adda8edc	Most tracking guides assume an online store. If your conversion is a phone call, the failures differ. Four ways to track Google Ads calls, and where each fails.
+f7bee19c9081	Almost every conversion tracking guide is written for online stores. If your conversion is a phone call, the failure modes are completely different. Here are the four ways to track calls from Google Ads, what each one actually measures, and where they go wrong.
+b1cebe726da9	Google Ads call tracking
+0030c9a24d4a	How do I track phone calls from Google Ads?
+0e56b8a1370d	There are four methods: call extensions using a Google forwarding number, calls from a website using a dynamic number swap, static click-to-call tracking, and a third-party call tracking platform. Each measures something slightly different, and only some of them attribute the call back to a specific keyword.
+2b22a65cea2b	Does Google Ads call tracking record calls?
+e6900e4e22a0	Google Ads can record calls made through Google forwarding numbers where the feature is available, and this is subject to local law and disclosure requirements. Tracking that a call happened and recording its contents are separate decisions with separate legal obligations.
+9db6a1e66133	Why does Google Ads show calls but my phone did not ring?
+1fe2810d6ab5	A common cause is counting click-to-call taps as calls. A tap on a phone link is an intent to call, not a completed call. If you track taps rather than connected calls of a minimum duration, your reported conversions will exceed the calls you actually received.
+f49bba1211ab	<t0>Field Notes</t0> &nbsp;/&nbsp; Local Service
+d1549a62e3df	Google Ads call tracking, for businesses whose customers ring instead of buy
+c1332ea8b8a4	<t0>Kamran Arshad</t0><t1>12 Aug 2026</t1><t2>9 min read</t2>
+48597bea8bd6	If your conversion is a phone call rather than a checkout, almost every tracking guide online is written for someone else. There are four ways to track calls from Google Ads: <t0>call extensions, dynamic number insertion on your website, static click-to-call, and a third-party platform</t0>, and they measure different things.
+4787446104dd	The most common mistake is counting a tap on a phone link as a call. It is not one. It is an intention.
+be74ac964053	Read any article about conversion tracking and you will find yourself in an ecommerce store. Purchase events, cart values, return on ad spend. That is not much use if you are a dentist, a carpet cleaner, a plumber or a physiotherapist, where the money arrives because someone picked up a phone.
+ef4eb78601aa	The failure modes are genuinely different, and they are worse, because a phone call leaves no trace in your website analytics at all unless you deliberately make it leave one.
+23b9c2027f29	The four methods, and what each one really tells you
+88306943fea7	Method
+c00063b12b4f	What it measures
+ddb536ffbfc9	Keyword-level attribution
+80b2d4210bb1	Main weakness
+e4eaf3b3eb4c	Call extension / call asset
+d871c99b262e	Calls placed directly from the ad
+01a0a10b309b	Misses everyone who clicks through to the site first
+481d9ef38d82	Calls from website (dynamic number)
+bbffdb9a7813	Calls to a swapped number on your site
+9669bde9fd6d	Needs the swap script to load and work on mobile
+e2958737999c	Static click-to-call tap
+c9d6a6fbac5c	Taps on a <t0>tel:</t0> link
+65de2e2a3bcb	Partial
+0c783c956f7d	Counts intent, not connection, inflates conversions
+7d57124f324e	Third-party call platform
+17ecff81008f	Connected calls, duration, recording, source
+b8ccbb777715	Monthly cost; another system to maintain
+f70447db666a	Notice the third row. It is the one most small businesses end up with, usually by accident, because tracking a tap is the easiest thing to set up in Google Tag Manager. It is also the one that lies to you the most.
+0cdea2435c54	Why counting taps quietly destroys your bidding
+916984913936	A tap on a <t0>tel:</t0> link means someone was interested enough to open their dialler. It does not mean they pressed the green button. It does not mean you answered. It does not mean the call lasted longer than four seconds before they realised you were closed.
+1a6f175a2f37	If you feed taps into Google Ads as conversions, Smart Bidding optimises toward <t0>people who tap</t0>. Those are not the same people as <t1>customers who book</t1>. The gap between the two is where your budget goes.
+fa7d752e9e82	&#10007; What you are counting
+a0d2a50a1225	&#10003; What you should count
+c31514a54044	The single highest-leverage change most local advertisers can make is applying a <t0>minimum call duration</t0> before a call counts as a conversion. Sixty seconds is a sensible starting point for most service businesses: long enough to exclude wrong numbers and immediate hang-ups, short enough to include a quick &ldquo;can you come Tuesday?&rdquo;
+f80af713ddc3	What I actually set up, and what it changed
+fa9816860d65	I have built this twice, for two very different businesses, and it is the part of my work with the clearest before-and-after.
+68a7fe675618	Smile Line Dental: Islamabad
+cfdce4a2516f	Google Ads + GTM &middot; call and form tracking
+04f4a5fe4a53	Before: Google Ads was running with no view of which searches produced appointments. Enquiries arrived by phone and by form, and neither was attributed to anything.
+23e2335192a6	After: GTM tracking on both enquiry forms and phone calls, so specific searches could be tied to actual appointments for the first time. In the clinic&rsquo;s words, they &ldquo;stopped guessing.&rdquo;
+41d60e968d0a	<t0>What I am not claiming:</t0> I do not have a published cost-per-enquiry figure for this account, so I am not going to invent one. What changed was visibility, which is the prerequisite for everything else, not the outcome itself.
+5911ac4e45dd	The second was <t0>Mr Expert Carpet Cleaning</t0> in Slough, where the site was rebuilt from scratch with tracking designed in rather than bolted on, including a server-side GTM container. That one taught me the lesson in the next section.
+e73687eafd92	The failure nobody warns you about: the form that emails
+83a249480f0b	Most local service sites use a contact form that composes an email and sends it. If that send fails, a bad SMTP configuration, a spam filter, a full inbox, the lead does not go to a queue for retry. It ceases to exist. There is no record that anyone ever filled the form in.
+96c59ad4de18	You cannot track what was never saved. So before any conversion tracking work on a local service site, I check one thing: <t0>does the form write the lead to a database before it tries to email anyone?</t0> If the answer is no, tracking is the second problem.
+a721ea426e1d	<t0>Save first, notify second</t0>
