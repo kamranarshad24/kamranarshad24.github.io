@@ -1,0 +1,193 @@
+8176fa2fe849	<t0>13 aug 2026</t0><t1>Audit</t1><t2>9 min lezen</t2>
+d11597ffb880	Een Meta-advertentieaccount auditen dat u net heeft overgenomen
+a340b4b0a97c	Een Meta-account overnemen betekent beslissingen erven die niemand heeft vastgelegd. Audit eerst de meetlaag en pas daarna de creatives, want elk oordeel over prestaties hangt af van cijfers die u nog niet heeft gecontroleerd.
+05167fe60fcb	<t0>13 aug 2026</t0><t1>Meta-pixel</t1><t2>8 min lezen</t2>
+45050d13e580	Hoe u ziet of uw Meta-pixel aankopen rapporteert die nooit plaatsvonden
+db95bc30fbd5	Iedereen maakt zich zorgen over een pixel die stopt met rapporteren. De dure fout is een pixel die te veel rapporteert, want een opgeblazen ROAS trekt meer budget aan. Zes manieren om te zien of uw aankoopevents overeenkomen met echte bestellingen.
+3b41c4c342ba	Twee Meta-pixels in één Shopify-webshop zijn geen back-up
+23a549fb0cef	Zoek op meerdere pixels in Shopify en elk resultaat legt uit hoe u er meer installeert. Bijna niemand legt uit wat er gebeurt als ze het oneens zijn. In één account rapporteerde de tweede pixel aankopen die nooit plaatsvonden, en die nam 30 tot 40% van het dagbudget mee.
+b831d7dfd25a	<t0>13 aug 2026</t0><t1>Attributie</t1><t2>10 min lezen</t2>
+09dff0f9409f	Meta zegt 100 bestellingen. Shopify zegt 62. Wie liegt er?
+26abdeec2a27	Een verschil tussen Meta Ads Manager en het aantal bestellingen in Shopify is tot op zekere hoogte normaal. Daarboven betekent het meestal dat iets aankopen rapporteert die nooit plaatsvonden. Zo ziet u welke van de twee het is, uit een account waar het antwoord een tweede pixel was.
+d010720b6820	<t0>12 aug 2026</t0><t1>Server-side</t1><t2>8 min lezen</t2>
+952fb9f7217f	Dubbele aankoopevents na het installeren van de Conversions API
+a69c497b8432	Hoe deduplicatie bij Meta echt werkt, hoe u een identificator kiest die niet kan afwijken, en hoe u bewijst dat de uwe werkt in plaats van alleen ingesteld is.
+5d70bd730979	<t0>12 aug 2026</t0><t1>Google Ads</t1><t2>8 min lezen</t2>
+f071fcc60f2f	Google Ads-conversietracking werkt niet: een diagnosevolgorde
+26e43c917da8	De korte lijst met oorzaken in diagnosevolgorde, plus de reden dat een perfect werkende tag wekenlang toch niets kan rapporteren.
+826f38eb7be5	<t0>12 aug 2026</t0><t1>Meta-pixel</t1><t2>9 min lezen</t2>
+24a9a00e190f	Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert
+8c4e689b13b6	Zeven oorzaken in de volgorde waarin u ze het best controleert, inclusief het probleem van de dubbele pixel dat uw attributie splitst zonder ooit kapot te lijken.
+9456829c5b41	<t0>12 aug 2026</t0><t1>Lokale dienstverlening</t1><t2>9 min lezen</t2>
+8c9c130c23ce	Google Ads-gesprekstracking voor lokale dienstverleners
+71aaa2be928b	Vier manieren om telefoontjes uit Google Ads te meten, wat elk ervan echt meet, en waarom het tellen van tikken in plaats van verbonden gesprekken uw biedingen ongemerkt verpest.
+ae3c52de6e5c	<t0>12 aug 2026</t0><t1>Bijgewerkt 10 okt 2026</t1><t2>Shopify</t2><t3>8 min lezen</t3>
+d5dff7408630	De deadline van Shopify op 26 augustus is verstreken. Heeft uw aankooptracking het overleefd?
+a782a505ebfb	Shopify plande voor niet-Plus-webshops op 26 augustus 2026 een automatische upgrade die Additional Scripts verwijdert van de pagina's Bedankt en Bestelstatus. Wat het raakt, en de controle van tien minuten.
+947adc5e622c	<t0>12 aug 2026</t0><t1>Snapchat</t1><t2>9 min lezen</t2>
+90542334aa12	Snapchat-aankoopevents worden niet geactiveerd: de diagnosevolgorde
+d9f088f8b203	Zes oorzaken van ontbrekende Snapchat PURCHASE-events, gerangschikt, met de exacte controles en echte cijfers uit Ads Manager.
+9ff1b6327084	<t0>© 2026 Kamran Arshad. Specialist in online advertenties &amp; tracking</t0> <t1><t2>Home</t2> · <t3>Privacy</t3></t1>
+eb4d27fb1768	Dubbele aankoopevents na het toevoegen van de Conversions API
+0f6af116cfb9	De Meta-pixel en de Conversions API moeten dedupliceren tot één event. Doen ze dat niet, dan telt u omzet dubbel of verliest u de helft. Zo bewijst u dat het werkt.
+6ea31f6eeeec	Als u de Meta-pixel en de Conversions API samen gebruikt, moeten ze dedupliceren tot één event. Gebeurt dat niet, dan telt u omzet dubbel of verliest u ongemerkt de helft. Hoe deduplicatie echt werkt en hoe u bewijst dat de uwe functioneert.
+54d334a0e918	Specialist in online advertenties & conversietracking
+22df683a61ba	Dubbele aankoopevents met CAPI
+b6488b214742	Waarom zie ik dubbele aankoopevents na het installeren van de Conversions API?
+d02851a3f3fd	Omdat de browserpixel en de server allebei de aankoop versturen, en Meta niet kan zien dat het om hetzelfde event gaat. Deduplicatie vereist dat beide kanten een overeenkomende event_id sturen, en bij voorkeur dezelfde event_name. Verschillen de ID's, dan telt Meta twee aparte aankopen.
+3e965e036b0e	Waarvoor wordt event_id gebruikt in de Meta Conversions API?
+9052746ac867	Het is de deduplicatiesleutel. Als de pixel en de Conversions API allebei binnen het deduplicatievenster van Meta een event sturen met dezelfde event_name en dezelfde event_id, houdt Meta er één en gooit de andere weg.
+10834c347d50	Is het slecht om de Meta-pixel en de Conversions API tegelijk te gebruiken?
+a0abf0b93561	Nee, beide gebruiken is de aanbevolen opzet, omdat de serverkant conversies vastlegt die de browser mist. Het is alleen een probleem als de deduplicatie verkeerd is ingesteld; dan telt u dubbel of verliest u events.
+a462dff9d9b9	<t0>Praktijknotities</t0> <t1>Cases</t1> <t2>Diensten</t2> <t3>Gratis audit</t3>
+b8d58f19ceed	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Server-side
+359a65da0b3f	U installeerde CAPI en uw omzet verdubbelde. Niet echt.
+c9f983fb046d	<t0>Kamran Arshad</t0><t1>12 aug 2026</t1><t2>8 min lezen</t2>
+0b7dbfe8f737	Dubbele aankopen na het installeren van de Conversions API betekenen bijna altijd één ding: <t0>de browser en de server sturen verschillende <t1>event_id</t1>-waarden</t0> voor dezelfde aankoop. Meta dedupliceert op een overeenkomende <t2>event_name</t2> plus <t3>event_id</t3>. Verschillen de ID's, dan kan Meta niet weten dat de twee events dezelfde bestelling zijn, dus telt het ze allebei.
+7161a8c9a23b	De gevaarlijke variant is de omgekeerde fout, waarbij ID's botsen en u ongemerkt echte verkopen verliest.
+58e3629d1967	De Conversions API installeren is de juiste beslissing. Browsertracking verliest events door adblockers, trackingbescherming, verbroken sessies en afgebroken paginaladingen, en een server-side feed haalt een flink deel daarvan terug. Bijna iedereen zou beide moeten gebruiken.
+07c25361904b	Maar &ldquo;beide gebruiken&rdquo; betekent dat Meta nu twee meldingen van elke aankoop ontvangt, en het enige wat voorkomt dat elke aankoop dubbel wordt geteld, is een gedeelde identificator. Zit die identificator de ene kant op fout, dan verdubbelt uw omzet op papier. Zit hij de andere kant op fout, dan halveert uw omzet ongemerkt.
+0e8986f60389	Hoe deduplicatie echt werkt
+ac4da9970dda	Meta koppelt op twee velden samen: <t0>event_name</t0> en <t1>event_id</t1>. Beide moeten overeenkomen.
+ea887888e9ba	&#10007; Dubbel geteld
+ff910237831c	&#10003; Gededupliceerd tot één
+a24d080805d8	De regel is eenvoudig uit te leggen en in de praktijk makkelijk te breken, omdat de twee kanten meestal door verschillende systemen op verschillende momenten zijn gebouwd. Het browserevent wordt gemaakt door een thema of een tagmanager; het serverevent door een app, een middlewaredienst of uw eigen code. Niets dwingt ze om overeen te komen, en niets waarschuwt u als ze dat niet doen.
+68b8be996d72	Een identificator kiezen die niet kan afwijken
+75460a7f9f74	De identificator moet <t0>uniek per bestelling</t0> zijn en <t1>identiek op beide paden</t1>. Die twee eisen sluiten het meeste uit waar mensen als eerste naar grijpen.
+d769ded7e87a	Kandidaat
+975a63eb413f	Uniek per bestelling?
+742d33bdfdc2	Gelijk aan beide kanten?
+7f6e5a6efab1	Oordeel
+cc95d483283c	Bestel-ID / bestelnummer
+5397e0583f14	Ja
+cad331f39cfd	Ja, als beide de bestelling uitlezen
+b80ded59dbc9	Gebruik deze
+0e0b2200c0f4	Willekeurig gegenereerde UUID
+1981bf2a493e	Alleen als hij één keer wordt gegenereerd en doorgegeven
+4d8c039f257a	Riskant
+9526d4ab3bd7	Checkout-ID
+bf3471c966c6	Niet altijd
+e2c38e14b6f6	Wijkt vaak af van de bestel-ID
+33fc27cf0a4d	Vermijden
+25e4fe87361d	Sessie-ID
+816c52fd2bdd	Nee
+80c3052d33cc	Nooit
+19eabc961735	Tijdstempel
+3d44633ddbfb	Bijna nooit
+58bb7dcc26b4	Tijdstempels zijn de grootste boosdoener en het verleidelijkst, omdat ze uniek lijken. Dat zijn ze niet: twee bestellingen in dezelfde seconde botsen, en de klok van de browser is niet de klok van uw server. Een UUID is <t0>alleen</t0> prima als hij één keer wordt gegenereerd en dan aan de andere kant wordt doorgegeven; genereert elke kant zijn eigen, dan heeft u een dubbeltelmachine gebouwd.
+46b9d1447144	<t0>De subtielere fout: ongemerkt verlies</t0>
+dcca98b90eb7	Iedereen maakt zich zorgen over dubbeltellingen omdat die zichtbaar zijn. De ergere bug is een identificator die niet uniek is: een checkout-ID die bij meerdere bestellingen terugkomt, of een waarde die zich herhaalt. Dan dedupliceert Meta terecht twee <t0>echt verschillende</t0> aankopen tot één, en verdwijnt er echte omzet uit uw rapportage zonder dat er ergens een foutmelding is.
+72001fe8856c	Dubbeltellingen lijken goed nieuws en worden onderzocht. Ongemerkt verlies lijkt een langzame daling en krijgt de advertenties de schuld.
+550a5d5689e0	Bewijzen dat het werkt: niet aannemen dat het werkt
+3505d040a316	Ingesteld is niet hetzelfde als werkend. Dit is de test die het beslist, en hij kost ongeveer een kwartier.
+f145d2def990	<t0>Plaats één echte bestelling</t0>Een echte aankoop via de echte checkout, geen testlink. Noteer het bestelnummer.
+09c473ee8659	<t0>Leg de event-ID van de browser vast</t0>Open DevTools vóór het afrekenen, filter de Network-tab op <t1>facebook</t1>, rond de bestelling af en lees de <t2>eventID</t2> in het Purchase-verzoek.
+dcc17971139d	<t0>Leg de event-ID van de server vast</t0>Zoek in de logs van uw CAPI-integratie, of in Events Manager, het server-side event voor diezelfde bestelling en lees de <t1>event_id</t1>.
+ae6ab29d529a	<t0>Vergelijk ze teken voor teken</t0>Niet vergelijkbaar. Identiek. Een voorvoegsel aan één kant (<t1>order_1047</t1> tegenover <t2>1047</t2>) is een fout, geen detail.
+6ae9cc0c04d5	<t0>Controleer de deduplicatierapportage</t0>Open in Events Manager het Purchase-event en kijk hoe het binnenkomt. Een correct gededupliceerde opzet toont browser en server als bronnen voor hetzelfde event, niet twee aparte eventtotalen.
+54e99d24b32a	<t0>Stem een volledige week af</t0>Vergelijk het aantal bestellingen in uw webshop met de aankopen in Events Manager voor een afgesloten week. Duidelijk boven uw aantal bestellingen betekent dubbeltelling. Duidelijk eronder betekent verlies.
+62183144136b	Het cijfer dat u vertelt dat het werkt
+7c1cae747321	Zodra de deduplicatie klopt, is de metric die u in de gaten wilt houden de <t0>Event Match Quality</t0>. Die geeft weer hoeveel identificerende informatie u met elk event meestuurt (gehasht e-mailadres, telefoon, naam, locatie, klik-ID's) en bepaalt hoe goed Meta een conversie kan toeschrijven aan de persoon die de advertentie zag.
+debc662381be	Hier bewijst de Conversions API haar waarde. Uw server kent het e-mailadres en telefoonnummer van de klant, omdat die net iets heeft gekocht. De browser vaak niet. Die gegevens server-side versturen, correct gehasht, levert meestal meer op dan het terughalen van de geblokkeerde events zelf.
+675a8e43cb4a	<t0>Hash het, en controleer dat u dat deed</t0>
+1d463b2143b2	Klantidentificatoren moeten met SHA-256 worden gehasht voordat ze worden verstuurd. Dat is geen prestatiedetail: het is het verschil tussen Meta een hash sturen en Meta de ruwe persoonsgegevens van uw klanten sturen. Bouwt u de integratie zelf, controleer de hashing dan op een echte payload voordat u live gaat, want een fout hier is een datalek en geen trackingbug.
+da8a469d10b5	Wat ik niet beweer
+f906da2640f3	Ik heb u geen doelscore voor Event Match Quality gegeven en geen verwachte verbetering door CAPI. Beide hangen volledig af van welke klantgegevens u rechtmatig kunt verzamelen, uw checkout en uw verkeer, en elke gepubliceerde benchmark die ik heb gezien komt van een leverancier wiens product precies het gemeten cijfer verbetert.
+55b7f711e115	Meet vóór de wijziging uw eigen uitgangssituatie, meet opnieuw nadat het een volledig attributievenster heeft gedraaid, en vergelijk met uzelf. Die vergelijking is meer waard dan welk gepubliceerd gemiddelde ook.
+40184cda3be7	Weet u niet zeker of uw deduplicatie werkt?
+3b3d85b73b44	Het is een controle van een kwartier en de meeste opzetten falen erop. Stuur me de URL van uw webshop en ik vertel u wat ik vind.
+d64a6f7be20d	<t0>Vraag een gratis trackingaudit aan &rarr;</t0>
+f2aa1253029c	Gerelateerde praktijknotities
+4a93f65922ac	<t0>De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<t1>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</t1></t0> <t2>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t3>Zeven oorzaken, inclusief de dubbele pixel die de attributie splitst.</t3></t2> <t4>Snapchat-aankoopevents worden niet geactiveerd: de diagnosevolgorde<t5>Zes oorzaken gerangschikt, met echte cijfers uit Ads Manager.</t5></t4>
+cf39bf876da3	<t0>&copy; 2026 Kamran Arshad. Specialist in online advertenties &amp; tracking</t0> <t1><t2>Home</t2> &middot; <t3>Praktijknotities</t3> &middot; <t4>Privacy</t4></t1>
+27ae9bc21ad7	Hoe lang duurt een Google Ads-audit?
+186ce2abfc75	De gratis audit die ik aanbied, is een live beoordeling van 15 minuten van uw advertenties, website of vindbaarheid, en eindigt met één ding dat u deze week kunt verbeteren.
+6d5dc91be219	Kan ik deze zes controles zelf uitvoeren?
+f341d86e13be	Grotendeels wel. Controles één tot en met vier doet u in uw eigen Google Ads-account. Voor controle vijf heeft u ook toegang nodig tot de tag-opzet van uw website.
+c6bc57ada6dd	Wat is een uitsluitingszoekwoord?
+fad3eb8661dd	Een woord of woordgroep die voorkomt dat uw advertenties worden getoond bij zoekopdrachten waarin het voorkomt, zodat u niet meer betaalt voor klikken van mensen die nooit klant zouden worden.
+006e82f95ba9	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Google Ads
+8ad5b37eb608	Een Google Ads-accountaudit voor leadgeneratie: zes controles, op volgorde
+b6f22dba98c5	<t0>Kamran Arshad</t0><t1>10 okt 2026</t1><t2>3 min lezen</t2>
+0d09a2a26b35	Een nuttige Google Ads-audit voor een bedrijf dat draait op telefoontjes en aanvraagformulieren controleert zes dingen op volgorde: verificatie van de adverteerder, scheiding van Zoeken en Display, locatietargeting, uitsluitingszoekwoorden, conversietracking voor formulieren en telefoontjes, en advertentiegroepen per dienst.
+5f730cbafc91	Ik heb deze volgorde toegepast op het account van een tandartspraktijk dat nooit goed was ingericht.
+6782b1b442e0	De meeste checklists voor een Google Ads-audit beginnen bij biedingen en advertentieteksten. Bij een bedrijf dat op leadgeneratie draait begin ik eerder in de keten, want biedingen en teksten kunnen een account niet redden dat advertenties op de verkeerde plek toont, bij de verkeerde zoekopdrachten, zonder enig spoor van wat er daarna gebeurde.
+f6ec1d04a62d	De zes controles
+e2412274cc2e	Verificatie van de adverteerder
+b797ebeb0610	Google kan verificatie van de identiteit van de adverteerder eisen. In het account van de praktijk was die niet afgerond, wat de weergave van campagnes in gevaar bracht. Zoek eerst naar een verificatiemelding, want niets anders telt als advertenties niet meer worden weergegeven.
+ac42008283ef	Zoeken en Display gescheiden
+84ea06a1e4eb	De campagnes van de praktijk mengden het Zoek- en Display-netwerk. Display gebruikte budget zonder aanvragen op te leveren, dus ik scheidde de twee en pauzeerde Display. Controleer de netwerkinstellingen van elke campagne.
+0edee880ffa5	Locatietargeting
+8885e792b40f	De campagnes richtten zich op de hele wereld in plaats van op Islamabad, waar de praktijk werkt. Open de locatie-instellingen van elke campagne en controleer of de vermelde plaatsen de plaatsen zijn waar u werkt.
+11f3e8d2c0a8	Uitsluitingszoekwoorden
+5d09a1b11f38	Er waren geen uitsluitingszoekwoorden, dus een deel van het budget ging naar zoekopdrachten zonder lokale intentie. Lees het zoektermenrapport van de laatste 30 dagen en voeg toe wat nooit een advertentie had mogen activeren.
+8070e6e94102	Conversietracking voor formulieren en telefoontjes
+06df19125f75	Formulieren noch telefoontjes werden gemeten, dus elke beslissing rustte alleen op klikken. Ik richtte Google Tag Manager-triggers in voor formulierverzendingen en tikken op klik-om-te-bellen, en koppelde die events aan Google Ads.
+236100193fa0	Advertentiegroepen per dienst
+0823b041e4d9	Ik onderzocht lokale zoektermen en groepeerde zoekwoorden per behandeling, zoals gebitsreiniging, implantaten en bleken, zodat elke advertentie kan aansluiten bij wat de persoon intypte.
+66ae284eedaa	Wat er veranderde in het account van de praktijk
+1d947d48f7ab	Na de herbouw was het account alleen Zoeken, gericht op Islamabad, met een lijst uitsluitingszoekwoorden en tracking op zijn plaats. Voor het eerst kon de praktijk zien welke advertenties, zoekwoorden en campagnes echte patiëntaanvragen opleverden.
+7822105c280a	Het volledige verslag van het werk staat in de <t0>case van Smile Line Dental</t0>.
+5aad6db18084	<t0>Waar dit vandaan komt</t0>
+a11d9cecff6e	Eén account van een tandartspraktijk in Islamabad. Het is één account, geen onderzoek, en het is geen Nederlands of Belgisch account. De zes controles gelden voor elk leadgeneratie-account omdat ze vóór het bieden komen, maar de specifieke problemen die ik vond zijn die van deze praktijk.
+da5c39c9e038	Wat deze checklist niet behandelt
+17482ff44164	Biedstrategie, advertentieteksten en landingspagina's komen niet aan bod. Die doen ertoe, en ze werken beter zodra de zes eerdere controles in orde zijn, want pas dan kunt u de data vertrouwen waarop ze steunen.
+34f22dfc3f65	Is controle vijf het zwakke punt in uw account, dan gaan mijn <t0>gids voor het meten van telefoontjes uit Google Ads</t0> en de <t1>diagnosevolgorde voor conversietracking</t1> dieper.
+dd8d359078fb	Grotendeels wel. Controles één tot en met vier doet u in uw eigen Google Ads-account. Voor controle vijf heeft u ook toegang nodig tot de tag-opzet van uw website.
+752ae71efa70	Wilt u dat ik deze zes controles op uw account uitvoer?
+5ad8d76d9f56	<t0>Plan een gratis audit &rarr;</t0>
+3a0915891fef	<t0>Google Ads-beheer<t1>Hoe ik leadgeneratie-accounts beheer.</t1></t0> <t2>Google Ads-gesprekstracking voor lokale dienstverleners<t3>Hoe u de telefoontjes telt die opdrachten worden.</t3></t2> <t4>Google Ads-conversietracking werkt niet: een diagnosevolgorde<t5>Waar u eerst kijkt als conversies niet meer worden geregistreerd.</t5></t4>
+860c41e0ca82	Google Ads-gesprekstracking voor lokale dienstverleners
+3d47adda8edc	De meeste trackinggidsen gaan uit van een webshop. Is uw conversie een telefoontje, dan zijn de fouten anders. Vier manieren om Google Ads-gesprekken te meten, en waar elke manier faalt.
+f7bee19c9081	Bijna elke gids over conversietracking is geschreven voor webshops. Is uw conversie een telefoontje, dan zijn de manieren waarop het misgaat totaal anders. Dit zijn de vier manieren om telefoontjes uit Google Ads te meten, wat elk ervan echt meet, en waar het misgaat.
+b1cebe726da9	Google Ads-gesprekstracking
+0030c9a24d4a	Hoe meet ik telefoontjes uit Google Ads?
+0e56b8a1370d	Er zijn vier methoden: oproepextensies met een doorschakelnummer van Google, oproepen vanaf een website met dynamische nummervervanging, statische klik-om-te-bellen-tracking, en een gesprekstrackingplatform van derden. Elk meet iets anders, en maar een deel ervan koppelt het telefoontje terug aan een specifiek zoekwoord.
+2b22a65cea2b	Neemt Google Ads-gesprekstracking gesprekken op?
+e6900e4e22a0	Google Ads kan gesprekken opnemen die via doorschakelnummers van Google lopen waar die functie beschikbaar is, en dat is onderworpen aan lokale wetgeving en meldingsplichten. Meten dat er gebeld is en de inhoud van het gesprek opnemen zijn aparte beslissingen met aparte wettelijke verplichtingen.
+9db6a1e66133	Waarom toont Google Ads telefoontjes terwijl mijn telefoon niet ging?
+1fe2810d6ab5	Een veelvoorkomende oorzaak is dat tikken op klik-om-te-bellen als telefoontjes worden geteld. Een tik op een telefoonlink is een intentie om te bellen, geen voltooid gesprek. Meet u tikken in plaats van verbonden gesprekken met een minimale duur, dan liggen uw gerapporteerde conversies hoger dan het aantal telefoontjes dat u echt ontving.
+f49bba1211ab	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Lokale dienstverlening
+d1549a62e3df	Google Ads-gesprekstracking, voor bedrijven waarvan de klanten bellen in plaats van kopen
+c1332ea8b8a4	<t0>Kamran Arshad</t0><t1>12 aug 2026</t1><t2>9 min lezen</t2>
+48597bea8bd6	Is uw conversie een telefoontje in plaats van een checkout, dan is bijna elke trackinggids online voor iemand anders geschreven. Er zijn vier manieren om telefoontjes uit Google Ads te meten: <t0>oproepextensies, dynamische nummervervanging op uw website, statische klik-om-te-bellen en een platform van derden</t0>, en ze meten verschillende dingen.
+4787446104dd	De meest gemaakte fout is een tik op een telefoonlink tellen als telefoontje. Dat is het niet. Het is een voornemen.
+be74ac964053	Lees een willekeurig artikel over conversietracking en u bevindt zich in een webshop. Aankoopevents, winkelwagenwaarden, rendement op advertentie-uitgaven. Daar heeft u weinig aan als u tandarts, tapijtreiniger, loodgieter of fysiotherapeut bent, waar het geld binnenkomt omdat iemand de telefoon pakte.
+ef4eb78601aa	De manieren waarop het misgaat zijn echt anders, en erger, want een telefoontje laat helemaal geen spoor achter in uw website-analytics, tenzij u er bewust voor zorgt dat het dat wel doet.
+23b9c2027f29	De vier methoden, en wat elk ervan u echt vertelt
+88306943fea7	Methode
+c00063b12b4f	Wat het meet
+ddb536ffbfc9	Attributie op zoekwoordniveau
+80b2d4210bb1	Grootste zwakte
+e4eaf3b3eb4c	Oproepextensie / oproepitem
+d871c99b262e	Telefoontjes direct vanuit de advertentie
+01a0a10b309b	Mist iedereen die eerst doorklikt naar de website
+481d9ef38d82	Oproepen vanaf website (dynamisch nummer)
+bbffdb9a7813	Telefoontjes naar een vervangen nummer op uw website
+9669bde9fd6d	Het vervangingsscript moet laden en op mobiel werken
+e2958737999c	Statische tik op klik-om-te-bellen
+c9d6a6fbac5c	Tikken op een <t0>tel:</t0>-link
+65de2e2a3bcb	Gedeeltelijk
+0c783c956f7d	Telt intentie, geen verbinding; blaast conversies op
+7d57124f324e	Gespreksplatform van derden
+17ecff81008f	Verbonden gesprekken, duur, opname, bron
+b8ccbb777715	Maandelijkse kosten; nog een systeem om te onderhouden
+f70447db666a	Let op de derde rij. Daar komen de meeste kleine bedrijven op uit, meestal per ongeluk, omdat een tik meten het makkelijkst in te stellen is in Google Tag Manager. Het is ook de methode die u het meest voorliegt.
+0cdea2435c54	Waarom tikken tellen uw biedingen ongemerkt verpest
+916984913936	Een tik op een <t0>tel:</t0>-link betekent dat iemand geïnteresseerd genoeg was om de kiezer te openen. Het betekent niet dat hij op de groene knop drukte. Het betekent niet dat u opnam. Het betekent niet dat het gesprek langer duurde dan vier seconden voordat hij merkte dat u gesloten was.
+1a6f175a2f37	Stuurt u tikken als conversies naar Google Ads, dan optimaliseert Smart Bidding op <t0>mensen die tikken</t0>. Dat zijn niet dezelfde mensen als <t1>klanten die boeken</t1>. Het verschil tussen die twee is waar uw budget naartoe gaat.
+fa7d752e9e82	&#10007; Wat u telt
+a0d2a50a1225	&#10003; Wat u zou moeten tellen
+c31514a54044	De wijziging met de meeste impact die de meeste lokale adverteerders kunnen doorvoeren, is een <t0>minimale gespreksduur</t0> instellen voordat een telefoontje als conversie telt. Zestig seconden is voor de meeste dienstverleners een verstandig startpunt: lang genoeg om verkeerde nummers en directe ophangers uit te sluiten, kort genoeg om een snelle &ldquo;kunt u dinsdag komen?&rdquo; mee te tellen.
+f80af713ddc3	Wat ik echt heb ingericht, en wat het veranderde
+fa9816860d65	Ik heb dit twee keer gebouwd, voor twee heel verschillende bedrijven, en het is het deel van mijn werk met het duidelijkste verschil tussen vooraf en achteraf.
+68a7fe675618	Smile Line Dental: Islamabad
+cfdce4a2516f	Google Ads + GTM &middot; tracking van telefoontjes en formulieren
+04f4a5fe4a53	Vooraf: Google Ads draaide zonder zicht op welke zoekopdrachten afspraken opleverden. Aanvragen kwamen binnen per telefoon en via formulieren, en geen van beide werd ergens aan toegeschreven.
+23e2335192a6	Achteraf: GTM-tracking op beide aanvraagformulieren en op telefoontjes, zodat specifieke zoekopdrachten voor het eerst aan echte afspraken gekoppeld konden worden. In de woorden van de praktijk: ze &ldquo;gokken niet meer.&rdquo;
+41d60e968d0a	<t0>Wat ik niet beweer:</t0> ik heb voor dit account geen gepubliceerd cijfer voor kosten per aanvraag, dus ik ga er geen verzinnen. Wat veranderde was het inzicht: de voorwaarde voor al het andere, niet het resultaat zelf.
+5911ac4e45dd	Het tweede was <t0>Mr Expert Carpet Cleaning</t0> in Slough, waar de website vanaf nul opnieuw werd gebouwd met tracking die vanaf het begin was meeontworpen in plaats van achteraf aangeplakt, inclusief een server-side GTM-container. Dat project leerde me de les uit het volgende onderdeel.
+e73687eafd92	De fout waar niemand u voor waarschuwt: het formulier dat mailt
+83a249480f0b	De meeste websites van lokale dienstverleners gebruiken een contactformulier dat een e-mail opstelt en verstuurt. Mislukt die verzending (een slechte SMTP-configuratie, een spamfilter, een volle inbox), dan gaat de lead niet naar een wachtrij voor een nieuwe poging. Hij houdt op te bestaan. Er is geen enkel spoor dat iemand het formulier ooit invulde.
+96c59ad4de18	U kunt niet meten wat nooit is opgeslagen. Dus voordat ik aan conversietracking op de website van een lokale dienstverlener werk, controleer ik één ding: <t0>schrijft het formulier de lead naar een database voordat het iemand probeert te mailen?</t0> Is het antwoord nee, dan is tracking het tweede probleem.
+a721ea426e1d	<t0>Eerst opslaan, dan melden</t0>

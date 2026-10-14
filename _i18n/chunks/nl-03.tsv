@@ -1,0 +1,215 @@
+a534a293aec7	Volledige stack
+9e22f963669b	Website live, volledige trackingstack operationeel en Google Ads actief. GA4 en Microsoft Clarity verzamelen data. Lopend project: de resultaten bouwen zich op naarmate de campagnes data verzamelen.
+569a90ef88ab	<t0> Bekijk de live website: mrexpertcarpetcleaning.com ↗ </t0>
+e4d4b139454e	<t0>Maatwerk</t0>
+945b9ac9e9a9	Het formulier verloor leads. Dus verving ik het door software die ik zelf schreef.
+208cfde904b9	De website ging live met een standaard Elementor-formulier, dat <t0>e-mail-eerst</t0> werkt: het stelt een e-mail op en verstuurt die. Mislukt die verzending, dan is er geen tweede kopie. De lead is gewoon weg, en niemand weet dat hij bestond. Daarbovenop kon Google Ads niet zien welke klikken geboekte opdrachten werden, dus optimaliseerde het op formulierverzendingen in plaats van op omzet.
+6ff9017e7bc9	In plaats van een SaaS van derden aan te koppelen met een maandelijks abonnement en een tussenpartij voor de data, bouwde ik <t0>LeadBridge</t0>: een WordPress-plugin in eigen beheer, first-party, zonder betaalde afhankelijkheden.
+1b18e2a306ec	Architectuur die eerst opslaat
+a22ceb032ea4	Elke lead wordt in een eigen databasetabel geschreven <t0>voordat</t0> er een e-mail, webhook of API-aanroep wordt geprobeerd. Integraties zijn bewust best-effort: een falende API van derden kan het vastleggen van leads nooit breken.
+26e0971a09b6	Omzet terug naar Google Ads
+9855dc4e81fb	Legt <t0>gclid</t0> en UTM-parameters vast bij de verzending en stuurt daarna de echte opdrachtwaarde terug als offline conversie, inclusief verbeterde conversies voor leads. De biedstrategie optimaliseert op geld, niet op ingevulde formulieren.
+02291548ac16	Mini-CRM
+5a655ce4d06c	Pijplijnfases, opdrachtwaarde, notities en een omzetdashboard, zodat de maandelijkse vraag „wat heeft de advertentie-uitgave echt opgeleverd?” een antwoord heeft dat uit de database komt in plaats van geschat.
+a357357267f9	Velden zonder vast schema
+c6369e1fbad0	Een JSON-kolom slaat de verzonden velden op, zodat het formulier van vorm kan veranderen zonder ook maar één databasemigratie. Velden worden bewerkt vanuit de beheeromgeving.
+c80ccfd9afcb	<t0>REST-endpoint dat eerst opslaat</t0> <t1>Spambescherming</t1> <t2>gclid- + UTM-registratie</t2> <t3>SMTP-mailer</t3> <t4>WhatsApp-meldingen</t4> <t5>Automatisch antwoord aan klant</t5> <t6>Automatische reviewverzoeken</t6> <t7>Kopie in Google Sheet</t7> <t8>CSV-export</t8> <t9>Responsieve beheeromgeving</t9>
+3cd86003b839	Gebouwd als standaard WordPress-plugin met PHP-klassen: modules voor formulier, database, veldeditor, mailer, WhatsApp, Google Ads, statistieken, beheer en instellingen. GPL-2.0+, volledig eigendom van het bedrijf, zonder terugkerende licentie.
+78f16719b502	<t0>Klantdashboard</t0>
+216fd558f8b4	Vijf databronnen, één scherm, zodat de klant niet op vijf platformen hoeft in te loggen.
+236ab35afc43	Toen de trackingstack, GMB, Search Console en LeadBridge allemaal live waren, stond de data zelf nog verspreid over vijf verschillende platformen. Dus bouwde ik één dashboard voor de klant dat alles samenbrengt: <t0>Google Ads-prestaties</t0>, <t1>Search Console</t1> (vertoningen, klikken, indexeringsstatus), activiteit van het <t2>Google Bedrijfsprofiel</t2>, opdracht- en omzetdata uit <t3>LeadBridge</t3> en gedragsinzichten uit <t4>Microsoft Clarity</t4>, allemaal in één overzicht.
+de3b2f082f95	Het gaat niet alleen om gemak. Het betekent dat de klant in één oogopslag ziet wat er echt gebeurt in elk kanaal, zonder mij om een rapport te vragen of zelf in te loggen op vijf aparte dashboards.
+3445ece2c7e9	<t0>LeadBridge (eigen plugin)</t0> <t1>WordPress</t1> <t2>Elementor</t2> <t3>Google Tag Manager</t3> <t4>GTM server-side container</t4> <t5>Facebook CAPI</t5> <t6>GA4</t6> <t7>Microsoft Clarity</t7> <t8>Google Bedrijfsprofiel</t8> <t9>Google Search Console</t9> <t10>Google Ads</t10> <t11>Lokale SEO</t11> <t12>Eén klantdashboard</t12>
+9eff394514fc	Website van Mr Expert
+2b9a9166fb6b	GA4 van Mr Expert
+20a443baf398	SEO van Mr Expert
+9a24b6d33b75	Een volledige digitale opzet zoals deze nodig?
+8b5a34d5ff25	Website + tracking + advertenties. In een gratis gesprek van 15 minuten vertel ik u waar u moet beginnen.
+0d02200443ab	Casestudy Brizaa | Kamran Arshad
+060f881f0fc6	Redesign van de Shopify-webshop, Meta- & Instagram-advertenties en CRO voor Brizaa, een huidverzorgingsmerk uit Pakistan.
+c9865eaccb96	Case Brizaa
+6e6cd0d024e7	<t0>Shopify</t0> <t1>Meta &amp; Instagram Ads</t1> <t2>Merk gestopt</t2>
+ee48bd0fd694	Huidverzorgingsmerk, Pakistan: redesign van de webshop, betaalde social &amp; CRO
+1e9f63ffefbf	Redesign van de Shopify-webshop
+fa5425a3b91d	Meta <t0>&amp;</t0> IG
+8683c25d3cfa	Betaalde socialmediacampagnes
+0dbf2e8b5fe7	Enkele <t0>weken</t0>
+8e38696ec92a	Live testperiode
+0b9078d585fd	Een nieuw huidverzorgingsmerk had een webshop nodig en een echt antwoord op de vraag of er betaalde vraag bestond.
+926a80fe24f0	Brizaa was een klein, onafhankelijk huidverzorgingsmerk van een vriend, met verkoop via Shopify. Zoals de meeste jonge webshops had het een sterkere etalage nodig en een manier om echt te testen of betaald verkeer kon converteren, in plaats van te gokken.
+9d292a181315	De webshop opnieuw gebouwd en daaromheen betaalde social gedraaid en geoptimaliseerd.
+72252557cf22	<t0>Redesign van de Shopify-webshop</t0>: ontwerp en lay-out van de webshop opnieuw opgebouwd
+c5865a54e137	<t0>Conversieoptimalisatie</t0>: gewerkt aan de lay-out en de productpagina's om bezoekers beter te laten converteren
+dcbe901c0d07	<t0>Meta &amp; Instagram Ads</t0>: betaalde socialmediacampagnes voor het merk gepland, gelanceerd en beheerd gedurende enkele weken
+cf5d7c67c7e2	<t0>Hoe het er nu voor staat</t0>
+88d86b7721d5	Gestopt
+dbdff9be1317	De webshop, het ontwerp en het advertentiewerk waren af en enkele weken live. Brizaa is inmiddels gestopt. Het staat hier als eerlijk verslag van het werk, niet als live referentie.
+d59fa7f6631e	<t0>Shopify</t0> <t1>Meta Ads Manager</t1> <t2>Instagram Ads</t2> <t3>CRO</t3>
+57a468e9497d	<t0>🧴</t0> <t1>Van dit project zijn geen dashboardscreenshots bewaard; de webshop is niet meer online.</t1>
+b6e31f41dc21	Bouwt of repareert u een Shopify-webshop?
+dd70f030306c	Ik audit uw webshop en advertentie-opzet in 15 minuten en laat u precies zien wat de conversies tegenhoudt.
+969ffaadb059	Casestudy FlowBridge (Wispr Flow-kloon) | Kamran Arshad
+133183c272e2	FlowBridge: een persoonlijke, met AI gebouwde tweetalige (Engels/Urdu) spraak-naar-tekst-app voor de desktop, met Groq en Gemini als terugval, gebruiksstatistieken en audio die nooit wordt opgeslagen.
+95940a31e4eb	Case FlowBridge (Wispr Flow-kloon)
+03b8504bf05e	<t0>Persoonlijk project</t0> <t1>AI / automatisering</t1> <t2>Groq + Gemini</t2> <t3>Engels / Urdu</t3>
+a60eb7ff0d58	FlowBridge <t0>(Wispr Flow-kloon)</t0>
+ef73cdcdbb3f	Persoonlijk project: tweetalige AI-app voor spraak-naar-tekst voor Windows
+84457474b756	Gebouwd met <t0>Codex</t0>
+c210d4db32e7	Door AI uitgevoerde ontwikkeling
+d38e3d8de3fe	Groq <t0>+</t0> Gemini
+b4f4458b8ccf	Primaire spraakdienst + terugval
+281d41fd4926	EN <t0>+</t0> UR
+9d26f5a02156	Tweetalig dicteren
+1ea2a5fb32c7	Privacy <t0>voorop</t0>
+5b9cf9cf5a4b	Audio nooit op schijf opgeslagen
+4478e943c8fa	<t0>Waarom ik het bouwde</t0>
+954f1f3e4ef8	Ik wilde een dicteertool die niet alleen transcribeert, maar ook zelf opruimt, in twee talen.
+2ee59024120c	Wispr Flow is een commerciële spraak-naar-tekst-app. Ik wilde hetzelfde basisidee: een sneltoets ingedrukt houden, praten in plaats van typen, en schone tekst krijgen waar de cursor ook staat. Maar dan gebouwd door en eigendom van mij, met ondersteuning voor hoe ik echt werk: wisselend tussen Engels en Urdu. Dus bouwde ik mijn eigen versie, <t0>FlowBridge</t0>, als persoonlijk project.
+9727a19d956e	De hele bouw met Codex aangestuurd, en daarna echte infrastructuur eromheen gekoppeld.
+7f87df8fae6a	<t0>Van begin tot eind gebouwd met Codex</t0>: in plaats van de app met de hand te schrijven, liet ik Codex (een AI-codeeragent) hem bouwen en itereerde ik tot de workflow goed voelde: Ctrl+Spatie ingedrukt houden, spreken, loslaten, en de opgeschoonde tekst verschijnt waar ik aan het typen was
+849c1a8701eb	<t0>Groq primair, Gemini als terugval</t0>: spraak-naar-tekst draait op Groq voor snelheid, met Gemini als automatische terugval, zodat het dicteren niet stopt als één dienst problemen heeft
+1bcbb52be55e	<t0>Tweetalige ondersteuning voor Engels + Urdu</t0>: de app transcribeert en schoont beide talen op, ook gemengde sessies, in plaats van alleen Engels zoals de meeste dicteertools
+8651019f6f0d	<t0>Ingebouwde gebruiksstatistieken</t0>: een Insights-pagina houdt gedicteerde woorden, sessies, spreeksnelheid (WPM), gemiddelde latentie, taalverdeling en de apps waarin ik het meest dicteer bij (Chrome, Claude, ChatGPT)
+1da38bfa04d3	<t0>Eigen woordenboek</t0>: een woordenboekgedeelte voor woorden en termen die het model altijd goed moet hebben, in plaats van elke keer te strijden tegen hetzelfde verkeerd verstane woord
+921e70fa08f9	<t0>Privacy-first architectuur</t0>: audio wordt nooit op schijf opgeslagen; lokale geschiedenis en API-sleutels worden versleuteld voor mijn Windows-account; de bewaartermijn van transcripties en de grootte van de lokale database zijn allebei instelbaar, met opties om met één klik tijdelijke data te wissen of de datamap te openen
+89db563c7ee1	In gebruik: v2.3
+16c568ef09dc	FlowBridge draait dagelijks op mijn eigen pc als persoonlijke productiviteitstool, inmiddels in de derde versie of later. Het wordt niet verspreid, verkocht of als product aangeboden; het staat hier als voorbeeld van hoe ik AI-codeertools aanstuur om echte, werkende, privacybewuste software op te leveren, niet alleen advertentieaccounts.
+8d743f159a48	<t0>Codex</t0> <t1>Groq API</t1> <t2>Gemini API (terugval)</t2> <t3>Tweetalige spraak-naar-tekst</t3> <t4>Gebruiksstatistieken</t4> <t5>Lokale versleutelde opslag</t5> <t6>Windows-desktopapp</t6>
+014aab51e329	<t0>Screenshots van de app</t0>
+b29fb5cc7006	Een eigen tool nodig die rond AI is gebouwd?
+19a77a3804f7	Heeft u een terugkerende workflow die geautomatiseerd kan worden? Laten we erover praten in een gratis gesprek van 15 minuten.
+1310da10f7f1	Casestudy ContentBuilder | Kamran Arshad
+88336540e2d1	Diagnose van de deliverability van cold e-mail (96% inbox bij Gmail, 0% bij Microsoft), een nieuw ICP en outboundteksten voor ContentBuilder, een Amerikaans AI-trainingsplatform.
+b57ece814bc0	Case ContentBuilder
+d1fc7d8f5c5d	<t0>🇺🇸 B2B SaaS in de VS</t0> <t1>Outbound &amp; deliverability</t1> <t2>ICP &amp; go-to-market</t2> <t3>aug – sep 2026</t3>
+5e1756fb55b7	Content<t0>Builder</t0>
+ac571d1dfa3c	Amerikaans AI-trainingsplatform: uitzoeken waarom cold e-mail niet aankwam, en de go-to-market opnieuw opbouwen rond de juiste koper
+5e5541b19896	96% <t0>vs</t0> 0%
+95c8a0fd32b4	Inboxplaatsing, Gmail vs Microsoft. Het probleem gevonden en geïsoleerd
+383d76a675fa	Onderzochte branches, teruggebracht tot drie om te testen
+21c04d9c3766	Opgeleverde audits, onderzoeken, teksten, plannen en trackers
+7be0fc7d557d	<t0>De klant</t0>
+f90dd65e011d	Een sterk product, een AI-„marketingafdeling” en een outboundmachine die geen reacties opleverde.
+52725c795cbe	<t0>ContentBuilder</t0> is een Amerikaans AI-trainingsplatform. Het zet de bestaande kennis van een bedrijf (documenten, werkinstructies, opnames, beleid) om in gestructureerde, meertalige trainingen met AI-voice-over en volledige LMS-levering (SCORM/xAPI, SSO/SCIM). De zustermodule, <t1>Lumi</t1>, doet HR-werk: vacatureteksten schrijven, vacatures plaatsen, sollicitanten screenen en eerste gesprekken voeren.
+c1446195557a	Ik kwam binnen als marketingmanager op contractbasis. Het bedrijf had een AI-„marketingafdeling” met afdelingen en agents die al waren ingericht, maar niets daarvan was gekoppeld aan echte platformen zoals Search Console, GA4, social publishing of Canva. Er gingen cold e-mails uit, maar er kwamen geen reacties terug.
+3b5fcfb411a7	<t0>01: Diagnose van de deliverability</t0>
+b19564461fa9	De tekst was het probleem niet. Microsoft stuurde elke e-mail naar spam.
+6c15a9ca9938	De makkelijke aanname was slechte tekst. Voordat ik iets herschreef, deed ik een volledige test van de inboxplaatsing over elke verzendende mailbox en las ik alle vijf deelrapporten:
+dccd63af92c2	<t0>Google → Google: 96% inbox.</t0> Inhoud, SPF, DKIM en DMARC allemaal geslaagd. Spamfilterscore 0, geen blacklists.
+6d37d3447e62	<t0>Google → Microsoft: 0% inbox, 100% spam.</t0> Elke e-mail naar een Outlook- of Microsoft 365-adres belandde in de ongewenste e-mail.
+95cd3a3300ab	Dat isoleerde de fout tot <t0>de afzenderreputatie bij Microsoft</t0>. Inhoud, authenticatie en blacklists waren allemaal uitgesloten. Voor een B2B-publiek, waarbij een groot deel van de bedrijven op Microsoft 365 draait, verklaart dat alleen al de meeste ontbrekende reacties.
+8852683d97dc	Het herstelplan: aanmelden bij Microsoft SNDS/JMRP, 2–3 verzenddomeinen toevoegen bij een tweede provider, het volume begrenzen op 25–40 e-mails per mailbox per dag, verzendingen segmenteren naar de mailprovider van de ontvanger, en open-tracking uitzetten. Ik berekende ook wat het hoge volumedoel van de klant in werkelijkheid zou vergen: zo'n 200 opgewarmde mailboxen over veel domeinen, met een opwarmperiode van 3–4 weken die u niet kunt overslaan of kopen.
+e983046e61a1	<t0>02: ICP &amp; targeting</t0>
+d353a4102402	De ideale klant opnieuw gedefinieerd, en één trigger gevonden die beter werkt dan branche of personeelsomvang.
+2de9371d306f	<t0>ICP vanaf nul opnieuw opgebouwd</t0> toen de focus naar het HR-product verschoof: van HR/L&amp;D-directeuren bij bedrijven met 100–2.000 medewerkers naar <t1>eigenaren, oprichters en COO's van bedrijven zonder eigen HR-medewerker</t1>, die de pijn van het werven direct voelen
+315856b6b042	<t0>Het beste targetingsignaal: nu 5+ openstaande vacatures.</t0> Het is openbaar, gedateerd en gratis te vinden, en het voorspelt koopintentie beter dan branche of bedrijfsgrootte
+4e479431655a	<t0>15 branches onderzocht, teruggebracht tot 3</t0> om parallel te testen: thuis- en buitendienstverlening, thuiszorg en ouderenzorg, en salon- of restaurantgroepen met 10+ vestigingen
+71c52cc7105f	<t0>Vijf complete combinaties van ICP + aanbod</t0> voor het kerntrainingsproduct, plus een <t1>handmatige leadbeoordeling van 40 bedrijven</t1> om te controleren of echte leads bij het ICP pasten voordat er budget naar verzenden ging
+ea66bda19da6	<t0>03: Outboundteksten &amp; campagne-opbouw</t0>
+91640dc5be73	De reeksen herschreven zodat ze passen bij wat nu werkt in cold e-mail.
+12f6a6526f89	Structurele problemen in de oorspronkelijke e-mails opgelost: ze waren ondertekend door „het team” in plaats van door een echt persoon, vroegen bij het eerste contact om een demo van 30 minuten en hadden zware footers. Ik verving dit door <t0>e-mails ondertekend door een persoon en een laagdrempelig verzoek van 15 minuten</t0>
+5b82c13fd968	Een <t0>lancering met vijf campagnes</t0> geschreven op basis van actuele benchmarkdata: minder dan 80 woorden per e-mail, 4–7 contactmomenten per reeks, en de meeste moeite in e-mail één, omdat daar de meeste reacties vandaan komen
+2c8692453391	De volledige lanceringsspecificatie opgeleverd: doelgroepen, campagnestructuren en een <t0>configuratie van een agent voor het afhandelen van reacties</t0> met een antwoordtabel voor elk type reactie
+4d8a536429c9	Een nieuw aanbod ontworpen (een „oefenpakket voor de volgende aanname”) en een goedkeuringsdocument voor de oprichter voor de Amerikaanse outbound-campagne
+d2a646af300f	<t0>04: Het merk beschermen</t0>
+c0b6dfabf7d4	Gecontroleerd of het product bij de belofte paste, en juridische risico's gesignaleerd voordat er ook maar één e-mail uitging.
+434f424b5eda	<t0>Het live product opnieuw getoetst aan de outboundbelofte</t0> en vastgesteld dat het smaller was dan „runt uw HR-team”. Ik signaleerde het verschil voordat het prospects kon bereiken en het vertrouwen kon schaden
+55c666281246	<t0>Complianceonderzoek naar AI-tools voor werving:</t0> NYC Local Law 144 (jaarlijkse onafhankelijke bias-audits, gepubliceerde resultaten, 10 werkdagen vooraankondiging aan kandidaten) en vergelijkbare regels in Illinois en Colorado, die bepalen aan wie een product voor kandidaatscreening veilig kan worden aangeboden
+66aa900fc7e6	Een voorgesteld beloningsaanbod voor reviews getoetst aan de <t0>FTC-regel over consumentenreviews en testimonials</t0>
+e8a6de65b47e	<t0>05: SEO, planning &amp; rapportage</t0>
+5cc846b45fb6	Alles gebaseerd op echte data, en gerapporteerd over resultaten in plaats van activiteit.
+622f7a19292e	<t0>Volledige SEO- &amp; CRO-audit</t0> van contentbuilder.ai, plus een <t1>live audit in Google Search Console</t1> met echte indexerings- en zoekopdrachtdata in plaats van schattingen van derden
+5a55b27812db	<t0>Onderzoeks- &amp; uitvoeringsplan van 20 dagen</t0> met een werkende tracker en een samenvatting van één pagina voor de oprichter
+1216c3494cc7	Een <t0>democursus</t0> in het product gebouwd en een <t1>productrondleiding van 90 seconden</t1> uitgeschreven voor verkoopgebruik
+e8c760507ade	<t0>Resultaatgerichte rapportage</t0> ingericht: afgeleverd, bounce-%, inboxplaatsing, reacties, positieve reacties, geboekte gesprekken, gevoerde gesprekken, gewonnen klanten, toegevoegde MRR. Dagelijkse updates volgden een vast format: beslissing, waarom, cijfers, lessen, morgen
+071f47ca1c7b	<t0>Overdracht</t0>
+a206f25ea468	Nette overdracht
+d04f08bc68e6	Aan het eind van de opdracht leverde ik een gestructureerde overdrachtsmap op: outreach-audit, ICP- en aanbodonderzoek, campagneteksten en -inrichting, strategie, SEO/CRO-audit en het uitvoeringsplan, voorafgegaan door een samenvatting van de bevinding over deliverability en de oplossingen. Alle accounts die tijdens de opdracht waren aangemaakt, werden teruggegeven en API-sleutels werden ingetrokken.
+27fdac70fe2a	<t0> Bekijk de live website: contentbuilder.ai ↗ </t0>
+d0482da8dfde	<t0>Instantly.ai</t0> <t1>Google Workspace</t1> <t2>Microsoft SNDS / JMRP</t2> <t3>Google Search Console</t3> <t4>GA4</t4> <t5>Canva</t5> <t6>Claude</t6> <t7>Codex</t7>
+bc95a3a073d4	<t0>Het product</t0>
+94511aec023f	Verstuurt u cold e-mails maar krijgt u geen reacties?
+258c73f0477a	Vaak ligt het niet aan de tekst. In een gratis gesprek van 15 minuten controleer ik waar uw e-mails echt terechtkomen (Gmail vs Outlook) en naar wie u ze stuurt.
+ef85c0f95be0	Privacybeleid | Kamran Arshad
+de18dc177e1a	Privacybeleid van marketingkamran.com: hoe Kamran Arshad uw gegevens verzamelt, gebruikt en beschermt.
+902c91d94e0f	Juridisch
+9db108ba6b7f	Privacybeleid
+283171aca3c4	Tracking is mijn vak, dus ik vind het belangrijk dat u precies weet wat er met uw gegevens gebeurt als u deze site bezoekt of contact opneemt.
+9e3c5b08503b	<t0></t0>Laatst bijgewerkt: 15 juni 2026
+7e439c353ec8	Op deze pagina
+a8cd3cac92b0	<t0>Overzicht</t0>
+b4cf914719e1	<t0>Gegevens die ik verzamel</t0>
+7ee683096150	<t0>Hoe ik ze gebruik</t0>
+bcf27d9e0d3c	<t0>Cookies &amp; tracking</t0>
+c86fedee7aca	<t0>Diensten van derden</t0>
+635f89039cd7	<t0>Bewaartermijn</t0>
+f1ce031fb72b	<t0>Uw rechten</t0>
+ecffb702c7ff	<t0>Beveiliging</t0>
+1eca0531549e	<t0>Wijzigingen</t0>
+23e650f219bc	<t0>Contact</t0>
+419300be5f23	<t0>01</t0> Overzicht
+dcf7928b816f	Dit privacybeleid legt uit hoe <t0>Kamran Arshad</t0> („ik”, „mij”, „mijn”) omgaat met gegevens die via deze website (<t1>marketingkamran.com</t1>) worden verzameld. Ik beheer Google Ads- en Meta-campagnes, doe SEO en werk aan Google Bedrijfsprofielen, en bouw websites, gevestigd in Islamabad, Pakistan, met klanten wereldwijd.
+696000a0e845	Door deze site te gebruiken of via de site contact met mij op te nemen, gaat u akkoord met de werkwijze die hieronder wordt beschreven. Gaat u niet akkoord, gebruik de site dan niet en verstuur uw gegevens niet.
+786ae6ca8dcc	<t0>02</t0> Gegevens die ik verzamel
+021c422bc918	Gegevens die u mij geeft
+002307775c1b	Als u het contactformulier of het formulier voor de „gratis audit” invult, verzamel ik de gegevens die u zelf deelt:
+f08312dbfc66	<t0>Naam</t0>: zodat ik weet met wie ik spreek
+a448c33e6563	<t0>E-mailadres</t0>: om op uw aanvraag te reageren
+5e9b1867a119	<t0>Telefoon- / WhatsApp-nummer</t0>: als u er een opgeeft voor een snellere reactie
+4bb91f8d1fd5	<t0>Inhoud van uw bericht</t0>: alles wat u mij vertelt over uw bedrijf, advertentieaccounts of waarmee u hulp nodig heeft
+8a91412513ae	Automatisch verzamelde gegevens
+78425654b2bb	Zoals de meeste websites registreert deze site bij uw bezoek automatisch enkele technische gegevens, zoals uw geschatte locatie, browser- en apparaattype, bekeken pagina's en hoe u hier terechtkwam. Dit gebeurt via cookies en analysetools (zie de onderdelen hieronder).
+574c98b5a0a4	<t0>03</t0> Hoe ik uw gegevens gebruik
+1817830bb5fd	Ik gebruik uw gegevens alleen voor duidelijke, beperkte doelen:
+b117b4c3831b	Om op uw aanvraag te reageren en de gratis audit of dienst te leveren die u heeft aangevraagd
+6c4b866978e0	Om met u te communiceren over een project waaraan we samen werken
+c157dc063f50	Om te begrijpen hoe bezoekers de site gebruiken, zodat ik die kan verbeteren
+d311cfb301a0	Om te meten welke marketinginspanningen mensen echt hierheen brengen
+58bb0ce6f17e	<t0>Ik verkoop uw gegevens niet.</t0> Uw gegevens worden nooit verkocht, verhuurd of verhandeld. Ik zet u niet op mailinglijsten en stuur geen marketingmails, tenzij u daar uitdrukkelijk om heeft gevraagd.
+f738f21bd766	<t0>04</t0> Cookies &amp; tracking
+5bf911f1770e	Deze site gebruikt cookies en vergelijkbare technieken via <t0>Google Tag Manager</t0>, dat tools kan laden zoals Google Analytics (GA4) en advertentiepixels. Die helpen me het verkeer te begrijpen en prestaties te meten.
+0211de1de9ec	U kunt cookies op elk moment beheren of blokkeren via uw browserinstellingen. Blokkeren maakt de site niet kapot, al worden sommige anonieme statistieken dan misschien niet meer geregistreerd. De meeste browsers laten u ook surfen in een privé- of incognitomodus die tracking beperkt.
+e8178736bfc6	<t0>05</t0> Diensten van derden
+c5a800ed5b98	Een paar betrouwbare diensten helpen deze site te draaien. Elk heeft een eigen privacybeleid dat bepaalt hoe het met gegevens omgaat:
+fae674ce7c93	<t0>Google</t0> (Tag Manager &amp; Analytics): sitestatistieken en tagbeheer. Zie het <t1>privacybeleid van Google</t1>.
+0338f532243d	<t0>FormSubmit</t0>: bezorgt verzendingen van het contactformulier in mijn e-mail. Zie <t1>FormSubmit</t1>.
+7ed8477f0c40	<t0>GitHub Pages</t0>: host deze website. Zie de <t1>privacyverklaring van GitHub</t1>.
+532475008118	<t0>Google Fonts</t0>: laadt de lettertypen die op deze site worden gebruikt.
+1ed39938a417	Ik heb geen controle over hoe deze derden gegevens verwerken en ben niet verantwoordelijk voor hun werkwijze, maar ik werk alleen met betrouwbare aanbieders.
+9eb7eed1cbbc	<t0>06</t0> Bewaartermijn
+7d3ed11a2ed7	Ik bewaar gegevens van aanvragen alleen zo lang als nodig is om u te antwoorden en, waar van toepassing, gedurende onze samenwerking plus een redelijke periode daarna voor de administratie. Wilt u dat uw gegevens eerder worden verwijderd, vraag het dan gewoon (zie <t0>Contact</t0>) en ik verwijder ze.
+98b3b544e10a	<t0>07</t0> Uw rechten
+8466887157fa	Waar u zich ook bevindt, u kunt mij vragen om:
+6002518ff34b	<t0>Inzage</t0> in de gegevens die ik over u heb
+73d69365ffcc	<t0>Correctie</t0> van alles wat onjuist is
+1fd3116e7dbd	<t0>Verwijdering</t0> van uw gegevens uit mijn administratie
+76619002ef1a	<t0>Afmelding</t0> voor verder contact
+27065f21c54b	Om een verzoek in te dienen, mailt u mij op <t0>hello@marketingkamran.com</t0>. Ik reageer zo snel als ik kan.
+6ddcd74d8169	<t0>08</t0> Beveiliging
+5172708f96c1	Ik neem redelijke maatregelen om uw gegevens veilig te houden en deel ze alleen met de hierboven genoemde dienstverleners. Toch is geen enkele manier van verzending via internet volledig veilig, dus absolute veiligheid kan ik niet garanderen.
+875233b8a071	<t0>09</t0> Wijzigingen in dit beleid
+dd06d51897e4	Ik kan dit beleid van tijd tot tijd bijwerken als de site of mijn diensten veranderen. Als dat gebeurt, pas ik de datum „Laatst bijgewerkt” bovenaan deze pagina aan. Belangrijke wijzigingen worden hier duidelijk vermeld.
+89d8f0617d9d	<t0>10</t0> Contact
+985fecae6c3f	Vragen over dit beleid of uw gegevens? Neem gerust contact op:
+f3a7ff257d46	Ads · SEO · Web · Tracking · Islamabad, Pakistan
+f65f9451dde7	<t0>✉&nbsp;&nbsp;hello@marketingkamran.com</t0> <t1>💬&nbsp;&nbsp;+92 332 525 2517</t1> <t2>in&nbsp;&nbsp;linkedin.com/in/kamran-arshad24</t2>
+03b21058c043	<t0>Over mij</t0> <t1>Cases</t1> <t2>Diensten</t2> <t3>Privacybeleid</t3>
+d9f27fb8faaf	Trackingdiagnose | Kamran Arshad
+c04d3194c573	Praktijknotities over kapotte conversietracking. Meta-pixel, GA4, Google Ads en Snapchat. Geschreven vanuit echte accounts, met de cijfers en de data.
+453eb73c4cca	Trackingdiagnose
+fda2896defe8	Praktijknotities over kapotte conversietracking, geschreven vanuit echte accounts.
+70898476f085	<t0>Cases</t0> <t1>Diensten</t1> <t2>FAQ</t2> <t3>Gratis audit</t3>
+0c8de82abd2e	Praktijknotities
+3df51362a77e	Trackingdiagnose, vanuit echte accounts.
+12899bd71a68	De meeste artikelen over kapotte conversietracking zijn geschreven door softwarebedrijven die de oplossing verkopen. Deze zijn geschreven vanuit echte advertentieaccounts, met de cijfers, de data en de dingen die ik niet kon verklaren. (Vertaald uit het Engels.)
+dbe6cf999dac	<t0>10 okt 2026</t0><t1>Google Ads</t1><t2>3 min lezen</t2>
+cdec81878737	Checklist voor een Google Ads-accountaudit bij leadgeneratie
+28ef280e85e5	Zes controles, op volgorde, voor een Google Ads-account dat draait op telefoontjes en aanvraagformulieren. Uit de herbouw van het account van een tandartspraktijk.
+7adc94c18999	Offline conversies in Google Ads voor leadgeneratie
+b6678d7542da	Hoe u Google Ads vertelt welke leads geboekte opdrachten werden: de lead opslaan, de klik-ID bewaren, het resultaat vastleggen, de waarde terugsturen.
+7ec78fa8d5c0	<t0>10 okt 2026</t0><t1>Lokale SEO</t1><t2>3 min lezen</t2>
+77c9f85b2f41	Lokale SEO-dienstpagina's: één pagina per dienst en regio
+ce044c7aa5c8	Waarom een lokale dienstverlener een aparte pagina nodig heeft voor elke dienst en regio, en hoe ik er een structureerde voor een tapijtreinigingsbedrijf in het VK.
+c8c84c7b7b59	<t0>13 aug 2026</t0><t1>Strategie</t1><t2>8 min lezen</t2>
+30afd4a6106d	U kunt geen campagne opschalen die u niet vertrouwt
+19a22b37cda8	Advies over opschalen zegt dat u moet inzetten op uw beste ROAS. Dat is goed advies, gebouwd op een aanname die niemand controleert: dat de gerapporteerde ROAS echte verkopen weerspiegelt. Doet hij dat niet, dan versnelt opschalen het verlies.

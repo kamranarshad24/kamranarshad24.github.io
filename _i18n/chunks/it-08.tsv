@@ -1,0 +1,169 @@
+0e8cb4126b42	Le controlli in quest'ordine. Le prime tre spiegano la maggior parte di ciò che trovo.
+2c7d39c55c56	Dove muore un evento di acquisto Snapchat
+b513d9691eec	Il percorso del cliente dal clic sull'annuncio fino a Gestione eventi di Snapchat, con le sei cause di guasto indicate sotto la fase in cui si verifica ciascuna: reinizializzazione del pixel al checkout, perdita della sessione al gateway di pagamento, nome dell'evento in minuscolo, ID transazione mancante e pixel assente sulla pagina di conferma, e deduplicazione su Snapchat.
+4eb22240ca9f	IL PERCORSO
+60e7e85e593b	DOVE SI ROMPE
+206ee39a7f99	Clic sull'annuncio
+7887011a3776	Prodotto / carrello
+615d7c33c5c1	il Suo sito
+3ac8e9e58c5a	Checkout
+ceda681be18c	Gateway di pagamento
+fb9ce3a26331	esce dal dominio
+3424edc2354c	Conferma
+67414ff716ba	l'evento si attiva
+634fc132cdd6	Events Manager
+28ffb32004e7	Pixel reinizializzato
+e43e6d00362c	Reindirizzamento
+ff54a2dbc4b3	Minuscolo
+fad52e4657d5	Senza transaction_id
+dfe4dc8c04ae	Pixel assente
+22c22ec9ee94	Deduplicato
+5d35707e11b7	<t0>È sulla pagina di conferma che quasi tutto va storto.</t0> Tre delle sei cause colpiscono all'ultimo passaggio, che è anche quello meno testato, perché testarlo bene significa spendere soldi veri.
+0b6574696734	Sul tracciamento Snapchat si scrive molto meno che su Meta o Google, quindi quando si rompe si è quasi da soli. Gli articoli esistenti sono spesso scritti da aziende che vendono un prodotto di tracciamento e si fermano a «installa la nostra app». Questa è la sequenza che seguo davvero, nell'ordine in cui la seguo, e perché in quest'ordine.
+2733fdceae9d	Prima: confermi che l'evento davvero non arriva
+986c8e2a8c70	Prima di cambiare qualsiasi cosa, stabilisca se l'evento manca o è solo in ritardo. Due controlli, sessanta secondi.
+f3d597142501	<t0>Controlli la rete, non la dashboard.</t0> Apra la pagina di conferma in Chrome, apra i DevTools (F12), vada alla scheda <t1>Network</t1> e filtri per <t2>tr.snapchat.com</t2>. Faccia un acquisto di prova reale. Se vede partire una richiesta con il Suo ID pixel e il nome dell'evento, il browser fa il suo lavoro e il problema è più avanti: report, deduplicazione o attribuzione. Se non parte nulla, il problema è sulla pagina.
+1ca57eeee5f6	L'estensione per browser <t0>Snap Pixel Helper</t0> fa lo stesso con un'interfaccia più amichevole e Le dice anche se il pixel è installato. Io uso la scheda Network perché mostra il payload esatto, ed è lì che di solito sta la risposta.
+a6e97bc48637	Come appare una sequenza di eventi Snapchat sana nella scheda Network
+19accfec5674	Un pannello di rete dei DevTools filtrato per tr.snapchat.com, con quattro richieste in ordine: PAGE_VIEW, VIEW_CONTENT, ADD_CART e PURCHASE, ognuna con stato 200. La riga PURCHASE è evidenziata come quella che deve essere presente e contenere un ID transazione.
+53ebc572b4a4	Network
+9cefa7f29447	tr.snapchat.com
+1c98a5dfe8be	4 richieste
+7c90977a1d83	EVENTO
+7168833cc8e1	STATO
+27789cc59b80	ATTIVATO SU
+6f7d7aa191e3	PAGE_VIEW
+95750650c12a	ogni pagina
+0b6be3f4ee71	VIEW_CONTENT
+9ae00634a948	scheda prodotto
+1584535e56e1	ADD_CART
+659bf97e7a0b	aggiunta al carrello
+98dff395de08	PURCHASE
+08202dfa7f0f	pagina di conferma
+0b2ec4138a37	← deve avere transaction_id
+b91c581936b0	<t0>Se compaiono i primi tre e non il quarto, il problema è sulla pagina di conferma.</t0> Se non compare nessuno, il pixel non è installato dove pensa.
+831b411f326c	<t0>Gli dia tempo prima di allarmarsi</t0>
+41a83578f9c5	I report di Gestione eventi non sono istantanei. Prima di concludere che un evento manca, aspetti qualche ora e ricontrolli. Ho visto persone riscrivere un checkout funzionante perché avevano guardato una dashboard novanta secondi dopo un ordine di prova.
+534eb2d3b60b	Le sei cause, in ordine
+22115ac47cf4	Il nome dell'evento è in minuscolo
+09e7d6a38fae	Gli eventi standard di Snapchat sono in <t0>maiuscolo</t0>: <t1>PURCHASE</t1>, <t2>ADD_CART</t2>, <t3>PAGE_VIEW</t3>, <t4>START_CHECKOUT</t4>. Se invia <t5>purchase</t5>, non viene riconosciuto come evento standard. La parte insidiosa è che può comunque attivarsi e comparire da qualche parte: semplicemente non viene trattato come la conversione standard, quindi ottimizzazione delle campagne e report si comportano come se non fosse successo nulla.
+880f857d94cf	È la causa numero uno perché produce esattamente il sintomo che la gente descrive, «il pixel si attiva ma Gestione eventi non mostra nulla», e perché copiare un'implementazione Meta viene naturale. Meta usa <t0>Purchase</t0>. Snapchat no.
+1e1672a6d725	✗ Copiato da Meta
+f54417595468	✓ Ciò che si aspetta Snapchat
+8ad078f8887a	<t0>Il controllo</t0>Nella scheda Network legga il nome dell'evento nel payload della richiesta. Deve essere esattamente <t1>PURCHASE</t1>. Qui maiuscole e minuscole non sono un dettaglio estetico.
+570780989e70	Non viene inviato alcun transaction_id
+1f14ff2e8879	Senza <t0>transaction_id</t0>, Snapchat non può distinguere un vero secondo ordine dallo stesso cliente che ricarica la pagina di conferma. Snap documenta una <t1>finestra di deduplicazione di 30 giorni</t1> su <t2>transaction_id</t2>, contro 48 ore su <t3>client_dedup_id</t3>.
+7ff55ea61691	Il guasto funziona in entrambe le direzioni, ed è per questo che è così in alto. Se lo omette, le ricariche gonfiano il numero di acquisti. Se invia un valore che non è davvero unico per ordine (un ID carrello, checkout o sessione), ordini legittimi vengono fusi in uno e <t0>spariscono</t0>. Il secondo caso sembra esattamente «i miei eventi non si attivano».
+c579f3077958	<t0>Il controllo</t0>Faccia due ordini di prova. Verifichi che il <t1>transaction_id</t1> sia diverso tra i due e che corrisponda al numero d'ordine assegnato davvero dal Suo negozio.
+99cbb76d38fc	Il pixel non è sulla pagina che conferma davvero l'ordine
+c1fab7351ec9	Quasi tutti installano il pixel su tutto il sito e danno per scontato che la pagina di conferma lo erediti. Spesso non è così. Checkout ospitati, pagine di stato dell'ordine e flussi di upsell dopo l'acquisto vengono spesso generati fuori dal tema o dal modello che contiene il codice di tracciamento.
+935b2a891da2	Da verificare in particolare: se usa un upsell dopo l'acquisto, la pagina su cui arriva il cliente subito dopo aver pagato potrebbe non essere quella che considera la pagina di ringraziamento.
+e52eaa950fbc	<t0>Il controllo</t0>Completi un ordine reale. Sulla pagina in cui arriva, visualizzi il sorgente e cerchi il Suo ID pixel. Non lo deduca dal tema: guardi la pagina su cui si trova davvero il cliente.
+610c48da2c3f	Un reindirizzamento di pagamento esterno interrompe la sessione
+c17ee5aa278d	Quando il checkout passa a un gateway esterno e riporta il cliente a una pagina di ordine ricevuto, quel giro può interrompere la sessione del browser da cui dipende il pixel. L'acquisto si completa, il cliente vede la conferma e l'evento non arriva mai a Snapchat, o arriva privo degli identificatori necessari per attribuirlo.
+c0f4f885648a	È qui che una configurazione solo browser non basta più. Il tracciamento server-side tramite la <t0>Conversions API</t0> è la soluzione duratura, perché l'evento parte dal Suo server e non dipende mai dal sopravvivere a un reindirizzamento.
+56f01aa62280	<t0>Il controllo</t0>Il Suo flusso di pagamento esce dal Suo dominio? Se sì, consideri il tracciamento solo browser un «tentativo» e pianifichi la CAPI.
+fccb8b52b8e8	Un checkout a pagina singola reinizializza il pixel
+c56e4c9dae9b	Nelle applicazioni a pagina singola, se l'inizializzazione del pixel viene eseguita a ogni visualizzazione di pagina virtuale, lo stato del pixel si azzera ogni volta. I dati di corrispondenza avanzata raccolti prima nel flusso vanno persi, e l'evento di acquisto arriva senza gli identificatori che lo rendono utile: scarno, poco abbinato e talvolta non attribuito.
+e669f59fa11d	L'evento si attiva. Solo che non porta con sé ciò che gli serve, ed è per questo che è facile scambiarlo per «funzionante».
+a1a8a7314be5	<t0>Il controllo</t0>Osservi la scheda Network durante tutto il checkout. L'inizializzazione dovrebbe avvenire una volta. Gli eventi dovrebbero attivarsi molte volte.
+1f58386e5717	La deduplicazione si mangia l'evento
+a9746c5728a8	Se usa il pixel <t0>e</t0> la Conversions API (come dovrebbe), Snapchat deduplica tramite <t1>client_dedup_id</t1> (finestra di 48 ore) o <t2>transaction_id</t2> (30 giorni). Due eventi con lo stesso identificatore vengono contati una volta, per progettazione.
+9b5f98aa9e48	Diventa un problema quando browser e server non concordano su quale sia quell'identificatore. Se l'associazione è sbagliata, o conta tutto due volte o perde un lato in silenzio. Secondo Snap, gli eventi diversi dall'acquisto corrispondono a <t0>client_dedup_id</t0> e gli eventi di acquisto a <t1>transaction_id</t1>, e soprattutto <t2>il valore deve coincidere su ogni percorso che invia quell'evento</t2>.
+617929320a02	Finestre di deduplicazione di Snapchat a confronto
+b8fb14c7c4f1	Grafico a barre orizzontali su un asse comune di 30 giorni. transaction_id deduplica per 30 giorni. client_dedup_id deduplica per 48 ore, circa un quindicesimo di quel periodo.
+89eadb93a898	transaction_id
+7d4278a87590	30 giorni
+0a691b2aff30	client_dedup_id
+b0e30da24243	48 ore
+81f1c0e38d77	giorno 0
+6f3ce8942166	FINESTRA DI DEDUPLICAZIONE
+8ae6516403da	<t0>Perché conta l'identificatore scelto.</t0> Un acquisto deduplicato su <t1>transaction_id</t1> resta protetto per 30 giorni. Su <t2>client_dedup_id</t2> la protezione scade dopo 48 ore, ed è per questo che Snap associa gli acquisti a <t3>transaction_id</t3> e tutto il resto a <t4>client_dedup_id</t4>.
+796f8874c82b	<t0>Il controllo</t0>Per un ordine, rilevi l'identificatore inviato dal browser e quello inviato dal server. Devono essere identici. Non simili: identici.
+d5ba528c67b8	Da dove vengono i miei numeri
+a15bf95227d5	Non ho un ampio campione di clienti su Snapchat e non farò finta di averlo. Quello che ho è un negozio che ho gestito dall'inizio alla fine, il mio, in cui il tracciamento funzionava: è l'unico motivo per cui posso parlare di cosa produce una configurazione Snapchat sana.
+14ec07f666d0	AlphaMart: il mio negozio, non un cliente
+b792402949d2	Snap Ads Manager · 4 nov 2023 – 7 mag 2024
+0fdfa7eb6de2	Spesa pubblicitaria
+6c4e94f10417	Acquisti
+7de724baf253	Costo per acquisto
+f659e3f55953	ROAS
+b9f3e16444a1	Un contesto importante, altrimenti questi numeri mi lusingano: con 5,69× su 1.452 $ sono circa 8.262 $ di fatturato tracciato su 1.034 ordini, un valore medio dell'ordine di circa 8 $. Era un prodotto economico. Un costo per acquisto di 1,40 $ è un risultato molto diverso con un ordine medio di 8 $ rispetto a uno di 80 $, e chi cita un CPA senza il valore medio dell'ordine accanto Le mostra solo metà del numero.
+9b0affdc1997	I dati si riferiscono a un periodo terminato a maggio 2024. Li dato invece di presentarli come attuali.
+7907246ecd0f	<t0>✓ Screenshot non modificato</t0>
+1c00a24c3ef7	Snapchat Ads Manager di Alpha Mart con 1.452,18 US$ di spesa, 11.076.872 impressioni a pagamento, 242.131 clic, 2,19% di percentuale di clic, 1.034 acquisti e 1,40 US$ di costo per acquisto, dal 4 novembre 2023 al 7 maggio 2024.
+295ef98d49b1	<t0>Cosa dimostra questo screenshot e cosa no.</t0> Conferma la spesa (1.452,18 US$), il numero di acquisti (1.034), il costo per acquisto (1,40 US$) e il periodo. Mostra anche 11.076.872 impressioni e 242.131 clic con una percentuale di clic del 2,19%. <t1>Non</t1> mostra il ROAS: quel dato viene dal fatturato del negozio, non da questa vista, e dovrebbe trattare allo stesso modo qualsiasi numero che non vede nell'immagine.
+9ae29a7a2f97	Ciò che rende importanti questi 1.034 acquisti per l'articolo non è il ROAS. È che un negozio che invia, a quel volume, un evento <t0>PURCHASE</t0> pulito, con il nome corretto e deduplicato bene, Le dà un riferimento affidabile di come appare «funzionante», e rende evidente quando qualcosa si è fermato.
+ef1bfc8cbc1c	Cosa non posso dirLe
+4f9a34be4920	Due limiti onesti, perché un articolo che non ne ammette nessuno di solito ne nasconde qualcuno.
+dd8db2799fc9	<t0>Non posso darLe una classifica di frequenza basata su un ampio campione.</t0> L'ordine qui sopra riflette un piccolo numero di account più ciò che i tipi di guasto implicano logicamente: un nome di evento in minuscolo rompe sempre i report, quindi va in cima a prescindere da quante volte l'ho visto io. Consideri la classifica un ordine di ricerca sensato, non una statistica.
+dd7e0b25f835	<t0>L'interfaccia di Snapchat cambia.</t0> I percorsi dei menu diventano presto obsoleti, ed è per questo che i controlli qui sopra si basano sulla richiesta di rete e sul payload invece che su dove si trova oggi un pulsante. Il payload è ciò che è davvero vero.
+f7dd5c66e939	In breve
+f6a6aa699d31	Apra la scheda Network, filtri per <t0>tr.snapchat.com</t0> e faccia un ordine di prova.
+c9618c8ccfc3	Verifichi che il nome dell'evento sia esattamente <t0>PURCHASE</t0>, in maiuscolo.
+3f0d93e7ee07	Verifichi che <t0>transaction_id</t0> sia presente e unico per ordine.
+d43cbf279420	Verifichi che il pixel sia presente sulla pagina su cui il cliente arriva davvero.
+428be7200ba6	Se il checkout esce dal Suo dominio, pianifichi la Conversions API.
+11befb10b462	Se usa pixel e CAPI, verifichi che l'identificatore di deduplicazione coincida esattamente sui due lati.
+9e457d711495	Se ha superato tutti e sei i controlli e l'evento continua a non arrivare, di solito il problema non è il pixel: è che la pagina che sta testando non è quella che raggiungono i Suoi clienti. Torni indietro e faccia un acquisto reale con soldi veri, da telefono, partendo da un clic su un annuncio. Gli ordini di prova tramite un link di staging saltano proprio le parti che si rompono.
+0d734ee88845	Non sa quale delle sei sia?
+af50cf66ddfc	Mi invii l'URL del Suo negozio e Le dirò cosa sta facendo il Suo tracciamento. Per iniziare non serve alcun accesso all'account, solo il link.
+b4bc267a5462	<t0>Ottieni un audit gratuito del tracciamento →</t0>
+bfb84c489aff	<t0>Scadenza Shopify del 26 agosto: il Suo tracciamento è sopravvissuto?<t1>Cosa rimuove l'aggiornamento automatico e il controllo di dieci minuti.</t1></t0> <t2>Tracciamento delle chiamate di Google Ads per attività di servizi locali<t3>Quattro modi per tracciare le chiamate e cosa misura davvero ciascuno.</t3></t2> <t4>Il pixel Meta non traccia gli acquisti su Shopify: cosa controllare per primo<t5>Sette cause, compreso il pixel duplicato che divide l'attribuzione.</t5></t4>
+6d820374f9a7	<t0>© 2026 Kamran Arshad. Specialista in pubblicità a pagamento e tracciamento</t0> <t1><t2>Home</t2> · <t3>Note sul campo</t3> · <t4>Privacy</t4></t1>
+ab6986e70c36	Pochi spiegano cosa succede quando due pixel Meta non concordano. In un account il secondo pixel registrava acquisti mai avvenuti e assorbiva il 30-40% del budget giornaliero.
+13dca0b54f99	Due pixel Meta su Shopify
+31f363736820	Si possono avere due pixel Facebook su un unico negozio Shopify?
+48b6c68b144a	Tecnicamente sì, e diverse app esistono proprio per farlo facilmente. Se convenga è un'altra domanda. Due pixel significano due registrazioni indipendenti degli stessi eventi, e se uno è configurato male ottiene due versioni contrastanti dei Suoi dati di vendita senza alcun avviso che non coincidono.
+be4f7efb598c	Come trovo tutti i pixel Facebook installati sul mio negozio Shopify?
+b8a4823b2dfe	Controlli tre punti: Impostazioni e poi Eventi dei clienti per i pixel personalizzati, il canale di vendita Facebook e Instagram, e Negozio online, Temi, Modifica codice cercando fbq o connect.facebook.net in theme.liquid. Un pixel può essere installato in modo indipendente in ognuno di questi punti.
+b39ac5e29160	Devo rimuovere un secondo pixel Facebook?
+de44f03f7e44	Se è stato installato da un'app di terze parti e non sa spiegare cosa fa che il pixel principale non faccia, sì. Prima di rimuoverlo, individui quali campagne ottimizzano su di esso, perché smetteranno di pubblicare appena il pixel verrà disattivato.
+666def88a396	Due pixel Meta su un negozio non sono ridondanza. Sono due versioni della verità.
+7c89aacebd82	Due pixel Meta su un negozio Shopify non Le danno un backup. Le danno <t0>due registrazioni indipendenti degli stessi eventi</t0>, senza nulla che le tenga oneste. Se uno è configurato male, ottiene due numeri di vendita contrastanti senza alcun avviso, e Meta spenderà volentieri budget ottimizzando verso quello sbagliato.
+69991378bbe1	Cerchi «più pixel Facebook su Shopify» e guardi cosa esce. Schede di app che vendono l'installazione di più pixel. Guide di fornitori che spiegano come aggiungere un secondo, terzo, quarto pixel. Tutorial che lo presentano come una tattica avanzata.
+69bb0a911ae7	Quasi nulla su cosa succede quando quei pixel non concordano. È l'articolo che avrei voluto trovare prima di analizzare un account in cui la risposta costava il 30-40% del budget giornaliero.
+77547c493158	Come ci si ritrova con due pixel
+2877628a018e	Raramente di proposito. Le strade più comuni:
+8c0000e0d1f1	Un'agenzia ne ha installato uno, se n'è andata, e la successiva ha installato il suo senza controllare.
+c3ab8d684e0d	Un'app di marketing di terze parti ha aggiunto il proprio pixel durante la configurazione, spesso senza renderlo evidente.
+66426751fbcc	Qualcuno ha incollato un pixel in <t0>theme.liquid</t0> anni fa, e il canale di vendita ufficiale è stato collegato dopo.
+175b89d94743	Qualcuno ha letto che più pixel danno ridondanza. Non è così.
+f57c2fa5bcbc	Il filo comune è che <t0>nessuno dei coinvolti sapeva dell'esistenza dell'altro pixel</t0>. È questo che lo rende difficile da notare: ognuno dà per scontato che il pixel che ha installato sia il pixel.
+37cbe9d9ffec	Cosa va storto davvero
+219a72a4403b	Possono registrare totali diversi, entrambi plausibili
+26822ea9b05f	Due pixel che si attivano in condizioni diverse producono due numeri di acquisti diversi. Nessuno sembra palesemente sbagliato, perché nessuno è zero. Finisce per scegliere a quale numero credere in base alla dashboard che ha aperto.
+dcb8b7558b27	Le campagne ottimizzano sul pixel a cui sono collegate
+5b0ab9206190	È la parte costosa. Le campagne sono configurate su un pixel specifico. Se quel pixel registra in modo impreciso, quelle campagne ottimizzano verso un segnale che non corrisponde alla realtà, e il sistema di pubblicazione di Meta continuerà a trovare sempre più persone che attivano quel segnale impreciso.
+841b1fe0cf14	Un pixel configurato male può registrare acquisti mai avvenuti
+4a603c2cb9d8	Nell'account da cui nasce questo articolo, il secondo pixel, installato da un'app di terze parti, registrava acquisti senza ordini Shopify corrispondenti. Le campagne collegate mostravano un ROAS alto. In Ads Manager sembravano le vincenti. Nel negozio non avevano prodotto nulla di rintracciabile.
+b73a1a804b70	Meta dichiarava circa 100 ordini. Shopify ne mostrava 55-70. Circa <t0>30.000-40.000 PKR di un budget giornaliero di 100.000 PKR</t0> andavano a campagne che ottimizzavano sul pixel che inventava vendite.
+aa7ab8c8457b	Pubblici e dati di ottimizzazione vengono divisi
+c3a81d8f7cc1	Anche quando entrambi i pixel sono precisi, ognuno impara solo dal traffico che vede. I pubblici di retargeting si costruiscono per pixel. Il machine learning lavora per pixel. Dividere i dati su due pixel significa che entrambi ne ricevono meno, l'opposto della ridondanza.
+50cb8ca76259	Trovare ogni pixel del Suo negozio
+12f62112100d	Controlli tutti e tre i punti. Un pixel può essere installato in modo indipendente in ognuno di essi, e niente li confronta tra loro:
+b7b58bba6c1c	<t0>Impostazioni &rarr; Eventi dei clienti</t0>Qui ci sono i pixel personalizzati, compresi quelli aggiunti dalle app. Li legga uno per uno e annoti l'ID pixel.
+22bd3d57ea29	<t0>Il canale di vendita Facebook e Instagram</t0>L'integrazione ufficiale. Annoti l'ID pixel a cui è collegata.
+2c4fb506ae91	<t0>Negozio online &rarr; Temi &rarr; Modifica codice</t0>Cerchi <t2>fbq</t2> e <t3>connect.facebook.net</t3> in <t1>theme.liquid</t1>. I pixel incollati a mano si nascondono qui per anni.
+5e456cb5c967	<t0>Confermare nel browser</t0>Carichi il negozio, apra i DevTools, filtri la scheda Network per <t1>facebook</t1> e legga gli ID pixel delle richieste in uscita. È l'unico controllo che mostra cosa gira davvero, non cosa è configurato.
+cdb770b9acf4	Se trova più di un ID pixel diverso, è nella situazione di cui parla questo articolo.
+10094792df05	Rimuoverne uno in sicurezza
+e5487fb63f24	<t0>Non lo cancelli e basta</t0>
+5ef1dfd18ef7	Prima di disattivare un pixel, scopra quali campagne ottimizzano su di esso. Quando ho disattivato il pixel di terze parti in quell'account, <t0>tutte le campagne collegate hanno smesso di pubblicare.</t0> Era il risultato corretto, perché quelle campagne giravano su un segnale di conversione non reale, ma non è qualcosa da scoprire a sorpresa sull'account di un cliente.
+c16ecfa23912	<t0>Associare campagne e pixel</t0>Per ogni campagna attiva, annoti su quale pixel è configurato il suo evento di conversione.
+f91fcf35ec59	<t0>Riconciliare ogni gruppo con il negozio</t0>Prenda una settimana chiusa. Riesce a rintracciare gli ordini dichiarati da ogni gruppo? Di solito un gruppo non si rintraccia affatto.
+5fee09851787	<t0>Tenere il pixel che può verificare</t0>Di solito l'integrazione tramite il canale di vendita ufficiale, perché può confermare cosa la installa e come.
+d23d6f24f62e	<t0>Avvisare il cliente che il ROAS dichiarato scenderà</t0>Scenderà. Nell'attività non è cambiato nulla; ha smesso di contare cose che non stavano succedendo.
+9d2cf3220a57	<t0>Aspettare due giorni, poi ricostruire</t0>Lasci accumulare dati puliti prima di ricostruire le campagne sul pixel rimasto. In quell'account il quadro si è chiarito in uno o due giorni.
+de8ac8961c7c	L'eccezione da conoscere
+1051cbf4cd80	Esiste un caso legittimo di più pixel: un vero accordo con un'agenzia o un partner, in cui una seconda parte ha bisogno dei propri dati di conversione per una campagna definita, e entrambi i pixel sono noti, documentati e voluti.
+4cf78850d948	Non è quello che hanno la maggior parte dei negozi. La maggior parte ha un pixel di cui qualcuno si è dimenticato, che è tutt'altra cosa, e la differenza sta nel fatto che qualcuno sappia dirLe, adesso, a cosa serve ogni pixel.
+02ae093d48f6	Se non sa rispondere per ogni pixel del Suo negozio, non ha ridondanza. Ha un secondo parere non verificato a cui il Suo budget dà retta in silenzio.
+758ae9b5c905	Quanti pixel ci sono adesso sul Suo negozio?
+07da01eddc13	La maggior parte dei titolari è certa che sia uno. Mi invii l'URL del Suo negozio e Le dirò cosa è installato davvero.
+7a65123be5a9	<t0>Meta dice 100 ordini. Shopify dice 62. Chi mente?<t1>La riconciliazione che scopre le conversioni fantasma.</t1></t0> <t2>Come capire se il Suo pixel Meta registra acquisti mai avvenuti<t3>Il guasto che sembra un successo finché non riconcilia.</t3></t2> <t4>Eventi di acquisto duplicati dopo l'installazione della Conversions API<t5>Come dimostrare che la deduplicazione funziona e non è solo configurata.</t5></t4>
+03fa35cc0dd1	Grazie | Kamran Arshad
+05870186b56d	<t0>Richiesta ricevuta</t0>
+058a813016f5	Tutto a posto!
+a755100ab444	Grazie per avermi scritto. Esamino i Suoi dati e Le rispondo entro <t0>24 ore</t0> con un orario adatto per il Suo audit gratuito.
+383667603995	Mai spam. Solo una risposta rapida da Kamran.

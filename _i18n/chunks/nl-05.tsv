@@ -1,0 +1,144 @@
+e77fdff46237	Deze volgorde is wat telt. Schrijf de lead naar opslag, en probeer daarna pas de e-mail, de push naar het CRM, de WhatsApp-melding en het conversie-event. Elk daarvan kan mislukken zonder dat de aanvraag verloren gaat. Draai de volgorde om en één enkele fout kost u ongemerkt een klant.
+1a21c38af467	Een verstandige opzet, op volgorde
+ce55143ca67a	<t0>Maak de lead eerst duurzaam</t0>Zorg dat formulierverzendingen worden opgeslagen op een plek die geen inbox is. Alles daarna is optioneel; dit niet.
+20540d6551f7	<t0>Zet oproepitems aan met een doorschakelnummer</t0>Zo legt u de mensen vast die direct vanuit de advertentie bellen zonder ooit uw website te bezoeken, meestal een groter deel dan eigenaren verwachten.
+cb64eb12842a	<t0>Voeg gesprekstracking op de website toe met nummervervanging</t0>Zodat ook telefoontjes na het landen op de website worden toegeschreven. Test het op een echte telefoon, want de vervanging hangt af van een script dat moet draaien.
+ea45d62d946b	<t0>Stel een minimale gespreksduur in</t0>Zestig seconden is een redelijke standaard. Pas die aan zodra u naar een steekproef van echte gesprekken heeft geluisterd.
+c858fe6aa2cd	<t0>Importeer de conversie en laat het bezinken</t0>Beoordeel de wijziging niet binnen twee weken. Biedalgoritmen hebben tijd nodig, en twee weken aan gespreksdata van een lokale dienstverlener is een kleine steekproef.
+a26a632aa733	Waar dit advies ophoudt
+18a2a56c712e	Gesprekken opnemen is een andere beslissing dan gesprekken meten, met eigen wettelijke verplichtingen die per land en soms per regio verschillen. Weten dat er gebeld is, hoe lang het gesprek duurde en welk zoekwoord het opleverde, is genoeg om campagnes te optimaliseren. De inhoud opnemen is een grotere stap; win advies in voordat u dat doet.
+c4fda40526ac	En mijn steekproef hier is twee bedrijven, in twee landen, in twee branches. De mechaniek is algemeen toepasbaar; de cijfers niet. Ik heb in dit artikel geen kosten per gesprek vermeld, omdat ik geen cijfer heb waar ik achter kan staan voor een genoemd account met een vermelde periode, en een verzonnen benchmark zou u minder waard zijn dan deze zin.
+3ecf78099a81	Weet u welke zoekopdrachten uw telefoontjes opleveren?
+0275a616c1d1	De meeste lokale bedrijven met Google Ads kunnen dat niet beantwoorden. Stuur me uw website en ik vertel u wat er wel en niet wordt gemeten.
+877d9ef2244f	<t0>Checklist voor een Google Ads-accountaudit bij leadgeneratie<t1>Zes controles op volgorde, uit de herbouw van een tandartsaccount.</t1></t0> <t2>Offline conversies in Google Ads voor leadgeneratie<t3>Google Ads vertellen welke leads geboekte opdrachten werden.</t3></t2> <t4>De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<t5>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</t5></t4> <t6>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t7>Zeven oorzaken, inclusief de dubbele pixel die de attributie splitst.</t7></t6> <t8>Google Ads-conversietracking werkt niet: een diagnosevolgorde<t9>Waarom een werkende tag wekenlang toch niets kan rapporteren.</t9></t8>
+b3b9c6738d35	Google Ads-conversietracking werkt niet: diagnosevolgorde
+4ad1504eecaa	Toont Google Ads geen conversies, dan is er een korte lijst met oorzaken. Hier zijn ze in diagnosevolgorde, met een controle voor elk en waarom een werkende tag niets kan rapporteren.
+1d98d31736ec	Rapporteert Google Ads geen conversies, dan is er een korte lijst met oorzaken, en ze zijn niet even waarschijnlijk. Hier zijn ze in diagnosevolgorde, met de controle voor elk, plus de reden dat een werkende tag wekenlang toch niets kan rapporteren.
+9b6b637a9780	Google Ads-conversietracking
+28de9c73e4cc	Waarom werkt mijn Google Ads-conversietracking niet?
+9f0a36f692cd	De meest voorkomende oorzaken zijn: de tag staat niet op de pagina die de actie bevestigt, de conversieactie heeft een categorie- of telinstelling die haar verbergt, de tag wordt afgevuurd maar is niet gekoppeld aan de juiste conversieactie, toestemmingsinstellingen blokkeren de tag, of attributievensters zorgen ervoor dat de conversie nog niet is gerapporteerd.
+efe88f384291	Hoe lang duurt het voordat Google Ads conversies toont?
+df5a3c47180f	Het kan tot 24 uur duren voordat conversies in de rapportage verschijnen, en conversies worden toegeschreven aan de datum van de klik in plaats van de datum van de conversie. Recente dagen zien er dus altijd slechter uit dan ze uiteindelijk zullen zijn. Dat is een normaal effect van de rapportage, geen fout.
+6f8308fb02b8	Hoe test ik of mijn Google Ads-conversietag wordt afgevuurd?
+404785fa9c23	Gebruik Google Tag Assistant in de foutopsporingsmodus, voer de conversieactie zelf uit en controleer of de conversietag wordt afgevuurd met de juiste conversie-ID en het juiste label. Controleer daarna de status van de conversieactie in Google Ads; die zou van Niet geverifieerd naar Conversies worden geregistreerd moeten gaan.
+1aa1f26f42fb	Google Ads zegt nul conversies. U weet dat u de verkoop had.
+2ac103804912	Als Google Ads nul conversies rapporteert, komt dat meestal neer op een van vijf dingen: de <t0>tag staat niet op de pagina die de actie bevestigt</t0>, de tag wordt afgevuurd maar is niet gekoppeld aan de juiste conversieactie, de conversieactie is uitgesloten van de kolom &ldquo;Conversies&rdquo;, toestemmingsinstellingen blokkeren hem, of de conversies bestaan wel maar zijn nog niet gerapporteerd omdat ze aan de klikdatum worden toegeschreven.
+a9118362f0ce	Het laatste is geen fout, en het misleidt mensen voortdurend.
+560851a9d038	Dit is een van de meest gezochte trackingproblemen die er zijn, en de zoekresultaten worden gedomineerd door forumdiscussies waarin niemand tot een antwoord kwam. Dat zegt iets: het symptoom is algemeen, en de oorzaak is meestal specifiek voor hoe één account is opgezet.
+7b7fd37aee61	Dus in plaats van elke mogelijkheid op te sommen, is dit de volgorde die ik echt doorloop. Daarmee is het meestal in de eerste drie stappen opgelost.
+00a5111d55ac	Voordat u iets verandert: is het echt kapot?
+edc535ef0fe9	Google Ads schrijft een conversie toe aan <t0>de datum van de klik</t0>, niet aan de datum waarop de conversie plaatsvond. Iemand die op maandag klikte en op donderdag kocht, verschijnt in de rij van maandag, en tot donderdag ziet maandag er slechter uit dan hij was.
+a26283372342	Het praktische gevolg is dat <t0>recente dagen de prestaties altijd onderschatten</t0>, en ze blijven aangevuld worden zolang uw conversievenster dat toelaat. Kijkt u naar de laatste drie dagen en concludeert u dat de tracking kapot is, dan kijkt u misschien gewoon naar data die nog niet volledig binnen is.
+18563be8752a	<t0>De test die het beslist</t0>
+f1efeb566147	Kijk naar een periode die minstens twee weken geleden eindigde en volledig buiten uw conversievenster valt. Heeft die periode conversies en recente dagen niet, dan werkt uw tracking en las u een onvolledig rapport. Staat die oudere periode ook op nul, lees dan verder.
+46490e02be79	De diagnosevolgorde
+5b838be6570e	De status van de conversieactie vertelt u waar u staat
+5996c78aff29	Google Ads &rarr; <t0>Doelen</t0> &rarr; <t1>Conversies</t1> &rarr; <t2>Overzicht</t2>. Elke conversieactie heeft een status, en dat is de snelste diagnose in het hele account.
+f8390fca8ad6	<t0>Geen recente conversies</t0>: de tag is één keer gezien maar de laatste tijd niet meer. Meestal is er een pagina of template veranderd.
+e2189b70b11a	<t0>Niet geverifieerd</t0>: Google heeft nooit een signaal ontvangen. De tag wordt niet afgevuurd waar u denkt.
+e242f6e7dd5a	<t0>Inactief</t0>: al lange tijd niets. Behandel het als kapot.
+fe40b78ea348	<t0>Conversies worden geregistreerd</t0>: de tag is in orde en uw probleem zit ergens anders, waarschijnlijk bij het volgende punt.
+0bff46df9ebd	<t0>De controle</t0>Lees de status voordat u code aanraakt. Die vertelt u of het om een tagprobleem of een rapportageprobleem gaat, en die hebben totaal verschillende oplossingen.
+4bfb21414982	De conversie wordt geregistreerd maar is uitgesloten van de kolom
+cac0f62431a5	Dit geeft de meest frustrerende versie van het probleem: de conversieactie toont duidelijk conversies, maar uw campagneoverzicht zegt nul. De oorzaak is de instelling <t0>&ldquo;Opnemen in Conversies&rdquo;</t0>. Staat die uit, dan wordt die actie nog steeds geregistreerd, maar verschijnt ze niet in de kolom Conversies, en Smart Bidding biedt er niet op.
+3bc970d73d0f	Secundaire conversieacties zijn bewust uitgesloten. Heeft iemand uw belangrijkste aankoopactie als secundair ingesteld, dan lijkt alles kapot terwijl het perfect werkt.
+3fa1f593199e	<t0>De controle</t0>Open de conversieactie en controleer of de instelling primair/secundair overeenkomt met waarop u wilt optimaliseren.
+d8510bbc1bec	De tag wordt afgevuurd maar heeft het verkeerde label
+f89d82347a5d	Een Google Ads-conversietag heeft zowel een conversie-ID als een conversie<t0>label</t0> nodig. De ID identificeert het account; het label identificeert de actie. Kopieer een tag tussen twee conversieacties en vergeet het label aan te passen, en de tag wordt perfect afgevuurd, in het verkeerde bakje.
+2825d8a670f4	<t0>De controle</t0>Voer in Tag Assistant de actie uit en lees het conversielabel op de afgevuurde tag. Vergelijk het teken voor teken met het label in de tag-instellingen van de conversieactie.
+8bee5002aabb	Consent Mode weigert opslag, en u heeft daar geen modellering voor ingericht
+44fe5bc47e8a	Heeft u een cookiebanner toegevoegd (en in de EU en het VK hoort dat), dan wachten tags nu op toestemming. Dat is correct gedrag. Maar een banner die alles standaard op geweigerd zet, zonder dat de toestemmingsupdate is gekoppeld, betekent dat de conversietag nooit toestemming krijgt en nooit wordt afgevuurd.
+f3e25335867a	Deze heeft een herkenbaar patroon: de conversies vallen van een klif op precies de dag dat de banner live ging.
+ce907db7e793	<t0>De controle</t0>Laad de website opnieuw, accepteer cookies, voer de actie uit en controleer of de tag wordt afgevuurd. Herhaal dan en weiger, en controleer dat hij niet wordt afgevuurd. Beide kanten moeten zich gedragen zoals bedoeld.
+2330fbf92c97	De tag staat niet op de pagina die de actie echt bevestigt
+0c7a239af9d2	De klassieker. De tag staat op de website, maar niet op de bedankpagina, de bestelstatuspagina of de pagina waar een klant terechtkomt nadat een betaalprovider hem terugstuurt. Bij leadgeneratie-websites is het equivalent een formulier dat via AJAX verzendt zonder een pagina te laden, zodat een tag die op een paginaweergave wacht nooit de kans krijgt om af te gaan.
+6aadc3a2ba5f	<t0>De controle</t0>Voer de conversie zelf uit, bekijk dan de broncode van de pagina waar u terechtkomt en zoek naar de conversie-ID.
+09d7fb0a061e	Zodra het werkt: laat het geld meten
+9fef28112782	De tag aan de praat krijgen is waar de meeste mensen stoppen. Daar begint juist het interessante werk, want een aantal conversies behandelt elke lead als gelijk, en dat zijn de uwe niet.
+89a16046d3ac	Voor leadgeneratie-accounts kunt u met <t0>verbeterde conversies voor leads</t0> plus import van offline conversies de echte waarde van een binnengehaalde opdracht terugsturen naar Google Ads. De biedstrategie optimaliseert dan op omzet in plaats van ingevulde formulieren. Dat is het verschil tussen een algoritme dat aanvragen najaagt en een dat klanten najaagt.
+7557b976f127	De mechaniek is dezelfde als bij de gesprekstracking in <t0>het artikel over lokale dienstverleners</t0>: leg de klik-ID vast bij de verzending, sla hem op bij de lead, en stuur de waarde terug als de opdracht binnen is.
+61a0ae3b849d	Beperkingen
+4bdec5d3b43c	De volgorde hierboven is een zoekvolgorde, geen frequentietabel: ze weerspiegelt een klein aantal accounts en de logica van elk type fout, geen onderzoek. Google Ads verandert regelmatig de interface, dus waar mogelijk heb ik de controles gekoppeld aan statussen en tag-payloads in plaats van aan menulocaties.
+0f954270966a	Verliest u geld aan een cijfer dat u niet kunt vertrouwen?
+1939d1c313b5	Stuur me de URL van uw website en ik vertel u wat uw conversietracking doet. Om te beginnen is geen accounttoegang nodig.
+c2957ee97f9b	<t0>Offline conversies in Google Ads voor leadgeneratie<t1>Google Ads vertellen welke leads geboekte opdrachten werden.</t1></t0> <t2>Checklist voor een Google Ads-accountaudit bij leadgeneratie<t3>Zes controles op volgorde, uit de herbouw van een tandartsaccount.</t3></t2> <t4>De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<t5>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</t5></t4> <t6>Google Ads-gesprekstracking voor lokale dienstverleners<t7>Vier manieren om telefoontjes te meten, en wat elk ervan echt meet.</t7></t6> <t8>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t9>Zeven oorzaken, inclusief de dubbele pixel die de attributie splitst.</t9></t8>
+11e98c053a7e	Wat is een klik-ID?
+ce096d58a24e	Een unieke identificator die Google Ads aan het adres van uw landingspagina toevoegt wanneer iemand op een advertentie klikt. Door hem bij de lead op te slaan, kunt u Google Ads later vertellen welke klik welke opdracht opleverde.
+0317de3b1abb	Moet ik een plugin bouwen?
+ea53e958b244	Nee. Wat nodig is, is elke lead met zijn klik-ID opslaan en het resultaat terugmelden aan Google Ads. Ik schreef een plugin omdat het formulier van deze klant ook leads verloor als e-mails mislukten.
+ad69d412bafc	Waarom niet gewoon formulierverzendingen meten?
+b2ba8e95a064	Een formulierverzending toont interesse. Een geboekte opdracht toont omzet. Wordt alleen het eerste gerapporteerd, dan kan Google Ads niet leren welke klikken tot het tweede leiden.
+ddf1bf54ca6f	Google Ads vertellen welke leads geboekte opdrachten werden
+e206c275880b	Google Ads kan alleen optimaliseren op de resultaten waarover het wordt geïnformeerd. Stopt uw tracking bij de formulierverzending, dan leert de biedstrategie mensen te vinden die formulieren invullen.
+51fea1d928c8	Door de klik-ID en de echte opdrachtwaarde terug te sturen naar Google Ads, kan het in plaats daarvan op omzet optimaliseren.
+009598ec96de	Dit is de aanpak die ik gebruikte voor een tapijtreinigingsbedrijf in Slough (VK). Ik beschrijf hier de methode, en het project loopt nog.
+999ab46c501e	Het probleem dat het oploste
+095119d40edf	De website ging live met een standaard Elementor-formulier, dat e-mail-eerst werkt: het stelt een e-mail op en verstuurt die. Mislukt die verzending, dan is er geen tweede kopie. De lead is weg en niemand weet dat hij bestond.
+90fd4df59988	Daarbovenop kon Google Ads niet zien welke klikken geboekte opdrachten werden, dus optimaliseerde het op formulierverzendingen.
+1287f0378f58	Hoe de oplossing werkt
+3f7577ef58af	<t0>Sla eerst de lead op</t0>Elke lead wordt naar een databasetabel geschreven voordat er een e-mail, webhook of API-aanroep wordt geprobeerd. Een falende dienst van derden kan het vastleggen van leads dan nooit breken.
+0e55d405a155	<t0>Leg de klik-ID en campagneparameters vast</t0>Bij de verzending worden de Google-klik-ID (gclid) en de UTM-parameters bij de lead opgeslagen, zodat elke lead gekoppeld blijft aan de advertentieklik die hem opleverde.
+e25252af7fc1	<t0>Leg het resultaat vast</t0>Pijplijnfase, opdrachtwaarde en notities worden bij elke lead vastgelegd, zodat de vraag wat de advertentie-uitgave opleverde uit de data kan worden beantwoord.
+d9b465cfd104	<t0>Stuur de waarde terug</t0>De echte opdrachtwaarde wordt als offline conversie teruggestuurd naar Google Ads, inclusief verbeterde conversies voor leads, zodat de biedstrategie kan optimaliseren op geboekte opdrachten.
+b3374409091c	Wat ik bouwde, en wat u echt nodig heeft
+faad83d1b7ca	Ik bouwde het geheel als een WordPress-plugin in eigen beheer, LeadBridge, zonder betaalde afhankelijkheden en zonder tussenpartij die de data vasthoudt. Dat deed ik omdat ook het formulier van deze klant gerepareerd moest worden.
+30b9be85dc76	U heeft mijn plugin niet nodig om de methode te gebruiken. U heeft de vier stappen nodig: elke lead veilig opslaan, de klik-ID erbij bewaren, het resultaat vastleggen en de waarde terugmelden aan Google Ads.
+d68af3fa0e9c	Zoals Google het beschrijft, voegen verbeterde conversies voor leads gehashte klantgegevens, zoals een e-mailadres, toe aan de klik-ID, zodat er nog steeds een match kan worden gemaakt als een klik-ID ontbreekt. Daarom moet het leadrecord beide bevatten.
+291746772683	<t0>Eerlijke beperkingen</t0>
+c93978c50f8e	Mr Expert is een lopend project en de resultaten bouwen zich nog op, dus ik noem geen verandering in kosten per lead of biedprestaties. Dit artikel beschrijft hoe de methode werkt en waarom ik haar bouwde.
+516fa6eb4b73	De volledige opbouw, inclusief het ene dashboard dat Google Ads, Search Console, het Google Bedrijfsprofiel, de opdracht- en omzetdata van LeadBridge en Microsoft Clarity in één overzicht samenbrengt, staat in de <t0>case van Mr Expert Carpet Cleaning</t0>.
+5b09a21be89c	Nee. Wat nodig is, is elke lead met zijn klik-ID opslaan en het resultaat terugmelden aan Google Ads. Ik schreef een plugin omdat het formulier van deze klant ook leads verloor als e-mails mislukten.
+b2338a133a0c	Optimaliseert Google Ads op uw formulieren of op uw opdrachten?
+b48ce1c9c037	<t0>Conversietracking inrichten<t1>GTM, GA4, CAPI en offline conversies.</t1></t0> <t2>Google Ads-gesprekstracking voor lokale dienstverleners<t3>Hoe u de telefoontjes telt die opdrachten worden.</t3></t2> <t4>Checklist voor een Google Ads-accountaudit bij leadgeneratie<t5>Zes controles op volgorde.</t5></t4>
+0caf3ee7e17f	Hoeveel pagina's heeft een lokale dienstverlener nodig?
+6e933a54e5a5	Eén voor elke dienst waarop u gevonden wilt worden, met daarop de gebieden waar u werkt. Voeg alleen aparte regiopagina's toe als u over elk gebied echt iets anders te zeggen heeft.
+b077d1550472	Is een Google Bedrijfsprofiel op zichzelf genoeg?
+455af2f8a2a5	Het is een sterke start voor Maps en lokaal zoeken, en het werkt beter samen met een website met een pagina per dienst. Ik behandel ze als onderdelen van één opzet.
+5da32ac34b4e	Dat hangt af van de lokale concurrentie en de beginsituatie van de website en het profiel, dus ik noem geen vaste termijn.
+bcd4708c889b	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Lokale SEO
+45e30170d7a6	Eén pagina per dienst en regio: hoe ik lokale SEO structureer voor een dienstverlener
+f07a6ba18ca3	Voor een lokale dienstverlener bouw ik een aparte pagina voor elke dienst en de gebieden die erbij horen, in plaats van één pagina die op alles probeert te scoren.
+01f6b146fe28	Op de website van een tapijtreinigingsbedrijf in het VK maakte ik aparte pagina's voor tapijt-, bank-, matras- en bedrijfsreiniging, gericht op Slough, Berkshire en omgeving.
+b6d0cd6ab8ec	Een bedrijf met vier diensten heeft meestal één pagina die ze alle vier noemt. Die pagina geeft de bezoeker en Google een zwakke match voor elke afzonderlijke zoekopdracht.
+03370d910c1e	Waarom aparte pagina's
+be0f5bab8b9a	Wie zoekt naar bankreiniging, wil een pagina over bankreiniging. Een pagina over tapijten, banken, matrassen en bedrijfswerk bedient geen van die zoekopdrachten goed. Met een aparte pagina komt elke zoekopdracht precies terecht bij waar de persoon om vroeg.
+4b44fdbba146	Wat elke pagina nodig heeft
+0aaa3d88e1da	Eén dienst en één duidelijke kop
+8d4fab528b00	De paginatitel en de hoofdkop noemen de dienst en de regio, zodat de pagina overduidelijk over één ding gaat.
+c8acdeeeef8f	Content die bij die dienst hoort
+977d020bb820	Wat erbij inbegrepen is, wat de klus inhoudt en in welke gebieden u hem uitvoert. Content die alleen voor deze dienst zinvol is.
+c7adce277b03	Vertrouwenssignalen naast de belofte
+320908395cde	Reviews, certificeringen en voor-en-na-foto's op de pagina, op de plek waar een bezoeker beslist of hij belt.
+90e36f23416f	De verbeteringen rond de pagina's
+6a578af77104	De pagina's werken beter als de basis eromheen klopt. In hetzelfde project corrigeerde ik paginatitels, metabeschrijvingen, kopstructuur, alt-teksten van afbeeldingen en interne links, richtte ik het Google Bedrijfsprofiel in en optimaliseerde het, en verifieerde ik Search Console en loste ik de crawl- en indexeringsproblemen op die het toonde.
+d5c1e93a023b	<t0>De valkuil om te vermijden</t0>
+7a9fbdb42c75	Kloon niet één pagina om alleen de plaatsnaam te vervangen. Het spambeleid van Google noemt pagina's die zijn gemaakt om te scoren op specifieke, vergelijkbare zoekopdrachten, zoals plaatsvarianten, misbruik met doorway-pagina's. Elk gebied dat u noemt, moet echt iets specifieks te zeggen hebben.
+5a814d2c5cee	Mr Expert is een lopend project en de resultaten bouwen zich nog op, dus ik noem geen positiecijfers. Dit artikel beschrijft de structuur die ik gebruikte en de redenering erachter.
+f1b83760b011	De volledige opbouw staat in de <t0>case van Mr Expert Carpet Cleaning</t0>, en mijn pagina <t1>lokale SEO</t1> legt uit wat ik aanbied.
+0c6312fd771d	<t0>Lokale SEO<t1>Google Bedrijfsprofiel, dienstpagina's en indexeringsreparaties.</t1></t0> <t2>Google Ads-gesprekstracking voor lokale dienstverleners<t3>Hoe u de telefoontjes telt die opdrachten worden.</t3></t2> <t4>Checklist voor een Google Ads-accountaudit bij leadgeneratie<t5>Zes controles op volgorde.</t5></t4>
+faab6e1ba9a3	Een Meta-account overnemen betekent ongedocumenteerde beslissingen erven. Audit de meting vóór de creatives, want elk oordeel rust op ongecontroleerde cijfers.
+fdf24be1ca68	Een overgenomen Meta-account auditen
+b3acc0ad6742	Wat controleer ik eerst bij de audit van een Meta-advertentieaccount?
+193f3d1aafc8	Controleer de meetlaag vóór de campagnes. Tel de geïnstalleerde pixels, stem de gerapporteerde aankopen voor een afgesloten week af op echte bestellingen, en ga na op welke pixel elke campagne optimaliseert. Oordelen over creatives en targeting zijn maar zo goed als de conversiedata eronder.
+64a3979443ee	Hoe lang duurt een audit van Meta-advertenties?
+8ab1d3cb2a6d	De metingscontroles kosten een paar uur. Voor de afstemming is een afgesloten week aan data nodig die minstens twee weken oud is, zodat de attributievensters gesloten zijn. Na een reparatie is nog een of twee dagen schone data nodig voordat de prestaties kunnen worden beoordeeld.
+260a26c4ade0	Wat betekent het als overgenomen campagnes een hoge ROAS maar weinig omzet tonen?
+f3b62d199a36	Meestal betekent het dat de conversiedata opgeblazen zijn. Veelvoorkomende oorzaken zijn dubbele pixels, aankoopevents die afgaan op pagina's die geen bestellingen zijn, of dubbele events tussen de browserpixel en de Conversions API. Stem de gerapporteerde aankopen af op de echte bestellingen in de webshop voordat u een cijfer op campagneniveau vertrouwt.
+c669dc7e1370	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Audit
+fa24a52017c6	Het eerste wat u in een overgenomen advertentieaccount audit, zijn niet de advertenties.
+fe9140da79db	<t0>Kamran Arshad</t0><t1>13 aug 2026</t1><t2>9 min lezen</t2>
+91445d7b26bb	Neemt u een Meta-account over, audit dan de <t0>meetlaag vóór de campagnes</t0>. Tel de pixels, stem de gerapporteerde aankopen voor een afgesloten week af op echte bestellingen, en breng in kaart op welke pixel elke campagne optimaliseert.
+d2fae5a6bba9	Elk oordeel dat u gaat vellen, dit pauzeren, dat opschalen, rust op conversiedata die u nog niet heeft gecontroleerd. Controleer die eerst.
+e4dba02328d5	De meeste auditchecklists beginnen met creatives, doelgroepen en structuur. Die zijn belangrijk. Ze zijn <t0>daarna</t0> belangrijk, want elk ervan wordt beoordeeld aan de hand van gerapporteerde prestaties, en gerapporteerde prestaties zijn precies wat u bij een overgenomen account geen reden heeft om te vertrouwen.
+41659929e512	Ik nam een account over waarin dit in de verkeerde volgorde doen duur zou zijn geweest. De best presterende campagnes in Ads Manager leverden niets op. Audit eerst de creatives en u zou concluderen dat die campagnes de winnende invalshoek hadden, en er meer geld achter zetten.
+18c77c1decfc	<t0>Waar deze cijfers vandaan komen</t0>
+1b89ea195ceb	Eén Shopify-account dat ik overnam en auditte: een huidverzorgingsmerk dat Meta-advertenties draaide voor zo'n <t0>PKR 100.000 per dag</t0>. De klant vroeg me hen niet bij naam te noemen, dus dat doe ik niet. De cijfers zijn zoals ze in het account stonden tijdens die opdracht.
+f5e12a0d4ffe	Dit is <t0>één account</t0>, geen onderzoek. Ik geef u het mechanisme en één uitgewerkt voorbeeld, geen branchestatistiek. En ik noem hier geen precieze data van de opdracht, omdat ik ze liever weglaat dan ze bij benadering geef.
+076bbbb37deb	Fase één: zijn deze cijfers geloofwaardig?
+3b172c283304	<t0>Tel de pixels</t0>Shopify: <t1>Instellingen &rarr; Klantevents</t1>, het <t2>verkoopkanaal Facebook &amp; Instagram</t2>, en <t3>theme.liquid</t3> doorzocht op <t4>fbq</t4>. Bevestig het daarna in de browser met DevTools, want ingesteld en afgevuurd zijn verschillende dingen. Meer dan één pixel-ID is een bevinding, geen detail.
+a8445feea23b	<t0>Stem een afgesloten week af</t0>Aankopen in Events Manager tegenover echte bestellingen in de webshop, dezelfde week, dezelfde tijdzone, minstens twee weken oud. Events Manager zou uw aantal bestellingen moeten benaderen en het nooit mogen overschrijden.
+110b88fcdc3f	<t0>Koppel campagnes aan pixels</t0>Noteer voor elke actieve campagne op welke pixel het conversie-event is ingesteld. Dit is de stap die een vaag verschil verandert in een concrete lijst campagnes.
+7ce0720801a3	<t0>Volg de bestellingen van elke groep</t0>Neem de campagnes aan elke pixel en probeer hun geclaimde bestellingen in de webshop te vinden. Een groep waarvan de bestellingen niet te traceren zijn, is uw probleem, en u weet nu precies hoeveel budget die vasthoudt.
+0a2faf84f6b5	<t0>Controleer de opzet van de Conversions API</t0>Draait CAPI, controleer dan of de deduplicatie echt werkt en niet alleen ingesteld is; zie <t1>het artikel over deduplicatie</t1>.
+71957e99aead	<t0>De vraag die fase één afsluit</t0>
+e49ce74acd2f	Kunt u in één zin zeggen hoeveel aankopen de webshop vorige week deed en hoeveel Meta denkt dat het er waren, en het verschil verklaren? Zo niet, raak dan nog geen budget aan. Elke optimalisatie die u doet, is een gok op cijfers die u niet kunt verdedigen.

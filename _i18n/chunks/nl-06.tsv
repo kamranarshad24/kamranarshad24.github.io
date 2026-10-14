@@ -1,0 +1,175 @@
+0def9aabe318	Wat fase één in dat account vond
+04f680bc9e12	Twee pixels. Eén geïnstalleerd via het officiële verkoopkanaal, nauwkeurig. Eén geïnstalleerd door een app van derden, die aankopen rapporteerde zonder bijbehorende bestellingen.
+250d826d3afc	Meta rapporteerde zo'n 100 bestellingen tegenover 55 tot 70 echte. Ongeveer <t0>30 tot 40% van een dagbudget van PKR 100.000</t0> zat in campagnes die optimaliseerden op de onnauwkeurige pixel, campagnes die er in Ads Manager uitzagen als de sterkste van het account.
+0f9370ee3fbf	De vorige marketeer had het niet gevonden. Dat is geen kritiek op diens vakmanschap; het is een gevolg van waar er werd gekeken. Alles binnen Ads Manager was intern consistent. Het verschil is alleen zichtbaar als u Meta vergelijkt met de webshop, en die vergelijking ligt buiten de tool waarin de meeste mediabuyers leven.
+7c05665e90e7	Fase twee: nu pas het account zelf
+5f603c218486	Met betrouwbare cijfers wordt de gewone audit de moeite waard:
+2745debaa64a	Onderdeel
+2e062db20779	Wat u controleert
+e286b46a66ad	Waarom het na fase één telt
+99b8a5750d3f	Campagnestructuur
+e77391796e7f	Overlappende doelgroepen, versnipperde budgetten
+de2fced136ba	Beslissingen over samenvoegen vragen echte prestatiedata
+b4f57352c166	Optimalisatie-event
+96e82cf93b77	Optimaliseren campagnes op aankoop, of op een vervangend event?
+b953b8d746f3	Een vervangend event erft elke fout van de pixel die het rapporteert
+7b8bf0ce5a18	Attributie-instellingen
+3d1a4c806619	Vensters gelijk over alle campagnes?
+4d19ff4a8866	Verschillende vensters maken campagnes onvergelijkbaar
+8f6a557068a6	Creatives en invalshoeken
+f3fb4b9318b6	Wat echt traceerbare bestellingen opleverde
+5fd97f01558b	Pas zinvol als de spookconversies weg zijn
+2867a119acba	Overlap van doelgroepen
+ab0d4fb57b6f	Campagnes die tegen elkaar bieden
+76483b0031e3	Verhoogt de kosten onzichtbaar
+c3c288b5fe93	Het overdrachtsgesprek
+58af869c98b6	Vindt u zoiets, dan is hoe u het brengt net zo belangrijk als het vinden.
+9efba94dcda5	De klant heeft maandenlang gehoord dat deze campagnes werkten. Iemand nam die beslissingen te goeder trouw met de tools die voorhanden waren. Openen met &ldquo;uw vorige marketeer heeft dit gemist&rdquo; laat u scherp lijken en de klant dom voelen, en dat is een slechte ruil.
+05f9f5fe19df	Begin in plaats daarvan met het mechanisme: het verschil was alleen zichtbaar van buiten Ads Manager, hier is de afstemming, hier is het cijfer, hier is wat er gebeurt als we het repareren: <t0>inclusief dat de gerapporteerde ROAS zal dalen.</t0> Zeg dat vóór u de wijziging doorvoert, niet erna.
+647561262eae	Eén overgenomen account, één hoofdoorzaak. Genoeg accounts hebben eerlijke tracking en echt slechte campagnes, en fase één vertelt u dat in een middag. Ook dat is goed om te weten voordat u iets herbouwt dat in orde was.
+6fd094540e1f	Fase één is evenmin genoeg. Die stelt vast of de cijfers geloofwaardig zijn. Ze vertelt u niet of de strategie deugt. Ze voorkomt alleen dat u die vraag met fictie beantwoordt.
+202459d29f67	Net een account overgenomen dat u niet vertrouwt?
+5833c106cc94	Stuur me de URL van de webshop. Ik vertel u of de cijfers die u heeft geërfd geloofwaardig zijn, voordat u erop uitgeeft.
+ed18cd7b0280	<t0>Meta zegt 100 bestellingen. Shopify zegt 62. Wie liegt er?<t1>De afstemming die spookconversies blootlegt.</t1></t0> <t2>Hoe u ziet of uw Meta-pixel aankopen rapporteert die nooit plaatsvonden<t3>De fout die op succes lijkt tot u afstemt.</t3></t2> <t4>U kunt geen campagne opschalen die u niet vertrouwt<t5>Opschaaladvies gaat uit van iets wat niemand controleert.</t5></t4>
+6b127d886d2f	Een verschil tussen Meta en het aantal bestellingen in Shopify is tot op zekere hoogte normaal. Daarboven rapporteert vaak iets aankopen die nooit plaatsvonden. Zo ziet u welke van de twee.
+65c81de0749b	Verschil in bestellingen tussen Meta en Shopify
+1192890dce52	Waarom toont Meta meer verkopen dan Shopify?
+dfa9eba163a9	Enig verschil is normaal, omdat Meta view-through- en click-through-conversies binnen zijn attributievenster telt, ook van mensen die niet direct via een advertentieklik kwamen. Een groot verschil betekent meestal iets anders: dubbele pixels, dubbele events, of een pixel die aankoopevents afvuurt op pagina's die geen echte aankopen zijn.
+72a42b3591f3	Hoeveel verschil tussen Meta en Shopify is normaal?
+3103ccbcb60e	Er bestaat geen universeel getal, en elk artikel dat er een noemt, gokt. Bepaal uw eigen uitgangswaarde terwijl de tracking aantoonbaar gezond is, en zie afwijking van uw eigen cijfer als het signaal, in plaats van uzelf te vergelijken met een gepubliceerd gemiddelde.
+17458dca82d5	Kan een tweede Facebook-pixel opgeblazen verkoopcijfers veroorzaken?
+0eda2d3c0fab	Ja. Als een tweede pixel door een app van derden is geïnstalleerd en aankoopevents afvuurt die niet overeenkomen met echte bestellingen, schrijft Meta die spookaankopen toe aan de campagnes die op die pixel optimaliseren, waardoor gerapporteerde verkopen en ROAS worden opgeblazen.
+e595ab8d3564	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Attributie
+887f9d835481	Meta zegt 100 bestellingen. Shopify zegt 62. Wie liegt er?
+0ed9ed7eb432	<t0>Kamran Arshad</t0><t1>13 aug 2026</t1><t2>10 min lezen</t2>
+2a52c1b14007	Enig verschil tussen Meta en Shopify is normaal. Meta telt view-through-conversies en gebruikt een ander attributievenster dan uw webshop. Een <t0>groot, aanhoudend verschil in het voordeel van Meta</t0> is iets anders. Dat betekent meestal dat iets aankopen rapporteert die niet plaatsvonden: een dubbele pixel, dubbele events, of een aankoopevent dat afgaat op een pagina die geen aankoop is.
+941e0c1d5c32	U ziet het verschil door te stoppen met totalen vergelijken en het juiste paar cijfers te vergelijken.
+410b557a216a	Dit is een van de meest gestelde vragen in e-commerce-advertising, en een van de slechtst beantwoorde. Zoek erop en u vindt Reddit-discussies met dertig reacties en geen conclusie, berichten in de Shopify Community die als onopgelost staan gemarkeerd, en artikelen van leveranciers die negen oorzaken opsommen en dan hun product aanraden.
+2dc4f381644d	Dus hier is een specifiek account, een specifieke oorzaak, en de afstemming die het vond.
+bab08ea785fd	De situatie
+e27d225ae8ba	Ik nam de Meta-advertenties over van een huidverzorgingsmerk op Shopify. De overdracht kwam met een probleem dat de vorige marketeer niet had kunnen oplossen: <t0>Meta rapporteerde zo'n 100 bestellingen. Shopify toonde er 55 tot 70.</t0>
+6a0959a05522	Dat verschil bestond al zo lang dat de klant geen van beide cijfers meer vertrouwde. En omdat niet te zien was welke campagnes eerlijk rapporteerden, werden budgetten eigenlijk willekeurig aangepast: meer uitgeven aan wat er goed uitzag in Ads Manager, zonder te kunnen weten of &ldquo;goed&rdquo; iets betekende.
+982c3a76fbc7	Dat is de echte schade. Niet het verkeerde cijfer zelf, maar elke beslissing die erop volgde.
+f012b5c946b4	Eén Shopify-account dat ik overnam en auditte: een huidverzorgingsmerk dat Meta-advertenties draaide voor zo'n <t0>PKR 100.000 per dag</t0>. De klant vroeg me hen niet bij naam te noemen, dus dat doe ik niet. De cijfers hieronder zijn zoals ze in het account stonden tijdens die opdracht.
+a6d8292815dd	Dit is <t0>één account</t0>, geen onderzoek. Ik geef u het mechanisme en één uitgewerkt voorbeeld, geen statistiek over de branche. En ik noem hier geen precieze data van de opdracht, omdat ik ze liever weglaat dan ze bij benadering geef.
+36c77898fe88	Eerst: vergelijk het juiste paar cijfers
+860cb1ceb54d	De meeste mensen vergelijken de door Meta gerapporteerde conversies met het totale aantal bestellingen in Shopify, schrikken van het verschil en beginnen dingen te herbouwen die nooit kapot waren. Die twee cijfers <t0>horen</t0> te verschillen.
+b7baa1d40c4e	Cijfer
+78096ac8246d	Wat het telt
+16c009c6d5fe	Hoe het zich moet verhouden
+4afcb638fbf1	Bestellingen in Shopify
+ff559ef1a3a8	Elke betaalde bestelling, uit elke bron
+235b4ae2a190	De werkelijkheid
+dc13f74cf8be	Aankopen in Events Manager
+3b193a473f9f	Aankoopevents die Meta ontving
+15f9cb616eaa	Moet Shopify benaderen, nooit overschrijden
+ba384a40bb9a	Conversies in Ads Manager
+1b6feda96372	Aankopen die Meta aan uw advertenties toeschrijft
+490d724f2da0	Een deelverzameling; niet elke verkoop kwam uit een advertentie
+43749b6efd95	Lees de middelste rij nog eens, want die is het belangrijkst en niemand kijkt ernaar. <t0>Aankopen in Events Manager zouden dicht bij uw aantal bestellingen in Shopify moeten liggen</t0>, omdat aankoopevents worden geteld ongeacht welke campagne de eer krijgt. Ligt dat cijfer boven uw echte bestellingen, dan kijkt u niet naar een attributievraag. U kijkt naar events die niet overeenkomen met verkopen.
+0190090a13d4	Dat conversies in Ads Manager <t0>lager</t0> zijn dan de bestellingen in Shopify, is normaal en gezond. Dat aankopen in Events Manager <t1>hoger</t1> zijn dan de bestellingen in Shopify, is een defect.
+c8e0104e8718	Wat er echt gebeurde
+dc78eadd5920	Het account had <t0>twee Meta-pixels tegelijk geïnstalleerd</t0>:
+daccca90eb24	Eén geïnstalleerd via het officiële verkoopkanaal Facebook &amp; Instagram in Shopify. Deze was nauwkeurig.
+ab58c8e627b4	Eén geïnstalleerd door een <t0>app van derden</t0>. Deze rapporteerde aankopen die nooit plaatsvonden.
+a1031043f848	De tweede pixel is de interessante, want die was niet stil. Een stille pixel is makkelijk: u ziet nul conversies en gaat zoeken. Deze was luidruchtig. Hij rapporteerde aankopen, die aankopen verschenen in Ads Manager, en de campagnes die erop optimaliseerden lieten een <t0>sterke ROAS</t0> zien.
+b71b3ffce3f1	Niets daarvan bestond in Shopify.
+567303755ac2	&#10007; Wat Ads Manager toonde
+035d3616ea9b	&#10003; Wat Shopify toonde
+81bd1e4fbf13	Het cijfer dat het urgent maakte
+b8880419f2aa	Van ongeveer <t0>PKR 100.000 aan dagelijkse advertentie-uitgaven</t0> ging ongeveer <t1>PKR 30.000 tot 40.000 per dag</t1> naar campagnes die optimaliseerden op de pixel die aankopen rapporteerde die nooit plaatsvonden.
+5d1fc7dbc6c6	Dat is <t0>30 tot 40% van het dagbudget</t0> dat naar campagnes stroomde waarvan het gerapporteerde succes een artefact was. En omdat die campagnes de best presterende leken in Ads Manager, maakten juist zij de meeste kans op <t1>meer</t1> budget. De rapportagefout trok actief uitgaven naar zichzelf toe.
+32d2cc46fbd3	De vorm van het probleem
+93458d350998	Eén Shopify-account &middot; cijfers zoals ze stonden tijdens de opdracht
+79001d8b3075	Gerapporteerd door Meta
+d4b065ac9065	Werkelijk in Shopify
+751750a05008	Dagbudget
+cd0e5a842cd9	Naar spookcampagnes
+9fb2b8fb9df5	De aantallen bestellingen gelden voor de vergelijkingsperiode die hierboven is beschreven. Budgetcijfers zijn Pakistaanse roepies per dag. Het percentage is het cijfer dat overdraagbaar is; het hangt niet af van valuta of markt.
+68ddc2bc2677	De oplossing, en hoe die eruitzag
+2f423611d96a	Ik schakelde de pixel van derden uit. Het directe gevolg was dramatisch en, als u het nog niet eerder heeft gezien, alarmerend: <t0>elke campagne die op die pixel optimaliseerde, stopte met leveren.</t0>
+be33b62c1faf	Dat is geen bijwerking om nerveus van te worden. Het is de diagnose die zichzelf bevestigt. Die campagnes draaiden op een conversiesignaal dat niet echt was; haal het signaal weg en er blijft niets over om op te optimaliseren.
+3293dde8114d	Binnen een of twee dagen met schone data werd het beeld duidelijk. De gerapporteerde prestaties daalden, en werden waar. De klant kon eindelijk de vraag beantwoorden waarnaar maandenlang was gegist: <t0>welke campagnes leveren echt bestellingen op?</t0>
+802be44e1c7c	<t0>Reken erop dat de cijfers slechter worden voordat ze eerlijk worden</t0>
+87d217066217	Haalt u een bron van spookconversies weg, dan daalt uw gerapporteerde ROAS. Aan het bedrijf is niets veranderd; u telt alleen geen verkopen meer die er nooit waren. Licht de klant in voordat u het doet, anders legt u straks een &ldquo;daling in prestaties&rdquo; uit die u bewust zelf veroorzaakte.
+51caf8f991d3	Voer deze afstemming uit op uw eigen account
+5ed95da1b9cb	<t0>Kies één afgesloten week</t0>Minstens twee weken geleden, zodat de attributievensters gesloten zijn en de rapportage volledig is.
+526534122337	<t0>Noteer drie cijfers</t0>Bestellingen in Shopify, aankopen in Events Manager, conversies in Ads Manager, voor dezelfde week en dezelfde tijdzone.
+b77538fdd753	<t0>Leg het middelste cijfer naast het eerste</t0>Liggen de aankopen in Events Manager boven de bestellingen in Shopify, stop dan. U heeft spook- of dubbele events, en geen enkele attributietheorie praat dat weg.
+2f808c5e9a0b	<t0>Tel uw pixels</t0>Shopify-beheer: <t1>Instellingen &rarr; Klantevents</t1>, het <t2>verkoopkanaal Facebook &amp; Instagram</t2>, en <t3>Onlinewinkel &rarr; Thema's &rarr; Code bewerken</t3>, waar u in <t4>theme.liquid</t4> zoekt naar <t5>fbq</t5>. Meer dan één pixel-ID op die plekken is uw hoofdverdachte.
+152cda695c52	<t0>Splits per pixel voordat u budgetten aanraakt</t0>Stel vast welke campagnes op welke pixel optimaliseren. Zijn de gerapporteerde bestellingen van één groep niet terug te vinden in Shopify, dan heeft u het lek gevonden.
+bd1902a1a341	Ik noem u geen normaal verschilpercentage, omdat er geen bestaat dat het noemen waard is. Het hangt af van uw verkeersmix, de browsers van uw klanten, uw attributie-instellingen en uw markt. Elke gepubliceerde benchmark die ik heb gezien, komt van een bedrijf dat de oplossing verkoopt.
+554506c8b438	Bepaal uw eigen uitgangswaarde terwijl alles aantoonbaar gezond is. Dan is het signaal afwijking van <t0>uw</t0> cijfer, en dat is een echte meting in plaats van het gemiddelde van iemand anders.
+a02ba9385047	En dit is één account. Het mechanisme is algemeen: twee pixels, één die liegt, budget dat de leugen volgt. De specifieke verdeling tussen echt en spook niet.
+faea3ce41c4c	Komen uw cijfers in Meta overeen met die in Shopify?
+d8661ba32eb3	Zo niet, stuur me dan de URL van uw webshop. Ik vertel u of het normale attributieverschillen zijn of dat iets verkopen rapporteert die u nooit deed.
+7faf09a5b1d4	<t0>Twee Meta-pixels in één Shopify-webshop zijn geen back-up<t1>Waarom alle zoekresultaten over „meerdere pixels installeren” de verkeerde vraag beantwoorden.</t1></t0> <t2>Hoe u ziet of uw Meta-pixel aankopen rapporteert die nooit plaatsvonden<t3>De fout die op succes lijkt tot u afstemt.</t3></t2> <t4>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t5>Zeven oorzaken, inclusief de pixelsplitsing die nooit kapot lijkt.</t5></t4>
+6d0d57ae58b4	Meta-pixel meet geen Shopify-aankopen: wat u controleert
+d87197d53a27	De pixel laadt, Pixel Helper is groen, en Events Manager toont geen aankopen. Zeven oorzaken in de volgorde waarin u ze controleert, inclusief het probleem van de dubbele pixel.
+a461669c3644	De pixel laadt, Pixel Helper is groen, en Events Manager toont nog steeds geen aankopen. Zeven oorzaken in de volgorde waarin u ze het best controleert, inclusief het probleem van de dubbele pixel dat uw attributie halveert zonder ooit kapot te lijken.
+4b2c34f28327	Meta-pixel meet geen aankopen
+ddcf8d9b4680	Waarom meet mijn Meta-pixel geen aankopen in Shopify?
+cf75a17edcda	De meest voorkomende oorzaken zijn twee tegelijk geïnstalleerde pixels die de data splitsen, een pixel die ontbreekt op de pagina waar de klant na het betalen echt terechtkomt, een aankoopevent dat zonder verplichte parameters wordt afgevuurd, of een checkout die uw domein verlaat waardoor de browsersessie breekt voordat het event kan afgaan.
+d04f1c53b14f	Kunnen twee Facebook-pixels ontbrekende aankopen veroorzaken?
+aa8b5f80f53a	Ja. Als één pixel via het Shopify-verkoopkanaal is geïnstalleerd en een andere in het thema is geplakt, kunnen events zich over beide verdelen. Elke pixel rapporteert dan een deel van de waarheid, en geen van beide totalen ziet er duidelijk fout uit. Daarom kan dit maandenlang onopgemerkt blijven.
+d5916e6b612b	Hoe controleer ik of het aankoopevent van mijn Meta-pixel werkt?
+07e4671ee472	Plaats een echte bestelling en kijk naar de Network-tab in Chrome DevTools, gefilterd op facebook.com of facebook.net. Controleer of er een Purchase-event afgaat met value, currency en een event-ID. Controleer daarna of het in Events Manager aankomt; dat kan een paar uur duren.
+717810c07a26	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Meta-pixel
+07f17d43c83c	Uw Meta-pixel gaat af. Uw aankopen verschijnen nog steeds niet.
+12498601e6a8	Laadt uw Meta-pixel maar verschijnen aankopen nooit, controleer dan in deze volgorde: <t0>twee tegelijk geïnstalleerde pixels</t0>, de pixel die ontbreekt op de echte bevestigingspagina, een aankoopevent zonder <t1>value</t1> en <t2>currency</t2>, een externe betaalomleiding die de sessie breekt, en deduplicatie tegen een Conversions API-feed.
+8327335e3c81	De eerste komt het vaakst voor en is het moeilijkst te zien, omdat niets kapot lijkt.
+eba1b718b30d	&ldquo;De pixel gaat af&rdquo; en &ldquo;mijn aankopen worden gemeten&rdquo; zijn twee verschillende beweringen, en in de ruimte daartussen lekken de meeste Shopify-advertentiebudgetten weg. Dat Pixel Helper groen wordt, vertelt u dat er een pixel op de pagina staat. Het zegt niets over of het juiste event, met de juiste parameters, de juiste pixel bereikte.
+6a843b589ff8	Begin hier: heeft u meer dan één pixel?
+0d95317b47b0	Dit controleer ik als eerste bij elk account, en het is het probleem dat ik echt in de praktijk ben tegengekomen in plaats van erover te lezen.
+1f6c6280ab6b	In één webshop die ik auditte, waren <t0>twee pixels tegelijk geïnstalleerd</t0>: één via de Shopify-integratie, één direct in het thema geplakt. Beide werkten technisch. Beide rapporteerden. Geen van beide rapporteerde alles, omdat events zich over beide verdeelden afhankelijk van hoe de pagina laadde.
+a84538b5dd23	Dat dit zo lang blijft bestaan, komt doordat het nooit kapot lijkt. Er is geen foutmelding. Pixel Helper is groen. Events Manager toont aankopen, alleen minder dan u echt had. En tenzij u gaat zitten en de pixel afstemt op het eigen aantal bestellingen van Shopify, heeft u geen reden om te vermoeden dat het cijfer maar een deel is.
+d3629ea42545	<t0>Wat ik hier wel en niet kan beweren</t0>
+c500a51cd813	Ik vond dit in de webshop van één klant, en het repareren veranderde wat hun rapportage liet zien. Ik ga er geen herstelpercentage aan hangen, want het eerlijke antwoord is dat gesplitste attributie en budgetverspilling verwant zijn maar niet gelijk, en ik geef u liever het mechanisme dan een cijfer dat ik niet volledig kan verdedigen.
+5533726a030f	Het mechanisme is hoe dan ook wat telt: <t0>twee pixels betekent dat elk een deel van de waarheid ziet</t0>, en Meta optimaliseert op wat het ziet.
+d20b54eb18e8	Zo controleert u het
+1ba51770c7a8	Kijk in het Shopify-beheer op drie plekken, want een pixel kan op elk ervan zijn geïnstalleerd en niets waarschuwt u voor de andere:
+388a3f2bd10f	<t0>Instellingen &rarr; Klantevents</t0>: hier staan eigen pixels
+7c7cb7c4c0a2	<t0>Verkoopkanaal Facebook &amp; Instagram</t0>: de officiële integratie
+b9cedae22802	<t0>Onlinewinkel &rarr; Thema's &rarr; Code bewerken</t0>: zoek in <t1>theme.liquid</t1> naar <t2>fbq</t2> of <t3>connect.facebook.net</t3>
+a4763c4d3d68	Vindt u op meer dan één van die plekken een pixel-ID, dan is dat uw probleem. Kies één methode (meestal is het verkoopkanaal de juiste) en verwijder de andere.
+49bfd2fc2275	De rest van de volgorde
+b96b0e4aece5	De pixel staat niet op de pagina die de klant echt bereikt
+f53cead5c41a	Iedereen installeert sitebreed en neemt aan dat de bevestigingspagina dat overneemt. Vaak is dat niet zo, omdat die pagina buiten uw thema kan worden opgebouwd. Gebruikt u upsells na de aankoop, dan is de pagina die een klant direct na het betalen ziet misschien niet de pagina die u als bedankpagina beschouwt.
+6a6dbc57deab	<t0>De controle</t0>Rond een echte bestelling af. Bekijk op de pagina waar u terechtkomt de broncode en zoek naar uw pixel-ID. Leid het niet af uit het thema.
+6ea1d17f8cda	Het Purchase-event gaat af zonder de verplichte parameters
+604ac333fb27	Een <t0>Purchase</t0>-event zonder <t1>value</t1> en <t2>currency</t2> is bijna nutteloos. Meta kan niet optimaliseren op omzet waarover het nooit is geïnformeerd, en bieden op waarde heeft niets om mee te werken. Ontbrekende <t3>content_ids</t3> breken daarbovenop de catalogusmatching en dynamische retargeting.
+62309301d8ed	<t0>De controle</t0>Filter in de Network-tab op <t1>facebook</t1> en lees de querystring van het aankoopverzoek. Controleer of <t2>value</t2>, <t3>currency</t3> en <t4>content_ids</t4> allemaal aanwezig en gevuld zijn.
+c560bfa858db	De checkout verlaat uw domein en de sessie breekt
+107bdaa98d73	Als de betaling wordt overgedragen aan een externe gateway en de klant daarna terugkomt op een pagina met de bestelbevestiging, kan dat rondje de browsersessie breken waarvan de pixel afhangt. De bestelling wordt afgerond; het event komt niet aan, of komt aan zonder de identificatoren die nodig zijn om het toe te schrijven.
+94221a2cb4c6	<t0>De controle</t0>Verlaat uw betaalproces uw domein? Zo ja, dan is tracking alleen via de browser een kwestie van best-effort en heeft u de Conversions API nodig.
+6e857c1aadfd	Deduplicatie verwijdert het event bewust
+38d82505b5ff	Gebruikt u de pixel en de Conversions API samen (wat u zou moeten doen), dan dedupliceert Meta op <t0>event_id</t0>. Zijn browser en server het oneens over die ID, dan telt u alles dubbel of verliest u ongemerkt één kant. Eén kant verliezen ziet er precies uit als &ldquo;de pixel werkt niet meer.&rdquo;
+e34596fad05b	<t0>De controle</t0>Leg voor één bestelling de <t1>event_id</t1> vast die de browser stuurde en die uw server stuurde. Ze moeten identiek zijn.
+df1bd9ab9ad5	Adblockers en trackingbescherming
+9db2e7bfc89f	Een flink deel van het verkeer blokkeert browsertracking volledig. Dat is geen bug die u kunt repareren: het is een blijvende belasting op meting aan de clientkant, en het is de reden dat een opzet met alleen de browser altijd te weinig telt. De oplossing is geen reparatie; het is de Conversions API.
+0f7023a447fa	<t0>De controle</t0>Vergelijk het aantal aankopen in Events Manager met het aantal bestellingen in Shopify over dezelfde periode. Een aanhoudend verschil dat meegroeit met het volume, is meestal dit.
+a7c3c0758073	U kijkt te vroeg
+b37441ebd4bf	De rapportage in Events Manager is niet direct. Wacht een paar uur en kijk opnieuw voordat u concludeert dat een event ontbreekt. Ik heb mensen een werkende checkout zien herschrijven omdat ze negentig seconden na een testbestelling naar een dashboard keken.
+da32602a9e67	<t0>De controle</t0>Gebruik de tool Test Events voor directe feedback; gebruik Events Manager morgen voor het volume.
+60b9cb7861a3	De afstemming die niemand doet
+feff648d7696	Dit is de oefening die problemen vindt die geen checklist vindt. Kies één week. Noteer drie cijfers:
+6da13addb000	Bron
+10f83a7ad249	Verwachte verhouding
+9201211ec1fa	Elke betaalde bestelling, punt
+d0ef153cb0e4	De werkelijkheid
+d1f0b6210621	Aankopen in Meta Events Manager
+5a97285b0344	Ontvangen aankoopevents
+8a194912963a	Conversies in Meta Ads Manager
+a29f27352fce	Aankopen die Meta aan advertenties toeschrijft
+cb879bf987f9	Een deelverzameling; niet alle verkopen komen uit advertenties
+8f6ac98bb772	De meeste mensen vergelijken het verkeerde paar en raken in paniek. Conversies in Ads Manager <t0>horen</t0> lager te zijn dan bestellingen in Shopify, omdat niet elke klant via een advertentie kwam. Het cijfer dat dicht bij Shopify zou moeten liggen, is <t1>aankopen in Events Manager</t1>. Ligt dat ver onder uw aantal bestellingen, dan heeft u een trackingprobleem en geen attributievraag.
+fd32dd765553	En ligt Events Manager <t0>hoger</t0> dan Shopify, dan heeft u het omgekeerde probleem, meestal dubbele events, en dat is <t1>een ander artikel</t1>.
+80753a73304b	Wat ik u niet vertel
+5b900e400b11	Ik heb u geen verwacht verschilpercentage gegeven, omdat de eerlijke bandbreedte afhangt van uw verkeersmix, uw checkout, de browsers van uw klanten en uw land, en elke gepubliceerde benchmark die ik heb gezien komt van een bedrijf dat de oplossing verkoopt. Bepaal uw eigen uitgangswaarde als alles werkt, en zie afwijking van <t0>uw</t0> cijfer als het signaal.
+3cca71fd3d6e	De rangorde hierboven weerspiegelt een klein aantal accounts plus wat de soorten fouten logisch impliceren. Zie het als een verstandige zoekvolgorde, niet als statistiek.
+f6f3c200049c	Wilt u dat iemand er gewoon naar kijkt?
+54abf50dfdcf	Stuur me de URL van uw webshop. Ik vertel u wat uw pixel echt doet, en om te beginnen hoeft u mij nergens toegang toe te geven.
+65906f35c583	<t0>De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<t1>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</t1></t0> <t2>Dubbele aankoopevents na het installeren van de Conversions API<t3>Hoe u bewijst dat deduplicatie echt werkt en niet alleen ingesteld is.</t3></t2> <t4>Snapchat-aankoopevents worden niet geactiveerd: de diagnosevolgorde<t5>Zes oorzaken gerangschikt, met echte cijfers uit Ads Manager.</t5></t4>
+1b4a84374b60	Rapporteert uw Meta-pixel aankopen die nooit plaatsvonden?
+02f24b327bc0	Een pixel die stopt met rapporteren valt op. De dure fout is er een die te veel rapporteert, want een opgeblazen ROAS trekt budget aan. Zes manieren om de uwe te controleren.
+4b14c2e16e4d	Pixel die nepaankopen rapporteert

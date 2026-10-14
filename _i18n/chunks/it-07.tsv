@@ -1,0 +1,161 @@
+24ebe1e9eeeb	Un pixel Facebook può registrare acquisti mai avvenuti?
+babcfc871da5	Sì. Un pixel configurato male può attivare un evento di acquisto su una pagina che non è un ordine completato, attivarsi a ogni ricarica della pagina o essere installato da un'app di terze parti che attiva eventi nelle condizioni sbagliate. Meta registra ciò che riceve, quindi questi eventi compaiono come acquisti reali nei report.
+ec0119c874de	Come faccio a sapere se i dati del mio pixel Meta sono corretti?
+aae7393b63c2	Riconcili una settimana chiusa. Confronti gli acquisti in Gestione eventi con gli ordini del negozio per lo stesso periodo e lo stesso fuso orario. Gestione eventi dovrebbe avvicinarsi al numero di ordini e non superarlo mai. Se lo supera, ha eventi fantasma o duplicati.
+5418e786d870	Perché il mio ROAS su Facebook sembra buono ma non ho vendite?
+91d8d8f26649	Perché il ROAS si calcola sui dati di conversione registrati dal pixel, non sul Suo conto in banca. Se il pixel registra acquisti mai avvenuti, il ROAS viene calcolato su un fatturato inesistente e sembrerà ottimo mentre l'attività non guadagna nulla.
+959ef04016e2	Un pixel silenzioso è facile. Un pixel che mente si porta via il Suo budget.
+c54881e64155	<t0>Kamran Arshad</t0><t1>13 ago 2026</t1><t2>8 min di lettura</t2>
+98323b3697fb	Un pixel che smette di registrare si nota in pochi giorni, perché le conversioni scendono a zero e qualcuno si allarma. Un pixel che registra <t0>troppo</t0> può andare avanti per mesi, perché un ROAS gonfiato sembra un successo e Meta risponde mandando più budget alle campagne che lo producono.
+d34f7f2af0bf	L'unico test affidabile è la riconciliazione: gli acquisti in Gestione eventi corrispondono a ordini reali nel Suo negozio?
+cdd95180a73e	Quasi tutti gli articoli di risoluzione dei problemi trattano le conversioni mancanti come il problema. In pratica il guasto più dannoso va nella direzione opposta, perché non sembra un guasto. Sembra la Sua campagna migliore.
+59c6f37697b7	Perché registrare troppo è peggio che registrare poco
+2bdf352636c4	Registrare poco Le costa qualità di ottimizzazione. Meta vede meno conversioni di quante ce ne siano state, impara più lentamente e Lei probabilmente investe poco in qualcosa che funziona. È negativo, ma si autolimita.
+c281db6edd40	Registrare troppo è diverso, perché crea un circolo vizioso. Conversioni gonfiate producono un ROAS gonfiato. Un ROAS gonfiato fa sembrare vincente una campagna. Le vincenti ricevono più budget. Più budget produce più conversioni fantasma.
+9b1175b8c852	<t0>L'errore attira la spesa verso di sé.</t0> Per questo può consumare un terzo del budget giornaliero prima che qualcuno se ne accorga: ogni segnale disponibile in Ads Manager dice che la campagna funziona.
+1ba6204e933b	Sei controlli, prima i meno costosi
+d872c0f98764	Riconciliare una settimana chiusa
+4825c0f34e1f	Il controllo più utile in assoluto, e la maggior parte degli account non l'ha mai fatto. Prenda una settimana terminata da almeno due settimane. Confronti gli acquisti in Gestione eventi con gli ordini del negozio per lo stesso periodo e lo stesso fuso orario.
+41e6d75dafbe	Gestione eventi dovrebbe avvicinarsi al numero di ordini. Non dovrebbe mai superarlo. Gestione eventi conta eventi di acquisto, e un evento di acquisto senza ordine per definizione non è un acquisto.
+155676215d4b	<t0>Verdetto</t0>Gestione eventi superiore agli ordini del negozio significa eventi fantasma o duplicati. Nessuna finestra di attribuzione lo giustifica.
+69435dd4b6de	Contare i pixel
+c124276cd789	Nell'account dietro questo articolo la causa era un secondo pixel installato da un'app di terze parti, che registrava acquisti senza ordini corrispondenti. Controlli <t0>Impostazioni &rarr; Eventi dei clienti</t0>, il <t1>canale di vendita Facebook e Instagram</t1> e <t2>theme.liquid</t2>. Più di un ID pixel è il primo sospettato, veda <t3>l'articolo sui pixel multipli</t3>.
+0699af8ab602	<t0>Verdetto</t0>Due ID pixel e una discrepanza nello stesso account raramente sono una coincidenza.
+99cb783598b2	Verificare se l'evento di acquisto si attiva alla ricarica
+24565c2497aa	Completi un ordine reale, arrivi alla pagina di conferma e la ricarichi. Osservi la scheda Network. Se si attiva un secondo evento di acquisto, ogni cliente che ricarica, salva nei preferiti o torna su quella pagina gonfia i Suoi numeri. Senza un <t0>event_id</t0> unico o un identificatore d'ordine, Meta non ha modo di sapere che è la stessa vendita.
+2d52b877ae14	<t0>Verdetto</t0>Un evento di acquisto alla ricarica significa che i Suoi numeri crescono con il traffico, non con le vendite.
+ea7aa83ec533	Verificare a quale pagina è legato l'evento di acquisto
+7c1e5dca21fa	Un evento di acquisto dovrebbe attivarsi al completamento dell'ordine e da nessun'altra parte. App configurate male a volte lo legano all'aggiunta al carrello, all'inizio del checkout o a qualsiasi pagina che corrisponde a una regola URL troppo ampia. Ognuno di questi casi produce acquisti senza ordini dietro.
+7e6747f10eec	<t0>Verdetto</t0>Percorra il funnel con la scheda Network aperta. Un evento di acquisto prima del pagamento è un difetto, non un'ottimizzazione.
+f29fc4e8a8ae	Segmentare le conversioni dichiarate per campagna e poi rintracciarle
+763295ef18d3	Non valuti l'account come un unico numero. Raggruppi le campagne in base al pixel verso cui ottimizzano, poi cerchi nel negozio gli ordini dichiarati da ogni gruppo. In quell'account gli ordini di un gruppo non si trovavano affatto, e quel gruppo consumava circa il 30-40% della spesa giornaliera.
+fa362705680c	<t0>Verdetto</t0>Un gruppo di campagne i cui ordini non trova nel negozio è la falla.
+a5e008ef5d5f	Confrontare il valore degli acquisti con il fatturato reale
+e12f73b47105	I conteggi possono sembrare plausibili mentre i valori sono assurdi. Confronti il valore totale degli acquisti dichiarato per una settimana chiusa con il fatturato reale della stessa settimana. Un valore nettamente superiore al fatturato reale significa che gli eventi si attivano con valori sbagliati o duplicati, anche se il conteggio sembra vicino.
+573a1584af39	<t0>Verdetto</t0>Controlli sia il conteggio sia il valore. Falliscono in modo indipendente.
+ea66f9f56b09	Cosa fare quando lo trova
+fa4028f451fd	Corregga la causa, non il sintomo. Disattivare un pixel configurato male o correggere l'attivatore dell'evento farà smettere di pubblicare le campagne interessate: è la diagnosi che si conferma, non un nuovo problema.
+91b815869b96	Poi informi chi gestisce il budget <t0>prima</t0> che veda la dashboard. Il ROAS dichiarato scenderà. Il fatturato no, perché quello che sta togliendo non è mai esistito. Questa conversazione è molto più facile prima che dopo.
+21356c071260	<t0>La parte scomoda</t0>
+e7d9220453b3	Se una campagna ha ottimizzato per mesi verso conversioni fantasma, Meta ha passato quel tempo a imparare a trovare persone che generano conversioni fantasma. Ricostruire su dati puliti richiede tempo, e i primi risultati della configurazione corretta sembreranno peggiori della finzione che sostituisce. È il costo di aver sbagliato, non il costo di correggere.
+206e4c5a70b8	Un account, una causa. Le registrazioni in eccesso hanno anche altre origini: eventi CAPI duplicati senza identificatori corrispondenti, eventi di test rimasti attivi, più app che attivano la stessa conversione. La riconciliazione del primo controllo li rileva tutti; capire quale sia richiede il resto.
+faf55d9f0f03	Non Le do nemmeno una soglia per «troppo». Si confronti con gli ordini del Suo negozio. Quel confronto è esatto, cosa che nessun benchmark può offrire.
+dc2bef3c95d2	I Suoi acquisti dichiarati sono reali?
+6710b6abe3a9	Per scoprirlo bastano quindici minuti, e la maggior parte degli account non è mai stata controllata. Mi invii l'URL del Suo negozio.
+da15fd0c3373	<t0>Meta dice 100 ordini. Shopify dice 62. Chi mente?<t1>La riconciliazione che scopre le conversioni fantasma.</t1></t0> <t2>Due pixel Meta su un negozio Shopify non sono un piano di riserva<t3>Perché tutti i risultati su «installare più pixel» rispondono alla domanda sbagliata.</t3></t2> <t4>Il pixel Meta non traccia gli acquisti su Shopify: cosa controllare per primo<t5>Sette cause, compresa la divisione tra pixel che non sembra mai rotta.</t5></t4>
+125d680d8f9e	I consigli per scalare dicono di puntare sul ROAS migliore. Si presuppone che il ROAS dichiarato rifletta vendite reali. Se non è così, scalare accelera la perdita.
+045140eaaaa3	Scalare su dati inaffidabili
+2d1810d851a4	Come capisco quale campagna Facebook scalare?
+9dc4b33adff8	Scali la campagna i cui ordini dichiarati può rintracciare nel Suo negozio. Prima di confrontare il ROAS tra campagne, riconcili gli acquisti dichiarati con gli ordini reali, perché una campagna con dati di conversione gonfiati sembrerà sempre la migliore.
+4584e7deb1e6	Perché il mio ROAS è calato dopo aver scalato?
+98dd0fad277f	Le cause comuni sono la saturazione del pubblico, l'uscita dalla fase di apprendimento dell'algoritmo e la maggiore concorrenza. Ma se il calo è stato immediato e forte, verifichi che il ROAS precedente fosse reale, perché dati di conversione gonfiati producono un rendimento apparente eccellente che non sopravvive a un budget più alto.
+6836e5a14a4b	Devo scalare una campagna con ROAS alto ma senza fatturato corrispondente?
+1605c7ee7b30	No. Una campagna che dichiara un ROAS alto mentre il negozio non mostra ordini corrispondenti sta registrando conversioni mai avvenute. Scalarla aumenta la spesa su un segnale che non esiste.
+7805e942aff4	<t0>Note sul campo</t0> &nbsp;/&nbsp; Strategia
+fa8c69b5ae6d	Ogni guida per scalare dà per scontato che i Suoi numeri siano reali. Lo verifichi prima.
+4d1bb4407d45	Ogni guida per scalare dice la stessa cosa: trovi il Suo ROAS migliore e ci metta più soldi. È un consiglio ragionevole che poggia su un'ipotesi che quasi nessuno verifica: <t0>che il ROAS dichiarato rifletta vendite davvero avvenute.</t0>
+d651b8093fcf	Quando non è così, scalare non amplifica un vincitore. Amplifica un errore di registrazione, e lo fa più in fretta di quanto se ne accorga.
+7d64d1763026	I contenuti su come scalare non mancano. Aumentare i budget del 20% ogni tre giorni. Duplicare su nuovi pubblici. Scaling verticale contro orizzontale. Quasi tutto va bene, entro i suoi limiti.
+0f139e826e0a	Quello che quasi nessuno include è un passo zero: <t0>verificare che il rendimento che sta per scalare sia reale.</t0> È questa omissione che ha portato un cliente con cui ho lavorato a mettere per mesi più budget sulle sue campagne peggiori.
+6ad0d147990c	La trappola, detta chiaramente
+1c1966323999	Le regole per scalare scelgono il ROAS dichiarato più alto. Una campagna che ottimizza su un pixel che registra troppo mostrerà sempre un ROAS più alto di una misurata onestamente, non perché renda di più, ma perché la sua base di calcolo è finzione.
+cf0e760d840d	Quindi la regola che dovrebbe trovare la Sua campagna migliore trova in modo affidabile quella <t0>misurata peggio</t0>. E ogni ciclo di scaling le manda più budget.
+2693bb797b43	Com'era nella pratica
+969f49792bef	Il cliente spendeva circa 100.000 PKR al giorno sull'account e regolava i budget praticamente a caso: non potendo capire quali campagne registrassero onestamente, aumentava e diminuiva la spesa in base a una dashboard di cui nessuno si fidava. Con le sue parole, faceva modifiche alla cieca.
+004618a0f610	L'account aveva due pixel. Uno preciso, l'altro che registrava acquisti senza ordini corrispondenti. Meta mostrava circa 100 ordini; il negozio ne aveva 55-70. Circa il <t0>30-40% del budget giornaliero</t0> era in campagne collegate al pixel impreciso, e quelle campagne mostravano il ROAS migliore dell'account.
+420be8bdce70	Secondo qualsiasi regola standard, erano quelle le campagne da scalare. È il punto su cui riflettere. <t0>Il metodo non veniva applicato male. Veniva applicato correttamente a dati sbagliati</t0>, producendo con assoluta sicurezza esattamente la risposta sbagliata.
+8605d2b16e39	Passo zero, prima di ogni decisione di scaling
+472076ab3fbf	<t0>Riconciliare una settimana chiusa</t0>Acquisti in Gestione eventi contro ordini reali del negozio. Se Gestione eventi è più alto, si fermi: ha eventi fantasma o duplicati e nessun confronto tra campagne è ancora valido.
+aa5afcb90740	<t0>Rintracciare la campagna specifica che vuole scalare</t0>Non l'account. Quella campagna. Trova i suoi ordini dichiarati nel negozio? Se non riesce a rintracciarli, non la scali.
+f4deb8e4b3a0	<t0>Verificare verso quale pixel ottimizza</t0>Se l'account ha più di un pixel, le campagne non sono confrontabili finché non sa quale usa quale.
+b775181b1ace	<t0>Poi applicare il metodo di scaling che preferisce</t0>I metodi vanno bene. Avevano solo bisogno di qualcosa di vero su cui lavorare.
+db61dafbf838	<t0>Una diagnosi sotto gli occhi</t0>
+3fa5d2a3270e	Se Le è mai capitato di scalare una campagna con un ROAS eccellente e vedere il rendimento crollare subito, non calare in due settimane ma crollare, consideri che il dato originale forse non era reale. I vincitori veri si degradano gradualmente man mano che i pubblici si saturano. Quelli fittizi non si degradano affatto, perché non c'era nulla da degradare; il numero dichiarato smette semplicemente di sembrare credibile accanto al saldo del conto.
+041249cd27c4	Verso cosa scalare invece
+acc3d9e21b22	Il ROAS dichiarato è un indicatore indiretto di ciò che Le interessa davvero: il denaro che entra nell'attività. Più il segnale di ottimizzazione è vicino al fatturato reale, più è difficile ingannarlo:
+27bed13a88c6	Segnale
+8625ae5b31d6	Quanto è facile da distorcere
+be1932e2e9ba	Utilizzabile per scalare?
+ab04f33c73e1	ROAS dichiarato in Ads Manager
+fa9891a77a83	Facile, eredita ogni difetto del pixel
+1e784e58718a	Solo dopo la riconciliazione
+279adddc04b9	Acquisti rintracciabili nel negozio
+fc73d790b051	Difficile: un ordine esiste o non esiste
+443fc840a3e6	Fatturato del negozio nel periodo
+50172140252e	Molto difficile
+e046096cfd3d	Sì, con ritardo
+0d0488a7f3ba	Margine di contribuzione dopo i costi
+d7eee072c2f5	Il più difficile, e quello che paga gli stipendi
+f2544c31761a	Il migliore, se riesce a misurarlo
+590724a109b0	La maggior parte degli inserzionisti non va mai oltre la prima riga. Passare alla seconda, cioè verificare semplicemente che gli ordini esistano, costa un'ora a settimana ed elimina l'intera categoria di problemi descritta in questo articolo.
+bb8420536749	Niente di tutto questo rende facile scalare. Saturazione del pubblico, stanchezza delle creatività, ripartenze della fase di apprendimento e concorrenza sono reali, e Le costeranno rendimento anche su una campagna con dati perfetti.
+9e13051d20af	L'affermazione, circoscritta, è che vale la pena risolvere quei problemi <t0>dopo</t0> aver confermato che il numero verso cui ottimizza corrisponde a vendite. Un account non è uno studio, ma il meccanismo non ha nulla di esotico e il controllo costa così poco che non c'è alcun buon motivo per saltarlo.
+1ad7473c60b1	Sta per scalare una campagna?
+1a444586f1b3	Si assicuri che il rendimento che sta scalando sia reale. Mi invii l'URL del Suo negozio e lo riconcilierò con i Suoi ordini.
+7150969b8f72	<t0>Meta dice 100 ordini. Shopify dice 62. Chi mente?<t1>La riconciliazione che scopre le conversioni fantasma.</t1></t0> <t2>Come capire se il Suo pixel Meta registra acquisti mai avvenuti<t3>Il guasto che sembra un successo finché non riconcilia.</t3></t2> <t4>Fare l'audit di un account Meta Ads appena ereditato<t5>Verifichi i numeri prima di giudicare le campagne.</t5></t4>
+a0f9d7d07533	Scadenza Shopify del 26 agosto: il Suo tracciamento è sopravvissuto?
+2fe3aaf8ba6e	L'aggiornamento Shopify del 26 agosto 2026 rimuove gli script aggiuntivi dalle pagine di ringraziamento. Veda quali tag di acquisto sono coinvolti e controlli i Suoi in dieci minuti.
+2c3c16ed0c9f	Scadenza Shopify del 26 agosto
+f7d101b08d97	Cosa era previsto per il 26 agosto 2026 per i negozi Shopify?
+356a5f5bf53e	I negozi Shopify non Plus che non hanno aggiornato manualmente le pagine di ringraziamento e di stato dell'ordine vengono aggiornati automaticamente. Le personalizzazioni fatte con gli script aggiuntivi e i tag script deprecati su queste due pagine vengono rimosse invece che migrate.
+b986a3b45806	L'aggiornamento del checkout Shopify rimuove il mio pixel Facebook?
+b7d3de2f5719	Rimuove qualsiasi pixel o tag installato tramite gli script aggiuntivi sulle pagine di ringraziamento e di stato dell'ordine. Un pixel Meta collegato tramite il canale di vendita ufficiale Facebook e Instagram non è interessato. Il rischio riguarda in particolare il codice incollato a mano.
+788c05d25ced	Come controllo cosa c'è nel campo degli script aggiuntivi di Shopify?
+0819e1279b61	Vada in Impostazioni, poi Checkout, e guardi il campo degli script aggiuntivi. Dal 28 agosto 2025 è in sola lettura, ma può ancora leggerne il contenuto. Tutto ciò che lì attiva una conversione doveva essere sostituito prima del 26 agosto 2026: controlli se il Suo lo è stato.
+f488501ed545	<t0>Note sul campo</t0> &nbsp;/&nbsp; Shopify
+5f9788f7fed0	La scadenza Shopify del 26 agosto è passata. Il Suo tracciamento degli acquisti è sopravvissuto?
+56e1b0ab8055	<t0>Kamran Arshad</t0><t1>12 ago 2026</t1><t2>Aggiornato il <t3>10 ott 2026</t3></t2><t4>8 min di lettura</t4>
+213dee8487ad	<t0>Aggiornamento, 10 ottobre 2026</t0>
+3266db95f51b	La scadenza del 26 agosto 2026 è ormai passata. Ho scritto questo articolo il 12 agosto come avviso e da allora non ho verificato cosa sia successo sui singoli negozi. Se dopo il 26 agosto i Suoi acquisti dichiarati sono calati, confronti le piattaforme pubblicitarie con gli ordini Shopify dei giorni prima e dopo, poi segua il controllo qui sotto.
+15fe15a22ab6	Per il <t0>26 agosto 2026</t0> Shopify ha programmato un aggiornamento automatico per ogni negozio non Plus che non avesse ancora migrato le pagine di ringraziamento e di stato dell'ordine. Secondo la documentazione di Shopify, tutto ciò che funzionava tramite gli <t1>script aggiuntivi</t1> su quelle pagine (tag di conversione di Google Ads, eventi di acquisto del pixel Meta, contenitori GTM, script di affiliazione) viene <t2>rimosso, non migrato</t2>.
+5e8b8a41dee3	Se non ha fatto nulla, il Suo tracciamento degli acquisti dovrebbe essersi fermato in quella data, mentre le piattaforme pubblicitarie continuavano a spendere come se niente fosse.
+c6ba252a64d5	Era il raro problema di tracciamento con una data. La maggior parte di ciò di cui scrivo è una perdita lenta che si può correggere appena la si nota. Questo è arrivato contemporaneamente per moltissimi negozi, e quelli colpiti sono proprio quelli che controllano meno, perché il cambiamento <t0>accade</t0> a loro, non per qualcosa che hanno fatto.
+16c79267e250	<t0>Direttamente dalla documentazione di Shopify</t0>
+d3f3b64e5597	«Il 26 agosto 2026 è la scadenza entro cui i negozi con un piano Shopify non Plus devono aggiornare le pagine di ringraziamento e di stato dell'ordine esistenti alla nuova versione di queste pagine.» (traduzione dall'originale inglese)
+939b8b6886c6	I negozi che non aggiornano manualmente vengono aggiornati automaticamente. I negozi Shopify Plus hanno superato questa tappa il 28 agosto 2025.
+c0888acb9bd1	Cosa viene rimosso davvero
+accf73657544	La parola che fa danni è <t0>rimosso</t0>. Non migrato, non convertito, non conservato in uno strato di compatibilità. Shopify sostituisce le vecchie pagine di ringraziamento e di stato dell'ordine con nuove pagine, e le personalizzazioni che dipendevano dal vecchio modello di rendering non vengono trasferite.
+113e369e1f04	Cosa ha
+405332329101	Sopravvive al 26 agosto?
+c385e347b2af	Sostituzione
+97d1e3851e45	Tag di conversione Google Ads incollato negli script aggiuntivi
+c7dca664e4be	Pixel personalizzato o canale Google e YouTube
+dd385fc96377	Evento Purchase del pixel Meta negli script aggiuntivi
+919421223704	Pixel personalizzato o canale Facebook e Instagram
+4ea2f6a69740	Contenitore GTM caricato sulla pagina di ringraziamento
+20f9ed056206	Pixel personalizzato (in sandbox)
+dbbbad107b36	Script di postback di affiliati / partner
+07ac6e374e80	Pixel personalizzato o server-side
+22414c2ad94a	Pixel Meta tramite il canale di vendita ufficiale
+18bbcd989758	Nessuna azione necessaria
+06a0a5d2b24c	Tag Google tramite il canale Google e YouTube
+a03e05c9f4a5	Tracciamento server-side (Conversions API, sGTM)
+0a3414f2d785	Non interessato, non ha mai dipeso dalla pagina
+2ec0296fde85	Rilegga due volte l'ultima riga. <t0>Il tracciamento server-side è l'unica riga mai a rischio</t0>, perché non dipende dal fatto che un browser visualizzi una pagina controllata da Shopify. È la vera lezione di questa scadenza, e varrà anche la prossima volta che una piattaforma cambierà qualcosa sotto i Suoi piedi.
+acd84f5e80d5	Il controllo di dieci minuti
+a97a83df6ab6	<t0>Leggere il campo degli script aggiuntivi</t0>Amministrazione Shopify &rarr; <t1>Impostazioni</t1> &rarr; <t2>Checkout</t2> &rarr; <t3>Script aggiuntivi</t3>. Dal 28 agosto 2025 è in sola lettura, ma può ancora leggerlo. Copi il contenuto in un posto sicuro.
+e19eb28bfc9d	<t0>Trovare tutto ciò che attiva una conversione</t0>Cerchi nel testo <t1>gtag</t1>, <t2>fbq</t2>, <t3>googletagmanager</t3>, <t4>snaptr</t4>, <t5>ttq</t5> o qualsiasi <t6>&lt;script src=</t6>. Ogni risultato è un tag che doveva smettere di funzionare il 26 agosto.
+81ca81146689	<t0>Verificare cosa pensano di ricevere le piattaforme</t0>Apra Google Ads &rarr; Obiettivi &rarr; Conversioni e la Gestione eventi di Meta. Confronti il volume giornaliero di acquisti nei giorni prima e dopo il 26 agosto. Quel confronto prima/dopo è la Sua prova: senza, non può dimostrare né che qualcosa si è rotto né di averlo sistemato.
+ea5eb633c2cd	<t0>Ricostruire ciascuno come pixel personalizzato</t0>Amministrazione Shopify &rarr; <t1>Impostazioni</t1> &rarr; <t2>Eventi dei clienti</t2> &rarr; <t3>Aggiungi pixel personalizzato</t3>. I pixel personalizzati girano in una sandbox e si iscrivono a eventi come <t4>checkout_completed</t4>.
+fc3c1aa5f3e5	<t0>Verificare con un ordine reale</t0>Non un link di test. Un acquisto reale, da telefono, tramite il checkout vero. Poi verifichi che l'evento sia arrivato alla piattaforma, non solo che si sia attivato nel browser.
+9f1947ee5e34	La trappola dentro la soluzione
+bb794aba55e5	Migrare a un pixel personalizzato è la mossa giusta, e introduce un tipo di guasto che la maggior parte delle guide tralascia.
+0eee6e474f78	<t0>checkout_completed</t0> <t1>non si attiva necessariamente sulla pagina di ringraziamento</t1>. Con gli upsell dopo l'acquisto attivi può attivarsi invece sulla prima pagina di upsell, e se quella pagina non si carica potrebbe non attivarsi affatto. Alcuni professionisti hanno anche segnalato una race condition in cui il pixel si attiva prima che i dati del cliente siano disponibili, producendo eventi con una qualità di corrispondenza quasi nulla.
+9987436a3803	<t0>Segnalato, non verificato da me</t0>
+87e4a2bf56b0	Ho visto entrambi i comportamenti descritti da diversi professionisti indipendenti, ma non li ho riprodotti su un negozio che controllo. Li consideri cose da testare, non fatti da ripetere. Se usa upsell dopo l'acquisto, testi proprio quel percorso: è il più probabile fonte di problemi.
+30b7b528558b	Come si presenta quando colpisce
+b8121ccaf4ab	Niente di eclatante. È proprio questo il problema.
+0c4b9014140d	Gli annunci continuano a girare. Il budget continua a essere speso. Gli ordini continuano ad arrivare in Shopify. L'unica cosa che cambia è che Google Ads e Meta non vengono più informati di quali clic hanno prodotto quegli ordini, quindi lo Smart Bidding, che ottimizza verso le conversioni che vede, inizia a ottimizzare verso un segnale sceso in silenzio a zero.
+cf37f0358991	Lo noterà come un calo improvviso delle conversioni dichiarate e un aumento del costo per acquisizione, circa una settimana dopo, senza una causa evidente. A quel punto l'algoritmo avrà imparato per sette giorni da dati sbagliati.
+553462cfed44	I limiti onesti di questo articolo
+628249c0569d	La data del 26 agosto e il funzionamento dell'aggiornamento automatico vengono dalla documentazione di assistenza di Shopify, verificata il 12 agosto 2026, prima della scadenza. Anche le informazioni sul campo degli script aggiuntivi si riferiscono a quella data e non le ho ricontrollate da allora. La tabella qui sopra riflette come sono costruite queste integrazioni: quelle tramite canale di vendita e quelle server-side non dipendono dagli script aggiuntivi, mentre il codice incollato a mano sì. <t0>Non ho testato ogni riga su un negozio live</t0>, e la Sua configurazione potrebbe includere qualcosa che qui non c'è.
+fae6fd92088d	Non prenda quindi la tabella come un permesso per saltare il primo passo. Legga il Suo campo degli script aggiuntivi. Ciò che contiene è l'unico elenco che conta.
+28e9dad4dce4	Non sa se il Suo tracciamento si è rotto il 26 agosto?
+1568407f439a	Mi invii l'URL del Suo negozio. Le dirò cosa passava dagli script aggiuntivi e se i Suoi eventi di acquisto arrivano ancora.
+a6a2309dc372	<t0>Il pixel Meta non traccia gli acquisti su Shopify: cosa controllare per primo<t1>Sette cause, compreso il pixel duplicato che divide l'attribuzione.</t1></t0> <t2>Eventi di acquisto duplicati dopo l'installazione della Conversions API<t3>Come dimostrare che la deduplicazione funziona davvero e non è solo configurata.</t3></t2> <t4>Eventi di acquisto Snapchat che non si attivano: la sequenza di diagnosi<t5>Sei cause in ordine, con dati reali di Ads Manager.</t5></t4>
+d4d810ba3963	Eventi di acquisto Snapchat che non si attivano: la sequenza di diagnosi
+4967e1878362	Il Suo Snap Pixel si carica ma PURCHASE non compare mai in Gestione eventi. Sei cause in ordine di probabilità, con controlli precisi, da un negozio con 1.034 acquisti tracciati.
+757a9bdc8152	Sei cause di eventi PURCHASE Snapchat mancanti, in ordine, con i controlli precisi per ciascuna.
+97315355b28b	Eventi di acquisto Snapchat che non si attivano
+593af2467adf	<t0>Note sul campo</t0> &nbsp;/&nbsp; Snapchat
+c702b2b82b79	Se il Suo Snap Pixel si carica ma <t0>PURCHASE</t0> non compare mai in Gestione eventi, la causa è quasi sempre una di sei: un nome di evento in minuscolo, un <t1>transaction_id</t1> mancante, il pixel assente dalla vera pagina di conferma, un reindirizzamento di pagamento esterno che interrompe la sessione, un checkout a pagina singola che reinizializza il pixel, oppure eventi deduplicati rispetto a un flusso della Conversions API.

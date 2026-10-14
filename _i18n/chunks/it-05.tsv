@@ -1,0 +1,144 @@
+e77fdff46237	Questo è l'ordine che conta. Salvare il contatto, poi tentare l'email, l'invio al CRM, l'avviso WhatsApp e l'evento di conversione. Ognuno di questi passaggi può fallire senza perdere la richiesta. Se inverte l’ordine, un solo errore Le fa perdere un cliente in silenzio.
+1a21c38af467	Una configurazione sensata, passo per passo
+ce55143ca67a	<t0>Prima rendere il contatto persistente</t0>Si assicuri che gli invii dei moduli vengano salvati in un posto che non sia una casella di posta. Tutto il resto è facoltativo; questo no.
+20540d6551f7	<t0>Attivare gli asset di chiamata con un numero di inoltro</t0>Così cattura chi chiama direttamente dall'annuncio senza mai visitare il sito, di solito una quota più grande di quanto pensino i titolari.
+cb64eb12842a	<t0>Aggiungere il tracciamento delle chiamate dal sito con sostituzione del numero</t0>Così vengono attribuite anche le chiamate fatte dopo l'arrivo sul sito. Lo provi su un telefono reale, perché la sostituzione dipende dall'esecuzione di uno script.
+ea45d62d946b	<t0>Impostare una durata minima della chiamata</t0>Sessanta secondi sono un valore predefinito ragionevole. Lo regoli dopo aver ascoltato un campione di chiamate reali.
+c858fe6aa2cd	<t0>Importare la conversione e lasciarla assestare</t0>Non giudichi la modifica prima di almeno due settimane. Gli algoritmi di offerta hanno bisogno di tempo, e due settimane di dati sulle chiamate di un'attività locale sono un campione piccolo.
+a26a632aa733	Dove si ferma questo consiglio
+18a2a56c712e	Registrare le chiamate è una decisione diversa dal tracciarle, con obblighi legali diversi che variano da paese a paese e talvolta da regione a regione. Sapere che una chiamata è avvenuta, quanto è durata e quale parola chiave l'ha generata basta per ottimizzare le campagne. Registrarne il contenuto è un passo più grande: si informi prima di farlo.
+c4fda40526ac	E il mio campione qui sono due attività, in due paesi e due settori. Il meccanismo si generalizza; i numeri no. Non ho pubblicato un costo per chiamata in questo articolo perché non ne ho uno che possa sostenere per un account nominato con un periodo preciso, e un benchmark inventato Le servirebbe meno di questa frase.
+3ecf78099a81	Sa quali ricerche generano le Sue telefonate?
+0275a616c1d1	La maggior parte delle attività locali che usano Google Ads non sa rispondere. Mi invii il Suo sito e Le dirò cosa viene tracciato e cosa no.
+877d9ef2244f	<t0>Audit di un account Google Ads: checklist per la lead generation<t1>Sei controlli in ordine, dalla ricostruzione dell'account di uno studio dentistico.</t1></t0> <t2>Conversioni offline di Google Ads per la lead generation<t3>Comunicare a Google Ads quali contatti sono diventati lavori prenotati.</t3></t2> <t4>Scadenza Shopify del 26 agosto: il Suo tracciamento è sopravvissuto?<t5>Cosa rimuove l'aggiornamento automatico e il controllo di dieci minuti.</t5></t4> <t6>Il pixel Meta non traccia gli acquisti su Shopify: cosa controllare per primo<t7>Sette cause, compreso il pixel duplicato che divide l'attribuzione.</t7></t6> <t8>Il tracciamento delle conversioni di Google Ads non funziona: l'ordine di diagnosi<t9>Perché un tag funzionante può non registrare nulla per settimane.</t9></t8>
+b3b9c6738d35	Tracciamento conversioni Google Ads che non funziona: ordine di diagnosi
+4ad1504eecaa	Se Google Ads non mostra conversioni, le cause sono poche. Eccole in ordine di diagnosi, con un controllo per ciascuna e il motivo per cui un tag funzionante può non registrare nulla.
+1d98d31736ec	Quando Google Ads non registra conversioni, la lista delle cause è breve e non tutte sono ugualmente probabili. Eccole in ordine di diagnosi, con il controllo per ciascuna, più il motivo per cui un tag funzionante può non registrare nulla per settimane.
+9b6b637a9780	Tracciamento delle conversioni di Google Ads
+28de9c73e4cc	Perché il mio tracciamento delle conversioni di Google Ads non funziona?
+9f0a36f692cd	Le cause più frequenti sono: il tag non è presente nella pagina che conferma l'azione, l'azione di conversione ha una categoria o un conteggio che la nasconde, il tag si attiva ma non è collegato all'azione di conversione giusta, le impostazioni del consenso bloccano il tag, oppure le finestre di attribuzione fanno sì che la conversione non sia ancora stata registrata.
+efe88f384291	Quanto tempo impiega Google Ads a mostrare le conversioni?
+df5a3c47180f	Le conversioni possono impiegare fino a 24 ore per comparire nei report e vengono attribuite alla data del clic, non alla data della conversione. Per questo i giorni recenti sembrano sempre peggiori di come saranno alla fine: è un normale effetto dei report, non un guasto.
+6f8308fb02b8	Come verifico se il mio tag di conversione di Google Ads si attiva?
+404785fa9c23	Usi Google Tag Assistant in modalità debug, completi Lei stesso l'azione di conversione e verifichi che il tag si attivi con l'ID e l'etichetta di conversione corretti. Poi controlli lo stato dell'azione di conversione in Google Ads, che dovrebbe passare da «Non verificata» a «Registrazione delle conversioni in corso».
+1aa1f26f42fb	Google Ads dice zero conversioni. Lei sa che la vendita c'è stata.
+2ac103804912	Quando Google Ads registra zero conversioni, di solito dipende da una di cinque cose: il <t0>tag non è nella pagina che conferma l'azione</t0>, il tag si attiva ma non è collegato all'azione di conversione giusta, l'azione di conversione è esclusa dalla colonna «Conversioni», le impostazioni del consenso la bloccano, oppure le conversioni esistono ma non sono ancora state registrate perché attribuite alla data del clic.
+a9118362f0ce	L'ultima non è un guasto, e inganna continuamente.
+560851a9d038	È uno dei problemi di tracciamento più cercati in assoluto, e i risultati sono dominati da thread di forum in cui nessuno è arrivato a una risposta. Questo dice qualcosa: il sintomo è generico, e la causa di solito dipende da come è stato cablato un account specifico.
+7b7fd37aee61	Quindi, invece di elencare ogni possibilità, ecco l'ordine che seguo davvero, che risolve la maggior parte dei casi nei primi tre passaggi.
+00a5111d55ac	Prima di cambiare qualsiasi cosa: è davvero rotto?
+edc535ef0fe9	Google Ads attribuisce una conversione alla <t0>data del clic</t0>, non alla data in cui è avvenuta la conversione. Chi ha fatto clic lunedì e acquistato giovedì compare nella riga di lunedì, e fino a giovedì lunedì sembra peggiore di quanto sia stato davvero.
+a26283372342	In pratica, <t0>i giorni recenti sottostimano sempre il rendimento</t0>, e continuano a riempirsi per tutta la durata della finestra di conversione. Se guarda gli ultimi tre giorni e conclude che il tracciamento è rotto, potrebbe semplicemente vedere dati non ancora arrivati del tutto.
+18563be8752a	<t0>Il test che chiarisce tutto</t0>
+f1efeb566147	Guardi un periodo terminato almeno due settimane fa e completamente fuori dalla finestra di conversione. Se quel periodo ha conversioni e i giorni recenti no, il tracciamento funziona e stava leggendo un report incompleto. Se anche quel periodo precedente è a zero, continui a leggere.
+46490e02be79	L'ordine di diagnosi
+5b838be6570e	Lo stato dell'azione di conversione Le dice dove si trova
+5996c78aff29	Google Ads &rarr; <t0>Obiettivi</t0> &rarr; <t1>Conversioni</t1> &rarr; <t2>Riepilogo</t2>. Ogni azione di conversione ha uno stato, ed è la diagnosi più rapida dell'intero account.
+f8390fca8ad6	<t0>Nessuna conversione recente</t0>: il tag è stato rilevato una volta ma niente di recente. Di solito è cambiata una pagina o un modello.
+e2189b70b11a	<t0>Non verificata</t0>: Google non ha mai ricevuto un segnale. Il tag non si attiva dove pensa.
+e242f6e7dd5a	<t0>Inattiva</t0>: niente per molto tempo. La consideri rotta.
+fe40b78ea348	<t0>Registrazione delle conversioni in corso</t0>: il tag è a posto e il problema è altrove, molto probabilmente al punto successivo.
+0bff46df9ebd	<t0>Il controllo</t0>Legga lo stato prima di toccare il codice. Le dice se è un problema di tag o di report, e le soluzioni sono completamente diverse.
+4bfb21414982	La conversione viene registrata ma è esclusa dalla colonna
+cac0f62431a5	È la versione esasperante del problema: l'azione di conversione mostra chiaramente conversioni, ma la vista delle campagne dice zero. La causa è l'impostazione <t0>«Includi in "Conversioni"»</t0>. Se è disattivata, l'azione continua a registrare, ma non compare nella colonna Conversioni e lo Smart Bidding non fa offerte su di essa.
+3bc970d73d0f	Le azioni di conversione secondarie sono escluse per progettazione. Se qualcuno ha impostato come secondaria la Sua azione di acquisto principale, tutto sembra rotto anche se funziona perfettamente.
+3fa1f593199e	<t0>Il controllo</t0>Apra l'azione di conversione e verifichi che l'impostazione principale/secondaria corrisponda a ciò verso cui vuole ottimizzare.
+d8510bbc1bec	Il tag si attiva ma ha l'etichetta sbagliata
+f89d82347a5d	Un tag di conversione di Google Ads ha bisogno di un ID di conversione e di un'<t0>etichetta</t0> di conversione. L'ID identifica l'account; l'etichetta identifica l'azione. Copi un tag tra due azioni di conversione dimenticando di cambiare l'etichetta, e il tag si attiva perfettamente, ma nel contenitore sbagliato.
+2825d8a670f4	<t0>Il controllo</t0>In Tag Assistant completi l'azione e legga l'etichetta di conversione del tag attivato. La confronti carattere per carattere con l'etichetta nella configurazione del tag dell'azione di conversione.
+8bee5002aabb	La modalità di consenso nega l'archiviazione e non ha previsto una modellazione
+44fe5bc47e8a	Se ha aggiunto un banner dei cookie (e nell'UE dovrebbe), ora i tag attendono il permesso. È il comportamento corretto. Ma un banner configurato per negare tutto di default, senza collegare l'aggiornamento del consenso, fa sì che il tag di conversione non riceva mai il permesso e non si attivi mai.
+f3e25335867a	Questo ha una firma: le conversioni crollano esattamente il giorno in cui il banner è andato online.
+ce907db7e793	<t0>Il controllo</t0>Carichi il sito da zero, accetti i cookie, completi l'azione e verifichi che il tag si attivi. Poi ripeta rifiutando e verifichi che non si attivi. Entrambe le direzioni devono comportarsi come previsto.
+2330fbf92c97	Il tag non è nella pagina che conferma davvero l'azione
+0c7a239af9d2	Il classico. Il tag è sul sito ma non sulla pagina di ringraziamento, sulla pagina di stato dell'ordine o sulla pagina a cui torna il cliente dopo il reindirizzamento del fornitore di pagamento. Sui siti di lead generation l'equivalente è un modulo inviato via AJAX senza caricare una pagina, così un tag attivato dalla visualizzazione di pagina non ha mai modo di attivarsi.
+6aadc3a2ba5f	<t0>Il controllo</t0>Faccia Lei stesso la conversione, poi visualizzi il sorgente della pagina in cui arriva e cerchi l'ID di conversione.
+09d7fb0a061e	Quando funziona, gli faccia misurare denaro
+9fef28112782	La maggior parte delle persone si ferma quando il tag si attiva. È proprio lì che inizia il lavoro interessante, perché un conteggio delle conversioni tratta ogni contatto allo stesso modo, e i Suoi non sono tutti uguali.
+89a16046d3ac	Per gli account di lead generation, le <t0>conversioni avanzate per i lead</t0> insieme all'importazione delle conversioni offline Le permettono di rimandare a Google Ads il valore reale di un lavoro concluso. Le offerte ottimizzano allora verso il fatturato invece che verso i moduli compilati. È la differenza tra un algoritmo che insegue richieste e uno che insegue clienti.
+7557b976f127	Il meccanismo è lo stesso del tracciamento delle chiamate descritto nell'<t0>articolo sui servizi locali</t0>: acquisire l'identificatore di clic all'invio, salvarlo con il contatto e rimandare il valore quando il lavoro viene acquisito.
+61a0ae3b849d	Limiti
+4bdec5d3b43c	L'ordine qui sopra è un ordine di ricerca, non una tabella di frequenze: riflette un piccolo numero di account e la logica di ogni tipo di guasto, non uno studio. Google Ads cambia spesso interfaccia, quindi dove possibile ho ancorato i controlli agli stati e ai contenuti dei tag invece che alla posizione dei menu.
+0f954270966a	Sta perdendo soldi a causa di un numero di cui non può fidarsi?
+1939d1c313b5	Mi invii l'URL del Suo sito e Le dirò cosa fa il Suo tracciamento delle conversioni. Per iniziare non serve alcun accesso all'account.
+c2957ee97f9b	<t0>Conversioni offline di Google Ads per la lead generation<t1>Comunicare a Google Ads quali contatti sono diventati lavori prenotati.</t1></t0> <t2>Audit di un account Google Ads: checklist per la lead generation<t3>Sei controlli in ordine, dalla ricostruzione dell'account di uno studio dentistico.</t3></t2> <t4>Scadenza Shopify del 26 agosto: il Suo tracciamento è sopravvissuto?<t5>Cosa rimuove l'aggiornamento automatico e il controllo di dieci minuti.</t5></t4> <t6>Tracciamento delle chiamate di Google Ads per attività di servizi locali<t7>Quattro modi per tracciare le chiamate e cosa misura davvero ciascuno.</t7></t6> <t8>Il pixel Meta non traccia gli acquisti su Shopify: cosa controllare per primo<t9>Sette cause, compreso il pixel duplicato che divide l'attribuzione.</t9></t8>
+11e98c053a7e	Cos'è un ID clic?
+ce096d58a24e	Un identificatore univoco che Google Ads aggiunge all'indirizzo della Sua landing page quando qualcuno fa clic su un annuncio. Salvarlo con il contatto Le permette di dire in seguito a Google Ads quale clic ha prodotto quale lavoro.
+0317de3b1abb	Devo creare un plugin?
+ea53e958b244	No. Quello che serve è salvare ogni contatto con il suo ID clic e comunicare l'esito a Google Ads. Ho scritto un plugin perché il modulo di questo cliente perdeva anche contatti quando le email non partivano.
+ad69d412bafc	Perché non tracciare semplicemente gli invii dei moduli?
+b2ba8e95a064	Un invio di modulo mostra interesse. Un lavoro prenotato mostra fatturato. Se viene comunicato solo il primo, Google Ads non ha modo di imparare quali clic portano al secondo.
+ddf1bf54ca6f	Comunicare a Google Ads quali contatti sono diventati lavori prenotati
+e206c275880b	Google Ads può ottimizzare solo verso i risultati che gli vengono comunicati. Se il Suo tracciamento si ferma all'invio del modulo, le offerte imparano a trovare persone che compilano moduli.
+51fea1d928c8	Rimandare a Google Ads l'ID clic e il valore reale del lavoro gli permette invece di ottimizzare verso il fatturato.
+009598ec96de	È l'approccio che ho usato per un'impresa di pulizia tappeti a Slough, nel Regno Unito. Qui descrivo il metodo, e il progetto è ancora in corso.
+999ab46c501e	Il problema che ha risolto
+095119d40edf	Il sito è partito con un modulo Elementor standard che funziona prima via email: compone un'email e la invia. Se l'invio fallisce, non resta alcuna copia. Il contatto sparisce e nessuno sa che è esistito.
+90fd4df59988	In più, Google Ads non aveva modo di vedere quali clic diventavano lavori prenotati, quindi ottimizzava verso gli invii dei moduli.
+1287f0378f58	Come funziona la soluzione
+3f7577ef58af	<t0>Prima salvare il contatto</t0>Ogni contatto viene scritto in una tabella del database prima di tentare email, webhook o chiamate API. Così un servizio di terze parti che non funziona non può mai bloccare l'acquisizione dei contatti.
+0e55d405a155	<t0>Acquisire l'ID clic e i parametri della campagna</t0>All'invio, l'ID clic di Google (gclid) e i parametri UTM vengono salvati con il contatto, così ogni contatto resta collegato al clic che lo ha generato.
+e25252af7fc1	<t0>Registrare l'esito</t0>Fase della pipeline, valore del lavoro e note vengono registrati per ogni contatto, così la domanda su cosa abbia reso la spesa pubblicitaria trova risposta nei dati.
+d9b465cfd104	<t0>Rimandare il valore</t0>Il valore reale del lavoro viene rimandato a Google Ads come conversione offline, incluse le conversioni avanzate per i lead, perché le offerte possano ottimizzare verso i lavori prenotati.
+b3374409091c	Cosa ho costruito e cosa Le serve davvero
+faad83d1b7ca	Ho costruito tutto come un plugin WordPress di proprietà chiamato LeadBridge, senza dipendenze a pagamento e senza intermediari terzi che custodiscano i dati. L'ho fatto perché questo cliente aveva anche bisogno di sistemare il modulo.
+30b9be85dc76	Non Le serve il mio plugin per usare il metodo. Le servono i quattro passaggi: salvare ogni contatto in modo sicuro, conservarne l'ID clic, registrare l'esito e comunicare il valore a Google Ads.
+d68af3fa0e9c	Secondo Google, le conversioni avanzate per i lead aggiungono all'ID clic dati del cliente sottoposti a hash, come un indirizzo email, così l'abbinamento resta possibile anche quando l'ID clic manca. Per questo il record del contatto deve contenere entrambi.
+291746772683	<t0>Limiti onesti</t0>
+c93978c50f8e	Mr Expert è un progetto in corso e i risultati si stanno ancora costruendo, quindi non cito variazioni del costo per contatto o del rendimento delle offerte. Questo articolo descrive come funziona il metodo e perché l'ho costruito.
+516fa6eb4b73	La realizzazione completa, compresa l'unica dashboard che riunisce Google Ads, Search Console, Profilo dell'attività su Google, i dati di lavori e fatturato di LeadBridge e Microsoft Clarity in un'unica vista, è nel <t0>caso studio Mr Expert Carpet Cleaning</t0>.
+5b09a21be89c	No. Quello che serve è salvare ogni contatto con il suo ID clic e comunicare l'esito a Google Ads. Ho scritto un plugin perché il modulo di questo cliente perdeva anche contatti quando le email non partivano.
+b2338a133a0c	Google Ads ottimizza verso i Suoi moduli o verso i Suoi lavori?
+b48ce1c9c037	<t0>Configurazione del tracciamento delle conversioni<t1>GTM, GA4, CAPI e conversioni offline.</t1></t0> <t2>Tracciamento delle chiamate di Google Ads per attività di servizi locali<t3>Come contare le chiamate che diventano lavori.</t3></t2> <t4>Audit di un account Google Ads: checklist per la lead generation<t5>Sei controlli in ordine.</t5></t4>
+0caf3ee7e17f	Di quante pagine ha bisogno un'attività di servizi locale?
+6e933a54e5a5	Una per ogni servizio per cui vuole essere trovato, con le zone che copre descritte nella pagina. Aggiunga pagine per zona solo quando ha qualcosa di davvero diverso da dire su ciascuna.
+b077d1550472	Basta un Profilo dell'attività su Google?
+455af2f8a2a5	È un ottimo inizio per Maps e la ricerca locale, e funziona meglio insieme a un sito con una pagina per ogni servizio. Li tratto come parti di un'unica configurazione.
+5da32ac34b4e	Dipende dalla concorrenza locale e dallo stato iniziale del sito e del profilo, quindi non indico tempi fissi.
+bcd4708c889b	<t0>Note sul campo</t0> &nbsp;/&nbsp; SEO locale
+45e30170d7a6	Una pagina per servizio e zona: come strutturo la SEO locale per un'attività di servizi
+f07a6ba18ca3	Per un'attività di servizi locale creo una pagina dedicata per ogni servizio e per le zone che copre, invece di un'unica pagina che cerca di posizionarsi per tutto.
+01f6b146fe28	Sul sito di un'impresa di pulizia tappeti nel Regno Unito ho creato pagine separate per la pulizia di tappeti, divani, materassi e per aziende, rivolte a Slough, al Berkshire e ai dintorni.
+b6d0cd6ab8ec	Un'attività che offre quattro servizi di solito ha una sola pagina che li cita tutti. Quella pagina offre sia al visitatore sia a Google una corrispondenza debole per ogni singola ricerca.
+03370d910c1e	Perché pagine separate
+be0f5bab8b9a	Chi cerca la pulizia del divano vuole una pagina sulla pulizia del divano. Una pagina su tappeti, divani, materassi e lavori per aziende non risponde bene a nessuna di queste ricerche. Una pagina dedicata fa arrivare ogni ricerca esattamente su ciò che la persona ha chiesto.
+4b44fdbba146	Di cosa ha bisogno ogni pagina
+0aaa3d88e1da	Un servizio e un titolo chiaro
+8d4fab528b00	Il title della pagina e il titolo principale nominano il servizio e la zona, così la pagina parla chiaramente di una sola cosa.
+c8acdeeeef8f	Contenuti propri di quel servizio
+977d020bb820	Cosa è incluso, in cosa consiste il lavoro e quali zone copre per quel servizio. Contenuti che hanno senso solo per quel servizio.
+c7adce277b03	Segnali di fiducia accanto alla promessa
+320908395cde	Recensioni, certificazioni e foto prima/dopo nella pagina stessa, dove il visitatore decide se chiamare.
+90e36f23416f	Le correzioni attorno alle pagine
+6a578af77104	Le pagine funzionano meglio quando le basi intorno sono corrette. Nello stesso progetto ho corretto title, meta description, struttura delle intestazioni, testi alternativi e link interni, configurato e ottimizzato il Profilo dell'attività su Google, verificato Search Console e risolto i problemi di scansione e indicizzazione che mostrava.
+d5c1e93a023b	<t0>La trappola da evitare</t0>
+7a9fbdb42c75	Non cloni una pagina cambiando solo il nome della città. Le norme di Google contro lo spam definiscono abuso di pagine doorway le pagine create per posizionarsi su ricerche specifiche e simili, come le varianti di luogo. Ogni zona che nomina deve avere qualcosa di davvero specifico da dire.
+5a814d2c5cee	Mr Expert è un progetto in corso e i risultati si stanno ancora costruendo, quindi non cito posizionamenti. Questo articolo descrive la struttura che ho usato e il ragionamento dietro.
+f1b83760b011	La realizzazione completa è nel <t0>caso studio Mr Expert Carpet Cleaning</t0>, e la mia pagina dei <t1>servizi di SEO locale</t1> spiega cosa offro.
+0c6312fd771d	<t0>Servizi di SEO locale<t1>Profilo dell'attività su Google, pagine dei servizi e correzioni dell'indicizzazione.</t1></t0> <t2>Tracciamento delle chiamate di Google Ads per attività di servizi locali<t3>Come contare le chiamate che diventano lavori.</t3></t2> <t4>Audit di un account Google Ads: checklist per la lead generation<t5>Sei controlli in ordine.</t5></t4>
+faab6e1ba9a3	Ereditare un account Meta significa ereditare decisioni non documentate. Analizzi la misurazione prima delle creatività, perché ogni giudizio poggia su numeri non verificati.
+fdf24be1ca68	Audit di un account Meta ereditato
+b3acc0ad6742	Cosa controllare per primo in un audit di un account Meta Ads?
+193f3d1aafc8	Controlli il livello di misurazione prima delle campagne. Conti i pixel installati, riconcili gli acquisti dichiarati con gli ordini reali di una settimana chiusa e verifichi verso quale pixel ottimizza ogni campagna. I giudizi su creatività e targeting valgono quanto i dati di conversione sottostanti.
+64a3979443ee	Quanto dura un audit di Meta Ads?
+8ab1d3cb2a6d	I controlli di misurazione richiedono qualche ora. La riconciliazione ha bisogno di una settimana chiusa di dati vecchi di almeno due settimane, perché le finestre di attribuzione siano chiuse. La ricostruzione dopo una correzione richiede ancora uno o due giorni di dati puliti prima di poter giudicare il rendimento.
+260a26c4ade0	Cosa significa se le campagne ereditate mostrano un ROAS alto ma poco fatturato?
+f3b62d199a36	Di solito significa che i dati di conversione sono gonfiati. Cause comuni sono pixel duplicati, eventi di acquisto attivati su pagine che non sono ordini o eventi duplicati tra pixel del browser e Conversions API. Riconcili gli acquisti dichiarati con gli ordini reali del negozio prima di fidarsi di qualsiasi numero a livello di campagna.
+c669dc7e1370	<t0>Note sul campo</t0> &nbsp;/&nbsp; Audit
+fa24a52017c6	La prima cosa da analizzare in un account pubblicitario ereditato non sono gli annunci.
+fe9140da79db	<t0>Kamran Arshad</t0><t1>13 ago 2026</t1><t2>9 min di lettura</t2>
+91445d7b26bb	Quando eredita un account Meta, analizzi il <t0>livello di misurazione prima delle campagne</t0>. Conti i pixel, riconcili gli acquisti dichiarati con gli ordini reali di una settimana chiusa e mappi verso quale pixel ottimizza ogni campagna.
+d2fae5a6bba9	Ogni giudizio che sta per dare, mettere in pausa questo, scalare quello, poggia su dati di conversione che non ha ancora verificato. Li verifichi prima.
+e4dba02328d5	La maggior parte delle checklist di audit parte da creatività, pubblico e struttura. Contano. Contano <t0>dopo</t0>, perché ognuna viene giudicata in base al rendimento dichiarato, ed è proprio del rendimento dichiarato che un account ereditato non Le dà motivo di fidarsi.
+41659929e512	Ho preso in carico un account in cui procedere nell'ordine sbagliato sarebbe costato caro. Le campagne migliori in Ads Manager non producevano nulla. Analizzi prima le creatività e concluderebbe che quelle campagne avevano l'angolo vincente, e ci metterebbe ancora più soldi.
+18c77c1decfc	<t0>Da dove vengono questi numeri</t0>
+1b89ea195ceb	Un account Shopify che ho preso in carico e analizzato, un marchio di skincare con annunci Meta da circa <t0>100.000 PKR al giorno</t0>. Il cliente mi ha chiesto di non nominarlo, quindi non lo faccio. I numeri sono quelli presenti nell'account durante l'incarico.
+f5e12a0d4ffe	È <t0>un solo account</t0>, non uno studio. Le do il meccanismo e un esempio concreto, non una statistica di settore. E non indico qui le date precise dell'incarico, perché preferisco ometterle piuttosto che approssimarle.
+076bbbb37deb	Fase uno: ci si può fidare di questi numeri?
+3b172c283304	<t0>Contare i pixel</t0>Shopify: <t1>Impostazioni &rarr; Eventi dei clienti</t1>, il <t2>canale di vendita Facebook e Instagram</t2> e <t3>theme.liquid</t3> cercando <t4>fbq</t4>. Poi confermi nel browser con i DevTools, perché configurato e attivo sono cose diverse. Più di un ID pixel è un riscontro, non un dettaglio.
+a8445feea23b	<t0>Riconciliare una settimana chiusa</t0>Acquisti in Gestione eventi contro ordini reali del negozio, stessa settimana, stesso fuso orario, vecchia di almeno due settimane. Gestione eventi dovrebbe avvicinarsi al numero di ordini e non superarlo mai.
+110b88fcdc3f	<t0>Associare campagne e pixel</t0>Per ogni campagna attiva, annoti su quale pixel è configurato il suo evento di conversione. È il passaggio che trasforma una discrepanza vaga in un elenco preciso di campagne.
+7ce0720801a3	<t0>Ricostruire gli ordini di ogni gruppo</t0>Prenda le campagne collegate a ciascun pixel e cerchi i loro ordini dichiarati nel negozio. Un gruppo i cui ordini non si trovano è il Suo problema, e ora sa esattamente quanto budget assorbe.
+0a2faf84f6b5	<t0>Controllare la configurazione della Conversions API</t0>Se CAPI è attiva, verifichi che la deduplicazione funzioni davvero e non sia solo configurata, veda <t1>l'articolo sulla deduplicazione</t1>.
+71957e99aead	<t0>La domanda che chiude la fase uno</t0>
+e49ce74acd2f	Sa dire in una frase quanti acquisti ha fatto il negozio la settimana scorsa, quanti ne vede Meta e spiegare la differenza? Se no, non tocchi ancora nessun budget. Ogni ottimizzazione sarebbe una scommessa su numeri che non può difendere.

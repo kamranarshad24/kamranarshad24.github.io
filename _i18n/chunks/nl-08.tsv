@@ -1,0 +1,169 @@
+0e8cb4126b42	Loop ze in deze volgorde door. De eerste drie verklaren het meeste van wat ik vind.
+2c7d39c55c56	Waar een Snapchat-aankoopevent sneuvelt
+b513d9691eec	De klantreis van advertentieklik tot Snapchat Events Manager, met de zes oorzaken van fouten aangegeven onder de fase waarin ze optreden: herinitialisatie van de pixel bij de checkout, verlies van de sessie bij de betaalgateway, eventnaam in kleine letters, ontbrekende transactie-ID en ontbrekende pixel op de bevestigingspagina, en deduplicatie bij Snapchat.
+4eb22240ca9f	DE KLANTREIS
+60e7e85e593b	WAAR HET BREEKT
+206ee39a7f99	Advertentieklik
+7887011a3776	Product / winkelwagen
+615d7c33c5c1	uw website
+3ac8e9e58c5a	Checkout
+ceda681be18c	Betaalgateway
+fb9ce3a26331	verlaat uw domein
+3424edc2354c	Bevestiging
+67414ff716ba	event gaat af
+634fc132cdd6	Events Manager
+28ffb32004e7	Pixel opnieuw geïnitialiseerd
+e43e6d00362c	Omleiding
+ff54a2dbc4b3	Kleine letters
+fad52e4657d5	Geen transaction_id
+dfe4dc8c04ae	Pixel ontbreekt
+22c22ec9ee94	Gededupliceerd
+5d35707e11b7	<t0>Op de bevestigingspagina gaat bijna alles mis.</t0> Drie van de zes oorzaken slaan toe bij de laatste stap, en die wordt ook het minst getest, omdat hem goed testen echt geld kost.
+0b6574696734	Over Snapchat-tracking wordt veel minder geschreven dan over Meta of Google, dus als het kapotgaat, staat u er grotendeels alleen voor. Bestaande artikelen komen vaak van bedrijven die een trackingproduct verkopen en stoppen bij „installeer onze app”. Dit is de volgorde die ik echt doorloop, in de volgorde waarin ik het doe, en waarom in die volgorde.
+2733fdceae9d	Eerst: bevestig dat het event echt niet aankomt
+986c8e2a8c70	Stel vast of het event ontbreekt of alleen vertraagd is voordat u iets verandert. Twee controles, zestig seconden.
+f3d597142501	<t0>Controleer het netwerk, niet het dashboard.</t0> Open de bevestigingspagina in Chrome, open DevTools (F12), ga naar de tab <t1>Network</t1> en filter op <t2>tr.snapchat.com</t2>. Doe een echte testaankoop. Ziet u een verzoek vertrekken met uw pixel-ID en de eventnaam, dan doet de browser zijn werk en zit het probleem verderop: rapportage, deduplicatie of attributie. Vertrekt er niets, dan zit het probleem op de pagina.
+1ca57eeee5f6	De browserextensie <t0>Snap Pixel Helper</t0> doet hetzelfde met een vriendelijkere interface en vertelt u ook of de pixel geïnstalleerd is. Ik gebruik de Network-tab omdat die de exacte payload toont, en daar zit meestal het antwoord.
+a6e97bc48637	Hoe een gezonde reeks Snapchat-events eruitziet in de Network-tab
+19accfec5674	Een netwerkpaneel in DevTools gefilterd op tr.snapchat.com, met vier verzoeken op volgorde: PAGE_VIEW, VIEW_CONTENT, ADD_CART en PURCHASE, elk met status 200. De rij PURCHASE is gemarkeerd als degene die aanwezig moet zijn en een transactie-ID moet bevatten.
+53ebc572b4a4	Network
+9cefa7f29447	tr.snapchat.com
+1c98a5dfe8be	4 verzoeken
+7c90977a1d83	EVENT
+7168833cc8e1	STATUS
+27789cc59b80	GAAT AF OP
+6f7d7aa191e3	PAGE_VIEW
+95750650c12a	elke pagina
+0b6be3f4ee71	VIEW_CONTENT
+9ae00634a948	productpagina
+1584535e56e1	ADD_CART
+659bf97e7a0b	toevoegen aan winkelwagen
+98dff395de08	PURCHASE
+08202dfa7f0f	bevestigingspagina
+0b2ec4138a37	← moet transaction_id hebben
+b91c581936b0	<t0>Verschijnen de eerste drie en de vierde niet, dan zit het probleem op de bevestigingspagina.</t0> Verschijnt er geen enkele, dan is de pixel niet geïnstalleerd waar u denkt.
+831b411f326c	<t0>Geef het tijd voordat u in paniek raakt</t0>
+41a83578f9c5	De rapportage in Events Manager is niet direct. Wacht een paar uur en kijk opnieuw voordat u concludeert dat een event ontbreekt. Ik heb mensen een werkende checkout zien herschrijven omdat ze negentig seconden na een testbestelling naar een dashboard keken.
+534eb2d3b60b	De zes oorzaken, op volgorde
+22115ac47cf4	De eventnaam staat in kleine letters
+09e7d6a38fae	De standaardevents van Snapchat staan in <t0>hoofdletters</t0>: <t1>PURCHASE</t1>, <t2>ADD_CART</t2>, <t3>PAGE_VIEW</t3>, <t4>START_CHECKOUT</t4>. Stuurt u <t5>purchase</t5>, dan wordt dat niet herkend als standaardevent. Het verraderlijke is dat het toch kan afgaan en ergens kan verschijnen: het wordt alleen niet behandeld als de standaardconversie, dus campagne-optimalisatie en rapportage gedragen zich alsof er niets gebeurde.
+880f857d94cf	Dit is oorzaak nummer één, omdat het precies het symptoom geeft dat mensen beschrijven, „de pixel gaat af maar Events Manager toont niets”, en omdat het kopiëren van een Meta-implementatie zo voor de hand ligt. Meta gebruikt <t0>Purchase</t0>. Snapchat niet.
+1e1672a6d725	✗ Gekopieerd van Meta
+f54417595468	✓ Wat Snapchat verwacht
+8ad078f8887a	<t0>De controle</t0>Lees in de Network-tab de eventnaam in de payload van het verzoek. Die moet precies <t1>PURCHASE</t1> zijn. Hoofdletters zijn hier geen cosmetisch detail.
+570780989e70	Er wordt geen transaction_id meegestuurd
+1f14ff2e8879	Zonder <t0>transaction_id</t0> kan Snapchat een echte tweede bestelling niet onderscheiden van dezelfde klant die de bevestigingspagina ververst. Snap documenteert een <t1>deduplicatievenster van 30 dagen</t1> op <t2>transaction_id</t2>, tegenover 48 uur op <t3>client_dedup_id</t3>.
+7ff55ea61691	De fout werkt in beide richtingen, en daarom staat hij zo hoog. Laat u hem weg, dan blazen verversingen het aantal aankopen op. Stuurt u een waarde die niet echt uniek is per bestelling (een winkelwagen-, checkout- of sessie-ID), dan worden legitieme bestellingen samengevoegd en <t0>verdwijnen</t0> ze. Dat tweede geval ziet er precies uit als „mijn events gaan niet af”.
+c579f3077958	<t0>De controle</t0>Plaats twee testbestellingen. Controleer of de <t1>transaction_id</t1> tussen de twee verschilt en overeenkomt met het bestelnummer dat uw webshop echt toekent.
+99cbb76d38fc	De pixel staat niet op de pagina die de bestelling echt bevestigt
+c1fab7351ec9	Bijna iedereen installeert de pixel sitebreed en neemt aan dat de bevestigingspagina hem overneemt. Vaak is dat niet zo. Gehoste checkouts, bestelstatuspagina's en upsellflows na de aankoop worden vaak buiten het thema of template opgebouwd dat de trackingcode bevat.
+935b2a891da2	Iets om specifiek op te letten: gebruikt u een upsell na de aankoop, dan is de pagina waar de klant direct na het betalen terechtkomt misschien niet degene die u als bedankpagina beschouwt.
+e52eaa950fbc	<t0>De controle</t0>Rond een echte bestelling af. Bekijk op de pagina waar u terechtkomt de broncode en zoek naar uw pixel-ID. Leid het niet af uit het thema: kijk naar de pagina waar de klant echt is.
+610c48da2c3f	Een externe betaalomleiding breekt de sessie
+c17ee5aa278d	Als de checkout overgaat naar een externe gateway en de klant terugstuurt naar een pagina met de bestelbevestiging, kan dat rondje de browsersessie breken waarvan de pixel afhangt. De aankoop wordt afgerond, de klant ziet de bevestiging, en het event komt nooit aan bij Snapchat, of komt aan zonder de identificatoren die nodig zijn om het toe te schrijven.
+c0f4f885648a	Hier is een opzet met alleen de browser niet meer genoeg. Server-side tracking via de <t0>Conversions API</t0> is de duurzame oplossing, omdat het event vanaf uw server vertrekt en nooit een omleiding hoeft te overleven.
+56f01aa62280	<t0>De controle</t0>Verlaat uw betaalproces uw domein? Zo ja, zie tracking alleen via de browser dan als „poging” en plan de CAPI in.
+fccb8b52b8e8	Een checkout op één pagina initialiseert de pixel opnieuw
+c56e4c9dae9b	In single-page-applicaties wordt de pixelstatus telkens gereset als de initialisatie bij elke virtuele paginaweergave opnieuw draait. Gegevens voor geavanceerde matching die eerder in het proces zijn verzameld, gaan verloren, en het aankoopevent komt aan zonder de identificatoren die het bruikbaar maken: mager, slecht gematcht en soms niet toegeschreven.
+e669f59fa11d	Het event gaat af. Het draagt alleen niet mee wat het nodig heeft, en daarom wordt het makkelijk voor „werkend” aangezien.
+a1a8a7314be5	<t0>De controle</t0>Kijk tijdens de hele checkout naar de Network-tab. De initialisatie zou één keer moeten gebeuren. Events zouden vele keren moeten afgaan.
+1f58386e5717	De deduplicatie slokt het event op
+a9746c5728a8	Gebruikt u de pixel <t0>en</t0> de Conversions API (wat u zou moeten doen), dan dedupliceert Snapchat via <t1>client_dedup_id</t1> (venster van 48 uur) of <t2>transaction_id</t2> (30 dagen). Twee events met dezelfde identificator worden bewust één keer geteld.
+9b5f98aa9e48	Het wordt een probleem als browser en server het oneens zijn over wat die identificator is. Is de koppeling fout, dan telt u alles dubbel of verliest u ongemerkt één kant. Volgens Snap horen andere events dan aankopen te matchen op <t0>client_dedup_id</t0> en aankoopevents op <t1>transaction_id</t1>, en vooral: <t2>de waarde moet gelijk zijn op elk pad dat dat event verstuurt</t2>.
+617929320a02	Deduplicatievensters van Snapchat vergeleken
+b8fb14c7c4f1	Horizontaal staafdiagram op een gemeenschappelijke as van 30 dagen. transaction_id dedupliceert 30 dagen lang. client_dedup_id dedupliceert 48 uur lang, ongeveer een vijftiende van die periode.
+89eadb93a898	transaction_id
+7d4278a87590	30 dagen
+0a691b2aff30	client_dedup_id
+b0e30da24243	48 uur
+81f1c0e38d77	dag 0
+6f3ce8942166	DEDUPLICATIEVENSTER
+8ae6516403da	<t0>Waarom de gekozen identificator telt.</t0> Een aankoop die op <t1>transaction_id</t1> is gededupliceerd, blijft 30 dagen beschermd. Op <t2>client_dedup_id</t2> verloopt de bescherming na 48 uur, en daarom koppelt Snap aankopen aan <t3>transaction_id</t3> en al het andere aan <t4>client_dedup_id</t4>.
+796f8874c82b	<t0>De controle</t0>Noteer voor één bestelling de identificator die de browser stuurde en die de server stuurde. Ze moeten identiek zijn. Niet vergelijkbaar: identiek.
+d5ba528c67b8	Waar mijn cijfers vandaan komen
+a15bf95227d5	Ik heb geen grote steekproef van Snapchat-klanten en ik ga niet doen alsof. Wat ik wel heb, is één webshop die ik van begin tot eind heb gerund, mijn eigen, waarin de tracking werkte. Dat is de enige reden dat ik kan zeggen wat een gezonde Snapchat-opzet oplevert.
+14ec07f666d0	AlphaMart: mijn eigen webshop, geen klant
+b792402949d2	Snap Ads Manager · 4 nov 2023 – 7 mei 2024
+0fdfa7eb6de2	Advertentie-uitgaven
+6c4e94f10417	Aankopen
+7de724baf253	Kosten per aankoop
+f659e3f55953	ROAS
+b9f3e16444a1	Belangrijke context, anders vleien deze cijfers me: 5,69× op $1.452 is ongeveer $8.262 aan gemeten omzet over 1.034 bestellingen, een gemiddelde bestelwaarde van ongeveer $8. Het was een goedkoop product. Kosten per aankoop van $1,40 zijn een heel ander resultaat bij een gemiddelde bestelling van $8 dan bij een van $80, en wie een CPA noemt zonder de gemiddelde bestelwaarde ernaast, laat u maar de helft van het cijfer zien.
+9b0affdc1997	De data gaan over een periode die in mei 2024 eindigde. Ik vermeld de datum in plaats van ze als actueel te presenteren.
+7907246ecd0f	<t0>✓ Onbewerkte screenshot</t0>
+1c00a24c3ef7	Snapchat Ads Manager van Alpha Mart met US$1.452,18 aan uitgaven, 11.076.872 betaalde vertoningen, 242.131 klikken, 2,19% klikfrequentie, 1.034 aankopen en US$1,40 kosten per aankoop, van 4 november 2023 tot 7 mei 2024.
+295ef98d49b1	<t0>Wat deze screenshot wel en niet bewijst.</t0> Hij bevestigt de uitgaven (US$1.452,18), het aantal aankopen (1.034), de kosten per aankoop (US$1,40) en de periode. Hij toont ook 11.076.872 vertoningen en 242.131 klikken bij een klikfrequentie van 2,19%. Hij toont <t1>niet</t1> de ROAS: dat cijfer komt uit de omzet van de webshop, niet uit dit overzicht, en elk cijfer dat u niet in de afbeelding ziet, zou u net zo moeten behandelen.
+9ae29a7a2f97	Wat die 1.034 aankopen belangrijk maakt voor dit artikel, is niet de ROAS. Het is dat een webshop die bij dat volume een schoon <t0>PURCHASE</t0>-event verstuurt, met de juiste naam en goed gededupliceerd, u een betrouwbare referentie geeft van hoe „werkend” eruitziet, en het duidelijk maakt wanneer iets is gestopt.
+ef1bfc8cbc1c	Wat ik u niet kan vertellen
+4f9a34be4920	Twee eerlijke beperkingen, want een artikel dat er geen toegeeft, verbergt er meestal een paar.
+dd8db2799fc9	<t0>Ik kan u geen frequentierangorde geven op basis van een grote steekproef.</t0> De volgorde hierboven weerspiegelt een klein aantal accounts plus wat de soorten fouten logisch impliceren: een eventnaam in kleine letters breekt de rapportage altijd, dus die staat bovenaan, ongeacht hoe vaak ik hem zelf heb gezien. Zie de rangorde als een verstandige zoekvolgorde, niet als statistiek.
+dd7e0b25f835	<t0>De interface van Snapchat verandert.</t0> Menupaden raken snel verouderd, en daarom gaan de controles hierboven uit van het netwerkverzoek en de payload in plaats van waar een knop vandaag staat. De payload is wat echt waar is.
+f7dd5c66e939	Kort samengevat
+f6a6aa699d31	Open de Network-tab, filter op <t0>tr.snapchat.com</t0> en plaats een testbestelling.
+c9618c8ccfc3	Controleer of de eventnaam precies <t0>PURCHASE</t0> is, in hoofdletters.
+3f0d93e7ee07	Controleer of <t0>transaction_id</t0> aanwezig is en uniek per bestelling.
+d43cbf279420	Controleer of de pixel staat op de pagina waar de klant echt terechtkomt.
+428be7200ba6	Verlaat de checkout uw domein, plan dan de Conversions API in.
+11befb10b462	Gebruikt u pixel en CAPI, controleer dan of de deduplicatie-identificator aan beide kanten precies gelijk is.
+9e457d711495	Heeft u alle zes controles doorstaan en komt het event nog steeds niet aan, dan is het probleem meestal niet de pixel: de pagina die u test is niet de pagina die uw klanten bereiken. Ga terug en doe een echte aankoop met echt geld, op een telefoon, vanaf een klik op een advertentie. Testbestellingen via een staginglink slaan precies de delen over die kapotgaan.
+0d734ee88845	Weet u niet welke van de zes het is?
+af50cf66ddfc	Stuur me de URL van uw webshop en ik vertel u wat uw tracking doet. Om te beginnen is geen accounttoegang nodig, alleen de link.
+b4bc267a5462	<t0>Vraag een gratis trackingaudit aan →</t0>
+bfb84c489aff	<t0>De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<t1>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</t1></t0> <t2>Google Ads-gesprekstracking voor lokale dienstverleners<t3>Vier manieren om telefoontjes te meten, en wat elk ervan echt meet.</t3></t2> <t4>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t5>Zeven oorzaken, inclusief de dubbele pixel die de attributie splitst.</t5></t4>
+6d820374f9a7	<t0>© 2026 Kamran Arshad. Specialist in online advertenties en tracking</t0> <t1><t2>Home</t2> · <t3>Praktijknotities</t3> · <t4>Privacy</t4></t1>
+ab6986e70c36	Weinigen leggen uit wat er gebeurt als twee Meta-pixels het oneens zijn. In één account registreerde de tweede pixel aankopen die nooit plaatsvonden en slokte hij 30-40% van het dagbudget op.
+13dca0b54f99	Twee Meta-pixels in Shopify
+31f363736820	Kun je twee Facebook-pixels hebben in één Shopify-webshop?
+48b6c68b144a	Technisch wel, en er bestaan zelfs apps om het makkelijk te maken. Of het verstandig is, is een andere vraag. Twee pixels betekenen twee onafhankelijke registraties van dezelfde events, en als er één verkeerd is ingesteld, krijgt u twee tegenstrijdige versies van uw verkoopdata zonder enige waarschuwing dat ze niet overeenkomen.
+be4f7efb598c	Hoe vind ik alle Facebook-pixels die in mijn Shopify-webshop zijn geïnstalleerd?
+b8a4823b2dfe	Controleer drie plekken: Instellingen en dan Klantevents voor eigen pixels, het verkoopkanaal Facebook en Instagram, en Onlinewinkel, Thema's, Code bewerken, waar u in theme.liquid zoekt naar fbq of connect.facebook.net. Op elk van die plekken kan onafhankelijk een pixel geïnstalleerd zijn.
+b39ac5e29160	Moet ik een tweede Facebook-pixel verwijderen?
+de44f03f7e44	Als hij door een app van derden is geïnstalleerd en u niet kunt uitleggen wat hij doet dat de hoofdpixel niet doet: ja. Zoek vóór het verwijderen uit welke campagnes erop optimaliseren, want die stoppen met leveren zodra de pixel wordt uitgeschakeld.
+666def88a396	Twee Meta-pixels in één webshop zijn geen redundantie. Het zijn twee versies van de waarheid.
+7c89aacebd82	Twee Meta-pixels in één Shopify-webshop geven u geen back-up. Ze geven u <t0>twee onafhankelijke registraties van dezelfde events</t0>, zonder iets dat ze eerlijk houdt. Is er één verkeerd ingesteld, dan krijgt u twee tegenstrijdige verkoopcijfers zonder enige waarschuwing, en Meta geeft met plezier budget uit aan optimaliseren op het verkeerde.
+69991378bbe1	Zoek op „meerdere Facebook-pixels Shopify” en kijk wat er verschijnt. Apps die het installeren van meerdere pixels verkopen. Gidsen van leveranciers die uitleggen hoe u een tweede, derde, vierde pixel toevoegt. Tutorials die het presenteren als geavanceerde tactiek.
+69bb0a911ae7	Bijna niets over wat er gebeurt als die pixels het oneens zijn. Dit is het artikel dat ik had willen vinden voordat ik een account analyseerde waarin het antwoord 30-40% van het dagbudget kostte.
+77547c493158	Hoe u aan twee pixels komt
+2877628a018e	Zelden met opzet. De meest voorkomende routes:
+8c0000e0d1f1	Een bureau installeerde er een, vertrok, en het volgende installeerde zijn eigen zonder te controleren.
+c3ab8d684e0d	Een marketingapp van derden voegde tijdens de inrichting een eigen pixel toe, vaak zonder dat duidelijk te maken.
+66426751fbcc	Iemand plakte jaren geleden een pixel in <t0>theme.liquid</t0>, en het officiële verkoopkanaal werd later gekoppeld.
+175b89d94743	Iemand las dat meer pixels redundantie geven. Dat is niet zo.
+f57c2fa5bcbc	De rode draad is dat <t0>niemand van de betrokkenen wist dat de andere pixel bestond</t0>. Dat maakt het moeilijk te zien: iedereen neemt aan dat de pixel die hij installeerde dé pixel is.
+37cbe9d9ffec	Wat er echt misgaat
+219a72a4403b	Ze kunnen verschillende totalen registreren, allebei geloofwaardig
+26822ea9b05f	Twee pixels die onder verschillende voorwaarden afgaan, geven twee verschillende aantallen aankopen. Geen van beide lijkt overduidelijk fout, omdat geen van beide nul is. U kiest uiteindelijk welk cijfer u gelooft op basis van het dashboard dat u opende.
+dcb8b7558b27	Campagnes optimaliseren op de pixel waaraan ze gekoppeld zijn
+5b0ab9206190	Dit is het dure deel. Campagnes zijn ingesteld op een specifieke pixel. Registreert die pixel onnauwkeurig, dan optimaliseren die campagnes op een signaal dat niet overeenkomt met de werkelijkheid, en het weergavesysteem van Meta blijft steeds meer mensen vinden die dat onnauwkeurige signaal activeren.
+841b1fe0cf14	Een verkeerd ingestelde pixel kan aankopen registreren die nooit plaatsvonden
+4a603c2cb9d8	In het account waaruit dit artikel voortkomt, registreerde de tweede pixel, geïnstalleerd door een app van derden, aankopen zonder bijbehorende Shopify-bestellingen. De gekoppelde campagnes toonden een hoge ROAS. In Ads Manager leken het de winnaars. In de webshop hadden ze niets traceerbaars opgeleverd.
+b73a1a804b70	Meta meldde zo'n 100 bestellingen. Shopify toonde er 55-70. Ongeveer <t0>PKR 30.000-40.000 van een dagbudget van PKR 100.000</t0> ging naar campagnes die optimaliseerden op de pixel die verkopen verzon.
+aa7ab8c8457b	Doelgroepen en optimalisatiedata worden gesplitst
+c3a81d8f7cc1	Zelfs als beide pixels nauwkeurig zijn, leert elk alleen van het verkeer dat het ziet. Retargetingdoelgroepen worden per pixel opgebouwd. Machine learning werkt per pixel. Data over twee pixels verdelen betekent dat beide er minder krijgen: het tegenovergestelde van redundantie.
+50cb8ca76259	Elke pixel in uw webshop vinden
+12f62112100d	Controleer alle drie de plekken. Op elk ervan kan onafhankelijk een pixel geïnstalleerd zijn, en niets vergelijkt ze met elkaar:
+b7b58bba6c1c	<t0>Instellingen &rarr; Klantevents</t0>Hier staan eigen pixels, ook die door apps zijn toegevoegd. Lees ze een voor een en noteer de pixel-ID.
+22bd3d57ea29	<t0>Het verkoopkanaal Facebook en Instagram</t0>De officiële integratie. Noteer aan welke pixel-ID die is gekoppeld.
+2c4fb506ae91	<t0>Onlinewinkel &rarr; Thema's &rarr; Code bewerken</t0>Zoek in <t1>theme.liquid</t1> naar <t2>fbq</t2> en <t3>connect.facebook.net</t3>. Met de hand geplakte pixels verstoppen zich hier jarenlang.
+5e456cb5c967	<t0>Bevestigen in de browser</t0>Laad de webshop, open DevTools, filter de Network-tab op <t1>facebook</t1> en lees de pixel-ID's van de uitgaande verzoeken. Dit is de enige controle die laat zien wat echt draait, niet wat is ingesteld.
+cdb770b9acf4	Vindt u meer dan één verschillende pixel-ID, dan zit u in de situatie waar dit artikel over gaat.
+10094792df05	Er veilig een verwijderen
+e5487fb63f24	<t0>Verwijder hem niet zomaar</t0>
+5ef1dfd18ef7	Zoek uit welke campagnes op een pixel optimaliseren voordat u hem uitschakelt. Toen ik de pixel van derden in dat account uitschakelde, <t0>stopten alle gekoppelde campagnes met leveren.</t0> Dat was het juiste resultaat, want die campagnes draaiden op een conversiesignaal dat niet echt was, maar het is niet iets wat u bij verrassing wilt ontdekken in het account van een klant.
+c16ecfa23912	<t0>Campagnes aan pixels koppelen</t0>Noteer voor elke actieve campagne op welke pixel het conversie-event is ingesteld.
+f91fcf35ec59	<t0>Elke groep afstemmen op de webshop</t0>Neem een afgesloten week. Kunt u de bestellingen terugvinden die elke groep claimt? Meestal is één groep helemaal niet te traceren.
+5fee09851787	<t0>De pixel houden die u kunt controleren</t0>Meestal de integratie via het officiële verkoopkanaal, omdat u kunt nagaan wat hem installeert en hoe.
+d23d6f24f62e	<t0>De klant waarschuwen dat de gerapporteerde ROAS daalt</t0>Die gaat dalen. Aan het bedrijf is niets veranderd; er worden alleen geen dingen meer geteld die niet gebeurden.
+9d2cf3220a57	<t0>Twee dagen wachten, dan opnieuw opbouwen</t0>Laat schone data zich opstapelen voordat u campagnes opnieuw opbouwt op de overgebleven pixel. In dat account werd het beeld binnen een of twee dagen duidelijk.
+de8ac8961c7c	De uitzondering die u moet kennen
+1051cbf4cd80	Er bestaat een legitiem geval voor meerdere pixels: een echte afspraak met een bureau of partner waarbij een tweede partij eigen conversiedata nodig heeft voor een afgebakende campagne, en beide pixels bekend, gedocumenteerd en gewenst zijn.
+4cf78850d948	Dat is niet wat de meeste webshops hebben. De meeste hebben een pixel die iemand is vergeten, en dat is iets heel anders. Het verschil zit erin of iemand u nu kan vertellen waarvoor elke pixel dient.
+02ae093d48f6	Kunt u dat niet voor elke pixel in uw webshop beantwoorden, dan heeft u geen redundantie. U heeft een ongecontroleerde tweede mening waar uw budget ongemerkt naar luistert.
+758ae9b5c905	Hoeveel pixels staan er nu in uw webshop?
+07da01eddc13	De meeste eigenaren zijn er zeker van dat het er één is. Stuur me de URL van uw webshop en ik vertel u wat er echt geïnstalleerd is.
+7a65123be5a9	<t0>Meta zegt 100 bestellingen. Shopify zegt 62. Wie liegt er?<t1>De afstemming die spookconversies blootlegt.</t1></t0> <t2>Hoe u ziet of uw Meta-pixel aankopen rapporteert die nooit plaatsvonden<t3>De fout die op succes lijkt tot u afstemt.</t3></t2> <t4>Dubbele aankoopevents na het installeren van de Conversions API<t5>Hoe u bewijst dat deduplicatie werkt en niet alleen ingesteld is.</t5></t4>
+03fa35cc0dd1	Bedankt | Kamran Arshad
+05870186b56d	<t0>Aanvraag ontvangen</t0>
+058a813016f5	Alles is in orde!
+a755100ab444	Bedankt voor uw bericht. Ik bekijk uw gegevens en reageer binnen <t0>24 uur</t0> met een geschikt moment voor uw gratis audit.
+383667603995	Nooit spam. Alleen een snelle reactie van Kamran.

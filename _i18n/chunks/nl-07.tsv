@@ -1,0 +1,161 @@
+24ebe1e9eeeb	Kan een Facebook-pixel aankopen rapporteren die niet plaatsvonden?
+babcfc871da5	Ja. Een verkeerd ingestelde pixel kan een aankoopevent afvuren op een pagina die geen afgeronde bestelling is, herhaaldelijk afgaan bij het verversen van de pagina, of geïnstalleerd zijn door een app van derden die events onder de verkeerde voorwaarden activeert. Meta registreert wat het ontvangt, dus die events verschijnen in de rapportage als echte aankopen.
+ec0119c874de	Hoe weet ik of de data van mijn Meta-pixel kloppen?
+aae7393b63c2	Stem een afgesloten week af. Vergelijk het aantal aankopen in Events Manager met het aantal bestellingen in uw webshop voor dezelfde periode en tijdzone. Events Manager zou uw aantal bestellingen moeten benaderen en het nooit mogen overschrijden. Overschrijdt het dat wel, dan heeft u spook- of dubbele events.
+5418e786d870	Waarom ziet mijn Facebook-ROAS er goed uit terwijl ik geen verkopen heb?
+91d8d8f26649	Omdat de ROAS wordt berekend uit de conversiedata die de pixel rapporteert, niet uit uw bankrekening. Rapporteert de pixel aankopen die nooit plaatsvonden, dan wordt de ROAS berekend op omzet die niet bestaat en ziet hij er uitstekend uit terwijl het bedrijf niets verdient.
+959ef04016e2	Een stille pixel is makkelijk. Een liegende pixel neemt uw budget mee.
+c54881e64155	<t0>Kamran Arshad</t0><t1>13 aug 2026</t1><t2>8 min lezen</t2>
+98323b3697fb	Een pixel die stopt met rapporteren, valt binnen enkele dagen op, omdat de conversies naar nul zakken en iemand in paniek raakt. Een pixel die <t0>te veel</t0> rapporteert, kan maandenlang doorgaan, omdat een opgeblazen ROAS op succes lijkt, en Meta reageert door meer budget te sturen naar de campagnes die hem opleveren.
+d34f7f2af0bf	De enige betrouwbare test is afstemming: komt het aantal aankopen in Events Manager overeen met echte bestellingen in uw webshop?
+cdd95180a73e	Bijna elk artikel over probleemoplossing behandelt ontbrekende conversies als het probleem. In de praktijk werkt de schadelijkere fout de andere kant op, omdat die niet op een fout lijkt. Hij lijkt op uw beste campagne.
+59c6f37697b7	Waarom te veel rapporteren erger is dan te weinig
+2bdf352636c4	Te weinig rapporteren kost u optimalisatiekwaliteit. Meta ziet minder conversies dan er echt waren, leert dus langzamer, en u investeert waarschijnlijk te weinig in iets wat werkt. Slecht, maar het beperkt zichzelf.
+c281db6edd40	Te veel rapporteren is anders, omdat het een terugkoppelingslus creëert. Opgeblazen conversies geven een opgeblazen ROAS. Een opgeblazen ROAS laat een campagne lijken op een winnaar. Winnaars krijgen meer budget. Meer budget geeft meer spookconversies.
+9b1175b8c852	<t0>De fout trekt uitgaven naar zichzelf toe.</t0> Daarom kan hij een derde van een dagbudget opslokken voordat iemand vragen stelt: elk signaal dat binnen Ads Manager beschikbaar is, zegt dat de campagne werkt.
+1ba6204e933b	Zes controles, goedkoopste eerst
+d872c0f98764	Stem een afgesloten week af
+4825c0f34e1f	De controle met de meeste waarde, en bij de meeste accounts is die nooit gedaan. Neem een week die minstens twee weken geleden eindigde. Vergelijk de aankopen in Events Manager met het aantal bestellingen in uw webshop voor dezelfde periode en tijdzone.
+41e6d75dafbe	Events Manager zou uw aantal bestellingen moeten benaderen. Het mag dat nooit overschrijden. Events Manager telt aankoopevents, en een aankoopevent zonder bestelling is per definitie geen aankoop.
+155676215d4b	<t0>Oordeel</t0>Events Manager hoger dan de bestellingen in de webshop betekent spook- of dubbele events. Geen enkel attributievenster praat dat weg.
+69435dd4b6de	Tel uw pixels
+c124276cd789	In het account achter dit artikel was de oorzaak een tweede pixel, geïnstalleerd door een app van derden, die aankopen rapporteerde zonder bijbehorende bestellingen. Controleer <t0>Instellingen &rarr; Klantevents</t0>, het <t1>verkoopkanaal Facebook &amp; Instagram</t1> en <t2>theme.liquid</t2>. Meer dan één pixel-ID is uw eerste verdachte; zie <t3>het artikel over meerdere pixels</t3>.
+0699af8ab602	<t0>Oordeel</t0>Twee pixel-ID's en een verschil in hetzelfde account zijn zelden toeval.
+99cb783598b2	Controleer of het aankoopevent afgaat bij verversen
+24565c2497aa	Rond een echte bestelling af, kom op de bevestigingspagina en ververs die. Kijk naar de Network-tab. Gaat er een tweede aankoopevent af, dan blaast elke klant die die pagina ververst, als bladwijzer opslaat of opnieuw bezoekt uw cijfers op. Zonder een unieke <t0>event_id</t0> of bestelidentificator kan Meta niet weten dat het om dezelfde verkoop gaat.
+2d52b877ae14	<t0>Oordeel</t0>Een aankoopevent bij verversen betekent dat uw aantallen meestijgen met het verkeer, niet met de verkopen.
+ea7aa83ec533	Controleer aan welke pagina het aankoopevent gekoppeld is
+7c1e5dca21fa	Een aankoopevent hoort af te gaan bij het afronden van een bestelling en nergens anders. Verkeerd ingestelde apps koppelen het soms aan toevoegen aan winkelwagen, start van de checkout, of elke pagina die aan een losse URL-regel voldoet. Elk daarvan levert aankopen op zonder bestellingen erachter.
+7e6747f10eec	<t0>Oordeel</t0>Loop uw funnel door met de Network-tab open. Een aankoopevent vóór de betaling is een defect, geen optimalisatie.
+f29fc4e8a8ae	Splits gerapporteerde conversies per campagne, en traceer ze dan
+763295ef18d3	Beoordeel het account niet als één cijfer. Groepeer campagnes naar de pixel waarop ze optimaliseren, en probeer dan de geclaimde bestellingen van elke groep in uw webshop terug te vinden. In dat account waren de bestellingen van één groep helemaal niet te traceren, en die groep slokte zo'n 30 tot 40% van de dagelijkse uitgaven op.
+fa362705680c	<t0>Oordeel</t0>Een campagnegroep waarvan u de bestellingen niet in uw webshop kunt vinden, is het lek.
+a5e008ef5d5f	Vergelijk de aankoopwaarde met de echte omzet
+e12f73b47105	Aantallen kunnen er geloofwaardig uitzien terwijl de waarden onzin zijn. Vergelijk de totale gerapporteerde aankoopwaarde voor een afgesloten week met de werkelijke omzet in dezelfde week. Een waarde die duidelijk boven de echte omzet ligt, betekent dat events afgaan met verkeerde of dubbele waarden, ook als het aantal in de buurt lijkt.
+573a1584af39	<t0>Oordeel</t0>Controleer zowel aantal als waarde. Ze falen onafhankelijk van elkaar.
+ea66f9f56b09	Wat u doet als u het vindt
+fa4028f451fd	Repareer de bron, niet het symptoom. Een verkeerd ingestelde pixel uitschakelen of de eventtrigger corrigeren zorgt ervoor dat de betrokken campagnes stoppen met leveren: dat is de diagnose die zichzelf bevestigt, geen nieuw probleem.
+91b815869b96	Licht daarna degene die over het budget gaat in <t0>voordat</t0> die het dashboard ziet. De gerapporteerde ROAS gaat dalen. De omzet niet, want de omzet die u weghaalt heeft nooit bestaan. Dat gesprek is veel makkelijker vooraf dan achteraf.
+21356c071260	<t0>Het ongemakkelijke deel</t0>
+e7d9220453b3	Heeft een campagne maandenlang op spookconversies geoptimaliseerd, dan heeft Meta die tijd besteed aan leren hoe het mensen vindt die spookconversies activeren. Opnieuw opbouwen op schone data kost tijd, en de eerste prestaties met de gecorrigeerde opzet zien er slechter uit dan de fictie die ze vervangen. Dat zijn de kosten van het ongelijk dat u had, niet de kosten van de reparatie.
+206e4c5a70b8	Eén account, één oorzaak. Te veel rapporteren heeft ook andere bronnen: dubbele CAPI-events zonder overeenkomende identificatoren, testevents die blijven draaien, meerdere apps die dezelfde conversie afvuren. De afstemming in controle één spoort ze allemaal op; vaststellen welke het is, vraagt de rest.
+faf55d9f0f03	Ik geef u ook geen drempel voor &ldquo;te veel&rdquo;. Vergelijk met de bestellingen in uw eigen webshop. Die vergelijking is exact, en dat is meer dan welke benchmark ook kan bieden.
+dc2bef3c95d2	Zijn uw gerapporteerde aankopen echt?
+6710b6abe3a9	Het kost een kwartier om erachter te komen en de meeste accounts zijn nooit gecontroleerd. Stuur me de URL van uw webshop.
+da15fd0c3373	<t0>Meta zegt 100 bestellingen. Shopify zegt 62. Wie liegt er?<t1>De afstemming die spookconversies blootlegt.</t1></t0> <t2>Twee Meta-pixels in één Shopify-webshop zijn geen back-up<t3>Waarom alle zoekresultaten over „meerdere pixels installeren” de verkeerde vraag beantwoorden.</t3></t2> <t4>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t5>Zeven oorzaken, inclusief de pixelsplitsing die nooit kapot lijkt.</t5></t4>
+125d680d8f9e	Opschaaladvies zegt: zet in op uw beste ROAS. Dat veronderstelt dat de gerapporteerde ROAS echte verkopen weerspiegelt. Doet hij dat niet, dan versnelt opschalen het verlies.
+045140eaaaa3	Opschalen op onbetrouwbare data
+2d1810d851a4	Hoe weet ik welke Facebook-campagne ik moet opschalen?
+9dc4b33adff8	Schaal de campagne op waarvan u de gerapporteerde bestellingen in uw webshop kunt terugvinden. Stem voordat u de ROAS van campagnes vergelijkt de gerapporteerde aankopen af op echte bestellingen, want een campagne met opgeblazen conversiedata zal altijd uw best presterende lijken.
+4584e7deb1e6	Waarom daalde mijn ROAS na het opschalen?
+98dd0fad277f	Veelvoorkomende oorzaken zijn verzadiging van de doelgroep, het verlaten van de leerfase van het algoritme en meer concurrentie. Maar was de daling direct en fors, controleer dan of de ROAS vóór het opschalen wel echt was, want opgeblazen conversiedata geven schijnbaar uitstekende prestaties die het contact met een groter budget niet overleven.
+6836e5a14a4b	Moet ik een campagne opschalen met een hoge ROAS maar zonder bijpassende omzet?
+1605c7ee7b30	Nee. Een campagne die een sterke ROAS rapporteert terwijl uw webshop geen bijbehorende bestellingen toont, rapporteert conversies die niet plaatsvonden. Opschalen verhoogt de uitgaven op een signaal dat niet bestaat.
+7805e942aff4	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Strategie
+fa8c69b5ae6d	Elke opschaalgids gaat ervan uit dat uw cijfers kloppen. Controleer dat eerst.
+4d1bb4407d45	Elke opschaalgids zegt hetzelfde: vind uw beste ROAS en zet er meer geld achter. Dat is redelijk advies, rustend op een aanname die bijna niemand test: <t0>dat de gerapporteerde ROAS verkopen weerspiegelt die echt plaatsvonden.</t0>
+d651b8093fcf	Doet hij dat niet, dan versterkt opschalen geen winnaar. Het versterkt een rapportagefout, en sneller dan u het merkt.
+7d64d1763026	Aan content over opschalen geen gebrek. Verhoog budgetten elke drie dagen met 20%. Dupliceer naar nieuwe doelgroepen. Verticaal versus horizontaal opschalen. Het meeste daarvan is prima, voor zover het reikt.
+0f139e826e0a	Wat er bijna nergens in staat, is een stap nul: <t0>controleer of de prestaties die u wilt opschalen echt zijn.</t0> Door dat te missen zette een klant met wie ik werkte maandenlang meer budget achter de slechtste campagnes.
+6ad0d147990c	De valkuil, kort gezegd
+1c1966323999	Opschaalregels selecteren op de hoogste gerapporteerde ROAS. Een campagne die optimaliseert op een pixel die te veel rapporteert, toont altijd een hogere ROAS dan een die eerlijk meet, niet omdat hij beter presteert, maar omdat de basis van de berekening fictie is.
+cf0e760d840d	Dus de selectieregel die uw beste campagne zou moeten vinden, vindt betrouwbaar uw <t0>meest onnauwkeurig gemeten</t0> campagne. En elke opschaalronde stuurt er meer budget naartoe.
+2693bb797b43	Hoe dat er in de praktijk uitzag
+969f49792bef	De klant gaf zo'n PKR 100.000 per dag uit over het hele account en paste budgetten eigenlijk willekeurig aan: omdat niet te zien was welke campagnes eerlijk rapporteerden, werden uitgaven verhoogd en verlaagd op basis van een dashboard dat niemand vertrouwde. In hun eigen woorden: ze voerden blind wijzigingen door.
+004618a0f610	Het account had twee pixels. Eén nauwkeurig, één die aankopen rapporteerde zonder bijbehorende bestellingen. Meta toonde zo'n 100 bestellingen; de webshop had er 55 tot 70. Ongeveer <t0>30 tot 40% van het dagbudget</t0> zat in campagnes aan de onnauwkeurige pixel, en die campagnes lieten de sterkste ROAS van het account zien.
+420be8bdce70	Volgens elke standaard opschaalregel waren dat de campagnes om op te schalen. Daar is het de moeite waard even bij stil te staan. <t0>De methode werd niet slecht toegepast. Ze werd correct toegepast op slechte data</t0>, en dat gaf precies het verkeerde antwoord, met volle overtuiging.
+8605d2b16e39	Stap nul, vóór elke opschaalbeslissing
+472076ab3fbf	<t0>Stem één afgesloten week af</t0>Aankopen in Events Manager tegenover echte bestellingen in de webshop. Is Events Manager hoger, stop dan: u heeft spook- of dubbele events en geen enkele vergelijking tussen campagnes is nog geldig.
+aa5afcb90740	<t0>Traceer de specifieke campagne die u wilt opschalen</t0>Niet het account. Die campagne. Kunt u de geclaimde bestellingen in uw webshop vinden? Lukt dat niet, schaal hem dan niet op.
+f4deb8e4b3a0	<t0>Controleer op welke pixel hij optimaliseert</t0>Heeft het account meer dan één pixel, dan zijn campagnes niet vergelijkbaar tot u weet welke welke is.
+b775181b1ace	<t0>Pas dan de opschaalmethode toe die u wilt</t0>De methoden zijn prima. Ze hadden alleen iets waars nodig om op te werken.
+db61dafbf838	<t0>Een diagnose die voor het oprapen ligt</t0>
+3fa5d2a3270e	Heeft u ooit een campagne met een uitstekende ROAS opgeschaald en de prestaties direct zien instorten, niet in twee weken zien afnemen maar zien instorten, bedenk dan dat het oorspronkelijke cijfer misschien niet echt was. Echte winnaars gaan geleidelijk achteruit naarmate doelgroepen verzadigd raken. Fictieve gaan helemaal niet achteruit, omdat er niets was om achteruit te gaan; het gerapporteerde cijfer lijkt gewoon niet meer geloofwaardig naast uw banksaldo.
+041249cd27c4	Waarop u in plaats daarvan opschaalt
+acc3d9e21b22	Gerapporteerde ROAS is een vervanger voor waar het u echt om gaat: geld dat in het bedrijf binnenkomt. Hoe dichter uw optimalisatiesignaal bij echte omzet ligt, hoe moeilijker het te misleiden is:
+27bed13a88c6	Signaal
+8625ae5b31d6	Hoe makkelijk te vervormen
+be1932e2e9ba	Waard om op op te schalen?
+ab04f33c73e1	Gerapporteerde ROAS in Ads Manager
+fa9891a77a83	Makkelijk, erft elke pixelfout
+1e784e58718a	Pas na afstemming
+279adddc04b9	Aankopen die u in uw webshop terugvindt
+fc73d790b051	Moeilijk, een bestelling bestaat of bestaat niet
+443fc840a3e6	Omzet in de webshop over de periode
+50172140252e	Heel moeilijk
+e046096cfd3d	Ja, met vertraging
+0d0488a7f3ba	Dekkingsbijdrage na kosten
+d7eee072c2f5	Het moeilijkst, en degene die de salarissen betaalt
+f2544c31761a	Het best, als u het kunt meten
+590724a109b0	De meeste adverteerders komen nooit voorbij de eerste rij. Naar de tweede gaan, gewoon controleren of de bestellingen bestaan, kost een uur per week en neemt de hele categorie problemen weg die dit artikel beschrijft.
+bb8420536749	Niets hiervan maakt opschalen makkelijk. Verzadiging van doelgroepen, vermoeide creatives, het opnieuw starten van de leerfase en concurrentie zijn allemaal echt, en ze kosten u nog steeds prestaties bij een campagne met perfecte data.
+9e13051d20af	De beperkte bewering hier is dat die problemen het oplossen waard zijn <t0>nadat</t0> u heeft vastgesteld dat het cijfer waarop u optimaliseert overeenkomt met verkopen. Eén account is geen onderzoek, maar het mechanisme is niet exotisch, en de controle is goedkoop genoeg dat er geen goede reden is om haar over te slaan.
+1ad7473c60b1	Gaat u een campagne opschalen?
+1a444586f1b3	Zorg dat de prestaties die u opschaalt echt zijn. Stuur me de URL van uw webshop en ik stem ze af op uw webshop.
+7150969b8f72	<t0>Meta zegt 100 bestellingen. Shopify zegt 62. Wie liegt er?<t1>De afstemming die spookconversies blootlegt.</t1></t0> <t2>Hoe u ziet of uw Meta-pixel aankopen rapporteert die nooit plaatsvonden<t3>De fout die op succes lijkt tot u afstemt.</t3></t2> <t4>Een overgenomen Meta-advertentieaccount auditen<t5>Controleer de cijfers voordat u de campagnes beoordeelt.</t5></t4>
+a0f9d7d07533	De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?
+2fe3aaf8ba6e	De upgrade van Shopify op 26 augustus 2026 verwijdert Additional Scripts van de bedankpagina's. Zie welke aankooptags erdoor geraakt worden en controleer de uwe in tien minuten.
+2c3c16ed0c9f	Shopify-deadline 26 augustus
+f7d101b08d97	Wat stond er op 26 augustus 2026 gepland voor Shopify-webshops?
+356a5f5bf53e	Niet-Plus-webshops die hun pagina's Bedankt en Bestelstatus niet handmatig hebben geüpgraded, worden automatisch geüpgraded. Aanpassingen die met Additional Scripts en verouderde scripttags op die twee pagina's zijn gebouwd, worden verwijderd in plaats van gemigreerd.
+b986a3b45806	Verwijdert de checkout-upgrade van Shopify mijn Facebook-pixel?
+b7d3de2f5719	Hij verwijdert elke pixel of tag die via Additional Scripts op de pagina's Bedankt en Bestelstatus is geïnstalleerd. Een Meta-pixel die via het officiële verkoopkanaal Facebook & Instagram is gekoppeld, wordt niet geraakt. Het risico zit specifiek in met de hand geplakte code.
+788c05d25ced	Hoe controleer ik wat er in mijn vak Additional Scripts in Shopify staat?
+0819e1279b61	Ga naar Instellingen, dan Checkout, en kijk naar het veld Additional scripts. Sinds 28 augustus 2025 is het alleen-lezen, maar u kunt nog zien wat erin staat. Alles daarin wat een conversie afvuurt, moest vóór 26 augustus 2026 vervangen worden; controleer dus of dat bij u is gebeurd.
+f488501ed545	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Shopify
+5f9788f7fed0	De deadline van Shopify op 26 augustus is verstreken. Heeft uw aankooptracking het overleefd?
+56e1b0ab8055	<t0>Kamran Arshad</t0><t1>12 aug 2026</t1><t2>Bijgewerkt <t3>10 okt 2026</t3></t2><t4>8 min lezen</t4>
+213dee8487ad	<t0>Update, 10 oktober 2026</t0>
+3266db95f51b	De deadline van 26 augustus 2026 is inmiddels verstreken. Ik schreef dit op 12 augustus als waarschuwing, en ik heb sindsdien niet gecontroleerd wat er in individuele webshops gebeurde. Zijn uw gerapporteerde aankopen na 26 augustus gedaald, vergelijk dan uw advertentieplatformen met uw Shopify-bestellingen voor de dagen ervoor en erna, en loop daarna de controle hieronder door.
+15fe15a22ab6	Op <t0>26 augustus 2026</t0> plande Shopify een automatische upgrade voor elke niet-Plus-webshop die zijn pagina's Bedankt en Bestelstatus nog niet had gemigreerd. Alles wat via <t1>Additional Scripts</t1> op die pagina's draait (Google Ads-conversietags, aankoopevents van de Meta-pixel, GTM-containers, affiliatescripts) wordt volgens de documentatie van Shopify <t2>verwijderd, niet gemigreerd</t2>.
+5e8b8a41dee3	Deed u niets, dan zou uw aankooptracking op die datum gestopt moeten zijn, terwijl uw advertentieplatformen bleven uitgeven alsof er niets aan de hand was.
+c6ba252a64d5	Dit was het zeldzame trackingprobleem met een datum erop. Het meeste waarover ik schrijf is een langzaam lek dat u kunt repareren zodra u het merkt. Dit trof een groot aantal webshops tegelijk, en juist de webshops die het minst waarschijnlijk opletten, omdat de wijziging hun <t0>overkomt</t0> en niet het gevolg is van iets wat zij deden.
+16c79267e250	<t0>Rechtstreeks uit de documentatie van Shopify</t0>
+d3f3b64e5597	&ldquo;26 augustus 2026 is de deadline voor webshops met een niet-Plus-abonnement van Shopify om hun bestaande pagina's Bedankt en Bestelstatus te upgraden naar de nieuwe versie van die pagina's.&rdquo; (vertaald uit het Engelse origineel)
+939b8b6886c6	Webshops die niet handmatig upgraden, worden automatisch geüpgraded. Shopify Plus-webshops passeerden deze mijlpaal op 28 augustus 2025.
+c0888acb9bd1	Wat er echt wordt verwijderd
+accf73657544	Het woord dat de schade doet, is <t0>verwijderd</t0>. Niet gemigreerd, niet omgezet, niet bewaard in een compatibiliteitslaag. Shopify vervangt de oude pagina's Bedankt en Bestelstatus door nieuwe, en aanpassingen die afhingen van de oude manier van weergeven, gaan niet mee.
+113e369e1f04	Wat u heeft
+405332329101	Overleeft 26 aug?
+c385e347b2af	Vervanging
+97d1e3851e45	Google Ads-conversietag geplakt in Additional Scripts
+c7dca664e4be	Custom Pixel, of het kanaal Google &amp; YouTube
+dd385fc96377	Purchase-event van de Meta-pixel in Additional Scripts
+919421223704	Custom Pixel, of het kanaal Facebook &amp; Instagram
+4ea2f6a69740	GTM-container geladen op de bedankpagina
+20f9ed056206	Custom Pixel (sandbox)
+dbbbad107b36	Postbackscripts van affiliates / partners
+07ac6e374e80	Custom Pixel of server-side
+22414c2ad94a	Meta-pixel via het officiële verkoopkanaal
+18bbcd989758	Geen actie nodig
+06a0a5d2b24c	Google-tag via het kanaal Google &amp; YouTube
+a03e05c9f4a5	Server-side tracking (Conversions API, sGTM)
+0a3414f2d785	Niet geraakt, het hing nooit af van de pagina
+2ec0296fde85	Lees de laatste rij twee keer. <t0>Server-side tracking is de enige rij die nooit risico liep</t0>, omdat die niet afhangt van een browser die een pagina weergeeft die Shopify beheert. Dat is de echte les van deze deadline, en die geldt nog steeds de volgende keer dat een platform iets onder uw voeten verandert.
+acd84f5e80d5	De controle van tien minuten
+a97a83df6ab6	<t0>Lees uw vak Additional Scripts</t0>Shopify-beheer &rarr; <t1>Instellingen</t1> &rarr; <t2>Checkout</t2> &rarr; <t3>Additional scripts</t3>. Het is sinds 28 augustus 2025 alleen-lezen, maar u kunt het nog lezen. Kopieer de inhoud naar een veilige plek.
+e19eb28bfc9d	<t0>Zoek alles wat een conversie afvuurt</t0>Doorzoek die tekst op <t1>gtag</t1>, <t2>fbq</t2>, <t3>googletagmanager</t3>, <t4>snaptr</t4>, <t5>ttq</t5> of een <t6>&lt;script src=</t6>. Elke treffer is een tag die op 26 augustus zou stoppen met werken.
+81ca81146689	<t0>Controleer wat uw platformen denken te ontvangen</t0>Open Google Ads &rarr; Doelen &rarr; Conversies, en Meta Events Manager. Vergelijk het dagelijkse aantal aankopen in de dagen voor en na 26 augustus. Die vergelijking van vooraf en achteraf is uw bewijs; zonder die vergelijking kunt u niet laten zien dat er iets kapotging, of dat u het repareerde.
+ea5eb633c2cd	<t0>Bouw elke tag opnieuw als Custom Pixel</t0>Shopify-beheer &rarr; <t1>Instellingen</t1> &rarr; <t2>Klantevents</t2> &rarr; <t3>Aangepaste pixel toevoegen</t3>. Custom Pixels draaien in een sandbox en abonneren zich op events zoals <t4>checkout_completed</t4>.
+fc3c1aa5f3e5	<t0>Controleer met een echte bestelling</t0>Geen testlink. Een echte aankoop, op een telefoon, via de echte checkout. Controleer daarna of het event in het platform aankwam, niet alleen of het in de browser werd afgevuurd.
+9f1947ee5e34	De valkuil in de oplossing
+bb794aba55e5	Migreren naar een Custom Pixel is de juiste stap, en het introduceert een fout die de meeste gidsen overslaan.
+0eee6e474f78	<t0>checkout_completed</t0> gaat <t1>niet gegarandeerd af op de bedankpagina</t1>. Met upsells na de aankoop kan het in plaats daarvan afgaan op de eerste upsellpagina, en als die pagina niet laadt, gaat het misschien helemaal niet af. Vakmensen hebben ook een race condition gemeld waarbij de pixel afgaat voordat de klantgegevens zijn ingevuld, wat events geeft met een matchkwaliteit van bijna nul.
+9987436a3803	<t0>Gemeld, niet door mij geverifieerd</t0>
+87e4a2bf56b0	Ik heb beide gedragingen beschreven gezien door meerdere onafhankelijke vakmensen, maar ik heb ze niet gereproduceerd in een webshop die ik beheer. Zie ze als dingen om op te testen, niet als feiten om te herhalen. Gebruikt u upsells na de aankoop, test dan specifiek dat pad; daar gaat het het vaakst mis.
+30b7b528558b	Hoe het eruitziet als het toeslaat
+b8121ccaf4ab	Niets dramatisch. Dat is juist het probleem.
+0c4b9014140d	Uw advertenties blijven draaien. Uw budget wordt uitgegeven. Bestellingen blijven binnenkomen in Shopify. Het enige wat verandert, is dat Google Ads en Meta niet meer te horen krijgen welke klikken die bestellingen opleverden, dus Smart Bidding, dat optimaliseert op conversies die het ziet, gaat optimaliseren op een signaal dat ongemerkt naar nul is gezakt.
+cf37f0358991	U merkt het aan een plotselinge daling van de gerapporteerde conversies en een stijging van de kosten per acquisitie, ongeveer een week later, zonder duidelijke oorzaak. Tegen die tijd heeft het algoritme al zeven dagen van slechte data geleerd.
+553462cfed44	De eerlijke beperkingen van dit artikel
+628249c0569d	De datum van 26 augustus en het gedrag van de automatische upgrade komen uit de eigen helpdocumentatie van Shopify, gecontroleerd op 12 augustus 2026, vóór de deadline. Uitspraken over het vak Additional Scripts gaan ook uit van die datum, en ik heb ze sindsdien niet opnieuw gecontroleerd. De tabel hierboven weerspiegelt hoe deze integraties zijn opgebouwd: integraties via verkoopkanalen en server-side hangen niet af van Additional Scripts, met de hand geplakte paginacode wel. <t0>Ik heb niet elke rij in een live webshop getest</t0>, en uw opzet kan iets bevatten wat hier niet staat.
+fae6fd92088d	Zie de tabel dus niet als vrijbrief om stap één over te slaan. Lees uw eigen vak Additional Scripts. Wat daarin staat, is de enige lijst die telt.
+28e9dad4dce4	Weet u niet zeker of de uwe op 26 augustus kapotging?
+1568407f439a	Stuur me de URL van uw webshop. Ik vertel u wat er via Additional Scripts draaide en of uw aankoopevents nog binnenkomen.
+a6a2309dc372	<t0>Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<t1>Zeven oorzaken, inclusief de dubbele pixel die de attributie splitst.</t1></t0> <t2>Dubbele aankoopevents na het installeren van de Conversions API<t3>Hoe u bewijst dat deduplicatie echt werkt en niet alleen ingesteld is.</t3></t2> <t4>Snapchat-aankoopevents worden niet geactiveerd: de diagnosevolgorde<t5>Zes oorzaken gerangschikt, met echte cijfers uit Ads Manager.</t5></t4>
+d4d810ba3963	Snapchat-aankoopevents worden niet geactiveerd: de diagnosevolgorde
+4967e1878362	Uw Snap Pixel laadt, maar PURCHASE verschijnt nooit in Events Manager. Zes oorzaken op waarschijnlijkheid gerangschikt, met exacte controles, uit een webshop met 1.034 gemeten aankopen.
+757a9bdc8152	Zes oorzaken van ontbrekende Snapchat PURCHASE-events, gerangschikt, met de exacte controles voor elk.
+97315355b28b	Snapchat-aankoopevents worden niet geactiveerd
+593af2467adf	<t0>Praktijknotities</t0> &nbsp;/&nbsp; Snapchat
+c702b2b82b79	Laadt uw Snap Pixel maar verschijnt <t0>PURCHASE</t0> nooit in Events Manager, dan is de oorzaak bijna altijd een van zes dingen: een eventnaam in kleine letters, een ontbrekende <t1>transaction_id</t1>, een pixel die ontbreekt op de echte bevestigingspagina, een externe betaalomleiding die de sessie breekt, een checkout op één pagina die de pixel opnieuw initialiseert, of events die worden weggededupliceerd tegen een Conversions API-feed.
