@@ -18,6 +18,9 @@ LANGS = {  # code: (native name, og:locale, markets for schema areaServed)
     "de": ("Deutsch", "de_DE", ["Germany", "Austria", "Switzerland"]),
     "fr": ("Français", "fr_FR", ["France", "Belgium", "Switzerland", "Canada"]),
     "es": ("Español", "es_ES", ["Spain", "Mexico", "Colombia", "Argentina", "Chile"]),
+    "it": ("Italiano", "it_IT", ["Italy", "Switzerland"]),
+    "nl": ("Nederlands", "nl_NL", ["Netherlands", "Belgium"]),
+    "pt": ("Português", "pt_BR", ["Brazil", "Portugal"]),
 }
 LIVE = [c for c in LANGS if os.path.exists(os.path.join(HERE, c + ".json"))]
 
