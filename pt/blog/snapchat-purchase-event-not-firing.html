@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Eventos de compra do Snapchat não disparam: a sequência de diagnóstico</title>
+<meta name="description" content="Seu Snap Pixel carrega, mas o PURCHASE nunca aparece no Gerenciador de Eventos. Seis causas por ordem de probabilidade, com verificações exatas, de uma loja com 1.034 compras rastreadas.">
+<link rel="canonical" href="https://marketingkamran.com/pt/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/snapchat-purchase-event-not-firing.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/snapchat-purchase-event-not-firing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://marketingkamran.com/pt/blog/snapchat-purchase-event-not-firing.html">
+<meta property="og:title" content="Eventos de compra do Snapchat não disparam: a sequência de diagnóstico">
+<meta property="og:description" content="Seu Snap Pixel carrega, mas o PURCHASE nunca aparece no Gerenciador de Eventos. Seis causas por ordem de probabilidade, com verificações exatas, de uma loja com 1.034 compras rastreadas.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eventos de compra do Snapchat não disparam: a sequência de diagnóstico">
+<meta name="twitter:description" content="Seu Snap Pixel carrega, mas o PURCHASE nunca aparece no Gerenciador de Eventos. Seis causas por ordem de probabilidade, com verificações exatas, de uma loja com 1.034 compras rastreadas.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Eventos de compra do Snapchat não disparam: a sequência de diagnóstico",
+  "description": "Seis causas de eventos PURCHASE ausentes no Snapchat, em ordem, com as verificações exatas de cada uma.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/pt/",
+    "jobTitle": "Especialista em tráfego pago & rastreamento de conversões"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/snapchat-purchase-event-not-firing.html",
+    "inLanguage": "pt"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "pt"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://marketingkamran.com/pt/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notas de campo",
+      "item": "https://marketingkamran.com/pt/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Eventos de compra do Snapchat não disparam"
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/pt/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/pt/blog/">Notas de campo</a> <a href="/pt/#work">Cases</a> <a href="/pt/#services">Serviços</a> <a class="btn" href="/pt/#contact">Auditoria gratuita</a>
+    <details class="lang-sw"><summary aria-label="Language">PT</summary><ul><li><a href="/blog/snapchat-purchase-event-not-firing.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/snapchat-purchase-event-not-firing.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/snapchat-purchase-event-not-firing.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/snapchat-purchase-event-not-firing.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/snapchat-purchase-event-not-firing.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/snapchat-purchase-event-not-firing.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/snapchat-purchase-event-not-firing.html" hreflang="pt" lang="pt" aria-current="true">Português</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/pt/blog/">Notas de campo</a> &nbsp;/&nbsp; Snapchat</div>
+    <h1>Eventos de compra do Snapchat não disparam: a sequência de diagnóstico</h1>
+    <div class="byline">
+      <span>Kamran Arshad</span><span>12 ago 2026</span><span>9 min de leitura</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Se seu Snap Pixel carrega mas o <code>PURCHASE</code> nunca aparece no Gerenciador de Eventos, a causa quase sempre é uma de seis: nome do evento em minúsculas, <code>transaction_id</code> ausente, pixel ausente da página de confirmação real, um redirecionamento de pagamento externo quebrando a sessão, um checkout de página única reinicializando o pixel ou eventos sendo eliminados pela desduplicação com um envio da API de Conversões.</p>
+      <p>Siga nessa ordem. As três primeiras explicam a maior parte do que eu encontro.</p>
+    </div>
+
+    <figure class="wide">
+      <div class="fig-frame scrolls">
+        <svg viewBox="0 0 940 272" role="img" aria-labelledby="jTitle jDesc" xmlns="http://www.w3.org/2000/svg">
+          <title id="jTitle">Onde um evento de compra do Snapchat morre</title>
+          <desc id="jDesc">A jornada do cliente do clique no anúncio até o Gerenciador de Eventos do Snapchat, com as seis causas de falha marcadas abaixo da etapa em que cada uma ocorre: reinicialização do pixel no checkout, perda de sessão no gateway de pagamento, nome do evento em minúsculas, ID de transação ausente e pixel ausente na página de confirmação, e desduplicação no Snapchat.</desc>
+          <defs>
+            <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+              <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#8B9AB4"/>
+            </marker>
+            <marker id="arR" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto">
+              <path d="M0,0 L7,3.2 L0,6.4 Z" fill="#B3261E"/>
+            </marker>
+          </defs>
+
+          <text x="16" y="20" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.4" fill="#5C6E8C">A JORNADA</text>
+          <text x="16" y="150" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.4" fill="#B3261E">ONDE QUEBRA</text>
+
+          <!-- stages -->
+          <g font-family="Instrument Sans, system-ui, sans-serif">
+            <g>
+              <rect x="16" y="40" width="132" height="52" rx="9" fill="#fff" stroke="#C6D2E4"/>
+              <text x="82" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#0B2143">Clique no anúncio</text>
+              <text x="82" y="79" text-anchor="middle" font-size="11" fill="#5C6E8C">Snapchat</text>
+            </g>
+            <g>
+              <rect x="168" y="40" width="132" height="52" rx="9" fill="#fff" stroke="#C6D2E4"/>
+              <text x="234" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#0B2143">Produto / carrinho</text>
+              <text x="234" y="79" text-anchor="middle" font-size="11" fill="#5C6E8C">seu site</text>
+            </g>
+            <g>
+              <rect x="320" y="40" width="132" height="52" rx="9" fill="#fff" stroke="#C6D2E4"/>
+              <text x="386" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#0B2143">Checkout</text>
+              <text x="386" y="79" text-anchor="middle" font-size="11" fill="#5C6E8C">seu site</text>
+            </g>
+            <g>
+              <rect x="472" y="40" width="132" height="52" rx="9" fill="#FBF1DF" stroke="#E0B968" stroke-dasharray="5 3"/>
+              <text x="538" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#0B2143">Gateway de pagamento</text>
+              <text x="538" y="79" text-anchor="middle" font-size="11" fill="#8A5A0F">sai do seu domínio</text>
+            </g>
+            <g>
+              <rect x="624" y="40" width="132" height="52" rx="9" fill="#fff" stroke="#C6D2E4"/>
+              <text x="690" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#0B2143">Confirmação</text>
+              <text x="690" y="79" text-anchor="middle" font-size="11" fill="#5C6E8C">o evento dispara</text>
+            </g>
+            <g>
+              <rect x="776" y="40" width="148" height="52" rx="9" fill="#081A36" stroke="#081A36"/>
+              <text x="850" y="63" text-anchor="middle" font-size="13" font-weight="600" fill="#fff">Gerenciador de Eventos</text>
+              <text x="850" y="79" text-anchor="middle" font-size="11" fill="#9DB2CD">Snapchat</text>
+            </g>
+          </g>
+
+          <!-- connectors -->
+          <g stroke="#8B9AB4" stroke-width="1.6">
+            <line x1="150" y1="66" x2="164" y2="66" marker-end="url(#ar)"/>
+            <line x1="302" y1="66" x2="316" y2="66" marker-end="url(#ar)"/>
+            <line x1="454" y1="66" x2="468" y2="66" marker-end="url(#ar)"/>
+            <line x1="606" y1="66" x2="620" y2="66" marker-end="url(#ar)"/>
+            <line x1="758" y1="66" x2="772" y2="66" marker-end="url(#ar)"/>
+          </g>
+
+          <!-- drop lines to failure chips -->
+          <g stroke="#E4BEBA" stroke-width="1.4" stroke-dasharray="3 3">
+            <line x1="386" y1="94" x2="386" y2="160"/>
+            <line x1="538" y1="94" x2="538" y2="160"/>
+            <line x1="690" y1="94" x2="690" y2="160"/>
+            <line x1="850" y1="94" x2="850" y2="160"/>
+          </g>
+
+          <!-- failure chips -->
+          <g font-family="Instrument Sans, system-ui, sans-serif">
+            <g>
+              <rect x="316" y="160" width="140" height="28" rx="6" fill="#FCEDEC" stroke="#F0CFCC"/>
+              <rect x="323" y="166" width="19" height="16" rx="3" fill="#B3261E"/>
+              <text x="332.5" y="178" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#fff">05</text>
+              <text x="348" y="178" font-size="11.5" fill="#8C1D18">Pixel reinicializado</text>
+            </g>
+            <g>
+              <rect x="468" y="160" width="140" height="28" rx="6" fill="#FCEDEC" stroke="#F0CFCC"/>
+              <rect x="475" y="166" width="19" height="16" rx="3" fill="#B3261E"/>
+              <text x="484.5" y="178" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#fff">04</text>
+              <text x="500" y="178" font-size="11.5" fill="#8C1D18">Redirecionamento</text>
+            </g>
+            <g>
+              <rect x="620" y="160" width="140" height="28" rx="6" fill="#FCEDEC" stroke="#F0CFCC"/>
+              <rect x="627" y="166" width="19" height="16" rx="3" fill="#B3261E"/>
+              <text x="636.5" y="178" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#fff">01</text>
+              <text x="652" y="178" font-size="11.5" fill="#8C1D18">Minúsculas</text>
+            </g>
+            <g>
+              <rect x="620" y="193" width="140" height="28" rx="6" fill="#FCEDEC" stroke="#F0CFCC"/>
+              <rect x="627" y="199" width="19" height="16" rx="3" fill="#B3261E"/>
+              <text x="636.5" y="211" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#fff">02</text>
+              <text x="652" y="211" font-size="11.5" fill="#8C1D18">Sem transaction_id</text>
+            </g>
+            <g>
+              <rect x="620" y="226" width="140" height="28" rx="6" fill="#FCEDEC" stroke="#F0CFCC"/>
+              <rect x="627" y="232" width="19" height="16" rx="3" fill="#B3261E"/>
+              <text x="636.5" y="244" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#fff">03</text>
+              <text x="652" y="244" font-size="11.5" fill="#8C1D18">Pixel ausente</text>
+            </g>
+            <g>
+              <rect x="772" y="160" width="152" height="28" rx="6" fill="#FCEDEC" stroke="#F0CFCC"/>
+              <rect x="779" y="166" width="19" height="16" rx="3" fill="#B3261E"/>
+              <text x="788.5" y="178" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#fff">06</text>
+              <text x="804" y="178" font-size="11.5" fill="#8C1D18">Desduplicado</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <figcaption><b>A página de confirmação é onde quase tudo dá errado.</b> Três das seis causas atacam no último passo, que também é o menos testado, porque testá-lo direito significa gastar dinheiro de verdade.</figcaption>
+    </figure>
+
+    <p>Escreve-se muito menos sobre rastreamento no Snapchat do que na Meta ou no Google, então quando ele quebra você está praticamente sozinho. Os artigos que existem costumam ser de empresas que vendem um produto de rastreamento e param em "instale nosso app". Esta é a sequência que eu realmente sigo, na ordem em que sigo, e por que nessa ordem.</p>
+
+    <h2>Primeiro: confirme que o evento realmente não está chegando</h2>
+
+    <p>Antes de mudar qualquer coisa, descubra se o evento está ausente ou só atrasado. Duas verificações, sessenta segundos.</p>
+
+    <p><strong>Verifique a rede, não o painel.</strong> Abra a página de confirmação no Chrome, abra o DevTools (F12), vá para a aba <strong>Network</strong> e filtre por <code>tr.snapchat.com</code>. Faça uma compra de teste real. Se você vê sair uma requisição com o ID do seu pixel e o nome do evento, o navegador está fazendo a parte dele e o problema está mais adiante: relatório, desduplicação ou atribuição. Se nada sai, o problema está na página.</p>
+
+    <p>A extensão de navegador <a href="https://forbusiness.snapchat.com/advertising/snap-pixel" rel="noopener">Snap Pixel Helper</a> faz o mesmo com uma interface mais amigável e também te diz se o pixel está instalado. Eu uso a aba Network porque ela mostra o payload exato, e é ali que geralmente está a resposta.</p>
+
+    <figure class="wide">
+      <div class="fig-frame scrolls">
+        <svg viewBox="0 0 900 226" role="img" aria-labelledby="nTitle nDesc" xmlns="http://www.w3.org/2000/svg">
+          <title id="nTitle">Como uma sequência saudável de eventos do Snapchat aparece na aba Network</title>
+          <desc id="nDesc">Um painel de rede do DevTools filtrado por tr.snapchat.com, com quatro requisições em ordem: PAGE_VIEW, VIEW_CONTENT, ADD_CART e PURCHASE, cada uma com status 200. A linha PURCHASE está destacada como a que precisa estar presente e conter um ID de transação.</desc>
+
+          <rect x="16" y="14" width="868" height="196" rx="10" fill="#fff" stroke="#C6D2E4"/>
+          <rect x="16" y="14" width="868" height="34" rx="10" fill="#F1F5FA"/>
+          <rect x="16" y="40" width="868" height="8" fill="#F1F5FA"/>
+          <line x1="16" y1="48" x2="884" y2="48" stroke="#DDE5F0"/>
+
+          <g font-family="IBM Plex Mono, monospace" font-size="11.5">
+            <text x="34" y="35" fill="#5C6E8C">Network</text>
+            <rect x="104" y="22" width="168" height="20" rx="4" fill="#fff" stroke="#C6D2E4"/>
+            <text x="114" y="36" fill="#0B2143">tr.snapchat.com</text>
+            <text x="288" y="35" fill="#8B9AB4">4 requisições</text>
+          </g>
+
+          <g font-family="IBM Plex Mono, monospace" font-size="10.5" fill="#8B9AB4" letter-spacing="1">
+            <text x="34" y="68">EVENTO</text>
+            <text x="360" y="68">STATUS</text>
+            <text x="470" y="68">DISPARA EM</text>
+          </g>
+
+          <g font-family="IBM Plex Mono, monospace" font-size="12.5">
+            <g>
+              <text x="34" y="94" fill="#2E4368">PAGE_VIEW</text>
+              <rect x="360" y="82" width="38" height="18" rx="4" fill="#E3F5ED"/>
+              <text x="379" y="95" text-anchor="middle" font-size="10.5" fill="#0B6244">200</text>
+              <text x="470" y="94" fill="#5C6E8C" font-size="11.5">todas as páginas</text>
+            </g>
+            <g>
+              <text x="34" y="122" fill="#2E4368">VIEW_CONTENT</text>
+              <rect x="360" y="110" width="38" height="18" rx="4" fill="#E3F5ED"/>
+              <text x="379" y="123" text-anchor="middle" font-size="10.5" fill="#0B6244">200</text>
+              <text x="470" y="122" fill="#5C6E8C" font-size="11.5">página de produto</text>
+            </g>
+            <g>
+              <text x="34" y="150" fill="#2E4368">ADD_CART</text>
+              <rect x="360" y="138" width="38" height="18" rx="4" fill="#E3F5ED"/>
+              <text x="379" y="151" text-anchor="middle" font-size="10.5" fill="#0B6244">200</text>
+              <text x="470" y="150" fill="#5C6E8C" font-size="11.5">adicionar ao carrinho</text>
+            </g>
+            <g>
+              <rect x="24" y="164" width="852" height="32" rx="6" fill="#E8F1FD" stroke="#B4D2F5"/>
+              <text x="34" y="185" fill="#0B2143" font-weight="600">PURCHASE</text>
+              <rect x="360" y="173" width="38" height="18" rx="4" fill="#E3F5ED"/>
+              <text x="379" y="186" text-anchor="middle" font-size="10.5" fill="#0B6244">200</text>
+              <text x="470" y="185" fill="#0F5FC4" font-size="11.5">página de confirmação</text>
+              <text x="640" y="185" fill="#0F5FC4" font-size="11" font-style="italic">← precisa ter transaction_id</text>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <figcaption><b>Se as três primeiras aparecem e a quarta não, o problema está na página de confirmação.</b> Se nenhuma aparece, o pixel não está instalado onde você pensa.</figcaption>
+    </figure>
+
+    <div class="note">
+      <b class="l">Dê tempo antes de entrar em pânico</b>
+      <p>Os relatórios do Gerenciador de Eventos não são instantâneos. Antes de concluir que um evento está faltando, espere algumas horas e olhe de novo. Já vi gente reescrever um checkout que funcionava porque olhou um painel noventa segundos depois de um pedido de teste.</p>
+    </div>
+
+    <h2>As seis causas, em ordem</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>O nome do evento está em minúsculas</h3></div>
+      <p>Os eventos padrão do Snapchat são em <strong>maiúsculas</strong>: <code>PURCHASE</code>, <code>ADD_CART</code>, <code>PAGE_VIEW</code>, <code>START_CHECKOUT</code>. Se você envia <code>purchase</code>, ele não é reconhecido como evento padrão. A parte traiçoeira é que ele ainda pode disparar e aparecer em algum lugar: só não é tratado como a conversão padrão, então a otimização das campanhas e os relatórios se comportam como se nada tivesse acontecido.</p>
+      <p>Esta é a causa número um porque produz exatamente o sintoma que as pessoas descrevem, "o pixel dispara mas o Gerenciador de Eventos não mostra nada", e porque copiar uma implementação da Meta é natural. A Meta usa <code>Purchase</code>. O Snapchat não.</p>
+      <div class="compare">
+        <div class="pane bad">
+          <div class="pane-h">✗ Copiado da Meta</div>
+<pre>{
+  event: <em>"Purchase"</em>,
+  price: 24.00,
+  currency: "USD"
+}</pre>
+        </div>
+        <div class="pane good">
+          <div class="pane-h">✓ O que o Snapchat espera</div>
+<pre>{
+  event: <em>"PURCHASE"</em>,
+  price: 24.00,
+  currency: "USD",
+  <em>transaction_id</em>: "1047"
+}</pre>
+        </div>
+      </div>
+
+      <div class="check"><b>A verificação</b>Na aba Network, leia o nome do evento no payload da requisição. Ele precisa ser exatamente <code>PURCHASE</code>. Aqui, maiúsculas e minúsculas não são um detalhe estético.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Nenhum transaction_id é enviado</h3></div>
+      <p>Sem um <code>transaction_id</code>, o Snapchat não consegue distinguir um segundo pedido real do mesmo cliente recarregando a página de confirmação. A Snap documenta uma <strong>janela de desduplicação de 30 dias</strong> no <code>transaction_id</code>, contra 48 horas no <code>client_dedup_id</code>.</p>
+      <p>A falha funciona nas duas direções, e é por isso que está tão no alto. Se você o omite, os recarregamentos inflam a contagem de compras. Se envia um valor que não é realmente único por pedido (um ID de carrinho, checkout ou sessão), pedidos legítimos são fundidos em um e <em>desaparecem</em>. O segundo caso parece exatamente "meus eventos não disparam".</p>
+      <div class="check"><b>A verificação</b>Faça dois pedidos de teste. Confirme que o <code>transaction_id</code> é diferente entre eles e que corresponde ao número de pedido que sua loja realmente atribui.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>O pixel não está na página que realmente confirma o pedido</h3></div>
+      <p>Quase todo mundo instala o pixel no site inteiro e supõe que a página de confirmação herda. Muitas vezes não herda. Checkouts hospedados, páginas de status do pedido e fluxos de upsell pós-compra costumam ser renderizados fora do tema ou template que contém o código de rastreamento.</p>
+      <p>Um ponto de atenção: se você usa um upsell pós-compra, a página em que o cliente cai logo depois de pagar pode não ser a que você considera a página de agradecimento.</p>
+      <div class="check"><b>A verificação</b>Faça um pedido real. Na página em que cair, veja o código-fonte e procure o ID do seu pixel. Não deduza pelo tema: olhe a página em que o cliente realmente está.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Um redirecionamento de pagamento externo quebra a sessão</h3></div>
+      <p>Quando o checkout passa para um gateway externo e devolve o cliente a uma página de pedido recebido, essa ida e volta pode quebrar a sessão do navegador da qual o pixel depende. A compra é concluída, o cliente vê a confirmação e o evento nunca chega ao Snapchat, ou chega sem os identificadores necessários para atribuí-lo.</p>
+      <p>É aqui que uma configuração só de navegador deixa de bastar. O rastreamento server-side pela <a href="https://developers.snap.com/marketing-api/Conversions-API/Introduction" rel="noopener">API de Conversões</a> é a solução duradoura, porque o evento sai do seu servidor e nunca depende de sobreviver a um redirecionamento.</p>
+      <div class="check"><b>A verificação</b>Seu fluxo de pagamento sai do seu domínio? Se sim, trate o rastreamento só pelo navegador como "tentativa" e planeje a CAPI.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Um checkout de página única reinicializa o pixel</h3></div>
+      <p>Em aplicações de página única, se a inicialização do pixel roda a cada visualização de página virtual, o estado do pixel é zerado toda vez. Os dados de correspondência avançada coletados antes no fluxo se perdem, e o evento de compra chega sem os identificadores que o tornam útil: pobre, mal correspondido e às vezes sem atribuição.</p>
+      <p>O evento dispara. Só não leva o que precisa, e é por isso que é fácil confundi-lo com "funcionando".</p>
+      <div class="check"><b>A verificação</b>Observe a aba Network durante todo o checkout. A inicialização deve acontecer uma vez. Os eventos devem disparar muitas vezes.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">06</span><h3>A desduplicação engole o evento</h3></div>
+      <p>Se você usa o pixel <em>e</em> a API de Conversões (como deveria), o Snapchat desduplica pelo <code>client_dedup_id</code> (janela de 48 horas) ou pelo <code>transaction_id</code> (30 dias). Dois eventos com o mesmo identificador são contados uma vez, por definição.</p>
+      <p>Vira problema quando navegador e servidor discordam sobre qual é esse identificador. Se a correspondência estiver errada, ou você conta tudo em dobro ou perde um lado em silêncio. Segundo a Snap, eventos que não são de compra devem corresponder pelo <code>client_dedup_id</code> e eventos de compra pelo <code>transaction_id</code>, e o principal: <strong>o valor precisa ser igual em todo caminho que envia aquele evento</strong>.</p>
+      <figure class="wide">
+        <div class="fig-frame scrolls">
+          <svg viewBox="0 0 900 196" role="img" aria-labelledby="dTitle dDesc" xmlns="http://www.w3.org/2000/svg">
+            <title id="dTitle">Janelas de desduplicação do Snapchat comparadas</title>
+            <desc id="dDesc">Gráfico de barras horizontais num eixo comum de 30 dias. O transaction_id desduplica por 30 dias. O client_dedup_id desduplica por 48 horas, cerca de um quinze avos desse período.</desc>
+
+            <!-- grid -->
+            <g stroke="#E6ECF3" stroke-width="1">
+              <line x1="150" y1="34" x2="150" y2="158"/>
+              <line x1="318" y1="34" x2="318" y2="158"/>
+              <line x1="486" y1="34" x2="486" y2="158"/>
+              <line x1="654" y1="34" x2="654" y2="158"/>
+              <line x1="870" y1="34" x2="870" y2="158"/>
+            </g>
+
+            <g font-family="Instrument Sans, system-ui, sans-serif">
+              <!-- row 1: transaction_id, 30 days -->
+              <text x="140" y="62" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="500" fill="#0B2143">transaction_id</text>
+              <rect x="150" y="44" width="720" height="34" rx="4" fill="#166FDB"/>
+              <text x="856" y="66" text-anchor="end" font-size="13.5" font-weight="700" fill="#fff">30 dias</text>
+
+              <!-- row 2: client_dedup_id, 48 hours -->
+              <text x="140" y="120" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="12.5" font-weight="500" fill="#0B2143">client_dedup_id</text>
+              <rect x="150" y="102" width="48" height="34" rx="4" fill="#B5761A"/>
+              <text x="210" y="124" font-size="13.5" font-weight="700" fill="#8A5A0F">48 horas</text>
+
+              <!-- axis -->
+              <line x1="150" y1="158" x2="870" y2="158" stroke="#C6D2E4" stroke-width="1.2"/>
+              <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#5C6E8C" text-anchor="middle">
+                <text x="150" y="176">dia 0</text>
+                <text x="318" y="176">7</text>
+                <text x="486" y="176">14</text>
+                <text x="654" y="176">21</text>
+                <text x="870" y="176">30</text>
+              </g>
+              <text x="16" y="22" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1.3" fill="#5C6E8C">JANELA DE DESDUPLICAÇÃO</text>
+            </g>
+          </svg>
+        </div>
+        <figcaption><b>Por que o identificador escolhido importa.</b> Uma compra desduplicada pelo <code>transaction_id</code> fica protegida por 30 dias. Pelo <code>client_dedup_id</code>, a proteção expira em 48 horas, e é por isso que a Snap associa as compras ao <code>transaction_id</code> e todo o resto ao <code>client_dedup_id</code>.</figcaption>
+      </figure>
+
+      <div class="check"><b>A verificação</b>Para um pedido, anote o identificador que o navegador enviou e o que o servidor enviou. Eles precisam ser idênticos. Não parecidos: idênticos.</div>
+    </div>
+
+    <h2>De onde vêm meus números</h2>
+
+    <p>Não tenho uma grande amostra de clientes no Snapchat e não vou fingir que tenho. O que tenho é uma loja que operei de ponta a ponta, a minha, em que o rastreamento funcionava, e esse é o único motivo pelo qual posso falar do que uma configuração saudável do Snapchat produz.</p>
+
+    <div class="data">
+      <h3>AlphaMart: minha própria loja, não um cliente</h3>
+      <div class="sub">Snap Ads Manager · 4 nov 2023 – 7 mai 2024</div>
+      <dl class="figs">
+        <div><dt>Investimento em anúncios</dt><dd>$1,452</dd></div>
+        <div><dt>Compras</dt><dd>1,034</dd></div>
+        <div><dt>Custo por compra</dt><dd>$1.40</dd></div>
+        <div><dt>ROAS</dt><dd>5.69&times;</dd></div>
+      </dl>
+      <p>Um contexto importante, senão esses números me favorecem: 5,69× sobre US$ 1.452 são cerca de US$ 8.262 de receita rastreada em 1.034 pedidos, um ticket médio de aproximadamente US$ 8. Era um produto barato. Um custo por compra de US$ 1,40 é um resultado muito diferente com ticket médio de US$ 8 do que com um de US$ 80, e quem cita um CPA sem o ticket médio ao lado está te mostrando só metade do número.</p>
+      <p>Os dados são de um período que terminou em maio de 2024. Eu os dato em vez de apresentá-los como atuais.</p>
+    </div>
+
+    <figure class="wide">
+      <div class="shot">
+        <span class="shot-tag">✓ Captura de tela sem edição</span>
+        <img src="/clients-dashboard/AlphaMart%20Snapchat%20Ads%20Dashboard%20Cost%20Per%20Purchase.png"
+             width="1335" height="543" loading="lazy" decoding="async"
+             alt="Snapchat Ads Manager da Alpha Mart mostrando US$ 1.452,18 investidos, 11.076.872 impressões pagas, 242.131 cliques, taxa de cliques de 2,19%, 1.034 compras e custo por compra de US$ 1,40, de 4 de novembro de 2023 a 7 de maio de 2024.">
+      </div>
+      <figcaption><b>O que esta captura de tela prova e o que não prova.</b> Ela confirma o investimento (US$ 1.452,18), o número de compras (1.034), o custo por compra (US$ 1,40) e o período. Também mostra 11.076.872 impressões e 242.131 cliques, com taxa de cliques de 2,19%. Ela <em>não</em> mostra o ROAS: esse número vem da receita da loja, não desta tela, e você deveria tratar do mesmo jeito qualquer número que não vê na imagem.</figcaption>
+    </figure>
+
+    <p>O que torna essas 1.034 compras importantes para este artigo não é o ROAS. É que uma loja enviando, nesse volume, um evento <code>PURCHASE</code> limpo, com o nome correto e bem desduplicado, te dá uma referência confiável de como "funcionando" se parece, e deixa óbvio quando algo parou.</p>
+
+    <h2>O que eu não posso te dizer</h2>
+
+    <p>Dois limites honestos, porque um artigo que não admite nenhum geralmente esconde alguns.</p>
+
+    <p><strong>Não posso te dar uma classificação de frequência baseada numa grande amostra.</strong> A ordem acima reflete um pequeno número de contas mais o que os tipos de falha implicam logicamente: um nome de evento em minúsculas sempre quebra os relatórios, então ele vai para o topo, independentemente de quantas vezes eu mesmo o vi. Trate a ordem como uma sequência de busca sensata, não como estatística.</p>
+
+    <p><strong>A interface do Snapchat muda.</strong> Os caminhos de menu ficam desatualizados rápido, e é por isso que as verificações acima se apoiam na requisição de rede e no payload, e não em onde um botão está hoje. O payload é o que é realmente verdade.</p>
+
+    <h2>Em resumo</h2>
+
+    <ol>
+      <li>Abra a aba Network, filtre por <code>tr.snapchat.com</code> e faça um pedido de teste.</li>
+      <li>Confirme que o nome do evento é exatamente <code>PURCHASE</code>, em maiúsculas.</li>
+      <li>Confirme que o <code>transaction_id</code> está presente e é único por pedido.</li>
+      <li>Confirme que o pixel está na página em que o cliente realmente cai.</li>
+      <li>Se o checkout sai do seu domínio, planeje a API de Conversões.</li>
+      <li>Se você usa pixel e CAPI, confirme que o identificador de desduplicação é exatamente igual nos dois lados.</li>
+    </ol>
+
+    <p>Se você passou nas seis verificações e o evento ainda não chega, o problema geralmente não é o pixel: é que a página que você está testando não é a que seus clientes alcançam. Volte e faça uma compra real com dinheiro de verdade, num celular, a partir de um clique num anúncio. Pedidos de teste por um link de homologação pulam justamente as partes que quebram.</p>
+
+    <div class="cta">
+      <h2>Não sabe qual das seis é?</h2>
+      <p>Me envie a URL da sua loja e eu te digo o que seu rastreamento está fazendo. Para começar não é preciso acesso à conta, só o link.</p>
+      <a class="btn" href="/pt/#contact">Peça uma auditoria gratuita de rastreamento →</a>
+    </div>
+
+    <div class="related">
+      <h2>Notas de campo relacionadas</h2>
+      <a href="/pt/blog/shopify-additional-scripts-deadline-tracking.html">Prazo da Shopify de 26 de agosto: seu rastreamento sobreviveu?<span>O que o upgrade automático remove, e a verificação de dez minutos.</span></a> <a href="/pt/blog/google-ads-call-tracking-local-business.html">Rastreamento de ligações no Google Ads para negócios de serviços locais<span>Quatro formas de rastrear ligações, e o que cada uma realmente mede.</span></a> <a href="/pt/blog/meta-pixel-not-tracking-purchases-shopify.html">Pixel da Meta não rastreia compras na Shopify: o que verificar primeiro<span>Sete causas, incluindo o pixel duplicado que divide a atribuição.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Kamran Arshad. Especialista em tráfego pago e rastreamento</span> <span><a href="/pt/">Início</a> · <a href="/pt/blog/">Notas de campo</a> · <a href="/pt/privacy-policy.html">Privacidade</a></span>
+  </div>
+</footer>
+<script src="/consent-pt.js" defer></script>
+</body>
+</html>
