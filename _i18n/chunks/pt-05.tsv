@@ -1,0 +1,144 @@
+e77fdff46237	Esta é a ordem que importa. Grave o lead no armazenamento e só depois tente o e-mail, o envio ao CRM, o alerta no WhatsApp e o evento de conversão. Qualquer um deles pode falhar sem perder o contato. Inverta a ordem e uma única falha te faz perder um cliente em silêncio.
+1a21c38af467	Uma configuração sensata, em ordem
+ce55143ca67a	<t0>Torne o lead durável primeiro</t0>Garanta que os envios de formulário sejam guardados em um lugar que não seja uma caixa de entrada. Tudo o que vem depois é opcional; isto não.
+20540d6551f7	<t0>Ative recursos de chamada com número de encaminhamento</t0>Isso captura quem liga direto do anúncio sem nunca visitar seu site, geralmente uma parcela maior do que os donos imaginam.
+cb64eb12842a	<t0>Adicione rastreamento de chamadas no site com troca de número</t0>Para que as ligações feitas depois de chegar ao site também sejam atribuídas. Teste num celular de verdade, porque a troca depende de um script rodar.
+ea45d62d946b	<t0>Defina uma duração mínima de chamada</t0>Sessenta segundos é um padrão razoável. Ajuste depois de ouvir uma amostra de ligações reais.
+c858fe6aa2cd	<t0>Importe a conversão e deixe assentar</t0>Não julgue a mudança antes de pelo menos duas semanas. Os algoritmos de lance precisam de tempo, e duas semanas de dados de ligações de um serviço local é uma amostra pequena.
+a26a632aa733	Onde este conselho para
+18a2a56c712e	Gravar ligações é uma decisão separada de rastreá-las, com obrigações legais próprias que variam por país e às vezes por região. Saber que uma ligação aconteceu, quanto durou e qual palavra-chave a gerou é suficiente para otimizar campanhas. Gravar o conteúdo é um passo maior; busque orientação antes de fazer isso.
+c4fda40526ac	E minha amostra aqui são dois negócios, em dois países, em dois setores. A mecânica se generaliza; os números não. Não publiquei um custo por ligação neste artigo porque não tenho um que eu possa sustentar para uma conta identificada com um período declarado, e um benchmark inventado valeria menos para você do que esta frase.
+3ecf78099a81	Você sabe quais buscas geram suas ligações?
+0275a616c1d1	A maioria dos negócios locais que anunciam no Google Ads não sabe responder. Me envie seu site e eu te digo o que está sendo rastreado e o que não está.
+877d9ef2244f	<t0>Checklist de auditoria de Google Ads para geração de leads<t1>Seis verificações em ordem, da reconstrução da conta de uma clínica odontológica.</t1></t0> <t2>Conversões offline no Google Ads para geração de leads<t3>Como dizer ao Google Ads quais leads viraram serviços agendados.</t3></t2> <t4>Prazo da Shopify de 26 de agosto: seu rastreamento sobreviveu?<t5>O que o upgrade automático remove, e a verificação de dez minutos.</t5></t4> <t6>Pixel da Meta não rastreia compras na Shopify: o que verificar primeiro<t7>Sete causas, incluindo o pixel duplicado que divide a atribuição.</t7></t6> <t8>Rastreamento de conversões do Google Ads não funciona: uma ordem de diagnóstico<t9>Por que uma tag funcionando ainda pode não registrar nada por semanas.</t9></t8>
+b3b9c6738d35	Rastreamento de conversões do Google Ads não funciona: ordem de diagnóstico
+4ad1504eecaa	O Google Ads sem nenhuma conversão tem uma lista curta de causas. Aqui estão elas em ordem de diagnóstico, com uma verificação para cada e o motivo de uma tag funcionando não registrar nada.
+1d98d31736ec	O Google Ads sem registrar conversões tem uma lista curta de causas, e elas não são igualmente prováveis. Aqui estão em ordem de diagnóstico, com a verificação de cada uma, mais o motivo pelo qual uma tag funcionando ainda pode não registrar nada por semanas.
+9b6b637a9780	Rastreamento de conversões do Google Ads
+28de9c73e4cc	Por que meu rastreamento de conversões do Google Ads não funciona?
+9f0a36f692cd	As causas mais frequentes são: a tag não está na página que confirma a ação; a ação de conversão está com uma configuração de categoria ou contagem que a esconde; a tag dispara mas não está vinculada à ação de conversão certa; configurações de consentimento bloqueiam a tag; ou as janelas de atribuição fazem com que a conversão ainda não tenha sido informada.
+efe88f384291	Quanto tempo o Google Ads leva para mostrar conversões?
+df5a3c47180f	As conversões podem levar até 24 horas para aparecer nos relatórios, e são creditadas na data do clique, não na data da conversão. Isso significa que os dias recentes sempre parecem piores do que vão ficar, o que é um efeito normal dos relatórios, e não uma falha.
+6f8308fb02b8	Como testar se minha tag de conversão do Google Ads está disparando?
+404785fa9c23	Use o Google Tag Assistant no modo de depuração, faça você mesmo a ação de conversão e confirme que a tag de conversão dispara com o ID e o rótulo de conversão corretos. Depois verifique o status da ação de conversão no Google Ads, que deve passar de Não verificada para Registrando conversões.
+1aa1f26f42fb	O Google Ads diz zero conversões. Você sabe que vendeu.
+2ac103804912	Quando o Google Ads registra zero conversões, geralmente é uma de cinco coisas: a <t0>tag não está na página que confirma a ação</t0>, a tag dispara mas não está vinculada à ação de conversão certa, a ação de conversão está excluída da coluna &ldquo;Conversões&rdquo;, configurações de consentimento estão bloqueando, ou as conversões existem mas ainda não foram informadas porque são creditadas na data do clique.
+a9118362f0ce	A última não é falha, e engana as pessoas o tempo todo.
+560851a9d038	Este é um dos problemas de rastreamento mais pesquisados que existem, e os resultados de busca são dominados por tópicos de fórum em que ninguém chegou a uma resposta. Isso diz algo: o sintoma é genérico, e a causa costuma ser específica de como uma conta foi montada.
+7b7fd37aee61	Então, em vez de listar todas as possibilidades, esta é a ordem que eu realmente sigo, e ela resolve a maioria dos casos nos três primeiros passos.
+00a5111d55ac	Antes de mudar qualquer coisa: está realmente quebrado?
+edc535ef0fe9	O Google Ads credita uma conversão na <t0>data do clique</t0>, não na data em que a conversão aconteceu. Quem clicou na segunda e comprou na quinta aparece na linha de segunda, e até quinta a segunda parece pior do que realmente foi.
+a26283372342	O efeito prático é que <t0>os dias recentes sempre subestimam o desempenho</t0> e vão sendo preenchidos enquanto sua janela de conversão permitir. Se você está olhando os últimos três dias e concluindo que o rastreamento quebrou, talvez esteja só olhando dados que ainda não terminaram de chegar.
+18563be8752a	<t0>O teste que resolve</t0>
+f1efeb566147	Olhe um período que terminou há pelo menos duas semanas e está totalmente fora da sua janela de conversão. Se esse período tem conversões e os dias recentes não, seu rastreamento funciona e você estava lendo um relatório incompleto. Se esse período antigo também está zerado, continue lendo.
+46490e02be79	A ordem de diagnóstico
+5b838be6570e	O status da ação de conversão te diz onde você está
+5996c78aff29	Google Ads &rarr; <t0>Metas</t0> &rarr; <t1>Conversões</t1> &rarr; <t2>Resumo</t2>. Cada ação de conversão tem um status, e esse é o diagnóstico mais rápido de toda a conta.
+f8390fca8ad6	<t0>Nenhuma conversão recente</t0>: a tag foi vista uma vez, mas nada ultimamente. Geralmente uma página ou template mudou.
+e2189b70b11a	<t0>Não verificada</t0>: o Google nunca recebeu sinal. A tag não está disparando onde você pensa.
+e242f6e7dd5a	<t0>Inativa</t0>: nada por um longo período. Trate como quebrada.
+fe40b78ea348	<t0>Registrando conversões</t0>: a tag está ok e seu problema está em outro lugar, provavelmente no próximo item.
+0bff46df9ebd	<t0>A verificação</t0>Leia o status antes de mexer em qualquer código. Ele te diz se é um problema de tag ou de relatório, e as correções são completamente diferentes.
+4bfb21414982	A conversão está registrando, mas fora da coluna
+cac0f62431a5	Este produz a versão mais irritante do problema: a ação de conversão mostra conversões claramente, mas a visão da campanha diz zero. A causa é a configuração <t0>&ldquo;Incluir em Conversões&rdquo;</t0>. Se estiver desligada, a ação continua registrando, só não aparece na coluna Conversões, e o Smart Bidding não dá lances para ela.
+3bc970d73d0f	Ações de conversão secundárias ficam excluídas por padrão, de propósito. Se alguém definiu sua principal ação de compra como secundária, tudo parece quebrado enquanto funciona perfeitamente.
+3fa1f593199e	<t0>A verificação</t0>Abra a ação de conversão e confirme que a configuração principal/secundária corresponde ao que você quer otimizar.
+d8510bbc1bec	A tag dispara, mas com o rótulo errado
+f89d82347a5d	Uma tag de conversão do Google Ads precisa de um ID de conversão e de um <t0>rótulo</t0> de conversão. O ID identifica a conta; o rótulo identifica qual ação. Copie uma tag entre duas ações de conversão, esqueça de trocar o rótulo, e a tag dispara perfeitamente, no balde errado.
+2825d8a670f4	<t0>A verificação</t0>No Tag Assistant, conclua a ação e leia o rótulo de conversão na tag disparada. Compare caractere por caractere com o rótulo na configuração da tag da ação de conversão.
+8bee5002aabb	O Modo de consentimento está negando o armazenamento, e você não configurou a modelagem
+44fe5bc47e8a	Se você adicionou um banner de consentimento (e com a LGPD no Brasil e o RGPD em Portugal, deveria), as tags agora esperam permissão. Esse é o comportamento correto. Mas um banner configurado para negar tudo por padrão, sem a atualização de consentimento conectada, significa que a tag de conversão nunca recebe permissão e nunca dispara.
+f3e25335867a	Este tem uma assinatura: as conversões despencam exatamente no dia em que o banner entrou no ar.
+ce907db7e793	<t0>A verificação</t0>Abra o site do zero, aceite os cookies, conclua a ação e confirme que a tag dispara. Depois repita recusando e confirme que ela não dispara. Os dois sentidos precisam se comportar como esperado.
+2330fbf92c97	A tag não está na página que realmente confirma a ação
+0c7a239af9d2	O clássico. A tag está no site, mas não na página de agradecimento, na página de status do pedido ou na página a que o cliente volta depois de ser redirecionado pelo meio de pagamento. Em sites de geração de leads, o equivalente é um formulário que envia por AJAX sem carregar página, então uma tag acionada por visualização de página nunca tem chance de disparar.
+6aadc3a2ba5f	<t0>A verificação</t0>Faça a conversão você mesmo, depois veja o código-fonte da página em que caiu e procure o ID de conversão.
+09d7fb0a061e	Quando funcionar, faça medir dinheiro
+9fef28112782	Fazer a tag disparar é onde a maioria para. É exatamente o ponto em que o trabalho interessante começa, porque uma contagem de conversões trata todo lead como igual, e os seus não são.
+89a16046d3ac	Em contas de geração de leads, as <t0>conversões otimizadas para leads</t0> junto com a importação de conversões offline permitem enviar o valor real de um serviço fechado de volta ao Google Ads. Os lances passam a otimizar para receita em vez de formulários preenchidos. Essa é a diferença entre um algoritmo correndo atrás de contatos e um correndo atrás de clientes.
+7557b976f127	A mecânica é a mesma do rastreamento de ligações descrito no <t0>artigo sobre serviços locais</t0>: capture o identificador do clique no envio, guarde-o junto com o lead e envie o valor de volta quando o serviço for fechado.
+61a0ae3b849d	Limites
+4bdec5d3b43c	A ordem acima é uma ordem de busca, não uma tabela de frequência: ela reflete um pequeno número de contas e a lógica de cada tipo de falha, não um estudo. O Google Ads muda a interface com frequência, então ancorei as verificações em status e payloads de tags em vez de localizações de menu sempre que pude.
+0f954270966a	Perdendo dinheiro por causa de um número em que você não pode confiar?
+1939d1c313b5	Me envie a URL do seu site e eu te digo o que seu rastreamento de conversões está fazendo. Não é preciso acesso à conta para começar.
+c2957ee97f9b	<t0>Conversões offline no Google Ads para geração de leads<t1>Como dizer ao Google Ads quais leads viraram serviços agendados.</t1></t0> <t2>Checklist de auditoria de Google Ads para geração de leads<t3>Seis verificações em ordem, da reconstrução da conta de uma clínica odontológica.</t3></t2> <t4>Prazo da Shopify de 26 de agosto: seu rastreamento sobreviveu?<t5>O que o upgrade automático remove, e a verificação de dez minutos.</t5></t4> <t6>Rastreamento de ligações no Google Ads para negócios de serviços locais<t7>Quatro formas de rastrear ligações, e o que cada uma realmente mede.</t7></t6> <t8>Pixel da Meta não rastreia compras na Shopify: o que verificar primeiro<t9>Sete causas, incluindo o pixel duplicado que divide a atribuição.</t9></t8>
+11e98c053a7e	O que é um ID de clique?
+ce096d58a24e	Um identificador único que o Google Ads adiciona ao endereço da sua página de destino quando alguém clica num anúncio. Guardá-lo junto com o lead permite dizer depois ao Google Ads qual clique gerou qual serviço.
+0317de3b1abb	Preciso criar um plugin?
+ea53e958b244	Não. O necessário é guardar cada lead com o seu ID de clique e informar o resultado de volta ao Google Ads. Escrevi um plugin porque o formulário deste cliente também estava perdendo leads quando os e-mails falhavam.
+ad69d412bafc	Por que não rastrear só os envios de formulário?
+b2ba8e95a064	Um envio de formulário mostra interesse. Um serviço agendado mostra receita. Se só o primeiro é informado, o Google Ads não tem como aprender quais cliques levam ao segundo.
+ddf1bf54ca6f	Como dizer ao Google Ads quais leads viraram serviços agendados
+e206c275880b	O Google Ads só consegue otimizar para os resultados que conhece. Se seu rastreamento para no envio do formulário, os lances aprendem a encontrar pessoas que preenchem formulários.
+51fea1d928c8	Enviar o ID de clique e o valor real do serviço de volta ao Google Ads permite que ele otimize para receita.
+009598ec96de	Esta é a abordagem que usei para uma empresa de limpeza de carpetes em Slough, no Reino Unido. Descrevo o método aqui, e o projeto ainda está em andamento.
+999ab46c501e	O problema que resolveu
+095119d40edf	O site foi lançado com um formulário padrão do Elementor, que funciona e-mail primeiro: monta um e-mail e envia. Se esse envio falha, não existe segunda cópia. O lead some e ninguém fica sabendo que ele existiu.
+90fd4df59988	Além disso, o Google Ads não tinha como ver quais cliques viravam serviços agendados, então otimizava para envios de formulário.
+1287f0378f58	Como a correção funciona
+3f7577ef58af	<t0>Salve o lead primeiro</t0>Cada lead é gravado em uma tabela do banco de dados antes de qualquer tentativa de e-mail, webhook ou chamada de API. Assim, um serviço de terceiros com falha nunca consegue quebrar a captura de leads.
+0e55d405a155	<t0>Capture o ID de clique e os parâmetros de campanha</t0>No envio, o ID de clique do Google (gclid) e os parâmetros UTM são guardados com o lead, para que cada lead continue ligado ao clique no anúncio que o gerou.
+e25252af7fc1	<t0>Registre o resultado</t0>Etapa do funil, valor do serviço e anotações são registrados em cada lead, para que a pergunta sobre quanto o investimento em anúncios rendeu possa ser respondida pelos dados.
+d9b465cfd104	<t0>Envie o valor de volta</t0>O valor real do serviço é enviado de volta ao Google Ads como conversão offline, incluindo conversões otimizadas para leads, para que os lances possam otimizar para serviços agendados.
+b3374409091c	O que eu construí, e o que você realmente precisa
+faad83d1b7ca	Construí tudo como um plugin de WordPress próprio chamado LeadBridge, sem dependências pagas e sem intermediário de terceiros guardando os dados. Fiz isso porque este cliente também precisava consertar o formulário.
+30b9be85dc76	Você não precisa do meu plugin para usar o método. Precisa dos quatro passos: guardar cada lead com segurança, manter o ID de clique junto, registrar o resultado e informar o valor de volta ao Google Ads.
+d68af3fa0e9c	Como o Google descreve, as conversões otimizadas para leads acrescentam ao ID de clique dados do cliente com hash, como um endereço de e-mail, para que ainda seja possível fazer a correspondência quando o ID de clique estiver faltando. Por isso o registro do lead deve guardar os dois.
+291746772683	<t0>Limites honestos</t0>
+c93978c50f8e	A Mr Expert é um projeto em andamento e os resultados ainda estão se formando, então não cito mudança no custo por lead nem no desempenho dos lances. Este artigo descreve como o método funciona e por que eu o construí.
+516fa6eb4b73	A construção completa, incluindo o painel único que reúne Google Ads, Search Console, Perfil da Empresa no Google, os dados de serviços e receita do LeadBridge e o Microsoft Clarity numa só visão, está no <t0>case da Mr Expert Carpet Cleaning</t0>.
+5b09a21be89c	Não. O necessário é guardar cada lead com o seu ID de clique e informar o resultado de volta ao Google Ads. Escrevi um plugin porque o formulário deste cliente também estava perdendo leads quando os e-mails falhavam.
+b2338a133a0c	O Google Ads está otimizando para os seus formulários ou para os seus serviços?
+b48ce1c9c037	<t0>Configuração de rastreamento de conversões<t1>GTM, GA4, CAPI e conversões offline.</t1></t0> <t2>Rastreamento de ligações no Google Ads para negócios de serviços locais<t3>Como contar as ligações que viram serviços.</t3></t2> <t4>Checklist de auditoria de Google Ads para geração de leads<t5>Seis verificações em ordem.</t5></t4>
+0caf3ee7e17f	De quantas páginas um negócio de serviços local precisa?
+6e933a54e5a5	Uma para cada serviço pelo qual você quer ser encontrado, com as regiões que atende descritas nela. Só crie páginas de região separadas quando tiver algo realmente diferente a dizer sobre cada região.
+b077d1550472	O Perfil da Empresa no Google sozinho basta?
+455af2f8a2a5	É um ótimo começo para o Maps e a busca local, e funciona melhor junto com um site que tenha uma página para cada serviço. Trato os dois como partes de uma única estrutura.
+5da32ac34b4e	Depende da concorrência local e da situação inicial do site e do perfil, então não dou um prazo fixo.
+bcd4708c889b	<t0>Notas de campo</t0> &nbsp;/&nbsp; SEO local
+45e30170d7a6	Uma página por serviço e região: como estruturo o SEO local de um negócio de serviços
+f07a6ba18ca3	Para um negócio de serviços local, crio uma página dedicada para cada serviço e as regiões que ele cobre, em vez de uma página tentando ranquear para tudo.
+01f6b146fe28	No site de uma empresa de limpeza de carpetes no Reino Unido, criei páginas separadas para limpeza de carpetes, sofás, colchões e limpeza comercial, voltadas para Slough, Berkshire e arredores.
+b6d0cd6ab8ec	Um negócio que oferece quatro serviços costuma ter uma página que menciona os quatro. Essa página dá ao visitante e ao Google uma correspondência fraca para cada busca individual.
+03370d910c1e	Por que páginas separadas
+be0f5bab8b9a	Quem procura limpeza de sofá quer uma página sobre limpeza de sofá. Uma página sobre carpetes, sofás, colchões e serviços comerciais não atende bem nenhuma dessas buscas. Uma página dedicada faz cada busca cair exatamente no que a pessoa pediu.
+4b44fdbba146	O que cada página precisa ter
+0aaa3d88e1da	Um serviço e um título claro
+8d4fab528b00	O título da página e o cabeçalho principal citam o serviço e a região, para que fique óbvio que a página trata de uma coisa só.
+c8acdeeeef8f	Conteúdo que pertence àquele serviço
+977d020bb820	O que está incluído, o que o serviço envolve e em quais regiões você o atende. Conteúdo que só faz sentido para esse serviço.
+c7adce277b03	Sinais de confiança ao lado da promessa
+320908395cde	Avaliações, certificações e fotos de antes e depois na página, no ponto em que o visitante decide se liga.
+90e36f23416f	As correções em volta das páginas
+6a578af77104	As páginas funcionam melhor quando o básico em volta está certo. No mesmo projeto, corrigi títulos das páginas, meta descrições, estrutura de cabeçalhos, textos alternativos de imagens e links internos, configurei e otimizei o Perfil da Empresa no Google, e verifiquei o Search Console e resolvi os problemas de rastreamento e indexação que ele mostrou.
+d5c1e93a023b	<t0>A armadilha a evitar</t0>
+7a9fbdb42c75	Não clone uma página trocando só o nome da cidade. As políticas de spam do Google chamam páginas criadas para ranquear em buscas específicas e parecidas, como variações de lugar, de abuso de páginas de entrada (doorway). Cada região que você cita deve ter algo realmente específico a dizer.
+5a814d2c5cee	A Mr Expert é um projeto em andamento e os resultados ainda estão se formando, então não cito números de posicionamento. Este artigo descreve a estrutura que usei e o raciocínio por trás dela.
+f1b83760b011	A construção completa está no <t0>case da Mr Expert Carpet Cleaning</t0>, e minha página de <t1>SEO local</t1> explica o que ofereço.
+0c6312fd771d	<t0>SEO local<t1>Perfil da Empresa no Google, páginas de serviço e correções de indexação.</t1></t0> <t2>Rastreamento de ligações no Google Ads para negócios de serviços locais<t3>Como contar as ligações que viram serviços.</t3></t2> <t4>Checklist de auditoria de Google Ads para geração de leads<t5>Seis verificações em ordem.</t5></t4>
+faab6e1ba9a3	Assumir uma conta da Meta significa herdar decisões não documentadas. Audite a mensuração antes dos criativos, porque todo julgamento se apoia em números não verificados.
+fdf24be1ca68	Auditando uma conta da Meta herdada
+b3acc0ad6742	O que devo verificar primeiro ao auditar uma conta de anúncios da Meta?
+193f3d1aafc8	Verifique a camada de mensuração antes das campanhas. Conte os pixels instalados, concilie as compras informadas com os pedidos reais de uma semana fechada e confirme para qual pixel cada campanha otimiza. Julgamentos sobre criativos e segmentação valem tanto quanto os dados de conversão por baixo deles.
+64a3979443ee	Quanto tempo leva uma auditoria de anúncios da Meta?
+8ab1d3cb2a6d	As verificações de mensuração levam algumas horas. A conciliação precisa de uma semana fechada de dados com pelo menos duas semanas, para que as janelas de atribuição tenham se encerrado. Reconstruir depois de uma correção exige mais um ou dois dias de dados limpos antes de avaliar o desempenho.
+260a26c4ade0	O que significa quando campanhas herdadas mostram ROAS alto, mas receita baixa?
+f3b62d199a36	Normalmente significa que os dados de conversão estão inflados. Causas comuns são pixels duplicados, eventos de compra disparando em páginas que não são pedidos ou eventos duplicados entre o pixel do navegador e a API de Conversões. Concilie as compras informadas com os pedidos reais da loja antes de confiar em qualquer número no nível da campanha.
+c669dc7e1370	<t0>Notas de campo</t0> &nbsp;/&nbsp; Auditoria
+fa24a52017c6	A primeira coisa a auditar numa conta de anúncios herdada não são os anúncios.
+fe9140da79db	<t0>Kamran Arshad</t0><t1>13 ago 2026</t1><t2>9 min de leitura</t2>
+91445d7b26bb	Quando você herda uma conta da Meta, audite a <t0>camada de mensuração antes das campanhas</t0>. Conte os pixels, concilie as compras informadas com os pedidos reais de uma semana fechada e mapeie para qual pixel cada campanha otimiza.
+d2fae5a6bba9	Todo julgamento que você está prestes a fazer, pausar isto, escalar aquilo, se apoia em dados de conversão que você ainda não verificou. Verifique primeiro.
+e4dba02328d5	A maioria dos checklists de auditoria começa por criativos, públicos e estrutura. Isso importa. Importa <t0>em segundo lugar</t0>, porque cada um deles é julgado com base no desempenho informado, e o desempenho informado é justamente o que uma conta herdada não te dá motivo para confiar.
+41659929e512	Assumi uma conta em que fazer isso na ordem errada teria saído caro. As campanhas com melhor desempenho no Gerenciador de Anúncios não estavam gerando nada. Audite os criativos primeiro e você concluiria que essas campanhas tinham o ângulo vencedor, e colocaria mais dinheiro nelas.
+18c77c1decfc	<t0>De onde vêm estes números</t0>
+1b89ea195ceb	Uma conta Shopify que assumi e auditei, uma marca de skincare rodando anúncios na Meta com cerca de <t0>PKR 100.000 por dia</t0>. O cliente pediu para não ser identificado, então não identifiquei. Os números são os que constavam na conta durante esse trabalho.
+f5e12a0d4ffe	Esta é <t0>uma conta</t0>, não um estudo. Estou te dando o mecanismo e um exemplo trabalhado, não uma estatística do setor. E não informo aqui as datas exatas do trabalho porque prefiro omiti-las a aproximá-las.
+076bbbb37deb	Fase um: dá para acreditar nesses números?
+3b172c283304	<t0>Conte os pixels</t0>Shopify: <t1>Configurações &rarr; Eventos de clientes</t1>, o <t2>canal de vendas Facebook &amp; Instagram</t2> e o <t3>theme.liquid</t3>, procurando por <t4>fbq</t4>. Depois confirme no navegador com o DevTools, porque configurado e disparando são coisas diferentes. Mais de um ID de pixel é uma descoberta, não um detalhe.
+a8445feea23b	<t0>Concilie uma semana fechada</t0>Compras no Gerenciador de Eventos contra pedidos reais da loja, mesma semana, mesmo fuso horário, com pelo menos duas semanas. O Gerenciador de Eventos deve se aproximar da sua contagem de pedidos e nunca ultrapassá-la.
+110b88fcdc3f	<t0>Mapeie campanhas e pixels</t0>Para cada campanha ativa, anote em qual pixel seu evento de conversão está configurado. É esse passo que transforma uma diferença vaga numa lista específica de campanhas.
+7ce0720801a3	<t0>Rastreie os pedidos de cada grupo</t0>Pegue as campanhas ligadas a cada pixel e tente encontrar na loja os pedidos que elas reivindicam. Um grupo cujos pedidos não podem ser rastreados é o seu problema, e agora você sabe exatamente quanto orçamento ele concentra.
+0a2faf84f6b5	<t0>Verifique a configuração da API de Conversões</t0>Se a CAPI estiver rodando, confirme que a desduplicação está realmente funcionando, e não apenas configurada; veja <t1>o artigo sobre desduplicação</t1>.
+71957e99aead	<t0>A pergunta que encerra a fase um</t0>
+e49ce74acd2f	Você consegue dizer, numa frase, quantas compras a loja fez na semana passada, quantas a Meta acha que ela fez, e explicar a diferença? Se não, não mexa em orçamento ainda. Toda otimização que você fizer é uma aposta em números que você não consegue defender.

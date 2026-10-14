@@ -1,0 +1,215 @@
+a534a293aec7	Stack completo
+9e22f963669b	Site no ar, stack completo de rastreamento funcionando e Google Ads rodando. GA4 e Microsoft Clarity coletando dados. Projeto em andamento: os resultados se formam à medida que as campanhas acumulam dados.
+569a90ef88ab	<t0> Ver o site no ar: mrexpertcarpetcleaning.com ↗ </t0>
+e4d4b139454e	<t0>Desenvolvimento sob medida</t0>
+945b9ac9e9a9	O formulário estava perdendo leads. Então troquei por um software que eu mesmo escrevi.
+208cfde904b9	O site foi lançado com um formulário padrão do Elementor, que funciona <t0>e-mail primeiro</t0>: ele monta um e-mail e envia. Se esse envio falha, não existe segunda cópia. O lead simplesmente some, e ninguém fica sabendo que ele existiu. Além disso, o Google Ads não tinha como ver quais cliques viravam serviços agendados, então otimizava para envios de formulário, não para receita.
+6ff9017e7bc9	Em vez de plugar um SaaS de terceiros com mensalidade e um intermediário cuidando dos dados, criei o <t0>LeadBridge</t0>, um plugin de WordPress próprio, first-party, sem dependências pagas.
+1b18e2a306ec	Arquitetura que salva primeiro
+a22ceb032ea4	Cada lead é gravado em uma tabela própria do banco de dados <t0>antes</t0> de qualquer tentativa de e-mail, webhook ou chamada de API. As integrações são, de propósito, de melhor esforço: uma API de terceiros que falha nunca consegue quebrar a captura de leads.
+26e0971a09b6	Receita de volta ao Google Ads
+9855dc4e81fb	Captura o <t0>gclid</t0> e os parâmetros UTM no envio e depois envia o valor real do serviço de volta como conversão offline, incluindo conversões otimizadas para leads. Os lances otimizam para dinheiro, não para formulários preenchidos.
+02291548ac16	Mini-CRM
+5a655ce4d06c	Etapas do funil, valor do serviço, anotações e um painel de receita, para que a pergunta mensal "quanto o investimento em anúncios realmente rendeu?" tenha uma resposta tirada do banco de dados, e não estimada.
+a357357267f9	Campos sem esquema fixo
+c6369e1fbad0	Uma coluna JSON guarda os campos enviados, então o formulário pode mudar de formato sem nenhuma migração de banco de dados. Os campos são editados pela interface de administração.
+c80ccfd9afcb	<t0>Endpoint REST que salva primeiro</t0> <t1>Proteção contra spam</t1> <t2>Captura de gclid + UTM</t2> <t3>Envio por SMTP</t3> <t4>Alertas no WhatsApp</t4> <t5>Resposta automática ao cliente</t5> <t6>Pedidos automáticos de avaliação</t6> <t7>Cópia no Google Sheets</t7> <t8>Exportação em CSV</t8> <t9>Interface de administração responsiva</t9>
+3cd86003b839	Construído como plugin padrão de WordPress em classes PHP: módulos de formulário, banco de dados, editor de campos, envio de e-mail, WhatsApp, Google Ads, estatísticas, administração e configurações. GPL-2.0+, de propriedade integral da empresa, sem licença recorrente.
+78f16719b502	<t0>Painel do cliente</t0>
+216fd558f8b4	Cinco fontes de dados, uma tela, para o cliente não precisar entrar em cinco plataformas.
+236ab35afc43	Depois que o stack de rastreamento, o GMB, o Search Console e o LeadBridge estavam todos no ar, os dados ainda ficavam espalhados por cinco plataformas diferentes. Então criei um único painel para o cliente que reúne tudo: <t0>desempenho do Google Ads</t0>, <t1>Search Console</t1> (impressões, cliques, status de indexação), atividade do <t2>Perfil da Empresa no Google</t2>, dados de serviços e receita do <t3>LeadBridge</t3> e insights de comportamento do <t4>Microsoft Clarity</t4>, tudo numa só visão.
+de3b2f082f95	Não é só conveniência. Significa que o cliente consegue ver de relance o que realmente está acontecendo em cada canal, sem me pedir um relatório nem entrar sozinho em cinco painéis separados.
+3445ece2c7e9	<t0>LeadBridge (plugin próprio)</t0> <t1>WordPress</t1> <t2>Elementor</t2> <t3>Google Tag Manager</t3> <t4>Contêiner server-side do GTM</t4> <t5>CAPI do Facebook</t5> <t6>GA4</t6> <t7>Microsoft Clarity</t7> <t8>Perfil da Empresa no Google</t8> <t9>Google Search Console</t9> <t10>Google Ads</t10> <t11>SEO local</t11> <t12>Painel unificado do cliente</t12>
+9eff394514fc	Site da Mr Expert
+2b9a9166fb6b	GA4 da Mr Expert
+20a443baf398	SEO da Mr Expert
+9a24b6d33b75	Precisa de uma estrutura digital completa como esta?
+8b5a34d5ff25	Site + rastreamento + anúncios. Numa conversa gratuita de 15 minutos eu te digo por onde começar.
+0d02200443ab	Case Brizaa | Kamran Arshad
+060f881f0fc6	Redesign da loja Shopify, anúncios na Meta e no Instagram e trabalho de CRO para a Brizaa, uma marca de skincare do Paquistão.
+c9865eaccb96	Case Brizaa
+6e6cd0d024e7	<t0>Shopify</t0> <t1>Meta &amp; Instagram Ads</t1> <t2>Marca encerrada</t2>
+ee48bd0fd694	Marca de skincare, Paquistão: redesign da loja, mídia social paga &amp; CRO
+1e9f63ffefbf	Redesign da loja Shopify
+fa5425a3b91d	Meta <t0>&amp;</t0> IG
+8683c25d3cfa	Campanhas pagas em redes sociais
+0dbf2e8b5fe7	Algumas <t0>semanas</t0>
+8e38696ec92a	Período de teste no ar
+0b9078d585fd	Uma nova marca de skincare precisava de uma loja e de uma resposta real sobre se existia demanda paga.
+926a80fe24f0	A Brizaa era uma pequena marca independente de skincare, de um amigo, vendendo pela Shopify. Como a maioria das lojas em fase inicial, precisava de uma vitrine mais forte e de uma forma de testar de verdade se o tráfego pago convertia, em vez de chutar.
+9d292a181315	Refiz a loja e depois rodei e otimizei mídia social paga em torno dela.
+72252557cf22	<t0>Redesign da loja Shopify</t0>: refiz o design e o layout da loja
+c5865a54e137	<t0>Otimização da taxa de conversão</t0>: trabalhei no layout e nas páginas de produto para melhorar a conversão dos visitantes
+dcbe901c0d07	<t0>Meta &amp; Instagram Ads</t0>: planejei, lancei e gerenciei campanhas pagas em redes sociais para a marca durante algumas semanas
+cf5d7c67c7e2	<t0>Situação atual</t0>
+88d86b7721d5	Encerrada
+dbdff9be1317	A loja, o design e o trabalho de anúncios foram concluídos e ficaram no ar por algumas semanas. A Brizaa encerrou as atividades. Está aqui como registro honesto do trabalho, não como referência ativa.
+d59fa7f6631e	<t0>Shopify</t0> <t1>Meta Ads Manager</t1> <t2>Instagram Ads</t2> <t3>CRO</t3>
+57a468e9497d	<t0>🧴</t0> <t1>Não foram guardadas capturas de tela dos painéis deste projeto; a loja não está mais no ar.</t1>
+b6e31f41dc21	Criando ou consertando uma loja Shopify?
+dd70f030306c	Vou auditar sua loja e sua estrutura de anúncios em 15 minutos e te mostrar exatamente o que está segurando as conversões.
+969ffaadb059	Case FlowBridge (clone do Wispr Flow) | Kamran Arshad
+133183c272e2	FlowBridge: um app pessoal de voz para texto para desktop, bilíngue (inglês/urdu) e construído com IA, com Groq e Gemini como fallback, estatísticas de uso e áudio que nunca é salvo.
+95940a31e4eb	Case FlowBridge (clone do Wispr Flow)
+03b8504bf05e	<t0>Projeto pessoal</t0> <t1>IA / automação</t1> <t2>Groq + Gemini</t2> <t3>Inglês / urdu</t3>
+a60eb7ff0d58	FlowBridge <t0>(clone do Wispr Flow)</t0>
+ef73cdcdbb3f	Projeto pessoal: app de IA bilíngue de voz para texto para Windows
+84457474b756	Feito com <t0>Codex</t0>
+c210d4db32e7	Desenvolvimento dirigido com IA
+d38e3d8de3fe	Groq <t0>+</t0> Gemini
+b4f4458b8ccf	Serviço de voz principal + fallback
+281d41fd4926	EN <t0>+</t0> UR
+9d26f5a02156	Ditado bilíngue
+1ea2a5fb32c7	Privacidade <t0>em primeiro lugar</t0>
+5b9cf9cf5a4b	Áudio nunca salvo em disco
+4478e943c8fa	<t0>Por que eu criei</t0>
+954f1f3e4ef8	Eu queria uma ferramenta de ditado que não só transcrevesse, mas também limpasse o texto sozinha, em dois idiomas.
+2ee59024120c	O Wispr Flow é um app comercial de voz para texto. Eu queria a mesma ideia central (segurar um atalho, falar em vez de digitar e receber um texto limpo onde estiver o cursor), mas construída por mim e minha, com suporte ao meu jeito real de trabalhar: alternando entre inglês e urdu. Então criei minha própria versão, o <t0>FlowBridge</t0>, como projeto pessoal.
+9727a19d956e	Dirigi toda a construção com o Codex e depois conectei uma infraestrutura real em volta.
+7f87df8fae6a	<t0>Construído de ponta a ponta com o Codex</t0>: em vez de escrever o app à mão, dirigi o Codex (um agente de programação com IA) para construí-lo, iterando até o fluxo ficar certo: segurar Ctrl+Espaço, falar, soltar, e o texto limpo aparece onde eu estava digitando
+849c1a8701eb	<t0>Groq como principal, Gemini como fallback</t0>: a conversão de voz para texto roda no Groq pela velocidade, com o Gemini conectado como fallback automático para o ditado não parar se um serviço tiver problemas
+1bcbb52be55e	<t0>Suporte bilíngue a inglês + urdu</t0>: o app transcreve e limpa os dois idiomas, inclusive sessões misturadas, em vez de ser só em inglês como a maioria das ferramentas de ditado
+8651019f6f0d	<t0>Estatísticas de uso integradas</t0>: uma página de Insights acompanha palavras ditadas, sessões, velocidade de fala (PPM), latência média, mistura de idiomas e em quais apps eu mais dito (Chrome, Claude, ChatGPT)
+1da38bfa04d3	<t0>Dicionário personalizado</t0>: uma seção de dicionário para palavras e termos que o modelo deve sempre acertar, em vez de brigar sempre com a mesma palavra mal entendida
+921e70fa08f9	<t0>Arquitetura com privacidade em primeiro lugar</t0>: o áudio nunca é salvo em disco; o histórico local e as chaves de API são criptografados para a minha conta do Windows; a retenção das transcrições e o tamanho do banco de dados local são configuráveis, com opções de um clique para limpar dados temporários ou abrir a pasta de dados
+89db563c7ee1	Funcionando: v2.3
+16c568ef09dc	O FlowBridge roda diariamente no meu próprio PC como ferramenta pessoal de produtividade, já na terceira versão ou além. Não é distribuído, vendido nem oferecido como produto; está aqui como demonstração de como dirijo ferramentas de programação com IA para entregar software real, funcional e cuidadoso com a privacidade, não só contas de anúncios.
+8d743f159a48	<t0>Codex</t0> <t1>API do Groq</t1> <t2>API do Gemini (fallback)</t2> <t3>Voz para texto bilíngue</t3> <t4>Estatísticas de uso</t4> <t5>Armazenamento local criptografado</t5> <t6>App para desktop Windows</t6>
+014aab51e329	<t0>Capturas de tela do app</t0>
+b29fb5cc7006	Precisa de uma ferramenta sob medida construída com IA?
+19a77a3804f7	Se você tem um fluxo de trabalho repetitivo que poderia ser automatizado, vamos conversar numa chamada gratuita de 15 minutos.
+1310da10f7f1	Case ContentBuilder | Kamran Arshad
+88336540e2d1	Diagnóstico de entregabilidade de cold e-mail (96% na caixa de entrada no Gmail, 0% na Microsoft), novo ICP e textos de outbound para a ContentBuilder, uma plataforma americana de treinamento com IA.
+b57ece814bc0	Case ContentBuilder
+d1fc7d8f5c5d	<t0>🇺🇸 SaaS B2B nos EUA</t0> <t1>Outbound &amp; entregabilidade</t1> <t2>ICP &amp; go-to-market</t2> <t3>ago – set 2026</t3>
+5e1756fb55b7	Content<t0>Builder</t0>
+ac571d1dfa3c	Plataforma americana de treinamento com IA: descobrir por que o cold e-mail não chegava e reconstruir o go-to-market em torno do comprador certo
+5e5541b19896	96% <t0>vs</t0> 0%
+95c8a0fd32b4	Entrada na caixa, Gmail vs Microsoft. O problema, encontrado e isolado
+383d76a675fa	Segmentos pesquisados, reduzidos a três para teste
+21c04d9c3766	Auditorias, pesquisas, textos, planos e planilhas de acompanhamento entregues
+7be0fc7d557d	<t0>O cliente</t0>
+f90dd65e011d	Um produto forte, um "escritório de marketing" com IA e um motor de outbound que não gerava respostas.
+52725c795cbe	A <t0>ContentBuilder</t0> é uma plataforma americana de treinamento com IA. Ela transforma o conhecimento que a empresa já tem (documentos, procedimentos, gravações, políticas) em treinamentos estruturados, multilíngues e narrados por IA, com entrega completa via LMS (SCORM/xAPI, SSO/SCIM). Seu módulo irmão, a <t1>Lumi</t1>, cuida do trabalho de RH: escrever descrições de vagas, publicar vagas, triar candidatos e conduzir as primeiras entrevistas.
+c1446195557a	Entrei como gerente de marketing contratado. A empresa tinha um "escritório de marketing" com IA, com departamentos e agentes já configurados, mas nada disso estava conectado a plataformas reais como Search Console, GA4, publicação em redes sociais ou Canva. Os cold e-mails estavam saindo, mas as respostas não voltavam.
+3b5fcfb411a7	<t0>01: Diagnóstico de entregabilidade</t0>
+b19564461fa9	O problema não era o texto. A Microsoft mandava todo e-mail para o spam.
+6c15a9ca9938	A suposição fácil era texto ruim. Antes de reescrever qualquer coisa, fiz um teste completo de entrada na caixa em todas as caixas de envio e li os cinco sub-relatórios:
+dccd63af92c2	<t0>Google → Google: 96% na caixa de entrada.</t0> Conteúdo, SPF, DKIM e DMARC aprovados. Pontuação de filtro de spam 0, nenhuma blacklist.
+6d37d3447e62	<t0>Google → Microsoft: 0% na caixa de entrada, 100% spam.</t0> Todo e-mail para um endereço Outlook ou Microsoft 365 caía no lixo eletrônico.
+95cd3a3300ab	Isso isolou a falha na <t0>reputação do remetente junto à Microsoft</t0>. Conteúdo, autenticação e blacklists foram todos descartados. Para um público B2B, em que boa parte das empresas usa Microsoft 365, só isso já explica a maioria das respostas que faltavam.
+8852683d97dc	O plano de correção: cadastro no Microsoft SNDS/JMRP, 2–3 domínios de envio em um segundo provedor, limite de 25–40 e-mails por caixa por dia, segmentação dos envios pelo provedor de e-mail do destinatário e desativação do rastreamento de abertura. Também dimensionei o que a meta de alto volume do cliente exigiria na prática: cerca de 200 caixas aquecidas em vários domínios, com um aquecimento de 3–4 semanas que não dá para pular nem comprar.
+e983046e61a1	<t0>02: ICP &amp; segmentação</t0>
+d353a4102402	Reconstruí o cliente ideal e encontrei um gatilho que supera segmento e número de funcionários.
+2de9371d306f	<t0>ICP reconstruído do zero</t0> quando o foco passou para o produto de RH: de diretores de RH/T&amp;D em empresas de 100–2.000 pessoas para <t1>donos, fundadores e COOs de empresas sem um profissional dedicado de RH</t1>, que sentem a dor da contratação diretamente
+315856b6b042	<t0>O melhor sinal de segmentação: 5+ vagas abertas neste momento.</t0> É público, datado e gratuito de encontrar, e prevê intenção de compra melhor do que segmento ou porte da empresa
+4e479431655a	<t0>15 segmentos pesquisados, reduzidos a 3</t0> para teste em paralelo: serviços residenciais e de campo, cuidados domiciliares e de idosos, e redes de salões/restaurantes com 10+ unidades
+71c52cc7105f	<t0>Cinco combinações completas de ICP + oferta</t0> para o produto principal de treinamento, além de uma <t1>revisão manual de aderência de 40 empresas</t1> para conferir se os leads reais batiam com o ICP antes de qualquer orçamento ir para envios
+ea66bda19da6	<t0>03: Textos de outbound &amp; montagem das campanhas</t0>
+91640dc5be73	Reescrevi as sequências para acompanhar o que funciona hoje em cold e-mail.
+12f6a6526f89	Corrigi problemas estruturais nos e-mails originais: eram assinados pela "equipe" em vez de uma pessoa real, pediam uma demonstração de 30 minutos logo no primeiro contato e tinham rodapés pesados. Substituí por <t0>e-mails assinados por uma pessoa e um pedido leve de 15 minutos</t0>
+5b82c13fd968	Escrevi um <t0>lançamento com cinco campanhas</t0> usando dados de benchmark atuais: menos de 80 palavras por e-mail, 4–7 contatos por sequência e a maior parte do esforço no primeiro e-mail, já que é dele que vem a maioria das respostas
+2c8692453391	Entreguei a especificação completa do lançamento: públicos, estruturas de campanha e uma <t0>configuração de agente para tratar respostas</t0>, com uma tabela de resposta para cada tipo de retorno
+4d8a536429c9	Desenhei uma nova oferta (um "pacote de prática para a próxima contratação") e um documento de aprovação pronto para o fundador para a ação de outbound nos EUA
+d2a646af300f	<t0>04: Protegendo a marca</t0>
+c0b6dfabf7d4	Conferi se o produto correspondia à proposta e apontei riscos legais antes de qualquer e-mail sair.
+434f424b5eda	<t0>Reauditei o produto no ar em relação à promessa do outbound</t0> e vi que ele era mais limitado que "toca o seu RH". Apontei a diferença antes que ela chegasse aos prospects e prejudicasse a confiança
+55c666281246	<t0>Pesquisa de compliance sobre ferramentas de IA para contratação:</t0> a Local Law 144 de Nova York (auditorias anuais e independentes de viés, resultados publicados, aviso aos candidatos com 10 dias úteis de antecedência) e regras parecidas em Illinois e no Colorado, que afetam para quem um produto de triagem de candidatos pode ser oferecido com segurança
+66aa900fc7e6	Revisei uma proposta de incentivo a avaliações com base na <t0>regra da FTC sobre avaliações e depoimentos de consumidores</t0>
+e8a6de65b47e	<t0>05: SEO, planejamento &amp; relatórios</t0>
+5cc846b45fb6	Baseei tudo em dados reais e reportei resultados, não atividades.
+622f7a19292e	<t0>Auditoria completa de SEO &amp; CRO</t0> do contentbuilder.ai, além de uma <t1>auditoria ao vivo no Google Search Console</t1> usando dados reais de indexação e consultas em vez de estimativas de terceiros
+5a55b27812db	<t0>Plano de pesquisa &amp; execução de 20 dias</t0> com uma planilha de acompanhamento funcionando e um resumo de uma página para o fundador
+1216c3494cc7	Montei um <t0>curso de demonstração</t0> no produto e roteirizei um <t1>tour do produto de 90 segundos</t1> para uso em vendas
+e8c760507ade	Configurei <t0>relatórios baseados em resultados</t0>: entregues, % de bounce, entrada na caixa, respostas, respostas positivas, reuniões marcadas, reuniões realizadas, clientes fechados, MRR adicionado. As atualizações diárias seguiam um formato fixo: decisão, porquê, números, aprendizados, amanhã
+071f47ca1c7b	<t0>Entrega</t0>
+a206f25ea468	Entrega organizada
+d04f08bc68e6	No fim do contrato entreguei uma pasta de transição estruturada: auditoria de outreach, pesquisa de ICP e oferta, textos e configuração das campanhas, estratégia, auditoria de SEO/CRO e o plano de execução, abrindo com um resumo da descoberta sobre entregabilidade e das correções. Todas as contas criadas durante o trabalho foram devolvidas e as chaves de API foram revogadas.
+27fdac70fe2a	<t0> Ver o site no ar: contentbuilder.ai ↗ </t0>
+d0482da8dfde	<t0>Instantly.ai</t0> <t1>Google Workspace</t1> <t2>Microsoft SNDS / JMRP</t2> <t3>Google Search Console</t3> <t4>GA4</t4> <t5>Canva</t5> <t6>Claude</t6> <t7>Codex</t7>
+bc95a3a073d4	<t0>O produto</t0>
+94511aec023f	Enviando cold e-mail e sem receber respostas?
+258c73f0477a	Muitas vezes não é o texto. Numa conversa gratuita de 15 minutos eu verifico onde seus e-mails realmente chegam (Gmail vs Outlook) e para quem você está enviando.
+ef85c0f95be0	Política de privacidade | Kamran Arshad
+de18dc177e1a	Política de privacidade do marketingkamran.com: como Kamran Arshad coleta, usa e protege suas informações.
+902c91d94e0f	Jurídico
+9db108ba6b7f	Política de privacidade
+283171aca3c4	Rastreamento é o meu trabalho, então é importante para mim que você saiba exatamente o que acontece com suas informações quando visita este site ou entra em contato.
+9e3c5b08503b	<t0></t0>Última atualização: 15 de junho de 2026
+7e439c353ec8	Nesta página
+a8cd3cac92b0	<t0>Visão geral</t0>
+b4cf914719e1	<t0>Informações que coleto</t0>
+7ee683096150	<t0>Como as uso</t0>
+bcf27d9e0d3c	<t0>Cookies &amp; rastreamento</t0>
+c86fedee7aca	<t0>Serviços de terceiros</t0>
+635f89039cd7	<t0>Retenção de dados</t0>
+f1ce031fb72b	<t0>Seus direitos</t0>
+ecffb702c7ff	<t0>Segurança</t0>
+1eca0531549e	<t0>Alterações</t0>
+23e650f219bc	<t0>Contato</t0>
+419300be5f23	<t0>01</t0> Visão geral
+dcf7928b816f	Esta política de privacidade explica como <t0>Kamran Arshad</t0> ("eu", "me", "meu") trata as informações coletadas por este site (<t1>marketingkamran.com</t1>). Gerencio campanhas no Google Ads e na Meta, faço SEO e trabalho com Perfis da Empresa no Google, e crio sites, baseado em Islamabad, no Paquistão, atendendo clientes no mundo todo.
+696000a0e845	Ao usar este site ou entrar em contato comigo por ele, você concorda com as práticas descritas abaixo. Se não concordar, por favor não use o site nem envie seus dados.
+786ae6ca8dcc	<t0>02</t0> Informações que coleto
+021c422bc918	Informações que você me fornece
+002307775c1b	Quando você preenche o formulário de contato ou de "auditoria gratuita", coleto os dados que você decide compartilhar:
+f08312dbfc66	<t0>Nome</t0>: para saber com quem estou falando
+a448c33e6563	<t0>E-mail</t0>: para responder à sua solicitação
+5e9b1867a119	<t0>Telefone / WhatsApp</t0>: se você informar um para ter uma resposta mais rápida
+4bb91f8d1fd5	<t0>Conteúdo da mensagem</t0>: tudo o que você me contar sobre seu negócio, suas contas de anúncios ou aquilo em que precisa de ajuda
+8a91412513ae	Informações coletadas automaticamente
+78425654b2bb	Como a maioria dos sites, este registra automaticamente alguns dados técnicos quando você o visita, como sua localização aproximada, tipo de navegador e dispositivo, páginas vistas e como você chegou até aqui. Isso é coletado por meio de cookies e ferramentas de análise (veja as seções abaixo).
+574c98b5a0a4	<t0>03</t0> Como uso suas informações
+1817830bb5fd	Uso suas informações apenas para finalidades claras e limitadas:
+b117b4c3831b	Para responder à sua solicitação e realizar a auditoria gratuita ou o serviço que você pediu
+6c4b866978e0	Para me comunicar com você sobre um projeto em que estejamos trabalhando juntos
+c157dc063f50	Para entender como os visitantes usam o site e poder melhorá-lo
+d311cfb301a0	Para medir quais ações de marketing realmente trazem pessoas até aqui
+58bb0ce6f17e	<t0>Não vendo seus dados.</t0> Suas informações nunca são vendidas, alugadas ou negociadas. Não incluo você em listas de e-mail nem envio e-mails de marketing, a menos que você tenha pedido especificamente.
+f738f21bd766	<t0>04</t0> Cookies &amp; rastreamento
+5bf911f1770e	Este site usa cookies e tecnologias semelhantes por meio do <t0>Google Tag Manager</t0>, que pode carregar ferramentas como o Google Analytics (GA4) e pixels de anúncios. Eles me ajudam a entender o tráfego e medir o desempenho.
+0211de1de9ec	Você pode controlar ou bloquear cookies nas configurações do seu navegador a qualquer momento. Bloqueá-los não quebra o site, embora algumas estatísticas anônimas possam deixar de ser registradas. A maioria dos navegadores também permite navegar em modo privado/anônimo, que limita o rastreamento.
+e8178736bfc6	<t0>05</t0> Serviços de terceiros
+c5a800ed5b98	Alguns serviços confiáveis ajudam a manter este site. Cada um tem sua própria política de privacidade sobre como trata os dados:
+fae674ce7c93	<t0>Google</t0> (Tag Manager &amp; Analytics): análise do site e gestão de tags. Veja a <t1>Política de Privacidade do Google</t1>.
+0338f532243d	<t0>FormSubmit</t0>: entrega os envios do formulário de contato no meu e-mail. Veja o <t1>FormSubmit</t1>.
+7ed8477f0c40	<t0>GitHub Pages</t0>: hospeda este site. Veja a <t1>Declaração de Privacidade do GitHub</t1>.
+532475008118	<t0>Google Fonts</t0>: carrega as fontes usadas neste site.
+1ed39938a417	Não controlo como esses terceiros tratam os dados e não sou responsável pelas práticas deles, mas trabalho apenas com fornecedores confiáveis.
+9eb7eed1cbbc	<t0>06</t0> Retenção de dados
+7d3ed11a2ed7	Guardo os dados das solicitações apenas pelo tempo necessário para responder a você e, quando for o caso, durante nossa relação de trabalho mais um período razoável depois, para registro. Se quiser que seus dados sejam apagados antes, é só pedir (veja <t0>Contato</t0>) e eu os apago.
+98b3b544e10a	<t0>07</t0> Seus direitos
+8466887157fa	Onde quer que você esteja, pode me pedir para:
+6002518ff34b	<t0>Acessar</t0> as informações que tenho sobre você
+73d69365ffcc	<t0>Corrigir</t0> qualquer coisa que esteja errada
+1fd3116e7dbd	<t0>Apagar</t0> suas informações dos meus registros
+76619002ef1a	<t0>Deixar de receber</t0> qualquer contato futuro
+27065f21c54b	Para fazer um pedido, envie um e-mail para <t0>hello@marketingkamran.com</t0>. Responderei o mais rápido que puder.
+6ddcd74d8169	<t0>08</t0> Segurança
+5172708f96c1	Tomo medidas razoáveis para manter suas informações seguras e só as compartilho com os prestadores de serviço listados acima. Ainda assim, nenhum meio de transmissão pela internet é completamente seguro, então não posso garantir segurança absoluta.
+875233b8a071	<t0>09</t0> Alterações nesta política
+dd06d51897e4	Posso atualizar esta política de tempos em tempos, conforme o site ou meus serviços mudarem. Quando isso acontecer, atualizarei a data de "Última atualização" no topo desta página. Mudanças significativas serão deixadas claras aqui.
+89d8f0617d9d	<t0>10</t0> Contato
+985fecae6c3f	Dúvidas sobre esta política ou seus dados? Fale comigo quando quiser:
+f3a7ff257d46	Anúncios · SEO · Web · Rastreamento · Islamabad, Paquistão
+f65f9451dde7	<t0>✉&nbsp;&nbsp;hello@marketingkamran.com</t0> <t1>💬&nbsp;&nbsp;+92 332 525 2517</t1> <t2>in&nbsp;&nbsp;linkedin.com/in/kamran-arshad24</t2>
+03b21058c043	<t0>Sobre</t0> <t1>Cases</t1> <t2>Serviços</t2> <t3>Política de privacidade</t3>
+d9f27fb8faaf	Diagnóstico de rastreamento | Kamran Arshad
+c04d3194c573	Notas de campo sobre rastreamento de conversões quebrado. Pixel da Meta, GA4, Google Ads e Snapchat. Escritas a partir de contas reais, com os números e as datas.
+453eb73c4cca	Diagnóstico de rastreamento
+fda2896defe8	Notas de campo sobre rastreamento de conversões quebrado, escritas a partir de contas reais.
+70898476f085	<t0>Cases</t0> <t1>Serviços</t1> <t2>FAQ</t2> <t3>Auditoria gratuita</t3>
+0c8de82abd2e	Notas de campo
+3df51362a77e	Diagnóstico de rastreamento, a partir de contas reais.
+12899bd71a68	A maioria dos artigos sobre rastreamento de conversões quebrado é escrita por empresas de software que vendem a solução. Estes foram escritos de dentro de contas de anúncios reais, com os números, as datas e as partes que eu não consegui explicar. Os originais estão em inglês; estas são as traduções.
+dbe6cf999dac	<t0>10 out 2026</t0><t1>Google Ads</t1><t2>3 min de leitura</t2>
+cdec81878737	Checklist de auditoria de Google Ads para geração de leads
+28ef280e85e5	Seis verificações, em ordem, para uma conta de Google Ads que vive de ligações e formulários de contato. Tiradas da reconstrução da conta de uma clínica odontológica.
+7adc94c18999	Conversões offline no Google Ads para geração de leads
+b6678d7542da	Como dizer ao Google Ads quais leads viraram serviços agendados: salvar o lead, guardar o ID de clique, registrar o resultado, enviar o valor de volta.
+7ec78fa8d5c0	<t0>10 out 2026</t0><t1>SEO local</t1><t2>3 min de leitura</t2>
+77c9f85b2f41	Páginas de serviço para SEO local: uma página por serviço e região
+ce044c7aa5c8	Por que um negócio de serviços local precisa de uma página dedicada para cada serviço e região, e como estruturei uma para uma empresa de limpeza de carpetes no Reino Unido.
+c8c84c7b7b59	<t0>13 ago 2026</t0><t1>Estratégia</t1><t2>8 min de leitura</t2>
+30afd4a6106d	Você não consegue escalar uma campanha em que não confia
+19a22b37cda8	Os conselhos de escala mandam apostar no seu melhor ROAS. É um bom conselho, construído sobre uma suposição que ninguém verifica: que o ROAS informado reflete vendas reais. Quando não reflete, escalar acelera o prejuízo.
