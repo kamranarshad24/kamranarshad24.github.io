@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Meta-pixel meet geen Shopify-aankopen: wat u controleert</title>
+<meta name="description" content="De pixel laadt, Pixel Helper is groen, en Events Manager toont geen aankopen. Zeven oorzaken in de volgorde waarin u ze controleert, inclusief het probleem van de dubbele pixel.">
+<link rel="canonical" href="https://marketingkamran.com/nl/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://marketingkamran.com/nl/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<meta property="og:title" content="Meta-pixel meet geen Shopify-aankopen: wat u controleert">
+<meta property="og:description" content="De pixel laadt, Pixel Helper is groen, en Events Manager toont geen aankopen. Zeven oorzaken in de volgorde waarin u ze controleert, inclusief het probleem van de dubbele pixel.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meta-pixel meet geen Shopify-aankopen: wat u controleert">
+<meta name="twitter:description" content="De pixel laadt, Pixel Helper is groen, en Events Manager toont geen aankopen. Zeven oorzaken in de volgorde waarin u ze controleert, inclusief het probleem van de dubbele pixel.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Meta-pixel meet geen Shopify-aankopen: wat u controleert",
+  "description": "De pixel laadt, Pixel Helper is groen, en Events Manager toont nog steeds geen aankopen. Zeven oorzaken in de volgorde waarin u ze het best controleert, inclusief het probleem van de dubbele pixel dat uw attributie halveert zonder ooit kapot te lijken.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/nl/",
+    "jobTitle": "Specialist in online advertenties & conversietracking"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html",
+    "inLanguage": "nl"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "nl"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Praktijknotities",
+      "item": "https://marketingkamran.com/nl/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Meta-pixel meet geen aankopen"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom meet mijn Meta-pixel geen aankopen in Shopify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest voorkomende oorzaken zijn twee tegelijk geïnstalleerde pixels die de data splitsen, een pixel die ontbreekt op de pagina waar de klant na het betalen echt terechtkomt, een aankoopevent dat zonder verplichte parameters wordt afgevuurd, of een checkout die uw domein verlaat waardoor de browsersessie breekt voordat het event kan afgaan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunnen twee Facebook-pixels ontbrekende aankopen veroorzaken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Als één pixel via het Shopify-verkoopkanaal is geïnstalleerd en een andere in het thema is geplakt, kunnen events zich over beide verdelen. Elke pixel rapporteert dan een deel van de waarheid, en geen van beide totalen ziet er duidelijk fout uit. Daarom kan dit maandenlang onopgemerkt blijven."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe controleer ik of het aankoopevent van mijn Meta-pixel werkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plaats een echte bestelling en kijk naar de Network-tab in Chrome DevTools, gefilterd op facebook.com of facebook.net. Controleer of er een Purchase-event afgaat met value, currency en een event-ID. Controleer daarna of het in Events Manager aankomt; dat kan een paar uur duren."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/nl/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/nl/blog/">Praktijknotities</a> <a href="/nl/#work">Cases</a> <a href="/nl/#services">Diensten</a> <a class="btn" href="/nl/#contact">Gratis audit</a>
+    <details class="lang-sw"><summary aria-label="Language">NL</summary><ul><li><a href="/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/pt/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/nl/blog/">Praktijknotities</a> &nbsp;/&nbsp; Meta-pixel</div>
+    <h1>Uw Meta-pixel gaat af. Uw aankopen verschijnen nog steeds niet.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>12 aug 2026</span><span>9 min lezen</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Laadt uw Meta-pixel maar verschijnen aankopen nooit, controleer dan in deze volgorde: <strong>twee tegelijk geïnstalleerde pixels</strong>, de pixel die ontbreekt op de echte bevestigingspagina, een aankoopevent zonder <code>value</code> en <code>currency</code>, een externe betaalomleiding die de sessie breekt, en deduplicatie tegen een Conversions API-feed.</p>
+      <p>De eerste komt het vaakst voor en is het moeilijkst te zien, omdat niets kapot lijkt.</p>
+    </div>
+
+    <p>&ldquo;De pixel gaat af&rdquo; en &ldquo;mijn aankopen worden gemeten&rdquo; zijn twee verschillende beweringen, en in de ruimte daartussen lekken de meeste Shopify-advertentiebudgetten weg. Dat Pixel Helper groen wordt, vertelt u dat er een pixel op de pagina staat. Het zegt niets over of het juiste event, met de juiste parameters, de juiste pixel bereikte.</p>
+
+    <h2>Begin hier: heeft u meer dan één pixel?</h2>
+
+    <p>Dit controleer ik als eerste bij elk account, en het is het probleem dat ik echt in de praktijk ben tegengekomen in plaats van erover te lezen.</p>
+
+    <p>In één webshop die ik auditte, waren <strong>twee pixels tegelijk geïnstalleerd</strong>: één via de Shopify-integratie, één direct in het thema geplakt. Beide werkten technisch. Beide rapporteerden. Geen van beide rapporteerde alles, omdat events zich over beide verdeelden afhankelijk van hoe de pagina laadde.</p>
+
+    <p>Dat dit zo lang blijft bestaan, komt doordat het nooit kapot lijkt. Er is geen foutmelding. Pixel Helper is groen. Events Manager toont aankopen, alleen minder dan u echt had. En tenzij u gaat zitten en de pixel afstemt op het eigen aantal bestellingen van Shopify, heeft u geen reden om te vermoeden dat het cijfer maar een deel is.</p>
+
+    <div class="note">
+      <b class="l">Wat ik hier wel en niet kan beweren</b>
+      <p>Ik vond dit in de webshop van één klant, en het repareren veranderde wat hun rapportage liet zien. Ik ga er geen herstelpercentage aan hangen, want het eerlijke antwoord is dat gesplitste attributie en budgetverspilling verwant zijn maar niet gelijk, en ik geef u liever het mechanisme dan een cijfer dat ik niet volledig kan verdedigen.</p>
+      <p>Het mechanisme is hoe dan ook wat telt: <strong>twee pixels betekent dat elk een deel van de waarheid ziet</strong>, en Meta optimaliseert op wat het ziet.</p>
+    </div>
+
+    <h3>Zo controleert u het</h3>
+
+    <p>Kijk in het Shopify-beheer op drie plekken, want een pixel kan op elk ervan zijn geïnstalleerd en niets waarschuwt u voor de andere:</p>
+
+    <ul>
+      <li><strong>Instellingen &rarr; Klantevents</strong>: hier staan eigen pixels</li>
+      <li><strong>Verkoopkanaal Facebook &amp; Instagram</strong>: de officiële integratie</li>
+      <li><strong>Onlinewinkel &rarr; Thema's &rarr; Code bewerken</strong>: zoek in <code>theme.liquid</code> naar <code>fbq</code> of <code>connect.facebook.net</code></li>
+    </ul>
+
+    <p>Vindt u op meer dan één van die plekken een pixel-ID, dan is dat uw probleem. Kies één methode (meestal is het verkoopkanaal de juiste) en verwijder de andere.</p>
+
+    <h2>De rest van de volgorde</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>De pixel staat niet op de pagina die de klant echt bereikt</h3></div>
+      <p>Iedereen installeert sitebreed en neemt aan dat de bevestigingspagina dat overneemt. Vaak is dat niet zo, omdat die pagina buiten uw thema kan worden opgebouwd. Gebruikt u upsells na de aankoop, dan is de pagina die een klant direct na het betalen ziet misschien niet de pagina die u als bedankpagina beschouwt.</p>
+      <div class="check"><b>De controle</b>Rond een echte bestelling af. Bekijk op de pagina waar u terechtkomt de broncode en zoek naar uw pixel-ID. Leid het niet af uit het thema.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Het Purchase-event gaat af zonder de verplichte parameters</h3></div>
+      <p>Een <code>Purchase</code>-event zonder <code>value</code> en <code>currency</code> is bijna nutteloos. Meta kan niet optimaliseren op omzet waarover het nooit is geïnformeerd, en bieden op waarde heeft niets om mee te werken. Ontbrekende <code>content_ids</code> breken daarbovenop de catalogusmatching en dynamische retargeting.</p>
+      <div class="check"><b>De controle</b>Filter in de Network-tab op <code>facebook</code> en lees de querystring van het aankoopverzoek. Controleer of <code>value</code>, <code>currency</code> en <code>content_ids</code> allemaal aanwezig en gevuld zijn.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>De checkout verlaat uw domein en de sessie breekt</h3></div>
+      <p>Als de betaling wordt overgedragen aan een externe gateway en de klant daarna terugkomt op een pagina met de bestelbevestiging, kan dat rondje de browsersessie breken waarvan de pixel afhangt. De bestelling wordt afgerond; het event komt niet aan, of komt aan zonder de identificatoren die nodig zijn om het toe te schrijven.</p>
+      <div class="check"><b>De controle</b>Verlaat uw betaalproces uw domein? Zo ja, dan is tracking alleen via de browser een kwestie van best-effort en heeft u de Conversions API nodig.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Deduplicatie verwijdert het event bewust</h3></div>
+      <p>Gebruikt u de pixel en de Conversions API samen (wat u zou moeten doen), dan dedupliceert Meta op <code>event_id</code>. Zijn browser en server het oneens over die ID, dan telt u alles dubbel of verliest u ongemerkt één kant. Eén kant verliezen ziet er precies uit als &ldquo;de pixel werkt niet meer.&rdquo;</p>
+      <div class="check"><b>De controle</b>Leg voor één bestelling de <code>event_id</code> vast die de browser stuurde en die uw server stuurde. Ze moeten identiek zijn.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">06</span><h3>Adblockers en trackingbescherming</h3></div>
+      <p>Een flink deel van het verkeer blokkeert browsertracking volledig. Dat is geen bug die u kunt repareren: het is een blijvende belasting op meting aan de clientkant, en het is de reden dat een opzet met alleen de browser altijd te weinig telt. De oplossing is geen reparatie; het is de Conversions API.</p>
+      <div class="check"><b>De controle</b>Vergelijk het aantal aankopen in Events Manager met het aantal bestellingen in Shopify over dezelfde periode. Een aanhoudend verschil dat meegroeit met het volume, is meestal dit.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">07</span><h3>U kijkt te vroeg</h3></div>
+      <p>De rapportage in Events Manager is niet direct. Wacht een paar uur en kijk opnieuw voordat u concludeert dat een event ontbreekt. Ik heb mensen een werkende checkout zien herschrijven omdat ze negentig seconden na een testbestelling naar een dashboard keken.</p>
+      <div class="check"><b>De controle</b>Gebruik de tool Test Events voor directe feedback; gebruik Events Manager morgen voor het volume.</div>
+    </div>
+
+    <h2>De afstemming die niemand doet</h2>
+
+    <p>Dit is de oefening die problemen vindt die geen checklist vindt. Kies één week. Noteer drie cijfers:</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Bron</th><th>Wat het telt</th><th>Verwachte verhouding</th></tr></thead>
+        <tbody>
+          <tr><td>Bestellingen in Shopify</td><td>Elke betaalde bestelling, punt</td><td>De werkelijkheid</td></tr>
+          <tr><td>Aankopen in Meta Events Manager</td><td>Ontvangen aankoopevents</td><td>Moet Shopify benaderen, nooit overschrijden</td></tr>
+          <tr><td>Conversies in Meta Ads Manager</td><td>Aankopen die Meta aan advertenties toeschrijft</td><td>Een deelverzameling; niet alle verkopen komen uit advertenties</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>De meeste mensen vergelijken het verkeerde paar en raken in paniek. Conversies in Ads Manager <em>horen</em> lager te zijn dan bestellingen in Shopify, omdat niet elke klant via een advertentie kwam. Het cijfer dat dicht bij Shopify zou moeten liggen, is <strong>aankopen in Events Manager</strong>. Ligt dat ver onder uw aantal bestellingen, dan heeft u een trackingprobleem en geen attributievraag.</p>
+
+    <p>En ligt Events Manager <em>hoger</em> dan Shopify, dan heeft u het omgekeerde probleem, meestal dubbele events, en dat is <a href="/nl/blog/capi-duplicate-purchase-events-deduplication.html">een ander artikel</a>.</p>
+
+    <h2>Wat ik u niet vertel</h2>
+
+    <p>Ik heb u geen verwacht verschilpercentage gegeven, omdat de eerlijke bandbreedte afhangt van uw verkeersmix, uw checkout, de browsers van uw klanten en uw land, en elke gepubliceerde benchmark die ik heb gezien komt van een bedrijf dat de oplossing verkoopt. Bepaal uw eigen uitgangswaarde als alles werkt, en zie afwijking van <em>uw</em> cijfer als het signaal.</p>
+
+    <p>De rangorde hierboven weerspiegelt een klein aantal accounts plus wat de soorten fouten logisch impliceren. Zie het als een verstandige zoekvolgorde, niet als statistiek.</p>
+
+
+    <div class="cta">
+      <h2>Wilt u dat iemand er gewoon naar kijkt?</h2>
+      <p>Stuur me de URL van uw webshop. Ik vertel u wat uw pixel echt doet, en om te beginnen hoeft u mij nergens toegang toe te geven.</p>
+      <a class="btn" href="/nl/#contact">Vraag een gratis trackingaudit aan &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Gerelateerde praktijknotities</h2>
+      <a href="/nl/blog/shopify-additional-scripts-deadline-tracking.html">De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<span>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</span></a> <a href="/nl/blog/capi-duplicate-purchase-events-deduplication.html">Dubbele aankoopevents na het installeren van de Conversions API<span>Hoe u bewijst dat deduplicatie echt werkt en niet alleen ingesteld is.</span></a> <a href="/nl/blog/snapchat-purchase-event-not-firing.html">Snapchat-aankoopevents worden niet geactiveerd: de diagnosevolgorde<span>Zes oorzaken gerangschikt, met echte cijfers uit Ads Manager.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Specialist in online advertenties &amp; tracking</span> <span><a href="/nl/">Home</a> &middot; <a href="/nl/blog/">Praktijknotities</a> &middot; <a href="/nl/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-nl.js" defer></script>
+</body>
+</html>

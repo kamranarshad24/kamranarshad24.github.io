@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Google Ads-conversietracking werkt niet: diagnosevolgorde</title>
+<meta name="description" content="Toont Google Ads geen conversies, dan is er een korte lijst met oorzaken. Hier zijn ze in diagnosevolgorde, met een controle voor elk en waarom een werkende tag niets kan rapporteren.">
+<link rel="canonical" href="https://marketingkamran.com/nl/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://marketingkamran.com/nl/blog/google-ads-conversion-tracking-not-working.html">
+<meta property="og:title" content="Google Ads-conversietracking werkt niet: diagnosevolgorde">
+<meta property="og:description" content="Toont Google Ads geen conversies, dan is er een korte lijst met oorzaken. Hier zijn ze in diagnosevolgorde, met een controle voor elk en waarom een werkende tag niets kan rapporteren.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Ads-conversietracking werkt niet: diagnosevolgorde">
+<meta name="twitter:description" content="Toont Google Ads geen conversies, dan is er een korte lijst met oorzaken. Hier zijn ze in diagnosevolgorde, met een controle voor elk en waarom een werkende tag niets kan rapporteren.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google Ads-conversietracking werkt niet: diagnosevolgorde",
+  "description": "Rapporteert Google Ads geen conversies, dan is er een korte lijst met oorzaken, en ze zijn niet even waarschijnlijk. Hier zijn ze in diagnosevolgorde, met de controle voor elk, plus de reden dat een werkende tag wekenlang toch niets kan rapporteren.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/nl/",
+    "jobTitle": "Specialist in online advertenties & conversietracking"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html",
+    "inLanguage": "nl"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "nl"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Praktijknotities",
+      "item": "https://marketingkamran.com/nl/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Google Ads-conversietracking"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Waarom werkt mijn Google Ads-conversietracking niet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De meest voorkomende oorzaken zijn: de tag staat niet op de pagina die de actie bevestigt, de conversieactie heeft een categorie- of telinstelling die haar verbergt, de tag wordt afgevuurd maar is niet gekoppeld aan de juiste conversieactie, toestemmingsinstellingen blokkeren de tag, of attributievensters zorgen ervoor dat de conversie nog niet is gerapporteerd."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt het voordat Google Ads conversies toont?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Het kan tot 24 uur duren voordat conversies in de rapportage verschijnen, en conversies worden toegeschreven aan de datum van de klik in plaats van de datum van de conversie. Recente dagen zien er dus altijd slechter uit dan ze uiteindelijk zullen zijn. Dat is een normaal effect van de rapportage, geen fout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe test ik of mijn Google Ads-conversietag wordt afgevuurd?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebruik Google Tag Assistant in de foutopsporingsmodus, voer de conversieactie zelf uit en controleer of de conversietag wordt afgevuurd met de juiste conversie-ID en het juiste label. Controleer daarna de status van de conversieactie in Google Ads; die zou van Niet geverifieerd naar Conversies worden geregistreerd moeten gaan."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/nl/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/nl/blog/">Praktijknotities</a> <a href="/nl/#work">Cases</a> <a href="/nl/#services">Diensten</a> <a class="btn" href="/nl/#contact">Gratis audit</a>
+    <details class="lang-sw"><summary aria-label="Language">NL</summary><ul><li><a href="/blog/google-ads-conversion-tracking-not-working.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/google-ads-conversion-tracking-not-working.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-conversion-tracking-not-working.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/google-ads-conversion-tracking-not-working.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-conversion-tracking-not-working.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/google-ads-conversion-tracking-not-working.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/pt/blog/google-ads-conversion-tracking-not-working.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/nl/blog/">Praktijknotities</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Google Ads zegt nul conversies. U weet dat u de verkoop had.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>12 aug 2026</span><span>8 min lezen</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Als Google Ads nul conversies rapporteert, komt dat meestal neer op een van vijf dingen: de <strong>tag staat niet op de pagina die de actie bevestigt</strong>, de tag wordt afgevuurd maar is niet gekoppeld aan de juiste conversieactie, de conversieactie is uitgesloten van de kolom &ldquo;Conversies&rdquo;, toestemmingsinstellingen blokkeren hem, of de conversies bestaan wel maar zijn nog niet gerapporteerd omdat ze aan de klikdatum worden toegeschreven.</p>
+      <p>Het laatste is geen fout, en het misleidt mensen voortdurend.</p>
+    </div>
+
+    <p>Dit is een van de meest gezochte trackingproblemen die er zijn, en de zoekresultaten worden gedomineerd door forumdiscussies waarin niemand tot een antwoord kwam. Dat zegt iets: het symptoom is algemeen, en de oorzaak is meestal specifiek voor hoe één account is opgezet.</p>
+
+    <p>Dus in plaats van elke mogelijkheid op te sommen, is dit de volgorde die ik echt doorloop. Daarmee is het meestal in de eerste drie stappen opgelost.</p>
+
+    <h2>Voordat u iets verandert: is het echt kapot?</h2>
+
+    <p>Google Ads schrijft een conversie toe aan <strong>de datum van de klik</strong>, niet aan de datum waarop de conversie plaatsvond. Iemand die op maandag klikte en op donderdag kocht, verschijnt in de rij van maandag, en tot donderdag ziet maandag er slechter uit dan hij was.</p>
+
+    <p>Het praktische gevolg is dat <strong>recente dagen de prestaties altijd onderschatten</strong>, en ze blijven aangevuld worden zolang uw conversievenster dat toelaat. Kijkt u naar de laatste drie dagen en concludeert u dat de tracking kapot is, dan kijkt u misschien gewoon naar data die nog niet volledig binnen is.</p>
+
+    <div class="note">
+      <b class="l">De test die het beslist</b>
+      <p>Kijk naar een periode die minstens twee weken geleden eindigde en volledig buiten uw conversievenster valt. Heeft die periode conversies en recente dagen niet, dan werkt uw tracking en las u een onvolledig rapport. Staat die oudere periode ook op nul, lees dan verder.</p>
+    </div>
+
+    <h2>De diagnosevolgorde</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>De status van de conversieactie vertelt u waar u staat</h3></div>
+      <p>Google Ads &rarr; <strong>Doelen</strong> &rarr; <strong>Conversies</strong> &rarr; <strong>Overzicht</strong>. Elke conversieactie heeft een status, en dat is de snelste diagnose in het hele account.</p>
+      <ul>
+        <li><strong>Geen recente conversies</strong>: de tag is één keer gezien maar de laatste tijd niet meer. Meestal is er een pagina of template veranderd.</li>
+        <li><strong>Niet geverifieerd</strong>: Google heeft nooit een signaal ontvangen. De tag wordt niet afgevuurd waar u denkt.</li>
+        <li><strong>Inactief</strong>: al lange tijd niets. Behandel het als kapot.</li>
+        <li><strong>Conversies worden geregistreerd</strong>: de tag is in orde en uw probleem zit ergens anders, waarschijnlijk bij het volgende punt.</li>
+      </ul>
+      <div class="check"><b>De controle</b>Lees de status voordat u code aanraakt. Die vertelt u of het om een tagprobleem of een rapportageprobleem gaat, en die hebben totaal verschillende oplossingen.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>De conversie wordt geregistreerd maar is uitgesloten van de kolom</h3></div>
+      <p>Dit geeft de meest frustrerende versie van het probleem: de conversieactie toont duidelijk conversies, maar uw campagneoverzicht zegt nul. De oorzaak is de instelling <strong>&ldquo;Opnemen in Conversies&rdquo;</strong>. Staat die uit, dan wordt die actie nog steeds geregistreerd, maar verschijnt ze niet in de kolom Conversies, en Smart Bidding biedt er niet op.</p>
+      <p>Secundaire conversieacties zijn bewust uitgesloten. Heeft iemand uw belangrijkste aankoopactie als secundair ingesteld, dan lijkt alles kapot terwijl het perfect werkt.</p>
+      <div class="check"><b>De controle</b>Open de conversieactie en controleer of de instelling primair/secundair overeenkomt met waarop u wilt optimaliseren.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>De tag wordt afgevuurd maar heeft het verkeerde label</h3></div>
+      <p>Een Google Ads-conversietag heeft zowel een conversie-ID als een conversie<em>label</em> nodig. De ID identificeert het account; het label identificeert de actie. Kopieer een tag tussen twee conversieacties en vergeet het label aan te passen, en de tag wordt perfect afgevuurd, in het verkeerde bakje.</p>
+      <div class="check"><b>De controle</b>Voer in Tag Assistant de actie uit en lees het conversielabel op de afgevuurde tag. Vergelijk het teken voor teken met het label in de tag-instellingen van de conversieactie.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Consent Mode weigert opslag, en u heeft daar geen modellering voor ingericht</h3></div>
+      <p>Heeft u een cookiebanner toegevoegd (en in de EU en het VK hoort dat), dan wachten tags nu op toestemming. Dat is correct gedrag. Maar een banner die alles standaard op geweigerd zet, zonder dat de toestemmingsupdate is gekoppeld, betekent dat de conversietag nooit toestemming krijgt en nooit wordt afgevuurd.</p>
+      <p>Deze heeft een herkenbaar patroon: de conversies vallen van een klif op precies de dag dat de banner live ging.</p>
+      <div class="check"><b>De controle</b>Laad de website opnieuw, accepteer cookies, voer de actie uit en controleer of de tag wordt afgevuurd. Herhaal dan en weiger, en controleer dat hij niet wordt afgevuurd. Beide kanten moeten zich gedragen zoals bedoeld.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>De tag staat niet op de pagina die de actie echt bevestigt</h3></div>
+      <p>De klassieker. De tag staat op de website, maar niet op de bedankpagina, de bestelstatuspagina of de pagina waar een klant terechtkomt nadat een betaalprovider hem terugstuurt. Bij leadgeneratie-websites is het equivalent een formulier dat via AJAX verzendt zonder een pagina te laden, zodat een tag die op een paginaweergave wacht nooit de kans krijgt om af te gaan.</p>
+      <div class="check"><b>De controle</b>Voer de conversie zelf uit, bekijk dan de broncode van de pagina waar u terechtkomt en zoek naar de conversie-ID.</div>
+    </div>
+
+    <h2>Zodra het werkt: laat het geld meten</h2>
+
+    <p>De tag aan de praat krijgen is waar de meeste mensen stoppen. Daar begint juist het interessante werk, want een aantal conversies behandelt elke lead als gelijk, en dat zijn de uwe niet.</p>
+
+    <p>Voor leadgeneratie-accounts kunt u met <strong>verbeterde conversies voor leads</strong> plus import van offline conversies de echte waarde van een binnengehaalde opdracht terugsturen naar Google Ads. De biedstrategie optimaliseert dan op omzet in plaats van ingevulde formulieren. Dat is het verschil tussen een algoritme dat aanvragen najaagt en een dat klanten najaagt.</p>
+
+    <p>De mechaniek is dezelfde als bij de gesprekstracking in <a href="/nl/blog/google-ads-call-tracking-local-business.html">het artikel over lokale dienstverleners</a>: leg de klik-ID vast bij de verzending, sla hem op bij de lead, en stuur de waarde terug als de opdracht binnen is.</p>
+
+    <h2>Beperkingen</h2>
+
+    <p>De volgorde hierboven is een zoekvolgorde, geen frequentietabel: ze weerspiegelt een klein aantal accounts en de logica van elk type fout, geen onderzoek. Google Ads verandert regelmatig de interface, dus waar mogelijk heb ik de controles gekoppeld aan statussen en tag-payloads in plaats van aan menulocaties.</p>
+
+
+    <div class="cta">
+      <h2>Verliest u geld aan een cijfer dat u niet kunt vertrouwen?</h2>
+      <p>Stuur me de URL van uw website en ik vertel u wat uw conversietracking doet. Om te beginnen is geen accounttoegang nodig.</p>
+      <a class="btn" href="/nl/#contact">Vraag een gratis trackingaudit aan &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Gerelateerde praktijknotities</h2>
+      <a href="/nl/blog/google-ads-offline-conversions-booked-jobs.html">Offline conversies in Google Ads voor leadgeneratie<span>Google Ads vertellen welke leads geboekte opdrachten werden.</span></a> <a href="/nl/blog/google-ads-account-audit-lead-generation.html">Checklist voor een Google Ads-accountaudit bij leadgeneratie<span>Zes controles op volgorde, uit de herbouw van een tandartsaccount.</span></a> <a href="/nl/blog/shopify-additional-scripts-deadline-tracking.html">De deadline van Shopify op 26 augustus: heeft uw tracking het overleefd?<span>Wat de automatische upgrade verwijdert, en de controle van tien minuten.</span></a> <a href="/nl/blog/google-ads-call-tracking-local-business.html">Google Ads-gesprekstracking voor lokale dienstverleners<span>Vier manieren om telefoontjes te meten, en wat elk ervan echt meet.</span></a> <a href="/nl/blog/meta-pixel-not-tracking-purchases-shopify.html">Meta-pixel meet geen aankopen in Shopify: wat u eerst controleert<span>Zeven oorzaken, inclusief de dubbele pixel die de attributie splitst.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Specialist in online advertenties &amp; tracking</span> <span><a href="/nl/">Home</a> &middot; <a href="/nl/blog/">Praktijknotities</a> &middot; <a href="/nl/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-nl.js" defer></script>
+</body>
+</html>
