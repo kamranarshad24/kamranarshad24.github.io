@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Il pixel Meta non traccia gli acquisti Shopify: cosa controllare</title>
+<meta name="description" content="Il pixel si carica, Pixel Helper è verde e Gestione eventi non mostra acquisti. Sette cause nell&#x27;ordine in cui controllarle, compreso il problema del pixel duplicato.">
+<link rel="canonical" href="https://marketingkamran.com/it/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://marketingkamran.com/it/blog/meta-pixel-not-tracking-purchases-shopify.html">
+<meta property="og:title" content="Il pixel Meta non traccia gli acquisti Shopify: cosa controllare">
+<meta property="og:description" content="Il pixel si carica, Pixel Helper è verde e Gestione eventi non mostra acquisti. Sette cause nell&#x27;ordine in cui controllarle, compreso il problema del pixel duplicato.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Il pixel Meta non traccia gli acquisti Shopify: cosa controllare">
+<meta name="twitter:description" content="Il pixel si carica, Pixel Helper è verde e Gestione eventi non mostra acquisti. Sette cause nell&#x27;ordine in cui controllarle, compreso il problema del pixel duplicato.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Il pixel Meta non traccia gli acquisti Shopify: cosa controllare",
+  "description": "Il pixel si carica, Pixel Helper è verde e Gestione eventi continua a non mostrare acquisti. Sette cause nell'ordine in cui conviene controllarle, compreso il problema del pixel duplicato che divide a metà l'attribuzione senza mai sembrare rotto.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/it/",
+    "jobTitle": "Specialista in pubblicità a pagamento e tracciamento delle conversioni"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/meta-pixel-not-tracking-purchases-shopify.html",
+    "inLanguage": "it"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "it"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Note sul campo",
+      "item": "https://marketingkamran.com/it/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Il pixel Meta non traccia gli acquisti"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Perché il mio pixel Meta non traccia gli acquisti su Shopify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le cause più comuni sono due pixel installati insieme che si dividono i dati, il pixel assente dalla pagina su cui il cliente arriva davvero dopo il pagamento, l'evento di acquisto attivato senza i parametri richiesti, oppure il checkout che esce dal Suo dominio e interrompe la sessione del browser prima che l'evento possa attivarsi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Due pixel Facebook possono far mancare acquisti?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. Se un pixel è installato tramite il canale di vendita Shopify e un altro è incollato nel tema, gli eventi possono dividersi tra i due. Ogni pixel registra allora una parte della verità e nessun totale sembra palesemente sbagliato, ed è per questo che può andare avanti per mesi senza essere notato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come verifico che l'evento di acquisto del mio pixel Meta funzioni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Faccia un ordine reale e osservi la scheda Network dei DevTools di Chrome filtrata per facebook.com o facebook.net. Verifichi che si attivi un evento Purchase con value, currency e un ID evento. Poi controlli che arrivi in Gestione eventi, cosa che può richiedere qualche ora."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/it/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/it/blog/">Note sul campo</a> <a href="/it/#work">Casi studio</a> <a href="/it/#services">Servizi</a> <a class="btn" href="/it/#contact">Audit gratuito</a>
+    <details class="lang-sw"><summary aria-label="Language">IT</summary><ul><li><a href="/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="it" lang="it" aria-current="true">Italiano</a></li><li><a href="/nl/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/meta-pixel-not-tracking-purchases-shopify.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/it/blog/">Note sul campo</a> &nbsp;/&nbsp; Pixel Meta</div>
+    <h1>Il Suo pixel Meta si attiva. Gli acquisti continuano a non comparire.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>12 ago 2026</span><span>9 min di lettura</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Se il Suo pixel Meta si carica ma gli acquisti non compaiono mai, controlli in quest'ordine: <strong>due pixel installati insieme</strong>, il pixel assente dalla vera pagina di conferma, un evento di acquisto senza <code>value</code> e <code>currency</code>, un reindirizzamento di pagamento esterno che interrompe la sessione, e la deduplicazione con un flusso della Conversions API.</p>
+      <p>La prima è la più comune e la più difficile da notare, perché niente sembra rotto.</p>
+    </div>
+
+    <p>«Il pixel si attiva» e «i miei acquisti sono tracciati» sono due affermazioni diverse, ed è nella distanza tra le due che si perde la maggior parte dei budget pubblicitari Shopify. Un Pixel Helper verde Le dice che sulla pagina esiste un pixel. Non dice nulla sul fatto che l'evento giusto, con i parametri giusti, sia arrivato al pixel giusto.</p>
+
+    <h2>Parta da qui: ha più di un pixel?</h2>
+
+    <p>È la prima cosa che controllo in ogni account, ed è il problema che ho trovato davvero sul campo, non solo letto.</p>
+
+    <p>In un negozio che ho analizzato c'erano <strong>due pixel installati contemporaneamente</strong>, uno tramite l'integrazione Shopify e uno incollato direttamente nel tema. Entrambi funzionavano tecnicamente. Entrambi registravano. Nessuno registrava tutto, perché gli eventi si dividevano tra i due a seconda di come si caricava la pagina.</p>
+
+    <p>Sopravvive così a lungo perché non sembra mai rotto. Non c'è alcun errore. Pixel Helper è verde. Gestione eventi mostra acquisti, solo meno di quelli che ha avuto davvero. E a meno di riconciliare il pixel con il numero di ordini di Shopify, non ha motivo di sospettare che quel numero sia solo una parte.</p>
+
+    <div class="note">
+      <b class="l">Cosa posso affermare qui e cosa no</b>
+      <p>L'ho trovato nel negozio di un cliente, e correggerlo ha cambiato ciò che mostravano i suoi report. Non attribuirò una percentuale al recupero, perché onestamente la divisione dell'attribuzione e lo spreco di budget sono collegati ma non identici, e preferisco darLe il meccanismo piuttosto che un numero che non posso difendere del tutto.</p>
+      <p>Comunque è il meccanismo che conta: <strong>due pixel significano che ognuno vede una parte della verità</strong>, e Meta ottimizza su ciò che vede.</p>
+    </div>
+
+    <h3>Come controllare</h3>
+
+    <p>Nell'amministrazione Shopify guardi in tre punti, perché un pixel può essere installato in uno qualsiasi di essi e niente La avvisa degli altri:</p>
+
+    <ul>
+      <li><strong>Impostazioni &rarr; Eventi dei clienti</strong>: qui si trovano i pixel personalizzati</li>
+      <li><strong>Canale di vendita Facebook e Instagram</strong>: l'integrazione ufficiale</li>
+      <li><strong>Negozio online &rarr; Temi &rarr; Modifica codice</strong>: cerchi <code>fbq</code> o <code>connect.facebook.net</code> in <code>theme.liquid</code></li>
+    </ul>
+
+    <p>Se trova un ID pixel in più di uno di questi punti, quello è il Suo problema. Scelga un metodo, di solito il canale di vendita è quello giusto, e rimuova gli altri.</p>
+
+    <h2>Il resto della sequenza</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Il pixel non è sulla pagina che il cliente raggiunge davvero</h3></div>
+      <p>Tutti installano il pixel su tutto il sito e danno per scontato che la pagina di conferma lo erediti. Spesso non è così, perché quella pagina può essere generata fuori dal tema. Se usa upsell dopo l'acquisto, la pagina che il cliente vede subito dopo aver pagato potrebbe non essere quella che considera la pagina di ringraziamento.</p>
+      <div class="check"><b>Il controllo</b>Completi un ordine reale. Sulla pagina in cui arriva, visualizzi il sorgente e cerchi il Suo ID pixel. Non lo deduca dal tema.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>L'evento Purchase si attiva senza i parametri richiesti</h3></div>
+      <p>Un evento <code>Purchase</code> senza <code>value</code> e <code>currency</code> è quasi inutile. Meta non può ottimizzare verso un fatturato di cui non è mai stata informata, e le offerte basate sul valore non hanno nulla su cui lavorare. La mancanza di <code>content_ids</code> rompe inoltre l'abbinamento con il catalogo e il retargeting dinamico.</p>
+      <div class="check"><b>Il controllo</b>Nella scheda Network filtri per <code>facebook</code> e legga i parametri della richiesta di acquisto. Verifichi che <code>value</code>, <code>currency</code> e <code>content_ids</code> siano presenti e valorizzati.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Il checkout esce dal Suo dominio e la sessione si interrompe</h3></div>
+      <p>Quando il pagamento passa a un gateway esterno e riporta il cliente a una pagina di ordine ricevuto, quel giro può interrompere la sessione del browser da cui dipende il pixel. L'ordine si completa; l'evento non arriva, o arriva privo degli identificatori necessari per attribuirlo.</p>
+      <div class="check"><b>Il controllo</b>Il Suo flusso di pagamento esce dal Suo dominio? Se sì, il tracciamento solo nel browser è un «tentativo» e Le serve la Conversions API.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>La deduplicazione elimina l'evento di proposito</h3></div>
+      <p>Se usa insieme pixel e Conversions API (come dovrebbe), Meta deduplica tramite <code>event_id</code>. Quando browser e server non concordano su quell'ID, o conta tutto due volte o perde un lato in silenzio. Perdere un lato sembra esattamente «il pixel ha smesso di funzionare».</p>
+      <div class="check"><b>Il controllo</b>Per un ordine, rilevi l'<code>event_id</code> inviato dal browser e quello inviato dal server. Devono essere identici.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">06</span><h3>Ad blocker e protezione dal tracciamento</h3></div>
+      <p>Una parte consistente del traffico blocca completamente il tracciamento nel browser. Non è un bug che si possa correggere: è una tassa permanente sulla misurazione lato client, ed è il motivo per cui una configurazione solo browser conterà sempre in difetto. La soluzione non è una riparazione; è la Conversions API.</p>
+      <div class="check"><b>Il controllo</b>Confronti gli acquisti in Gestione eventi con gli ordini Shopify dello stesso periodo. Una differenza costante che cresce con il volume di solito è questa.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">07</span><h3>Sta guardando troppo presto</h3></div>
+      <p>I report di Gestione eventi non sono istantanei. Prima di concludere che un evento manca, aspetti qualche ora e ricontrolli. Ho visto persone riscrivere un checkout funzionante perché avevano guardato una dashboard novanta secondi dopo un ordine di prova.</p>
+      <div class="check"><b>Il controllo</b>Usi lo strumento Test eventi per un riscontro immediato e Gestione eventi per i volumi, il giorno dopo.</div>
+    </div>
+
+    <h2>La riconciliazione che nessuno fa</h2>
+
+    <p>Ecco l'esercizio che trova problemi che nessuna checklist troverà. Scelga una settimana. Annoti tre numeri:</p>
+
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Fonte</th><th>Cosa conta</th><th>Relazione attesa</th></tr></thead>
+        <tbody>
+          <tr><td>Ordini Shopify</td><td>Ogni ordine pagato, punto</td><td>La verità</td></tr>
+          <tr><td>Acquisti in Gestione eventi di Meta</td><td>Eventi di acquisto ricevuti</td><td>Dovrebbe avvicinarsi a Shopify e non superarlo mai</td></tr>
+          <tr><td>Conversioni in Meta Ads Manager</td><td>Acquisti che Meta attribuisce agli annunci</td><td>Un sottoinsieme: non tutte le vendite arrivano dagli annunci</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>La maggior parte confronta la coppia sbagliata e si spaventa. Le conversioni in Ads Manager <em>dovrebbero</em> essere inferiori agli ordini Shopify, perché non tutti i clienti arrivano da un annuncio. Il numero che dovrebbe essere vicino a Shopify sono gli <strong>acquisti in Gestione eventi</strong>. Se è molto sotto il Suo numero di ordini, ha un problema di tracciamento e non una questione di attribuzione.</p>
+
+    <p>E se Gestione eventi è <em>superiore</em> a Shopify, ha il problema opposto, di solito eventi duplicati, che è <a href="/it/blog/capi-duplicate-purchase-events-deduplication.html">un altro articolo</a>.</p>
+
+    <h2>Cosa non Le dico</h2>
+
+    <p>Non Le ho dato una percentuale di discrepanza attesa, perché l'intervallo onesto dipende dal mix di traffico, dal checkout, dai browser dei clienti e dal paese, e ogni benchmark pubblicato che ho visto viene da un'azienda che vende la soluzione. Stabilisca un Suo riferimento quando tutto funziona e consideri come segnale lo scostamento dal <em>Suo</em> numero.</p>
+
+    <p>L'ordine qui sopra riflette un piccolo numero di account più ciò che i tipi di guasto implicano logicamente. Lo consideri un ordine di ricerca sensato, non una statistica.</p>
+
+
+    <div class="cta">
+      <h2>Vuole semplicemente che qualcuno ci dia un'occhiata?</h2>
+      <p>Mi invii l'URL del Suo negozio. Le dirò cosa sta facendo davvero il Suo pixel, e per iniziare non deve darmi accesso a nulla.</p>
+      <a class="btn" href="/it/#contact">Ottieni un audit gratuito del tracciamento &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Note sul campo correlate</h2>
+      <a href="/it/blog/shopify-additional-scripts-deadline-tracking.html">Scadenza Shopify del 26 agosto: il Suo tracciamento è sopravvissuto?<span>Cosa rimuove l'aggiornamento automatico e il controllo di dieci minuti.</span></a> <a href="/it/blog/capi-duplicate-purchase-events-deduplication.html">Eventi di acquisto duplicati dopo l'installazione della Conversions API<span>Come dimostrare che la deduplicazione funziona davvero e non è solo configurata.</span></a> <a href="/it/blog/snapchat-purchase-event-not-firing.html">Eventi di acquisto Snapchat che non si attivano: la sequenza di diagnosi<span>Sei cause in ordine, con dati reali di Ads Manager.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Specialista in pubblicità a pagamento e tracciamento</span> <span><a href="/it/">Home</a> &middot; <a href="/it/blog/">Note sul campo</a> &middot; <a href="/it/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-it.js" defer></script>
+</body>
+</html>

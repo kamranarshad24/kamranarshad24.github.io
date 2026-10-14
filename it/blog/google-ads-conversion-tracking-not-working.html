@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
+  gtag("consent","default",{
+    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
+  });
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Tracciamento conversioni Google Ads che non funziona: ordine di diagnosi</title>
+<meta name="description" content="Se Google Ads non mostra conversioni, le cause sono poche. Eccole in ordine di diagnosi, con un controllo per ciascuna e il motivo per cui un tag funzionante può non registrare nulla.">
+<link rel="canonical" href="https://marketingkamran.com/it/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-conversion-tracking-not-working.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://marketingkamran.com/it/blog/google-ads-conversion-tracking-not-working.html">
+<meta property="og:title" content="Tracciamento conversioni Google Ads che non funziona: ordine di diagnosi">
+<meta property="og:description" content="Se Google Ads non mostra conversioni, le cause sono poche. Eccole in ordine di diagnosi, con un controllo per ciascuna e il motivo per cui un tag funzionante può non registrare nulla.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tracciamento conversioni Google Ads che non funziona: ordine di diagnosi">
+<meta name="twitter:description" content="Se Google Ads non mostra conversioni, le cause sono poche. Eccole in ordine di diagnosi, con un controllo per ciascuna e il motivo per cui un tag funzionante può non registrare nulla.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Tracciamento conversioni Google Ads che non funziona: ordine di diagnosi",
+  "description": "Quando Google Ads non registra conversioni, la lista delle cause è breve e non tutte sono ugualmente probabili. Eccole in ordine di diagnosi, con il controllo per ciascuna, più il motivo per cui un tag funzionante può non registrare nulla per settimane.",
+  "datePublished": "2026-08-12",
+  "dateModified": "2026-08-12",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/it/",
+    "jobTitle": "Specialista in pubblicità a pagamento e tracciamento delle conversioni"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-conversion-tracking-not-working.html",
+    "inLanguage": "it"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "it"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Note sul campo",
+      "item": "https://marketingkamran.com/it/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Tracciamento delle conversioni di Google Ads"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Perché il mio tracciamento delle conversioni di Google Ads non funziona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le cause più frequenti sono: il tag non è presente nella pagina che conferma l'azione, l'azione di conversione ha una categoria o un conteggio che la nasconde, il tag si attiva ma non è collegato all'azione di conversione giusta, le impostazioni del consenso bloccano il tag, oppure le finestre di attribuzione fanno sì che la conversione non sia ancora stata registrata."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo impiega Google Ads a mostrare le conversioni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le conversioni possono impiegare fino a 24 ore per comparire nei report e vengono attribuite alla data del clic, non alla data della conversione. Per questo i giorni recenti sembrano sempre peggiori di come saranno alla fine: è un normale effetto dei report, non un guasto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come verifico se il mio tag di conversione di Google Ads si attiva?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usi Google Tag Assistant in modalità debug, completi Lei stesso l'azione di conversione e verifichi che il tag si attivi con l'ID e l'etichetta di conversione corretti. Poi controlli lo stato dell'azione di conversione in Google Ads, che dovrebbe passare da «Non verificata» a «Registrazione delle conversioni in corso»."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/it/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/it/blog/">Note sul campo</a> <a href="/it/#work">Casi studio</a> <a href="/it/#services">Servizi</a> <a class="btn" href="/it/#contact">Audit gratuito</a>
+    <details class="lang-sw"><summary aria-label="Language">IT</summary><ul><li><a href="/blog/google-ads-conversion-tracking-not-working.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/google-ads-conversion-tracking-not-working.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-conversion-tracking-not-working.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/google-ads-conversion-tracking-not-working.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-conversion-tracking-not-working.html" hreflang="it" lang="it" aria-current="true">Italiano</a></li><li><a href="/nl/blog/google-ads-conversion-tracking-not-working.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/google-ads-conversion-tracking-not-working.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/it/blog/">Note sul campo</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Google Ads dice zero conversioni. Lei sa che la vendita c'è stata.</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>12 ago 2026</span><span>8 min di lettura</span></div>
+  </div>
+</header>
+
+<main>
+<article>
+  <div class="container narrow">
+
+    <div class="answer">
+      <p>Quando Google Ads registra zero conversioni, di solito dipende da una di cinque cose: il <strong>tag non è nella pagina che conferma l'azione</strong>, il tag si attiva ma non è collegato all'azione di conversione giusta, l'azione di conversione è esclusa dalla colonna «Conversioni», le impostazioni del consenso la bloccano, oppure le conversioni esistono ma non sono ancora state registrate perché attribuite alla data del clic.</p>
+      <p>L'ultima non è un guasto, e inganna continuamente.</p>
+    </div>
+
+    <p>È uno dei problemi di tracciamento più cercati in assoluto, e i risultati sono dominati da thread di forum in cui nessuno è arrivato a una risposta. Questo dice qualcosa: il sintomo è generico, e la causa di solito dipende da come è stato cablato un account specifico.</p>
+
+    <p>Quindi, invece di elencare ogni possibilità, ecco l'ordine che seguo davvero, che risolve la maggior parte dei casi nei primi tre passaggi.</p>
+
+    <h2>Prima di cambiare qualsiasi cosa: è davvero rotto?</h2>
+
+    <p>Google Ads attribuisce una conversione alla <strong>data del clic</strong>, non alla data in cui è avvenuta la conversione. Chi ha fatto clic lunedì e acquistato giovedì compare nella riga di lunedì, e fino a giovedì lunedì sembra peggiore di quanto sia stato davvero.</p>
+
+    <p>In pratica, <strong>i giorni recenti sottostimano sempre il rendimento</strong>, e continuano a riempirsi per tutta la durata della finestra di conversione. Se guarda gli ultimi tre giorni e conclude che il tracciamento è rotto, potrebbe semplicemente vedere dati non ancora arrivati del tutto.</p>
+
+    <div class="note">
+      <b class="l">Il test che chiarisce tutto</b>
+      <p>Guardi un periodo terminato almeno due settimane fa e completamente fuori dalla finestra di conversione. Se quel periodo ha conversioni e i giorni recenti no, il tracciamento funziona e stava leggendo un report incompleto. Se anche quel periodo precedente è a zero, continui a leggere.</p>
+    </div>
+
+    <h2>L'ordine di diagnosi</h2>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Lo stato dell'azione di conversione Le dice dove si trova</h3></div>
+      <p>Google Ads &rarr; <strong>Obiettivi</strong> &rarr; <strong>Conversioni</strong> &rarr; <strong>Riepilogo</strong>. Ogni azione di conversione ha uno stato, ed è la diagnosi più rapida dell'intero account.</p>
+      <ul>
+        <li><strong>Nessuna conversione recente</strong>: il tag è stato rilevato una volta ma niente di recente. Di solito è cambiata una pagina o un modello.</li>
+        <li><strong>Non verificata</strong>: Google non ha mai ricevuto un segnale. Il tag non si attiva dove pensa.</li>
+        <li><strong>Inattiva</strong>: niente per molto tempo. La consideri rotta.</li>
+        <li><strong>Registrazione delle conversioni in corso</strong>: il tag è a posto e il problema è altrove, molto probabilmente al punto successivo.</li>
+      </ul>
+      <div class="check"><b>Il controllo</b>Legga lo stato prima di toccare il codice. Le dice se è un problema di tag o di report, e le soluzioni sono completamente diverse.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>La conversione viene registrata ma è esclusa dalla colonna</h3></div>
+      <p>È la versione esasperante del problema: l'azione di conversione mostra chiaramente conversioni, ma la vista delle campagne dice zero. La causa è l'impostazione <strong>«Includi in "Conversioni"»</strong>. Se è disattivata, l'azione continua a registrare, ma non compare nella colonna Conversioni e lo Smart Bidding non fa offerte su di essa.</p>
+      <p>Le azioni di conversione secondarie sono escluse per progettazione. Se qualcuno ha impostato come secondaria la Sua azione di acquisto principale, tutto sembra rotto anche se funziona perfettamente.</p>
+      <div class="check"><b>Il controllo</b>Apra l'azione di conversione e verifichi che l'impostazione principale/secondaria corrisponda a ciò verso cui vuole ottimizzare.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Il tag si attiva ma ha l'etichetta sbagliata</h3></div>
+      <p>Un tag di conversione di Google Ads ha bisogno di un ID di conversione e di un'<em>etichetta</em> di conversione. L'ID identifica l'account; l'etichetta identifica l'azione. Copi un tag tra due azioni di conversione dimenticando di cambiare l'etichetta, e il tag si attiva perfettamente, ma nel contenitore sbagliato.</p>
+      <div class="check"><b>Il controllo</b>In Tag Assistant completi l'azione e legga l'etichetta di conversione del tag attivato. La confronti carattere per carattere con l'etichetta nella configurazione del tag dell'azione di conversione.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>La modalità di consenso nega l'archiviazione e non ha previsto una modellazione</h3></div>
+      <p>Se ha aggiunto un banner dei cookie (e nell'UE dovrebbe), ora i tag attendono il permesso. È il comportamento corretto. Ma un banner configurato per negare tutto di default, senza collegare l'aggiornamento del consenso, fa sì che il tag di conversione non riceva mai il permesso e non si attivi mai.</p>
+      <p>Questo ha una firma: le conversioni crollano esattamente il giorno in cui il banner è andato online.</p>
+      <div class="check"><b>Il controllo</b>Carichi il sito da zero, accetti i cookie, completi l'azione e verifichi che il tag si attivi. Poi ripeta rifiutando e verifichi che non si attivi. Entrambe le direzioni devono comportarsi come previsto.</div>
+    </div>
+
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Il tag non è nella pagina che conferma davvero l'azione</h3></div>
+      <p>Il classico. Il tag è sul sito ma non sulla pagina di ringraziamento, sulla pagina di stato dell'ordine o sulla pagina a cui torna il cliente dopo il reindirizzamento del fornitore di pagamento. Sui siti di lead generation l'equivalente è un modulo inviato via AJAX senza caricare una pagina, così un tag attivato dalla visualizzazione di pagina non ha mai modo di attivarsi.</p>
+      <div class="check"><b>Il controllo</b>Faccia Lei stesso la conversione, poi visualizzi il sorgente della pagina in cui arriva e cerchi l'ID di conversione.</div>
+    </div>
+
+    <h2>Quando funziona, gli faccia misurare denaro</h2>
+
+    <p>La maggior parte delle persone si ferma quando il tag si attiva. È proprio lì che inizia il lavoro interessante, perché un conteggio delle conversioni tratta ogni contatto allo stesso modo, e i Suoi non sono tutti uguali.</p>
+
+    <p>Per gli account di lead generation, le <strong>conversioni avanzate per i lead</strong> insieme all'importazione delle conversioni offline Le permettono di rimandare a Google Ads il valore reale di un lavoro concluso. Le offerte ottimizzano allora verso il fatturato invece che verso i moduli compilati. È la differenza tra un algoritmo che insegue richieste e uno che insegue clienti.</p>
+
+    <p>Il meccanismo è lo stesso del tracciamento delle chiamate descritto nell'<a href="/it/blog/google-ads-call-tracking-local-business.html">articolo sui servizi locali</a>: acquisire l'identificatore di clic all'invio, salvarlo con il contatto e rimandare il valore quando il lavoro viene acquisito.</p>
+
+    <h2>Limiti</h2>
+
+    <p>L'ordine qui sopra è un ordine di ricerca, non una tabella di frequenze: riflette un piccolo numero di account e la logica di ogni tipo di guasto, non uno studio. Google Ads cambia spesso interfaccia, quindi dove possibile ho ancorato i controlli agli stati e ai contenuti dei tag invece che alla posizione dei menu.</p>
+
+
+    <div class="cta">
+      <h2>Sta perdendo soldi a causa di un numero di cui non può fidarsi?</h2>
+      <p>Mi invii l'URL del Suo sito e Le dirò cosa fa il Suo tracciamento delle conversioni. Per iniziare non serve alcun accesso all'account.</p>
+      <a class="btn" href="/it/#contact">Ottieni un audit gratuito del tracciamento &rarr;</a>
+    </div>
+
+    <div class="related">
+      <h2>Note sul campo correlate</h2>
+      <a href="/it/blog/google-ads-offline-conversions-booked-jobs.html">Conversioni offline di Google Ads per la lead generation<span>Comunicare a Google Ads quali contatti sono diventati lavori prenotati.</span></a> <a href="/it/blog/google-ads-account-audit-lead-generation.html">Audit di un account Google Ads: checklist per la lead generation<span>Sei controlli in ordine, dalla ricostruzione dell'account di uno studio dentistico.</span></a> <a href="/it/blog/shopify-additional-scripts-deadline-tracking.html">Scadenza Shopify del 26 agosto: il Suo tracciamento è sopravvissuto?<span>Cosa rimuove l'aggiornamento automatico e il controllo di dieci minuti.</span></a> <a href="/it/blog/google-ads-call-tracking-local-business.html">Tracciamento delle chiamate di Google Ads per attività di servizi locali<span>Quattro modi per tracciare le chiamate e cosa misura davvero ciascuno.</span></a> <a href="/it/blog/meta-pixel-not-tracking-purchases-shopify.html">Il pixel Meta non traccia gli acquisti su Shopify: cosa controllare per primo<span>Sette cause, compreso il pixel duplicato che divide l'attribuzione.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Specialista in pubblicità a pagamento e tracciamento</span> <span><a href="/it/">Home</a> &middot; <a href="/it/blog/">Note sul campo</a> &middot; <a href="/it/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-it.js" defer></script>
+</body>
+</html>
