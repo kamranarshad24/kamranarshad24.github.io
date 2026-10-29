@@ -27,9 +27,9 @@ function gtag(){dataLayer.push(arguments);}
     if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
     if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
   }catch(e){}
-  // Lead = form accepted by FormSubmit and visitor landed on the thank-you page.
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
   document.addEventListener("submit",function(e){
-    var f=e.target; if(!f||!/formsubmit\.co/.test(f.action||"")) return;
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
     try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
   },true);
   if(/\/thankyou\.html$/.test(location.pathname)){
@@ -106,14 +106,15 @@ function gtag(){dataLayer.push(arguments);}
     <span style="font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:#2563EB;display:block;margin-bottom:10px;">Gratuito, senza impegno</span>
     <h3 style="font-size:24px;font-weight:800;letter-spacing:-.8px;margin-bottom:8px;color:#0F172A;">Prenoti il Suo audit gratuito</h3>
     <p style="font-size:14px;color:#64748B;margin-bottom:28px;line-height:1.6;">Analizzo dal vivo per 15 minuti i Suoi annunci, il Suo sito o la Sua visibilità nella ricerca e Le indico una cosa da sistemare questa settimana.</p>
-    <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <form action="/api/lead" method="POST">
       <input type="hidden" name="_next" value="https://marketingkamran.com/it/thankyou.html">
+      <!-- Honeypot: invisible to people, filled by bots. The form backend discards those. -->
+      <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"
+             style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
       <div style="margin-bottom:16px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">Il Suo nome *</label><input type="text" name="name" required placeholder="es. Giulia Rossi" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;"></div>
       <div style="margin-bottom:16px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">Email o WhatsApp *</label><input type="text" name="contact" required placeholder="sua@email.it o +39 XXX XXX XXXX" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;"></div>
       <div style="margin-bottom:24px;"><label style="font-size:12px;font-weight:600;color:#374151;display:block;margin-bottom:6px;">In cosa Le serve aiuto?</label><textarea name="message" rows="3" style="width:100%;padding:12px 14px;border:1.5px solid #E2E8F0;border-radius:10px;font-size:14px;font-family:inherit;color:#0F172A;outline:none;resize:vertical;"></textarea></div>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAFrmwIHjyjDHaleJ" data-action="free_audit"></div>
       <button type="submit" style="width:100%;padding:14px;background:#2563EB;color:#fff;border:none;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;">Invia la richiesta</button>
     </form>
     <p style="font-size:12px;color:#94A3B8;text-align:center;margin-top:14px;">Rispondo entro 24 ore. Mai spam.</p>
@@ -312,5 +313,6 @@ document.getElementById('audit-modal').addEventListener('click',function(e){if(e
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
 </script>
 <script src="/consent-it.js" defer></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>

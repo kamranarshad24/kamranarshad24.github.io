@@ -27,9 +27,9 @@ function gtag(){dataLayer.push(arguments);}
     if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
     if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
   }catch(e){}
-  // Lead = form accepted by FormSubmit and visitor landed on the thank-you page.
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
   document.addEventListener("submit",function(e){
-    var f=e.target; if(!f||!/formsubmit\.co/.test(f.action||"")) return;
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
     try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
   },true);
   if(/\/thankyou\.html$/.test(location.pathname)){
@@ -511,7 +511,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Een paar betrouwbare diensten helpen deze site te draaien. Elk heeft een eigen privacybeleid dat bepaalt hoe het met gegevens omgaat:</p>
           <ul>
             <li><strong>Google</strong> (Tag Manager &amp; Analytics): sitestatistieken en tagbeheer. Zie het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>.</li>
-            <li><strong>FormSubmit</strong>: bezorgt verzendingen van het contactformulier in mijn e-mail. Zie <a href="https://formsubmit.co/" target="_blank" rel="noopener">FormSubmit</a>.</li>
+            <li><strong>Cloudflare</strong>: verwerkt het contactformulier en controleert onzichtbaar op spam met Turnstile. Zie het <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">privacybeleid van Cloudflare</a> en het <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener">Turnstile Privacy Addendum</a>.</li>
+            <li><strong>Google Sheets</strong>: bewaart aanvragen via het contactformulier zodat er geen verloren gaat. Zie het <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacybeleid van Google</a>.</li>
+            <li><strong>Resend</strong>: bezorgt aanvragen via het contactformulier in mijn e-mail en, waar van toepassing, een bevestigingsmail aan u. Zie het <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">privacybeleid van Resend</a>.</li>
             <li><strong>GitHub Pages</strong>: host deze website. Zie de <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">privacyverklaring van GitHub</a>.</li>
             <li><strong>Google Fonts</strong>: laadt de lettertypen die op deze site worden gebruikt.</li>
           </ul>

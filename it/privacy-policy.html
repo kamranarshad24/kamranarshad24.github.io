@@ -27,9 +27,9 @@ function gtag(){dataLayer.push(arguments);}
     if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
     if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
   }catch(e){}
-  // Lead = form accepted by FormSubmit and visitor landed on the thank-you page.
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
   document.addEventListener("submit",function(e){
-    var f=e.target; if(!f||!/formsubmit\.co/.test(f.action||"")) return;
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
     try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
   },true);
   if(/\/thankyou\.html$/.test(location.pathname)){
@@ -511,7 +511,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Alcuni servizi affidabili aiutano a far funzionare questo sito. Ognuno ha la propria informativa sulla privacy:</p>
           <ul>
             <li><strong>Google</strong> (Tag Manager e Analytics): analisi del sito e gestione dei tag. Veda la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy di Google</a>.</li>
-            <li><strong>FormSubmit</strong>: inoltra gli invii del modulo di contatto alla mia email. Veda <a href="https://formsubmit.co/" target="_blank" rel="noopener">FormSubmit</a>.</li>
+            <li><strong>Cloudflare</strong>: gestisce il modulo di contatto e controlla lo spam con Turnstile, che lavora in modo invisibile. Veda la <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Privacy Policy di Cloudflare</a> e il <a href="https://www.cloudflare.com/turnstile-privacy-policy/" target="_blank" rel="noopener">Turnstile Privacy Addendum</a>.</li>
+            <li><strong>Google Sheets</strong>: conserva le richieste del modulo di contatto perché nessuna vada persa. Veda la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy di Google</a>.</li>
+            <li><strong>Resend</strong>: recapita le richieste del modulo alla mia email e, se previsto, un'email di conferma a Lei. Veda la <a href="https://resend.com/legal/privacy-policy" target="_blank" rel="noopener">Privacy Policy di Resend</a>.</li>
             <li><strong>GitHub Pages</strong>: ospita questo sito. Veda la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">dichiarazione sulla privacy di GitHub</a>.</li>
             <li><strong>Google Fonts</strong>: carica i caratteri usati su questo sito.</li>
           </ul>

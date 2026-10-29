@@ -27,9 +27,9 @@ function gtag(){dataLayer.push(arguments);}
     if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
     if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
   }catch(e){}
-  // Lead = form accepted by FormSubmit and visitor landed on the thank-you page.
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
   document.addEventListener("submit",function(e){
-    var f=e.target; if(!f||!/formsubmit\.co/.test(f.action||"")) return;
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
     try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
   },true);
   if(/\/thankyou\.html$/.test(location.pathname)){

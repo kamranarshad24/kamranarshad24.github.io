@@ -27,9 +27,9 @@ function gtag(){dataLayer.push(arguments);}
     if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
     if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
   }catch(e){}
-  // Lead = form accepted by FormSubmit and visitor landed on the thank-you page.
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
   document.addEventListener("submit",function(e){
-    var f=e.target; if(!f||!/formsubmit\.co/.test(f.action||"")) return;
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
     try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
   },true);
   if(/\/thankyou\.html$/.test(location.pathname)){
@@ -1592,17 +1592,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="modal-kicker">Kostenlos und unverbindlich</span>
     <p class="modal-title">Kostenlosen Audit buchen</p>
     <p class="modal-sub">Ich prüfe Ihre Anzeigen, Ihre Website oder Ihre Sichtbarkeit in der Suche 15 Minuten lang live und nenne Ihnen eine Sache, die Sie diese Woche verbessern können.</p>
-    <form action="https://formsubmit.co/mkamran.arshad24@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Free Audit Request from Portfolio">
-      <!-- Captcha off by choice: zero submit friction. The _honey honeypot below
-           catches most bots invisibly. Flip to "true" if real spam ever appears. -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+    <form action="/api/lead" method="POST">
       <input type="hidden" name="_next" value="https://marketingkamran.com/de/thankyou.html">
-      <!-- Second destination for every lead. Replace with the address you want the
-           backup copy sent to, then this line goes live. -->
-      <!-- <input type="hidden" name="_cc" value="REPLACE_WITH_BACKUP_EMAIL"> -->
-      <!-- Honeypot: invisible to people, filled by bots. FormSubmit discards those. -->
+      <!-- Honeypot: invisible to people, filled by bots. The form backend discards those. -->
       <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"
              style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">
       <div class="field">
@@ -1625,6 +1617,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <label for="f-msg">Wobei brauchen Sie Unterstützung?</label>
         <textarea id="f-msg" name="message" rows="3" placeholder="e.g. I need help ranking locally / my Google Ads aren't producing leads / I need a new site..."></textarea>
       </div>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAFrmwIHjyjDHaleJ" data-action="free_audit"></div>
       <button type="submit" class="modal-submit">Anfrage senden →</button>
     </form>
     <p class="modal-foot">Antwort innerhalb von 24 Stunden · Kein Spam, niemals</p>
@@ -2532,5 +2525,6 @@ if ('requestIdleCallback' in window) {
   });
 })();
 </script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>
