@@ -3,17 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Consent Mode v2 defaults - MUST run before GTM -->
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 (function(){
   var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
-  var a=(c&&c.analytics)?"granted":"denied", d=(c&&c.ads)?"granted":"denied";
-  gtag("consent","default",{
-    analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
-    functionality_storage:"granted", security_storage:"granted", wait_for_update:500
-  });
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by FormSubmit and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/formsubmit\.co/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
 })();
 </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
