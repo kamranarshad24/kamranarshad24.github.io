@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Google Ads Freelancer oder Agentur: So entscheiden Sie</title>
+<meta name="description" content="Wann ein Google Ads Freelancer besser ist als eine Agentur, wann nicht, und was Sie beide fragen sollten. Ich verkaufe diese Leistung selbst, das sollten Sie berücksichtigen.">
+<link rel="canonical" href="https://marketingkamran.com/de/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://marketingkamran.com/de/blog/google-ads-freelancer-vs-agency.html">
+<meta property="og:title" content="Google Ads Freelancer oder Agentur: So entscheiden Sie">
+<meta property="og:description" content="Wann ein Google Ads Freelancer besser ist als eine Agentur, wann nicht, und was Sie beide fragen sollten. Ich verkaufe diese Leistung selbst, das sollten Sie berücksichtigen.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Ads Freelancer oder Agentur: So entscheiden Sie">
+<meta name="twitter:description" content="Wann ein Google Ads Freelancer besser ist als eine Agentur, wann nicht, und was Sie beide fragen sollten. Ich verkaufe diese Leistung selbst, das sollten Sie berücksichtigen.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google Ads Freelancer oder Agentur: So entscheiden Sie",
+  "description": "Wann ein Google Ads Freelancer besser ist als eine Agentur, wann nicht, und was Sie beide fragen sollten. Ich verkaufe diese Leistung selbst, das sollten Sie berücksichtigen.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/de/",
+    "jobTitle": "Spezialist für Paid Ads & Conversion Tracking"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html",
+    "inLanguage": "de"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "de"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Startseite",
+      "item": "https://marketingkamran.com/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Praxisnotizen",
+      "item": "https://marketingkamran.com/de/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Google Ads Freelancer oder Agentur"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ist ein Google Ads Freelancer günstiger als eine Agentur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oft, weil es weniger Gemeinkosten gibt, aber das ist nicht garantiert. Vergleichen Sie, was jeden Monat enthalten ist, nicht nur das Honorar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sollte ich einen Google Ads Freelancer über Upwork oder Fiverr beauftragen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dort finden Sie fähige Leute, aber beurteilen Sie sie wie alle anderen: Kontoinhaberschaft, Tracking, Berichte und Nachweise ähnlicher Arbeit. Ein sehr niedriger Festpreis deckt laufende Betreuung vermutlich nicht ab."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wem sollte mein Google Ads Konto gehören?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ihnen. Wen auch immer Sie beauftragen, sollte mit einem Zugang in Ihrem Konto arbeiten, den Sie entziehen können, damit Ihre Historie bei Ihnen bleibt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Woran erkenne ich, dass mein Google Ads Betreuer gute Arbeit leistet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prüfen Sie, ob Conversions echte Anfragen widerspiegeln, ob Suchbegriffe regelmäßig bereinigt werden und ob Sie die vorgenommenen Änderungen sehen können."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/de/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/de/blog/">Praxisnotizen</a> <a href="/de/#work">Fallstudien</a> <a href="/de/#services">Leistungen</a> <a class="btn" href="/de/#contact">Kostenloser Audit</a>
+    <details class="lang-sw"><summary aria-label="Language">DE</summary><ul><li><a href="/blog/google-ads-freelancer-vs-agency.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/google-ads-freelancer-vs-agency.html" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/fr/blog/google-ads-freelancer-vs-agency.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/google-ads-freelancer-vs-agency.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-freelancer-vs-agency.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/google-ads-freelancer-vs-agency.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/google-ads-freelancer-vs-agency.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/de/blog/">Praxisnotizen</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Google Ads Freelancer oder Agentur: eine ehrliche Entscheidungshilfe</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30. Okt. 2026</span><span>5 Min. Lesezeit</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Ein Freelancer gibt Ihnen meist direkten Zugang zu der Person, die die Arbeit macht, mit weniger Gemeinkosten. Eine Agentur gibt Ihnen meist ein Team, mehr Kapazität und Vertretung, wenn jemand ausfällt. Die richtige Wahl hängt von der Größe Ihres Kontos ab und davon, wie viel Sie über Anzeigen hinaus brauchen.</p>
+      <p>Ich verkaufe Google Ads Betreuung selbst, bin also nicht neutral. Ich habe versucht zu zeigen, wo eine Agentur wirklich die bessere Wahl ist.</p>
+    </div>
+    <h2>Die Abwägungen</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Freelancer</th><th>Agentur</th></tr></thead>
+        <tbody>
+          <tr><td>Wer die Arbeit macht</td><td>Die Person, mit der Sie sprechen</td><td>Oft ein Team, manchmal ein Junior</td></tr>
+          <tr><td>Kapazität</td><td>Auf eine Person begrenzt</td><td>Kann mit Ihnen wachsen</td></tr>
+          <tr><td>Urlaub oder Krankheit</td><td>Ein echtes Risiko, fragen Sie nach Vertretung</td><td>Meist abgedeckt</td></tr>
+          <tr><td>Bandbreite der Fähigkeiten</td><td>Je nach Person</td><td>Oft Design, Text und Analytics im Haus</td></tr>
+          <tr><td>Gemeinkosten im Honorar</td><td>Meist niedriger</td><td>Meist höher</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Wann ein Freelancer sinnvoller ist</h2>
+    <ul>
+      <li>Sie führen ein einzelnes lokales Unternehmen oder eine kleine Zahl von Kampagnen.</li>
+      <li>Sie möchten direkt mit der Person sprechen, die Ihr Konto ändert.</li>
+      <li>Sie haben bereits eine Website und brauchen nur sauber gemachte Anzeigen und Tracking.</li>
+    </ul>
+    <h2>Wann eine Agentur sinnvoller ist</h2>
+    <ul>
+      <li>Sie werben an vielen Standorten oder geben so viel aus, dass mehrere Spezialisten nötig sind.</li>
+      <li>Sie brauchen Motive, Video, Landingpages und Anzeigen aus einer Hand.</li>
+      <li>Sie können keine Lücke in der Vertretung akzeptieren, egal was einer Person passiert.</li>
+    </ul>
+    <h2>Vorsicht bei Marktplatz-Preisen</h2>
+    <p>Freelance-Marktplätze listen Angebote für Anzeigenbetreuung zu niedrigen Einstiegspreisen. Manche Anbieter mögen fähig sein, aber ein niedriger Festpreis bezahlt vermutlich keine laufende Prüfung der Suchbegriffe, kein Conversion-Tracking und keine regelmäßigen Änderungen. Vergleichen Sie vor den Preisen, was jeden Monat tatsächlich enthalten ist.</p>
+    <h2>Fragen an beide</h2>
+    <ol class="steps">
+      <li><b>Wem gehört das Google Ads Konto?</b>Ihnen. Gehen Sie, wenn das Konto bei Ihrem Weggang dort bleibt.</li>
+      <li><b>Wer arbeitet jede Woche an meinem Konto?</b>Lassen Sie sich einen Namen geben und fragen Sie, wie viel der Arbeit von dieser Person kommt.</li>
+      <li><b>Was zählt als Conversion?</b>Bestehen Sie auf zustande gekommenen Anrufen und echten Anfragen, nicht auf Seitenaufrufen oder Tippen.</li>
+      <li><b>Kann ich die Suchbegriffe und die vorgenommenen Änderungen sehen?</b>Beides steht in Ihrem Konto, und Sie sollten es jederzeit sehen können.</li>
+      <li><b>Können Sie mir ein ähnliches Konto zeigen?</b>Fragen Sie, was geändert wurde und was man ehrlich dazu vorzeigen kann.</li>
+      <li><b>Was passiert, wenn ich aufhören möchte?</b>Prüfen Sie die Kündigungsfrist und wie Sie Ihre Daten zurückbekommen.</li>
+    </ol>
+    <h2>Warnsignale auf beiden Seiten</h2>
+    <ul>
+      <li>Garantierte erste Position oder eine garantierte Zahl von Leads.</li>
+      <li>Berichte, die nur Klicks und Impressionen zeigen.</li>
+      <li>Die Weigerung, Ihnen Zugang zu Ihrem eigenen Konto zu geben.</li>
+      <li>Ein Plan oder Angebot, bevor jemand Ihr Konto und Ihr Tracking angesehen hat.</li>
+    </ul>
+    <h2>Wo meine Arbeit passt</h2>
+    <p>Bei Google Ads bleibt das Konto Ihr Eigentum. Meine Erfahrung umfasst <a href="/de/smile-line-dental.html">eine Zahnklinik</a>, <a href="/de/mr-expert-carpet-cleaning.html">ein britisches Teppichreinigungsunternehmen</a> und <a href="/de/the-body-essential.html">Shopify-Marken</a>. Wenn Sie Motive, Video und Anzeigen aus einer Hand brauchen, passt eine Agentur vielleicht besser, und das sage ich Ihnen dann auch.</p>
+    <h2>Häufige Fragen</h2>
+    <h3>Ist ein Google Ads Freelancer günstiger als eine Agentur?</h3>
+    <p>Oft, weil es weniger Gemeinkosten gibt, aber das ist nicht garantiert. Vergleichen Sie, was jeden Monat enthalten ist, nicht nur das Honorar.</p>
+    <h3>Sollte ich einen Google Ads Freelancer über Upwork oder Fiverr beauftragen?</h3>
+    <p>Dort finden Sie fähige Leute, aber beurteilen Sie sie wie alle anderen: Kontoinhaberschaft, Tracking, Berichte und Nachweise ähnlicher Arbeit. Ein sehr niedriger Festpreis deckt laufende Betreuung vermutlich nicht ab.</p>
+    <h3>Wem sollte mein Google Ads Konto gehören?</h3>
+    <p>Ihnen. Wen auch immer Sie beauftragen, sollte mit einem Zugang in Ihrem Konto arbeiten, den Sie entziehen können, damit Ihre Historie bei Ihnen bleibt.</p>
+    <h3>Woran erkenne ich, dass mein Google Ads Betreuer gute Arbeit leistet?</h3>
+    <p>Prüfen Sie, ob Conversions echte Anfragen widerspiegeln, ob Suchbegriffe regelmäßig bereinigt werden und ob Sie die vorgenommenen Änderungen sehen können.</p>
+    <div class="cta">
+      <h2>Möchten Sie zuerst eine zweite Meinung zu Ihrem Konto?</h2>
+      <p>Ob Sie am Ende mich, einen Freelancer oder eine Agentur beauftragen: Ein kostenloses Audit zeigt, was behoben werden muss, damit Sie Angebote richtig vergleichen können.</p>
+      <a class="btn" href="/de/#contact">Kostenloses Google Ads Audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Weitere Praxisnotizen</h2>
+      <a href="/de/google-ads-management.html">Google Ads Betreuung<span>Suchkampagnen mit Anruf- und Formular-Tracking.</span></a> <a href="/de/blog/google-ads-account-audit-lead-generation.html">Google Ads Konto-Audit-Checkliste für Lead-Generierung<span>Sechs Prüfungen für ein Konto, das von Anrufen und Formularen lebt.</span></a> <a href="/de/blog/local-services-ads-vs-google-ads.html">Local Services Ads oder Google Ads<span>Abrechnung, Kontrolle und wann Sie was nutzen.</span></a> <a href="/de/blog/google-ads-conversion-tracking-not-working.html">Google Ads Conversion-Tracking funktioniert nicht<span>Warum ein funktionierendes Tag wochenlang nichts melden kann.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spezialist für Paid Ads &amp; Tracking</span> <span><a href="/de/">Startseite</a> &middot; <a href="/de/blog/">Praxisnotizen</a> &middot; <a href="/de/privacy-policy.html">Datenschutz</a></span>
+  </div>
+</footer>
+<script src="/consent-de.js" defer></script>
+</body>
+</html>

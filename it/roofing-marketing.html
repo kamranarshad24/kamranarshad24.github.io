@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing per coperture e tetti: Google Ads | Kamran Arshad</title>
+<meta name="description" content="Marketing per imprese di coperture oltre i lead acquistati: Google Ads, Local Services Ads, Maps e tracciamento dalla prima chiamata al lavoro firmato. Audit gratuito.">
+<link rel="canonical" href="https://marketingkamran.com/it/roofing-marketing.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/roofing-marketing.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/roofing-marketing.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/roofing-marketing.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/roofing-marketing.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/roofing-marketing.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/roofing-marketing.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/roofing-marketing.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/roofing-marketing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://marketingkamran.com/it/roofing-marketing.html">
+<meta property="og:title" content="Marketing per coperture e tetti: Google Ads | Kamran Arshad">
+<meta property="og:description" content="Marketing per imprese di coperture oltre i lead acquistati: Google Ads, Local Services Ads, Maps e tracciamento dalla prima chiamata al lavoro firmato. Audit gratuito.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing per coperture e tetti: Google Ads | Kamran Arshad">
+<meta name="twitter:description" content="Marketing per imprese di coperture oltre i lead acquistati: Google Ads, Local Services Ads, Maps e tracciamento dalla prima chiamata al lavoro firmato. Audit gratuito.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing per imprese di coperture",
+  "serviceType": "Google Ads e SEO locale per imprese di coperture",
+  "description": "Marketing per imprese di coperture oltre i lead acquistati: Google Ads, Local Services Ads, Maps e tracciamento dalla prima chiamata al lavoro firmato. Audit gratuito.",
+  "url": "https://marketingkamran.com/it/roofing-marketing.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/it/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Italy"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing per coperture e tetti",
+      "item": "https://marketingkamran.com/it/roofing-marketing.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ha già lavorato con imprese di coperture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non ancora. Gestisco lo stesso sistema di Google Ads, Maps, sito e tracciamento per un'azienda britannica di pulizia moquette. Il percorso basato sulle chiamate è lo stesso, e glielo dico subito così può giudicare."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le imprese di coperture dovrebbero acquistare lead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I lead acquistati possono colmare i vuoti in fretta, ma possono essere condivisi e finiscono quando smette di pagare. I Suoi annunci e le Sue pagine richiedono più tempo, ma le richieste arrivano solo a Lei. All'inizio molte imprese usano entrambi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Come inizia la collaborazione?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con un audit gratuito di annunci, scheda Maps e sito. Riceve i risultati in linguaggio chiaro prima di decidere qualsiasi cosa."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Vai al contenuto</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/it/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Menu principale">
+      <a href="/it/#services">Servizi</a> <a href="/it/#work">Casi studio</a> <a href="/it/blog/">Note sul campo</a> <a class="btn" href="/it/#contact">Audit gratuito</a>
+    <details class="lang-sw"><summary aria-label="Language">IT</summary><ul><li><a href="/roofing-marketing.html" hreflang="en" lang="en">English</a></li><li><a href="/de/roofing-marketing.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/roofing-marketing.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/roofing-marketing.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/roofing-marketing.html" hreflang="it" lang="it" aria-current="true">Italiano</a></li><li><a href="/nl/roofing-marketing.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/roofing-marketing.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/it/">Home</a> &nbsp;/&nbsp; <a href="/it/#services">Servizi</a> &nbsp;/&nbsp; Marketing per coperture e tetti</div>
+    <h1>Marketing per coperture e tetti: meno lead condivisi, più lavori firmati dai Suoi canali</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Aggiornato il <time datetime="2026-10-30">30 ott 2026</time></span></div>
+    <div class="mkts" aria-label="Mercati serviti"><span>Italia</span><span>Svizzera</span><span>Canton Ticino</span><span>Altri paesi da remoto</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Un tetto è una decisione importante. I proprietari confrontano spesso più preventivi e si prendono tempo, quindi un basso costo per lead significa poco se quei lead non firmano mai.</p>
+      <p>Gestisco Google Ads, Local Services Ads, il profilo Google Maps e le pagine di servizio di un'azienda britannica di pulizia moquette, con i lavori prenotati rimandati a Google Ads. Un account per coperture userebbe lo stesso sistema.</p>
+    </div>
+    <h2>Cosa cambierei per primo in un'impresa di coperture</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Riparazioni e sostituzioni separate</h3></div>
+      <p>Un'infiltrazione ha bisogno di qualcuno in fretta, mentre un rifacimento completo è un lavoro di alto valore con una decisione più lunga. Ciascuno ha la propria campagna, landing page e budget, così uno non consuma in silenzio i soldi dell'altro.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Richieste Sue, non elenchi condivisi</h3></div>
+      <p>I lead acquistati possono essere venduti a più aziende insieme, trasformando il lavoro in una corsa al prezzo. I Suoi annunci e le Sue pagine portano il proprietario prima da Lei.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Fiducia sulla pagina dove si decide</h3></div>
+      <p>Foto reali dei Suoi lavori, recensioni, qualifiche e zone chiare contano per un acquisto di questa entità. Una pagina modello generica spreca il clic che ha pagato.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Google Maps e Local Services Ads</h3></div>
+      <p>Un Profilo dell'attività solido e annunci a pagamento per lead La mettono davanti a persone pronte a chiamare. Ho esperienza pratica con entrambi, compresa la configurazione e la gestione di Local Services Ads per un'azienda britannica di pulizia moquette.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Tracciamento oltre la prima chiamata</h3></div>
+      <p>I cicli di vendita lunghi richiedono più di un conteggio dei lead. I lavori firmati e il loro valore possono tornare a Google Ads, perché impari quali ricerche portano a tetti veri e non solo a richieste di preventivo.</p>
+    </div>
+    <h2>Quanto costano i clic per coperture e tetti</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Ricerca (in inglese)</th><th>Ricerche/mese UK</th><th>Offerta in cima alla pagina UK</th><th>Ricerche/mese USA</th><th>Offerta in cima alla pagina USA</th></tr></thead>
+        <tbody>
+          <tr><td>roof repair</td><td>6&#8239;600</td><td>£3,61 a £14,22</td><td>90&#8239;500</td><td>£10,85 a £53,85</td></tr>
+          <tr><td>roofer near me</td><td>33&#8239;100</td><td>£2,98 a £12,65</td><td>165&#8239;000</td><td>£10,32 a £56,13</td></tr>
+          <tr><td>roof replacement</td><td>1&#8239;000</td><td>£2,58 a £13,51</td><td>33&#8239;100</td><td>£10,78 a £52,94</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Fonte: Google Ads Keyword Planner, verificato il 30 ottobre 2026, ricerche mensili medie da ottobre 2025 a settembre 2026. Le offerte sono le stime minima e massima di Google in sterline, la valuta dell'account. Sono stime e non ciò che pagherebbe realmente.</p>
+    <p>Quando un singolo clic può avere stime come queste, giudicare l'account solo dal costo per lead non basta. Conta quanto rende un lavoro firmato rispetto a quanto è costato ottenerlo.</p>
+    <h2>Cosa posso mostrarLe</h2>
+        <div class="proof">
+      <span class="tag">Caso studio</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (Regno Unito)</h3>
+      <p>Non ho un cliente di coperture da mostrarLe. Posso mostrarLe il sistema che gestisco per un'azienda britannica di pulizia moquette: il sito, le pagine di servizio e di zona, Google Ads, Local Services Ads, il Profilo dell'attività e il tracciamento lato server, più un plugin su misura che rimanda a Google Ads il valore dei lavori prenotati.</p>
+      <p><a href="/it/mr-expert-carpet-cleaning.html">Leggi il caso studio Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <p>La meccanica si trasferisce direttamente. La differenza con i tetti sta nel valore del lavoro e nel tempo di decisione, quindi giudicherei l'account dai lavori firmati e non dal numero di lead.</p>
+    <h2>Cosa chiedere a un'agenzia di marketing per coperture</h2>
+    <ol class="steps">
+      <li><b>Questi lead sono esclusivi?</b>Chieda direttamente se un'altra impresa riceve la stessa richiesta.</li>
+      <li><b>Riportate i lavori firmati?</b>Un report che si ferma ai lead non può dire se gli annunci sono redditizi.</li>
+      <li><b>Di chi sono account pubblicitario e sito?</b>Se cambia, storico e pagine devono restare a Lei.</li>
+      <li><b>La pagina mostrerà il mio vero lavoro?</b>Foto di stock e modelli condivisi non creano fiducia per un lavoro di questa entità.</li>
+    </ol>
+    <h2>Domande frequenti</h2>
+    <div class="faq">
+      <details><summary>Ha già lavorato con imprese di coperture?</summary><p>Non ancora. Gestisco lo stesso sistema di Google Ads, Maps, sito e tracciamento per un'azienda britannica di pulizia moquette. Il percorso basato sulle chiamate è lo stesso, e glielo dico subito così può giudicare.</p></details>
+      <details><summary>Le imprese di coperture dovrebbero acquistare lead?</summary><p>I lead acquistati possono colmare i vuoti in fretta, ma possono essere condivisi e finiscono quando smette di pagare. I Suoi annunci e le Sue pagine richiedono più tempo, ma le richieste arrivano solo a Lei. All'inizio molte imprese usano entrambi.</p></details>
+      <details><summary>Come inizia la collaborazione?</summary><p>Con un audit gratuito di annunci, scheda Maps e sito. Riceve i risultati in linguaggio chiaro prima di decidere qualsiasi cosa.</p></details>
+    </div>
+    <div class="cta">
+      <h2>I Suoi lead diventano tetti firmati?</h2>
+      <p>Mi invii il sito e la zona. Controllerò annunci, scheda Maps e tracciamento, e Le dirò cosa sistemerei per primo.</p>
+      <a class="btn" href="/it/#contact">Il mio audit gratuito di marketing per coperture &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Da leggere anche</h2>
+      <a href="/it/blog/google-ads-offline-conversions-booked-jobs.html">Conversioni offline di Google Ads per la lead generation<span>Comunicare a Google Ads quali contatti sono diventati lavori prenotati.</span></a> <a href="/it/blog/local-services-ads-vs-google-ads.html">Local Services Ads o Google Ads<span>Fatturazione, controllo e quando usare ciascuno.</span></a> <a href="/it/mr-expert-carpet-cleaning.html">Caso studio Mr Expert Carpet Cleaning<span>Costruzione digitale completa per un'attività di servizi locale nel Regno Unito.</span></a> <a href="/it/local-seo-services.html">Servizi di SEO locale<span>Profilo dell'attività su Google, pagine dei servizi e correzioni dell'indicizzazione.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/it/#contact">Audit gratuito</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Pubblicità a pagamento, SEO e tracciamento. Islamabad, Pakistan, da remoto.</span> <span><a href="/it/">Home</a> &middot; <a href="/it/blog/">Note sul campo</a> &middot; <a href="/it/alphamart.html">AlphaMart</a> &middot; <a href="/it/the-body-essential.html">The Body Essential</a> &middot; <a href="/it/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/it/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/it/brizaa.html">Brizaa</a> &middot; <a href="/it/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-it.js" defer></script>
+</body>
+</html>

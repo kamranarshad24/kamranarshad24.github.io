@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing für Heizung und Klima: Google Ads und Leads | Kamran Arshad</title>
+<meta name="description" content="Marketing für Heizungs- und Klimabetriebe: Google Ads, Local Services Ads und Maps, rund um die Hochsaison geplant und bis zum gebuchten Auftrag erfasst. Kostenloses Audit.">
+<link rel="canonical" href="https://marketingkamran.com/de/hvac-marketing.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/hvac-marketing.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/hvac-marketing.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/hvac-marketing.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/hvac-marketing.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/hvac-marketing.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/hvac-marketing.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/hvac-marketing.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/hvac-marketing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://marketingkamran.com/de/hvac-marketing.html">
+<meta property="og:title" content="Marketing für Heizung und Klima: Google Ads und Leads | Kamran Arshad">
+<meta property="og:description" content="Marketing für Heizungs- und Klimabetriebe: Google Ads, Local Services Ads und Maps, rund um die Hochsaison geplant und bis zum gebuchten Auftrag erfasst. Kostenloses Audit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing für Heizung und Klima: Google Ads und Leads | Kamran Arshad">
+<meta name="twitter:description" content="Marketing für Heizungs- und Klimabetriebe: Google Ads, Local Services Ads und Maps, rund um die Hochsaison geplant und bis zum gebuchten Auftrag erfasst. Kostenloses Audit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing für Heizungs- und Klimabetriebe",
+  "serviceType": "Google Ads und Local SEO für Heizungs- und Klimabetriebe",
+  "description": "Marketing für Heizungs- und Klimabetriebe: Google Ads, Local Services Ads und Maps, rund um die Hochsaison geplant und bis zum gebuchten Auftrag erfasst. Kostenloses Audit.",
+  "url": "https://marketingkamran.com/de/hvac-marketing.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/de/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    {
+      "@type": "Country",
+      "name": "Austria"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Startseite",
+      "item": "https://marketingkamran.com/de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing für Heizung und Klima",
+      "item": "https://marketingkamran.com/de/hvac-marketing.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Haben Sie schon mit Heizungs- und Klimabetrieben gearbeitet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Noch nicht. Ich betreibe dasselbe System aus Google Ads, Maps, Website und Tracking für ein britisches Teppichreinigungsunternehmen. Auch dort melden sich Kunden vor allem per Telefon, und ich sage Ihnen das vorab, damit Sie beurteilen können, ob es passt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sind Leads im Heizungs- und Klimabereich besser gekauft oder selbst erzeugt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gekaufte Leads kommen schnell, werden aber vielleicht mit Wettbewerbern geteilt und enden, sobald Sie nicht mehr zahlen. Eigene Anzeigen und Seiten brauchen länger, aber die Leads gehören Ihnen. Viele Unternehmen nutzen beides, solange die eigenen Kanäle wachsen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie beginnt die Zusammenarbeit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mit einem kostenlosen Audit Ihrer Anzeigen, Ihres Maps-Eintrags und Ihrer Website. Sie erhalten die Ergebnisse in verständlicher Sprache, bevor Sie etwas entscheiden."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/de/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Hauptmenü">
+      <a href="/de/#services">Leistungen</a> <a href="/de/#work">Fallstudien</a> <a href="/de/blog/">Praxisnotizen</a> <a class="btn" href="/de/#contact">Kostenloser Audit</a>
+    <details class="lang-sw"><summary aria-label="Language">DE</summary><ul><li><a href="/hvac-marketing.html" hreflang="en" lang="en">English</a></li><li><a href="/de/hvac-marketing.html" hreflang="de" lang="de" aria-current="true">Deutsch</a></li><li><a href="/fr/hvac-marketing.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/hvac-marketing.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/hvac-marketing.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/hvac-marketing.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/hvac-marketing.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/de/">Startseite</a> &nbsp;/&nbsp; <a href="/de/#services">Leistungen</a> &nbsp;/&nbsp; Marketing für Heizung und Klima</div>
+    <h1>Marketing für Heizung und Klima: eigene Leads, in der Hochsaison und in der ruhigen Zeit</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Aktualisiert am <time datetime="2026-10-30">30. Okt. 2026</time></span></div>
+    <div class="mkts" aria-label="Zielmärkte"><span>Deutschland</span><span>Österreich</span><span>Schweiz</span><span>Weitere Länder remote</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Die Nachfrage nach Heizung und Klima schwankt mit dem Wetter. Marketing, das das ganze Jahr gleich läuft, gibt zu viel aus, wenn Sie ausgebucht sind, und schweigt, wenn Sie die Arbeit am dringendsten brauchen.</p>
+      <p>Ich betreue Google Ads, Local Services Ads, das Google-Maps-Profil und die Leistungsseiten eines britischen Teppichreinigungsunternehmens, mit erfassten Anrufen und Formularen. Ein Konto für Heizung und Klima würde dasselbe System nutzen, geplant nach Ihren Jahreszeiten.</p>
+    </div>
+    <h2>Wie ich das Konto nach den Jahreszeiten planen würde</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Budgets, die der Saison folgen</h3></div>
+      <p>Die Nachfrage nach Reparaturen steigt tendenziell bei sehr heißem oder sehr kaltem Wetter. Budgets und Anzeigenzeiten lassen sich an Ihre Kapazität anpassen, damit Sie nicht für Anrufe zahlen, die Ihr Team nicht annehmen kann.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Reparaturen und Austausch getrennt</h3></div>
+      <p>Eine defekte Anlage braucht schnell jemanden, während jemand, der eine Anlage austauscht, vielleicht länger Angebote vergleicht und der Auftrag meist mehr wert ist. Getrennte Kampagnen geben jedem die passende Anzeige, Seite und das passende Gebot.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Eigene Leads statt geteilter</h3></div>
+      <p>Gekaufte Leads können Lücken füllen, gehen aber vielleicht auch an Ihre Wettbewerber. Eigene Anzeigen, Ihr Maps-Eintrag und Ihre Seiten bringen Anfragen nur zu Ihnen.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Local Services Ads und Google Maps</h3></div>
+      <p>Anzeigen mit Abrechnung pro Lead und ein starkes Unternehmensprofil bringen Sie vor Menschen, die anrufen wollen. Ich habe mit beidem praktische Erfahrung, darunter die Einrichtung und den Betrieb von Local Services Ads für ein britisches Teppichreinigungsunternehmen.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Tracking bis zum gebuchten Auftrag</h3></div>
+      <p>Zustande gekommene Anrufe und Formulare werden nach Quelle erfasst. Gebuchte Aufträge und ihr Wert können an Google Ads zurückgehen, damit es den Unterschied zwischen einer schnellen Reparatur und einer kompletten Installation lernt.</p>
+    </div>
+    <h2>Warum Streuverluste hier besonders zählen</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Suchbegriff (Englisch)</th><th>Suchen/Monat UK</th><th>Top-of-Page-Gebot UK</th><th>Suchen/Monat USA</th><th>Top-of-Page-Gebot USA</th></tr></thead>
+        <tbody>
+          <tr><td>ac repair</td><td>9&#8239;900</td><td>£1,35 bis £7,17</td><td>368&#8239;000</td><td>£14,07 bis £75,96</td></tr>
+          <tr><td>hvac repair</td><td>3&#8239;600</td><td>£2,32 bis £6,49</td><td>74&#8239;000</td><td>£12,72 bis £74,84</td></tr>
+          <tr><td>furnace repair</td><td>2&#8239;400</td><td>keine Schätzung</td><td>201&#8239;000</td><td>£8,09 bis £56,13</td></tr>
+          <tr><td>boiler repair</td><td>5&#8239;400</td><td>£3,66 bis £11,88</td><td>27&#8239;100</td><td>£8,40 bis £50,43</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Quelle: Google Ads Keyword Planner, geprüft am 30. Oktober 2026, durchschnittliche monatliche Suchen von Oktober 2025 bis September 2026. Die Gebote sind Googles niedrige und hohe Schätzungen in Pfund, der Währung des Kontos. Es sind Schätzungen und nicht das, was Sie tatsächlich zahlen würden.</p>
+    <p>Die US-Gebote gehören hier zu den höchsten der 21 Suchbegriffe, die ich für lokale Unternehmen geprüft habe. Beachten Sie auch die Wörter: "boiler repair" und "ac repair" sind in UK und den USA sehr unterschiedliche Märkte, die Keyword-Liste muss also Ihrem Land folgen.</p>
+    <h2>Das System, das ich einbringen würde</h2>
+        <div class="proof">
+      <span class="tag">Fallstudie</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (UK)</h3>
+      <p>In meinen Fallstudien gibt es noch kein Konto für Heizung und Klima. Das System, das ich einbringen würde, betreibe ich für ein britisches Teppichreinigungsunternehmen: Website, Leistungs- und Gebietsseiten, Google Ads, Local Services Ads, das Unternehmensprofil und serverseitiges Tracking, dazu ein eigenes Plugin, das die Werte gebuchter Aufträge an Google Ads zurückmeldet.</p>
+      <p><a href="/de/mr-expert-carpet-cleaning.html">Zur Fallstudie Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <p>Die Struktur lässt sich direkt übertragen: lokale Suche, dann Anruf oder Formular, dann gebuchter Auftrag. Saisonalität und Auftragswert ändern sich in dieser Branche am stärksten und bestimmen die Planung des Kontos von Anfang an.</p>
+    <h2>Was Sie prüfen sollten, bevor Sie eine Agentur beauftragen</h2>
+    <ol class="steps">
+      <li><b>Gehören die Konten Ihnen?</b>Werbekonto, Website und Anrufdaten sollten Ihre bleiben.</li>
+      <li><b>Ist der Vertrag an sichtbare Ergebnisse gebunden?</b>Lange Verträge sind ohne Tracking, das Sie selbst prüfen können, schwer zu beurteilen.</li>
+      <li><b>Werden Reparaturen und Installationen getrennt berichtet?</b>Ein gemischter Preis pro Lead verdeckt, welche Arbeit sich wirklich lohnt.</li>
+      <li><b>Was passiert in der ruhigen Zeit?</b>Fragen Sie nach einem Plan für schwache Monate, nicht nur für die Spitze.</li>
+    </ol>
+    <h2>Häufige Fragen</h2>
+    <div class="faq">
+      <details><summary>Haben Sie schon mit Heizungs- und Klimabetrieben gearbeitet?</summary><p>Noch nicht. Ich betreibe dasselbe System aus Google Ads, Maps, Website und Tracking für ein britisches Teppichreinigungsunternehmen. Auch dort melden sich Kunden vor allem per Telefon, und ich sage Ihnen das vorab, damit Sie beurteilen können, ob es passt.</p></details>
+      <details><summary>Sind Leads im Heizungs- und Klimabereich besser gekauft oder selbst erzeugt?</summary><p>Gekaufte Leads kommen schnell, werden aber vielleicht mit Wettbewerbern geteilt und enden, sobald Sie nicht mehr zahlen. Eigene Anzeigen und Seiten brauchen länger, aber die Leads gehören Ihnen. Viele Unternehmen nutzen beides, solange die eigenen Kanäle wachsen.</p></details>
+      <details><summary>Wie beginnt die Zusammenarbeit?</summary><p>Mit einem kostenlosen Audit Ihrer Anzeigen, Ihres Maps-Eintrags und Ihrer Website. Sie erhalten die Ergebnisse in verständlicher Sprache, bevor Sie etwas entscheiden.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Zahlen Sie für Anrufe, die Sie nicht annehmen können?</h2>
+      <p>Senden Sie mir Ihre Website und Ihr Einzugsgebiet. Ich prüfe Ihre Anzeigen, Ihren Maps-Eintrag und Ihr Tracking und sage Ihnen, was ich zuerst beheben würde.</p>
+      <a class="btn" href="/de/#contact">Mein kostenloses Heizung-und-Klima-Audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Weiterlesen</h2>
+      <a href="/de/blog/local-services-ads-vs-google-ads.html">Local Services Ads oder Google Ads<span>Abrechnung, Kontrolle und wann Sie was nutzen.</span></a> <a href="/de/mr-expert-carpet-cleaning.html">Fallstudie Mr Expert Carpet Cleaning<span>Kompletter digitaler Aufbau für einen lokalen Dienstleister in UK.</span></a> <a href="/de/google-ads-management.html">Google Ads Betreuung<span>Suchkampagnen mit Anruf- und Formular-Tracking.</span></a> <a href="/de/blog/google-ads-call-tracking-local-business.html">Google Ads Anruf-Tracking für lokale Dienstleister<span>So zählen Sie die Anrufe, aus denen Aufträge werden.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/de/#contact">Kostenloser Audit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Paid Ads, SEO und Tracking. Islamabad, Pakistan, remote tätig.</span> <span><a href="/de/">Startseite</a> &middot; <a href="/de/blog/">Praxisnotizen</a> &middot; <a href="/de/alphamart.html">AlphaMart</a> &middot; <a href="/de/the-body-essential.html">The Body Essential</a> &middot; <a href="/de/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/de/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/de/brizaa.html">Brizaa</a> &middot; <a href="/de/privacy-policy.html">Datenschutz</a></span>
+  </div>
+</footer>
+<script src="/consent-de.js" defer></script>
+</body>
+</html>

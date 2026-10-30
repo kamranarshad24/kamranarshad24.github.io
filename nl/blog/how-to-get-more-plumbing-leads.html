@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Meer klanten als loodgieter, zonder afhankelijk te zijn van gekochte leads</title>
+<meta name="description" content="Zes manieren om meer klanten als loodgieter te krijgen, in de volgorde waarin ik ze zou aanpakken: Maps, reviews, dienstpagina&#x27;s, Local Services Ads, Google Ads en telefoonafhandeling.">
+<link rel="canonical" href="https://marketingkamran.com/nl/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/how-to-get-more-plumbing-leads.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://marketingkamran.com/nl/blog/how-to-get-more-plumbing-leads.html">
+<meta property="og:title" content="Meer klanten als loodgieter, zonder afhankelijk te zijn van gekochte leads">
+<meta property="og:description" content="Zes manieren om meer klanten als loodgieter te krijgen, in de volgorde waarin ik ze zou aanpakken: Maps, reviews, dienstpagina&#x27;s, Local Services Ads, Google Ads en telefoonafhandeling.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meer klanten als loodgieter, zonder afhankelijk te zijn van gekochte leads">
+<meta name="twitter:description" content="Zes manieren om meer klanten als loodgieter te krijgen, in de volgorde waarin ik ze zou aanpakken: Maps, reviews, dienstpagina&#x27;s, Local Services Ads, Google Ads en telefoonafhandeling.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Meer klanten als loodgieter, zonder afhankelijk te zijn van gekochte leads",
+  "description": "Zes manieren om meer klanten als loodgieter te krijgen, in de volgorde waarin ik ze zou aanpakken: Maps, reviews, dienstpagina's, Local Services Ads, Google Ads en telefoonafhandeling.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/nl/",
+    "jobTitle": "Specialist in online advertenties & conversietracking"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/how-to-get-more-plumbing-leads.html",
+    "inLanguage": "nl"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "nl"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Praktijknotities",
+      "item": "https://marketingkamran.com/nl/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Meer klanten als loodgieter"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wat is de snelste manier om aan loodgietersleads te komen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Betaalde kanalen zijn het snelst: Local Services Ads waar beschikbaar, Google Ads of gekochte leads. Uw Bedrijfsprofiel en pagina's kosten op termijn minder, maar hebben meer tijd nodig."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Zijn gekochte leads de moeite waard voor een loodgieter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ze kunnen gaten vullen, maar controleer of elke lead wordt gedeeld met andere loodgieters, en vergelijk de kosten per geboekte klus met uw andere kanalen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoeveel reviews heeft een loodgieter nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Er is geen vast aantal. Kijk naar de bedrijven bovenaan Maps in uw gebied en blijf gestaag nieuwe reviews verzamelen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Heeft een loodgieter een website nodig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Local Services Ads kunnen zonder, maar met een website kunt u ranken op specifieke diensten en gebieden, en klanten hebben een plek om u te controleren."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/nl/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/nl/blog/">Praktijknotities</a> <a href="/nl/#work">Cases</a> <a href="/nl/#services">Diensten</a> <a class="btn" href="/nl/#contact">Gratis audit</a>
+    <details class="lang-sw"><summary aria-label="Language">NL</summary><ul><li><a href="/blog/how-to-get-more-plumbing-leads.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/how-to-get-more-plumbing-leads.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/how-to-get-more-plumbing-leads.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/how-to-get-more-plumbing-leads.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/how-to-get-more-plumbing-leads.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/how-to-get-more-plumbing-leads.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/pt/blog/how-to-get-more-plumbing-leads.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/nl/blog/">Praktijknotities</a> &nbsp;/&nbsp; Lokale dienstverlening</div>
+    <h1>Meer klanten als loodgieter, in de volgorde waarin ik het echt zou doen</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 okt 2026</span><span>5 min lezen</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Klussen ontstaan als u gevonden wordt op het moment van behoefte en snel reageert. Begin met wat van u is: uw Google Bedrijfsprofiel, reviews en dienstpagina's. Voeg daarna betaalde advertenties toe, en gebruik gekochte leads alleen om gaten te vullen.</p>
+    </div>
+    <p>Ik heb nog geen account voor een loodgieter beheerd. Ik run wel deze zelfde opzet voor een Brits tapijtreinigingsbedrijf, en de reis is dezelfde: een lokale zoekopdracht, een telefoontje of formulier, dan een klus in de agenda. Uw cijfers zullen verschillen, maar de volgorde blijft.</p>
+    <h2>1. Breng uw Google Bedrijfsprofiel op orde</h2>
+    <p>Het kost niets en beïnvloedt of u op Maps verschijnt. Controleer uw hoofdcategorie, noem uw echte diensten, stel uw servicegebied nauwkeurig in en voeg echte foto's van uw werk toe. Stop geen zoekwoorden of plaatsnamen in de bedrijfsnaam, want dat is in strijd met de richtlijnen van Google en riskeert een opschorting.</p>
+    <h2>2. Vraag na elke klus om een review</h2>
+    <p>Reviews beïnvloeden uw zichtbaarheid en of iemand u belt of de volgende loodgieter. Maak er een routine van: stuur de reviewlink kort na de klus per sms of WhatsApp, terwijl de klant nog weet hoe opgelucht hij was.</p>
+    <h2>3. Bouw een pagina per dienst en gebied</h2>
+    <p>Eén homepage kan niet aansluiten op zoekopdrachten naar ontstopping, lekkages en boilers in vijf nabijgelegen plaatsen. Elke hoofddienst en elk gebied dat u echt bedient, verdient een eigen nuttige pagina. Vermijd gekopieerde pagina's waarop alleen de plaatsnaam verandert, want die voegen weinig toe.</p>
+    <h2>4. Overweeg Local Services Ads</h2>
+    <p>Waar uw categorie en land in aanmerking komen, rekenen deze per lead af en kunnen ze prominent in Zoeken verschijnen. Google beschrijft ze als eenvoudiger in te richten en met minder beheer, dus het is een verstandig eerste betaald kanaal om te bekijken. Ik vergelijk ze uitgebreid in <a href="/nl/blog/local-services-ads-vs-google-ads.html">Local Services Ads of Google Ads</a>.</p>
+    <h2>5. Gebruik Google Ads voor de klussen die u het liefst wilt</h2>
+    <p>Met Google Ads kiest u uw klussen, zoals spoedwerk of installaties, en sluit u de rest uit. Houd de locatietargeting strak, voeg uitsluitingszoekwoorden toe voor banen, cursussen en doe-het-zelf, en meet tot stand gekomen telefoontjes en niet alleen tikken op uw nummer.</p>
+    <h2>6. Beantwoord elke aanvraag snel</h2>
+    <p>Iemand met water op de vloer probeert het volgende nummer als u niet opneemt. Een gemist telefoontje is een betaalde lead die weg is, dus controleer hoeveel u er mist voordat u meer verkeer koopt. Een eenvoudige terugbelregel of sms-antwoord kan meer waard zijn dan extra advertentiebudget.</p>
+    <h2>En het kopen van loodgietersleads?</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Gekochte leads</th><th>Uw eigen kanalen</th></tr></thead>
+        <tbody>
+          <tr><td>Snelheid van starten</td><td>Snel</td><td>Advertenties snel, SEO trager</td></tr>
+          <tr><td>Exclusief voor u?</td><td>Soms gedeeld, dus vraag ernaar</td><td>Ja</td></tr>
+          <tr><td>Als u stopt met betalen</td><td>Leads stoppen</td><td>Advertenties stoppen, maar pagina's en reviews blijven werken</td></tr>
+          <tr><td>Bouwt uw merk op?</td><td>Weinig</td><td>Ja</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Gekochte leads zijn niet slecht. Ze zijn nuttig in een rustige week of terwijl uw eigen kanalen groeien. Het risico is ervan afhankelijk worden, want als ze stoppen, houdt u niets over.</p>
+    <h2>Meet voordat u meer uitgeeft</h2>
+    <p>Wat u ook gebruikt, noteer waar elke klus vandaan kwam. Een eenvoudige vraag aan de telefoon is beter dan niets, en goede meting van telefoontjes en formulieren nog beter. Zonder dat weet u niet welk kanaal u moet laten groeien.</p>
+    <p>Hoe ik die meting inricht, beschrijf ik in <a href="/nl/blog/google-ads-call-tracking-local-business.html">Google Ads-belmeting voor lokale dienstverleners</a>.</p>
+    <h2>Veelgestelde vragen</h2>
+    <h3>Wat is de snelste manier om aan loodgietersleads te komen?</h3>
+    <p>Betaalde kanalen zijn het snelst: Local Services Ads waar beschikbaar, Google Ads of gekochte leads. Uw Bedrijfsprofiel en pagina's kosten op termijn minder, maar hebben meer tijd nodig.</p>
+    <h3>Zijn gekochte leads de moeite waard voor een loodgieter?</h3>
+    <p>Ze kunnen gaten vullen, maar controleer of elke lead wordt gedeeld met andere loodgieters, en vergelijk de kosten per geboekte klus met uw andere kanalen.</p>
+    <h3>Hoeveel reviews heeft een loodgieter nodig?</h3>
+    <p>Er is geen vast aantal. Kijk naar de bedrijven bovenaan Maps in uw gebied en blijf gestaag nieuwe reviews verzamelen.</p>
+    <h3>Heeft een loodgieter een website nodig?</h3>
+    <p>Local Services Ads kunnen zonder, maar met een website kunt u ranken op specifieke diensten en gebieden, en klanten hebben een plek om u te controleren.</p>
+    <div class="cta">
+      <h2>Wilt u deze volgorde toepassen op uw loodgietersbedrijf?</h2>
+      <p>Stuur me uw website en servicegebied. Ik controleer uw Maps-vermelding, advertenties en meting, en vertel u wat ik als eerste zou oplossen.</p>
+      <a class="btn" href="/nl/#contact">Gratis marketingaudit voor loodgieters &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Gerelateerde praktijknotities</h2>
+      <a href="/nl/marketing-for-plumbers.html">Marketing voor loodgieters<span>Wat ik voor een loodgietersbedrijf zou inrichten.</span></a> <a href="/nl/blog/local-services-ads-vs-google-ads.html">Local Services Ads of Google Ads<span>Facturering, controle en wanneer u welke gebruikt.</span></a> <a href="/nl/blog/local-seo-service-pages-service-business.html">Lokale SEO-dienstpagina's: één pagina per dienst en gebied<span>Hoe u pagina's opbouwt voor Maps en organisch zoeken.</span></a> <a href="/nl/blog/google-ads-account-audit-lead-generation.html">Checklist voor een Google Ads-audit voor leadgeneratie<span>Zes controles voor een account dat leeft van telefoontjes en formulieren.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Specialist in online advertenties &amp; tracking</span> <span><a href="/nl/">Home</a> &middot; <a href="/nl/blog/">Praktijknotities</a> &middot; <a href="/nl/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-nl.js" defer></script>
+</body>
+</html>

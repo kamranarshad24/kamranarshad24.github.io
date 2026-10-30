@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing para fontaneros: Google Ads, Maps y SEO | Kamran Arshad</title>
+<meta name="description" content="Marketing para empresas de fontanería: Google Ads, Local Services Ads, Google Maps y páginas de servicios, medidos hasta las llamadas que se vuelven trabajos. Auditoría gratuita.">
+<link rel="canonical" href="https://marketingkamran.com/es/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/marketing-for-plumbers.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://marketingkamran.com/es/marketing-for-plumbers.html">
+<meta property="og:title" content="Marketing para fontaneros: Google Ads, Maps y SEO | Kamran Arshad">
+<meta property="og:description" content="Marketing para empresas de fontanería: Google Ads, Local Services Ads, Google Maps y páginas de servicios, medidos hasta las llamadas que se vuelven trabajos. Auditoría gratuita.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing para fontaneros: Google Ads, Maps y SEO | Kamran Arshad">
+<meta name="twitter:description" content="Marketing para empresas de fontanería: Google Ads, Local Services Ads, Google Maps y páginas de servicios, medidos hasta las llamadas que se vuelven trabajos. Auditoría gratuita.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing para empresas de fontanería",
+  "serviceType": "Google Ads y SEO local para fontaneros",
+  "description": "Marketing para empresas de fontanería: Google Ads, Local Services Ads, Google Maps y páginas de servicios, medidos hasta las llamadas que se vuelven trabajos. Auditoría gratuita.",
+  "url": "https://marketingkamran.com/es/marketing-for-plumbers.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/es/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Spain"
+    },
+    {
+      "@type": "Country",
+      "name": "Mexico"
+    },
+    {
+      "@type": "Country",
+      "name": "Colombia"
+    },
+    {
+      "@type": "Country",
+      "name": "Argentina"
+    },
+    {
+      "@type": "Country",
+      "name": "Chile"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://marketingkamran.com/es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing para fontaneros",
+      "item": "https://marketingkamran.com/es/marketing-for-plumbers.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Has trabajado antes con fontaneros?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todavía no. Llevo el mismo sistema de Google Ads, Maps, web y medición para una empresa británica de limpieza de alfombras, con el mismo recorrido del cliente basado en llamadas. Te lo digo desde el principio para que puedas juzgar por ti mismo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Un fontanero debería usar Google Ads o Local Services Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A menudo ambos. Local Services Ads cobra por lead y requiere poca configuración, mientras que Google Ads te da más control sobre los trabajos y las zonas. La auditoría te dirá qué encaja con tu zona y tu presupuesto."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo empieza el trabajo contigo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Con una auditoría gratuita de tus anuncios, tu ficha de Maps y tu web. Recibes las conclusiones en lenguaje claro antes de decidir nada."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/es/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Menú principal">
+      <a href="/es/#services">Servicios</a> <a href="/es/#work">Casos de éxito</a> <a href="/es/blog/">Notas de campo</a> <a class="btn" href="/es/#contact">Auditoría gratis</a>
+    <details class="lang-sw"><summary aria-label="Language">ES</summary><ul><li><a href="/marketing-for-plumbers.html" hreflang="en" lang="en">English</a></li><li><a href="/de/marketing-for-plumbers.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/marketing-for-plumbers.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/marketing-for-plumbers.html" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="/it/marketing-for-plumbers.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/marketing-for-plumbers.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/marketing-for-plumbers.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/es/">Inicio</a> &nbsp;/&nbsp; <a href="/es/#services">Servicios</a> &nbsp;/&nbsp; Marketing para fontaneros</div>
+    <h1>Marketing para fontaneros: más llamadas que se convierten en trabajos pagados</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Actualizado el <time datetime="2026-10-30">30 oct. 2026</time></span></div>
+    <div class="mkts" aria-label="Mercados que atiendo"><span>España</span><span>México</span><span>Colombia</span><span>Argentina y Chile</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>El marketing de fontanería consiste en estar visible en el momento en que algo gotea y responder rápido. Quien tiene una fuga difícilmente pasará mucho tiempo comparando.</p>
+      <p>Llevo Google Ads, Local Services Ads, el perfil de Google Maps y las páginas de servicios de una empresa británica de limpieza de alfombras, con llamadas y formularios medidos. Ese es el sistema que aportaría a una empresa de fontanería.</p>
+    </div>
+    <h2>Por dónde empezaría en una empresa de fontanería</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Google Ads para trabajos urgentes y de alto valor</h3></div>
+      <p>Las urgencias, el trabajo con calderas o calentadores y las instalaciones de baños se comportan de forma muy distinta. Cada uno tiene sus grupos de anuncios, para que pujes fuerte por los trabajos que quieres y dejes fuera los demás.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Local Services Ads donde estén disponibles</h3></div>
+      <p>Cobran por lead en vez de por clic y pueden aparecer de forma destacada en la búsqueda. Aquí tengo experiencia práctica: configuré la cuenta y llevo Local Services Ads para una empresa británica de limpieza de alfombras.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Google Maps y tu Perfil de Empresa</h3></div>
+      <p>Las categorías, los servicios, las zonas, las fotos y un flujo constante de reseñas deciden con qué frecuencia apareces cuando alguien cercano busca un fontanero.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Una página para cada servicio y zona</h3></div>
+      <p>Una sola página de inicio no puede posicionarse para desatascos, reparación de fugas y cinco localidades cercanas. Las páginas separadas dan a Google y a tu cliente una coincidencia exacta.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Medición hasta el trabajo reservado</h3></div>
+      <p>Un toque en tu número de teléfono no es un cliente. Se miden las llamadas conectadas y los formularios, y los trabajos reservados pueden volver a Google Ads para que aprenda qué búsquedas traen trabajo real.</p>
+    </div>
+    <h2>Lo que cuestan los clics en fontanería</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Búsqueda (en inglés)</th><th>Búsquedas/mes R. Unido</th><th>Puja parte superior R. Unido</th><th>Búsquedas/mes EE. UU.</th><th>Puja parte superior EE. UU.</th></tr></thead>
+        <tbody>
+          <tr><td>emergency plumber</td><td>12&#8239;100</td><td>£3,87 a £26,39</td><td>90&#8239;500</td><td>£18,28 a £82,32</td></tr>
+          <tr><td>plumber near me</td><td>90&#8239;500</td><td>£1,54 a £10,70</td><td>823&#8239;000</td><td>£9,15 a £61,62</td></tr>
+          <tr><td>blocked drain</td><td>5&#8239;400</td><td>£3,14 a £19,29</td><td>1&#8239;000</td><td>£5,25 a £28,02</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Fuente: Google Ads Keyword Planner, revisado el 30 de octubre de 2026, búsquedas mensuales medias de octubre de 2025 a septiembre de 2026. Las pujas son las estimaciones baja y alta de Google en libras, la moneda de la cuenta. Son estimaciones y no lo que pagarías realmente.</p>
+    <p>En la parte alta de esas estimaciones, una sola llamada urgente perdida puede tirar un clic caro. Por eso miraría cómo se atienden las llamadas antes de subir ningún presupuesto.</p>
+    <h2>El sistema que llevo hoy</h2>
+        <div class="proof">
+      <span class="tag">Caso de éxito</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (Reino Unido)</h3>
+      <p>Todavía no he llevado una cuenta de fontanería. Lo que sí llevo es este sistema para una empresa británica de limpieza de alfombras: la web, las páginas de servicios y zonas, Google Ads, Local Services Ads, el Perfil de Empresa y la medición del lado del servidor, más un plugin a medida que envía a Google Ads el valor de los trabajos reservados.</p>
+      <p><a href="/es/mr-expert-carpet-cleaning.html">Leer el caso de Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <p>El recorrido del cliente es el mismo: una búsqueda local, una llamada o un formulario, y luego un trabajo en la agenda. Las palabras clave y el coste por lead son distintos. Keyword Planner da una primera estimación, y solo tus propios resultados medidos dan la cifra real.</p>
+    <h2>Preguntas que hacer a cualquier agencia de marketing para fontaneros</h2>
+    <ol class="steps">
+      <li><b>¿De quién es la cuenta publicitaria?</b>Debe ser tuya, para que tu historial se quede contigo si algún día te vas.</li>
+      <li><b>¿Se comparten los leads con otros fontaneros?</b>Algunos servicios venden una misma consulta a varias empresas. Tus propios anuncios y páginas solo te traen leads a ti.</li>
+      <li><b>¿Qué cuenta como conversión?</b>Pregunta si es una llamada conectada o solo un toque en un número.</li>
+      <li><b>¿Puedo ver los términos de búsqueda?</b>Deberías poder ver exactamente qué buscó la gente antes de llamar.</li>
+    </ol>
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq">
+      <details><summary>¿Has trabajado antes con fontaneros?</summary><p>Todavía no. Llevo el mismo sistema de Google Ads, Maps, web y medición para una empresa británica de limpieza de alfombras, con el mismo recorrido del cliente basado en llamadas. Te lo digo desde el principio para que puedas juzgar por ti mismo.</p></details>
+      <details><summary>¿Un fontanero debería usar Google Ads o Local Services Ads?</summary><p>A menudo ambos. Local Services Ads cobra por lead y requiere poca configuración, mientras que Google Ads te da más control sobre los trabajos y las zonas. La auditoría te dirá qué encaja con tu zona y tu presupuesto.</p></details>
+      <details><summary>¿Cómo empieza el trabajo contigo?</summary><p>Con una auditoría gratuita de tus anuncios, tu ficha de Maps y tu web. Recibes las conclusiones en lenguaje claro antes de decidir nada.</p></details>
+    </div>
+    <div class="cta">
+      <h2>¿De dónde vienen realmente tus trabajos de fontanería?</h2>
+      <p>Envíame tu web y tu zona principal. Revisaré tus anuncios, tu ficha de Maps y tu medición, y te diré lo primero que arreglaría.</p>
+      <a class="btn" href="/es/#contact">Quiero mi auditoría gratuita de marketing para fontanería &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Relacionado</h2>
+      <a href="/es/blog/how-to-get-more-plumbing-leads.html">Cómo conseguir más clientes de fontanería<span>Comprar leads o generar los tuyos, y cómo funciona cada uno.</span></a> <a href="/es/blog/local-services-ads-vs-google-ads.html">Local Services Ads o Google Ads<span>Facturación, control y cuándo usar cada uno.</span></a> <a href="/es/mr-expert-carpet-cleaning.html">Caso de estudio de Mr Expert Carpet Cleaning<span>Creación digital completa para un negocio de servicios local en Reino Unido.</span></a> <a href="/es/local-seo-services.html">Servicios de SEO local<span>Perfil de Empresa de Google, páginas de servicio y correcciones de indexación.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/es/#contact">Auditoría gratis</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Publicidad de pago, SEO y seguimiento. Islamabad, Pakistán, en remoto.</span> <span><a href="/es/">Inicio</a> &middot; <a href="/es/blog/">Notas de campo</a> &middot; <a href="/es/alphamart.html">AlphaMart</a> &middot; <a href="/es/the-body-essential.html">The Body Essential</a> &middot; <a href="/es/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/es/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/es/brizaa.html">Brizaa</a> &middot; <a href="/es/privacy-policy.html">Privacidad</a></span>
+  </div>
+</footer>
+<script src="/consent-es.js" defer></script>
+</body>
+</html>

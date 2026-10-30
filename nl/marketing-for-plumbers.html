@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing voor loodgieters: Google Ads, Maps en SEO | Kamran Arshad</title>
+<meta name="description" content="Marketing voor loodgietersbedrijven: Google Ads, Local Services Ads, Google Maps en dienstpagina&#x27;s, gemeten tot de telefoontjes die klussen worden. Gratis audit.">
+<link rel="canonical" href="https://marketingkamran.com/nl/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/marketing-for-plumbers.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://marketingkamran.com/nl/marketing-for-plumbers.html">
+<meta property="og:title" content="Marketing voor loodgieters: Google Ads, Maps en SEO | Kamran Arshad">
+<meta property="og:description" content="Marketing voor loodgietersbedrijven: Google Ads, Local Services Ads, Google Maps en dienstpagina&#x27;s, gemeten tot de telefoontjes die klussen worden. Gratis audit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing voor loodgieters: Google Ads, Maps en SEO | Kamran Arshad">
+<meta name="twitter:description" content="Marketing voor loodgietersbedrijven: Google Ads, Local Services Ads, Google Maps en dienstpagina&#x27;s, gemeten tot de telefoontjes die klussen worden. Gratis audit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing voor loodgietersbedrijven",
+  "serviceType": "Google Ads en lokale SEO voor loodgieters",
+  "description": "Marketing voor loodgietersbedrijven: Google Ads, Local Services Ads, Google Maps en dienstpagina's, gemeten tot de telefoontjes die klussen worden. Gratis audit.",
+  "url": "https://marketingkamran.com/nl/marketing-for-plumbers.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/nl/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Netherlands"
+    },
+    {
+      "@type": "Country",
+      "name": "Belgium"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing voor loodgieters",
+      "item": "https://marketingkamran.com/nl/marketing-for-plumbers.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Heeft u eerder met loodgieters gewerkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nog niet. Ik run hetzelfde systeem van Google Ads, Maps, website en meting voor een Brits tapijtreinigingsbedrijf, met dezelfde klantreis via de telefoon. Ik zeg u dat vooraf, zodat u zelf kunt beoordelen of het past."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet een loodgieter Google Ads of Local Services Ads gebruiken?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak allebei. Local Services Ads rekent per lead af en vraagt weinig inrichting, terwijl Google Ads u meer controle geeft over klussen en gebieden. De audit laat zien wat past bij uw gebied en budget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe begint de samenwerking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met een gratis audit van uw advertenties, Maps-vermelding en website. U krijgt de bevindingen in begrijpelijke taal voordat u iets beslist."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Naar de inhoud</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/nl/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Hoofdmenu">
+      <a href="/nl/#services">Diensten</a> <a href="/nl/#work">Cases</a> <a href="/nl/blog/">Praktijknotities</a> <a class="btn" href="/nl/#contact">Gratis audit</a>
+    <details class="lang-sw"><summary aria-label="Language">NL</summary><ul><li><a href="/marketing-for-plumbers.html" hreflang="en" lang="en">English</a></li><li><a href="/de/marketing-for-plumbers.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/marketing-for-plumbers.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/marketing-for-plumbers.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/marketing-for-plumbers.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/marketing-for-plumbers.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/pt/marketing-for-plumbers.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/nl/">Home</a> &nbsp;/&nbsp; <a href="/nl/#services">Diensten</a> &nbsp;/&nbsp; Marketing voor loodgieters</div>
+    <h1>Marketing voor loodgieters: meer telefoontjes die betaalde klussen worden</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Bijgewerkt op <time datetime="2026-10-30">30 okt 2026</time></span></div>
+    <div class="mkts" aria-label="Markten"><span>Nederland</span><span>België</span><span>Vlaanderen</span><span>Andere landen op afstand</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Marketing voor loodgieters komt neer op zichtbaar zijn op het moment dat er iets lekt, en snel reageren. Iemand met een lekkage zal niet lang vergelijken.</p>
+      <p>Ik beheer Google Ads, Local Services Ads, het Google Maps-profiel en de dienstpagina's van een Brits tapijtreinigingsbedrijf, met gemeten telefoontjes en formulieren. Dat is het systeem dat ik naar een loodgietersbedrijf zou brengen.</p>
+    </div>
+    <h2>Waar ik zou beginnen bij een loodgietersbedrijf</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Google Ads voor dringend en waardevol werk</h3></div>
+      <p>Spoedklussen, werk aan ketels of boilers en badkamerinstallaties gedragen zich heel verschillend. Elk krijgt eigen advertentiegroepen, zodat u hoog kunt bieden op de klussen die u wilt en de rest kunt weglaten.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Local Services Ads waar beschikbaar</h3></div>
+      <p>Deze rekenen per lead af in plaats van per klik en kunnen prominent in Zoeken verschijnen. Hier heb ik praktijkervaring: ik heb het account ingericht en run Local Services Ads voor een Brits tapijtreinigingsbedrijf.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Google Maps en uw Bedrijfsprofiel</h3></div>
+      <p>Categorieën, diensten, servicegebieden, foto's en een gestage stroom reviews bepalen hoe vaak u verschijnt als iemand in de buurt een loodgieter zoekt.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Een pagina per dienst en regio</h3></div>
+      <p>Eén homepage kan niet ranken op ontstopping, lekreparatie en vijf nabijgelegen plaatsen. Aparte pagina's geven Google en uw klant een exacte match.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Meting tot de geboekte klus</h3></div>
+      <p>Een tik op uw telefoonnummer is nog geen klant. Tot stand gekomen telefoontjes en formulieren worden gemeten, en geboekte klussen kunnen terug naar Google Ads, zodat het leert welke zoekopdrachten echt werk opleveren.</p>
+    </div>
+    <h2>Wat klikken voor loodgieters kosten</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Zoekopdracht (Engels)</th><th>Zoekopdrachten/maand VK</th><th>Bod bovenaan pagina VK</th><th>Zoekopdrachten/maand VS</th><th>Bod bovenaan pagina VS</th></tr></thead>
+        <tbody>
+          <tr><td>emergency plumber</td><td>12&#8239;100</td><td>£3,87 tot £26,39</td><td>90&#8239;500</td><td>£18,28 tot £82,32</td></tr>
+          <tr><td>plumber near me</td><td>90&#8239;500</td><td>£1,54 tot £10,70</td><td>823&#8239;000</td><td>£9,15 tot £61,62</td></tr>
+          <tr><td>blocked drain</td><td>5&#8239;400</td><td>£3,14 tot £19,29</td><td>1&#8239;000</td><td>£5,25 tot £28,02</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bron: Google Ads Keyword Planner, gecontroleerd op 30 oktober 2026, gemiddelde maandelijkse zoekopdrachten van oktober 2025 tot september 2026. De biedingen zijn de lage en hoge schattingen van Google in ponden, de valuta van het account. Het zijn schattingen en niet wat u werkelijk zou betalen.</p>
+    <p>Aan de bovenkant van die schattingen kan één gemist spoedtelefoontje een dure klik verspillen. Daarom zou ik kijken hoe telefoontjes worden opgenomen voordat ik een budget verhoog.</p>
+    <h2>Het systeem dat ik vandaag run</h2>
+        <div class="proof">
+      <span class="tag">Case</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (VK)</h3>
+      <p>Ik heb nog geen account voor een loodgieter beheerd. Wat ik wel run is dit systeem voor een Brits tapijtreinigingsbedrijf: de website, dienst- en gebiedspagina's, Google Ads, Local Services Ads, het Bedrijfsprofiel en server-side meting, plus een eigen plug-in die de waarde van geboekte klussen terugstuurt naar Google Ads.</p>
+      <p><a href="/nl/mr-expert-carpet-cleaning.html">Lees de case van Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <p>De klantreis is dezelfde: een lokale zoekopdracht, een telefoontje of formulier, dan een klus in de agenda. De zoekwoorden en de kosten per lead verschillen. Keyword Planner geeft een eerste schatting, en alleen uw eigen gemeten resultaten geven het echte getal.</p>
+    <h2>Vragen voor elk marketingbureau voor loodgieters</h2>
+    <ol class="steps">
+      <li><b>Van wie is het advertentieaccount?</b>Van u, zodat uw geschiedenis bij u blijft als u ooit vertrekt.</li>
+      <li><b>Worden leads gedeeld met andere loodgieters?</b>Sommige leaddiensten verkopen één aanvraag aan meerdere bedrijven. Uw eigen advertenties en pagina's brengen leads alleen naar u.</li>
+      <li><b>Wat telt als conversie?</b>Vraag of het om een tot stand gekomen telefoontje gaat, of alleen om een tik op een nummer.</li>
+      <li><b>Kan ik de zoektermen zien?</b>U moet precies kunnen zien waar mensen op zochten voordat ze belden.</li>
+    </ol>
+    <h2>Veelgestelde vragen</h2>
+    <div class="faq">
+      <details><summary>Heeft u eerder met loodgieters gewerkt?</summary><p>Nog niet. Ik run hetzelfde systeem van Google Ads, Maps, website en meting voor een Brits tapijtreinigingsbedrijf, met dezelfde klantreis via de telefoon. Ik zeg u dat vooraf, zodat u zelf kunt beoordelen of het past.</p></details>
+      <details><summary>Moet een loodgieter Google Ads of Local Services Ads gebruiken?</summary><p>Vaak allebei. Local Services Ads rekent per lead af en vraagt weinig inrichting, terwijl Google Ads u meer controle geeft over klussen en gebieden. De audit laat zien wat past bij uw gebied en budget.</p></details>
+      <details><summary>Hoe begint de samenwerking?</summary><p>Met een gratis audit van uw advertenties, Maps-vermelding en website. U krijgt de bevindingen in begrijpelijke taal voordat u iets beslist.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Waar komen uw loodgietersklussen echt vandaan?</h2>
+      <p>Stuur me uw website en belangrijkste servicegebied. Ik controleer uw advertenties, Maps-vermelding en meting, en vertel u wat ik als eerste zou oplossen.</p>
+      <a class="btn" href="/nl/#contact">Mijn gratis marketingaudit voor loodgieters &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Gerelateerd</h2>
+      <a href="/nl/blog/how-to-get-more-plumbing-leads.html">Meer klanten als loodgieter<span>Leads kopen of zelf genereren, en hoe elk werkt.</span></a> <a href="/nl/blog/local-services-ads-vs-google-ads.html">Local Services Ads of Google Ads<span>Facturering, controle en wanneer u welke gebruikt.</span></a> <a href="/nl/mr-expert-carpet-cleaning.html">Casestudy Mr Expert Carpet Cleaning<span>Volledige digitale opbouw voor een lokaal dienstverlenend bedrijf in het VK.</span></a> <a href="/nl/local-seo-services.html">Lokale SEO<span>Google Bedrijfsprofiel, dienstpagina's en indexeringsreparaties.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/nl/#contact">Gratis audit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Online advertenties, SEO en tracking. Islamabad, Pakistan, werkt op afstand.</span> <span><a href="/nl/">Home</a> &middot; <a href="/nl/blog/">Praktijknotities</a> &middot; <a href="/nl/alphamart.html">AlphaMart</a> &middot; <a href="/nl/the-body-essential.html">The Body Essential</a> &middot; <a href="/nl/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/nl/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/nl/brizaa.html">Brizaa</a> &middot; <a href="/nl/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-nl.js" defer></script>
+</body>
+</html>

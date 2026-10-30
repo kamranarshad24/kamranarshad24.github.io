@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Combien coûte Google Ads pour un artisan ou un service local ?</title>
+<meta name="description" content="Enchères réelles du Keyword Planner pour plombiers, couvreurs, chauffage, dentistes et nettoyage au Royaume-Uni et aux États-Unis, ce qu&#x27;un budget achète et comment calculer votre coût par chantier.">
+<link rel="canonical" href="https://marketingkamran.com/fr/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-cost-local-service-business.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/blog/google-ads-cost-local-service-business.html">
+<meta property="og:title" content="Combien coûte Google Ads pour un artisan ou un service local ?">
+<meta property="og:description" content="Enchères réelles du Keyword Planner pour plombiers, couvreurs, chauffage, dentistes et nettoyage au Royaume-Uni et aux États-Unis, ce qu&#x27;un budget achète et comment calculer votre coût par chantier.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Combien coûte Google Ads pour un artisan ou un service local ?">
+<meta name="twitter:description" content="Enchères réelles du Keyword Planner pour plombiers, couvreurs, chauffage, dentistes et nettoyage au Royaume-Uni et aux États-Unis, ce qu&#x27;un budget achète et comment calculer votre coût par chantier.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Combien coûte Google Ads pour un artisan ou un service local ?",
+  "description": "Enchères réelles du Keyword Planner pour plombiers, couvreurs, chauffage, dentistes et nettoyage au Royaume-Uni et aux États-Unis, ce qu'un budget achète et comment calculer votre coût par chantier.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "jobTitle": "Spécialiste publicité payante & suivi des conversions"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-cost-local-service-business.html",
+    "inLanguage": "fr"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "fr"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notes de terrain",
+      "item": "https://marketingkamran.com/fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ce que Google Ads coûte à une entreprise locale"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Combien une petite entreprise locale doit-elle dépenser sur Google Ads ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il n'y a pas de chiffre juste. Partez de votre prix du clic et de la valeur d'un chantier, et fixez un budget qui achète assez de clics pour apprendre. Un budget qui n'achète qu'une poignée de clics par mois ne vous dira pas grand-chose."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pourquoi Google Ads est-il si cher pour les plombiers et les couvreurs ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les annonceurs enchérissent les uns contre les autres et un seul chantier peut valoir beaucoup, ils acceptent donc de payer plus par clic. Les recherches d'urgence en particulier peuvent porter des enchères élevées."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'enchère de haut de page est-elle ce que je paierai par clic ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. C'est l'estimation par Google de ce que les annonceurs ont payé pour apparaître en haut de page. Votre coût réel par clic dépend de la concurrence et de la qualité de votre annonce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Google peut-il dépenser plus que mon budget quotidien ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Google indique que pour la plupart des campagnes, il peut dépenser jusqu'à deux fois votre budget quotidien moyen un jour donné, mais pas plus de 30,4 fois ce budget sur un mois."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/fr/blog/">Notes de terrain</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/blog/google-ads-cost-local-service-business.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/google-ads-cost-local-service-business.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-cost-local-service-business.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/blog/google-ads-cost-local-service-business.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-cost-local-service-business.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/google-ads-cost-local-service-business.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/google-ads-cost-local-service-business.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/blog/">Notes de terrain</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Ce que Google Ads coûte à une entreprise de services locale, avec de vraies données d'enchères</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 oct. 2026</span><span>6 min de lecture</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Il n'y a pas de prix standard. Vous fixez votre budget et payez au clic, et le prix du clic dépend de votre métier et de votre pays. Selon les estimations de Google d'octobre 2026, un clic de haut de page pour "plumber near me" allait de £1,54 à £10,70 au Royaume-Uni et de £9,15 à £61,62 aux États-Unis.</p>
+      <p>Le chiffre utile n'est pas le coût par clic, mais le coût par chantier réservé, et seul votre propre suivi peut vous le donner.</p>
+    </div>
+    <p>Beaucoup des guides de coûts que j'ai lus pour cet article venaient d'agences, avec de larges fourchettes et peu de données. J'ai donc extrait moi-même du Keyword Planner de Google Ads les chiffres de 21 recherches sur lesquelles les entreprises locales se font concurrence. Douze figurent ci-dessous.</p>
+    <h2>Ce que les clics sont estimés coûter, par métier</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Recherche (en anglais)</th><th>Recherches/mois R.-U.</th><th>Enchère haut de page R.-U.</th><th>Recherches/mois É.-U.</th><th>Enchère haut de page É.-U.</th></tr></thead>
+        <tbody>
+          <tr><td>plumber near me</td><td>90&#8239;500</td><td>£1,54 à £10,70</td><td>823&#8239;000</td><td>£9,15 à £61,62</td></tr>
+          <tr><td>emergency plumber</td><td>12&#8239;100</td><td>£3,87 à £26,39</td><td>90&#8239;500</td><td>£18,28 à £82,32</td></tr>
+          <tr><td>roofer near me</td><td>33&#8239;100</td><td>£2,98 à £12,65</td><td>165&#8239;000</td><td>£10,32 à £56,13</td></tr>
+          <tr><td>roof repair</td><td>6&#8239;600</td><td>£3,61 à £14,22</td><td>90&#8239;500</td><td>£10,85 à £53,85</td></tr>
+          <tr><td>hvac repair</td><td>3&#8239;600</td><td>£2,32 à £6,49</td><td>74&#8239;000</td><td>£12,72 à £74,84</td></tr>
+          <tr><td>ac repair</td><td>9&#8239;900</td><td>£1,35 à £7,17</td><td>368&#8239;000</td><td>£14,07 à £75,96</td></tr>
+          <tr><td>boiler repair</td><td>5&#8239;400</td><td>£3,66 à £11,88</td><td>27&#8239;100</td><td>£8,40 à £50,43</td></tr>
+          <tr><td>electrician near me</td><td>74&#8239;000</td><td>£1,34 à £7,46</td><td>368&#8239;000</td><td>£4,29 à £41,16</td></tr>
+          <tr><td>pest control</td><td>18&#8239;100</td><td>£1,75 à £5,54</td><td>201&#8239;000</td><td>£7,30 à £34,15</td></tr>
+          <tr><td>carpet cleaning</td><td>135&#8239;000</td><td>£0,39 à £1,92</td><td>368&#8239;000</td><td>£1,03 à £7,48</td></tr>
+          <tr><td>dentist near me</td><td>246&#8239;000</td><td>£1,39 à £5,54</td><td>1&#8239;830&#8239;000</td><td>£3,64 à £17,15</td></tr>
+          <tr><td>dental implants</td><td>22&#8239;200</td><td>£1,55 à £7,44</td><td>165&#8239;000</td><td>£5,34 à £22,45</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Source : Google Ads Keyword Planner, vérifié le 30 octobre 2026, recherches mensuelles moyennes d'octobre 2025 à septembre 2026. Les enchères sont les estimations basse et haute de Google en livres, la devise du compte. Ce sont des estimations et non ce que vous paieriez réellement.</p>
+    <p>Trois choses ressortent. Les enchères américaines sont bien au-dessus des britanniques pour la plupart de ces recherches. Les recherches urgentes peuvent coûter bien plus que les générales : comparez "emergency plumber" et "plumber near me" sur le haut de fourchette. Et certains métiers sont beaucoup moins chers : "carpet cleaning" se situe bien en dessous de "roofer near me" dans les deux pays.</p>
+    <h2>Ce que ces enchères signifient pour un budget</h2>
+    <p>Un budget mensuel divisé par le prix du clic donne un nombre approximatif de clics. Avec les estimations ci-dessus, et à titre indicatif seulement, £1 000 par mois achèteraient environ :</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Recherche (en anglais)</th><th>Clics R.-U. pour £1 000</th><th>Clics É.-U. pour £1 000</th></tr></thead>
+        <tbody>
+          <tr><td>plumber near me</td><td>93 à 649</td><td>16 à 109</td></tr>
+          <tr><td>roofer near me</td><td>79 à 335</td><td>17 à 96</td></tr>
+          <tr><td>carpet cleaning</td><td>520 à 2 564</td><td>133 à 970</td></tr>
+          <tr><td>dentist near me</td><td>180 à 719</td><td>58 à 274</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Ces fourchettes sont larges parce que les estimations de Google le sont. Les prix réels dépendent de la concurrence, de votre zone, de l'heure et de la qualité de l'annonce, votre propre compte vous en dira donc plus en quelques semaines.</p>
+    <h2>Comment Google consomme votre budget</h2>
+    <p>Vous fixez un budget quotidien moyen, et Google peut le dépasser certains jours. Selon les pages d'aide de Google, pour la plupart des campagnes, vous ne paierez pas plus de deux fois ce budget un jour donné, ni plus de 30,4 fois sur un mois. Un budget quotidien de £30 peut donc dépenser jusqu'à £60 en un jour et jusqu'à £912 en un mois.</p>
+    <h2>Calculez votre propre coût par chantier</h2>
+    <ol class="steps">
+      <li><b>Trouvez votre prix du clic</b>Commencez par le Keyword Planner pour vos recherches et votre zone, puis remplacez-le par les vraies données de votre compte.</li>
+      <li><b>Mesurez combien de clics deviennent des demandes</b>Comptez les appels aboutis et les formulaires, pas les appuis sur votre numéro.</li>
+      <li><b>Mesurez combien de demandes deviennent des chantiers</b>Votre agenda ou votre CRM est la seule source pour cela.</li>
+      <li><b>Comparez le coût par chantier à ce qu'un chantier rapporte</b>Un lead coûteux peut rester une bonne affaire sur un chantier à forte valeur.</li>
+    </ol>
+    <div class="note">
+      <b class="l">Un exemple avec des chiffres inventés</b>
+      <p>Supposons que les clics coûtent £5, qu'un clic sur dix devienne une demande et qu'une demande sur trois devienne un chantier. Cela fait £50 par demande et £150 par chantier. Ces chiffres ne servent qu'à montrer le calcul. Ce n'est pas une référence, utilisez les vôtres.</p>
+    </div>
+    <h2>Les coûts en plus des clics</h2>
+    <ul>
+      <li><b>Gestion :</b> votre propre temps, ou les honoraires d'un freelance ou d'une agence. Demandez exactement ce qui est inclus chaque mois.</li>
+      <li><b>Suivi et pages d'atterrissage :</b> souvent une mise en place ponctuelle, facile à oublier.</li>
+      <li><b>Clics gaspillés :</b> les recherches hors sujet coûtent de l'argent jusqu'à ce que des mots-clés à exclure les retirent. Sur le <a href="/fr/smile-line-dental.html">compte de clinique dentaire que j'ai reconstruit</a>, il n'y avait aucun mot-clé exclu au départ.</li>
+    </ul>
+    <h2>Les Local Services Ads fonctionnent différemment</h2>
+    <p>Là où ils sont disponibles, les Local Services Ads facturent au lead et non au clic, le tableau ci-dessus ne s'y applique donc pas. Je compare les deux dans <a href="/fr/blog/local-services-ads-vs-google-ads.html">Local Services Ads ou Google Ads</a>.</p>
+    <h2>Questions fréquentes</h2>
+    <h3>Combien une petite entreprise locale doit-elle dépenser sur Google Ads ?</h3>
+    <p>Il n'y a pas de chiffre juste. Partez de votre prix du clic et de la valeur d'un chantier, et fixez un budget qui achète assez de clics pour apprendre. Un budget qui n'achète qu'une poignée de clics par mois ne vous dira pas grand-chose.</p>
+    <h3>Pourquoi Google Ads est-il si cher pour les plombiers et les couvreurs ?</h3>
+    <p>Les annonceurs enchérissent les uns contre les autres et un seul chantier peut valoir beaucoup, ils acceptent donc de payer plus par clic. Les recherches d'urgence en particulier peuvent porter des enchères élevées.</p>
+    <h3>L'enchère de haut de page est-elle ce que je paierai par clic ?</h3>
+    <p>Non. C'est l'estimation par Google de ce que les annonceurs ont payé pour apparaître en haut de page. Votre coût réel par clic dépend de la concurrence et de la qualité de votre annonce.</p>
+    <h3>Google peut-il dépenser plus que mon budget quotidien ?</h3>
+    <p>Oui. Google indique que pour la plupart des campagnes, il peut dépenser jusqu'à deux fois votre budget quotidien moyen un jour donné, mais pas plus de 30,4 fois ce budget sur un mois.</p>
+    <div class="cta">
+      <h2>Vous voulez savoir ce que coûtent les clics dans votre zone ?</h2>
+      <p>Envoyez-moi votre site et votre zone. J'examinerai votre compte et votre suivi, et je vous dirai ce que je corrigerais en premier.</p>
+      <a class="btn" href="/fr/#contact">Audit Google Ads gratuit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Notes de terrain associées</h2>
+      <a href="/fr/blog/local-services-ads-vs-google-ads.html">Local Services Ads ou Google Ads<span>Facturation, contrôle et quand utiliser chacun.</span></a> <a href="/fr/blog/google-ads-account-audit-lead-generation.html">Checklist d'audit Google Ads pour la génération de leads<span>Six contrôles pour un compte qui vit des appels et des formulaires.</span></a> <a href="/fr/blog/google-ads-call-tracking-local-business.html">Suivi des appels Google Ads pour les entreprises de services locales<span>Comment compter les appels qui deviennent des missions.</span></a> <a href="/fr/blog/google-ads-freelancer-vs-agency.html">Freelance Google Ads ou agence<span>Comment choisir, et quoi leur demander.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

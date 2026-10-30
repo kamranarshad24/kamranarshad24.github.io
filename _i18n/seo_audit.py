@@ -44,7 +44,7 @@ for u in urls:
     rel = loc[len(SITE):].lstrip("/")
     f = os.path.join(ROOT, rel + ("index.html" if rel == "" or rel.endswith("/") else ""))
     if not os.path.exists(f): fail.append(("sitemap", loc, "missing file"))
-    if len(u.findall("x:link", ns)) != len(langs) + 1: fail.append(("sitemap", loc, "alt count"))
+    if len(u.findall("x:link", ns)) != len(langs) + 1 and rel not in i18n.EXTRA_EN: fail.append(("sitemap", loc, "alt count"))
 print("pages checked:", len(langs) * len(i18n.PAGES), "| sitemap urls:", len(locs), "unique:", len(set(locs)))
 print("duplicate titles:", dups_t or "none"); print("duplicate descriptions:", dups_d or "none")
 for f in fail: print("FAIL", f)

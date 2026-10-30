@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Roofing Marketing: Google Ads for Roofers | Kamran Arshad</title>
+<meta name="description" content="Roofing marketing that goes beyond bought leads: Google Ads, Local Services Ads, Maps, and tracking from the first call to the signed job. Free audit.">
+<link rel="canonical" href="https://marketingkamran.com/roofing-marketing.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/roofing-marketing.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/roofing-marketing.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/roofing-marketing.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/roofing-marketing.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/roofing-marketing.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/roofing-marketing.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/roofing-marketing.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/roofing-marketing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://marketingkamran.com/roofing-marketing.html">
+<meta property="og:title" content="Roofing Marketing: Google Ads for Roofers | Kamran Arshad">
+<meta property="og:description" content="Roofing marketing that goes beyond bought leads: Google Ads, Local Services Ads, Maps, and tracking from the first call to the signed job. Free audit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Roofing Marketing: Google Ads for Roofers | Kamran Arshad">
+<meta name="twitter:description" content="Roofing marketing that goes beyond bought leads: Google Ads, Local Services Ads, Maps, and tracking from the first call to the signed job. Free audit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing for roofing companies",
+  "serviceType": "Google Ads and local SEO for roofers",
+  "description": "Roofing marketing that goes beyond bought leads: Google Ads, Local Services Ads, Maps, and tracking from the first call to the signed job. Free audit.",
+  "url": "https://marketingkamran.com/roofing-marketing.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Roofing marketing",
+      "item": "https://marketingkamran.com/roofing-marketing.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Have you worked with roofers before?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not yet. I run the same Google Ads, Maps, website and tracking system for a UK carpet cleaning company. The call-led journey is the same, and I'm telling you upfront so you can judge the fit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should roofers buy leads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bought leads can fill gaps quickly, but they may be shared and they stop when you stop paying. Your own ads and pages take longer to build, but the enquiries come to you alone. Many roofers use both at first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does working with you start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With a free audit of your ads, Maps listing and website. You get the findings in plain language before you decide anything."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="./">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Main">
+      <a href="./#services">Services</a>
+      <a href="./#work">Case Studies</a>
+      <a href="blog/">Field Notes</a>
+      <a class="btn" href="./#contact">Get Free Audit</a>
+    <details class="lang-sw"><summary aria-label="Language">EN</summary><ul><li><a href="/roofing-marketing.html" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/de/roofing-marketing.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/roofing-marketing.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/roofing-marketing.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/roofing-marketing.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/roofing-marketing.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/roofing-marketing.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Home</a> &nbsp;/&nbsp; <a href="./#services">Services</a> &nbsp;/&nbsp; Roofing marketing</div>
+    <h1>Roofing marketing: fewer shared leads, more signed jobs from your own channels</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Updated <time datetime="2026-10-30">30 Oct 2026</time></span></div>
+    <div class="mkts" aria-label="Markets served"><span>United Kingdom</span><span>United States</span><span>Canada</span><span>Australia</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>A roof is a big decision. Homeowners often compare several quotes and take time to choose, so a low cost per lead means little if those leads never sign.</p>
+      <p>I run Google Ads, Local Services Ads, the Google Maps profile and service pages for a UK carpet cleaning company, with booked jobs sent back to Google Ads. A roofing account would use the same system.</p>
+    </div>
+    <h2>What I'd change first for a roofing company</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Repairs and replacements kept apart</h3></div>
+      <p>A leak needs someone quickly, while a full replacement is a high-value job with a longer decision. Each gets its own campaign, landing page and budget so one can't quietly eat the other's money.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Your own enquiries, not shared lists</h3></div>
+      <p>Bought roofing leads can be sold to several companies at once, which turns the job into a race on price. Your own ads and pages bring the homeowner to you first.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Trust on the page where they decide</h3></div>
+      <p>Real photos of your jobs, reviews, accreditations and clear service areas matter for a purchase this size. A generic template page wastes the click you paid for.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Google Maps and Local Services Ads</h3></div>
+      <p>A strong Business Profile and pay-per-lead ads put you in front of people ready to call. I have hands-on experience with both, including setting up and running Local Services Ads for a UK carpet cleaning company.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Tracking past the first call</h3></div>
+      <p>Long sales cycles need more than a lead count. Signed jobs and their value can be sent back to Google Ads, so it learns which searches lead to real roofs and not just quote requests.</p>
+    </div>
+    <h2>What roofing clicks cost</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Search</th><th>UK searches/month</th><th>UK top-of-page bid</th><th>US searches/month</th><th>US top-of-page bid</th></tr></thead>
+        <tbody>
+          <tr><td>roof repair</td><td>6&#8239;600</td><td>£3.61 to £14.22</td><td>90&#8239;500</td><td>£10.85 to £53.85</td></tr>
+          <tr><td>roofer near me</td><td>33&#8239;100</td><td>£2.98 to £12.65</td><td>165&#8239;000</td><td>£10.32 to £56.13</td></tr>
+          <tr><td>roof replacement</td><td>1&#8239;000</td><td>£2.58 to £13.51</td><td>33&#8239;100</td><td>£10.78 to £52.94</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Source: Google Ads Keyword Planner, checked 30 October 2026, average monthly searches for October 2025 to September 2026. Bids are Google's low and high estimates in pounds, because that is the account's currency. They are estimates and not what you would actually pay.</p>
+    <p>When a single click can carry an estimate like these, judging the account on cost per lead alone isn't enough. What matters is what a signed job earns against what it cost to win.</p>
+    <h2>What I can show you</h2>
+        <div class="proof">
+      <span class="tag">Case study</span>
+      <h3>Mr Expert Carpet Cleaning, Slough UK</h3>
+      <p>I don't have a roofing client to show you. I can show you the system I run for a UK carpet cleaning company: the website, service and area pages, Google Ads, Local Services Ads, the Business Profile and server-side tracking, plus a custom plugin that sends booked job values back to Google Ads.</p>
+      <p><a href="mr-expert-carpet-cleaning.html">Read the Mr Expert Carpet Cleaning case study &rarr;</a></p>
+    </div>
+    <p>The mechanics carry over directly. The difference with roofing is job value and decision time, so I'd judge the account on signed work and not on the number of leads.</p>
+    <h2>What to ask a roofing marketing agency</h2>
+    <ol class="steps">
+      <li><b>Are these leads exclusive?</b>Ask directly whether any other roofer receives the same enquiry.</li>
+      <li><b>Do you report on signed jobs?</b>A report that stops at leads can't tell you whether the ads are profitable.</li>
+      <li><b>Who owns the ad account and website?</b>If you leave, your history and pages should stay with you.</li>
+      <li><b>Will the page show my real work?</b>Stock photos and shared templates don't build trust for a job this size.</li>
+    </ol>
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details><summary>Have you worked with roofers before?</summary><p>Not yet. I run the same Google Ads, Maps, website and tracking system for a UK carpet cleaning company. The call-led journey is the same, and I'm telling you upfront so you can judge the fit.</p></details>
+      <details><summary>Should roofers buy leads?</summary><p>Bought leads can fill gaps quickly, but they may be shared and they stop when you stop paying. Your own ads and pages take longer to build, but the enquiries come to you alone. Many roofers use both at first.</p></details>
+      <details><summary>How does working with you start?</summary><p>With a free audit of your ads, Maps listing and website. You get the findings in plain language before you decide anything.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Are your leads turning into signed roofs?</h2>
+      <p>Send me your website and service area. I'll check your ads, Maps listing and tracking, and tell you the first things I'd fix.</p>
+      <a class="btn" href="./#contact">Get my free roofing marketing audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Related</h2>
+      <a href="blog/google-ads-offline-conversions-booked-jobs.html">Google Ads Offline Conversions for Lead-Gen Businesses<span>Telling Google Ads which leads became booked jobs.</span></a>
+      <a href="blog/local-services-ads-vs-google-ads.html">Local Services Ads vs Google Ads<span>Billing, control and when to use each.</span></a>
+      <a href="mr-expert-carpet-cleaning.html">Mr Expert Carpet Cleaning case study<span>Full digital build for a UK local service business.</span></a>
+      <a href="local-seo-services.html">Local SEO services<span>Google Business Profile, service pages and indexing fixes.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="./#contact">Free audit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Paid ads, SEO and tracking. Islamabad, Pakistan, working remotely.</span>
+    <span><a href="./">Home</a> &middot; <a href="blog/">Field Notes</a> &middot; <a href="alphamart.html">AlphaMart</a> &middot; <a href="the-body-essential.html">The Body Essential</a> &middot; <a href="smile-line-dental.html">Smile Line Dental</a> &middot; <a href="mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="brizaa.html">Brizaa</a> &middot; <a href="privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="consent.js" defer></script>
+</body>
+</html>

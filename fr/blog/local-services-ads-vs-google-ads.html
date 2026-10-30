@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Local Services Ads ou Google Ads : lequel choisir ?</title>
+<meta name="description" content="Local Services Ads facture au lead et Google Ads au clic. Facturation, contrôle, mise en place et passage à Performance Max en 2026 comparés, à partir d&#x27;un compte que je gère.">
+<link rel="canonical" href="https://marketingkamran.com/fr/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/local-services-ads-vs-google-ads.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/local-services-ads-vs-google-ads.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/blog/local-services-ads-vs-google-ads.html">
+<meta property="og:title" content="Local Services Ads ou Google Ads : lequel choisir ?">
+<meta property="og:description" content="Local Services Ads facture au lead et Google Ads au clic. Facturation, contrôle, mise en place et passage à Performance Max en 2026 comparés, à partir d&#x27;un compte que je gère.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Local Services Ads ou Google Ads : lequel choisir ?">
+<meta name="twitter:description" content="Local Services Ads facture au lead et Google Ads au clic. Facturation, contrôle, mise en place et passage à Performance Max en 2026 comparés, à partir d&#x27;un compte que je gère.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Local Services Ads ou Google Ads : lequel choisir ?",
+  "description": "Local Services Ads facture au lead et Google Ads au clic. Facturation, contrôle, mise en place et passage à Performance Max en 2026 comparés, à partir d'un compte que je gère.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "jobTitle": "Spécialiste publicité payante & suivi des conversions"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/local-services-ads-vs-google-ads.html",
+    "inLanguage": "fr"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "fr"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notes de terrain",
+      "item": "https://marketingkamran.com/fr/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Local Services Ads ou Google Ads"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Les Local Services Ads sont-ils moins chers que Google Ads ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pas automatiquement. Ils facturent au lead plutôt qu'au clic, les deux prix ne sont donc pas directement comparables. Comparez le coût par chantier réservé de chaque canal dans votre zone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ai-je besoin d'un site pour les Local Services Ads ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. Google indique que les leads peuvent être gérés directement sans site. Un site reste utile, car beaucoup de clients vérifient une entreprise avant d'appeler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je utiliser Local Services Ads et Google Ads ensemble ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Google suggère de les combiner pour augmenter la visibilité."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Les Local Services Ads sont-ils disponibles dans mon pays ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cela dépend de votre pays et de votre catégorie. Google les limite à certaines catégories de services et certaines fonctions varient selon la région, vérifiez donc les pages d'aide de Google pour votre pays."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/fr/blog/">Notes de terrain</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/#services">Services</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/blog/local-services-ads-vs-google-ads.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/local-services-ads-vs-google-ads.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/local-services-ads-vs-google-ads.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/blog/local-services-ads-vs-google-ads.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/local-services-ads-vs-google-ads.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/local-services-ads-vs-google-ads.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/local-services-ads-vs-google-ads.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/blog/">Notes de terrain</a> &nbsp;/&nbsp; Services locaux</div>
+    <h1>Local Services Ads ou Google Ads : lequel une entreprise locale doit utiliser</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 oct. 2026</span><span>5 min de lecture</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Les Local Services Ads facturent quand un client vous contacte. Google Ads facture quand quelqu'un clique. Les Local Services Ads sont plus simples et visent les personnes prêtes à appeler, tandis que Google Ads vous donne bien plus de contrôle sur les recherches, les zones et les pages d'atterrissage.</p>
+      <p>Pour la plupart des entreprises éligibles, la question utile n'est pas lequel, mais par lequel commencer.</p>
+    </div>
+    <p>J'ai créé le compte et je gère des Local Services Ads pour une entreprise britannique de nettoyage de moquettes, en plus de ses Google Ads. La comparaison ci-dessous s'appuie sur la documentation de Google pour les faits et sur ce travail pratique pour le regard de terrain.</p>
+    <h2>Les différences qui comptent</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Local Services Ads</th><th>Google Ads (Recherche)</th></tr></thead>
+        <tbody>
+          <tr><td>Vous payez pour</td><td>Des leads : un client qui vous contacte</td><td>Des clics sur votre annonce</td></tr>
+          <tr><td>Contrôle</td><td>Moindre sur l'audience et le format</td><td>Étendu : budgets, mots-clés, ciblage, format</td></tr>
+          <tr><td>Site nécessaire ?</td><td>Non, les leads se gèrent directement</td><td>En général oui</td></tr>
+          <tr><td>Qui peut l'utiliser</td><td>Certaines catégories et certains pays, avec contrôle</td><td>Ouvert à la plupart des entreprises, selon les règles</td></tr>
+          <tr><td>Badge de confiance</td><td>Peut afficher un badge de vérification Google</td><td>Pas de badge garanti par Google</td></tr>
+          <tr><td>Idéal pour</td><td>Les personnes qui ont besoin du service maintenant</td><td>La portée, des chantiers précis et les recherches en phase d'étude</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Quand commencer par Local Services Ads</h2>
+    <p>Ils conviennent à une entreprise d'une catégorie éligible qui veut des appels et des messages avec peu de gestion de campagne. Ils fonctionnent aussi sans site, même si j'en voudrais quand même un : un client qui voit votre annonce vous vérifie souvent avant d'appeler.</p>
+    <p>L'éligibilité est la première chose à vérifier. Google limite ces annonces à certaines catégories de services, et certaines fonctions varient selon le pays. Ses pages d'aide citent des catégories comme les plombiers, les électriciens et les dentistes, vérifiez donc votre catégorie et votre pays avant de planifier.</p>
+    <h2>Quand commencer par Google Ads</h2>
+    <p>Google Ads a plus de sens quand vous voulez choisir exactement les travaux à promouvoir, par exemple les implants plutôt que les contrôles, ou l'installation de chaudières plutôt que les petites réparations. Vous choisissez aussi la page d'atterrissage, ce qui compte pour les travaux à forte valeur où l'on compare avant d'appeler.</p>
+    <p>Le prix de ce contrôle, c'est la gestion. Il faut revoir les termes de recherche, ajouter des mots-clés à exclure et suivre les conversions. Sans cet entretien, Google Ads peut dépenser votre budget en clics qui ne deviennent jamais des demandes.</p>
+    <h2>Pourquoi beaucoup d'entreprises utilisent les deux</h2>
+    <p>Les deux ne s'excluent pas. Google lui-même suggère de les combiner pour augmenter la visibilité. Pour beaucoup d'entreprises locales, un ordre raisonnable est le suivant :</p>
+    <ol class="steps">
+      <li><b>Corrigez votre fiche d'établissement</b>Les Local Services Ads s'appuient sur les informations de votre entreprise, et une fiche complète aide aussi votre visibilité sur Maps.</li>
+      <li><b>Commencez par ce qui correspond à votre objectif</b>Local Services Ads pour des leads rapides et simples, ou Google Ads si vous devez cibler des travaux précis.</li>
+      <li><b>Suivez chaque lead par source</b>Sinon, vous ne pouvez pas comparer les deux équitablement.</li>
+      <li><b>Ajoutez le second canal</b>Une fois que le premier produit des leads mesurables.</li>
+    </ol>
+    <h2>Le changement à venir pour Local Services Ads</h2>
+    <div class="note">
+      <b class="l">Le passage dans Google Ads</b>
+      <p>Google déplace Local Services Ads dans Google Ads sous forme de campagnes Performance Max avec des objectifs au lead. La première phase a commencé en août 2026 pour certains annonceurs américains, et les comptes hors des États-Unis suivront en 2027. Google indique que vous payez toujours par lead valide et que les annonces restent sur la recherche et Maps, mais les anciens rapports de performance ne seront pas repris, enregistrez-les donc avant la migration.</p>
+    </div>
+    <h2>Ce que je n'affirme pas</h2>
+    <p>Je ne publie ni coûts par lead ni verdict sur le canal gagnant. Les résultats varient selon la catégorie, la zone et la saison, et un seul compte n'est pas une référence. La façon honnête de décider est de les faire tourner côte à côte avec un suivi, puis de comparer le coût d'un chantier réservé.</p>
+    <h2>Questions fréquentes</h2>
+    <h3>Les Local Services Ads sont-ils moins chers que Google Ads ?</h3>
+    <p>Pas automatiquement. Ils facturent au lead plutôt qu'au clic, les deux prix ne sont donc pas directement comparables. Comparez le coût par chantier réservé de chaque canal dans votre zone.</p>
+    <h3>Ai-je besoin d'un site pour les Local Services Ads ?</h3>
+    <p>Non. Google indique que les leads peuvent être gérés directement sans site. Un site reste utile, car beaucoup de clients vérifient une entreprise avant d'appeler.</p>
+    <h3>Puis-je utiliser Local Services Ads et Google Ads ensemble ?</h3>
+    <p>Oui. Google suggère de les combiner pour augmenter la visibilité.</p>
+    <h3>Les Local Services Ads sont-ils disponibles dans mon pays ?</h3>
+    <p>Cela dépend de votre pays et de votre catégorie. Google les limite à certaines catégories de services et certaines fonctions varient selon la région, vérifiez donc les pages d'aide de Google pour votre pays.</p>
+    <div class="cta">
+      <h2>Vous ne savez pas lequel convient à votre entreprise ?</h2>
+      <p>Envoyez-moi votre site et votre zone. Je regarderai votre catégorie et votre configuration actuelle, et je vous dirai par où je commencerais.</p>
+      <a class="btn" href="/fr/#contact">Audit gratuit de vos annonces locales &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Notes de terrain associées</h2>
+      <a href="/fr/blog/how-to-get-more-plumbing-leads.html">Plus de clients pour un plombier<span>Acheter des leads ou générer les vôtres.</span></a> <a href="/fr/blog/google-ads-call-tracking-local-business.html">Suivi des appels Google Ads pour les entreprises de services locales<span>Comment compter les appels qui deviennent des missions.</span></a> <a href="/fr/blog/google-ads-offline-conversions-booked-jobs.html">Conversions hors ligne Google Ads pour la génération de leads<span>Indiquer à Google Ads quels leads sont devenus des missions réservées.</span></a> <a href="/fr/blog/local-seo-service-pages-service-business.html">Pages de services pour le SEO local : une page par service et par zone<span>Comment structurer les pages pour Maps et la recherche organique.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Spécialiste publicité payante &amp; tracking</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

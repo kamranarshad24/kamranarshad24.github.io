@@ -120,19 +120,6 @@
    "/"
   ]
  },
- "a0f538219b15": {
-  "en": "Do you work with small budgets?",
-  "pages": [
-   "/",
-   "google-ads-management.html"
-  ]
- },
- "4adef37fbd73": {
-  "en": "Yes. Most of my clients are small businesses spending between $200–$1,000/month on ads. In fact, getting tracking right matters more at small budgets, every dollar needs to be accounted for. I don't take on clients just to spend their money.",
-  "pages": [
-   "/"
-  ]
- },
  "d17faf6e40c6": {
   "en": "Where are you based, and do you work internationally?",
   "pages": [
@@ -328,6 +315,321 @@
   "en": "<t0>About</t0> <t1>Case Studies</t1> <t2>Services</t2> <t3>Reviews</t3> <t4>Field Notes</t4> <t5>FAQ</t5> <t6>Get Free Audit</t6>",
   "pages": [
    "/"
+  ]
+ },
+ "89b86ab0e66f": {
+  "en": "Language",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "734a78cd06d0": {
+  "en": "EN",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "c7347f374248": {
+  "en": "<t0>English</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "ad08b6b2ecc8": {
+  "en": "<t0>Deutsch</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "3bc1506052fc": {
+  "en": "<t0>Français</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "73565623e623": {
+  "en": "<t0>Español</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "49e73efe3e78": {
+  "en": "<t0>Italiano</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "b571d22fd887": {
+  "en": "<t0>Nederlands</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
+  ]
+ },
+ "a88ed630aafd": {
+  "en": "<t0>Português</t0>",
+  "pages": [
+   "/",
+   "google-ads-management.html",
+   "meta-ads-management.html",
+   "ecommerce-ppc-management.html",
+   "local-seo-services.html",
+   "conversion-tracking-setup.html",
+   "white-label-ppc-for-agencies.html",
+   "alphamart.html",
+   "the-body-essential.html",
+   "smile-line-dental.html",
+   "mr-expert-carpet-cleaning.html",
+   "brizaa.html",
+   "wispr-flow-clone.html",
+   "ai-content-builder.html",
+   "privacy-policy.html",
+   "blog/",
+   "blog/capi-duplicate-purchase-events-deduplication.html",
+   "blog/google-ads-account-audit-lead-generation.html",
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/google-ads-conversion-tracking-not-working.html",
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/local-seo-service-pages-service-business.html",
+   "blog/meta-ads-account-audit-inherited.html",
+   "blog/meta-ads-more-sales-than-shopify.html",
+   "blog/meta-pixel-not-tracking-purchases-shopify.html",
+   "blog/meta-pixel-reporting-fake-purchases.html",
+   "blog/scaling-meta-campaigns-bad-data.html",
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/snapchat-purchase-event-not-firing.html",
+   "blog/two-meta-pixels-shopify-problem.html"
   ]
  },
  "f521d99075bc": {
@@ -603,7 +905,8 @@
  "ab2ce4fa6cc3": {
   "en": "AlphaMart",
   "pages": [
-   "/"
+   "/",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "57418a2a8929": {
@@ -670,7 +973,9 @@
  "512b5b7d8b7f": {
   "en": "The Body Essential",
   "pages": [
-   "/"
+   "/",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "f2e94558fd33": {
@@ -730,7 +1035,9 @@
  "f97ffa6089bf": {
   "en": "Smile Line Dental",
   "pages": [
-   "/"
+   "/",
+   "google-ads-for-dentists.html",
+   "med-spa-marketing.html"
   ]
  },
  "0f475d4d1882": {
@@ -1008,6 +1315,12 @@
    "/"
   ]
  },
+ "2a409504a9e3": {
+  "en": "By industry: <t0>dentists</t0> &middot; <t1>med spas</t1> &middot; <t2>plumbers</t2> &middot; <t3>HVAC</t3> &middot; <t4>roofers</t4>",
+  "pages": [
+   "/"
+  ]
+ },
  "e756417ecdf4": {
   "en": "Meta &amp; Snapchat Ads",
   "pages": [
@@ -1020,8 +1333,8 @@
    "/"
   ]
  },
- "7e36c80f2e5d": {
-  "en": "<t0>Meta Ads management &rarr;</t0> &nbsp;&middot;&nbsp; <t1>Ecommerce PPC &rarr;</t1>",
+ "fdc9c7a6d7e2": {
+  "en": "<t0>Meta Ads management &rarr;</t0> &nbsp;&middot;&nbsp; <t1>Ecommerce PPC &rarr;</t1> &nbsp;&middot;&nbsp; <t2>Meta ads for Shopify brands &rarr;</t2>",
   "pages": [
    "/"
   ]
@@ -1285,7 +1598,10 @@
    "google-ads-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html"
   ]
  },
  "257655fa0919": {
@@ -1576,12 +1892,6 @@
    "/"
   ]
  },
- "56b8bbbb3f28": {
-  "en": "Do you work with small budgets? <t0>+</t0>",
-  "pages": [
-   "/"
-  ]
- },
  "f8eef1cbc1b6": {
   "en": "Where are you based, and do you work internationally? <t0>+</t0>",
   "pages": [
@@ -1701,7 +2011,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "768685ca582a": {
@@ -1712,7 +2028,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "cd6a7b876852": {
@@ -1723,7 +2045,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "ceafb51e2b07": {
@@ -1734,7 +2062,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "70f8bb9a8a53": {
@@ -1759,7 +2093,17 @@
    "blog/scaling-meta-campaigns-bad-data.html",
    "blog/shopify-additional-scripts-deadline-tracking.html",
    "blog/snapchat-purchase-event-not-firing.html",
-   "blog/two-meta-pixels-shopify-problem.html"
+   "blog/two-meta-pixels-shopify-problem.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "14076a7d3874": {
@@ -1776,12 +2120,6 @@
  },
  "5b46a6b5df2a": {
   "en": "I quote after the free audit, because the work depends on the state of your account. You keep ownership of your Google Ads account, and I work inside it with admin or analyst access.",
-  "pages": [
-   "google-ads-management.html"
-  ]
- },
- "a8d45442166a": {
-  "en": "Yes. Most of my clients spend between $200 and $1,000 a month on ads. Getting tracking right matters more at small budgets, because every dollar needs to be accounted for.",
   "pages": [
    "google-ads-management.html"
   ]
@@ -1826,7 +2164,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "62bce9422ff2": {
@@ -1837,7 +2181,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "3d139b6b2a64": {
@@ -1848,7 +2198,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "55e3059248c5": {
@@ -1882,7 +2238,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "935ebb287134": {
@@ -1893,7 +2255,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "57d7e8e8db59": {
@@ -1933,7 +2301,8 @@
  "661b0697fdd7": {
   "en": "Calls and forms counted as conversions",
   "pages": [
-   "google-ads-management.html"
+   "google-ads-management.html",
+   "google-ads-for-dentists.html"
   ]
  },
  "a0c2a456136e": {
@@ -1970,7 +2339,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "126673176a5b": {
@@ -1998,7 +2373,9 @@
   "pages": [
    "google-ads-management.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "med-spa-marketing.html"
   ]
  },
  "35e049b91598": {
@@ -2013,19 +2390,10 @@
    "google-ads-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
-  ]
- },
- "f6dc062d0ba8": {
-  "en": "Small budgets are fine",
-  "pages": [
-   "google-ads-management.html"
-  ]
- },
- "5d97db9acbc3": {
-  "en": "Most of my clients spend between $200 and $1,000 a month on ads. Tracking matters more at that size, because every dollar needs to be accounted for.",
-  "pages": [
-   "google-ads-management.html"
+   "white-label-ppc-for-agencies.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html"
   ]
  },
  "1dd6a17cb403": {
@@ -2069,7 +2437,17 @@
    "white-label-ppc-for-agencies.html",
    "blog/google-ads-account-audit-lead-generation.html",
    "blog/google-ads-offline-conversions-booked-jobs.html",
-   "blog/local-seo-service-pages-service-business.html"
+   "blog/local-seo-service-pages-service-business.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "e0c3f9cc3e9e": {
@@ -2105,11 +2483,17 @@
    "white-label-ppc-for-agencies.html",
    "blog/google-ads-account-audit-lead-generation.html",
    "blog/google-ads-offline-conversions-booked-jobs.html",
-   "blog/local-seo-service-pages-service-business.html"
+   "blog/local-seo-service-pages-service-business.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
- "180ccc2fff4c": {
-  "en": "<t0>Smile Line Dental case study<t1>Google Ads rebuild and conversion tracking for a dental clinic.</t1></t0> <t2>Mr Expert Carpet Cleaning case study<t3>Full digital build for a UK service business in Slough. Ongoing.</t3></t2> <t4>Google Ads Account Audit Checklist for Lead Generation<t5>Six checks in order, from a dental clinic account rebuild.</t5></t4> <t6>Google Ads Offline Conversions for Lead-Gen Businesses<t7>Telling Google Ads which leads became booked jobs.</t7></t6> <t8>Google Ads Call Tracking for Local Service Businesses<t9>How to count the calls that turn into jobs.</t9></t8> <t10>Meta Ads management<t11>Another way I can help.</t11></t10> <t12>Ecommerce PPC management<t13>Another way I can help.</t13></t12> <t14>Local SEO services<t15>Another way I can help.</t15></t14> <t16>Conversion tracking setup<t17>Another way I can help.</t17></t16> <t18>PPC and tracking for agencies<t19>Another way I can help.</t19></t18>",
+ "fec1ff6de45c": {
+  "en": "<t0>Google Ads for dentists<t1>Campaigns by treatment, tracked to patient enquiries.</t1></t0> <t2>How much Google Ads cost a local service business<t3>Real bid data for local trades in the UK and US.</t3></t2> <t4>Smile Line Dental case study<t5>Google Ads rebuild and conversion tracking for a dental clinic.</t5></t4> <t6>Mr Expert Carpet Cleaning case study<t7>Full digital build for a UK service business in Slough. Ongoing.</t7></t6> <t8>Google Ads Account Audit Checklist for Lead Generation<t9>Six checks in order, from a dental clinic account rebuild.</t9></t8> <t10>Google Ads Offline Conversions for Lead-Gen Businesses<t11>Telling Google Ads which leads became booked jobs.</t11></t10> <t12>Google Ads Call Tracking for Local Service Businesses<t13>How to count the calls that turn into jobs.</t13></t12> <t14>Meta Ads management<t15>Another way I can help.</t15></t14> <t16>Ecommerce PPC management<t17>Another way I can help.</t17></t16> <t18>Local SEO services<t19>Another way I can help.</t19></t18> <t20>Conversion tracking setup<t21>Another way I can help.</t21></t20> <t22>PPC and tracking for agencies<t23>Another way I can help.</t23></t22>",
   "pages": [
    "google-ads-management.html"
   ]
@@ -2122,7 +2506,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "be646465e8fa": {
@@ -2133,7 +2523,13 @@
    "ecommerce-ppc-management.html",
    "local-seo-services.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "ec2bf318a2bd": {
@@ -2314,7 +2710,9 @@
   "pages": [
    "meta-ads-management.html",
    "conversion-tracking-setup.html",
-   "white-label-ppc-for-agencies.html"
+   "white-label-ppc-for-agencies.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "3a0bf0591b9c": {
@@ -2333,7 +2731,8 @@
   "en": "<t0>Read the AlphaMart case study &rarr;</t0>",
   "pages": [
    "meta-ads-management.html",
-   "ecommerce-ppc-management.html"
+   "ecommerce-ppc-management.html",
+   "meta-ads-for-shopify-brands.html"
   ]
  },
  "47ea68bfe2e2": {
@@ -2378,8 +2777,8 @@
    "meta-ads-management.html"
   ]
  },
- "e2da9d8ff4a1": {
-  "en": "<t0>The Body Essential case study<t1>The duplicate pixel that was reporting purchases that never happened.</t1></t0> <t2>AlphaMart case study<t3>My own store, audited from ad click to cash.</t3></t2> <t4>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t5>The reconciliation that finds phantom conversions.</t5></t4> <t6>Two Meta Pixels on One Shopify Store Is Not a Backup Plan<t7>Why two pixels give you two versions of the truth.</t7></t6> <t8>Auditing a Meta Ad Account You Just Inherited<t9>What to check before you spend another pound.</t9></t8> <t10>Google Ads management<t11>Another way I can help.</t11></t10> <t12>Ecommerce PPC management<t13>Another way I can help.</t13></t12> <t14>Local SEO services<t15>Another way I can help.</t15></t14> <t16>Conversion tracking setup<t17>Another way I can help.</t17></t16> <t18>PPC and tracking for agencies<t19>Another way I can help.</t19></t18>",
+ "25f2d8d9046c": {
+  "en": "<t0>Meta ads for Shopify brands<t1>Scale on the orders you can actually count.</t1></t0> <t2>The Body Essential case study<t3>The duplicate pixel that was reporting purchases that never happened.</t3></t2> <t4>AlphaMart case study<t5>My own store, audited from ad click to cash.</t5></t4> <t6>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t7>The reconciliation that finds phantom conversions.</t7></t6> <t8>Two Meta Pixels on One Shopify Store Is Not a Backup Plan<t9>Why two pixels give you two versions of the truth.</t9></t8> <t10>Auditing a Meta Ad Account You Just Inherited<t11>What to check before you spend another pound.</t11></t10> <t12>Google Ads management<t13>Another way I can help.</t13></t12> <t14>Ecommerce PPC management<t15>Another way I can help.</t15></t14> <t16>Local SEO services<t17>Another way I can help.</t17></t16> <t18>Conversion tracking setup<t19>Another way I can help.</t19></t18> <t20>PPC and tracking for agencies<t21>Another way I can help.</t21></t20>",
   "pages": [
    "meta-ads-management.html"
   ]
@@ -2546,8 +2945,8 @@
    "ecommerce-ppc-management.html"
   ]
  },
- "e15b6389a971": {
-  "en": "A hair-styling tools store I ran on Shopify with a partner, selling cash-on-delivery in Pakistan. I rebuilt the full funnel from Snapchat, Meta and TikTok exports and courier settlement files, down to the individual order.",
+ "cd3b264845d3": {
+  "en": "A hair-styling tools store I ran solo on Shopify, selling cash-on-delivery in Pakistan. I rebuilt the full funnel from Snapchat, Meta and TikTok exports and courier settlement files, down to the individual order.",
   "pages": [
    "ecommerce-ppc-management.html"
   ]
@@ -2661,8 +3060,8 @@
    "ecommerce-ppc-management.html"
   ]
  },
- "6d41edcf1356": {
-  "en": "<t0>AlphaMart case study<t1>My own store, audited from ad click to cash.</t1></t0> <t2>The Body Essential case study<t3>The duplicate pixel that was reporting purchases that never happened.</t3></t2> <t4>Snapchat Purchase Events Not Firing: The Diagnostic Sequence<t5>Includes the 1,034-purchase store behind the numbers.</t5></t4> <t6>You Cannot Scale a Campaign You Cannot Trust<t7>Why scaling on bad data multiplies the waste.</t7></t6> <t8>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t9>The reconciliation that finds phantom conversions.</t9></t8> <t10>Google Ads management<t11>Another way I can help.</t11></t10> <t12>Meta Ads management<t13>Another way I can help.</t13></t12> <t14>Local SEO services<t15>Another way I can help.</t15></t14> <t16>Conversion tracking setup<t17>Another way I can help.</t17></t16> <t18>PPC and tracking for agencies<t19>Another way I can help.</t19></t18>",
+ "ab24045b69c9": {
+  "en": "<t0>Meta ads for Shopify brands<t1>Scale on the orders you can actually count.</t1></t0> <t2>AlphaMart case study<t3>My own store, audited from ad click to cash.</t3></t2> <t4>The Body Essential case study<t5>The duplicate pixel that was reporting purchases that never happened.</t5></t4> <t6>Snapchat Purchase Events Not Firing: The Diagnostic Sequence<t7>Includes the 1,034-purchase store behind the numbers.</t7></t6> <t8>You Cannot Scale a Campaign You Cannot Trust<t9>Why scaling on bad data multiplies the waste.</t9></t8> <t10>Meta Says 100 Orders. Shopify Says 62. Which One Is Lying?<t11>The reconciliation that finds phantom conversions.</t11></t10> <t12>Google Ads management<t13>Another way I can help.</t13></t12> <t14>Meta Ads management<t15>Another way I can help.</t15></t14> <t16>Local SEO services<t17>Another way I can help.</t17></t16> <t18>Conversion tracking setup<t19>Another way I can help.</t19></t18> <t20>PPC and tracking for agencies<t21>Another way I can help.</t21></t20>",
   "pages": [
    "ecommerce-ppc-management.html"
   ]
@@ -2773,7 +3172,8 @@
  "d91a2c89277d": {
   "en": "A page for each service and area",
   "pages": [
-   "local-seo-services.html"
+   "local-seo-services.html",
+   "marketing-for-plumbers.html"
   ]
  },
  "4d46612ff341": {
@@ -2862,8 +3262,8 @@
    "local-seo-services.html"
   ]
  },
- "59f7b6b9b7af": {
-  "en": "<t0>Mr Expert Carpet Cleaning case study<t1>Full digital build for a UK service business in Slough. Ongoing.</t1></t0> <t2>Local SEO Service Pages: One Page per Service and Area<t3>How I structured a UK service business site.</t3></t2> <t4>Google Ads Call Tracking for Local Service Businesses<t5>How to count the calls that turn into jobs.</t5></t4> <t6>Google Ads management<t7>Another way I can help.</t7></t6> <t8>Meta Ads management<t9>Another way I can help.</t9></t8> <t10>Ecommerce PPC management<t11>Another way I can help.</t11></t10> <t12>Conversion tracking setup<t13>Another way I can help.</t13></t12> <t14>PPC and tracking for agencies<t15>Another way I can help.</t15></t14>",
+ "59d4bd8dddd1": {
+  "en": "<t0>Marketing for plumbers<t1>What I would set up for a plumbing company.</t1></t0> <t2>Mr Expert Carpet Cleaning case study<t3>Full digital build for a UK service business in Slough. Ongoing.</t3></t2> <t4>Local SEO Service Pages: One Page per Service and Area<t5>How I structured a UK service business site.</t5></t4> <t6>Google Ads Call Tracking for Local Service Businesses<t7>How to count the calls that turn into jobs.</t7></t6> <t8>Google Ads management<t9>Another way I can help.</t9></t8> <t10>Meta Ads management<t11>Another way I can help.</t11></t10> <t12>Ecommerce PPC management<t13>Another way I can help.</t13></t12> <t14>Conversion tracking setup<t15>Another way I can help.</t15></t14> <t16>PPC and tracking for agencies<t17>Another way I can help.</t17></t16>",
   "pages": [
    "local-seo-services.html"
   ]
@@ -3481,8 +3881,8 @@
    "alphamart.html"
   ]
  },
- "2dc0565b357c": {
-  "en": "AlphaMart was a hair-styling-tools store I ran on Shopify with a partner, selling cash-on-delivery in Pakistan over an eight-month run. There was no client budget to protect, which is exactly why I went back afterward and audited it as hard as I'd audit a client's account.",
+ "109ac8af752a": {
+  "en": "AlphaMart was a hair-styling-tools store I ran solo on Shopify, selling cash-on-delivery in Pakistan over an eight-month run. There was no client budget to protect, which is exactly why I went back afterward and audited it as hard as I'd audit a client's account.",
   "pages": [
    "alphamart.html"
   ]
@@ -3764,8 +4164,8 @@
    "alphamart.html"
   ]
  },
- "ba41fe4c7a9e": {
-  "en": "The pattern ran opposite to what we expected going in, the cheapest item did not deliver the best. A buyer paying more per order seems to think it through more before ordering, and follows through more often when the rider arrives.",
+ "844de4da4f75": {
+  "en": "The pattern ran opposite to what I expected going in, the cheapest item did not deliver the best. A buyer paying more per order seems to think it through more before ordering, and follows through more often when the rider arrives.",
   "pages": [
    "alphamart.html"
   ]
@@ -3920,8 +4320,8 @@
    "alphamart.html"
   ]
  },
- "d3337ad4c8a0": {
-  "en": "We switched from dropshipping to owned stock mid-flight once it was clear dropshipping was capping how much of the operation we could actually control, the kind of call that's easy to avoid making and costly to delay.",
+ "36afbf4491fe": {
+  "en": "I switched from dropshipping to owned stock mid-flight once it was clear dropshipping was capping how much of the operation I could actually control, the kind of call that's easy to avoid making and costly to delay.",
   "pages": [
    "alphamart.html"
   ]
@@ -5716,8 +6116,20 @@
    "privacy-policy.html"
   ]
  },
- "0338f532243d": {
-  "en": "<t0>FormSubmit</t0>: delivers contact-form submissions to my email. See <t1>FormSubmit</t1>.",
+ "b46b8fc76484": {
+  "en": "<t0>Cloudflare</t0>: runs the contact-form backend and checks for spam with Turnstile, which works invisibly in the background. See <t1>Cloudflare's Privacy Policy</t1> and the <t2>Turnstile Privacy Addendum</t2>.",
+  "pages": [
+   "privacy-policy.html"
+  ]
+ },
+ "53612d5b37b4": {
+  "en": "<t0>Google Sheets</t0>: stores contact-form enquiries so none are lost. See <t1>Google's Privacy Policy</t1>.",
+  "pages": [
+   "privacy-policy.html"
+  ]
+ },
+ "b2d4cb87cc3c": {
+  "en": "<t0>Resend</t0>: delivers contact-form enquiries to my email and, where applicable, a confirmation email to you. See <t1>Resend's Privacy Policy</t1>.",
   "pages": [
    "privacy-policy.html"
   ]
@@ -5895,7 +6307,11 @@
    "blog/scaling-meta-campaigns-bad-data.html",
    "blog/shopify-additional-scripts-deadline-tracking.html",
    "blog/snapchat-purchase-event-not-firing.html",
-   "blog/two-meta-pixels-shopify-problem.html"
+   "blog/two-meta-pixels-shopify-problem.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "3df51362a77e": {
@@ -5906,6 +6322,76 @@
  },
  "12899bd71a68": {
   "en": "Most articles about broken conversion tracking are written by software companies selling the fix. These are written from inside actual ad accounts, with the numbers, the dates, and the parts I couldn't explain.",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "ecb7bde255cb": {
+  "en": "<t0>30 Oct 2026</t0><t1>Google Ads</t1><t2>6 min read</t2>",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "ce0b8bbb4123": {
+  "en": "How Much Do Google Ads Cost a Local Service Business?",
+  "pages": [
+   "blog/",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "0e52ebd0ddbf": {
+  "en": "Real Keyword Planner bids for plumbers, roofers, HVAC, dentists and cleaners in the UK and US, and how to work out your cost per job.",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "33eb27dd2352": {
+  "en": "<t0>30 Oct 2026</t0><t1>Local Service</t1><t2>5 min read</t2>",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "4475c6f74d34": {
+  "en": "Local Services Ads vs Google Ads: Which Should You Use?",
+  "pages": [
+   "blog/",
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "c7c94e137d92": {
+  "en": "Billing, control and setup compared, plus the move into Performance Max, from an account I run.",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "ebd8bd4e8fa2": {
+  "en": "How to Get More Plumbing Leads Without Relying on Bought Ones",
+  "pages": [
+   "blog/",
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "2f7b687c56ce": {
+  "en": "Six things to do, in the order I would do them.",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "b7e264511231": {
+  "en": "<t0>30 Oct 2026</t0><t1>Google Ads</t1><t2>5 min read</t2>",
+  "pages": [
+   "blog/"
+  ]
+ },
+ "027379825366": {
+  "en": "Google Ads Freelancer vs Agency: How to Choose",
+  "pages": [
+   "blog/",
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "02b08cc6979c": {
+  "en": "When each makes sense and what to ask either one. I sell this service myself, so weigh that bias.",
   "pages": [
    "blog/"
   ]
@@ -6206,7 +6692,11 @@
    "blog/scaling-meta-campaigns-bad-data.html",
    "blog/shopify-additional-scripts-deadline-tracking.html",
    "blog/snapchat-purchase-event-not-firing.html",
-   "blog/two-meta-pixels-shopify-problem.html"
+   "blog/two-meta-pixels-shopify-problem.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "22df683a61ba": {
@@ -6267,7 +6757,11 @@
    "blog/scaling-meta-campaigns-bad-data.html",
    "blog/shopify-additional-scripts-deadline-tracking.html",
    "blog/snapchat-purchase-event-not-firing.html",
-   "blog/two-meta-pixels-shopify-problem.html"
+   "blog/two-meta-pixels-shopify-problem.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "b8d58f19ceed": {
@@ -6391,7 +6885,8 @@
    "blog/capi-duplicate-purchase-events-deduplication.html",
    "blog/google-ads-call-tracking-local-business.html",
    "blog/scaling-meta-campaigns-bad-data.html",
-   "blog/shopify-additional-scripts-deadline-tracking.html"
+   "blog/shopify-additional-scripts-deadline-tracking.html",
+   "blog/how-to-get-more-plumbing-leads.html"
   ]
  },
  "cad331f39cfd": {
@@ -6640,7 +7135,11 @@
    "blog/scaling-meta-campaigns-bad-data.html",
    "blog/shopify-additional-scripts-deadline-tracking.html",
    "blog/snapchat-purchase-event-not-firing.html",
-   "blog/two-meta-pixels-shopify-problem.html"
+   "blog/two-meta-pixels-shopify-problem.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "4a93f65922ac": {
@@ -6664,7 +7163,11 @@
    "blog/meta-pixel-reporting-fake-purchases.html",
    "blog/scaling-meta-campaigns-bad-data.html",
    "blog/shopify-additional-scripts-deadline-tracking.html",
-   "blog/two-meta-pixels-shopify-problem.html"
+   "blog/two-meta-pixels-shopify-problem.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "27ae9bc21ad7": {
@@ -6708,7 +7211,9 @@
   "pages": [
    "blog/google-ads-account-audit-lead-generation.html",
    "blog/google-ads-conversion-tracking-not-working.html",
-   "blog/google-ads-offline-conversions-booked-jobs.html"
+   "blog/google-ads-offline-conversions-booked-jobs.html",
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  },
  "8ad5b37eb608": {
@@ -6958,7 +7463,9 @@
  "f49bba1211ab": {
   "en": "<t0>Field Notes</t0> &nbsp;/&nbsp; Local Service",
   "pages": [
-   "blog/google-ads-call-tracking-local-business.html"
+   "blog/google-ads-call-tracking-local-business.html",
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html"
   ]
  },
  "d1549a62e3df": {
@@ -11134,6 +11641,3069 @@
   "en": "No spam, ever. Just a quick reply from Kamran.",
   "pages": [
    "thankyou.html"
+  ]
+ },
+ "bc9d93f768b9": {
+  "en": "Google Ads for Dentists: PPC for Dental Practices | Kamran Arshad",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "0af6067bc48c": {
+  "en": "Google Ads for dental practices: search campaigns by treatment, local targeting, and calls and forms tracked back to the keyword. From a real dental clinic rebuild.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "f33e11b866dd": {
+  "en": "Google Ads for dental practices",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "0f3e0ec0c4a5": {
+  "en": "Dental PPC and Google Ads management",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "097e82313df8": {
+  "en": "Google Ads for dentists",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "11543d2e1225": {
+  "en": "Do you only work with dentists?",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "9d5e18ba2e5b": {
+  "en": "No. I also run marketing for a UK carpet cleaning company and have worked on online stores. Dental is one of the areas where I have direct account experience.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "b9f94e9785e6": {
+  "en": "Can you guarantee a number of new patients?",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "425a966ce72a": {
+  "en": "No, and be careful with anyone who does. Results depend on your location, competition, offer and how enquiries are handled. What I can promise is a clean account and honest tracking of what it produces.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "2c0823cef3cf": {
+  "en": "Do you also help with Google Maps?",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "0759cb50adec": {
+  "en": "Yes. Many patients choose from the Maps results, so I can work on your Google Business Profile and local pages alongside your ads.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "63c951234798": {
+  "en": "How does working with you start?",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "7ff7da8d2051": {
+  "en": "With a free audit of your ad account, website and tracking. You get the findings in plain language before you decide anything, and you keep ownership of your Google Ads account.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "f0ab8b050d21": {
+  "en": "<t0>Home</t0> &nbsp;/&nbsp; <t1>Services</t1> &nbsp;/&nbsp; Google Ads for dentists",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "8ee56dfb2e1a": {
+  "en": "Google Ads for dentists: fill the chair with the treatments you want more of",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "436af1642848": {
+  "en": "<t0>Kamran Arshad</t0><t1>Updated <t2>30 Oct 2026</t2></t1>",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "4310e7a11cea": {
+  "en": "A dental practice doesn't need more clicks. It needs more enquiries for the treatments that pay, from people close enough to come in, and a way to see which searches produced them.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "fb00d1c28dd7": {
+  "en": "I rebuild and run Google Ads accounts, and I have done it for a dental clinic: ad groups by treatment, with form submissions and phone calls tracked as conversions.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "104f8945ea04": {
+  "en": "What I would set up for your practice",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "67c433359b01": {
+  "en": "Campaigns split by treatment",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "cfd4ce4cabde": {
+  "en": "Someone searching for implants and someone searching for a check-up are different patients with very different value. Implants, whitening, cleaning and emergency searches each get their own ad groups, ads and budget decisions.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "61e070c0cd14": {
+  "en": "Location targeting set to your catchment",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "a8a5229651c0": {
+  "en": "Your ads only show where patients can realistically reach you. This sounds basic, but it is one of the first things I check, because the wrong default setting can spend budget far outside your area.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "243b4c03f94c": {
+  "en": "A negative keyword list",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "43c12b6ada49": {
+  "en": "Dental searches attract people looking for jobs, courses, free treatment and information. A maintained negative list stops those clicks before you pay for them.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "39adcef4b818": {
+  "en": "Enquiries usually arrive by phone or form. Both are tracked through Google Tag Manager and imported into Google Ads, so bidding works towards patient enquiries and not just visits.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "414355fadf64": {
+  "en": "What dental clicks cost right now",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "bce06414177f": {
+  "en": "Search",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "fd1ccecf1a8f": {
+  "en": "UK searches/month",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "55e48bec0bc9": {
+  "en": "UK top-of-page bid",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "42874f6c94eb": {
+  "en": "US searches/month",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "68847e9c8f63": {
+  "en": "US top-of-page bid",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "fe8b4ef0158a": {
+  "en": "dentist near me",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "dbd547e78e03": {
+  "en": "£1.39 to £5.54",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "50a1f16d450c": {
+  "en": "£3.64 to £17.15",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "9ada3584e0ac": {
+  "en": "dental implants",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "2364d032cbcd": {
+  "en": "£1.55 to £7.44",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "8a4e3536ca1f": {
+  "en": "£5.34 to £22.45",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "6a4a92a61de9": {
+  "en": "invisalign",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "9d3d66ee4721": {
+  "en": "£2.64 to £11.27",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "64cb496f4009": {
+  "en": "£1.33 to £8.42",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "da082996ee9c": {
+  "en": "teeth whitening",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "b1fe9acd44e0": {
+  "en": "£1.02 to £2.70",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "ccbb5742755a": {
+  "en": "£1.54 to £5.87",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "691ff46f0a7a": {
+  "en": "Source: Google Ads Keyword Planner, checked 30 October 2026, average monthly searches for October 2025 to September 2026. Bids are Google's low and high estimates in pounds, because that is the account's currency. They are estimates and not what you would actually pay.",
+  "pages": [
+   "google-ads-for-dentists.html",
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html",
+   "med-spa-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "287632fc09df": {
+  "en": "The gap between treatments is why I split campaigns. Compare the high estimate for implants with whitening in the UK, then ask which one you would rather fill your diary with.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "9a8c95289a09": {
+  "en": "Direct dental experience",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "2186729784da": {
+  "en": "The clinic was already paying for Google Ads, but campaigns were targeting worldwide, Search and Display were mixed together, there were no negative keywords, and neither forms nor calls were tracked.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "8ae618617011": {
+  "en": "I completed advertiser verification, rebuilt the account as Search only, split ad groups by service, set local targeting, built the negative list and added tracking. For the first time, the clinic could see which ads and keywords were producing patient enquiries.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "ab2863804f87": {
+  "en": "The fundamentals don't change with the country. Clicks and leads cost more in the UK and the US, which makes wasted spend more expensive and clean tracking more valuable. A dental account leaks money in the same places wherever it runs: broad targeting, irrelevant searches and enquiries nobody is counting.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "b5bec9a32d8e": {
+  "en": "What a dental account should be able to answer",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "db7a15fd8c7b": {
+  "en": "<t0>Which treatments bring enquiries?</t0>Spend and enquiries per treatment, so budget can follow the work you want.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "f99faee5d09d": {
+  "en": "<t0>Which searches brought them?</t0>The actual search terms behind each enquiry, reviewed and cleaned regularly.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "1330fac24c73": {
+  "en": "<t0>What does an enquiry cost?</t0>Measured from your own tracked calls and forms, not from an industry average.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "fee8da47b2ec": {
+  "en": "<t0>Which enquiries became patients?</t0>If your practice records this, it can be fed back to Google Ads so bidding learns from real bookings.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "fef43625f313": {
+  "en": "Do you know which searches bring your patients?",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "c20ddf8bad12": {
+  "en": "Send me your practice website. I'll review your ads and tracking and tell you the first things I'd fix.",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "5ef353522dc2": {
+  "en": "<t0>Get my free dental ads audit &rarr;</t0>",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "e617716b5575": {
+  "en": "<t0>Smile Line Dental case study<t1>A dental clinic's Google Ads rebuild and first-ever lead tracking.</t1></t0> <t2>Google Ads management<t3>Search campaigns with call and form tracking.</t3></t2> <t4>Med spa marketing<t5>Ads for aesthetic clinics, within Google and Meta rules.</t5></t4> <t6>Google Ads Account Audit Checklist<t7>Six checks, taken from rebuilding a dental clinic's account.</t7></t6>",
+  "pages": [
+   "google-ads-for-dentists.html"
+  ]
+ },
+ "7bba1eb0e38c": {
+  "en": "Marketing for Plumbers: Google Ads, Maps and SEO | Kamran Arshad",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "cf0e7601f5d9": {
+  "en": "Marketing for plumbing companies: Google Ads, Local Services Ads, Google Maps and service pages, tracked to the calls that become jobs. Free audit.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "0b3084d9849c": {
+  "en": "Marketing for plumbing companies",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "1fb34645f978": {
+  "en": "Google Ads and local SEO for plumbers",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "4b1d4843cd3e": {
+  "en": "Marketing for plumbers",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "41201841d799": {
+  "en": "Have you worked with plumbers before?",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "6b39c63193f7": {
+  "en": "Not yet. I run the same Google Ads, Maps, website and tracking system for a UK carpet cleaning company, which has the same call-led customer journey. I'm telling you that upfront so you can judge the fit for yourself.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "c299fcf37513": {
+  "en": "Should a plumber use Google Ads or Local Services Ads?",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "2621de49060d": {
+  "en": "Often both. Local Services Ads charge per lead and need little setup, while Google Ads gives you more control over the jobs and areas you target. The audit will tell you what fits your area and budget.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "afb4be96d9a1": {
+  "en": "With a free audit of your ads, Maps listing and website. You get the findings in plain language before you decide anything.",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html",
+   "roofing-marketing.html"
+  ]
+ },
+ "c1e2779348a3": {
+  "en": "<t0>Home</t0> &nbsp;/&nbsp; <t1>Services</t1> &nbsp;/&nbsp; Marketing for plumbers",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "e9d87d73f2e5": {
+  "en": "Marketing for plumbers: more of the calls that turn into paid jobs",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "99ab00d8e176": {
+  "en": "Plumbing marketing comes down to being visible at the moment something leaks, and answering fast. Someone with a leak is unlikely to spend long comparing options.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "8fea0ee902f7": {
+  "en": "I run Google Ads, Local Services Ads, the Google Maps profile and service pages for a UK carpet cleaning company, with calls and forms tracked. That is the system I would bring to a plumbing company.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "060e87f38590": {
+  "en": "Where I'd start for a plumbing company",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "163d710a81f6": {
+  "en": "Google Ads for urgent and high-value work",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "ea52dd03d6b8": {
+  "en": "Emergency call-outs, boiler or water heater work and bathroom installs behave very differently. Each gets its own ad groups, so you can bid hard on the jobs you want and leave out the ones you don't.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "e9d007e4dd27": {
+  "en": "Local Services Ads where they're available",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "9ef216169130": {
+  "en": "These charge per lead instead of per click and can appear prominently in Search. I have hands-on experience here: I set up the account and run Local Services Ads for a UK carpet cleaning company.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "e9804b15bf02": {
+  "en": "Google Maps and your Business Profile",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "a070b2631e5a": {
+  "en": "Categories, services, service areas, photos and a steady flow of reviews decide how often you appear when someone nearby searches for a plumber.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "70828c2a8a47": {
+  "en": "One homepage can't rank for drain unblocking, leak repair and five nearby towns. Separate pages give Google and your customer an exact match.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "a7e00b406ee7": {
+  "en": "Tracking down to the booked job",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "hvac-marketing.html"
+  ]
+ },
+ "642161363dcc": {
+  "en": "A tap on your phone number isn't a customer. Connected calls and forms are tracked, and booked jobs can be sent back to Google Ads so it learns which searches bring real work.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "b9d4794a3858": {
+  "en": "What plumbing clicks cost",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "91ef722a0e3b": {
+  "en": "emergency plumber",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "072cd5d45703": {
+  "en": "£3.87 to £26.39",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "69cb4c0001a7": {
+  "en": "£18.28 to £82.32",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "66b0c9add556": {
+  "en": "plumber near me",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "d9e2fd7dabd2": {
+  "en": "£1.54 to £10.70",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "1358b08e3429": {
+  "en": "£9.15 to £61.62",
+  "pages": [
+   "marketing-for-plumbers.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "f1ce8ea1cda4": {
+  "en": "blocked drain",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "19f03b21f54c": {
+  "en": "£3.14 to £19.29",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "d7ccbded0096": {
+  "en": "£5.25 to £28.02",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "93d1ce3c03e8": {
+  "en": "At the high end of those estimates, one missed emergency call can throw away an expensive click. That is why I would look at how calls get answered before raising any budget.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "ebbf379168d5": {
+  "en": "The system I run today",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "9cb9a97a3bb7": {
+  "en": "I haven't run a plumbing account yet. What I do run is this system for a UK carpet cleaning company: the website, service and area pages, Google Ads, Local Services Ads, the Business Profile and server-side tracking, plus a custom plugin that sends booked job values back to Google Ads.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "af2a085a0b9f": {
+  "en": "The customer journey is the same: a local search, a phone call or a form, then a job in the diary. The keywords and the cost per lead are different. Keyword Planner gives a first estimate, and only your own tracked results can give the real number.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "e29c4ddfcf3e": {
+  "en": "Questions worth asking any plumbing marketing agency",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "04c4c1434ba2": {
+  "en": "<t0>Who owns the ad account?</t0>It should be you, so your history stays with you if you ever leave.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "41a674f683f3": {
+  "en": "<t0>Are leads shared with other plumbers?</t0>Some lead services sell one enquiry to several companies. Your own ads and pages only bring leads to you.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "27165993985e": {
+  "en": "<t0>What counts as a conversion?</t0>Ask whether it means a connected call, or just a tap on a phone number.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "7a37286bf8d7": {
+  "en": "<t0>Can I see the search terms?</t0>You should be able to see exactly what people searched before they called.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "874163a5a8da": {
+  "en": "Where are your plumbing jobs really coming from?",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "9161355b6ddb": {
+  "en": "Send me your website and main service area. I'll check your ads, Maps listing and tracking, and tell you the first things I'd fix.",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "ce8d829b9c68": {
+  "en": "<t0>Get my free plumbing marketing audit &rarr;</t0>",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "22bc1adbaf17": {
+  "en": "<t0>How to get more plumbing leads<t1>Buying leads or generating your own, and how each one works.</t1></t0> <t2>Local Services Ads vs Google Ads<t3>Billing, control and when to use each.</t3></t2> <t4>Mr Expert Carpet Cleaning case study<t5>Full digital build for a UK local service business.</t5></t4> <t6>Local SEO services<t7>Google Business Profile, service pages and indexing fixes.</t7></t6>",
+  "pages": [
+   "marketing-for-plumbers.html"
+  ]
+ },
+ "c804ae49b399": {
+  "en": "HVAC Marketing: Google Ads and Leads for Contractors | Kamran Arshad",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "e41fcbd36c30": {
+  "en": "HVAC marketing for heating and cooling contractors: Google Ads, Local Services Ads and Maps, planned around peak season and tracked to booked jobs. Free audit.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "3761d9891f57": {
+  "en": "Marketing for HVAC contractors",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "fc8efb2d644b": {
+  "en": "Google Ads and local SEO for heating and cooling companies",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "eb308e63faa5": {
+  "en": "HVAC marketing",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "fa2b638f7bc8": {
+  "en": "Have you worked with HVAC companies before?",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "ab8d955288a4": {
+  "en": "Not yet. I run the same Google Ads, Maps, website and tracking system for a UK carpet cleaning company. The call-led customer journey is the same, and I'm telling you upfront so you can judge the fit.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "f1fadd750c08": {
+  "en": "Are HVAC leads better bought or generated?",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "ce64bf7b41e6": {
+  "en": "Bought leads are quick but may be shared with competitors, and you stop getting them when you stop paying. Your own ads and pages take longer to set up, but the leads are yours. Many companies use both while their own channels build up.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "f64287f76b05": {
+  "en": "<t0>Home</t0> &nbsp;/&nbsp; <t1>Services</t1> &nbsp;/&nbsp; HVAC marketing",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "ee4f659fb801": {
+  "en": "HVAC marketing: your own leads, through the busy season and the quiet one",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "acfa7e866ef3": {
+  "en": "HVAC demand swings with the weather. Marketing that runs the same all year overspends when you're fully booked and goes quiet when you most need the work.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "1dac3e8e4287": {
+  "en": "I run Google Ads, Local Services Ads, the Google Maps profile and service pages for a UK carpet cleaning company, with calls and forms tracked. An HVAC account would use the same system, planned around your seasons.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "6d5babec093f": {
+  "en": "How I'd plan the account around the seasons",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "7ec7b75e974d": {
+  "en": "Budgets that follow the season",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "ccbdd698706c": {
+  "en": "Repair demand tends to rise in very hot or very cold weather. Budgets and ad schedules can be adjusted around your capacity, so you aren't paying for calls your team can't take.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "d8e424f3a53b": {
+  "en": "Repairs and replacements kept apart",
+  "pages": [
+   "hvac-marketing.html",
+   "roofing-marketing.html"
+  ]
+ },
+ "044c6a8ac9ec": {
+  "en": "A broken system needs someone quickly, while a replacement buyer may compare quotes for longer and the job is usually worth more. Separate campaigns let each get the right ad, page and bid.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "65c8b3a77fc1": {
+  "en": "Your own leads instead of shared ones",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "fc126a3d91d1": {
+  "en": "Bought HVAC leads can be useful for filling gaps, but they may also go to your competitors. Your own ads, Maps listing and pages bring enquiries to you alone.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "0458323c8a42": {
+  "en": "Local Services Ads and Google Maps",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "fbd94225671a": {
+  "en": "Pay-per-lead ads and a strong Business Profile put you in front of people ready to call. I have hands-on experience with both, including setting up and running Local Services Ads for a UK carpet cleaning company.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "8b5d45cfb592": {
+  "en": "Connected calls and forms are tracked by source. Booked jobs and their value can go back to Google Ads, so it learns the difference between a quick repair and a full installation.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "e6cad4711ab8": {
+  "en": "Why waste matters more in HVAC",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "c2d3064a4c3c": {
+  "en": "ac repair",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "f4b2bb1d7603": {
+  "en": "£1.35 to £7.17",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "790d9d1b9ebe": {
+  "en": "£14.07 to £75.96",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "6bc0a56fdd26": {
+  "en": "hvac repair",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "a921a132714c": {
+  "en": "£2.32 to £6.49",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "6f98bb039ce9": {
+  "en": "£12.72 to £74.84",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "38538aa162a2": {
+  "en": "furnace repair",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "6a0ebc41c708": {
+  "en": "no estimate",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "c2d9895f636a": {
+  "en": "£8.09 to £56.13",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "e54bd0bf4933": {
+  "en": "boiler repair",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "54345d37af3e": {
+  "en": "£3.66 to £11.88",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "257de00be6aa": {
+  "en": "£8.40 to £50.43",
+  "pages": [
+   "hvac-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "44b74a25c2e0": {
+  "en": "US bids here are some of the highest in the 21 searches I checked for local businesses. Note the different words too: \"boiler repair\" and \"ac repair\" are very different markets in the UK and the US, so the keyword list has to follow your country.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "a0b1bf7f4f07": {
+  "en": "The system I would bring",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "7c7d34ff5f13": {
+  "en": "There is no HVAC account in my case studies yet. The system I would bring is the one I run for a UK carpet cleaning company: the website, service and area pages, Google Ads, Local Services Ads, the Business Profile and server-side tracking, plus a custom plugin that sends booked job values back to Google Ads.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "75295fb4baff": {
+  "en": "The structure carries over directly: local search, then a call or form, then a booked job. Seasonality and job value are what change most for HVAC, and they shape how the account is planned from the start.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "4c1accd9420a": {
+  "en": "What to check before hiring an HVAC marketing agency",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "f067643474e8": {
+  "en": "<t0>Do you own the accounts?</t0>Your ad account, website and call data should stay yours.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "a01ec91cce65": {
+  "en": "<t0>Is the contract tied to results you can see?</t0>Long contracts are hard to judge without tracking you can check yourself.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "189ff1851e45": {
+  "en": "<t0>Are repairs and installs reported separately?</t0>A blended cost per lead hides which work actually pays.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "7fe09bf5ddd6": {
+  "en": "<t0>What happens in the quiet season?</t0>Ask for a plan for slow months, not just the peak.",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "7a4e4b310748": {
+  "en": "Are you paying for calls you can't take?",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "a768cfa2a78c": {
+  "en": "Send me your website and service area. I'll check your ads, Maps listing and tracking, and tell you the first things I'd fix.",
+  "pages": [
+   "hvac-marketing.html",
+   "roofing-marketing.html"
+  ]
+ },
+ "550aa18127cf": {
+  "en": "<t0>Get my free HVAC marketing audit &rarr;</t0>",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "293718bbaa9e": {
+  "en": "<t0>Local Services Ads vs Google Ads<t1>Billing, control and when to use each.</t1></t0> <t2>Mr Expert Carpet Cleaning case study<t3>Full digital build for a UK local service business.</t3></t2> <t4>Google Ads management<t5>Search campaigns with call and form tracking.</t5></t4> <t6>Google Ads Call Tracking for Local Service Businesses<t7>How to count the calls that turn into jobs.</t7></t6>",
+  "pages": [
+   "hvac-marketing.html"
+  ]
+ },
+ "405027bbbe10": {
+  "en": "Roofing Marketing: Google Ads for Roofers | Kamran Arshad",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "ded63c372fe2": {
+  "en": "Roofing marketing that goes beyond bought leads: Google Ads, Local Services Ads, Maps, and tracking from the first call to the signed job. Free audit.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "55f7fe929df4": {
+  "en": "Marketing for roofing companies",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "389999c6a8f2": {
+  "en": "Google Ads and local SEO for roofers",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "0a36ddc80eac": {
+  "en": "Roofing marketing",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "236401a0912a": {
+  "en": "Have you worked with roofers before?",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "ef1a966fcaae": {
+  "en": "Not yet. I run the same Google Ads, Maps, website and tracking system for a UK carpet cleaning company. The call-led journey is the same, and I'm telling you upfront so you can judge the fit.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "181c416cfb38": {
+  "en": "Should roofers buy leads?",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "2267b79474fd": {
+  "en": "Bought leads can fill gaps quickly, but they may be shared and they stop when you stop paying. Your own ads and pages take longer to build, but the enquiries come to you alone. Many roofers use both at first.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "226b23367f5a": {
+  "en": "<t0>Home</t0> &nbsp;/&nbsp; <t1>Services</t1> &nbsp;/&nbsp; Roofing marketing",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "d1274d4f88b8": {
+  "en": "Roofing marketing: fewer shared leads, more signed jobs from your own channels",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "9d294b7575f6": {
+  "en": "A roof is a big decision. Homeowners often compare several quotes and take time to choose, so a low cost per lead means little if those leads never sign.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "5d945614b191": {
+  "en": "I run Google Ads, Local Services Ads, the Google Maps profile and service pages for a UK carpet cleaning company, with booked jobs sent back to Google Ads. A roofing account would use the same system.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "1b0853a2b2b6": {
+  "en": "What I'd change first for a roofing company",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "81277acd3298": {
+  "en": "A leak needs someone quickly, while a full replacement is a high-value job with a longer decision. Each gets its own campaign, landing page and budget so one can't quietly eat the other's money.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "86227d485b9c": {
+  "en": "Your own enquiries, not shared lists",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "9f91427a2813": {
+  "en": "Bought roofing leads can be sold to several companies at once, which turns the job into a race on price. Your own ads and pages bring the homeowner to you first.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "9f621bffa689": {
+  "en": "Trust on the page where they decide",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "2a7b960ed474": {
+  "en": "Real photos of your jobs, reviews, accreditations and clear service areas matter for a purchase this size. A generic template page wastes the click you paid for.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "35a28e7e49e7": {
+  "en": "Google Maps and Local Services Ads",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "8f382adce7b4": {
+  "en": "A strong Business Profile and pay-per-lead ads put you in front of people ready to call. I have hands-on experience with both, including setting up and running Local Services Ads for a UK carpet cleaning company.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "8a7d089966b1": {
+  "en": "Tracking past the first call",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "b3a44f3f0c70": {
+  "en": "Long sales cycles need more than a lead count. Signed jobs and their value can be sent back to Google Ads, so it learns which searches lead to real roofs and not just quote requests.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "f0837bd7bd3f": {
+  "en": "What roofing clicks cost",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "da6dcc6a2606": {
+  "en": "roof repair",
+  "pages": [
+   "roofing-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "8acd12d78fbb": {
+  "en": "£3.61 to £14.22",
+  "pages": [
+   "roofing-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "b18ec100c794": {
+  "en": "£10.85 to £53.85",
+  "pages": [
+   "roofing-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "2c26cf6c7e14": {
+  "en": "roofer near me",
+  "pages": [
+   "roofing-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "66512b1e1c3a": {
+  "en": "£2.98 to £12.65",
+  "pages": [
+   "roofing-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "7e63212c2a9e": {
+  "en": "£10.32 to £56.13",
+  "pages": [
+   "roofing-marketing.html",
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "cca6e865396a": {
+  "en": "roof replacement",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "2e74af61f386": {
+  "en": "£2.58 to £13.51",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "80bb2aa6ca2f": {
+  "en": "£10.78 to £52.94",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "6bde775106bd": {
+  "en": "When a single click can carry an estimate like these, judging the account on cost per lead alone isn't enough. What matters is what a signed job earns against what it cost to win.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "40fdebabbc54": {
+  "en": "What I can show you",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "dcd524fbde7b": {
+  "en": "I don't have a roofing client to show you. I can show you the system I run for a UK carpet cleaning company: the website, service and area pages, Google Ads, Local Services Ads, the Business Profile and server-side tracking, plus a custom plugin that sends booked job values back to Google Ads.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "602ce3f8ea66": {
+  "en": "The mechanics carry over directly. The difference with roofing is job value and decision time, so I'd judge the account on signed work and not on the number of leads.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "a648afe2d50d": {
+  "en": "What to ask a roofing marketing agency",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "540635c09cbe": {
+  "en": "<t0>Are these leads exclusive?</t0>Ask directly whether any other roofer receives the same enquiry.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "69106499e1c8": {
+  "en": "<t0>Do you report on signed jobs?</t0>A report that stops at leads can't tell you whether the ads are profitable.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "aab745045e6d": {
+  "en": "<t0>Who owns the ad account and website?</t0>If you leave, your history and pages should stay with you.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "316f307f5276": {
+  "en": "<t0>Will the page show my real work?</t0>Stock photos and shared templates don't build trust for a job this size.",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "b2d3ddc0b807": {
+  "en": "Are your leads turning into signed roofs?",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "75f3583f9a85": {
+  "en": "<t0>Get my free roofing marketing audit &rarr;</t0>",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "eb5f8203c5c8": {
+  "en": "<t0>Google Ads Offline Conversions for Lead-Gen Businesses<t1>Telling Google Ads which leads became booked jobs.</t1></t0> <t2>Local Services Ads vs Google Ads<t3>Billing, control and when to use each.</t3></t2> <t4>Mr Expert Carpet Cleaning case study<t5>Full digital build for a UK local service business.</t5></t4> <t6>Local SEO services<t7>Google Business Profile, service pages and indexing fixes.</t7></t6>",
+  "pages": [
+   "roofing-marketing.html"
+  ]
+ },
+ "e71da9687737": {
+  "en": "Med Spa Marketing: Google and Meta Ads, Within the Rules | Kamran Arshad",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "0705d7206cf5": {
+  "en": "Med spa and aesthetic clinic marketing: Google Ads, Meta Ads and local SEO, planned around advertising policy and tracked to booked consultations. Free audit.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "76e427e2ff4a": {
+  "en": "Marketing for med spas and aesthetic clinics",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "09a42a27d1e3": {
+  "en": "Google Ads and Meta Ads for med spas",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "ff99cb5fc899": {
+  "en": "Med spa marketing",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "b122d87f534e": {
+  "en": "Can a med spa advertise on Google Ads?",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "08fe1bde43fa": {
+  "en": "Yes, but with limits. Prescription drug terms are restricted, and the rules depend on the countries you target. Campaigns need to be planned around Google's healthcare policy for your location.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "238beb3e0ee1": {
+  "en": "Can med spas use before-and-after photos in Facebook ads?",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "9e1b75d148a1": {
+  "en": "Meta's policy allows them for general cosmetic procedures when the ad targets people aged 18 or over and avoids negative messaging about appearance. Local medical advertising rules may be stricter, so check those too.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "2efcd3762199": {
+  "en": "Have you worked with med spas before?",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "07a67b10c16b": {
+  "en": "Not yet. I have direct experience with clinic lead generation and Meta Ads, and I'm telling you upfront so you can judge the fit for yourself.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "cbd22afc2707": {
+  "en": "With a free audit of your ads, website and tracking. You get the findings in plain language before you decide anything.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "877b4191e723": {
+  "en": "<t0>Home</t0> &nbsp;/&nbsp; <t1>Services</t1> &nbsp;/&nbsp; Med spa marketing",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "4586c8132fb7": {
+  "en": "Med spa marketing: more booked consultations, inside Google's and Meta's rules",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "ea0a1c447403": {
+  "en": "Med spa advertising is different because the platforms restrict what you can say. A campaign written like any other can be disapproved, and repeated problems can put the whole account at risk.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "13911eeee058": {
+  "en": "I build Google and Meta campaigns with tracking from enquiry onwards. For a clinic, I would plan them around those rules from the start.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "9c0d66d9e7b8": {
+  "en": "The rules that shape a med spa campaign",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "001f50a3500d": {
+  "en": "<t0>Checked on Google's and Meta's policy pages, October 2026</t0>",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "705b7e0b9376": {
+  "en": "These rules change and depend on the country, so check them again before any campaign. This is practical guidance and not legal advice. Medical advertising also has its own local regulations.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "24987d987345": {
+  "en": "Prescription drug terms on Google",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "fd709eb906d5": {
+  "en": "Google restricts prescription drug terms in ads, landing pages and keywords. Campaigns targeting the US, Canada or New Zealand may use them promotionally under local law, but keyword-targeting them needs certification. Elsewhere, including the UK and Australia, promotional use isn't allowed. If a treatment uses a prescription drug, check its name against Google's list before using it in ads or on the landing page.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "1acbf85fc163": {
+  "en": "Age targeting and wording on Meta",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "6d5d4fecdd52": {
+  "en": "Meta requires ads for cosmetic procedures to target people aged 18 or over. It also bars statements of inferiority about someone's appearance, so copy has to sell the outcome without attacking how the reader looks.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "8c36d4d75083": {
+  "en": "Before-and-after images",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "87e2bb2d735d": {
+  "en": "Meta's policy allows before-and-after images for general cosmetic procedures when the ad targets adults and avoids negative messaging. Check the current wording and your local medical advertising rules before using them.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "3b49a2511d5b": {
+  "en": "What I would set up for a clinic",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "a999fd15e5e8": {
+  "en": "<t0>Google Ads for treatment searches</t0>People searching for a treatment near them are the closest to booking, so these campaigns are split by treatment and location.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "790bdd4f835e": {
+  "en": "<t0>Meta Ads for local awareness</t0>Facebook and Instagram are visual channels that suit consultations and seasonal offers, with creative written to meet the policy.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "586f562ed8e0": {
+  "en": "<t0>A local presence on Maps</t0>A complete Business Profile, reviews and a page for each treatment help you get found by people nearby.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "8e0920986fee": {
+  "en": "<t0>Tracking to the consultation</t0>Calls, forms and booking requests are tracked by source, so you can see what each channel really brings.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "310be64231b7": {
+  "en": "What aesthetic searches look like",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "c4c60f8514a9": {
+  "en": "botox near me",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "560b6275961d": {
+  "en": "£0.63 to £2.27",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "eb2b479eab0d": {
+  "en": "£2.78 to £14.56",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "2816a7b2858b": {
+  "en": "lip filler",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "04349b0d259c": {
+  "en": "£0.85 to £2.76",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "9fb686b694d6": {
+  "en": "£1.77 to £6.68",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "f702a34676fb": {
+  "en": "Search demand and a bid estimate don't mean you are allowed to advertise a term. Check the policy first, because the rules above still apply.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "27e07451c23c": {
+  "en": "Experience this draws on",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "8e204bbfe4cf": {
+  "en": "A clinic account rebuilt with local targeting, a negative keyword list and call and form tracking. For the first time, the clinic could see which ads and keywords were producing patient enquiries.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "e68d45e3cd6c": {
+  "en": "Meta campaigns for a fashion store, where a pixel audit found about 100 reported orders against 55 to 70 real ones. Roughly 30 to 40% of the daily budget had been chasing conversions that didn't exist.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "22be3a88f63c": {
+  "en": "I haven't run a med spa account yet. Clinic lead generation and clean Meta tracking are the parts I bring directly. The policy limits above are the part that's specific to your industry. The fundamentals don't change with the country. Clicks and leads cost more in the UK and the US, which makes wasted spend more expensive and clean tracking more valuable.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "59b362126cea": {
+  "en": "Are your clinic's ads working, and within the rules?",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "39a196c48ee4": {
+  "en": "Send me your website. I'll review your ads, landing pages and tracking, and tell you the first things I'd fix.",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "3a7ff923ffe1": {
+  "en": "<t0>Get my free clinic ads audit &rarr;</t0>",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "10e31bc6537e": {
+  "en": "<t0>Google Ads for dentists<t1>Campaigns by treatment, tracked to patient enquiries.</t1></t0> <t2>Meta Ads management<t3>Facebook and Instagram campaigns with clean tracking.</t3></t2> <t4>Smile Line Dental case study<t5>A clinic's Google Ads rebuild and first-ever lead tracking.</t5></t4> <t6>The Body Essential case study<t7>A pixel audit that found phantom purchases.</t7></t6>",
+  "pages": [
+   "med-spa-marketing.html"
+  ]
+ },
+ "03f6f7174dab": {
+  "en": "Meta Ads for Shopify Brands: Scale on Real Orders | Kamran Arshad",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "8179cc944d10": {
+  "en": "Meta ads for Shopify brands, judged on real orders and not on reported ROAS. Pixel and Conversions API checks, then campaigns you can trust enough to scale.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "e4d96ce6e759": {
+  "en": "Meta ads for Shopify brands",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "ebea7ede5838": {
+  "en": "Facebook and Instagram ads for Shopify stores",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "6cb827ecbfe7": {
+  "en": "Meta ads for Shopify",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "61b275e2b25e": {
+  "en": "Why doesn't Meta match my Shopify orders?",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "409b75b0c189": {
+  "en": "Some difference is normal, because Meta counts by its attribution window and Shopify counts orders when they happen. A large gap often points to a duplicate pixel, an app adding its own tracking or purchase events firing twice.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "50ef5868e143": {
+  "en": "Do you work with stores on any platform?",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "597b89218023": {
+  "en": "The e-commerce work in my case studies is on Shopify, so that is where I can help most directly.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "2859ccd5f633": {
+  "en": "Do you run Google Shopping as well?",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "f7c72849c5ea": {
+  "en": "My e-commerce ad experience is on Meta and Snapchat, so that is what I offer. I run Google Ads for lead generation businesses, and I'd rather be clear about that than overclaim.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "3126b852749b": {
+  "en": "With a free audit of your ad account, pixel and Conversions API setup. You get the findings in plain language before you decide anything.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "364a43cd9cfa": {
+  "en": "<t0>Home</t0> &nbsp;/&nbsp; <t1>Services</t1> &nbsp;/&nbsp; Meta ads for Shopify",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "0786f19dd42d": {
+  "en": "Meta ads for Shopify brands: scale on the orders you can actually count",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "beb78c326a16": {
+  "en": "Before a Shopify brand spends more on Meta, it needs to know whether the numbers in Ads Manager match the orders in Shopify. Often they don't, and bigger budgets then flow to the wrong campaigns.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "c8e222ba6a8c": {
+  "en": "I have run Facebook and Instagram ads for Shopify stores, and I start by checking reported purchases against real orders, so scaling decisions rest on numbers you can trust.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "3a7abdeac208": {
+  "en": "Where I start with a Shopify brand",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "e1e042498013": {
+  "en": "Reconcile Meta against Shopify",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "f19bcd78108b": {
+  "en": "I compare reported purchases with real orders. A gap isn't always a fault, because attribution windows differ, but you need to know how big it is and why.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "f00c13e91066": {
+  "en": "Clean up the pixel and Conversions API",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "3b8ce81584b1": {
+  "en": "Duplicate pixels, app-installed tags and events sent twice all distort what Meta optimises towards. These get fixed before any budget moves.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "a869d6c70680": {
+  "en": "Test products and creative on real margin",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "7f3b6917ec95": {
+  "en": "The best-looking ROAS can come from a product that loses money after costs and returns. I judge tests on the orders that actually get paid, not on what the platform reports about itself.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "55d19e96f9c0": {
+  "en": "Then scale what holds up",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "6ee15b6460b6": {
+  "en": "Budget moves to campaigns that still work once the data is clean. You get a short update every week.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "8af5009820b7": {
+  "en": "E-commerce experience behind this",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "296c7bdda5a7": {
+  "en": "A fashion brand on Shopify. Two pixels were installed, and one, added by a third-party app, was reporting purchases that never happened: about 100 orders in Meta against 55 to 70 real ones. Roughly 30 to 40% of the daily budget had been chasing them. I fixed the tracking, built the Shopify store and ran the Meta campaigns.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "5013da69b57b": {
+  "en": "A Shopify store I built and ran solo, with my own money on the line, advertising on Snapchat, Meta and TikTok. I traced every order from click to cash: the ad accounts reported 1,092 orders, and 523 became delivered, paid sales. That habit of checking past the dashboard is what I bring to your account.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "f556ed0992e2": {
+  "en": "The fundamentals don't change with the country. Clicks and leads cost more in the UK and the US, which makes wasted spend more expensive and clean tracking more valuable. The same is true of e-commerce: the ad platform, the pixel and the store work the same way, and reported numbers need checking everywhere.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "884d08d070f0": {
+  "en": "Does your Ads Manager match your Shopify orders?",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "21ae7470f2a7": {
+  "en": "Send me your store URL. I'll check your pixel and tracking setup and tell you the first things I'd fix.",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "86942d653fa7": {
+  "en": "<t0>Get my free Meta ads audit &rarr;</t0>",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "39c0adb0afb3": {
+  "en": "<t0>Meta Says 100 Orders. Shopify Says 62.<t1>Which one is lying, and how to find out.</t1></t0> <t2>You Cannot Scale a Campaign You Cannot Trust<t3>What bad data does to your budget.</t3></t2> <t4>Ecommerce PPC management<t5>Meta and Snapchat ads checked against real orders.</t5></t4> <t6>Meta Ads management<t7>Facebook and Instagram campaigns with clean tracking.</t7></t6>",
+  "pages": [
+   "meta-ads-for-shopify-brands.html"
+  ]
+ },
+ "a1595ea62c9e": {
+  "en": "Real Keyword Planner bids for plumbers, roofers, HVAC, dentists and cleaners in the UK and US, what a budget buys, and how to work out your cost per job.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "79cb4090b938": {
+  "en": "What Google Ads cost a local business",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "b11e2f1e4c87": {
+  "en": "How much should a small local business spend on Google Ads?",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "107dfb97493c": {
+  "en": "There's no correct figure. Work backwards from your click price and what a job is worth, and set a budget that buys enough clicks to learn from. A budget that buys only a handful of clicks a month won't tell you much.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "39e2e65530cb": {
+  "en": "Why are Google Ads so expensive for plumbers and roofers?",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "97cdfa525d6a": {
+  "en": "Advertisers bid against each other, and a single job can be worth a lot, so they're willing to pay more per click. Emergency searches in particular can carry high bids.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "ee8cc791f186": {
+  "en": "Is the top-of-page bid what I will pay per click?",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "5426da92ccdb": {
+  "en": "No. It's Google's estimate of what advertisers have paid to appear at the top of the page. Your actual cost per click depends on competition and your ad's quality.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "4b59f7be5937": {
+  "en": "Can Google spend more than my daily budget?",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "10344e933014": {
+  "en": "Yes. Google says that for most campaigns it may spend up to twice your average daily budget on a given day, but no more than 30.4 times it in a month.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "4ed19c4b7d68": {
+  "en": "How much Google Ads cost a local service business, using real bid data",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "4f7b75c37b37": {
+  "en": "<t0>Kamran Arshad</t0><t1>30 Oct 2026</t1><t2>6 min read</t2>",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "d88b222220df": {
+  "en": "There is no standard price. You set your own budget and pay per click, and the price of a click depends on your trade and country. In Google's estimates from October 2026, a top-of-page click for \"plumber near me\" ran from £1.54 to £10.70 in the UK and from £9.15 to £61.62 in the US.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "9ba7af9c8a82": {
+  "en": "The useful number isn't the cost per click. It's the cost per booked job, and only your own tracking can tell you that.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "f14b0cde97f6": {
+  "en": "Many of the cost guides I read while researching this came from agencies, with wide ranges and little data behind them. So I pulled figures from Google Ads Keyword Planner myself for 21 searches local businesses compete on. Twelve of them are below.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "3633ed30b7c6": {
+  "en": "What clicks are estimated to cost, by trade",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "5c9836a92cf0": {
+  "en": "electrician near me",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "ef530c325940": {
+  "en": "£1.34 to £7.46",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "36524caba70a": {
+  "en": "£4.29 to £41.16",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "e5527c12d062": {
+  "en": "pest control",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "aa86bfdb2427": {
+  "en": "£1.75 to £5.54",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "c21a4bf581f3": {
+  "en": "£7.30 to £34.15",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "def93c2bb7b6": {
+  "en": "carpet cleaning",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "38e1d1b67801": {
+  "en": "£0.39 to £1.92",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "51e01cb02813": {
+  "en": "£1.03 to £7.48",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "9dacca83aede": {
+  "en": "Three things stand out. US bids are well above UK bids for most of these searches. Urgent searches can cost far more than general ones: compare \"emergency plumber\" with \"plumber near me\" on the high end. And some trades are much cheaper than others: \"carpet cleaning\" sits well below \"roofer near me\" in both countries.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "00f69c236fd7": {
+  "en": "What those bids mean for a budget",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "ceae9410fa91": {
+  "en": "A monthly budget divided by the click price gives you a rough number of clicks. Using the estimates above, and only as a guide, £1,000 a month would buy roughly:",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "96f806e9c90a": {
+  "en": "UK clicks for £1,000",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "afc55fed864d": {
+  "en": "US clicks for £1,000",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "110b800e5383": {
+  "en": "93 to 649",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "46b9464422cc": {
+  "en": "16 to 109",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "ac65e3c5cd83": {
+  "en": "79 to 335",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "6c8bedb57099": {
+  "en": "17 to 96",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "3796ad94b769": {
+  "en": "520 to 2,564",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "b43c26bb6056": {
+  "en": "133 to 970",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "5615544342c6": {
+  "en": "180 to 719",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "e2ab281571f3": {
+  "en": "58 to 274",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "7e7f908eee77": {
+  "en": "These ranges are wide because Google's estimates are wide. Actual prices depend on competition, your area, the time of day and your ad's quality, so your own account will tell you more within a few weeks.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "aeb1afd84cd0": {
+  "en": "How Google charges your budget",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "1607ef16cd3a": {
+  "en": "You set an average daily budget, and Google can spend above it on some days. According to Google's help pages, for most campaigns you won't pay more than twice your average daily budget on a given day, or more than 30.4 times it in a month. So a daily budget of £30 can spend up to £60 in one day, and up to £912 in a month.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "e76c3554be63": {
+  "en": "Work out your own cost per job",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "407a3c9112d1": {
+  "en": "<t0>Find your click price</t0>Start with Keyword Planner for your own searches and area, then replace it with real data from your account.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "b62d0e2167f2": {
+  "en": "<t0>Measure how many clicks become enquiries</t0>Count connected calls and forms, not taps on your phone number.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "285f912a04a6": {
+  "en": "<t0>Measure how many enquiries become jobs</t0>Your own diary or CRM is the only source for this.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "0f23c67827d2": {
+  "en": "<t0>Compare the cost per job with what a job earns</t0>A costly lead can still be a bargain on a high-value job.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "514bcd6052da": {
+  "en": "<t0>An example with made-up numbers</t0>",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "3d0dc10d33ab": {
+  "en": "Suppose clicks cost £5, one in ten clicks becomes an enquiry, and one in three enquiries becomes a job. That is £50 per enquiry and £150 per job. These numbers are only there to show the sum. They aren't a benchmark, so use your own.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "0aa5e05f2b50": {
+  "en": "The costs on top of clicks",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "968348c872fb": {
+  "en": "<t0>Management:</t0> your own time, or a fee to a freelancer or agency. Ask exactly what's included each month.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "746e5f6f4038": {
+  "en": "<t0>Tracking and landing pages:</t0> often a one-off setup, and easy to overlook.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "6c63193cc6df": {
+  "en": "<t0>Wasted clicks:</t0> irrelevant searches cost real money until negative keywords remove them. On the <t1>dental clinic account I rebuilt</t1>, there were no negative keywords at all when I started.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "e73e21699309": {
+  "en": "Local Services Ads work differently",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "2bae99fbb5de": {
+  "en": "Where they're available, Local Services Ads charge per lead and not per click, so the table above doesn't apply to them. I compare the two in <t0>Local Services Ads vs Google Ads</t0>.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "b8fa0b634968": {
+  "en": "Want to know what clicks cost in your own area?",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "c1c9b62924e0": {
+  "en": "Send me your website and service area. I'll review your account and tracking, and tell you the first things I'd fix.",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "1624a40dd527": {
+  "en": "<t0>Get a free Google Ads audit &rarr;</t0>",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html",
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "c5550288be38": {
+  "en": "<t0>Local Services Ads vs Google Ads<t1>Billing, control and when to use each.</t1></t0> <t2>Google Ads Account Audit Checklist for Lead Generation<t3>Six checks for an account that lives on calls and forms.</t3></t2> <t4>Google Ads Call Tracking for Local Service Businesses<t5>How to count the calls that turn into jobs.</t5></t4> <t6>Google Ads Freelancer vs Agency<t7>How to choose, and what to ask either one.</t7></t6>",
+  "pages": [
+   "blog/google-ads-cost-local-service-business.html"
+  ]
+ },
+ "c1bebbc52f25": {
+  "en": "Local Services Ads charge per lead and Google Ads per click. Billing, control, setup and the 2026 Performance Max move compared, from an account I run.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "cbaa9e030449": {
+  "en": "Local Services Ads vs Google Ads",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "2d7e426c1095": {
+  "en": "Are Local Services Ads cheaper than Google Ads?",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "92ce57332e33": {
+  "en": "Not automatically. They bill per lead instead of per click, so the two prices aren't directly comparable. Compare the cost per booked job from each channel in your own area.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "2be574a405e3": {
+  "en": "Do I need a website for Local Services Ads?",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "c10b0d132565": {
+  "en": "No. Google says leads can be managed directly without a website. A website still helps, because many customers check a business before calling.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "926f605a666c": {
+  "en": "Can I run Local Services Ads and Google Ads together?",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "2a92e5994b1d": {
+  "en": "Yes. Google suggests combining them to increase visibility.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "8e7c2a230b7a": {
+  "en": "Are Local Services Ads available in my country?",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "13ad33f6404c": {
+  "en": "It depends on your country and category. Google limits them to certain service categories and some features vary by region, so check Google's help pages for your location.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "9c97fdcdd5e9": {
+  "en": "Local Services Ads vs Google Ads: which one a local business should run",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "04bc338c5e7d": {
+  "en": "<t0>Kamran Arshad</t0><t1>30 Oct 2026</t1><t2>5 min read</t2>",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html",
+   "blog/how-to-get-more-plumbing-leads.html",
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "b7e0ead4b332": {
+  "en": "Local Services Ads charge when a customer contacts you. Google Ads charge when someone clicks. Local Services Ads are simpler and focused on people ready to call, while Google Ads give you far more control over searches, areas and landing pages.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "c2ad2e48e2d7": {
+  "en": "For most eligible service businesses the useful question isn't which one, but which one to start with.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "94aac907d112": {
+  "en": "I've set up the account and I run Local Services Ads for a UK carpet cleaning company, alongside its Google Ads. The comparison below uses Google's own documentation for the facts and that hands-on work for the practical view.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "b636916fb6dc": {
+  "en": "The differences that matter",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "89d7f5ba5133": {
+  "en": "Local Services Ads",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "ff5c1ae2810a": {
+  "en": "Google Ads (Search)",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "0a232189e297": {
+  "en": "You pay for",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "ba345a0eab7a": {
+  "en": "Leads: a customer contacting you",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "00977fedd41e": {
+  "en": "Clicks on your ad",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "ea1d3df298ca": {
+  "en": "Control",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "b958bd54042e": {
+  "en": "Less over audience and ad format",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "254f6d820cef": {
+  "en": "Extensive: budgets, keywords, targeting, format",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "cbaec477f786": {
+  "en": "Website needed?",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "75183bee9d38": {
+  "en": "No, leads can be managed directly",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "2ad7c73c79d7": {
+  "en": "Generally yes",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "127d997818a1": {
+  "en": "Who can use it",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "c365f4993cdb": {
+  "en": "Certain categories and countries, with screening",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "6f87fa1b9114": {
+  "en": "Open to most businesses, subject to policy",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "08319dcfe5af": {
+  "en": "Trust badge",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "0cb92905ffbd": {
+  "en": "Can show a Google verification badge",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "bf70ae295969": {
+  "en": "No Google-backed badge",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "6d7ae87f78a7": {
+  "en": "Best for",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "fec050dfc0bf": {
+  "en": "People who need the service now",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "45a3e1122d2d": {
+  "en": "Reach, specific jobs and research-stage searches",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "2e928259cd4c": {
+  "en": "When to start with Local Services Ads",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "f530654a7a31": {
+  "en": "They suit a business in an eligible category that wants phone calls and messages with little campaign management. They also work without a website, although I'd still want one: a customer who sees your ad will often check you out before calling.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "bb9c1fcd82fd": {
+  "en": "Eligibility is the first thing to check. Google limits these ads to certain service categories, and some features vary by country. Its help pages list categories such as plumbers, electricians and dentists, so look up your own category and country before planning around them.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "46510e7cc402": {
+  "en": "When to start with Google Ads",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "0ab2343b0088": {
+  "en": "Google Ads make more sense when you want to choose exactly which jobs you advertise, for example implants instead of check-ups, or boiler installs instead of small repairs. You also choose the landing page, which matters for high-value work where people compare before they call.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "6e838f3a6f8a": {
+  "en": "The price of that control is management. Search terms need reviewing, negative keywords need adding and conversions need tracking. Without that upkeep, Google Ads can spend your budget on clicks that never become enquiries.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "5c95e6979227": {
+  "en": "Why many businesses run both",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "7e939c11c9e8": {
+  "en": "The two aren't either-or. Google itself suggests combining them to increase visibility. A sensible order for many local businesses is this:",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "995e51557bb6": {
+  "en": "<t0>Fix your Business Profile</t0>Local Services Ads draw on your business information, and a complete profile helps your Maps visibility too.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "e11baaee06de": {
+  "en": "<t0>Start with whichever fits your goal</t0>Choose Local Services Ads for fast, simple leads, or Google Ads if you need to target specific jobs.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "f75b382b3d65": {
+  "en": "<t0>Track every lead by source</t0>Otherwise you can't compare the two fairly.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "8a1652bd4012": {
+  "en": "<t0>Add the second channel</t0>Do this once the first is producing leads you can measure.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "79032ef0f9ba": {
+  "en": "The change coming to Local Services Ads",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "5d3ab9c4cf69": {
+  "en": "<t0>Moving into Google Ads</t0>",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "786f727ed857": {
+  "en": "Google is moving Local Services Ads into Google Ads as Performance Max campaigns with pay-per-lead goals. The first phase began in August 2026 for select US advertisers, and accounts outside the US follow in 2027. Google says you still pay per valid lead and ads stay on Search and Maps, but past performance reports won't carry over, so save them before migrating.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "4d0e38224ed7": {
+  "en": "What I'm not claiming",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "98d0ac8bf803": {
+  "en": "I'm not publishing lead costs or a verdict on which channel wins. Results vary by category, area and season, and one account isn't a benchmark. The honest way to decide is to run them side by side with tracking, then compare the cost of a booked job.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "e47d47c746a0": {
+  "en": "Not sure which one suits your business?",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "551a3faee8ec": {
+  "en": "Send me your website and service area. I'll look at your category and your current setup, and tell you where I'd start.",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "fa89f6a5654d": {
+  "en": "<t0>Get a free local ads audit &rarr;</t0>",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "744882158b51": {
+  "en": "<t0>How to Get More Plumbing Leads<t1>Buying leads or generating your own.</t1></t0> <t2>Google Ads Call Tracking for Local Service Businesses<t3>How to count the calls that turn into jobs.</t3></t2> <t4>Google Ads Offline Conversions for Lead-Gen Businesses<t5>Telling Google Ads which leads became booked jobs.</t5></t4> <t6>Local SEO Service Pages: One Page per Service and Area<t7>How to structure pages for Maps and organic search.</t7></t6>",
+  "pages": [
+   "blog/local-services-ads-vs-google-ads.html"
+  ]
+ },
+ "80e16eb1010d": {
+  "en": "Six ways to get more plumbing leads, in the order I'd do them: Maps, reviews, service pages, Local Services Ads, Google Ads and call handling.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "1cefcb302009": {
+  "en": "How to get more plumbing leads",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "f81831cdd854": {
+  "en": "What is the fastest way to get plumbing leads?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "6d64d6783aa3": {
+  "en": "Paid channels are fastest: Local Services Ads where available, Google Ads, or bought leads. Your Business Profile and pages cost less over time but take longer to build up.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "9833cddf04ca": {
+  "en": "Are bought plumbing leads worth it?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "c51c205081b8": {
+  "en": "They can be useful for filling gaps, but check whether each lead is shared with other plumbers, and compare the cost per booked job with your other channels.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "d8ef3a3e7257": {
+  "en": "How many reviews does a plumber need?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "3dc5dcb171c2": {
+  "en": "There's no fixed number. Look at the businesses at the top of Maps in your own area, and aim to keep adding recent reviews steadily.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "1be8844c4a95": {
+  "en": "Do plumbers need a website?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "f8dfd533d299": {
+  "en": "Local Services Ads can run without one, but a website lets you rank for specific services and areas and gives customers somewhere to check you out.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "fe534aace5a1": {
+  "en": "How to get more plumbing leads, in the order I'd actually do it",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "8e08948108fa": {
+  "en": "Plumbing leads come from being found at the moment of need and answering fast. Start with what you own: your Google Business Profile, reviews and service pages. Then add paid ads, and use bought leads only to fill gaps.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "187b455334cd": {
+  "en": "I haven't run a plumbing account yet. I do run this same setup for a UK carpet cleaning company, and the journey is the same: a local search, a call or a form, then a job in the diary. Your numbers will differ, but the order holds.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "3a7c777c5961": {
+  "en": "1. Fix your Google Business Profile",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "f7cfc927d337": {
+  "en": "It costs nothing and it affects whether you appear on Maps. Check your primary category, list your actual services, set your service area accurately and add real photos of your work. Don't stuff keywords or town names into the business name, because that breaks Google's guidelines and risks suspension.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "4b60408b9425": {
+  "en": "2. Ask for a review after every job",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "23d3af34cba6": {
+  "en": "Reviews influence both your visibility and whether someone rings you or the next plumber. Make it a routine: send the review link by text or WhatsApp soon after the job, while the customer still remembers how relieved they were.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "dfe91fa71bee": {
+  "en": "3. Build a page for each service and area",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "62b777e43c59": {
+  "en": "A single homepage can't match searches for drain unblocking, leak repair and water heaters in five nearby towns. Each main service, and each area you really cover, deserves its own useful page. Avoid copied pages with only the town name swapped, because those add little.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "0e474d34d5f5": {
+  "en": "4. Consider Local Services Ads",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "bd0a5132537e": {
+  "en": "Where your category and country qualify, these charge per lead and can appear prominently in Search. Google describes them as simpler to set up and needing less hands-on management, so they're a sensible first paid channel to look at. I compare them in detail in <t0>Local Services Ads vs Google Ads</t0>.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "faa1f476ce05": {
+  "en": "5. Run Google Ads for the jobs you most want",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "707a639f6238": {
+  "en": "Google Ads let you pick your jobs, such as emergency call-outs or installs, and exclude the rest. Keep location targeting tight, add negative keywords for jobs, courses and DIY searches, and track connected calls and not just taps on your number.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "c7563a54f0ad": {
+  "en": "6. Answer every enquiry fast",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "ac1ddc894b83": {
+  "en": "Someone with water on the floor will try the next number if you don't pick up. A missed call is a paid-for lead thrown away, so check how many you miss before you buy more traffic. A simple call-back rule or text reply can be worth more than extra ad budget.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "dc1885eede31": {
+  "en": "What about buying plumbing leads?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "9ac07f9df719": {
+  "en": "Bought leads",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "d6f35206260c": {
+  "en": "Your own channels",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "f9aa39d03309": {
+  "en": "Speed to start",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "8db6a2f1d3b7": {
+  "en": "Fast",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "b77b9b8d3d75": {
+  "en": "Ads are fast, SEO is slower",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "abc949981b91": {
+  "en": "Exclusive to you?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "50f3ebb8ce36": {
+  "en": "Sometimes shared, so ask",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "9a20b7841173": {
+  "en": "When you stop paying",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "f25c8bf2822c": {
+  "en": "Leads stop",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "b1d7c79915c8": {
+  "en": "Ads stop, but pages and reviews keep working",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "c7ee25fb1fa9": {
+  "en": "Builds your brand?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "d9ff281591ee": {
+  "en": "Little",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "2d7827ad473d": {
+  "en": "Bought leads aren't bad. They're useful in a quiet week or while your own channels grow. The risk is depending on them, because you own nothing when they stop.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "3d3d97d0a232": {
+  "en": "Measure before you spend more",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "cbc413b5d6e0": {
+  "en": "Whichever you use, record where each job came from. A simple question on the phone is better than nothing, and proper call and form tracking is better still. Without it, you can't tell which channel to grow.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "8b635a50b74c": {
+  "en": "I've written up how I set up that tracking in <t0>Google Ads call tracking for local service businesses</t0>.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "0f67377115f6": {
+  "en": "Want this order applied to your plumbing business?",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "7025a5587316": {
+  "en": "Send me your website and service area. I'll check your Maps listing, ads and tracking, and tell you the first things I'd fix.",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "f8d5f91656c3": {
+  "en": "<t0>Get a free plumbing marketing audit &rarr;</t0>",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "10cab438926c": {
+  "en": "<t0>Marketing for plumbers<t1>What I'd set up for a plumbing company.</t1></t0> <t2>Local Services Ads vs Google Ads<t3>Billing, control and when to use each.</t3></t2> <t4>Local SEO Service Pages: One Page per Service and Area<t5>How to structure pages for Maps and organic search.</t5></t4> <t6>Google Ads Account Audit Checklist for Lead Generation<t7>Six checks for an account that lives on calls and forms.</t7></t6>",
+  "pages": [
+   "blog/how-to-get-more-plumbing-leads.html"
+  ]
+ },
+ "8cb86603ad42": {
+  "en": "When a Google Ads freelancer beats an agency, when it doesn't, and the questions to ask either one. I sell this service myself, so weigh that bias.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "91bc463c3178": {
+  "en": "Google Ads freelancer vs agency",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "5bb2500cf03a": {
+  "en": "Is a Google Ads freelancer cheaper than an agency?",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "ee5fd66da040": {
+  "en": "Often, because there's less overhead, but it isn't guaranteed. Compare what is included each month, not just the fee.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "d34cbbaafbff": {
+  "en": "Should I hire a Google Ads freelancer from Upwork or Fiverr?",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "de5993672984": {
+  "en": "You can find capable people there, but judge them the same way as anyone else: account ownership, tracking, reporting and proof of similar work. A very low fixed price is unlikely to cover ongoing management.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "9c22bc45af74": {
+  "en": "Who should own my Google Ads account?",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "03d43e00373c": {
+  "en": "You should. Whoever you hire should work inside your account with access you can remove, so your history stays with you.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "6639ba75b90a": {
+  "en": "How do I know my Google Ads manager is doing a good job?",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "bb904444377d": {
+  "en": "Check whether conversions reflect real enquiries, whether search terms are being cleaned regularly, and whether you can see the changes they've made.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "15753c4a6d95": {
+  "en": "Google Ads freelancer vs agency: an honest way to choose",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "6b075f093877": {
+  "en": "A freelancer usually gives you direct access to the person doing the work, with less overhead. An agency usually gives you a team, more capacity and cover when someone is away. The right choice depends on your account's size and how much you need beyond ads.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "8ac4176d6450": {
+  "en": "I sell Google Ads management myself, so I'm not neutral. I've tried to show where an agency really is the better choice.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "cbbff2f843f3": {
+  "en": "The trade-offs",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "762a924df6a1": {
+  "en": "Freelancer",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "5c47e26c6ad2": {
+  "en": "Agency",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "a01528b2a33c": {
+  "en": "Who does the work",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "b622eac4b1ac": {
+  "en": "The person you speak to",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "2737a7e54246": {
+  "en": "Often a team, and sometimes a junior",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "45bd908df490": {
+  "en": "Capacity",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "fde30f1c45b5": {
+  "en": "Limited to one person",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "ec66f7aafa06": {
+  "en": "Can add people as you grow",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "9176d4724ba7": {
+  "en": "Holiday or illness",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "0a9ce80157a7": {
+  "en": "A real risk, so ask about cover",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "1cfc25081977": {
+  "en": "Usually covered",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "4795ab35f66f": {
+  "en": "Range of skills",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "848c4cc15980": {
+  "en": "Varies by person",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "ae9ca7477165": {
+  "en": "Often design, copy and analytics in-house",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "5e14cd472cf1": {
+  "en": "Overhead in the fee",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "45c55a8bc92b": {
+  "en": "Usually lower",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "1b6ca2e4e915": {
+  "en": "Usually higher",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "c0aa90c9e22d": {
+  "en": "When a freelancer makes more sense",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "fb7d3245ad4f": {
+  "en": "You run a single local business or a small set of campaigns.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "7edf8b66cbf4": {
+  "en": "You want to speak directly to whoever is changing your account.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "03ff415a5cdd": {
+  "en": "You already have a website and just need ads and tracking done properly.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "bed09375c0be": {
+  "en": "When an agency makes more sense",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "8e34c34b8664": {
+  "en": "You advertise across many locations, or spend at a level that needs several specialists.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "f76180e5f376": {
+  "en": "You need creative, video, landing pages and ads produced under one roof.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "8a48ee6f2e2b": {
+  "en": "You can't accept any gap in cover, whatever happens to one person.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "4efe1f4efbd1": {
+  "en": "Be careful with marketplace pricing",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "7395b6db387a": {
+  "en": "Freelance marketplaces list ad management gigs at low starting prices. Some sellers may well be capable, but a low fixed price is unlikely to pay for ongoing search term reviews, conversion tracking and regular changes. Before comparing prices, compare what is actually included each month.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "6ae23d900130": {
+  "en": "Questions to ask either one",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "0821e6e166e9": {
+  "en": "<t0>Who owns the Google Ads account?</t0>It should be you. Walk away if the account stays with them when you leave.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "01567b93e987": {
+  "en": "<t0>Who will work on my account each week?</t0>Get a name, and ask how much of the work is theirs.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "4a56b1f43aec": {
+  "en": "<t0>What counts as a conversion?</t0>Ask for connected calls and real enquiries, not page views or taps.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "20773b40cca5": {
+  "en": "<t0>Can I see the search terms and the changes made?</t0>Both are in your account, and you should be able to see them at any time.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "f86fea8e5c12": {
+  "en": "<t0>Can you show me a similar account?</t0>Ask what they changed and what they can honestly show for it.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "78bfa66f9723": {
+  "en": "<t0>What happens if I want to stop?</t0>Check the notice period and how you get your data back.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "f387bc01757f": {
+  "en": "Red flags, from either side",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "1421a5575340": {
+  "en": "Guaranteed first position or a guaranteed number of leads.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "097f805ea144": {
+  "en": "Reports showing only clicks and impressions.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "70b1405d2605": {
+  "en": "A refusal to give you access to your own account.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "9ccc450ecaac": {
+  "en": "A plan or quote made before anyone looks at your account and tracking.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "41773d91abb3": {
+  "en": "Where my work fits",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "12c4f6990550": {
+  "en": "On Google Ads, you keep ownership of the account. My experience covers <t0>a dental clinic</t0>, <t1>a UK carpet cleaning company</t1> and <t2>Shopify brands</t2>. If you need creative, video and ads produced under one roof, an agency may suit you better, and I'll tell you that.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "9c2c7157ee0f": {
+  "en": "Want a second opinion on your account first?",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "928987b7e1e7": {
+  "en": "Whether you end up hiring me, a freelancer or an agency, a free audit tells you what needs fixing, so you can compare quotes properly.",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
+  ]
+ },
+ "11d5d1520b80": {
+  "en": "<t0>Google Ads management<t1>Search campaigns with call and form tracking.</t1></t0> <t2>Google Ads Account Audit Checklist for Lead Generation<t3>Six checks for an account that lives on calls and forms.</t3></t2> <t4>Local Services Ads vs Google Ads<t5>Billing, control and when to use each.</t5></t4> <t6>Google Ads Conversion Tracking Not Working<t7>Why a working tag can still report nothing for weeks.</t7></t6>",
+  "pages": [
+   "blog/google-ads-freelancer-vs-agency.html"
   ]
  }
 }

@@ -37,8 +37,21 @@ PAGES = [  # English path relative to site root ("" = homepage)
     "blog/meta-pixel-reporting-fake-purchases.html", "blog/scaling-meta-campaigns-bad-data.html",
     "blog/shopify-additional-scripts-deadline-tracking.html", "blog/snapchat-purchase-event-not-firing.html",
     "blog/two-meta-pixels-shopify-problem.html", "thankyou.html",
+    "google-ads-for-dentists.html", "marketing-for-plumbers.html", "hvac-marketing.html", "roofing-marketing.html",
+    "med-spa-marketing.html", "meta-ads-for-shopify-brands.html", "blog/google-ads-cost-local-service-business.html",
+    "blog/local-services-ads-vs-google-ads.html", "blog/how-to-get-more-plumbing-leads.html",
+    "blog/google-ads-freelancer-vs-agency.html",
 ]
 NOINDEX = {"thankyou.html"}
+# English-only pages that are not translated but still belong in the sitemap.
+EXTRA_EN = {"carpet-cleaning-marketing.html": ("2026-10-30", "0.9")}
+# Pages whose content changed: path -> lastmod for every language version.
+UPDATED = {p: "2026-10-30" for p in ("", "blog/", "alphamart.html", "ecommerce-ppc-management.html", "google-ads-management.html",
+    "local-seo-services.html", "meta-ads-management.html", "privacy-policy.html", "google-ads-for-dentists.html",
+    "marketing-for-plumbers.html", "hvac-marketing.html", "roofing-marketing.html", "med-spa-marketing.html",
+    "meta-ads-for-shopify-brands.html", "blog/google-ads-cost-local-service-business.html",
+    "blog/local-services-ads-vs-google-ads.html", "blog/how-to-get-more-plumbing-leads.html",
+    "blog/google-ads-freelancer-vs-agency.html")}
 PAGE_SET = set(PAGES) | {"index.html", "blog/index.html"}
 
 def src_file(p):
@@ -351,7 +364,7 @@ def build_lang(lang):
             if name == "content" and not val.startswith(SITE): return m.group(0)
             if name == "value" and not val.startswith(SITE): return m.group(0)
             return '%s="%s"' % (name, map_url(val, lang, p))
-        doc = re.sub(r'\b(href|src|action|content|value|poster|data-img|data-pdf)="([^"]*)"', fix_attr, doc)
+        doc = re.sub(r'(?<![-\w])(href|src|action|content|value|poster|data-img|data-pdf)="([^"]*)"', fix_attr, doc)
         doc = re.sub(r'\b(srcset|imagesrcset)="([^"]*)"', lambda m: '%s="%s"' % (m.group(1), ", ".join(
             " ".join([map_url(part.split()[0], lang, p)] + part.split()[1:])
             for part in m.group(2).split(",") if part.strip())), doc)
@@ -378,13 +391,19 @@ def build_sitemap():
         for p in PAGES:
             if p in NOINDEX: continue
             en = page_url("en", p)
-            rest = meta.get(en, "\n    <changefreq>monthly</changefreq>\n")
+            rest = meta.get(en, "\n    <lastmod>2026-10-30</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n")
+            if "<lastmod>" not in rest:
+                rest = "\n    <lastmod>2026-10-30</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n"
+            if p in UPDATED:
+                rest = re.sub(r"<lastmod>[^<]*</lastmod>", "<lastmod>%s</lastmod>" % UPDATED[p], rest)
             rest = re.sub(r"\s*<xhtml:link[^>]*/>", "", rest).rstrip() + "\n"
             lines.append("  <url>\n    <loc>%s</loc>%s" % (page_url(lang, p), rest.rstrip("\n")))
             for c in ["en"] + LIVE:
                 lines.append('    <xhtml:link rel="alternate" hreflang="%s" href="%s"/>' % (c, page_url(c, p)))
             lines.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>' % en)
             lines.append("  </url>")
+    for p, (mod, pri) in EXTRA_EN.items():
+        lines.append("  <url>\n    <loc>%s</loc>\n    <lastmod>%s</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>%s</priority>\n  </url>" % (page_url("en", p), mod, pri))
     lines.append("</urlset>")
     open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8", newline="\n").write("\n".join(lines) + "\n")
 

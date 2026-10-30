@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing pour plombiers : Google Ads, Maps et SEO | Kamran Arshad</title>
+<meta name="description" content="Marketing pour entreprises de plomberie : Google Ads, Local Services Ads, Google Maps et pages de services, suivis jusqu&#x27;aux appels qui deviennent des chantiers. Audit gratuit.">
+<link rel="canonical" href="https://marketingkamran.com/fr/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/marketing-for-plumbers.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/marketing-for-plumbers.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/marketing-for-plumbers.html">
+<meta property="og:title" content="Marketing pour plombiers : Google Ads, Maps et SEO | Kamran Arshad">
+<meta property="og:description" content="Marketing pour entreprises de plomberie : Google Ads, Local Services Ads, Google Maps et pages de services, suivis jusqu&#x27;aux appels qui deviennent des chantiers. Audit gratuit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing pour plombiers : Google Ads, Maps et SEO | Kamran Arshad">
+<meta name="twitter:description" content="Marketing pour entreprises de plomberie : Google Ads, Local Services Ads, Google Maps et pages de services, suivis jusqu&#x27;aux appels qui deviennent des chantiers. Audit gratuit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing pour entreprises de plomberie",
+  "serviceType": "Google Ads et SEO local pour plombiers",
+  "description": "Marketing pour entreprises de plomberie : Google Ads, Local Services Ads, Google Maps et pages de services, suivis jusqu'aux appels qui deviennent des chantiers. Audit gratuit.",
+  "url": "https://marketingkamran.com/fr/marketing-for-plumbers.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "France"
+    },
+    {
+      "@type": "Country",
+      "name": "Belgium"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing pour plombiers",
+      "item": "https://marketingkamran.com/fr/marketing-for-plumbers.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Avez-vous déjà travaillé avec des plombiers ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pas encore. Je gère le même système Google Ads, Maps, site et suivi pour une entreprise britannique de nettoyage de moquettes, dont le parcours client passe aussi par le téléphone. Je vous le dis d'emblée pour que vous puissiez juger par vous-même."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Un plombier doit-il utiliser Google Ads ou Local Services Ads ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Souvent les deux. Local Services Ads facture au lead et demande peu de mise en place, tandis que Google Ads vous donne plus de contrôle sur les chantiers et les zones ciblés. L'audit vous dira ce qui convient à votre zone et à votre budget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment commence la collaboration ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Par un audit gratuit de vos annonces, de votre fiche Maps et de votre site. Vous recevez les conclusions en langage clair avant de décider quoi que ce soit."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Menu principal">
+      <a href="/fr/#services">Services</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/blog/">Notes de terrain</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/marketing-for-plumbers.html" hreflang="en" lang="en">English</a></li><li><a href="/de/marketing-for-plumbers.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/marketing-for-plumbers.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/marketing-for-plumbers.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/marketing-for-plumbers.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/marketing-for-plumbers.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/marketing-for-plumbers.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/">Accueil</a> &nbsp;/&nbsp; <a href="/fr/#services">Services</a> &nbsp;/&nbsp; Marketing pour plombiers</div>
+    <h1>Marketing pour plombiers : plus d'appels qui deviennent des chantiers payés</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Mis à jour le <time datetime="2026-10-30">30 oct. 2026</time></span></div>
+    <div class="mkts" aria-label="Marchés desservis"><span>France</span><span>Belgique</span><span>Suisse</span><span>Canada</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Le marketing d'un plombier revient à être visible au moment où quelque chose fuit, et à répondre vite. Une personne face à une fuite passe rarement longtemps à comparer.</p>
+      <p>Je gère Google Ads, Local Services Ads, le profil Google Maps et les pages de services d'une entreprise britannique de nettoyage de moquettes, avec appels et formulaires suivis. C'est le système que j'apporterais à une entreprise de plomberie.</p>
+    </div>
+    <h2>Par où je commencerais pour une entreprise de plomberie</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Google Ads pour les travaux urgents et à forte valeur</h3></div>
+      <p>Les dépannages d'urgence, les chaudières ou chauffe-eau et les installations de salle de bain se comportent très différemment. Chacun a ses groupes d'annonces, pour enchérir fort sur les chantiers voulus et écarter les autres.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Local Services Ads là où ils sont disponibles</h3></div>
+      <p>Ils facturent au lead plutôt qu'au clic et peuvent apparaître en bonne place dans la recherche. J'ai ici une expérience pratique : j'ai créé le compte et je gère des Local Services Ads pour une entreprise britannique de nettoyage de moquettes.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Google Maps et votre fiche d'établissement</h3></div>
+      <p>Les catégories, les services, les zones desservies, les photos et un flux régulier d'avis déterminent la fréquence à laquelle vous apparaissez quand quelqu'un cherche un plombier à proximité.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Une page pour chaque service et chaque zone</h3></div>
+      <p>Une seule page d'accueil ne peut pas se positionner sur le débouchage, la réparation de fuites et cinq communes voisines. Des pages séparées donnent à Google et à votre client une correspondance exacte.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Un suivi jusqu'au chantier réservé</h3></div>
+      <p>Un appui sur votre numéro n'est pas un client. Les appels aboutis et les formulaires sont suivis, et les chantiers réservés peuvent être renvoyés à Google Ads pour qu'il apprenne quelles recherches apportent du vrai travail.</p>
+    </div>
+    <h2>Ce que coûtent les clics en plomberie</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Recherche (en anglais)</th><th>Recherches/mois R.-U.</th><th>Enchère haut de page R.-U.</th><th>Recherches/mois É.-U.</th><th>Enchère haut de page É.-U.</th></tr></thead>
+        <tbody>
+          <tr><td>emergency plumber</td><td>12&#8239;100</td><td>£3,87 à £26,39</td><td>90&#8239;500</td><td>£18,28 à £82,32</td></tr>
+          <tr><td>plumber near me</td><td>90&#8239;500</td><td>£1,54 à £10,70</td><td>823&#8239;000</td><td>£9,15 à £61,62</td></tr>
+          <tr><td>blocked drain</td><td>5&#8239;400</td><td>£3,14 à £19,29</td><td>1&#8239;000</td><td>£5,25 à £28,02</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Source : Google Ads Keyword Planner, vérifié le 30 octobre 2026, recherches mensuelles moyennes d'octobre 2025 à septembre 2026. Les enchères sont les estimations basse et haute de Google en livres, la devise du compte. Ce sont des estimations et non ce que vous paieriez réellement.</p>
+    <p>Au haut de ces estimations, un seul appel d'urgence manqué peut gâcher un clic coûteux. C'est pourquoi je regarderais comment les appels sont pris avant d'augmenter un budget.</p>
+    <h2>Le système que je gère aujourd'hui</h2>
+        <div class="proof">
+      <span class="tag">Étude de cas</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (R.-U.)</h3>
+      <p>Je n'ai pas encore géré de compte de plomberie. Ce que je gère, c'est ce système pour une entreprise britannique de nettoyage de moquettes : le site, les pages de services et de zones, Google Ads, Local Services Ads, la fiche d'établissement et le suivi côté serveur, plus un plugin sur mesure qui renvoie à Google Ads la valeur des chantiers réservés.</p>
+      <p><a href="/fr/mr-expert-carpet-cleaning.html">Lire l'étude de cas Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <p>Le parcours client est le même : une recherche locale, un appel ou un formulaire, puis un chantier dans l'agenda. Les mots-clés et le coût par lead diffèrent. Le Keyword Planner donne une première estimation, et seuls vos propres résultats suivis donnent le vrai chiffre.</p>
+    <h2>Questions à poser à toute agence marketing pour plombiers</h2>
+    <ol class="steps">
+      <li><b>À qui appartient le compte publicitaire ?</b>À vous, pour que votre historique vous reste si vous partez un jour.</li>
+      <li><b>Les leads sont-ils partagés avec d'autres plombiers ?</b>Certains services vendent une même demande à plusieurs entreprises. Vos propres annonces et pages n'apportent des leads qu'à vous.</li>
+      <li><b>Qu'est-ce qui compte comme conversion ?</b>Demandez s'il s'agit d'un appel abouti ou d'un simple appui sur un numéro.</li>
+      <li><b>Puis-je voir les termes de recherche ?</b>Vous devez pouvoir voir exactement ce que les gens ont cherché avant d'appeler.</li>
+    </ol>
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>Avez-vous déjà travaillé avec des plombiers ?</summary><p>Pas encore. Je gère le même système Google Ads, Maps, site et suivi pour une entreprise britannique de nettoyage de moquettes, dont le parcours client passe aussi par le téléphone. Je vous le dis d'emblée pour que vous puissiez juger par vous-même.</p></details>
+      <details><summary>Un plombier doit-il utiliser Google Ads ou Local Services Ads ?</summary><p>Souvent les deux. Local Services Ads facture au lead et demande peu de mise en place, tandis que Google Ads vous donne plus de contrôle sur les chantiers et les zones ciblés. L'audit vous dira ce qui convient à votre zone et à votre budget.</p></details>
+      <details><summary>Comment commence la collaboration ?</summary><p>Par un audit gratuit de vos annonces, de votre fiche Maps et de votre site. Vous recevez les conclusions en langage clair avant de décider quoi que ce soit.</p></details>
+    </div>
+    <div class="cta">
+      <h2>D'où viennent vraiment vos chantiers de plomberie ?</h2>
+      <p>Envoyez-moi votre site et votre zone principale. Je vérifierai vos annonces, votre fiche Maps et votre suivi, et je vous dirai ce que je corrigerais en premier.</p>
+      <a class="btn" href="/fr/#contact">Mon audit marketing plomberie gratuit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>À lire aussi</h2>
+      <a href="/fr/blog/how-to-get-more-plumbing-leads.html">Plus de clients pour un plombier<span>Acheter des leads ou générer les vôtres, et comment chacun fonctionne.</span></a> <a href="/fr/blog/local-services-ads-vs-google-ads.html">Local Services Ads ou Google Ads<span>Facturation, contrôle et quand utiliser chacun.</span></a> <a href="/fr/mr-expert-carpet-cleaning.html">Étude de cas Mr Expert Carpet Cleaning<span>Création digitale complète pour une entreprise de services locale au Royaume-Uni.</span></a> <a href="/fr/local-seo-services.html">Services de SEO local<span>Fiche d'établissement Google, pages de services et corrections d'indexation.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/fr/#contact">Audit gratuit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Publicité payante, SEO et suivi. Islamabad, Pakistan, en télétravail.</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/alphamart.html">AlphaMart</a> &middot; <a href="/fr/the-body-essential.html">The Body Essential</a> &middot; <a href="/fr/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/fr/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/fr/brizaa.html">Brizaa</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

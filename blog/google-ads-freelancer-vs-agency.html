@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Google Ads Freelancer vs Agency: How to Choose</title>
+<meta name="description" content="When a Google Ads freelancer beats an agency, when it doesn't, and the questions to ask either one. I sell this service myself, so weigh that bias.">
+<link rel="canonical" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<meta property="og:title" content="Google Ads Freelancer vs Agency: How to Choose">
+<meta property="og:description" content="When a Google Ads freelancer beats an agency, when it doesn't, and the questions to ask either one. I sell this service myself, so weigh that bias.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Ads Freelancer vs Agency: How to Choose">
+<meta name="twitter:description" content="When a Google Ads freelancer beats an agency, when it doesn't, and the questions to ask either one. I sell this service myself, so weigh that bias.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google Ads Freelancer vs Agency: How to Choose",
+  "description": "When a Google Ads freelancer beats an agency, when it doesn't, and the questions to ask either one. I sell this service myself, so weigh that bias.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/",
+    "jobTitle": "Paid Ads & Conversion Tracking Specialist"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html"
+  },
+  "image": "https://marketingkamran.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Field Notes",
+      "item": "https://marketingkamran.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Google Ads freelancer vs agency"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is a Google Ads freelancer cheaper than an agency?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, because there's less overhead, but it isn't guaranteed. Compare what is included each month, not just the fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I hire a Google Ads freelancer from Upwork or Fiverr?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can find capable people there, but judge them the same way as anyone else: account ownership, tracking, reporting and proof of similar work. A very low fixed price is unlikely to cover ongoing management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who should own my Google Ads account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You should. Whoever you hire should work inside your account with access you can remove, so your history stays with you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know my Google Ads manager is doing a good job?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check whether conversions reflect real enquiries, whether search terms are being cleaned regularly, and whether you can see the changes they've made."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    <details class="lang-sw"><summary aria-label="Language">EN</summary><ul><li><a href="/blog/google-ads-freelancer-vs-agency.html" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/de/blog/google-ads-freelancer-vs-agency.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-freelancer-vs-agency.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/google-ads-freelancer-vs-agency.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-freelancer-vs-agency.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/google-ads-freelancer-vs-agency.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/google-ads-freelancer-vs-agency.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Google Ads freelancer vs agency: an honest way to choose</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 Oct 2026</span><span>5 min read</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>A freelancer usually gives you direct access to the person doing the work, with less overhead. An agency usually gives you a team, more capacity and cover when someone is away. The right choice depends on your account's size and how much you need beyond ads.</p>
+      <p>I sell Google Ads management myself, so I'm not neutral. I've tried to show where an agency really is the better choice.</p>
+    </div>
+    <h2>The trade-offs</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Freelancer</th><th>Agency</th></tr></thead>
+        <tbody>
+          <tr><td>Who does the work</td><td>The person you speak to</td><td>Often a team, and sometimes a junior</td></tr>
+          <tr><td>Capacity</td><td>Limited to one person</td><td>Can add people as you grow</td></tr>
+          <tr><td>Holiday or illness</td><td>A real risk, so ask about cover</td><td>Usually covered</td></tr>
+          <tr><td>Range of skills</td><td>Varies by person</td><td>Often design, copy and analytics in-house</td></tr>
+          <tr><td>Overhead in the fee</td><td>Usually lower</td><td>Usually higher</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>When a freelancer makes more sense</h2>
+    <ul>
+      <li>You run a single local business or a small set of campaigns.</li>
+      <li>You want to speak directly to whoever is changing your account.</li>
+      <li>You already have a website and just need ads and tracking done properly.</li>
+    </ul>
+    <h2>When an agency makes more sense</h2>
+    <ul>
+      <li>You advertise across many locations, or spend at a level that needs several specialists.</li>
+      <li>You need creative, video, landing pages and ads produced under one roof.</li>
+      <li>You can't accept any gap in cover, whatever happens to one person.</li>
+    </ul>
+    <h2>Be careful with marketplace pricing</h2>
+    <p>Freelance marketplaces list ad management gigs at low starting prices. Some sellers may well be capable, but a low fixed price is unlikely to pay for ongoing search term reviews, conversion tracking and regular changes. Before comparing prices, compare what is actually included each month.</p>
+    <h2>Questions to ask either one</h2>
+    <ol class="steps">
+      <li><b>Who owns the Google Ads account?</b>It should be you. Walk away if the account stays with them when you leave.</li>
+      <li><b>Who will work on my account each week?</b>Get a name, and ask how much of the work is theirs.</li>
+      <li><b>What counts as a conversion?</b>Ask for connected calls and real enquiries, not page views or taps.</li>
+      <li><b>Can I see the search terms and the changes made?</b>Both are in your account, and you should be able to see them at any time.</li>
+      <li><b>Can you show me a similar account?</b>Ask what they changed and what they can honestly show for it.</li>
+      <li><b>What happens if I want to stop?</b>Check the notice period and how you get your data back.</li>
+    </ol>
+    <h2>Red flags, from either side</h2>
+    <ul>
+      <li>Guaranteed first position or a guaranteed number of leads.</li>
+      <li>Reports showing only clicks and impressions.</li>
+      <li>A refusal to give you access to your own account.</li>
+      <li>A plan or quote made before anyone looks at your account and tracking.</li>
+    </ul>
+    <h2>Where my work fits</h2>
+    <p>On Google Ads, you keep ownership of the account. My experience covers <a href="../smile-line-dental.html">a dental clinic</a>, <a href="../mr-expert-carpet-cleaning.html">a UK carpet cleaning company</a> and <a href="../the-body-essential.html">Shopify brands</a>. If you need creative, video and ads produced under one roof, an agency may suit you better, and I'll tell you that.</p>
+    <h2>Common questions</h2>
+    <h3>Is a Google Ads freelancer cheaper than an agency?</h3>
+    <p>Often, because there's less overhead, but it isn't guaranteed. Compare what is included each month, not just the fee.</p>
+    <h3>Should I hire a Google Ads freelancer from Upwork or Fiverr?</h3>
+    <p>You can find capable people there, but judge them the same way as anyone else: account ownership, tracking, reporting and proof of similar work. A very low fixed price is unlikely to cover ongoing management.</p>
+    <h3>Who should own my Google Ads account?</h3>
+    <p>You should. Whoever you hire should work inside your account with access you can remove, so your history stays with you.</p>
+    <h3>How do I know my Google Ads manager is doing a good job?</h3>
+    <p>Check whether conversions reflect real enquiries, whether search terms are being cleaned regularly, and whether you can see the changes they've made.</p>
+    <div class="cta">
+      <h2>Want a second opinion on your account first?</h2>
+      <p>Whether you end up hiring me, a freelancer or an agency, a free audit tells you what needs fixing, so you can compare quotes properly.</p>
+      <a class="btn" href="../#contact">Get a free Google Ads audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Related field notes</h2>
+      <a href="../google-ads-management.html">Google Ads management<span>Search campaigns with call and form tracking.</span></a>
+      <a href="google-ads-account-audit-lead-generation.html">Google Ads Account Audit Checklist for Lead Generation<span>Six checks for an account that lives on calls and forms.</span></a>
+      <a href="local-services-ads-vs-google-ads.html">Local Services Ads vs Google Ads<span>Billing, control and when to use each.</span></a>
+      <a href="google-ads-conversion-tracking-not-working.html">Google Ads Conversion Tracking Not Working<span>Why a working tag can still report nothing for weeks.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>

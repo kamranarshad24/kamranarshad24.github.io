@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing voor klimaat en verwarming: Google Ads en leads | Kamran Arshad</title>
+<meta name="description" content="Marketing voor installateurs van klimaat en verwarming: Google Ads, Local Services Ads en Maps, gepland rond het hoogseizoen en gemeten tot de geboekte klus. Gratis audit.">
+<link rel="canonical" href="https://marketingkamran.com/nl/hvac-marketing.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/hvac-marketing.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/hvac-marketing.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/hvac-marketing.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/hvac-marketing.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/hvac-marketing.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/hvac-marketing.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/hvac-marketing.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/hvac-marketing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://marketingkamran.com/nl/hvac-marketing.html">
+<meta property="og:title" content="Marketing voor klimaat en verwarming: Google Ads en leads | Kamran Arshad">
+<meta property="og:description" content="Marketing voor installateurs van klimaat en verwarming: Google Ads, Local Services Ads en Maps, gepland rond het hoogseizoen en gemeten tot de geboekte klus. Gratis audit.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing voor klimaat en verwarming: Google Ads en leads | Kamran Arshad">
+<meta name="twitter:description" content="Marketing voor installateurs van klimaat en verwarming: Google Ads, Local Services Ads en Maps, gepland rond het hoogseizoen en gemeten tot de geboekte klus. Gratis audit.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing voor installateurs van klimaat en verwarming",
+  "serviceType": "Google Ads en lokale SEO voor klimaat- en verwarmingsbedrijven",
+  "description": "Marketing voor installateurs van klimaat en verwarming: Google Ads, Local Services Ads en Maps, gepland rond het hoogseizoen en gemeten tot de geboekte klus. Gratis audit.",
+  "url": "https://marketingkamran.com/nl/hvac-marketing.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/nl/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Netherlands"
+    },
+    {
+      "@type": "Country",
+      "name": "Belgium"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing voor klimaat en verwarming",
+      "item": "https://marketingkamran.com/nl/hvac-marketing.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Heeft u eerder met klimaat- en verwarmingsbedrijven gewerkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nog niet. Ik run hetzelfde systeem van Google Ads, Maps, website en meting voor een Brits tapijtreinigingsbedrijf. De klantreis via de telefoon is dezelfde, en ik zeg u dat vooraf zodat u kunt beoordelen of het past."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kunt u leads beter kopen of zelf genereren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gekochte leads komen snel, maar kunnen met concurrenten gedeeld worden en stoppen als u stopt met betalen. Eigen advertenties en pagina's kosten meer tijd, maar de leads zijn van u. Veel bedrijven gebruiken beide terwijl hun eigen kanalen groeien."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe begint de samenwerking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Met een gratis audit van uw advertenties, Maps-vermelding en website. U krijgt de bevindingen in begrijpelijke taal voordat u iets beslist."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Naar de inhoud</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/nl/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Hoofdmenu">
+      <a href="/nl/#services">Diensten</a> <a href="/nl/#work">Cases</a> <a href="/nl/blog/">Praktijknotities</a> <a class="btn" href="/nl/#contact">Gratis audit</a>
+    <details class="lang-sw"><summary aria-label="Language">NL</summary><ul><li><a href="/hvac-marketing.html" hreflang="en" lang="en">English</a></li><li><a href="/de/hvac-marketing.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/hvac-marketing.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/hvac-marketing.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/hvac-marketing.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/hvac-marketing.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/pt/hvac-marketing.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/nl/">Home</a> &nbsp;/&nbsp; <a href="/nl/#services">Diensten</a> &nbsp;/&nbsp; Marketing voor klimaat en verwarming</div>
+    <h1>Marketing voor klimaat en verwarming: eigen leads, in het drukke en het rustige seizoen</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Bijgewerkt op <time datetime="2026-10-30">30 okt 2026</time></span></div>
+    <div class="mkts" aria-label="Markten"><span>Nederland</span><span>België</span><span>Vlaanderen</span><span>Andere landen op afstand</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>De vraag naar klimaat en verwarming schommelt met het weer. Marketing die het hele jaar hetzelfde draait, geeft te veel uit als u volgeboekt bent en zwijgt als u het werk het hardst nodig heeft.</p>
+      <p>Ik beheer Google Ads, Local Services Ads, het Google Maps-profiel en de dienstpagina's van een Brits tapijtreinigingsbedrijf, met gemeten telefoontjes en formulieren. Een account voor klimaat en verwarming zou hetzelfde systeem gebruiken, gepland rond uw seizoenen.</p>
+    </div>
+    <h2>Hoe ik het account rond de seizoenen zou plannen</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Budgetten die het seizoen volgen</h3></div>
+      <p>De vraag naar reparaties stijgt doorgaans bij zeer warm of zeer koud weer. Budgetten en advertentietijden kunnen worden aangepast aan uw capaciteit, zodat u niet betaalt voor telefoontjes die uw team niet kan aannemen.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Reparaties en vervangingen gescheiden</h3></div>
+      <p>Een kapotte installatie heeft snel iemand nodig, terwijl iemand die vervangt langer offertes kan vergelijken en de klus meestal meer waard is. Aparte campagnes geven elk de juiste advertentie, pagina en het juiste bod.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Eigen leads in plaats van gedeelde</h3></div>
+      <p>Gekochte leads kunnen gaten vullen, maar kunnen ook naar uw concurrenten gaan. Uw eigen advertenties, Maps-vermelding en pagina's brengen aanvragen alleen naar u.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Local Services Ads en Google Maps</h3></div>
+      <p>Advertenties met betaling per lead en een sterk Bedrijfsprofiel plaatsen u voor mensen die willen bellen. Ik heb praktijkervaring met beide, waaronder het inrichten en runnen van Local Services Ads voor een Brits tapijtreinigingsbedrijf.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">05</span><h3>Meting tot de geboekte klus</h3></div>
+      <p>Tot stand gekomen telefoontjes en formulieren worden per bron gemeten. Geboekte klussen en hun waarde kunnen terug naar Google Ads, zodat het het verschil leert tussen een snelle reparatie en een volledige installatie.</p>
+    </div>
+    <h2>Waarom verspilling hier zwaarder weegt</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Zoekopdracht (Engels)</th><th>Zoekopdrachten/maand VK</th><th>Bod bovenaan pagina VK</th><th>Zoekopdrachten/maand VS</th><th>Bod bovenaan pagina VS</th></tr></thead>
+        <tbody>
+          <tr><td>ac repair</td><td>9&#8239;900</td><td>£1,35 tot £7,17</td><td>368&#8239;000</td><td>£14,07 tot £75,96</td></tr>
+          <tr><td>hvac repair</td><td>3&#8239;600</td><td>£2,32 tot £6,49</td><td>74&#8239;000</td><td>£12,72 tot £74,84</td></tr>
+          <tr><td>furnace repair</td><td>2&#8239;400</td><td>geen schatting</td><td>201&#8239;000</td><td>£8,09 tot £56,13</td></tr>
+          <tr><td>boiler repair</td><td>5&#8239;400</td><td>£3,66 tot £11,88</td><td>27&#8239;100</td><td>£8,40 tot £50,43</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Bron: Google Ads Keyword Planner, gecontroleerd op 30 oktober 2026, gemiddelde maandelijkse zoekopdrachten van oktober 2025 tot september 2026. De biedingen zijn de lage en hoge schattingen van Google in ponden, de valuta van het account. Het zijn schattingen en niet wat u werkelijk zou betalen.</p>
+    <p>De Amerikaanse biedingen behoren hier tot de hoogste van de 21 zoekopdrachten die ik voor lokale bedrijven heb gecontroleerd. Let ook op de woorden: "boiler repair" en "ac repair" zijn heel verschillende markten in het VK en de VS, dus de zoekwoordenlijst moet uw land volgen.</p>
+    <h2>Het systeem dat ik zou meebrengen</h2>
+        <div class="proof">
+      <span class="tag">Case</span>
+      <h3>Mr Expert Carpet Cleaning, Slough (VK)</h3>
+      <p>In mijn casestudy's staat nog geen account voor klimaat en verwarming. Het systeem dat ik zou meebrengen, run ik voor een Brits tapijtreinigingsbedrijf: de website, dienst- en gebiedspagina's, Google Ads, Local Services Ads, het Bedrijfsprofiel en server-side meting, plus een eigen plug-in die de waarde van geboekte klussen terugstuurt naar Google Ads.</p>
+      <p><a href="/nl/mr-expert-carpet-cleaning.html">Lees de case van Mr Expert Carpet Cleaning &rarr;</a></p>
+    </div>
+    <p>De structuur is direct over te nemen: lokale zoekopdracht, dan telefoontje of formulier, dan geboekte klus. Seizoensinvloeden en de waarde van klussen veranderen in deze branche het meest, en die bepalen de planning van het account vanaf het begin.</p>
+    <h2>Wat u moet controleren voordat u een bureau inschakelt</h2>
+    <ol class="steps">
+      <li><b>Zijn de accounts van u?</b>Uw advertentieaccount, website en belgegevens moeten van u blijven.</li>
+      <li><b>Is het contract gekoppeld aan zichtbare resultaten?</b>Lange contracten zijn moeilijk te beoordelen zonder meting die u zelf kunt controleren.</li>
+      <li><b>Worden reparaties en installaties apart gerapporteerd?</b>Gemengde kosten per lead verbergen welk werk echt loont.</li>
+      <li><b>Wat gebeurt er in het rustige seizoen?</b>Vraag om een plan voor de stille maanden, niet alleen voor de piek.</li>
+    </ol>
+    <h2>Veelgestelde vragen</h2>
+    <div class="faq">
+      <details><summary>Heeft u eerder met klimaat- en verwarmingsbedrijven gewerkt?</summary><p>Nog niet. Ik run hetzelfde systeem van Google Ads, Maps, website en meting voor een Brits tapijtreinigingsbedrijf. De klantreis via de telefoon is dezelfde, en ik zeg u dat vooraf zodat u kunt beoordelen of het past.</p></details>
+      <details><summary>Kunt u leads beter kopen of zelf genereren?</summary><p>Gekochte leads komen snel, maar kunnen met concurrenten gedeeld worden en stoppen als u stopt met betalen. Eigen advertenties en pagina's kosten meer tijd, maar de leads zijn van u. Veel bedrijven gebruiken beide terwijl hun eigen kanalen groeien.</p></details>
+      <details><summary>Hoe begint de samenwerking?</summary><p>Met een gratis audit van uw advertenties, Maps-vermelding en website. U krijgt de bevindingen in begrijpelijke taal voordat u iets beslist.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Betaalt u voor telefoontjes die u niet kunt aannemen?</h2>
+      <p>Stuur me uw website en servicegebied. Ik controleer uw advertenties, Maps-vermelding en meting, en vertel u wat ik als eerste zou oplossen.</p>
+      <a class="btn" href="/nl/#contact">Mijn gratis marketingaudit voor klimaat en verwarming &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Gerelateerd</h2>
+      <a href="/nl/blog/local-services-ads-vs-google-ads.html">Local Services Ads of Google Ads<span>Facturering, controle en wanneer u welke gebruikt.</span></a> <a href="/nl/mr-expert-carpet-cleaning.html">Casestudy Mr Expert Carpet Cleaning<span>Volledige digitale opbouw voor een lokaal dienstverlenend bedrijf in het VK.</span></a> <a href="/nl/google-ads-management.html">Google Ads-beheer<span>Zoekcampagnes met meting van telefoontjes en formulieren.</span></a> <a href="/nl/blog/google-ads-call-tracking-local-business.html">Google Ads-gesprekstracking voor lokale dienstverleners<span>Hoe u de telefoontjes telt die opdrachten worden.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/nl/#contact">Gratis audit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Online advertenties, SEO en tracking. Islamabad, Pakistan, werkt op afstand.</span> <span><a href="/nl/">Home</a> &middot; <a href="/nl/blog/">Praktijknotities</a> &middot; <a href="/nl/alphamart.html">AlphaMart</a> &middot; <a href="/nl/the-body-essential.html">The Body Essential</a> &middot; <a href="/nl/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/nl/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/nl/brizaa.html">Brizaa</a> &middot; <a href="/nl/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-nl.js" defer></script>
+</body>
+</html>

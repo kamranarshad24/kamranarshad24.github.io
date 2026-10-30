@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Google Ads para dentistas: PPC para clínicas odontológicas | Kamran Arshad</title>
+<meta name="description" content="Google Ads para clínicas odontológicas: campanhas por tratamento, segmentação local, ligações e formulários medidos até a palavra-chave. Da reconstrução de uma clínica real.">
+<link rel="canonical" href="https://marketingkamran.com/pt/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/google-ads-for-dentists.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/google-ads-for-dentists.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://marketingkamran.com/pt/google-ads-for-dentists.html">
+<meta property="og:title" content="Google Ads para dentistas: PPC para clínicas odontológicas | Kamran Arshad">
+<meta property="og:description" content="Google Ads para clínicas odontológicas: campanhas por tratamento, segmentação local, ligações e formulários medidos até a palavra-chave. Da reconstrução de uma clínica real.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Ads para dentistas: PPC para clínicas odontológicas | Kamran Arshad">
+<meta name="twitter:description" content="Google Ads para clínicas odontológicas: campanhas por tratamento, segmentação local, ligações e formulários medidos até a palavra-chave. Da reconstrução de uma clínica real.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Google Ads para clínicas odontológicas",
+  "serviceType": "PPC odontológico e gestão de Google Ads",
+  "description": "Google Ads para clínicas odontológicas: campanhas por tratamento, segmentação local, ligações e formulários medidos até a palavra-chave. Da reconstrução de uma clínica real.",
+  "url": "https://marketingkamran.com/pt/google-ads-for-dentists.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/pt/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Brazil"
+    },
+    {
+      "@type": "Country",
+      "name": "Portugal"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://marketingkamran.com/pt/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Google Ads para dentistas",
+      "item": "https://marketingkamran.com/pt/google-ads-for-dentists.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Você trabalha só com dentistas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Também cuido do marketing de uma empresa britânica de limpeza de carpetes e já trabalhei em lojas online. A odontologia é uma das áreas em que tenho experiência direta com contas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Você pode garantir um número de novos pacientes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não, e tenha cuidado com quem garante. Os resultados dependem da sua localização, da concorrência, da oferta e de como os contatos são atendidos. O que posso prometer é uma conta limpa e uma medição honesta do que ela produz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Você também ajuda com o Google Maps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Muitos pacientes escolhem pelos resultados do Maps, então posso trabalhar no seu Perfil da Empresa no Google e nas suas páginas locais junto com os anúncios."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como começa o trabalho com você?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Com uma auditoria gratuita da sua conta de anúncios, do site e da medição. Você recebe as conclusões em linguagem simples antes de decidir qualquer coisa, e sua conta do Google Ads continua sendo sua."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/pt/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Principal">
+      <a href="/pt/#services">Serviços</a> <a href="/pt/#work">Cases</a> <a href="/pt/blog/">Notas de campo</a> <a class="btn" href="/pt/#contact">Auditoria gratuita</a>
+    <details class="lang-sw"><summary aria-label="Language">PT</summary><ul><li><a href="/google-ads-for-dentists.html" hreflang="en" lang="en">English</a></li><li><a href="/de/google-ads-for-dentists.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/google-ads-for-dentists.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/google-ads-for-dentists.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/google-ads-for-dentists.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/google-ads-for-dentists.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/google-ads-for-dentists.html" hreflang="pt" lang="pt" aria-current="true">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/pt/">Início</a> &nbsp;/&nbsp; <a href="/pt/#services">Serviços</a> &nbsp;/&nbsp; Google Ads para dentistas</div>
+    <h1>Google Ads para dentistas: encha a agenda com os tratamentos que você quer fazer mais</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Atualizado em <time datetime="2026-10-30">30 out 2026</time></span></div>
+    <div class="mkts" aria-label="Mercados atendidos"><span>Brasil</span><span>Portugal</span><span>Atendimento em português</span><span>Outros países a distância</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Uma clínica odontológica não precisa de mais cliques. Precisa de mais contatos para os tratamentos que dão retorno, de pessoas perto o bastante para ir até lá, e de um jeito de ver quais buscas os geraram.</p>
+      <p>Reconstruo e gerencio contas de Google Ads, e fiz isso para uma clínica odontológica: grupos de anúncios por tratamento, com formulários e ligações medidos como conversões.</p>
+    </div>
+    <h2>O que eu montaria para a sua clínica</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Campanhas separadas por tratamento</h3></div>
+      <p>Quem busca implantes e quem busca uma consulta de rotina são pacientes diferentes, com valores muito diferentes. Implantes, clareamento, limpeza e urgências têm cada um seus grupos de anúncios, anúncios e decisões de orçamento.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Segmentação geográfica na sua região</h3></div>
+      <p>Seus anúncios só aparecem onde os pacientes podem realmente chegar até você. Parece básico, mas é uma das primeiras coisas que verifico, porque a configuração padrão errada pode gastar o orçamento bem longe da sua região.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Uma lista de palavras-chave negativas</h3></div>
+      <p>Buscas odontológicas atraem pessoas procurando emprego, cursos, tratamento gratuito e informação. Uma lista negativa bem mantida interrompe esses cliques antes de você pagar por eles.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Ligações e formulários contados como conversões</h3></div>
+      <p>Os contatos costumam chegar por telefone ou formulário. Ambos são medidos pelo Google Tag Manager e importados no Google Ads, para que os lances busquem contatos de pacientes e não apenas visitas.</p>
+    </div>
+    <h2>Quanto custam hoje os cliques em odontologia</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Busca (em inglês)</th><th>Buscas/mês Reino Unido</th><th>Lance topo da página Reino Unido</th><th>Buscas/mês EUA</th><th>Lance topo da página EUA</th></tr></thead>
+        <tbody>
+          <tr><td>dentist near me</td><td>246&#8239;000</td><td>£1,39 a £5,54</td><td>1&#8239;830&#8239;000</td><td>£3,64 a £17,15</td></tr>
+          <tr><td>dental implants</td><td>22&#8239;200</td><td>£1,55 a £7,44</td><td>165&#8239;000</td><td>£5,34 a £22,45</td></tr>
+          <tr><td>invisalign</td><td>90&#8239;500</td><td>£2,64 a £11,27</td><td>368&#8239;000</td><td>£1,33 a £8,42</td></tr>
+          <tr><td>teeth whitening</td><td>60&#8239;500</td><td>£1,02 a £2,70</td><td>165&#8239;000</td><td>£1,54 a £5,87</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Fonte: Google Ads Keyword Planner, verificado em 30 de outubro de 2026, média de buscas mensais de outubro de 2025 a setembro de 2026. Os lances são as estimativas baixa e alta do Google em libras, a moeda da conta. São estimativas e não o que você realmente pagaria.</p>
+    <p>A diferença entre tratamentos é o motivo de eu separar as campanhas. Compare no Reino Unido a estimativa alta de implantes com a de clareamento e pense com qual você preferiria encher sua agenda.</p>
+    <h2>Experiência odontológica direta</h2>
+    <div class="proof">
+      <span class="tag">Case</span>
+      <h3>Smile Line Dental</h3>
+      <p>A clínica já pagava pelo Google Ads, mas as campanhas miravam o mundo inteiro, Pesquisa e Display estavam misturados, não havia palavras-chave negativas, e nem formulários nem ligações eram medidos.</p>
+      <p>Concluí a verificação do anunciante, reconstruí a conta só para a Rede de Pesquisa, separei os grupos de anúncios por serviço, ajustei a segmentação local, criei a lista negativa e adicionei a medição. Pela primeira vez, a clínica pôde ver quais anúncios e palavras-chave geravam contatos de pacientes.</p>
+      <p><a href="/pt/smile-line-dental.html">Leia o case da Smile Line Dental &rarr;</a></p>
+    </div>
+    <p>Os fundamentos não mudam com o país. Cliques e leads custam mais no Reino Unido e nos EUA, o que encarece o desperdício e valoriza uma medição limpa. Uma conta odontológica perde dinheiro nos mesmos lugares em qualquer parte: segmentação ampla, buscas irrelevantes e contatos que ninguém conta.</p>
+    <h2>O que uma conta odontológica deveria conseguir responder</h2>
+    <ol class="steps">
+      <li><b>Quais tratamentos trazem contatos?</b>Gasto e contatos por tratamento, para que o orçamento acompanhe o trabalho que você quer.</li>
+      <li><b>Quais buscas os trouxeram?</b>Os termos de pesquisa reais por trás de cada contato, revisados e limpos regularmente.</li>
+      <li><b>Quanto custa um contato?</b>Medido pelas suas próprias ligações e formulários, não por uma média do setor.</li>
+      <li><b>Quais contatos viraram pacientes?</b>Se sua clínica registra isso, pode ser enviado ao Google Ads para que os lances aprendam com agendamentos reais.</li>
+    </ol>
+    <h2>Perguntas frequentes</h2>
+    <div class="faq">
+      <details><summary>Você trabalha só com dentistas?</summary><p>Não. Também cuido do marketing de uma empresa britânica de limpeza de carpetes e já trabalhei em lojas online. A odontologia é uma das áreas em que tenho experiência direta com contas.</p></details>
+      <details><summary>Você pode garantir um número de novos pacientes?</summary><p>Não, e tenha cuidado com quem garante. Os resultados dependem da sua localização, da concorrência, da oferta e de como os contatos são atendidos. O que posso prometer é uma conta limpa e uma medição honesta do que ela produz.</p></details>
+      <details><summary>Você também ajuda com o Google Maps?</summary><p>Sim. Muitos pacientes escolhem pelos resultados do Maps, então posso trabalhar no seu Perfil da Empresa no Google e nas suas páginas locais junto com os anúncios.</p></details>
+      <details><summary>Como começa o trabalho com você?</summary><p>Com uma auditoria gratuita da sua conta de anúncios, do site e da medição. Você recebe as conclusões em linguagem simples antes de decidir qualquer coisa, e sua conta do Google Ads continua sendo sua.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Você sabe quais buscas trazem seus pacientes?</h2>
+      <p>Me envie o site da sua clínica. Vou revisar seus anúncios e sua medição e dizer o que eu corrigiria primeiro.</p>
+      <a class="btn" href="/pt/#contact">Quero minha auditoria gratuita de anúncios odontológicos &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Relacionados</h2>
+      <a href="/pt/smile-line-dental.html">Estudo de caso Smile Line Dental<span>Reconstrução do Google Ads de uma clínica odontológica e a primeira medição de leads.</span></a> <a href="/pt/google-ads-management.html">Gestão de Google Ads<span>Campanhas de pesquisa com medição de ligações e formulários.</span></a> <a href="/pt/med-spa-marketing.html">Marketing para clínicas de estética<span>Anúncios para clínicas de estética, dentro das regras do Google e da Meta.</span></a> <a href="/pt/blog/google-ads-account-audit-lead-generation.html">Checklist de auditoria de conta do Google Ads<span>Seis verificações, da reconstrução da conta de uma clínica odontológica.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/pt/#contact">Auditoria gratuita</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Tráfego pago, SEO e rastreamento. Islamabad, Paquistão, trabalhando remotamente.</span> <span><a href="/pt/">Início</a> &middot; <a href="/pt/blog/">Notas de campo</a> &middot; <a href="/pt/alphamart.html">AlphaMart</a> &middot; <a href="/pt/the-body-essential.html">The Body Essential</a> &middot; <a href="/pt/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/pt/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/pt/brizaa.html">Brizaa</a> &middot; <a href="/pt/privacy-policy.html">Privacidade</a></span>
+  </div>
+</footer>
+<script src="/consent-pt.js" defer></script>
+</body>
+</html>

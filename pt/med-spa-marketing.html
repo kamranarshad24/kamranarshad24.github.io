@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Marketing para clínicas de estética: Google e Meta Ads | Kamran Arshad</title>
+<meta name="description" content="Marketing para clínicas de estética: Google Ads, Meta Ads e SEO local, planejados conforme as políticas de anúncios e medidos até a consulta agendada. Auditoria gratuita.">
+<link rel="canonical" href="https://marketingkamran.com/pt/med-spa-marketing.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/med-spa-marketing.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/med-spa-marketing.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/med-spa-marketing.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/med-spa-marketing.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/med-spa-marketing.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/med-spa-marketing.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/med-spa-marketing.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/med-spa-marketing.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://marketingkamran.com/pt/med-spa-marketing.html">
+<meta property="og:title" content="Marketing para clínicas de estética: Google e Meta Ads | Kamran Arshad">
+<meta property="og:description" content="Marketing para clínicas de estética: Google Ads, Meta Ads e SEO local, planejados conforme as políticas de anúncios e medidos até a consulta agendada. Auditoria gratuita.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marketing para clínicas de estética: Google e Meta Ads | Kamran Arshad">
+<meta name="twitter:description" content="Marketing para clínicas de estética: Google Ads, Meta Ads e SEO local, planejados conforme as políticas de anúncios e medidos até a consulta agendada. Auditoria gratuita.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Marketing para clínicas de estética e med spas",
+  "serviceType": "Google Ads e Meta Ads para clínicas de estética",
+  "description": "Marketing para clínicas de estética: Google Ads, Meta Ads e SEO local, planejados conforme as políticas de anúncios e medidos até a consulta agendada. Auditoria gratuita.",
+  "url": "https://marketingkamran.com/pt/med-spa-marketing.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/pt/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Brazil"
+    },
+    {
+      "@type": "Country",
+      "name": "Portugal"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Início",
+      "item": "https://marketingkamran.com/pt/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Marketing para clínicas de estética",
+      "item": "https://marketingkamran.com/pt/med-spa-marketing.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Uma clínica de estética pode anunciar no Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, mas com limites. Termos de medicamentos com receita são restritos, e as regras dependem dos países que você segmenta. As campanhas precisam ser planejadas conforme a política de saúde do Google para a sua localização."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Uma clínica de estética pode usar fotos de antes e depois em anúncios no Facebook?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A política da Meta permite para procedimentos cosméticos gerais quando o anúncio segmenta pessoas com 18 anos ou mais e evita mensagens negativas sobre a aparência. Regras locais de publicidade médica podem ser mais rígidas, então verifique também."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Você já trabalhou com clínicas de estética?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ainda não. Tenho experiência direta com geração de leads para uma clínica e com Meta Ads, e digo isso de antemão para você poder avaliar por conta própria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como começa o trabalho com você?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Com uma auditoria gratuita dos seus anúncios, do site e da medição. Você recebe as conclusões em linguagem simples antes de decidir qualquer coisa."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/pt/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Principal">
+      <a href="/pt/#services">Serviços</a> <a href="/pt/#work">Cases</a> <a href="/pt/blog/">Notas de campo</a> <a class="btn" href="/pt/#contact">Auditoria gratuita</a>
+    <details class="lang-sw"><summary aria-label="Language">PT</summary><ul><li><a href="/med-spa-marketing.html" hreflang="en" lang="en">English</a></li><li><a href="/de/med-spa-marketing.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/med-spa-marketing.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/med-spa-marketing.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/med-spa-marketing.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/med-spa-marketing.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/med-spa-marketing.html" hreflang="pt" lang="pt" aria-current="true">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/pt/">Início</a> &nbsp;/&nbsp; <a href="/pt/#services">Serviços</a> &nbsp;/&nbsp; Marketing para clínicas de estética</div>
+    <h1>Marketing para clínicas de estética: mais consultas agendadas, dentro das regras do Google e da Meta</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Atualizado em <time datetime="2026-10-30">30 out 2026</time></span></div>
+    <div class="mkts" aria-label="Mercados atendidos"><span>Brasil</span><span>Portugal</span><span>Atendimento em português</span><span>Outros países a distância</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>A publicidade de uma clínica de estética é diferente porque as plataformas restringem o que você pode dizer. Uma campanha escrita como qualquer outra pode ser reprovada, e problemas repetidos podem colocar toda a conta em risco.</p>
+      <p>Crio campanhas no Google e na Meta com medição a partir do contato. Para uma clínica, eu as planejaria em torno dessas regras desde o início.</p>
+    </div>
+    <h2>As regras que moldam uma campanha assim</h2>
+    <div class="note">
+      <b class="l">Verificado nas páginas de políticas do Google e da Meta, outubro de 2026</b>
+      <p>Essas regras mudam e dependem do país, então verifique novamente antes de qualquer campanha. Esta é uma orientação prática e não uma consultoria jurídica. A publicidade médica também tem suas próprias regras locais.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Termos de medicamentos com receita no Google</h3></div>
+      <p>O Google restringe termos de medicamentos com receita em anúncios, páginas de destino e palavras-chave. Campanhas para os EUA, o Canadá ou a Nova Zelândia podem usá-los de forma promocional conforme a lei local, mas segmentar por palavra-chave exige certificação. Em outros lugares, incluindo Reino Unido e Austrália, o uso promocional não é permitido. Se um tratamento usa um medicamento com receita, verifique o nome na lista do Google antes de usá-lo em anúncios ou na página de destino.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Segmentação por idade e redação na Meta</h3></div>
+      <p>A Meta exige que anúncios de procedimentos cosméticos segmentem pessoas com 18 anos ou mais. Também proíbe afirmações de inferioridade sobre a aparência de alguém, então o texto precisa vender o resultado sem atacar a aparência de quem lê.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Imagens de antes e depois</h3></div>
+      <p>A política da Meta permite imagens de antes e depois para procedimentos cosméticos gerais quando o anúncio segmenta adultos e evita mensagens negativas. Verifique a redação atual e suas regras locais de publicidade médica antes de usá-las.</p>
+    </div>
+    <h2>O que eu montaria para uma clínica</h2>
+    <ol class="steps">
+      <li><b>Google Ads para buscas de tratamentos</b>Quem busca um tratamento por perto está mais próximo de agendar, então essas campanhas são separadas por tratamento e localização.</li>
+      <li><b>Meta Ads para reconhecimento local</b>Facebook e Instagram são canais visuais que combinam com consultas e ofertas sazonais, com criativos escritos para cumprir a política.</li>
+      <li><b>Presença local no Maps</b>Um Perfil da Empresa completo, avaliações e uma página por tratamento ajudam você a ser encontrado por quem está por perto.</li>
+      <li><b>Medição até a consulta</b>Ligações, formulários e pedidos de agendamento são medidos por origem, para você ver o que cada canal realmente traz.</li>
+    </ol>
+    <h2>Como são as buscas de estética</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Busca (em inglês)</th><th>Buscas/mês Reino Unido</th><th>Lance topo da página Reino Unido</th><th>Buscas/mês EUA</th><th>Lance topo da página EUA</th></tr></thead>
+        <tbody>
+          <tr><td>botox near me</td><td>22&#8239;200</td><td>£0,63 a £2,27</td><td>165&#8239;000</td><td>£2,78 a £14,56</td></tr>
+          <tr><td>lip filler</td><td>18&#8239;100</td><td>£0,85 a £2,76</td><td>90&#8239;500</td><td>£1,77 a £6,68</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Fonte: Google Ads Keyword Planner, verificado em 30 de outubro de 2026, média de buscas mensais de outubro de 2025 a setembro de 2026. Os lances são as estimativas baixa e alta do Google em libras, a moeda da conta. São estimativas e não o que você realmente pagaria.</p>
+    <p>Demanda de busca e uma estimativa de lance não significam que você pode anunciar um termo. Verifique primeiro a política, porque as regras acima continuam valendo.</p>
+    <h2>A experiência em que isso se apoia</h2>
+    <div class="proof">
+      <span class="tag">Case</span>
+      <h3>Smile Line Dental</h3>
+      <p>Uma conta de clínica reconstruída com segmentação local, uma lista de palavras-chave negativas e medição de ligações e formulários. Pela primeira vez, a clínica pôde ver quais anúncios e palavras-chave geravam contatos de pacientes.</p>
+      <p><a href="/pt/smile-line-dental.html">Leia o case da Smile Line Dental &rarr;</a></p>
+    </div>
+    <div class="proof">
+      <span class="tag">Case</span>
+      <h3>The Body Essential</h3>
+      <p>Campanhas da Meta para uma loja de moda, em que uma auditoria do pixel encontrou cerca de 100 pedidos reportados contra 55 a 70 reais. Cerca de 30 a 40% da verba diária perseguia conversões que não existiam.</p>
+      <p><a href="/pt/the-body-essential.html">Leia o case da The Body Essential &rarr;</a></p>
+    </div>
+    <p>Ainda não cuidei de uma conta de clínica de estética. Geração de leads para uma clínica e medição limpa da Meta são o que trago diretamente. Os limites de política acima são o que é próprio do seu setor. Os fundamentos não mudam com o país. Cliques e leads custam mais no Reino Unido e nos EUA, o que encarece o desperdício e valoriza uma medição limpa.</p>
+    <h2>Perguntas frequentes</h2>
+    <div class="faq">
+      <details><summary>Uma clínica de estética pode anunciar no Google Ads?</summary><p>Sim, mas com limites. Termos de medicamentos com receita são restritos, e as regras dependem dos países que você segmenta. As campanhas precisam ser planejadas conforme a política de saúde do Google para a sua localização.</p></details>
+      <details><summary>Uma clínica de estética pode usar fotos de antes e depois em anúncios no Facebook?</summary><p>A política da Meta permite para procedimentos cosméticos gerais quando o anúncio segmenta pessoas com 18 anos ou mais e evita mensagens negativas sobre a aparência. Regras locais de publicidade médica podem ser mais rígidas, então verifique também.</p></details>
+      <details><summary>Você já trabalhou com clínicas de estética?</summary><p>Ainda não. Tenho experiência direta com geração de leads para uma clínica e com Meta Ads, e digo isso de antemão para você poder avaliar por conta própria.</p></details>
+      <details><summary>Como começa o trabalho com você?</summary><p>Com uma auditoria gratuita dos seus anúncios, do site e da medição. Você recebe as conclusões em linguagem simples antes de decidir qualquer coisa.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Os anúncios da sua clínica funcionam, e dentro das regras?</h2>
+      <p>Me envie seu site. Vou revisar seus anúncios, páginas de destino e medição, e dizer o que eu corrigiria primeiro.</p>
+      <a class="btn" href="/pt/#contact">Quero minha auditoria gratuita de anúncios para clínicas &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Relacionados</h2>
+      <a href="/pt/google-ads-for-dentists.html">Google Ads para dentistas<span>Campanhas por tratamento, medidas até o contato do paciente.</span></a> <a href="/pt/meta-ads-management.html">Gestão de Meta Ads<span>Campanhas no Facebook e Instagram com medição limpa.</span></a> <a href="/pt/smile-line-dental.html">Estudo de caso Smile Line Dental<span>Reconstrução do Google Ads de uma clínica e a primeira medição de leads.</span></a> <a href="/pt/the-body-essential.html">Estudo de caso The Body Essential<span>Uma auditoria do pixel que encontrou compras fantasmas.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/pt/#contact">Auditoria gratuita</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Tráfego pago, SEO e rastreamento. Islamabad, Paquistão, trabalhando remotamente.</span> <span><a href="/pt/">Início</a> &middot; <a href="/pt/blog/">Notas de campo</a> &middot; <a href="/pt/alphamart.html">AlphaMart</a> &middot; <a href="/pt/the-body-essential.html">The Body Essential</a> &middot; <a href="/pt/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/pt/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/pt/brizaa.html">Brizaa</a> &middot; <a href="/pt/privacy-policy.html">Privacidade</a></span>
+  </div>
+</footer>
+<script src="/consent-pt.js" defer></script>
+</body>
+</html>

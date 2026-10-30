@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+<title>Meta Ads pour marques Shopify : scaler sur de vraies commandes | Kamran Arshad</title>
+<meta name="description" content="Meta Ads pour marques Shopify, jugées sur les vraies commandes et non sur le ROAS déclaré. Contrôle du pixel et de l&#x27;API Conversions, puis des campagnes assez fiables pour scaler.">
+<link rel="canonical" href="https://marketingkamran.com/fr/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/meta-ads-for-shopify-brands.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/meta-ads-for-shopify-brands.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://marketingkamran.com/fr/meta-ads-for-shopify-brands.html">
+<meta property="og:title" content="Meta Ads pour marques Shopify : scaler sur de vraies commandes | Kamran Arshad">
+<meta property="og:description" content="Meta Ads pour marques Shopify, jugées sur les vraies commandes et non sur le ROAS déclaré. Contrôle du pixel et de l&#x27;API Conversions, puis des campagnes assez fiables pour scaler.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meta Ads pour marques Shopify : scaler sur de vraies commandes | Kamran Arshad">
+<meta name="twitter:description" content="Meta Ads pour marques Shopify, jugées sur les vraies commandes et non sur le ROAS déclaré. Contrôle du pixel et de l&#x27;API Conversions, puis des campagnes assez fiables pour scaler.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/service.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Meta Ads pour marques Shopify",
+  "serviceType": "Publicités Facebook et Instagram pour boutiques Shopify",
+  "description": "Meta Ads pour marques Shopify, jugées sur les vraies commandes et non sur le ROAS déclaré. Contrôle du pixel et de l'API Conversions, puis des campagnes assez fiables pour scaler.",
+  "url": "https://marketingkamran.com/fr/meta-ads-for-shopify-brands.html",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/fr/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Islamabad",
+      "addressCountry": "PK"
+    }
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "France"
+    },
+    {
+      "@type": "Country",
+      "name": "Belgium"
+    },
+    {
+      "@type": "Country",
+      "name": "Switzerland"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://marketingkamran.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Meta Ads pour Shopify",
+      "item": "https://marketingkamran.com/fr/meta-ads-for-shopify-brands.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pourquoi Meta ne correspond-il pas à mes commandes Shopify ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une certaine différence est normale, car Meta compte selon sa fenêtre d'attribution et Shopify compte les commandes quand elles ont lieu. Un grand écart indique souvent un pixel en double, une application ajoutant son propre suivi ou des événements d'achat déclenchés deux fois."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Travaillez-vous avec des boutiques sur toute plateforme ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le travail e-commerce de mes études de cas est sur Shopify, c'est donc là que je peux aider le plus directement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Gérez-vous aussi Google Shopping ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mon expérience publicitaire e-commerce porte sur Meta et Snapchat, c'est donc ce que je propose. Je gère Google Ads pour des entreprises de génération de leads, et je préfère le dire clairement plutôt que d'en promettre trop."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment commence la collaboration ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Par un audit gratuit de votre compte publicitaire, de votre pixel et de votre API Conversions. Vous recevez les conclusions en langage clair avant de décider quoi que ce soit."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/fr/">Kamran Arshad</a>
+    <nav class="topnav" aria-label="Menu principal">
+      <a href="/fr/#services">Services</a> <a href="/fr/#work">Études de cas</a> <a href="/fr/blog/">Notes de terrain</a> <a class="btn" href="/fr/#contact">Audit gratuit</a>
+    <details class="lang-sw"><summary aria-label="Language">FR</summary><ul><li><a href="/meta-ads-for-shopify-brands.html" hreflang="en" lang="en">English</a></li><li><a href="/de/meta-ads-for-shopify-brands.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/meta-ads-for-shopify-brands.html" hreflang="fr" lang="fr" aria-current="true">Français</a></li><li><a href="/es/meta-ads-for-shopify-brands.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/meta-ads-for-shopify-brands.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/meta-ads-for-shopify-brands.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/meta-ads-for-shopify-brands.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/fr/">Accueil</a> &nbsp;/&nbsp; <a href="/fr/#services">Services</a> &nbsp;/&nbsp; Meta Ads pour Shopify</div>
+    <h1>Meta Ads pour marques Shopify : scaler sur les commandes que vous pouvez vraiment compter</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>Mis à jour le <time datetime="2026-10-30">30 oct. 2026</time></span></div>
+    <div class="mkts" aria-label="Marchés desservis"><span>France</span><span>Belgique</span><span>Suisse</span><span>Canada</span></div>
+  </div>
+</header>
+<main id="main">
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Avant de dépenser plus sur Meta, une marque Shopify doit savoir si les chiffres du Gestionnaire de publicités correspondent aux commandes de Shopify. Souvent ce n'est pas le cas, et les budgets plus élevés vont alors aux mauvaises campagnes.</p>
+      <p>J'ai géré des publicités Facebook et Instagram pour des boutiques Shopify, et je commence par comparer les achats déclarés aux vraies commandes, pour que les décisions de montée en charge reposent sur des chiffres fiables.</p>
+    </div>
+    <h2>Par où je commence avec une marque Shopify</h2>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">01</span><h3>Rapprocher Meta et Shopify</h3></div>
+      <p>Je compare les achats déclarés aux vraies commandes. Un écart n'est pas toujours une erreur, car les fenêtres d'attribution diffèrent, mais vous devez savoir quelle est sa taille et pourquoi.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">02</span><h3>Nettoyer le pixel et l'API Conversions</h3></div>
+      <p>Les pixels en double, les balises installées par des applications et les événements envoyés deux fois faussent ce que Meta optimise. Tout cela est corrigé avant que le budget ne bouge.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">03</span><h3>Tester produits et créations sur la vraie marge</h3></div>
+      <p>Le plus beau ROAS peut venir d'un produit qui perd de l'argent après les coûts et les retours. Je juge les tests sur les commandes réellement payées, pas sur ce que la plateforme déclare d'elle-même.</p>
+    </div>
+    <div class="cause">
+      <div class="cause-h"><span class="rank">04</span><h3>Puis scaler ce qui tient</h3></div>
+      <p>Le budget va aux campagnes qui fonctionnent encore une fois les données propres. Vous recevez un court point chaque semaine.</p>
+    </div>
+    <h2>L'expérience e-commerce derrière cela</h2>
+    <div class="proof">
+      <span class="tag">Étude de cas</span>
+      <h3>The Body Essential</h3>
+      <p>Une marque de mode sur Shopify. Deux pixels étaient installés, et l'un, ajouté par une application tierce, signalait des achats qui n'avaient jamais eu lieu : environ 100 commandes dans Meta pour 55 à 70 réelles. Environ 30 à 40 % du budget quotidien les poursuivait. J'ai corrigé le suivi, créé la boutique Shopify et géré les campagnes Meta.</p>
+      <p><a href="/fr/the-body-essential.html">Lire l'étude de cas The Body Essential &rarr;</a></p>
+    </div>
+    <div class="proof">
+      <span class="tag">Étude de cas</span>
+      <h3>AlphaMart</h3>
+      <p>Une boutique Shopify que j'ai créée et gérée seul, avec mon propre argent en jeu, avec des publicités sur Snapchat, Meta et TikTok. J'ai suivi chaque commande du clic à l'encaissement : les comptes publicitaires ont déclaré 1 092 commandes, et 523 sont devenues des ventes livrées et payées. Cette habitude de regarder au-delà du tableau de bord, je l'apporte à votre compte.</p>
+      <p><a href="/fr/alphamart.html">Lire l'étude de cas AlphaMart &rarr;</a></p>
+    </div>
+    <p>Les fondamentaux ne changent pas d'un pays à l'autre. Les clics et les leads coûtent plus cher au Royaume-Uni et aux États-Unis, ce qui rend le gaspillage plus coûteux et un suivi propre plus précieux. C'est vrai aussi en e-commerce : la plateforme publicitaire, le pixel et la boutique fonctionnent de la même façon, et les chiffres déclarés doivent être vérifiés partout.</p>
+    <h2>Questions fréquentes</h2>
+    <div class="faq">
+      <details><summary>Pourquoi Meta ne correspond-il pas à mes commandes Shopify ?</summary><p>Une certaine différence est normale, car Meta compte selon sa fenêtre d'attribution et Shopify compte les commandes quand elles ont lieu. Un grand écart indique souvent un pixel en double, une application ajoutant son propre suivi ou des événements d'achat déclenchés deux fois.</p></details>
+      <details><summary>Travaillez-vous avec des boutiques sur toute plateforme ?</summary><p>Le travail e-commerce de mes études de cas est sur Shopify, c'est donc là que je peux aider le plus directement.</p></details>
+      <details><summary>Gérez-vous aussi Google Shopping ?</summary><p>Mon expérience publicitaire e-commerce porte sur Meta et Snapchat, c'est donc ce que je propose. Je gère Google Ads pour des entreprises de génération de leads, et je préfère le dire clairement plutôt que d'en promettre trop.</p></details>
+      <details><summary>Comment commence la collaboration ?</summary><p>Par un audit gratuit de votre compte publicitaire, de votre pixel et de votre API Conversions. Vous recevez les conclusions en langage clair avant de décider quoi que ce soit.</p></details>
+    </div>
+    <div class="cta">
+      <h2>Votre Gestionnaire de publicités correspond-il à vos commandes Shopify ?</h2>
+      <p>Envoyez-moi l'URL de votre boutique. Je vérifierai votre pixel et votre suivi, et je vous dirai ce que je corrigerais en premier.</p>
+      <a class="btn" href="/fr/#contact">Mon audit Meta Ads gratuit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>À lire aussi</h2>
+      <a href="/fr/blog/meta-ads-more-sales-than-shopify.html">Meta dit 100 commandes. Shopify dit 62.<span>Lequel ment, et comment le savoir.</span></a> <a href="/fr/blog/scaling-meta-campaigns-bad-data.html">Impossible de scaler une campagne à laquelle on ne peut pas se fier<span>Ce que les mauvaises données font à votre budget.</span></a> <a href="/fr/ecommerce-ppc-management.html">Gestion PPC e-commerce<span>Annonces Meta et Snapchat vérifiées par rapport aux vraies commandes.</span></a> <a href="/fr/meta-ads-management.html">Gestion Meta Ads<span>Campagnes Facebook et Instagram avec un suivi propre.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<a class="float-cta" href="/fr/#contact">Audit gratuit</a>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Publicité payante, SEO et suivi. Islamabad, Pakistan, en télétravail.</span> <span><a href="/fr/">Accueil</a> &middot; <a href="/fr/blog/">Notes de terrain</a> &middot; <a href="/fr/alphamart.html">AlphaMart</a> &middot; <a href="/fr/the-body-essential.html">The Body Essential</a> &middot; <a href="/fr/smile-line-dental.html">Smile Line Dental</a> &middot; <a href="/fr/mr-expert-carpet-cleaning.html">Mr Expert</a> &middot; <a href="/fr/brizaa.html">Brizaa</a> &middot; <a href="/fr/privacy-policy.html">Confidentialité</a></span>
+  </div>
+</footer>
+<script src="/consent-fr.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Google Ads-freelancer of bureau: hoe u kiest</title>
+<meta name="description" content="Wanneer een Google Ads-freelancer beter is dan een bureau, wanneer niet, en wat u beiden moet vragen. Ik verkoop deze dienst zelf, houd daar rekening mee.">
+<link rel="canonical" href="https://marketingkamran.com/nl/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-freelancer-vs-agency.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:url" content="https://marketingkamran.com/nl/blog/google-ads-freelancer-vs-agency.html">
+<meta property="og:title" content="Google Ads-freelancer of bureau: hoe u kiest">
+<meta property="og:description" content="Wanneer een Google Ads-freelancer beter is dan een bureau, wanneer niet, en wat u beiden moet vragen. Ik verkoop deze dienst zelf, houd daar rekening mee.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Ads-freelancer of bureau: hoe u kiest">
+<meta name="twitter:description" content="Wanneer een Google Ads-freelancer beter is dan een bureau, wanneer niet, en wat u beiden moet vragen. Ik verkoop deze dienst zelf, houd daar rekening mee.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Google Ads-freelancer of bureau: hoe u kiest",
+  "description": "Wanneer een Google Ads-freelancer beter is dan een bureau, wanneer niet, en wat u beiden moet vragen. Ik verkoop deze dienst zelf, houd daar rekening mee.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/nl/",
+    "jobTitle": "Specialist in online advertenties & conversietracking"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-freelancer-vs-agency.html",
+    "inLanguage": "nl"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "nl"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Praktijknotities",
+      "item": "https://marketingkamran.com/nl/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Google Ads-freelancer of bureau"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is een Google Ads-freelancer goedkoper dan een bureau?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vaak, omdat er minder overhead is, maar het is niet gegarandeerd. Vergelijk wat er elke maand is inbegrepen, niet alleen de vergoeding."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Moet ik een Google Ads-freelancer inhuren via Upwork of Fiverr?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Daar vindt u capabele mensen, maar beoordeel ze zoals ieder ander: eigendom van het account, meting, rapportage en bewijs van vergelijkbaar werk. Een zeer lage vaste prijs dekt doorlopend beheer waarschijnlijk niet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Van wie moet mijn Google Ads-account zijn?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Van u. Wie u ook inhuurt, moet in uw account werken met toegang die u kunt intrekken, zodat uw geschiedenis bij u blijft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe weet ik of mijn Google Ads-beheerder goed werk levert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Controleer of conversies echte aanvragen weerspiegelen, of zoektermen regelmatig worden opgeschoond en of u de doorgevoerde wijzigingen kunt zien."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/nl/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/nl/blog/">Praktijknotities</a> <a href="/nl/#work">Cases</a> <a href="/nl/#services">Diensten</a> <a class="btn" href="/nl/#contact">Gratis audit</a>
+    <details class="lang-sw"><summary aria-label="Language">NL</summary><ul><li><a href="/blog/google-ads-freelancer-vs-agency.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/google-ads-freelancer-vs-agency.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-freelancer-vs-agency.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/google-ads-freelancer-vs-agency.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-freelancer-vs-agency.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/google-ads-freelancer-vs-agency.html" hreflang="nl" lang="nl" aria-current="true">Nederlands</a></li><li><a href="/pt/blog/google-ads-freelancer-vs-agency.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/nl/blog/">Praktijknotities</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>Google Ads-freelancer of bureau: een eerlijke manier om te kiezen</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 okt 2026</span><span>5 min lezen</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Een freelancer geeft u meestal directe toegang tot degene die het werk doet, met minder overhead. Een bureau geeft u meestal een team, meer capaciteit en vervanging als iemand afwezig is. De juiste keuze hangt af van de omvang van uw account en hoeveel u naast advertenties nodig heeft.</p>
+      <p>Ik verkoop zelf Google Ads-beheer, dus ik ben niet neutraal. Ik heb geprobeerd te laten zien waar een bureau echt de betere keuze is.</p>
+    </div>
+    <h2>De afwegingen</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Freelancer</th><th>Bureau</th></tr></thead>
+        <tbody>
+          <tr><td>Wie het werk doet</td><td>De persoon met wie u spreekt</td><td>Vaak een team, en soms een junior</td></tr>
+          <tr><td>Capaciteit</td><td>Beperkt tot één persoon</td><td>Kan mensen toevoegen als u groeit</td></tr>
+          <tr><td>Vakantie of ziekte</td><td>Een echt risico, vraag naar vervanging</td><td>Meestal geregeld</td></tr>
+          <tr><td>Breedte van vaardigheden</td><td>Verschilt per persoon</td><td>Vaak design, tekst en analytics in huis</td></tr>
+          <tr><td>Overhead in de vergoeding</td><td>Meestal lager</td><td>Meestal hoger</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Wanneer een freelancer zinvoller is</h2>
+    <ul>
+      <li>U runt één lokaal bedrijf of een kleine set campagnes.</li>
+      <li>U wilt direct spreken met degene die uw account wijzigt.</li>
+      <li>U heeft al een website en hebt alleen goed gemaakte advertenties en meting nodig.</li>
+    </ul>
+    <h2>Wanneer een bureau zinvoller is</h2>
+    <ul>
+      <li>U adverteert op veel locaties, of geeft zoveel uit dat meerdere specialisten nodig zijn.</li>
+      <li>U hebt materiaal, video, landingspagina's en advertenties onder één dak nodig.</li>
+      <li>U kunt geen enkel gat in de vervanging accepteren, wat er ook met één persoon gebeurt.</li>
+    </ul>
+    <h2>Wees voorzichtig met marktplaatsprijzen</h2>
+    <p>Freelance-marktplaatsen tonen diensten voor advertentiebeheer met lage startprijzen. Sommige verkopers zijn misschien capabel, maar een lage vaste prijs betaalt waarschijnlijk niet voor doorlopende controle van zoektermen, conversiemeting en regelmatige wijzigingen. Vergelijk voor de prijzen eerst wat er elke maand echt is inbegrepen.</p>
+    <h2>Vragen voor beide</h2>
+    <ol class="steps">
+      <li><b>Van wie is het Google Ads-account?</b>Van u. Loop weg als het account bij hen blijft wanneer u vertrekt.</li>
+      <li><b>Wie werkt er elke week aan mijn account?</b>Vraag om een naam, en hoeveel van het werk van die persoon is.</li>
+      <li><b>Wat telt als conversie?</b>Vraag om tot stand gekomen telefoontjes en echte aanvragen, geen paginaweergaven of tikken.</li>
+      <li><b>Kan ik de zoektermen en de wijzigingen zien?</b>Beide staan in uw account, en u moet ze altijd kunnen zien.</li>
+      <li><b>Kunt u me een vergelijkbaar account laten zien?</b>Vraag wat er is veranderd en wat er eerlijk te laten zien is.</li>
+      <li><b>Wat gebeurt er als ik wil stoppen?</b>Controleer de opzegtermijn en hoe u uw gegevens terugkrijgt.</li>
+    </ol>
+    <h2>Rode vlaggen, aan beide kanten</h2>
+    <ul>
+      <li>Gegarandeerde eerste positie of een gegarandeerd aantal leads.</li>
+      <li>Rapporten die alleen klikken en vertoningen tonen.</li>
+      <li>Weigeren u toegang te geven tot uw eigen account.</li>
+      <li>Een plan of offerte gemaakt voordat iemand uw account en meting heeft bekeken.</li>
+    </ul>
+    <h2>Waar mijn werk past</h2>
+    <p>Bij Google Ads blijft het account van u. Mijn ervaring omvat <a href="/nl/smile-line-dental.html">een tandartskliniek</a>, <a href="/nl/mr-expert-carpet-cleaning.html">een Brits tapijtreinigingsbedrijf</a> en <a href="/nl/the-body-essential.html">Shopify-merken</a>. Als u materiaal, video en advertenties onder één dak nodig hebt, past een bureau misschien beter, en dat zeg ik u dan.</p>
+    <h2>Veelgestelde vragen</h2>
+    <h3>Is een Google Ads-freelancer goedkoper dan een bureau?</h3>
+    <p>Vaak, omdat er minder overhead is, maar het is niet gegarandeerd. Vergelijk wat er elke maand is inbegrepen, niet alleen de vergoeding.</p>
+    <h3>Moet ik een Google Ads-freelancer inhuren via Upwork of Fiverr?</h3>
+    <p>Daar vindt u capabele mensen, maar beoordeel ze zoals ieder ander: eigendom van het account, meting, rapportage en bewijs van vergelijkbaar werk. Een zeer lage vaste prijs dekt doorlopend beheer waarschijnlijk niet.</p>
+    <h3>Van wie moet mijn Google Ads-account zijn?</h3>
+    <p>Van u. Wie u ook inhuurt, moet in uw account werken met toegang die u kunt intrekken, zodat uw geschiedenis bij u blijft.</p>
+    <h3>Hoe weet ik of mijn Google Ads-beheerder goed werk levert?</h3>
+    <p>Controleer of conversies echte aanvragen weerspiegelen, of zoektermen regelmatig worden opgeschoond en of u de doorgevoerde wijzigingen kunt zien.</p>
+    <div class="cta">
+      <h2>Wilt u eerst een second opinion over uw account?</h2>
+      <p>Of u uiteindelijk mij, een freelancer of een bureau inhuurt, een gratis audit vertelt wat er opgelost moet worden, zodat u offertes goed kunt vergelijken.</p>
+      <a class="btn" href="/nl/#contact">Gratis Google Ads-audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Gerelateerde praktijknotities</h2>
+      <a href="/nl/google-ads-management.html">Google Ads-beheer<span>Zoekcampagnes met meting van telefoontjes en formulieren.</span></a> <a href="/nl/blog/google-ads-account-audit-lead-generation.html">Checklist voor een Google Ads-audit voor leadgeneratie<span>Zes controles voor een account dat leeft van telefoontjes en formulieren.</span></a> <a href="/nl/blog/local-services-ads-vs-google-ads.html">Local Services Ads of Google Ads<span>Facturering, controle en wanneer u welke gebruikt.</span></a> <a href="/nl/blog/google-ads-conversion-tracking-not-working.html">Google Ads-conversiemeting werkt niet<span>Waarom een werkende tag wekenlang niets kan melden.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Specialist in online advertenties &amp; tracking</span> <span><a href="/nl/">Home</a> &middot; <a href="/nl/blog/">Praktijknotities</a> &middot; <a href="/nl/privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="/consent-nl.js" defer></script>
+</body>
+</html>

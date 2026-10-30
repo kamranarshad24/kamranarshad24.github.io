@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>How Much Do Google Ads Cost a Local Service Business?</title>
+<meta name="description" content="Real Keyword Planner bids for plumbers, roofers, HVAC, dentists and cleaners in the UK and US, what a budget buys, and how to work out your cost per job.">
+<link rel="canonical" href="https://marketingkamran.com/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/google-ads-cost-local-service-business.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/google-ads-cost-local-service-business.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://marketingkamran.com/blog/google-ads-cost-local-service-business.html">
+<meta property="og:title" content="How Much Do Google Ads Cost a Local Service Business?">
+<meta property="og:description" content="Real Keyword Planner bids for plumbers, roofers, HVAC, dentists and cleaners in the UK and US, what a budget buys, and how to work out your cost per job.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Much Do Google Ads Cost a Local Service Business?">
+<meta name="twitter:description" content="Real Keyword Planner bids for plumbers, roofers, HVAC, dentists and cleaners in the UK and US, what a budget buys, and how to work out your cost per job.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="../KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How Much Do Google Ads Cost a Local Service Business?",
+  "description": "Real Keyword Planner bids for plumbers, roofers, HVAC, dentists and cleaners in the UK and US, what a budget buys, and how to work out your cost per job.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/",
+    "jobTitle": "Paid Ads & Conversion Tracking Specialist"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/google-ads-cost-local-service-business.html"
+  },
+  "image": "https://marketingkamran.com/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://marketingkamran.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Field Notes",
+      "item": "https://marketingkamran.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What Google Ads cost a local business"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much should a small local business spend on Google Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no correct figure. Work backwards from your click price and what a job is worth, and set a budget that buys enough clicks to learn from. A budget that buys only a handful of clicks a month won't tell you much."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are Google Ads so expensive for plumbers and roofers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Advertisers bid against each other, and a single job can be worth a lot, so they're willing to pay more per click. Emergency searches in particular can carry high bids."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the top-of-page bid what I will pay per click?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It's Google's estimate of what advertisers have paid to appear at the top of the page. Your actual cost per click depends on competition and your ad's quality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Google spend more than my daily budget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Google says that for most campaigns it may spend up to twice your average daily budget on a given day, but no more than 30.4 times it in a month."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="../">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="./">Field Notes</a>
+      <a href="../#work">Case Studies</a>
+      <a href="../#services">Services</a>
+      <a class="btn" href="../#contact">Get Free Audit</a>
+    <details class="lang-sw"><summary aria-label="Language">EN</summary><ul><li><a href="/blog/google-ads-cost-local-service-business.html" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/de/blog/google-ads-cost-local-service-business.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/google-ads-cost-local-service-business.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/google-ads-cost-local-service-business.html" hreflang="es" lang="es">Español</a></li><li><a href="/it/blog/google-ads-cost-local-service-business.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/google-ads-cost-local-service-business.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/google-ads-cost-local-service-business.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="./">Field Notes</a> &nbsp;/&nbsp; Google Ads</div>
+    <h1>How much Google Ads cost a local service business, using real bid data</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 Oct 2026</span><span>6 min read</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>There is no standard price. You set your own budget and pay per click, and the price of a click depends on your trade and country. In Google's estimates from October 2026, a top-of-page click for "plumber near me" ran from £1.54 to £10.70 in the UK and from £9.15 to £61.62 in the US.</p>
+      <p>The useful number isn't the cost per click. It's the cost per booked job, and only your own tracking can tell you that.</p>
+    </div>
+    <p>Many of the cost guides I read while researching this came from agencies, with wide ranges and little data behind them. So I pulled figures from Google Ads Keyword Planner myself for 21 searches local businesses compete on. Twelve of them are below.</p>
+    <h2>What clicks are estimated to cost, by trade</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Search</th><th>UK searches/month</th><th>UK top-of-page bid</th><th>US searches/month</th><th>US top-of-page bid</th></tr></thead>
+        <tbody>
+          <tr><td>plumber near me</td><td>90&#8239;500</td><td>£1.54 to £10.70</td><td>823&#8239;000</td><td>£9.15 to £61.62</td></tr>
+          <tr><td>emergency plumber</td><td>12&#8239;100</td><td>£3.87 to £26.39</td><td>90&#8239;500</td><td>£18.28 to £82.32</td></tr>
+          <tr><td>roofer near me</td><td>33&#8239;100</td><td>£2.98 to £12.65</td><td>165&#8239;000</td><td>£10.32 to £56.13</td></tr>
+          <tr><td>roof repair</td><td>6&#8239;600</td><td>£3.61 to £14.22</td><td>90&#8239;500</td><td>£10.85 to £53.85</td></tr>
+          <tr><td>hvac repair</td><td>3&#8239;600</td><td>£2.32 to £6.49</td><td>74&#8239;000</td><td>£12.72 to £74.84</td></tr>
+          <tr><td>ac repair</td><td>9&#8239;900</td><td>£1.35 to £7.17</td><td>368&#8239;000</td><td>£14.07 to £75.96</td></tr>
+          <tr><td>boiler repair</td><td>5&#8239;400</td><td>£3.66 to £11.88</td><td>27&#8239;100</td><td>£8.40 to £50.43</td></tr>
+          <tr><td>electrician near me</td><td>74&#8239;000</td><td>£1.34 to £7.46</td><td>368&#8239;000</td><td>£4.29 to £41.16</td></tr>
+          <tr><td>pest control</td><td>18&#8239;100</td><td>£1.75 to £5.54</td><td>201&#8239;000</td><td>£7.30 to £34.15</td></tr>
+          <tr><td>carpet cleaning</td><td>135&#8239;000</td><td>£0.39 to £1.92</td><td>368&#8239;000</td><td>£1.03 to £7.48</td></tr>
+          <tr><td>dentist near me</td><td>246&#8239;000</td><td>£1.39 to £5.54</td><td>1&#8239;830&#8239;000</td><td>£3.64 to £17.15</td></tr>
+          <tr><td>dental implants</td><td>22&#8239;200</td><td>£1.55 to £7.44</td><td>165&#8239;000</td><td>£5.34 to £22.45</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Source: Google Ads Keyword Planner, checked 30 October 2026, average monthly searches for October 2025 to September 2026. Bids are Google's low and high estimates in pounds, because that is the account's currency. They are estimates and not what you would actually pay.</p>
+    <p>Three things stand out. US bids are well above UK bids for most of these searches. Urgent searches can cost far more than general ones: compare "emergency plumber" with "plumber near me" on the high end. And some trades are much cheaper than others: "carpet cleaning" sits well below "roofer near me" in both countries.</p>
+    <h2>What those bids mean for a budget</h2>
+    <p>A monthly budget divided by the click price gives you a rough number of clicks. Using the estimates above, and only as a guide, £1,000 a month would buy roughly:</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Search</th><th>UK clicks for £1,000</th><th>US clicks for £1,000</th></tr></thead>
+        <tbody>
+          <tr><td>plumber near me</td><td>93 to 649</td><td>16 to 109</td></tr>
+          <tr><td>roofer near me</td><td>79 to 335</td><td>17 to 96</td></tr>
+          <tr><td>carpet cleaning</td><td>520 to 2,564</td><td>133 to 970</td></tr>
+          <tr><td>dentist near me</td><td>180 to 719</td><td>58 to 274</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>These ranges are wide because Google's estimates are wide. Actual prices depend on competition, your area, the time of day and your ad's quality, so your own account will tell you more within a few weeks.</p>
+    <h2>How Google charges your budget</h2>
+    <p>You set an average daily budget, and Google can spend above it on some days. According to Google's help pages, for most campaigns you won't pay more than twice your average daily budget on a given day, or more than 30.4 times it in a month. So a daily budget of £30 can spend up to £60 in one day, and up to £912 in a month.</p>
+    <h2>Work out your own cost per job</h2>
+    <ol class="steps">
+      <li><b>Find your click price</b>Start with Keyword Planner for your own searches and area, then replace it with real data from your account.</li>
+      <li><b>Measure how many clicks become enquiries</b>Count connected calls and forms, not taps on your phone number.</li>
+      <li><b>Measure how many enquiries become jobs</b>Your own diary or CRM is the only source for this.</li>
+      <li><b>Compare the cost per job with what a job earns</b>A costly lead can still be a bargain on a high-value job.</li>
+    </ol>
+    <div class="note">
+      <b class="l">An example with made-up numbers</b>
+      <p>Suppose clicks cost £5, one in ten clicks becomes an enquiry, and one in three enquiries becomes a job. That is £50 per enquiry and £150 per job. These numbers are only there to show the sum. They aren't a benchmark, so use your own.</p>
+    </div>
+    <h2>The costs on top of clicks</h2>
+    <ul>
+      <li><b>Management:</b> your own time, or a fee to a freelancer or agency. Ask exactly what's included each month.</li>
+      <li><b>Tracking and landing pages:</b> often a one-off setup, and easy to overlook.</li>
+      <li><b>Wasted clicks:</b> irrelevant searches cost real money until negative keywords remove them. On the <a href="../smile-line-dental.html">dental clinic account I rebuilt</a>, there were no negative keywords at all when I started.</li>
+    </ul>
+    <h2>Local Services Ads work differently</h2>
+    <p>Where they're available, Local Services Ads charge per lead and not per click, so the table above doesn't apply to them. I compare the two in <a href="local-services-ads-vs-google-ads.html">Local Services Ads vs Google Ads</a>.</p>
+    <h2>Common questions</h2>
+    <h3>How much should a small local business spend on Google Ads?</h3>
+    <p>There's no correct figure. Work backwards from your click price and what a job is worth, and set a budget that buys enough clicks to learn from. A budget that buys only a handful of clicks a month won't tell you much.</p>
+    <h3>Why are Google Ads so expensive for plumbers and roofers?</h3>
+    <p>Advertisers bid against each other, and a single job can be worth a lot, so they're willing to pay more per click. Emergency searches in particular can carry high bids.</p>
+    <h3>Is the top-of-page bid what I will pay per click?</h3>
+    <p>No. It's Google's estimate of what advertisers have paid to appear at the top of the page. Your actual cost per click depends on competition and your ad's quality.</p>
+    <h3>Can Google spend more than my daily budget?</h3>
+    <p>Yes. Google says that for most campaigns it may spend up to twice your average daily budget on a given day, but no more than 30.4 times it in a month.</p>
+    <div class="cta">
+      <h2>Want to know what clicks cost in your own area?</h2>
+      <p>Send me your website and service area. I'll review your account and tracking, and tell you the first things I'd fix.</p>
+      <a class="btn" href="../#contact">Get a free Google Ads audit &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Related field notes</h2>
+      <a href="local-services-ads-vs-google-ads.html">Local Services Ads vs Google Ads<span>Billing, control and when to use each.</span></a>
+      <a href="google-ads-account-audit-lead-generation.html">Google Ads Account Audit Checklist for Lead Generation<span>Six checks for an account that lives on calls and forms.</span></a>
+      <a href="google-ads-call-tracking-local-business.html">Google Ads Call Tracking for Local Service Businesses<span>How to count the calls that turn into jobs.</span></a>
+      <a href="google-ads-freelancer-vs-agency.html">Google Ads Freelancer vs Agency<span>How to choose, and what to ask either one.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Paid Ads &amp; Tracking Specialist</span>
+    <span><a href="../">Home</a> &middot; <a href="./">Field Notes</a> &middot; <a href="../privacy-policy.html">Privacy</a></span>
+  </div>
+</footer>
+<script src="../consent.js" defer></script>
+</body>
+</html>

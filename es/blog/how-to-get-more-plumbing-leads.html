@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Consent Mode v2 defaults + lead tracking - MUST run before GTM -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+(function(){
+  var c=null; try{c=JSON.parse(localStorage.getItem("ka_consent_v1"));}catch(e){}
+  function def(a,d,region){
+    var o={analytics_storage:a, ad_storage:d, ad_user_data:d, ad_personalization:d,
+      functionality_storage:"granted", security_storage:"granted", wait_for_update:500};
+    if(region) o.region=region;
+    gtag("consent","default",o);
+  }
+  if(c){ def(c.analytics?"granted":"denied", c.ads?"granted":"denied"); }
+  else {
+    // Opt-in only where the law requires it (UK, EEA, Switzerland); opt-out everywhere else.
+    def("denied","denied",["GB","AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IE","IT","LV","LT","LU","MT","NL","PL","PT","RO","SK","SI","ES","SE","IS","LI","NO","CH"]);
+    def("granted","granted");
+  }
+  // Own visits: open any page with ?internal=1 once per browser (?internal=0 undoes it).
+  try{
+    var m=location.search.match(/[?&]internal=([01])/);
+    if(m){ if(m[1]==="1") localStorage.setItem("ka_internal","1"); else localStorage.removeItem("ka_internal"); }
+    if(localStorage.getItem("ka_internal")==="1") dataLayer.push({traffic_type:"internal"});
+  }catch(e){}
+  // Lead = form accepted by /api/lead and visitor landed on the thank-you page.
+  document.addEventListener("submit",function(e){
+    var f=e.target; if(!f||!/\/api\/lead$/.test(f.action||"")) return;
+    try{sessionStorage.setItem("ka_lead",JSON.stringify({form_name:"free_audit",lead_page:location.pathname,lead_language:document.documentElement.lang||"",ts:Date.now()}));}catch(x){}
+  },true);
+  if(/\/thankyou\.html$/.test(location.pathname)){
+    document.addEventListener("DOMContentLoaded",function(){
+      var l=null; try{l=JSON.parse(sessionStorage.getItem("ka_lead")); sessionStorage.removeItem("ka_lead");}catch(x){}
+      if(l && Date.now()-l.ts < 1800000){
+        dataLayer.push({event:"generate_lead",form_name:l.form_name,lead_page:l.lead_page,lead_language:l.lead_language});
+      }
+    });
+  }
+})();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5GXJPTNK');</script>
+<!-- End Google Tag Manager -->
+
+<title>Cómo conseguir más clientes de fontanería sin depender de leads comprados</title>
+<meta name="description" content="Seis formas de conseguir más clientes de fontanería, en el orden en que yo las haría: Maps, reseñas, páginas de servicios, Local Services Ads, Google Ads y atención de llamadas.">
+<link rel="canonical" href="https://marketingkamran.com/es/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="en" href="https://marketingkamran.com/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="de" href="https://marketingkamran.com/de/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="fr" href="https://marketingkamran.com/fr/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="es" href="https://marketingkamran.com/es/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="it" href="https://marketingkamran.com/it/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="nl" href="https://marketingkamran.com/nl/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="pt" href="https://marketingkamran.com/pt/blog/how-to-get-more-plumbing-leads.html">
+<link rel="alternate" hreflang="x-default" href="https://marketingkamran.com/blog/how-to-get-more-plumbing-leads.html">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kamran Arshad">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://marketingkamran.com/es/blog/how-to-get-more-plumbing-leads.html">
+<meta property="og:title" content="Cómo conseguir más clientes de fontanería sin depender de leads comprados">
+<meta property="og:description" content="Seis formas de conseguir más clientes de fontanería, en el orden en que yo las haría: Maps, reseñas, páginas de servicios, Local Services Ads, Google Ads y atención de llamadas.">
+<meta property="og:image" content="https://marketingkamran.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cómo conseguir más clientes de fontanería sin depender de leads comprados">
+<meta name="twitter:description" content="Seis formas de conseguir más clientes de fontanería, en el orden en que yo las haría: Maps, reseñas, páginas de servicios, Local Services Ads, Google Ads y atención de llamadas.">
+<meta name="twitter:image" content="https://marketingkamran.com/og-image.png">
+<link rel="icon" type="image/svg+xml" href="/KA_favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/blog/post.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cómo conseguir más clientes de fontanería sin depender de leads comprados",
+  "description": "Seis formas de conseguir más clientes de fontanería, en el orden en que yo las haría: Maps, reseñas, páginas de servicios, Local Services Ads, Google Ads y atención de llamadas.",
+  "datePublished": "2026-10-30",
+  "dateModified": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Kamran Arshad",
+    "url": "https://marketingkamran.com/es/",
+    "jobTitle": "Especialista en publicidad de pago y seguimiento de conversiones"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Kamran Arshad"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://marketingkamran.com/blog/how-to-get-more-plumbing-leads.html",
+    "inLanguage": "es"
+  },
+  "image": "https://marketingkamran.com/og-image.png",
+  "inLanguage": "es"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Inicio",
+      "item": "https://marketingkamran.com/es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Notas de campo",
+      "item": "https://marketingkamran.com/es/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cómo conseguir más clientes de fontanería"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuál es la forma más rápida de conseguir leads de fontanería?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los canales de pago son los más rápidos: Local Services Ads donde esté disponible, Google Ads o leads comprados. Tu Perfil de Empresa y tus páginas cuestan menos con el tiempo, pero tardan más en crecer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Merecen la pena los leads de fontanería comprados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pueden servir para cubrir huecos, pero comprueba si cada lead se comparte con otros fontaneros, y compara el coste por trabajo reservado con tus otros canales."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas reseñas necesita un fontanero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hay un número fijo. Mira los negocios de lo alto de Maps en tu zona y sigue añadiendo reseñas recientes de forma constante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Necesita web un fontanero?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Local Services Ads puede funcionar sin ella, pero una web te permite posicionarte para servicios y zonas concretos y da a los clientes un sitio donde revisarte."
+      }
+    }
+  ]
+}
+</script>
+<style id="lang-sw-css">.lang-sw{position:relative;display:inline-block;font:500 13.5px/1 "Instrument Sans",system-ui,sans-serif;margin-left:14px}.lang-sw summary{list-style:none;cursor:pointer;padding:8px 10px;border:1px solid rgba(11,33,67,.18);border-radius:8px;color:inherit;white-space:nowrap}.lang-sw summary::-webkit-details-marker{display:none}.lang-sw summary:after{content:" \25BE";font-size:11px}.lang-sw ul{position:absolute;right:0;top:calc(100% + 6px);margin:0;padding:6px;list-style:none;background:#fff;border:1px solid #DDE5F0;border-radius:10px;box-shadow:0 12px 32px -12px rgba(8,26,54,.3);z-index:1000;min-width:140px}.lang-sw li a{display:block;padding:8px 10px;border-radius:6px;color:#0B2143;text-decoration:none;font-size:14px}.lang-sw li a:hover,.lang-sw li a[aria-current]{background:#F4F7FB}.nav-links a.nav-item,.topnav a{white-space:nowrap}@media(max-width:860px){.nav-logo img{min-width:110px}.nav-links{gap:10px}.lang-sw{margin-left:0}.lang-sw summary{padding:7px 8px}}@media(max-width:400px){.nav-cta{padding:9px 14px;font-size:13px}.topnav .btn{padding:8px 12px;font-size:13px}}.topbar .brand{white-space:nowrap}@media(max-width:620px){.topnav{gap:8px}}@media(max-width:400px){.topbar .brand{font-size:16px}}@media(max-width:480px){.nav-inner>.nav-back{display:none}}@media(max-width:900px){.results-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}.result-l,.result-n{overflow-wrap:break-word;hyphens:auto}html:not([lang=en]) :is(h1,h2,h3){overflow-wrap:break-word}@media(max-width:480px){html:not([lang=en]) :is(h1,h2,h3){hyphens:auto}}html:not([lang=en]) .cta .btn{white-space:normal;max-width:100%}</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GXJPTNK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="topbar">
+  <div class="container">
+    <a class="brand" href="/es/">Kamran Arshad</a>
+    <nav class="topnav">
+      <a href="/es/blog/">Notas de campo</a> <a href="/es/#work">Casos de éxito</a> <a href="/es/#services">Servicios</a> <a class="btn" href="/es/#contact">Auditoría gratis</a>
+    <details class="lang-sw"><summary aria-label="Language">ES</summary><ul><li><a href="/blog/how-to-get-more-plumbing-leads.html" hreflang="en" lang="en">English</a></li><li><a href="/de/blog/how-to-get-more-plumbing-leads.html" hreflang="de" lang="de">Deutsch</a></li><li><a href="/fr/blog/how-to-get-more-plumbing-leads.html" hreflang="fr" lang="fr">Français</a></li><li><a href="/es/blog/how-to-get-more-plumbing-leads.html" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="/it/blog/how-to-get-more-plumbing-leads.html" hreflang="it" lang="it">Italiano</a></li><li><a href="/nl/blog/how-to-get-more-plumbing-leads.html" hreflang="nl" lang="nl">Nederlands</a></li><li><a href="/pt/blog/how-to-get-more-plumbing-leads.html" hreflang="pt" lang="pt">Português</a></li></ul></details></nav>
+  </div>
+</div>
+<header class="post-head">
+  <div class="container narrow">
+    <div class="crumb"><a href="/es/blog/">Notas de campo</a> &nbsp;/&nbsp; Servicios locales</div>
+    <h1>Cómo conseguir más clientes de fontanería, en el orden en que realmente lo haría</h1>
+    <div class="byline"><span>Kamran Arshad</span><span>30 oct. 2026</span><span>5 min de lectura</span></div>
+  </div>
+</header>
+<main>
+<article>
+  <div class="container narrow">
+    <div class="answer">
+      <p>Los trabajos llegan cuando te encuentran en el momento de necesidad y respondes rápido. Empieza por lo que es tuyo: tu Perfil de Empresa de Google, tus reseñas y tus páginas de servicios. Luego añade anuncios de pago, y usa leads comprados solo para cubrir huecos.</p>
+    </div>
+    <p>Todavía no he llevado una cuenta de fontanería. Sí llevo esta misma configuración para una empresa británica de limpieza de alfombras, y el recorrido es el mismo: una búsqueda local, una llamada o un formulario, y luego un trabajo en la agenda. Tus cifras serán distintas, pero el orden se mantiene.</p>
+    <h2>1. Arregla tu Perfil de Empresa de Google</h2>
+    <p>No cuesta nada y afecta a si apareces en Maps. Revisa tu categoría principal, enumera tus servicios reales, ajusta tu zona con precisión y añade fotos reales de tu trabajo. No metas palabras clave ni nombres de ciudades en el nombre del negocio, porque incumple las directrices de Google y arriesga una suspensión.</p>
+    <h2>2. Pide una reseña después de cada trabajo</h2>
+    <p>Las reseñas influyen en tu visibilidad y en si alguien te llama a ti o al siguiente fontanero. Conviértelo en rutina: envía el enlace de reseña por SMS o WhatsApp poco después del trabajo, mientras el cliente aún recuerda el alivio.</p>
+    <h2>3. Crea una página por servicio y zona</h2>
+    <p>Una sola página de inicio no puede responder a búsquedas de desatascos, fugas y calentadores en cinco localidades cercanas. Cada servicio principal y cada zona que cubres de verdad merecen su propia página útil. Evita páginas copiadas donde solo cambia el nombre de la ciudad, porque aportan poco.</p>
+    <h2>4. Considera Local Services Ads</h2>
+    <p>Si tu categoría y tu país cumplen los requisitos, cobra por lead y puede aparecer de forma destacada en la búsqueda. Google lo describe como más simple de configurar y con menos gestión, así que es un primer canal de pago razonable para mirar. Lo comparo en detalle en <a href="/es/blog/local-services-ads-vs-google-ads.html">Local Services Ads o Google Ads</a>.</p>
+    <h2>5. Usa Google Ads para los trabajos que más quieres</h2>
+    <p>Google Ads te deja elegir tus trabajos, como urgencias o instalaciones, y excluir el resto. Mantén la segmentación geográfica ajustada, añade palabras clave negativas para empleo, cursos y bricolaje, y mide las llamadas conectadas y no solo los toques en tu número.</p>
+    <h2>6. Responde rápido a cada consulta</h2>
+    <p>Quien tiene agua en el suelo probará el siguiente número si no contestas. Una llamada perdida es un lead pagado y tirado, así que comprueba cuántas pierdes antes de comprar más tráfico. Una simple regla de devolución de llamadas o un SMS de respuesta puede valer más que más presupuesto publicitario.</p>
+    <h2>¿Y comprar leads de fontanería?</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>&nbsp;</th><th>Leads comprados</th><th>Tus propios canales</th></tr></thead>
+        <tbody>
+          <tr><td>Rapidez para empezar</td><td>Rápida</td><td>Anuncios rápidos, SEO más lento</td></tr>
+          <tr><td>¿Exclusivos para ti?</td><td>A veces compartidos, pregunta</td><td>Sí</td></tr>
+          <tr><td>Cuando dejas de pagar</td><td>Los leads se acaban</td><td>Los anuncios se acaban, pero páginas y reseñas siguen funcionando</td></tr>
+          <tr><td>¿Construye tu marca?</td><td>Poco</td><td>Sí</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Los leads comprados no son malos. Son útiles en una semana tranquila o mientras crecen tus canales. El riesgo es depender de ellos, porque cuando se acaban no te queda nada.</p>
+    <h2>Mide antes de gastar más</h2>
+    <p>Uses lo que uses, anota de dónde vino cada trabajo. Una simple pregunta por teléfono es mejor que nada, y una buena medición de llamadas y formularios es mejor aún. Sin ella, no puedes saber qué canal hacer crecer.</p>
+    <p>He explicado cómo monto esa medición en <a href="/es/blog/google-ads-call-tracking-local-business.html">Seguimiento de llamadas de Google Ads para negocios de servicios locales</a>.</p>
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿Cuál es la forma más rápida de conseguir leads de fontanería?</h3>
+    <p>Los canales de pago son los más rápidos: Local Services Ads donde esté disponible, Google Ads o leads comprados. Tu Perfil de Empresa y tus páginas cuestan menos con el tiempo, pero tardan más en crecer.</p>
+    <h3>¿Merecen la pena los leads de fontanería comprados?</h3>
+    <p>Pueden servir para cubrir huecos, pero comprueba si cada lead se comparte con otros fontaneros, y compara el coste por trabajo reservado con tus otros canales.</p>
+    <h3>¿Cuántas reseñas necesita un fontanero?</h3>
+    <p>No hay un número fijo. Mira los negocios de lo alto de Maps en tu zona y sigue añadiendo reseñas recientes de forma constante.</p>
+    <h3>¿Necesita web un fontanero?</h3>
+    <p>Local Services Ads puede funcionar sin ella, pero una web te permite posicionarte para servicios y zonas concretos y da a los clientes un sitio donde revisarte.</p>
+    <div class="cta">
+      <h2>¿Quieres aplicar este orden a tu negocio de fontanería?</h2>
+      <p>Envíame tu web y tu zona. Revisaré tu ficha de Maps, tus anuncios y tu medición, y te diré lo primero que arreglaría.</p>
+      <a class="btn" href="/es/#contact">Quiero una auditoría gratuita de marketing para fontanería &rarr;</a>
+    </div>
+    <div class="related">
+      <h2>Notas de campo relacionadas</h2>
+      <a href="/es/marketing-for-plumbers.html">Marketing para fontaneros<span>Lo que montaría para una empresa de fontanería.</span></a> <a href="/es/blog/local-services-ads-vs-google-ads.html">Local Services Ads o Google Ads<span>Facturación, control y cuándo usar cada uno.</span></a> <a href="/es/blog/local-seo-service-pages-service-business.html">Páginas de servicios para SEO local: una página por servicio y zona<span>Cómo estructurar páginas para Maps y la búsqueda orgánica.</span></a> <a href="/es/blog/google-ads-account-audit-lead-generation.html">Lista de auditoría de Google Ads para captación de leads<span>Seis comprobaciones para una cuenta que vive de llamadas y formularios.</span></a>
+    </div>
+  </div>
+</article>
+</main>
+<footer>
+  <div class="container">
+    <span>&copy; 2026 Kamran Arshad. Especialista en publicidad de pago y seguimiento</span> <span><a href="/es/">Inicio</a> &middot; <a href="/es/blog/">Notas de campo</a> &middot; <a href="/es/privacy-policy.html">Privacidad</a></span>
+  </div>
+</footer>
+<script src="/consent-es.js" defer></script>
+</body>
+</html>
