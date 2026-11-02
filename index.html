@@ -1330,6 +1330,26 @@ footer {
   margin-top: 14px;
 }
 
+
+/* ---------- AUDIT FINDER (multi-step modal) ---------- */
+.af-progress { display:flex; gap:6px; margin:0 0 22px; }
+.af-progress i { flex:1; height:4px; border-radius:4px; background:var(--line); transition:background var(--t); }
+.af-progress i.on { background:var(--blue); }
+.af-q { font-family:var(--display); font-size:17px; font-weight:700; color:var(--ink); margin:0 0 12px; }
+.af-opts { display:grid; gap:10px; }
+.af-opt { display:flex; align-items:center; gap:12px; width:100%; text-align:left; padding:14px 16px; background:#fff; border:1.5px solid var(--line); border-radius:12px; font:600 14.5px/1.35 var(--body); color:var(--ink); cursor:pointer; transition:border-color var(--t), background var(--t), transform var(--t); }
+.af-opt:hover, .af-opt:focus-visible { border-color:var(--blue); background:var(--blue-tint); transform:translateY(-1px); outline:none; }
+.af-opt small { display:block; font-weight:400; font-size:12.5px; color:var(--muted); margin-top:2px; }
+.af-opt .ic { font-size:20px; flex:none; }
+.af-step[hidden] { display:none; }
+.af-plan { background:var(--blue-tint); border:1px solid #BBD8F8; border-radius:12px; padding:14px 16px; margin:0 0 18px; font-size:13.5px; line-height:1.55; color:var(--ink-soft); }
+.af-plan b { display:block; font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue-deep); margin-bottom:6px; }
+.af-plan ul { margin:0; padding-left:18px; }
+.af-back { background:none; border:none; color:var(--muted); font:500 13px var(--body); cursor:pointer; padding:0; margin:0 0 14px; }
+.af-back:hover { color:var(--blue); }
+.af-skip { display:block; margin:16px auto 0; background:none; border:none; color:var(--muted); font:500 13px var(--body); text-decoration:underline; cursor:pointer; }
+#audit-form.af-off { display:none; }
+
 /* ---------- CERT LIGHTBOX ---------- */
 .lightbox {
   display: none;
@@ -1574,9 +1594,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="modal-card">
     <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
     <span class="modal-kicker">Free, no obligation</span>
-    <p class="modal-title">Book Your Free Audit</p>
-    <p class="modal-sub">I'll review your ads, your site, or your search presence live in 15 minutes and tell you one thing you can fix this week.</p>
-    <form action="/api/lead" method="POST">
+    <p class="modal-title" id="af-title">Book Your Free Audit</p>
+    <p class="modal-sub" id="af-sub">Two quick taps so I can prepare for your 15-minute audit. No pitch, and I'll tell you one thing you can fix this week.</p>
+    <div class="af-progress" id="af-progress" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+    <div class="af-step" id="af-s1">
+      <p class="af-q">What's the biggest thing holding your business back online?</p>
+      <div class="af-opts">
+        <button type="button" class="af-opt" data-goal="Google Ads are not producing enough leads or sales"><span class="ic">📉</span><span>My Google or Meta ads aren't producing enough<small>Spend is going out, results are not coming back</small></span></button>
+        <button type="button" class="af-opt" data-goal="I need to show up on Google Maps and in local search"><span class="ic">📍</span><span>I'm not showing up on Google Maps or locally<small>Google Business Profile and local SEO</small></span></button>
+        <button type="button" class="af-opt" data-goal="I can't tell which marketing is actually working (tracking)"><span class="ic">🔍</span><span>I can't tell what's actually working<small>Conversion tracking, GA4, GTM</small></span></button>
+        <button type="button" class="af-opt" data-goal="I need a new or faster website or Shopify store"><span class="ic">🛠️</span><span>I need a new or better website or store<small>WordPress or Shopify</small></span></button>
+      </div>
+      <button type="button" class="af-skip" id="af-skip">Skip, I'll just send a message</button>
+    </div>
+    <div class="af-step" id="af-s2" hidden>
+      <button type="button" class="af-back" data-back="af-s1">← Back</button>
+      <p class="af-q">What kind of business is it?</p>
+      <div class="af-opts">
+        <button type="button" class="af-opt" data-biz="Home services or trades"><span class="ic">🔧</span><span>Home services or trades</span></button>
+        <button type="button" class="af-opt" data-biz="Clinic, dental or med spa"><span class="ic">🦷</span><span>Clinic, dental or med spa</span></button>
+        <button type="button" class="af-opt" data-biz="Online store or ecommerce"><span class="ic">🛒</span><span>Online store or ecommerce</span></button>
+        <button type="button" class="af-opt" data-biz="Another kind of business"><span class="ic">💼</span><span>Something else</span></button>
+      </div>
+    </div>
+    <div class="af-step" id="af-s3" hidden>
+      <button type="button" class="af-back" data-back="af-s2">← Back</button>
+      <div class="af-plan" id="af-plan" aria-live="polite"></div>
+    </div>
+    <form action="/api/lead" method="POST" id="audit-form" class="af-off">
       <input type="hidden" name="_next" value="https://marketingkamran.com/thankyou.html">
       <!-- Honeypot: invisible to people, filled by bots. The form backend discards those. -->
       <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"
@@ -2431,6 +2476,7 @@ document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
 function openModal() {
   const m = document.getElementById('audit-modal');
+  if (window.resetAuditFinder && m.style.display !== 'flex') window.resetAuditFinder();
   m.style.display = 'flex';
   document.body.style.overflow = 'hidden';
   window.dataLayer = window.dataLayer || [];
@@ -2452,6 +2498,52 @@ function openModalFromHash() {
 }
 openModalFromHash();
 window.addEventListener('hashchange', openModalFromHash);
+
+// Audit finder: two taps, then the contact form appears pre-filled with that context.
+(function(){
+  var PLANS = {
+    ads: ['Wasted spend: search terms, match types and location settings','Whether conversions are counted correctly (duplicates, wrong events)','Which campaigns and keywords carry the results'],
+    local: ['Google Business Profile: categories, services, photos and posts','Whether your service-area pages match what people search','Map ranking against the businesses you compete with'],
+    track: ['Whether GA4, GTM and ad conversions agree with each other','Which leads, calls and sales are recorded and which are missed','Consent set-up and duplicate or missing tags'],
+    web: ['Page speed and mobile layout','Whether each page makes the next step obvious','Technical SEO basics: indexing, titles, structure']
+  };
+  var KEYS = {'Google Ads are not':'ads','I need to show up':'local',"I can't tell which":'track'};
+  var st = {goal:'',biz:''};
+  function q(id){return document.getElementById(id);}
+  function bar(n){var b=q('af-progress').children;for(var i=0;i<b.length;i++)b[i].className=i<n?'on':'';}
+  function push(e,d){window.dataLayer=window.dataLayer||[];var o={event:e};for(var k in d)o[k]=d[k];window.dataLayer.push(o);}
+  function show(id){
+    ['af-s1','af-s2','af-s3'].forEach(function(s){q(s).hidden=(s!==id);});
+    bar({'af-s1':1,'af-s2':2,'af-s3':3}[id]);
+    q('audit-form').classList.toggle('af-off', id!=='af-s3');
+  }
+  window.resetAuditFinder = function(){
+    st={goal:'',biz:''}; show('af-s1');
+    q('af-title').textContent='Book Your Free Audit';
+    q('af-sub').textContent="Two quick taps so I can prepare for your 15-minute audit. No pitch, and I'll tell you one thing you can fix this week.";
+  };
+  function goForm(){
+    var key='web'; Object.keys(KEYS).forEach(function(k){if(st.goal.indexOf(k)===0)key=KEYS[k];});
+    var plan=q('af-plan'); plan.style.display='';
+    plan.innerHTML="<b>What I'll check first</b><ul>"+PLANS[key].map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';
+    q('af-title').textContent='Where should I send it?';
+    q('af-sub').textContent="Leave your details and I'll come back within 24 hours to book your free audit.";
+    var m=q('f-msg');
+    if(!m.value || m.dataset.auto==='1'){
+      m.value='Biggest issue: '+st.goal+'. Business type: '+st.biz+'.'; m.dataset.auto='1';
+      m.addEventListener('input',function(){m.dataset.auto='0';},{once:true});
+    }
+    show('af-s3'); push('audit_step',{audit_step:'form_shown',audit_goal:key});
+    setTimeout(function(){q('f-name').focus();},50);
+  }
+  q('audit-modal').addEventListener('click',function(e){
+    var t=e.target.closest&&e.target.closest('button'); if(!t) return;
+    if(t.dataset.goal){st.goal=t.dataset.goal;q('af-title').textContent='Nice, one more tap';show('af-s2');push('audit_step',{audit_step:'goal_chosen'});}
+    else if(t.dataset.biz){st.biz=t.dataset.biz;goForm();}
+    else if(t.dataset.back){q('af-title').textContent='Book Your Free Audit';show(t.dataset.back);}
+    else if(t.id==='af-skip'){var p=q('af-plan');p.textContent='';p.style.display='none';q('af-title').textContent='Where should I send it?';show('af-s3');push('audit_step',{audit_step:'skipped'});}
+  });
+})();
 
 function openCert(el) {
   const img = document.getElementById('lb-img');
