@@ -845,6 +845,35 @@ nav.site-nav {
 @media (max-width: 620px) { .svc-grid { grid-template-columns: 1fr; } }
 
 /* ---------- PROCESS ---------- */
+/* AD SPEND REALITY CHECK */
+.rc-band { padding: 88px 0; }
+.rc-card { display:grid; grid-template-columns: 1fr 1fr; background:var(--card); border:1px solid var(--line); border-radius:20px; box-shadow:0 20px 50px -24px rgba(11,33,67,.25); overflow:hidden; }
+.rc-in { padding:36px; }
+.rc-out { padding:36px; background:linear-gradient(160deg,#11305E 0%,var(--navy) 80%); color:#fff; display:flex; flex-direction:column; }
+.rc-in h3 { font-family:var(--display); font-size:26px; letter-spacing:-.02em; margin-bottom:6px; }
+.rc-in > p { color:var(--muted); font-size:15px; margin-bottom:22px; }
+.rc-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.rc-f { margin-bottom:14px; }
+.rc-f label { display:block; font-size:13px; font-weight:600; color:var(--ink-soft); margin-bottom:6px; }
+.rc-f input, .rc-f select { width:100%; padding:12px 14px; font:inherit; font-size:16px; color:var(--ink); background:#fff; border:1.5px solid var(--line-strong); border-radius:var(--r-sm); }
+.rc-f input:focus, .rc-f select:focus { outline:none; border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-tint); }
+.rc-note { font-size:12px; color:var(--muted); margin-top:6px; }
+.rc-empty { margin:auto 0; color:#9FB4D6; font-size:16px; text-align:center; }
+.rc-res[hidden], .rc-empty[hidden] { display:none; }
+.rc-big { font-family:var(--display); font-size:56px; line-height:1; letter-spacing:-.03em; }
+.rc-big small { font-size:20px; font-weight:500; color:#9FB4D6; margin-left:6px; letter-spacing:0; }
+.rc-lbl { font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#7FA6DE; margin-bottom:8px; }
+.rc-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin:22px 0; }
+.rc-grid div { background:rgba(255,255,255,.07); border-radius:12px; padding:12px; }
+.rc-grid b { display:block; font-family:var(--display); font-size:20px; }
+.rc-grid span { font-size:12px; color:#9FB4D6; }
+.rc-verdict { font-size:15px; line-height:1.55; color:#DCE7F8; margin-bottom:20px; }
+.rc-verdict b { color:#fff; }
+.rc-res .btn { align-self:flex-start; }
+.rc-fine { font-size:12px; color:#9FB4D6; margin-top:14px; }
+@media (max-width: 820px) { .rc-card { grid-template-columns:1fr; } .rc-in, .rc-out { padding:24px; } .rc-big { font-size:44px; } .rc-band { padding:56px 0; } }
+@media (max-width: 420px) { .rc-grid { grid-template-columns:1fr; } }
+
 .process-band { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .process-grid {
   display: grid;
@@ -1782,6 +1811,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- AD SPEND REALITY CHECK -->
+<section class="section rc-band" id="reality-check" aria-labelledby="rc-title">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="kicker">Try it: 30 seconds</span>
+      <h2 id="rc-title">Is your ad spend paying you back?</h2>
+      <p>Put in last month's numbers. You'll see what a lead and a customer really cost you. It runs in your browser and nothing is sent anywhere.</p>
+    </div>
+    <div class="rc-card fade-up">
+      <form class="rc-in" id="rc-form" onsubmit="return false" novalidate>
+        <h3>Last month's numbers</h3>
+        <p>Rough figures are fine.</p>
+        <div class="rc-row">
+          <div class="rc-f"><label for="rc-cur">Currency</label>
+            <select id="rc-cur"><option value="£">£ GBP</option><option value="$">$ USD / CAD / AUD</option></select></div>
+          <div class="rc-f"><label for="rc-spend">Ad spend</label>
+            <input id="rc-spend" type="number" inputmode="decimal" min="0" placeholder="e.g. 1500"></div>
+        </div>
+        <div class="rc-row">
+          <div class="rc-f"><label for="rc-leads">Leads or enquiries</label>
+            <input id="rc-leads" type="number" inputmode="numeric" min="0" placeholder="e.g. 40"></div>
+          <div class="rc-f"><label for="rc-won">Customers won from them</label>
+            <input id="rc-won" type="number" inputmode="numeric" min="0" placeholder="e.g. 8"></div>
+        </div>
+        <div class="rc-f"><label for="rc-val">Average value of one customer</label>
+          <input id="rc-val" type="number" inputmode="decimal" min="0" placeholder="e.g. 250"></div>
+        <p class="rc-note">Value is what the customer pays you, before your costs.</p>
+      </form>
+      <div class="rc-out" aria-live="polite">
+        <p class="rc-empty" id="rc-empty">Fill in the four numbers and your result appears here.</p>
+        <div class="rc-res" id="rc-res" hidden>
+          <div class="rc-lbl">Each customer costs you</div>
+          <div class="rc-big" id="rc-cpa">-</div>
+          <div class="rc-grid">
+            <div><b id="rc-cpl">-</b><span>per lead</span></div>
+            <div><b id="rc-close">-</b><span>of leads become customers</span></div>
+            <div><b id="rc-roas">-</b><span>back per 1 spent</span></div>
+          </div>
+          <p class="rc-verdict" id="rc-verdict"></p>
+          <a href="#" class="btn btn-primary btn-lg" id="rc-cta">Have me check why →</a>
+          <p class="rc-fine">Simple arithmetic on your own figures. It ignores your costs and margins.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- INTRO VIDEO -->
 <section class="intro-video" id="intro-video" aria-labelledby="intro-video-title">
   <div class="container">
@@ -2536,12 +2612,57 @@ window.addEventListener('hashchange', openModalFromHash);
     show('af-s3'); push('audit_step',{audit_step:'form_shown',audit_goal:key});
     setTimeout(function(){q('f-name').focus();},50);
   }
+  window.auditPrefill = function(note){
+    var p=q('af-plan'); p.textContent=''; p.style.display='none';
+    q('af-title').textContent='Where should I send your result?';
+    q('af-sub').textContent="Your numbers are in the message below. I'll come back within 24 hours.";
+    var m=q('f-msg'); m.value=note; m.dataset.auto='0'; show('af-s3');
+    setTimeout(function(){q('f-name').focus();},50);
+  };
   q('audit-modal').addEventListener('click',function(e){
     var t=e.target.closest&&e.target.closest('button'); if(!t) return;
     if(t.dataset.goal){st.goal=t.dataset.goal;q('af-title').textContent='Nice, one more tap';show('af-s2');push('audit_step',{audit_step:'goal_chosen'});}
     else if(t.dataset.biz){st.biz=t.dataset.biz;goForm();}
     else if(t.dataset.back){q('af-title').textContent='Book Your Free Audit';show(t.dataset.back);}
     else if(t.id==='af-skip'){var p=q('af-plan');p.textContent='';p.style.display='none';q('af-title').textContent='Where should I send it?';show('af-s3');push('audit_step',{audit_step:'skipped'});}
+  });
+})();
+
+// Reality check calculator: arithmetic on the visitor's own numbers, nothing is sent.
+(function(){
+  var ids=['spend','leads','won','val'], q=function(i){return document.getElementById(i);};
+  var sent=false;
+  function n(id){var v=parseFloat(q('rc-'+id).value);return isFinite(v)&&v>=0?v:NaN;}
+  function money(x,c){return c+Math.round(x).toLocaleString('en-GB');}
+  function calc(){
+    var c=q('rc-cur').value,sp=n('spend'),ld=n('leads'),wn=n('won'),vl=n('val');
+    var ok=sp>0&&ld>0&&!isNaN(wn)&&!isNaN(vl);
+    q('rc-empty').hidden=ok; q('rc-res').hidden=!ok;
+    if(!ok){return null;}
+    if(wn>ld){q('rc-verdict').textContent='Customers won cannot be higher than leads. Check those two numbers.';q('rc-cpa').textContent='-';q('rc-cpl').textContent=q('rc-close').textContent=q('rc-roas').textContent='-';return null;}
+    var rev=wn*vl,roas=rev/sp,close=wn/ld*100;
+    q('rc-cpl').textContent=money(sp/ld,c);
+    q('rc-close').textContent=(close<10?close.toFixed(1):Math.round(close))+'%';
+    q('rc-roas').textContent=c+roas.toFixed(2);
+    var v;
+    if(wn===0){
+      q('rc-cpa').innerHTML='No customers<small>yet</small>';
+      v='You spent <b>'+money(sp,c)+'</b> and won no customers. Either the leads are the wrong ones, the follow-up is losing them, or the sales are not being recorded. That is the first thing to find out.';
+    }else{
+      q('rc-cpa').textContent=money(sp/wn,c);
+      if(rev<sp) v='You spent <b>'+money(sp,c)+'</b> and took <b>'+money(rev,c)+'</b> back, so this month cost you <b>'+money(sp-rev,c)+'</b> before any other cost. Each customer is costing more than they pay.';
+      else v='You spent <b>'+money(sp,c)+'</b> and took <b>'+money(rev,c)+'</b> back. After the ad spend, <b>'+money(rev-sp,c)+'</b> is left to cover your costs. Whether that is enough depends on your margin.';
+    }
+    q('rc-verdict').innerHTML=v;
+    return {c:c,sp:sp,ld:ld,wn:wn,vl:vl};
+  }
+  function run(){var r=calc(); if(r&&!sent){sent=true;window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'reality_check_used'});}}
+  ids.forEach(function(i){q('rc-'+i).addEventListener('input',run);}); q('rc-cur').addEventListener('change',run);
+  q('rc-cta').addEventListener('click',function(e){
+    e.preventDefault(); var r=calc(); if(!r) return;
+    var note='My last month: ad spend '+money(r.sp,r.c)+', '+r.ld+' leads, '+r.wn+' customers won, average customer value '+money(r.vl,r.c)+'. Please check why.';
+    window.dataLayer=window.dataLayer||[]; window.dataLayer.push({event:'reality_check_cta'});
+    openModal(); if(window.auditPrefill) window.auditPrefill(note);
   });
 })();
 
