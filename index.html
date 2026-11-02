@@ -1520,6 +1520,75 @@ footer {
   .video-play .ring svg { width: 22px; height: 22px; }
   .video-play .lbl { bottom: 10px; font-size: 10px; }
 }
+
+/* ---------- SITE SCANNER ---------- */
+.hero-scan { margin-top: 22px; max-width: 520px; }
+.hero-scan .hs-lbl { display: block; color: var(--muted); margin-bottom: 8px; font-size: 11.5px; letter-spacing: .1em; }
+.hero-scan .hs-lbl b { color: var(--green); font-weight: 600; }
+.scan-bar { display: flex; align-items: center; gap: 6px; background: #fff; border: 1.5px solid var(--line-strong); border-radius: 14px; padding: 6px 6px 6px 14px; transition: border-color var(--t), box-shadow var(--t); }
+.scan-bar:focus-within { border-color: var(--blue); box-shadow: 0 0 0 4px var(--blue-tint); }
+.scan-bar .lock { font-family: var(--mono); font-size: 13px; color: var(--faint); white-space: nowrap; }
+.scan-bar input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; font: 500 16px var(--body); color: var(--ink); padding: 8px 2px; }
+.scan-bar .btn { padding: 11px 18px; border-radius: 10px; }
+.btn-ink { background: var(--ink); color: #fff; }
+.btn-ink:hover { background: var(--blue); transform: translateY(-1px); }
+.btn-ink[disabled] { opacity: .6; cursor: progress; transform: none; }
+
+.scan-section { padding: 96px 0 40px; }
+.scan-console { background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 30px 70px -40px rgba(11,33,67,.35); overflow: hidden; }
+.scan-top { background: var(--navy); padding: 18px 20px; display: flex; gap: 14px; align-items: center; }
+.scan-top .dots { display: flex; gap: 6px; }
+.scan-top .dots i { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.18); display: block; }
+.scan-top .scan-bar { flex: 1; background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.14); }
+.scan-top .scan-bar:focus-within { border-color: #4D9BF5; box-shadow: 0 0 0 4px rgba(77,155,245,.18); }
+.scan-top .scan-bar input { color: #fff; }
+.scan-top .scan-bar input::placeholder { color: #7E97BD; }
+.scan-top .scan-bar .lock { color: #7E97BD; }
+.scan-top .scan-bar .btn { background: var(--blue); }
+.scan-body { padding: 30px; min-height: 230px; }
+.scan-empty { display: grid; grid-template-columns: 1.1fr .9fr; gap: 34px; align-items: center; }
+.scan-empty h3 { font-family: var(--display); font-size: 24px; letter-spacing: -.01em; margin-bottom: 10px; }
+.scan-empty p { color: var(--muted); font-size: 15.5px; }
+.scan-empty .try { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; color: var(--muted); }
+.scan-chip { border: 1px solid var(--line-strong); background: var(--bg); color: var(--ink); border-radius: 999px; padding: 7px 14px; font: 500 13.5px var(--body); cursor: pointer; transition: border-color var(--t), background var(--t); }
+.scan-chip:hover { border-color: var(--blue); background: var(--blue-tint); }
+.scan-checks { list-style: none; font-family: var(--mono); font-size: 12.5px; line-height: 2.1; color: var(--ink-soft); background: var(--bg); border: 1px dashed var(--line-strong); border-radius: 14px; padding: 16px 20px; }
+.scan-checks li::before { content: '○ '; color: var(--faint); }
+.scan-loading { font-family: var(--mono); font-size: 13px; line-height: 2.1; color: var(--ink-soft); }
+.scan-loading div { opacity: 0; animation: scanIn .3s ease forwards; }
+.scan-loading .ok { color: var(--green); font-weight: 600; }
+@keyframes scanIn { to { opacity: 1; } }
+.scan-msg { padding: 18px 20px; border-radius: 12px; background: #FFF6E6; border: 1px solid #F3D59B; color: #6B4A06; font-size: 15px; }
+.scan-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 22px; }
+.scan-head .host { font-family: var(--display); font-size: 24px; font-weight: 700; letter-spacing: -.01em; word-break: break-all; }
+.scan-head .host small { display: block; font: 500 12px var(--mono); color: var(--faint); letter-spacing: .08em; text-transform: uppercase; }
+.scan-sum { display: flex; gap: 8px; flex-wrap: wrap; }
+.scan-sum span { font: 600 13px var(--body); padding: 7px 12px; border-radius: 999px; }
+.s-bad { background: #FDECEF; color: #B0283F; } .s-warn { background: #FFF3DC; color: #8A5A00; } .s-good { background: var(--green-tint); color: #08745A; }
+.scan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.scan-col h4 { font: 600 11.5px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin-bottom: 10px; }
+.scan-row { display: grid; grid-template-columns: 18px 1fr; gap: 8px; padding: 11px 0; border-top: 1px solid var(--line); }
+.scan-row .ic { font-weight: 700; font-size: 13px; line-height: 1.5; }
+.scan-row.good .ic { color: var(--green); } .scan-row.warn .ic { color: var(--amber); } .scan-row.bad .ic { color: #D6455D; } .scan-row.info .ic { color: var(--faint); }
+.scan-row b { display: block; font-size: 14.5px; font-weight: 600; line-height: 1.4; }
+.scan-row span { display: block; font-size: 13px; color: var(--muted); line-height: 1.5; margin-top: 2px; overflow-wrap: anywhere; }
+.scan-cta { margin-top: 26px; background: var(--navy); color: #fff; border-radius: 16px; padding: 24px 26px; display: grid; grid-template-columns: 1fr auto; gap: 18px 26px; align-items: center; }
+.scan-cta h4 { font-family: var(--display); font-size: 21px; letter-spacing: -.01em; margin-bottom: 6px; }
+.scan-cta p { color: #A8BCD9; font-size: 14.5px; }
+.scan-cta .acts { display: flex; gap: 10px; flex-wrap: wrap; }
+.scan-note { margin-top: 14px; font-size: 12.5px; color: var(--faint); text-align: center; }
+@media (max-width: 900px) {
+  .scan-grid { grid-template-columns: 1fr; }
+  .scan-empty { grid-template-columns: 1fr; }
+  .scan-cta { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .scan-section { padding-top: 64px; }
+  .scan-top { padding: 12px; } .scan-top .dots { display: none; }
+  .scan-body { padding: 20px 16px; }
+  .scan-bar .lock { display: none; }
+  .scan-bar .btn { padding: 11px 14px; }
+}
 </style>
 <noscript><style>.fade-up { opacity: 1; transform: none; }</style></noscript>
 
@@ -1779,6 +1848,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#" onclick="openModal();return false;" class="btn btn-primary btn-lg">Get Your Free Audit →</a>
           <a href="https://wa.me/923325252517" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">WhatsApp Me</a>
         </div>
+        <form class="hero-scan" id="hero-scan" action="#scan" novalidate>
+          <label for="hero-scan-url" class="hs-lbl mono"><b>●</b> OR RUN A FREE 5-SECOND SITE SCAN</label>
+          <div class="scan-bar">
+            <span class="lock">https://</span>
+            <input id="hero-scan-url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourbusiness.co.uk" aria-label="Your website address">
+            <button type="submit" class="btn btn-ink">Scan my site</button>
+          </div>
+        </form>
         <div class="hero-proof">
           <span class="stars">★★★★★</span>
           <span class="txt"><b>5.0</b> from client reviews</span>
@@ -1841,6 +1918,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="sub">Incl. 1 UK client: ongoing 🇬🇧</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- SITE SCANNER -->
+<section class="scan-section" id="scan" aria-labelledby="scan-title">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="kicker">Free instant check</span>
+      <h2 id="scan-title">Paste your website. See what it's missing.</h2>
+      <p>The scanner reads your homepage the way Google's crawler first sees it, then checks your tracking tags, your search basics and how easy it is to contact you. Nothing is saved unless you choose to send me the results.</p>
+    </div>
+    <div class="scan-console">
+      <form class="scan-top" id="scan-form" novalidate>
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="scan-bar">
+          <span class="lock">https://</span>
+          <input id="scan-url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourbusiness.co.uk" aria-label="Your website address">
+          <button type="submit" class="btn" id="scan-btn" style="color:#fff">Scan</button>
+        </div>
+      </form>
+      <div class="scan-body" id="scan-body" aria-live="polite">
+        <div class="scan-empty">
+          <div>
+            <h3>Type your address above and press Scan.</h3>
+            <p>You get a plain-English list of what's set up, what's worth checking, and what's broken. No email needed to see it.</p>
+            <div class="try">Want to see a result first? <button type="button" class="scan-chip" data-scan="mrexpertcarpetcleaning.com">Scan a site I built</button></div>
+          </div>
+          <ul class="scan-checks" aria-label="What the scan checks">
+            <li>Google Tag Manager, GA4, Google Ads tag</li>
+            <li>Duplicate or leftover tracking code</li>
+            <li>Meta pixel and other ad pixels</li>
+            <li>Cookie consent</li>
+            <li>Title, description, H1, schema</li>
+            <li>Tap-to-call, forms, WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="scan-note">Reads public page code only. Tags added inside Tag Manager, ad account settings and your Google Business Profile need the full audit.</p>
   </div>
 </section>
 
@@ -2714,6 +2830,88 @@ window.addEventListener('hashchange', openModalFromHash);
     });
   });
   sw.hidden=false; all.parentNode.hidden=false; render();
+})();
+
+// Site scanner: /api/scan reads the visitor's homepage source; results lead into the audit form, pre-filled.
+(function(){
+  var body=document.getElementById('scan-body'), form=document.getElementById('scan-form'), input=document.getElementById('scan-url'),
+      btn=document.getElementById('scan-btn'), hero=document.getElementById('hero-scan'), heroIn=document.getElementById('hero-scan-url');
+  if(!body||!form) return;
+  var last=null, busy=false;
+  function push(d){window.dataLayer=window.dataLayer||[];d.event='site_scan';window.dataLayer.push(d);}
+  function el(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;}
+  function clean(v){return v.trim().replace(/^https?:\/\//i,'').replace(/\/+$/,'');}
+  function loading(host){
+    body.innerHTML='';var box=el('div','scan-loading');
+    ['→ requesting '+host,'→ reading tracking tags','→ checking search basics','→ looking for ways to contact you'].forEach(function(t,i){
+      var d=el('div',null,t);d.style.animationDelay=(i*0.55)+'s';box.appendChild(d);});
+    body.appendChild(box);
+  }
+  function message(t){body.innerHTML='';var m=el('div','scan-msg',t);body.appendChild(m);body.appendChild(ctaBox(false));}
+  function ctaBox(hasResult){
+    var c=el('div','scan-cta'), l=el('div');
+    l.appendChild(el('h4',null,hasResult?'Want the part this scan can’t see?':'Want me to look at it properly?'));
+    l.appendChild(el('p',null,'In a free 15-minute audit I go through your Tag Manager, ad accounts and Google Business Profile, and tell you one thing to fix this week.'));
+    var a=el('div','acts'), b=el('button','btn btn-primary',hasResult?'Send me these results →':'Book the free audit →');
+    b.type='button'; b.addEventListener('click',toAudit);
+    var w=el('a','btn btn-wa','WhatsApp me'); w.href='https://wa.me/923325252517'; w.target='_blank'; w.rel='noopener';
+    w.addEventListener('click',function(){push({scan_step:'cta_whatsapp'});});
+    a.appendChild(b); a.appendChild(w); c.appendChild(l); c.appendChild(a); return c;
+  }
+  function render(r){
+    body.innerHTML='';
+    var head=el('div','scan-head'), h=el('div','host'); h.appendChild(el('small',null,'Scan result'+(r.platform?' · '+r.platform:'')));
+    h.appendChild(document.createTextNode(r.host)); head.appendChild(h);
+    var s=el('div','scan-sum');
+    if(r.summary.bad) s.appendChild(el('span','s-bad',r.summary.bad+' to fix'));
+    if(r.summary.warn) s.appendChild(el('span','s-warn',r.summary.warn+' worth checking'));
+    s.appendChild(el('span','s-good',r.summary.good+' set up well'));
+    head.appendChild(s); body.appendChild(head);
+    var g=el('div','scan-grid'), ic={good:'✓',warn:'!',bad:'✕',info:'i'}, order={bad:0,warn:1,info:2,good:3};
+    r.groups.forEach(function(grp){
+      var col=el('div','scan-col'); col.appendChild(el('h4',null,grp.name));
+      grp.checks.slice().sort(function(a,b){return order[a.s]-order[b.s];}).forEach(function(c){
+        var row=el('div','scan-row '+c.s); row.appendChild(el('span','ic',ic[c.s]));
+        var t=el('div'); t.appendChild(el('b',null,c.t)); if(c.d) t.appendChild(el('span',null,c.d)); row.appendChild(t); col.appendChild(row);
+      });
+      g.appendChild(col);
+    });
+    body.appendChild(g); body.appendChild(ctaBox(true));
+  }
+  function toAudit(){
+    openModal();
+    var sk=document.getElementById('af-skip'); if(sk) sk.click();
+    var m=document.getElementById('f-msg'), p=document.getElementById('af-plan');
+    if(last){
+      var flagged=[];last.groups.forEach(function(g){g.checks.forEach(function(c){if(c.s==='bad'||c.s==='warn')flagged.push(c.t);});});
+      m.value='Website: '+last.host+'. Scan: '+last.summary.bad+' to fix, '+last.summary.warn+' worth checking'+(flagged.length?' ('+flagged.join('; ')+')':'')+'.';
+      m.dataset.auto='0';
+    }
+    if(p){p.style.display='';p.innerHTML='<b>What I’ll check beyond the scan</b><ul><li>Tags and triggers inside your Tag Manager</li><li>Whether your ad accounts count the right conversions</li><li>Your Google Business Profile against local competitors</li></ul>';}
+    push({scan_step:'cta_audit',scan_has_result:!!last});
+  }
+  function run(raw){
+    var v=clean(raw||''); if(busy) return;
+    if(!/\.[a-z]{2,}/i.test(v)){input.focus();message('Enter your website address, for example yourbusiness.co.uk');return;}
+    input.value=v; busy=true; btn.disabled=true; btn.textContent='Scanning…'; last=null;
+    loading(v.split('/')[0]); push({scan_step:'start'});
+    var t0=Date.now();
+    fetch('/api/scan?url='+encodeURIComponent(v)).then(function(r){return r.json();}).then(function(r){
+      var wait=Math.max(0,2300-(Date.now()-t0)); // let the progress lines finish
+      setTimeout(function(){
+        if(r.ok){last=r;render(r);push({scan_step:'done',scan_fix:r.summary.bad,scan_check:r.summary.warn});}
+        else{message(r.message||'Something went wrong. Try again in a moment.');push({scan_step:'error',scan_error:r.error||'unknown'});}
+      },wait);
+    }).catch(function(){message('The scanner could not be reached. Please try again, or message me on WhatsApp.');push({scan_step:'error',scan_error:'network'});})
+    .then(function(){setTimeout(function(){busy=false;btn.disabled=false;btn.textContent='Scan';},2300);});
+  }
+  [input,heroIn].forEach(function(f){if(f)f.addEventListener('input',function(){if(/^https?:\/\//i.test(f.value))f.value=f.value.replace(/^https?:\/\//i,'');});});
+  form.addEventListener('submit',function(e){e.preventDefault();run(input.value);});
+  if(hero) hero.addEventListener('submit',function(e){
+    e.preventDefault(); var v=heroIn.value; if(!clean(v)){heroIn.focus();return;}
+    input.value=clean(v); document.getElementById('scan').scrollIntoView({behavior:'smooth',block:'start'}); run(v);
+  });
+  body.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('[data-scan]');if(c){input.value=c.dataset.scan;run(c.dataset.scan);}});
 })();
 
 function openCert(el) {
