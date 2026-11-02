@@ -784,6 +784,66 @@ nav.site-nav {
   .cases-grid { grid-template-columns: 1fr; }
 }
 
+/* Case switcher: one business type at a time, with that client's words beside the work */
+.cs-ask { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px; }
+.cs-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+.cs-tab {
+  display: inline-flex; align-items: center; gap: 10px;
+  font: 600 15px/1 var(--body, inherit); color: var(--ink);
+  background: var(--card); border: 1px solid var(--line); border-radius: 100px;
+  padding: 13px 20px 13px 14px; cursor: pointer;
+  transition: background var(--t), border-color var(--t), color var(--t), box-shadow var(--t), transform var(--t);
+}
+.cs-tab .ic { width: 30px; height: 30px; border-radius: 50%; background: var(--bg); display: inline-flex; align-items: center; justify-content: center; font-size: 15px; }
+.cs-tab:hover { border-color: var(--line-strong); transform: translateY(-1px); }
+.cs-tab[aria-selected="true"] { background: var(--navy); border-color: var(--navy); color: #fff; box-shadow: 0 14px 30px -14px rgba(11,33,67,.55); }
+.cs-tab[aria-selected="true"] .ic { background: rgba(255,255,255,.12); }
+.cs-tab:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.cases-grid.cs-mode { grid-template-columns: 1fr; }
+.cases-grid.cs-mode .case-card { display: none; }
+.cases-grid.cs-mode .case-card.on { display: grid; grid-template-columns: 1.15fr 1fr; opacity: 1; transform: none; animation: csIn .45s ease both; }
+.cases-grid.cs-mode .case-card.on:hover { transform: none; }
+.cases-grid.cs-mode .case-card.on > .carousel,
+.cases-grid.cs-mode .case-card.on > .case-visual-static,
+.cases-grid.cs-mode .case-card.on > .case-visual-placeholder { aspect-ratio: auto; height: 100%; min-height: 380px; }
+.cases-grid.cs-mode .case-card.on .case-body { padding: 34px 34px 28px; }
+@keyframes csIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.cs-panel { display: none; grid-template-columns: 1.15fr 1fr; gap: 28px; margin-top: 28px; }
+.cs-panel.on { display: grid; animation: csIn .45s .08s ease both; }
+.cs-quote { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 30px 32px; display: flex; flex-direction: column; gap: 18px; }
+.cs-quote .review-stars { align-self: flex-start; }
+.cs-quote blockquote { font-family: var(--display); font-size: 22px; line-height: 1.35; font-weight: 600; color: var(--ink); letter-spacing: -.01em; border-left: 3px solid var(--blue); padding-left: 18px; margin: 0; }
+.cs-quote .who { font-size: 14px; color: var(--muted); }
+.cs-quote .who b { color: var(--ink); font-weight: 600; }
+.cs-more { font-size: 14px; color: var(--muted); line-height: 1.7; border-top: 1px solid var(--line); padding-top: 16px; margin-top: auto; }
+.cs-more a { color: var(--blue); font-weight: 600; text-decoration: none; }
+.cs-more a:hover { text-decoration: underline; }
+.cs-cta { background: var(--navy); color: #fff; border-radius: var(--r); padding: 30px 32px; display: flex; flex-direction: column; gap: 14px; position: relative; overflow: hidden; }
+.cs-cta::before { content: ''; position: absolute; right: -60px; top: -60px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(77,155,245,.35), transparent 70%); }
+.cs-cta h3 { font-family: var(--display); font-size: 24px; line-height: 1.2; font-weight: 700; letter-spacing: -.015em; color: #fff; }
+.cs-cta p { font-size: 15px; color: #A9BDDB; line-height: 1.6; }
+.cs-cta button { align-self: flex-start; margin-top: auto; font: 700 15px/1 var(--body); color: #fff; background: var(--blue); border: none; border-radius: 10px; padding: 15px 22px; cursor: pointer; box-shadow: 0 12px 26px -12px rgba(26,115,232,.8); transition: transform var(--t), background var(--t); }
+.cs-cta button:hover { transform: translateY(-2px); background: var(--blue-deep); }
+.cs-all-wrap { text-align: center; margin-top: 30px; }
+.cs-all { font: 600 14.5px/1 var(--body); color: var(--ink); background: transparent; border: 1px solid var(--line-strong); border-radius: 100px; padding: 13px 22px; cursor: pointer; transition: background var(--t); }
+.cs-all:hover { background: var(--card); }
+@media (max-width: 880px) {
+  .cs-tabs { flex-wrap: nowrap; overflow-x: auto; margin: 0 -20px 24px; padding: 2px 20px 8px; scrollbar-width: none; }
+  .cs-tabs::-webkit-scrollbar { display: none; }
+  .cs-tab { flex: 0 0 auto; }
+  .cases-grid.cs-mode .case-card.on { grid-template-columns: 1fr; }
+  .cases-grid.cs-mode .case-card.on > .carousel,
+  .cases-grid.cs-mode .case-card.on > .case-visual-static,
+  .cases-grid.cs-mode .case-card.on > .case-visual-placeholder { aspect-ratio: 8/5; height: auto; min-height: 0; }
+  .cases-grid.cs-mode .case-card.on .case-body { padding: 26px 22px 22px; }
+  .cs-panel { grid-template-columns: 1fr; gap: 18px; }
+  .cs-quote, .cs-cta { padding: 24px 22px; }
+  .cs-quote blockquote { font-size: 19px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cases-grid.cs-mode .case-card.on, .cs-panel.on { animation: none; }
+}
+
 /* ---------- SERVICES ---------- */
 .svc-grid {
   display: grid;
@@ -827,6 +887,8 @@ nav.site-nav {
 .svc-card.featured .idx { color: #4D9BF5; }
 .svc-card.featured h3 { color: #fff; }
 .svc-card.featured p { color: #A9BDDB; }
+.svc-card.featured a { color: #8EC1FA; }
+.svc-card.featured a:hover { color: #fff; }
 .svc-card.featured::after {
   content: 'MOST BOOKED';
   position: absolute;
@@ -1861,12 +1923,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="section-head fade-up">
       <span class="kicker">02: Case Studies</span>
       <h2>Real work. Real numbers.</h2>
-      <p>No fabricated metrics: these are verified results from actual projects, with dashboard screenshots to prove it.</p>
+      <p>No fabricated metrics: these are verified results from actual projects, with dashboard screenshots to prove it. Pick the business closest to yours.</p>
     </div>
-    <div class="cases-grid">
+    <div class="cs-switch" id="cs-switch" hidden>
+      <p class="cs-ask">Which one is you?</p>
+      <div class="cs-tabs" role="tablist" aria-label="Case studies by business type">
+        <button type="button" role="tab" class="cs-tab" data-seg="local" aria-selected="true" aria-controls="cases-grid"><span class="ic" aria-hidden="true">🔧</span>Trades &amp; local services</button>
+        <button type="button" role="tab" class="cs-tab" data-seg="clinic" aria-selected="false" aria-controls="cases-grid" tabindex="-1"><span class="ic" aria-hidden="true">🦷</span>Clinics &amp; dental</button>
+        <button type="button" role="tab" class="cs-tab" data-seg="shop" aria-selected="false" aria-controls="cases-grid" tabindex="-1"><span class="ic" aria-hidden="true">🛒</span>Online stores</button>
+        <button type="button" role="tab" class="cs-tab" data-seg="other" aria-selected="false" aria-controls="cases-grid" tabindex="-1"><span class="ic" aria-hidden="true">💼</span>SaaS &amp; other builds</button>
+      </div>
+    </div>
+    <div class="cases-grid" id="cases-grid">
 
       <!-- AlphaMart -->
-      <article class="case-card fade-up">
+      <article class="case-card fade-up" data-seg="shop">
         <div class="carousel">
           <div class="carousel-slides">
             <div class="carousel-slide"><img src="clients-dashboard/AlphaMart Snapchat Ads Dashboard Cost Per Purchase.png" alt="AlphaMart Snapchat Ads dashboard" loading="lazy" width="800" height="500"></div>
@@ -1906,7 +1977,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <!-- The Body Essential -->
-      <article class="case-card fade-up" style="transition-delay:.1s">
+      <article class="case-card fade-up" data-seg="shop" data-lead style="transition-delay:.1s">
         <div class="carousel">
           <div class="carousel-slides">
             <div class="carousel-slide"><img src="clients-dashboard/The body essential FB ADS Dashboard 1.png" alt="The Body Essential Facebook Ads dashboard" loading="lazy" width="800" height="500"></div>
@@ -1944,7 +2015,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <!-- Smile Line Dental -->
-      <article class="case-card fade-up" style="transition-delay:.05s">
+      <article class="case-card fade-up" data-seg="clinic" data-lead style="transition-delay:.05s">
         <div class="carousel">
           <div class="carousel-slides">
             <div class="carousel-slide"><img src="clients-dashboard/SmileLine Dental Clinic Google Ads Dashboard.png" alt="Smile Line Dental Google Ads dashboard" loading="lazy" width="800" height="500"></div>
@@ -1982,7 +2053,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <!-- Mr Expert Carpet Cleaning -->
-      <article class="case-card fade-up" style="transition-delay:.15s">
+      <article class="case-card fade-up" data-seg="local" data-lead style="transition-delay:.15s">
         <div class="carousel">
           <div class="carousel-slides">
             <div class="carousel-slide"><img src="clients-dashboard/Mr Expert Cleaning website snapshot.png" alt="Mr Expert Carpet Cleaning website" loading="lazy" width="800" height="500"></div>
@@ -2022,7 +2093,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <!-- Brizaa -->
-      <article class="case-card fade-up" style="transition-delay:.2s">
+      <article class="case-card fade-up" data-seg="shop" style="transition-delay:.2s">
         <div class="case-visual-placeholder">
           <span class="vp-icon">🧴</span>
           <span class="vp-text">Brand has since closed, no dashboard screenshots for this one</span>
@@ -2048,7 +2119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <!-- FlowBridge (Wispr Flow Clone) -->
-      <article class="case-card fade-up" style="transition-delay:.25s">
+      <article class="case-card fade-up" data-seg="other" style="transition-delay:.25s">
         <div class="carousel">
           <div class="carousel-slides">
             <div class="carousel-slide"><img src="clients-dashboard/FlowBridge Home Dashboard.png" alt="FlowBridge home dashboard" loading="lazy" width="800" height="500"></div>
@@ -2083,7 +2154,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
       <!-- ContentBuilder -->
-      <article class="case-card fade-up" style="transition-delay:.3s">
+      <article class="case-card fade-up" data-seg="other" data-lead style="transition-delay:.3s">
         <div class="case-visual-static">
           <img src="clients-dashboard/ContentBuilder platform.png" alt="ContentBuilder AI training platform website" loading="lazy" width="800" height="500">
         </div>
@@ -2108,6 +2179,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </article>
 
     </div>
+
+    <div class="cs-panel" data-seg="local">
+      <div class="cs-quote">
+        <span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“Enquiries started coming through the website, which is exactly what we needed.”</blockquote>
+        <p class="who"><b>Waseem Ahmed</b>, Mr Expert Carpet Cleaning, Slough UK</p>
+        <p class="cs-more">Guides for your trade: <a href="carpet-cleaning-marketing.html">carpet cleaners</a> · <a href="marketing-for-plumbers.html">plumbers</a> · <a href="hvac-marketing.html">HVAC</a> · <a href="roofing-marketing.html">roofers</a> · <a href="local-seo-services.html">local SEO</a></p>
+      </div>
+      <div class="cs-cta">
+        <h3>Run a trade or local service business?</h3>
+        <p>Free 15-minute audit of your ads, Google Business Profile or website. I'll tell you one thing you can fix this week. No pitch.</p>
+        <button type="button" data-cs-biz="Home services or trades">Get my free audit →</button>
+      </div>
+    </div>
+
+    <div class="cs-panel" data-seg="clinic">
+      <div class="cs-quote">
+        <span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“For the first time we could see which searches turned into actual appointments rather than just clicks.”</blockquote>
+        <p class="who"><b>Dr Imran</b>, Smile Line Dental Clinic, Islamabad</p>
+        <p class="cs-more">More for clinics: <a href="google-ads-for-dentists.html">Google Ads for dentists</a> · <a href="med-spa-marketing.html">med spa marketing</a> · <a href="conversion-tracking-setup.html">call &amp; form tracking</a></p>
+      </div>
+      <div class="cs-cta">
+        <h3>Run a clinic or dental practice?</h3>
+        <p>Free 15-minute audit of your ads, website or tracking. I'll tell you one thing you can fix this week. No pitch.</p>
+        <button type="button" data-cs-biz="Clinic, dental or med spa">Get my free audit →</button>
+      </div>
+    </div>
+
+    <div class="cs-panel" data-seg="shop">
+      <div class="cs-quote">
+        <span class="review-stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>“Turned out I had two pixels installed — one of them basically dead. He spotted it almost immediately.”</blockquote>
+        <p class="who"><b>Junaid Ashraf</b>, CEO, Techystorm, Marketing Agency · The Body Essential</p>
+        <p class="cs-more">Also in e-commerce: <a href="alphamart.html">AlphaMart, my own store (5.69x ROAS on Snapchat)</a> · <a href="brizaa.html">Brizaa</a> · <a href="meta-ads-for-shopify-brands.html">Meta ads for Shopify brands</a></p>
+      </div>
+      <div class="cs-cta">
+        <h3>Run an online store?</h3>
+        <p>Free 15-minute audit of your ads, pixel set-up or store. I'll tell you one thing you can fix this week. No pitch.</p>
+        <button type="button" data-cs-biz="Online store or ecommerce">Get my free audit →</button>
+      </div>
+    </div>
+
+    <div class="cs-panel" data-seg="other">
+      <div class="cs-quote">
+        <p class="who">ContentBuilder is a US B2B SaaS project: cold-email deliverability, ICP and outbound. I also build my own tools.</p>
+        <p class="cs-more">Also built: <a href="wispr-flow-clone.html">FlowBridge, a bilingual AI speech-to-text app</a> · For agencies: <a href="white-label-ppc-for-agencies.html">white-label PPC</a></p>
+      </div>
+      <div class="cs-cta">
+        <h3>Something else?</h3>
+        <p>Free 15-minute audit of your ads, SEO or site. I'll tell you one thing you can fix this week. No pitch.</p>
+        <button type="button" data-cs-biz="Another kind of business">Get my free audit →</button>
+      </div>
+    </div>
+
+    <div class="cs-all-wrap" hidden><button type="button" class="cs-all" id="cs-all"></button></div>
   </div>
 </section>
 
@@ -2518,7 +2645,7 @@ window.addEventListener('hashchange', openModalFromHash);
     q('audit-form').classList.toggle('af-off', id!=='af-s3');
   }
   window.resetAuditFinder = function(){
-    st={goal:'',biz:''}; show('af-s1');
+    st={goal:'',biz:''}; window.afPresetBiz=''; show('af-s1');
     q('af-title').textContent='Book Your Free Audit';
     q('af-sub').textContent="Two quick taps so I can prepare for your 15-minute audit. No pitch, and I'll tell you one thing you can fix this week.";
   };
@@ -2538,11 +2665,55 @@ window.addEventListener('hashchange', openModalFromHash);
   }
   q('audit-modal').addEventListener('click',function(e){
     var t=e.target.closest&&e.target.closest('button'); if(!t) return;
-    if(t.dataset.goal){st.goal=t.dataset.goal;q('af-title').textContent='Nice, one more tap';show('af-s2');push('audit_step',{audit_step:'goal_chosen'});}
+    if(t.dataset.goal){st.goal=t.dataset.goal;push('audit_step',{audit_step:'goal_chosen'});
+      // Opened from a case-study tab: business type is already known, so skip that step.
+      if(window.afPresetBiz){st.biz=window.afPresetBiz;goForm();return;}
+      q('af-title').textContent='Nice, one more tap';show('af-s2');}
     else if(t.dataset.biz){st.biz=t.dataset.biz;goForm();}
     else if(t.dataset.back){q('af-title').textContent='Book Your Free Audit';show(t.dataset.back);}
     else if(t.id==='af-skip'){var p=q('af-plan');p.textContent='';p.style.display='none';q('af-title').textContent='Where should I send it?';show('af-s3');push('audit_step',{audit_step:'skipped'});}
   });
+})();
+
+// Case switcher: show the project that matches the visitor's business, with that client's review and a matching CTA.
+(function(){
+  var grid=document.getElementById('cases-grid'), sw=document.getElementById('cs-switch'), all=document.getElementById('cs-all');
+  if(!grid||!sw||!all) return;
+  var tabs=[].slice.call(sw.querySelectorAll('.cs-tab'));
+  var cards=[].slice.call(grid.querySelectorAll('.case-card'));
+  var panels=[].slice.call(document.querySelectorAll('.cs-panel'));
+  var seg='local', showAll=false;
+  function push(d){window.dataLayer=window.dataLayer||[];d.event='case_switch';window.dataLayer.push(d);}
+  function render(){
+    grid.classList.toggle('cs-mode',!showAll);
+    sw.hidden=showAll;
+    cards.forEach(function(c){c.classList.toggle('on',!showAll&&c.dataset.seg===seg&&c.hasAttribute('data-lead'));});
+    panels.forEach(function(p){p.classList.toggle('on',!showAll&&p.dataset.seg===seg);});
+    tabs.forEach(function(t){var on=t.dataset.seg===seg;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;});
+    all.textContent=showAll?'Show one business type at a time ↑':'See all '+cards.length+' projects ↓';
+  }
+  function pick(t){
+    if(t.dataset.seg===seg) return; seg=t.dataset.seg; render(); push({case_segment:seg});
+    var row=t.parentNode; row.scrollTo({left:t.offsetLeft-row.offsetLeft-20,behavior:'smooth'});
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){pick(t);});
+    t.addEventListener('keydown',function(e){
+      var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0; if(!d) return;
+      e.preventDefault(); var n=tabs[(i+d+tabs.length)%tabs.length]; n.focus(); pick(n);
+    });
+  });
+  all.addEventListener('click',function(){
+    showAll=!showAll; render(); push({case_segment:showAll?'all':seg});
+    if(!showAll) document.getElementById('work').scrollIntoView({behavior:'smooth'});
+  });
+  document.querySelectorAll('[data-cs-biz]').forEach(function(b){
+    b.addEventListener('click',function(){
+      openModal(); window.afPresetBiz=b.dataset.csBiz;
+      push({case_segment:seg,case_cta:'audit'});
+    });
+  });
+  sw.hidden=false; all.parentNode.hidden=false; render();
 })();
 
 function openCert(el) {
