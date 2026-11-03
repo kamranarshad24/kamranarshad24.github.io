@@ -1231,6 +1231,9 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .modal-card {
   background: #fff;
@@ -1238,9 +1241,14 @@ footer {
   padding: 38px;
   max-width: 470px;
   width: 100%;
+  margin: auto;
   position: relative;
   box-shadow: 0 40px 90px rgba(8,26,54,.35);
   animation: modal-in .25s ease;
+}
+@media (max-width: 480px) {
+  .modal-overlay { padding: 12px; }
+  .modal-card { padding: 28px 20px 22px; }
 }
 @keyframes modal-in {
   from { opacity: 0; transform: translateY(16px) scale(.97); }
