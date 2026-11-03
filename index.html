@@ -1281,6 +1281,23 @@ footer {
 .wa-float:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -10px rgba(12,166,120,.7); }
 @media (max-width: 560px) { .wa-float span { display: none; } .wa-float { padding: 14px; } }
 
+/* ---------- STICKY SCAN DOCK ---------- */
+.scan-dock { position: fixed; left: 50%; bottom: 20px; z-index: 91; width: min(600px, calc(100% - 32px)); transform: translate(-50%, 140%); opacity: 0; pointer-events: none; transition: transform .35s cubic-bezier(.2,.8,.2,1), opacity .25s; background: var(--navy); border: 1px solid rgba(255,255,255,.14); border-radius: 18px; padding: 10px 12px 10px 16px; box-shadow: 0 24px 60px -14px rgba(8,26,54,.6); display: flex; align-items: center; gap: 12px; }
+.scan-dock.show { transform: translate(-50%, 0); opacity: 1; pointer-events: auto; }
+.scan-dock .sd-lbl { color: #fff; font: 600 13px var(--body); line-height: 1.25; white-space: nowrap; }
+.scan-dock .sd-lbl small { display: block; color: #7E97BD; font: 500 11px var(--mono); letter-spacing: .04em; margin-top: 2px; }
+.scan-dock .scan-bar { flex: 1; min-width: 0; background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.16); padding: 4px 4px 4px 12px; }
+.scan-dock .scan-bar input { color: #fff; padding: 7px 2px; }
+.scan-dock .scan-bar input::placeholder { color: #7E97BD; }
+.scan-dock .scan-bar .lock { color: #7E97BD; }
+.scan-dock .scan-bar .btn { padding: 9px 14px; background: var(--blue); color: #fff; font-size: 14px; }
+.scan-dock .sd-x { background: none; border: 0; color: #7E97BD; font-size: 20px; line-height: 1; cursor: pointer; padding: 4px 2px; }
+.scan-dock .sd-x:hover { color: #fff; }
+.scan-dock form { flex: 1; display: flex; min-width: 0; }
+body.dock-on .wa-float { bottom: 92px; }
+@media (max-width: 700px) { .scan-dock .sd-lbl { display: none; } .scan-dock { bottom: 12px; padding: 8px 10px 8px 8px; } .scan-dock .scan-bar .lock { display: none; } }
+@media (prefers-reduced-motion: reduce) { .scan-dock { transition: none; } }
+
 /* ---------- MODAL ---------- */
 .modal-overlay {
   display: none;
@@ -2697,6 +2714,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<!-- STICKY SCAN DOCK -->
+<div class="scan-dock" id="scan-dock" role="region" aria-label="Free site scan">
+  <div class="sd-lbl">Free site scan<small>5 SECONDS · NO EMAIL</small></div>
+  <form id="dock-form" novalidate>
+    <div class="scan-bar">
+      <span class="lock">https://</span>
+      <input id="dock-url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="yourbusiness.co.uk" aria-label="Your website address" tabindex="-1">
+      <button type="submit" class="btn" tabindex="-1">Scan</button>
+    </div>
+  </form>
+  <button type="button" class="sd-x" id="dock-x" aria-label="Dismiss scan bar" tabindex="-1">×</button>
+</div>
+
 <!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/923325252517" target="_blank" rel="noopener" class="wa-float" aria-label="Chat on WhatsApp">
   <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -2911,6 +2941,33 @@ window.addEventListener('hashchange', openModalFromHash);
     input.value=clean(v); document.getElementById('scan').scrollIntoView({behavior:'smooth',block:'start'}); run(v);
   });
   body.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('[data-scan]');if(c){input.value=c.dataset.scan;run(c.dataset.scan);}});
+})();
+
+// Sticky scan dock: keeps the free scanner one tap away once the hero has scrolled past.
+(function(){
+  var dock=document.getElementById('scan-dock'), form=document.getElementById('dock-form'), inp=document.getElementById('dock-url'),
+      x=document.getElementById('dock-x'), hero=document.getElementById('hero-scan'), heroIn=document.getElementById('hero-scan-url'),
+      sec=document.getElementById('scan'), modal=document.getElementById('audit-modal');
+  if(!dock||!hero||!sec) return;
+  var heroOut=false, secIn=false, closed=false, shown=false;
+  try{closed=sessionStorage.getItem('dockX')==='1';}catch(e){}
+  function push(d){window.dataLayer=window.dataLayer||[];d.event='scan_dock';window.dataLayer.push(d);}
+  function update(){
+    var modalOpen=modal&&modal.style.display==='flex';
+    var on=heroOut&&!secIn&&!closed&&!modalOpen;
+    dock.classList.toggle('show',on); document.body.classList.toggle('dock-on',on);
+    [inp,form.querySelector('button'),x].forEach(function(e){e.tabIndex=on?0:-1;});
+    if(on&&!shown){shown=true;push({dock_step:'shown'});}
+  }
+  new IntersectionObserver(function(e){heroOut=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;update();}).observe(hero);
+  new IntersectionObserver(function(e){secIn=e[0].isIntersecting;update();},{threshold:0.15}).observe(sec);
+  if(modal) new MutationObserver(update).observe(modal,{attributes:true,attributeFilter:['style']});
+  x.addEventListener('click',function(){closed=true;try{sessionStorage.setItem('dockX','1');}catch(e){}push({dock_step:'dismiss'});update();});
+  form.addEventListener('submit',function(e){
+    e.preventDefault(); var v=inp.value.trim(); if(!v){inp.focus();return;}
+    push({dock_step:'submit'}); heroIn.value=v; hero.dispatchEvent(new Event('submit',{cancelable:true,bubbles:true}));
+  });
+  inp.addEventListener('input',function(){if(/^https?:\/\//i.test(inp.value))inp.value=inp.value.replace(/^https?:\/\//i,'');});
 })();
 
 function openCert(el) {
