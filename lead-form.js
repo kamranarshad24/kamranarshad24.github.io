@@ -84,6 +84,9 @@
     var st = document.createElement('style');
     st.textContent = CSS;
     document.head.appendChild(st);
+    var g = document.createElement('script'); // holds Send until the spam check is ready
+    g.src = '/form-guard.js';
+    document.head.appendChild(g);
     var next = 'https://marketingkamran.com/' + (lang === 'en' ? '' : lang + '/') + 'thankyou.html';
     ov = document.createElement('div');
     ov.className = 'lf-ov';

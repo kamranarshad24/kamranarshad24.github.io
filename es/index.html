@@ -2522,5 +2522,6 @@ if ('requestIdleCallback' in window) {
 </script>
 <script>/* Load Cloudflare Turnstile only when the booking modal first opens: most visitors never open it. */
 (function(){var m=document.getElementById('audit-modal');if(!m)return;var mo;function load(){if(!mo)return;mo.disconnect();mo=null;var s=document.createElement('script');s.src='https://challenges.cloudflare.com/turnstile/v0/api.js';s.async=true;document.head.appendChild(s);}mo=new MutationObserver(function(){if(m.style.display==='flex')load();});mo.observe(m,{attributes:true,attributeFilter:['style']});if(m.style.display==='flex')load();})();</script>
+<script src="/form-guard.js" defer></script>
 </body>
 </html>
