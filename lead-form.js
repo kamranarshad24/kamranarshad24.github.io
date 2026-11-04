@@ -153,10 +153,81 @@
     if (!a || !isAuditLink(a)) return;
     e.preventDefault();
     var cls = a.className || '';
-    open(/float-cta/.test(cls) ? 'float' : (a.closest('header,nav') ? 'nav' : 'body'));
+    open(/float-cta/.test(cls) ? 'float' : /bb-go/.test(cls) ? 'blog_bar' : (a.closest('header,nav') ? 'nav' : 'body'));
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && ov && ov.classList.contains('on')) close();
   });
   window.openAuditForm = open;
+
+  // Blog posts get most of the search visits, but their only offer sat at the
+  // end of a long article and the nav does not stick, so most readers never
+  // saw it. This bar carries the post's own end question while they read.
+  // It shows only when no other audit button is on screen, never over the
+  // cookie banner, and stays closed for the session once dismissed.
+  function blogBar() {
+    if (!/\/blog\/[^\/]+\.html$/.test(location.pathname)) return;
+    var cta = document.querySelector('article .cta');
+    var q = cta && cta.querySelector('h2');
+    var endBtn = cta && cta.querySelector('a.btn');
+    var navBtn = document.querySelector('.topnav a.btn');
+    if (!q || !endBtn || !navBtn) return;
+    try { if (sessionStorage.getItem('ka_bb_x')) return; } catch (x) {}
+
+    var st = document.createElement('style');
+    st.textContent =
+      '.bb{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:680px;margin:0 auto;box-sizing:border-box;' +
+      'background:#081A36;color:#fff;border-radius:14px;padding:9px 8px 9px 16px;display:flex;align-items:center;gap:10px;' +
+      'box-shadow:0 14px 36px -10px rgba(8,26,54,.6);font-family:"Instrument Sans",system-ui,sans-serif;' +
+      'transform:translateY(calc(100% + 24px));visibility:hidden;transition:transform .3s ease,visibility 0s .3s}' +
+      '.bb.on{transform:none;visibility:visible;transition:transform .3s ease}' +
+      '.bb-q{flex:1;min-width:0;margin:0;font-size:14px;font-weight:600;line-height:1.35;color:#fff;' +
+      'display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}' +
+      '.bb-go{flex:none;background:#166FDB;color:#fff!important;text-decoration:none;font-weight:700;font-size:14px;' +
+      'padding:11px 16px;border-radius:999px;white-space:nowrap}' +
+      '.bb-go:hover{background:#0F5FC4}' +
+      '.bb-x{flex:none;background:transparent;border:0;color:#93A9C6;font-size:20px;line-height:1;width:32px;height:32px;' +
+      'border-radius:50%;cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center}' +
+      '.bb-x:hover{color:#fff;background:rgba(255,255,255,.1)}' +
+      '.bb-go:focus-visible,.bb-x:focus-visible{outline:3px solid #fff;outline-offset:2px}' +
+      'body.bb-pad{padding-bottom:84px}' +
+      '@media(max-width:480px){.bb{left:8px;right:8px;bottom:8px;gap:6px;padding:8px 2px 8px 12px}' +
+      '.bb-q{font-size:13px;line-height:1.3;-webkit-line-clamp:3}.bb-go{padding:10px 13px;font-size:13px}.bb-x{width:28px}}' +
+      '@media(prefers-reduced-motion:reduce){.bb,.bb.on{transition:none}}' +
+      '@media print{.bb{display:none!important}}';
+    document.head.appendChild(st);
+
+    var bar = document.createElement('aside');
+    bar.className = 'bb';
+    bar.setAttribute('aria-label', q.textContent.trim());
+    bar.innerHTML =
+      '<p class="bb-q">' + esc(q.textContent.trim()) + '</p>' +
+      '<a class="bb-go" href="' + esc(endBtn.getAttribute('href')) + '">' + esc(navBtn.textContent.trim()) + '</a>' +
+      '<button type="button" class="bb-x" aria-label="' + esc(T.close) + '">×</button>';
+    document.body.appendChild(bar);
+    document.body.classList.add('bb-pad'); // keep the footer clear of the bar
+
+    var shown = false, dead = false;
+    function inView(el) { var r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; }
+    function update() {
+      if (dead) return;
+      var want = scrollY > innerHeight * 0.6 && !inView(navBtn) &&
+        cta.getBoundingClientRect().top > innerHeight && !document.querySelector('.kac');
+      bar.classList.toggle('on', want);
+      if (want && !shown) { shown = true; push({ event: 'blog_bar_view' }); }
+    }
+    // Two layout reads per scroll event: cheap enough to run directly.
+    addEventListener('scroll', update, { passive: true });
+    addEventListener('resize', update, { passive: true });
+    bar.querySelector('.bb-x').addEventListener('click', function () {
+      dead = true;
+      bar.classList.remove('on');
+      document.body.classList.remove('bb-pad');
+      try { sessionStorage.setItem('ka_bb_x', '1'); } catch (x) {}
+      push({ event: 'blog_bar_dismiss' });
+    });
+    update();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', blogBar);
+  else blogBar();
 })();
